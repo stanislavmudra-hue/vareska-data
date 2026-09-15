@@ -1,0 +1,257 @@
+{
+ "date": "2026-09-15",
+ "generatedAt": "2026-09-15T21:28:37Z",
+ "startedAt": null,
+ "durationSec": null,
+ "status": "ok",
+ "ok": true,
+ "warnings": [],
+ "validation": {
+  "ok": true,
+  "errors": []
+ },
+ "offers": {
+  "perSource": {
+   "albert-text": 1706,
+   "billa-text": 615,
+   "globus": 910,
+   "kupi": 1199,
+   "lidl": 358,
+   "penny": 78
+  },
+  "total": 4866,
+  "path": "out\\offers.json"
+ },
+ "matching": {
+  "path": "out\\matched.json",
+  "generated": "2026-09-15",
+  "matched": 1851,
+  "review": 587,
+  "unmatched": 1402,
+  "ignored": 1026,
+  "byStatus": {
+   "matched": 1851
+  },
+  "matchedPerSource": {
+   "albert-text": 294,
+   "billa-text": 104,
+   "globus": 125,
+   "kupi": 1165,
+   "lidl": 143,
+   "penny": 20
+  },
+  "matchedPerStore": {
+   "albert": 665,
+   "lidl": 196,
+   "kaufland": 166,
+   "tesco": 142,
+   "billa": 241,
+   "penny": 176,
+   "globus": 265
+  },
+  "promoRows": 1719,
+  "mapperStats": {
+   "matched": 1851,
+   "review": 587,
+   "unmatched": 1402,
+   "ignored": 1026
+  }
+ },
+ "build": {
+  "matchedPath": "out\\matched.json",
+  "catalogPath": "catalog\\ingredients.json",
+  "catalogSize": 587,
+  "skipped": {},
+  "previousUpdated": "2026-09-15",
+  "today": "2026-09-15",
+  "rows": 1851,
+  "rowsPerStore": {
+   "albert": 665,
+   "billa": 241,
+   "globus": 265,
+   "kaufland": 166,
+   "lidl": 196,
+   "penny": 176,
+   "tesco": 142
+  },
+  "rowsPerSource": {
+   "albert-text": 294,
+   "billa-text": 104,
+   "globus": 125,
+   "kupi": 1165,
+   "lidl": 143,
+   "penny": 20
+  },
+  "promoRows": 1719,
+  "clubRows": 282,
+  "ingredientsPriced": 178,
+  "pairsPriced": 515,
+  "pairsFresh": 500,
+  "pairsFromPromoOnly": 429,
+  "storesPriced": {
+   "albert": 107,
+   "lidl": 70,
+   "kaufland": 63,
+   "tesco": 56,
+   "billa": 71,
+   "penny": 56,
+   "globus": 92
+  },
+  "deals": 1185,
+  "dealsCarried": 0,
+  "stale": [
+   {
+    "ingredientId": "bageta",
+    "store": "globus",
+    "czkPerKg": 76.5,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "chleb_toustovy",
+    "store": "albert",
+    "czkPerKg": 57.8,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "chleb_toustovy",
+    "store": "billa",
+    "czkPerKg": 58.8,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "chleb_toustovy",
+    "store": "lidl",
+    "czkPerKg": 119.8,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "feta",
+    "store": "albert",
+    "czkPerKg": 552.0,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "hovezi_zadni",
+    "store": "billa",
+    "czkPerKg": 227.0,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "jogurt_recky",
+    "store": "tesco",
+    "czkPerKg": 119.8,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mlete_maso_mix",
+    "store": "globus",
+    "czkPerKg": 139.8,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mouka_hruba",
+    "store": "lidl",
+    "czkPerKg": 9.9,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mouka_polohruba",
+    "store": "lidl",
+    "czkPerKg": 9.9,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "pistacie",
+    "store": "lidl",
+    "czkPerKg": 436.3,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "rybi_file",
+    "store": "globus",
+    "czkPerKg": 159.9,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "ryze_basmati",
+    "store": "albert",
+    "czkPerKg": 249.8,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "susenky_maslove",
+    "store": "albert",
+    "czkPerKg": 149.5,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "vinna_klobasa",
+    "store": "albert",
+    "czkPerKg": 183.0,
+    "lastSeen": "2026-09-15",
+    "ageDays": 0,
+    "reason": "not_matched_today"
+   }
+  ],
+  "staleCount": 15,
+  "dropped": [],
+  "droppedCount": 0,
+  "storesMissing": []
+ },
+ "prices": {
+  "path": "docs\\prices.json",
+  "updated": "2026-09-15",
+  "ingredients": 178,
+  "pairs": 515,
+  "perStore": {
+   "albert": 107,
+   "lidl": 70,
+   "kaufland": 63,
+   "tesco": 56,
+   "billa": 71,
+   "penny": 56,
+   "globus": 92
+  },
+  "deals": 1185,
+  "dealsPerStore": {
+   "albert": 302,
+   "lidl": 87,
+   "kaufland": 153,
+   "tesco": 123,
+   "billa": 185,
+   "penny": 154,
+   "globus": 181
+  },
+  "sizeBytes": 231029
+ },
+ "fetch": null,
+ "fetchPath": null
+}

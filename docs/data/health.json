@@ -1,0 +1,182 @@
+{
+ "date": "2026-09-15",
+ "generatedAt": "2026-09-15T21:28:37Z",
+ "status": "ok",
+ "ok": true,
+ "run": {
+  "date": "2026-09-15",
+  "startedAt": null,
+  "finishedAt": "2026-09-15T21:28:37Z",
+  "durationSec": null,
+  "offers": 4866,
+  "deals": 1185,
+  "priced": 178,
+  "matched": 1851,
+  "review": 587,
+  "unmatched": 1402,
+  "ok": true
+ },
+ "lastSuccessfulRun": "2026-09-15",
+ "pricesUpdated": "2026-09-15",
+ "sources": {
+  "albert-text": {
+   "label": "albert-text",
+   "ok": true,
+   "skipped": false,
+   "items": 1706,
+   "matched": 294,
+   "requests": null,
+   "durationSec": null,
+   "error": null,
+   "robots": null,
+   "fetchedAt": null
+  },
+  "billa-text": {
+   "label": "billa-text",
+   "ok": true,
+   "skipped": false,
+   "items": 615,
+   "matched": 104,
+   "requests": null,
+   "durationSec": null,
+   "error": null,
+   "robots": null,
+   "fetchedAt": null
+  },
+  "globus": {
+   "label": "globus",
+   "ok": true,
+   "skipped": false,
+   "items": 910,
+   "matched": 125,
+   "requests": null,
+   "durationSec": null,
+   "error": null,
+   "robots": null,
+   "fetchedAt": null
+  },
+  "kupi": {
+   "label": "kupi",
+   "ok": true,
+   "skipped": false,
+   "items": 1199,
+   "matched": 1165,
+   "requests": null,
+   "durationSec": null,
+   "error": null,
+   "robots": null,
+   "fetchedAt": null
+  },
+  "lidl": {
+   "label": "lidl",
+   "ok": true,
+   "skipped": false,
+   "items": 358,
+   "matched": 143,
+   "requests": null,
+   "durationSec": null,
+   "error": null,
+   "robots": null,
+   "fetchedAt": null
+  },
+  "penny": {
+   "label": "penny",
+   "ok": true,
+   "skipped": false,
+   "items": 78,
+   "matched": 20,
+   "requests": null,
+   "durationSec": null,
+   "error": null,
+   "robots": null,
+   "fetchedAt": null
+  }
+ },
+ "perStore": {
+  "albert": {
+   "priced": 107,
+   "deals": 302,
+   "rowsToday": 665,
+   "missingToday": false
+  },
+  "lidl": {
+   "priced": 70,
+   "deals": 87,
+   "rowsToday": 196,
+   "missingToday": false
+  },
+  "kaufland": {
+   "priced": 63,
+   "deals": 153,
+   "rowsToday": 166,
+   "missingToday": false
+  },
+  "tesco": {
+   "priced": 56,
+   "deals": 123,
+   "rowsToday": 142,
+   "missingToday": false
+  },
+  "billa": {
+   "priced": 71,
+   "deals": 185,
+   "rowsToday": 241,
+   "missingToday": false
+  },
+  "penny": {
+   "priced": 56,
+   "deals": 154,
+   "rowsToday": 176,
+   "missingToday": false
+  },
+  "globus": {
+   "priced": 92,
+   "deals": 181,
+   "rowsToday": 265,
+   "missingToday": false
+  }
+ },
+ "stale": 15,
+ "dropped": 0,
+ "warnings": [],
+ "validation": {
+  "ok": true,
+  "errors": []
+ },
+ "recentRuns": [
+  {
+   "date": "2026-09-15",
+   "generatedAt": "2026-09-15T21:28:37Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 4866,
+   "perSource": {
+    "albert-text": 1706,
+    "billa-text": 615,
+    "globus": 910,
+    "kupi": 1199,
+    "lidl": 358,
+    "penny": 78
+   },
+   "matched": 1851,
+   "review": 587,
+   "unmatched": 1402,
+   "deals": 1185,
+   "priced": 178,
+   "pairsPriced": 515,
+   "perStore": {
+    "albert": 107,
+    "lidl": 70,
+    "kaufland": 63,
+    "tesco": 56,
+    "billa": 71,
+    "penny": 56,
+    "globus": 92
+   },
+   "stale": 15,
+   "dropped": 0,
+   "warnings": 0
+  }
+ ]
+}

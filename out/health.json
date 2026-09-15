@@ -1,0 +1,349 @@
+{
+ "v": 1,
+ "run": "2026-09-15T21:20:11+00:00",
+ "today": "2026-09-15",
+ "sources": {
+  "globus": {
+   "source": "globus",
+   "ok": true,
+   "count": 910,
+   "error": null,
+   "stores": {
+    "globus": 910
+   },
+   "requests": 0,
+   "elapsed_s": 0.1,
+   "notes": [
+    "house 4005: totalCount=874, offers=910"
+   ],
+   "tier": "primary"
+  },
+  "lidl": {
+   "source": "lidl",
+   "ok": true,
+   "count": 358,
+   "error": null,
+   "stores": {
+    "lidl": 358
+   },
+   "requests": 0,
+   "elapsed_s": 0.1,
+   "notes": [
+    "18 categories, 358 products"
+   ],
+   "tier": "primary"
+  },
+  "penny": {
+   "source": "penny",
+   "ok": true,
+   "count": 78,
+   "error": null,
+   "stores": {
+    "penny": 78
+   },
+   "requests": 0,
+   "elapsed_s": 0.0,
+   "notes": [
+    "total=60, offers=78"
+   ],
+   "tier": "primary"
+  },
+  "albert": {
+   "source": "albert",
+   "ok": true,
+   "count": 1706,
+   "error": null,
+   "stores": {
+    "albert": 1706
+   },
+   "requests": 0,
+   "elapsed_s": 0.4,
+   "notes": [
+    "Albert - 37HM_akcni_letak (2026-09-09..2026-09-15): 28 spreads, 473 offers",
+    "Albert - 37SM_akcni_letak (2026-09-09..2026-09-15): 23 spreads, 350 offers",
+    "Albert - 38HM_acni_letak (2026-09-16..2026-09-22): 31 spreads, 505 offers",
+    "Albert - 38SM_akcni_letak (2026-09-16..2026-09-22): 23 spreads, 378 offers"
+   ],
+   "tier": "secondary"
+  },
+  "billa": {
+   "source": "billa",
+   "ok": true,
+   "count": 615,
+   "error": null,
+   "stores": {
+    "billa": 615
+   },
+   "requests": 0,
+   "elapsed_s": 0.1,
+   "notes": [
+    "velky-letak-9-9-15-9-2026: 20 spreads, 281 offers",
+    "maly-letak-9-9-15-9-2026: 5 spreads, 44 offers",
+    "velky-letak-16-9-22-9-2026: 19 spreads, 252 offers",
+    "maly-letak-16-9-22-9-2026: 5 spreads, 38 offers"
+   ],
+   "tier": "secondary"
+  },
+  "kaufland": {
+   "source": "kaufland",
+   "ok": true,
+   "count": 0,
+   "error": null,
+   "stores": {},
+   "requests": 0,
+   "elapsed_s": 0.0,
+   "notes": [
+    "09.09.2026 - 15.09.2026: 2026-09-09..2026-09-15",
+    "16.09.2026 - 22.09.2026: 2026-09-16..2026-09-22",
+    "09.09.2026 - 15.09.2026: 2026-09-09..2026-09-15",
+    "16.09.2026 - 22.09.2026: 2026-09-16..2026-09-22",
+    "02.09.2026 - 29.09.2026: 2026-09-02..2026-09-29",
+    "metadata only - Kaufland prices come from the kupi provider"
+   ],
+   "periods": [
+    {
+     "name": "Kaufland",
+     "title": "09.09.2026 - 15.09.2026",
+     "offer_from": "2026-09-09",
+     "offer_to": "2026-09-15",
+     "published": "2026-09-06",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a05cfe-63b0-7b92-bd06-a8a9f3bf6a6b/Kaufland-09-09-2026-15-09-2026-00.pdf",
+     "subcategory": "KDZ"
+    },
+    {
+     "name": "Kaufland",
+     "title": "16.09.2026 - 22.09.2026",
+     "offer_from": "2026-09-16",
+     "offer_to": "2026-09-22",
+     "published": "2026-09-13",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a0820d-5322-7b19-a8ab-615fd9c059c6/Kaufland-16-09-2026-22-09-2026-00.pdf",
+     "subcategory": "KDZ"
+    },
+    {
+     "name": "Kaufland",
+     "title": "09.09.2026 - 15.09.2026",
+     "offer_from": "2026-09-09",
+     "offer_to": "2026-09-15",
+     "published": "2026-09-06",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a06d06-1f87-72f8-b3eb-23b1f931abd5/Kaufland-09-09-2026-15-09-2026-00.pdf",
+     "subcategory": "Hyper1"
+    },
+    {
+     "name": "Kaufland",
+     "title": "16.09.2026 - 22.09.2026",
+     "offer_from": "2026-09-16",
+     "offer_to": "2026-09-22",
+     "published": "2026-09-13",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a09112-8513-7898-a478-1b4d380475e9/Kaufland-16-09-2026-22-09-2026-00.pdf",
+     "subcategory": "Hyper1"
+    },
+    {
+     "name": "Kaufland",
+     "title": "02.09.2026 - 29.09.2026",
+     "offer_from": "2026-09-02",
+     "offer_to": "2026-09-29",
+     "published": "2026-08-30",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a05845-89cc-7bd3-9395-c9c60d12d899/Kaufland-02-09-2026-29-09-2026-00.pdf",
+     "subcategory": "Wrapper1"
+    }
+   ],
+   "tier": "metadata"
+  },
+  "kupi": {
+   "source": "kupi",
+   "ok": true,
+   "count": 1199,
+   "error": null,
+   "stores": {
+    "albert": 387,
+    "penny": 162,
+    "billa": 141,
+    "lidl": 53,
+    "globus": 145,
+    "tesco": 143,
+    "kaufland": 168
+   },
+   "requests": 0,
+   "elapsed_s": 16.5,
+   "notes": [
+    "170 terms, 0 failed, 1199 offers"
+   ],
+   "tier": "fallback"
+  }
+ },
+ "hosts": {},
+ "robots": [
+  {
+   "host": "www.globus.cz",
+   "status": 200,
+   "error": null,
+   "rules": 57,
+   "disallow": [
+    "Disallow: /o-nas/dokumenty-pro-dodavatele/",
+    "Disallow: /globus/hypermarket/akcni-nabidka/*/p/",
+    "Disallow: /globus/hypermarket/cela-nabidka/*/p/",
+    "Disallow: /fresh-*/hypermarket/*/p/",
+    "Disallow: /fresh-*/hypermarket/cela-nabidka/*",
+    "Disallow: /fresh-*/hypermarket/akcni-nabidka/*",
+    "Disallow: /brno/hypermarket/*/p/",
+    "Disallow: /brno/hypermarket/cela-nabidka/*/",
+    "Disallow: /brno/hypermarket/akcni-nabidka/*/",
+    "Disallow: /ceske-budejovice/hypermarket/*/p/",
+    "Disallow: /ceske-budejovice/hypermarket/cela-nabidka/*/",
+    "Disallow: /ceske-budejovice/hypermarket/akcni-nabidka/*/",
+    "Disallow: /chomutov/hypermarket/*/p/",
+    "Disallow: /chomutov/hypermarket/cela-nabidka/*/",
+    "Disallow: /chomutov/hypermarket/akcni-nabidka/*/",
+    "Disallow: /plzen-chotikov/hypermarket/*/p/",
+    "Disallow: /plzen-chotikov/hypermarket/cela-nabidka/*/",
+    "Disallow: /plzen-chotikov/hypermarket/akcni-nabidka/*/",
+    "Disallow: /havirov/hypermarket/*/p/",
+    "Disallow: /havirov/hypermarket/cela-nabidka/*/",
+    "Disallow: /havirov/hypermarket/akcni-nabidka/*/",
+    "Disallow: /karlovy-vary-jenisov/hypermarket/*/p/",
+    "Disallow: /karlovy-vary-jenisov/hypermarket/cela-nabidka/*/",
+    "Disallow: /karlovy-vary-jenisov/hypermarket/akcni-nabidka/*/",
+    "Disallow: /liberec/hypermarket/*/p/",
+    "Disallow: /liberec/hypermarket/cela-nabidka/*/",
+    "Disallow: /liberec/hypermarket/akcni-nabidka/*/",
+    "Disallow: /olomouc/hypermarket/*/p/",
+    "Disallow: /olomouc/hypermarket/cela-nabidka/*/",
+    "Disallow: /olomouc/hypermarket/akcni-nabidka/*/",
+    "Disallow: /opava/hypermarket/*/p/",
+    "Disallow: /opava/hypermarket/cela-nabidka/*/",
+    "Disallow: /opava/hypermarket/akcni-nabidka/*/",
+    "Disallow: /ostrava/hypermarket/*/p/",
+    "Disallow: /ostrava/hypermarket/cela-nabidka/*/",
+    "Disallow: /ostrava/hypermarket/akcni-nabidka/*/",
+    "Disallow: /pardubice/hypermarket/*/p/",
+    "Disallow: /pardubice/hypermarket/cela-nabidka/*/",
+    "Disallow: /pardubice/hypermarket/akcni-nabidka/*/",
+    "Disallow: /praha-cakovice/hypermarket/*/p/"
+   ],
+   "crawl_delay": null
+  },
+  {
+   "host": "www.lidl.cz",
+   "status": 200,
+   "error": null,
+   "rules": 14,
+   "disallow": [
+    "Disallow: /cc.js*",
+    "Disallow: /cdn/assets/cwv/",
+    "Disallow: /user-api/*",
+    "Disallow: /cqe/*",
+    "Disallow: *search?q=*",
+    "Disallow: *?offset=*",
+    "Disallow: *idsOnly=*",
+    "Disallow: *productsOnly=*",
+    "Disallow: *id=*",
+    "Disallow: *pageId=*",
+    "Disallow: *advisor=*",
+    "Disallow: *sort=*"
+   ],
+   "crawl_delay": null
+  },
+  {
+   "host": "www.penny.cz",
+   "status": 200,
+   "error": null,
+   "rules": 1,
+   "disallow": [],
+   "crawl_delay": null
+  },
+  {
+   "host": "www.albert.cz",
+   "status": 200,
+   "error": null,
+   "rules": 6,
+   "disallow": [
+    "Disallow: /nase-prodejny?q=*",
+    "Disallow: /en/"
+   ],
+   "crawl_delay": null
+  },
+  {
+   "host": "letaky.albert.cz",
+   "status": 404,
+   "error": null,
+   "rules": 0,
+   "disallow": [],
+   "crawl_delay": null
+  },
+  {
+   "host": "www.billa.cz",
+   "status": 200,
+   "error": null,
+   "rules": 1,
+   "disallow": [],
+   "crawl_delay": null
+  },
+  {
+   "host": "view.publitas.com",
+   "status": 404,
+   "error": null,
+   "rules": 0,
+   "disallow": [],
+   "crawl_delay": null
+  },
+  {
+   "host": "endpoints.leaflets.schwarz",
+   "status": 404,
+   "error": null,
+   "rules": 0,
+   "disallow": [],
+   "crawl_delay": null
+  },
+  {
+   "host": "www.kupi.cz",
+   "status": 200,
+   "error": null,
+   "rules": 167,
+   "disallow": [
+    "Disallow: /",
+    "Disallow: /",
+    "Disallow: /",
+    "Disallow: /welcome",
+    "Disallow: /404",
+    "Disallow: /login",
+    "Disallow: /popup/*",
+    "Disallow: /logging",
+    "Disallow: /get-locality-by-gps",
+    "Disallow: /nakupni-listek",
+    "Disallow: /get-mesto",
+    "Disallow: /get-slevy",
+    "Disallow: /get-letaky",
+    "Disallow: /get-akce",
+    "Disallow: /get-znacky",
+    "Disallow: /hlidani",
+    "Disallow: /uzivatel",
+    "Disallow: /oblibene",
+    "Disallow: /oblibene-kategorie",
+    "Disallow: /set-oblibene-letaky",
+    "Disallow: /send",
+    "Disallow: /kupici",
+    "Disallow: /objednavka",
+    "Disallow: /redir/*",
+    "Disallow: /nakup/*",
+    "Disallow: /mailing",
+    "Disallow: /redir.php",
+    "Disallow: /tipy",
+    "Disallow: /letak2/*",
+    "Disallow: /letak-dots/*",
+    "Disallow: /mailing/unsubscribe/*",
+    "Disallow: /magazin/pr-clanky",
+    "Disallow: /magazin/clanek-nahled/*",
+    "Disallow: /uzivatel/autorizace",
+    "Disallow: /prihlasit/facebook",
+    "Disallow: /oauth/*",
+    "Disallow: /odhlasit-se",
+    "Disallow: /prihlasit/facebook/overeni",
+    "Disallow: /prihlasit/facebook/potvrzeni-uctu",
+    "Disallow: /letak/nahled/*"
+   ],
+   "crawl_delay": null
+  }
+ ],
+ "requests_made": 0,
+ "cache_hits": 215
+}

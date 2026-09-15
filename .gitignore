@@ -1,0 +1,14 @@
+# per-day HTTP cache of the fetchers
+.cache/
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+# large intermediate run outputs (the panel copies live in docs/data/)
+out/*.html
+out/*.log
+out/offers*.json
+out/matched.json
+out/unmatched.json
+# local scratch
+.venv/

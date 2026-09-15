@@ -21,6 +21,7 @@ from pipeline import mapper as M  # noqa: E402
 CATALOG = M.Catalog.load()
 RULES = M.load_rules()
 MAPPER = M.Mapper(CATALOG, RULES)
+SCORER = M.Mapper(CATALOG, [])   # scorer only - the review tier must not depend on learned rules
 
 
 def _offer(title: str, **kw) -> dict:
@@ -199,13 +200,14 @@ class PricePerKg(unittest.TestCase):
                          (25.9, "2026-09-09", "2026-09-15", "https://www.globus.cz/x", False, False))
         self.assertNotIn("raw", r)
         # kupi term prior: accepted when the title agrees, flagged when it does not
-        r = MAPPER.map_offer({"store": "kaufland", "title": "Máslo Jihočeské Madeta", "price_czk": 39.9, "unit": "g",
+        # (scorer only - the bundled "maslo" rule would short-circuit these)
+        r = SCORER.map_offer({"store": "kaufland", "title": "Máslo Jihočeské Madeta", "price_czk": 39.9, "unit": "g",
                               "quantity": 250, "source": "kupi", "ingredient_id": "maslo", "is_promo": True})
         self.assertEqual((r["status"], r["ingredientId"], r["method"], r["promo"]), ("matched", "maslo", "term+score", True))
-        r = MAPPER.map_offer({"store": "kaufland", "title": "Selské máslo 84%", "price_czk": 49.9, "unit": "g",
+        r = SCORER.map_offer({"store": "kaufland", "title": "Selské máslo 84%", "price_czk": 49.9, "unit": "g",
                               "quantity": 250, "source": "kupi", "ingredient_id": "maslo"})
         self.assertEqual((r["status"], r["ingredientId"]), ("matched", "maslo"))
-        r = MAPPER.map_offer({"store": "kaufland", "title": "Dýně máslová", "price_czk": 24.9, "unit": "kg",
+        r = SCORER.map_offer({"store": "kaufland", "title": "Dýně máslová", "price_czk": 24.9, "unit": "kg",
                               "quantity": 1, "source": "kupi", "ingredient_id": "maslo"})
         self.assertNotEqual(r["ingredientId"], "maslo")
         self.assertIn("term-mismatch:maslo", r["reasons"])
@@ -374,7 +376,7 @@ class TitleMatching(unittest.TestCase):
 
     def test_review_tier(self):
         for title, expected in self.REVIEW:
-            r = MAPPER.map_offer(_priced(title, expected))
+            r = SCORER.map_offer(_priced(title, expected))
             self.assertEqual(r["status"], "review", (title, r["status"], r["confidence"]))
             self.assertTrue(M.REVIEW_MIN <= r["confidence"] < M.AUTO_ACCEPT, (title, r["confidence"]))
             if expected:

@@ -41,6 +41,7 @@ from validate import validate_file  # noqa: E402
 REPORT_PATH = os.path.join(OUT_DIR, "report.json")
 HISTORY_PATH = os.path.join(OUT_DIR, "history.json")
 PANEL_DATA_DIR = os.path.join(DOCS_DIR, "data")
+MAPPINGS_PATH = os.path.join(REPO_ROOT, "data", "mappings.json")
 OFFERS_CANDIDATES = (
     os.path.join(OUT_DIR, "offers.json"),
     os.path.join(OUT_DIR, "offers_raw.json"),
@@ -414,6 +415,17 @@ def publish_catalog(panel_dir: str) -> str | None:
     return dst
 
 
+def publish_mappings(panel_dir: str, src: str = MAPPINGS_PATH) -> str | None:
+    """Copy data/mappings.json to docs/data/ so the panel can show the learned rules."""
+    if not os.path.exists(src):
+        return None
+    dst = os.path.join(panel_dir, "mappings.json")
+    os.makedirs(panel_dir, exist_ok=True)
+    if not (os.path.exists(dst) and filecmp.cmp(src, dst, shallow=False)):
+        shutil.copyfile(src, dst)
+    return dst
+
+
 PANEL_LIST_MAX = 500
 
 
@@ -456,6 +468,7 @@ def write_all(today: dt.date | None = None, matched_path: str = MATCHED_PATH,
     }, indent=None)
     if publish_catalog_copy:
         publish_catalog(panel_dir)
+        publish_mappings(panel_dir)
     return report
 
 
