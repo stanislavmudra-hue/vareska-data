@@ -1,0 +1,68 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://stanislavmudra-hue.github.io/vareska-data/prices.schema.json",
+ "title": "Vareska price table v1",
+ "description": "Contract of assets/data/prices.json in the Vareska app (lib/models/price.dart). Prices are CZK per kilogram (litre for liquids, piece for unitGrams-based items are converted by the mapper).",
+ "type": "object",
+ "additionalProperties": false,
+ "required": ["v", "updated", "czkPerKg", "deals", "categoryFallbackCzkPerKg"],
+ "$defs": {
+  "store": {
+   "type": "string",
+   "enum": ["albert", "lidl", "kaufland", "tesco", "billa", "penny", "globus"]
+  },
+  "isoDate": {
+   "type": "string",
+   "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$"
+  },
+  "price": {
+   "type": "number",
+   "exclusiveMinimum": 0,
+   "maximum": 50000
+  },
+  "ingredientId": {
+   "type": "string",
+   "pattern": "^[a-z0-9_]+$",
+   "minLength": 1,
+   "maxLength": 64
+  }
+ },
+ "properties": {
+  "v": {"const": 1},
+  "updated": {"$ref": "#/$defs/isoDate"},
+  "czkPerKg": {
+   "type": "object",
+   "propertyNames": {"$ref": "#/$defs/ingredientId"},
+   "additionalProperties": {
+    "type": "object",
+    "propertyNames": {"$ref": "#/$defs/store"},
+    "additionalProperties": {"$ref": "#/$defs/price"},
+    "minProperties": 1
+   }
+  },
+  "deals": {
+   "type": "array",
+   "maxItems": 5000,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["ingredientId", "store", "czkPerKg", "validFrom", "validTo", "title"],
+    "properties": {
+     "ingredientId": {"$ref": "#/$defs/ingredientId"},
+     "store": {"$ref": "#/$defs/store"},
+     "czkPerKg": {"$ref": "#/$defs/price"},
+     "validFrom": {"$ref": "#/$defs/isoDate"},
+     "validTo": {"$ref": "#/$defs/isoDate"},
+     "title": {"type": "string", "minLength": 1, "maxLength": 120}
+    }
+   }
+  },
+  "categoryFallbackCzkPerKg": {
+   "type": "object",
+   "propertyNames": {
+    "enum": ["vegetable", "fruit", "herb", "spice", "meat", "poultry", "fish", "seafood", "dairy", "egg", "grain", "pasta", "bakery", "legume", "nut", "oil", "sweetener", "condiment", "alcohol", "beverage", "other"]
+   },
+   "additionalProperties": {"$ref": "#/$defs/price"}
+  }
+ }
+}

@@ -1,0 +1,96 @@
+# Daily price update: fetch leaflets/APIs -> map to ingredients -> build docs/prices.json
+# -> validate -> report; commit docs/** + out/** when they changed.
+# GitHub Pages serves the docs/ folder of the default branch (classic
+# "Deploy from a branch" mode, see README.md "Nasazení"), so a push is the deploy.
+name: update-prices
+
+on:
+  schedule:
+    - cron: "0 2 * * *"        # 02:00 UTC = 04:00 Prague (CEST) / 03:00 (CET)
+  workflow_dispatch:
+    inputs:
+      skip_fetch:
+        description: "Reuse out/offers.json instead of fetching (debugging)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-prices
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch offers
+        if: ${{ github.event.inputs.skip_fetch != 'true' }}
+        env:
+          PYTHONUTF8: "1"
+        run: python run_all.py --only fetch
+
+      - name: Map offers to ingredients
+        env:
+          PYTHONUTF8: "1"
+        run: python run_all.py --only mapper
+
+      - name: Build prices.json
+        env:
+          PYTHONUTF8: "1"
+        run: python run_all.py --only build
+
+      - name: Validate prices.json
+        env:
+          PYTHONUTF8: "1"
+        run: python run_all.py --only validate
+
+      - name: Report + panel data
+        if: ${{ always() }}
+        env:
+          PYTHONUTF8: "1"
+        run: python run_all.py --only report
+
+      - name: Commit and push changes
+        if: ${{ success() }}
+        run: |
+          git config user.name "vareska-bot"
+          git config user.email "vareska-bot@users.noreply.github.com"
+          git add docs out
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "chore: prices $(TZ=Europe/Prague date +%F)"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Upload run outputs (debugging)
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-out
+          path: |
+            out/report.json
+            out/build_report.json
+            docs/prices.json
+          if-no-files-found: ignore
+          retention-days: 14

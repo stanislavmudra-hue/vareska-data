@@ -1,0 +1,8 @@
+# Runtime dependencies of the price pipeline (GitHub Actions, Python 3.11).
+# fetch/mapper (network + HTML parsing)
+requests>=2.31,<3
+beautifulsoup4>=4.12,<5
+lxml>=5.0
+# build/validate/report use the standard library only; tzdata supplies the
+# Europe/Prague zone on Windows (Linux runners have system zoneinfo).
+tzdata>=2024.1
