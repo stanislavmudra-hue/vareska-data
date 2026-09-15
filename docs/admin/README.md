@@ -1,0 +1,112 @@
+# Vařeška – admin panel (docs/admin)
+
+Statická stránka bez build kroku (vanilla JS), která zobrazuje výstupy pipeline
+cen a akcí a umožňuje ručně přiřazovat nepřiřazené produkty k surovinám.
+
+* GitHub Pages: `https://stanislavmudra-hue.github.io/vareska-data/admin/`
+* Lokálně: `cd docs && python -m http.server 8000` → `http://localhost:8000/admin/`
+  (stránka načítá data relativně: `../prices.json`, `../data/*.json`, proto musí být
+  servírován celý adresář `docs/`, ne jen `docs/admin/`).
+
+## Záložky
+
+| Záložka | Co dělá | Data |
+|---|---|---|
+| **Přehled** | poslední běh (datum, trvání, počty), stav zdrojů, tabulka nabídek per zdroj/obchod, graf historie (inline SVG), tlačítko **Spustit teď** (`workflow_dispatch`) | `../data/health.json`, `../data/history.json`, `../prices.json` |
+| **Fronta** | nepřiřazené a „ke kontrole“ položky, návrhy top‑3, vyhledávání v katalogu (folding + stemming shodné s aplikací), **Přiřadit / Ignorovat** → fronta změn → **Uložit N změn** (jeden commit do `data/mappings.json`) | `../data/unmatched.json`, katalog surovin |
+| **Ceny a akce** | prohlížeč `prices.json`: filtr podle suroviny, obchody, tabulka Kč/kg (nejnižší cena zeleně, aktivní akce označena ▲), seznam akcí s platností | `../prices.json` |
+| **Kontrola receptů** | zobrazí `docs/data/qa/sources_report.md` a `content_stats.md`, pokud existují (jinak placeholder) | `../data/qa/*.md` |
+| **Nastavení** | GitHub token, owner/repo/větev/workflow, test připojení, diagnostika načtených souborů | `localStorage` |
+
+Změny uložené z fronty se **projeví až v příštím běhu pipeline** – panel jen zapíše
+pravidlo do `data/mappings.json`, samotné `prices.json` přegeneruje workflow.
+
+## Nastavení GitHub tokenu (fine‑grained PAT)
+
+Token se ukládá pouze v `localStorage` prohlížeče a posílá se výhradně na `https://api.github.com`.
+
+1. GitHub → **Settings → Developer settings → Personal access tokens → Fine‑grained tokens → Generate new token**.
+2. *Token name*: např. `vareska-admin`; *Expiration*: podle uvážení (např. 90 dní).
+3. *Repository access*: **Only select repositories** → `stanislavmudra-hue/vareska-data`.
+4. *Permissions → Repository permissions*:
+   * **Contents: Read and write** – zápis `data/mappings.json` přes Contents API,
+   * **Actions: Read and write** – spuštění workflow (`workflow_dispatch`) a čtení stavu běhů,
+   * (Metadata: Read se přidá automaticky).
+5. **Generate token** a zkopírujte hodnotu (`github_pat_…`).
+6. V panelu → **Nastavení**: vložte token, zkontrolujte owner (`stanislavmudra-hue`), repo (`vareska-data`),
+   větev (výchozí `main`; test připojení ji doplní podle repozitáře), název workflow souboru
+   (`update.yml` – soubor v `.github/workflows/`, musí mít `on: workflow_dispatch`) → **Uložit nastavení** → **Otestovat připojení**.
+7. Tlačítko **Zapomenout token** token z prohlížeče odstraní.
+
+Na sdíleném počítači token neukládejte; tento panel nemá žádný backend, kdo má token, může zapisovat do repozitáře.
+
+## Formáty dat, které panel čte
+
+Panel je tolerantní k chybějícím souborům (zobrazí placeholder) i k mírně odlišným názvům polí.
+Doporučené tvary, které pipeline zapisuje do `docs/`:
+
+### `docs/prices.json`
+Kontrakt aplikace (v1): `{"v":1,"updated":"YYYY-MM-DD","czkPerKg":{ingredientId:{store:price}},"deals":[{ingredientId,store,czkPerKg,validFrom,validTo,title}],"categoryFallbackCzkPerKg":{…}}`.
+Volitelné pole `url` u akce panel zobrazí jako odkaz.
+
+### `docs/data/health.json`
+```json
+{
+  "run": {"startedAt": "2026-09-15T06:00:03Z", "finishedAt": "2026-09-15T06:04:41Z", "durationSec": 278,
+          "offers": 1734, "deals": 312, "priced": 401, "unmatched": 57, "ok": true},
+  "sources": {
+    "globus":   {"ok": true,  "items": 874, "deals": 120, "matched": 610, "unmatched": 21, "requests": 9, "durationSec": 14},
+    "albert":   {"ok": false, "items": 0, "error": "HTTP 503 letaky.albert.cz"},
+    "kaufland": {"status": "skipped", "note": "Cloudflare challenge – kupi fallback"}
+  }
+}
+```
+`sources` může být i pole objektů s polem `id`/`name`. Stav se bere z `ok` (bool), případně `status` (`ok`/`error`/`skipped`).
+
+### `docs/data/history.json`
+```json
+{"runs": [{"date": "2026-09-15", "durationSec": 278, "offers": 1734, "deals": 312, "priced": 401, "unmatched": 57, "ok": true}]}
+```
+(nebo přímo pole). Graf zobrazuje posledních 60 běhů; neúspěšné (`ok:false`) červeně.
+
+### `docs/data/unmatched.json`
+```json
+{"generated": "2026-09-15", "items": [
+  {"title": "Máslo České 250 g", "store": "globus", "source": "globus-api", "price": 44.9, "originalPrice": 54.9,
+   "pack": "250 g", "czkPerKg": 179.6, "url": "https://…", "validTo": "2026-09-20", "promo": true,
+   "status": "review", "ingredientId": "maslo", "confidence": 0.82, "reasons": ["name:maslo"],
+   "suggestions": [{"ingredientId": "maslo", "score": 0.82, "nameCs": "máslo"}, {"ingredientId": "maslo_prepustene", "score": 0.31}]}
+]}
+```
+* `status`: `unmatched` (žádný kandidát) nebo `review` (kandidát `ingredientId` s nízkou jistotou – panel ho předvyplní).
+* `suggestions` (nebo `candidates`) mohou být i prostá pole id; když chybí, panel dopočítá návrhy z katalogu.
+* Identifikátor položky je `key`, pokud ho pipeline dodá, jinak `fold(title)|store`.
+* `pipeline/report.py` zapisuje tvar `{"date":…, "review":[…], "unmatched":[…], "reviewTotal":N, "unmatchedTotal":N}` – panel ho čte také.
+
+### Katalog surovin
+Hledá se postupně `../data/catalog/ingredients.json`, `../catalog/ingredients.json`, `../data/ingredients.json`.
+Tvar shodný s aplikací (`{"v":1,"ingredients":[{id,nameCs,namePluralCs,nameEn,aliases,category,refPriceCzkPerKg,…}]}` nebo prosté pole).
+
+### `data/mappings.json` (zapisuje panel, čte `pipeline/mapper.py`)
+```json
+{"v": 1, "updated": "2026-09-15", "rules": [
+  {"pattern": "kureci prsni rizky 1 kg", "store": "lidl", "ingredientId": "kureci_prsa", "note": "panel 2026-09-15", "title": "Kuřecí prsní řízky 1 kg"},
+  {"pattern": "pilsner urquell 0 5 l plech", "store": "penny", "ingredientId": "ignore", "note": "panel 2026-09-15", "title": "Pilsner Urquell 0,5 l plech"}
+]}
+```
+* Kontrakt mapperu (`load_rules`): `pattern` (text → folding, hledá se jako celé slovo/fráze ve foldovaném názvu nabídky;
+  `re:…` nebo `/…/` = regulární výraz), `store` = obchod nebo `*` (všude), `ingredientId` = id z katalogu nebo `ignore`, `note` volný text.
+  Pole `title` a `updated` jsou jen informativní.
+* Panel používá jako `pattern` celý foldovaný název produktu (`fold` z `lib/logic/text_normalizer.dart`), tj. pravidlo platí přesně
+  pro tento produkt (i při dalším výskytu). Obecnější pravidla (`"pattern": "maslo", "store": "*"`) lze dopsat ručně.
+* Pravidlo se stejným `pattern` + `store` se přepisuje; ostatní obsah souboru zůstává zachován.
+* Commit message: `panel: mapping <title>` (při více změnách `panel: mapping A, B, C +N (N pravidel)`).
+* Při konfliktu SHA (někdo mezitím soubor změnil) panel soubor znovu načte a zápis zopakuje (max. 3×).
+* Vyřízené položky panel lokálně skryje (localStorage, 7 dní) do doby, než je příští běh pipeline odstraní z `unmatched.json`.
+
+### `docs/data/qa/sources_report.md`, `docs/data/qa/content_stats.md`
+Volitelné Markdown zprávy z CI aplikace (nadpisy, seznamy, tabulky, kód). Bez nich záložka ukáže placeholder.
+
+## Testy
+`python -m pytest tests/test_admin_panel.py` (nebo `python tests/test_admin_panel.py`) – kontrola syntaxe JS (`node --check`),
+párování HTML značek, existence odkazovaných souborů a shoda JS normalizéru s pravidly aplikace (přes `node`).

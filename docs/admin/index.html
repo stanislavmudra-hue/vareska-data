@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Vařeška – správa cen a akcí</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="appbar">
+  <div class="appbar-inner">
+    <div class="brand"><span class="logo" aria-hidden="true">🥄</span> Vařeška – ceny a akce</div>
+    <span class="spacer"></span>
+    <span id="conn-status" class="badge" title="Stav připojení ke GitHubu">GitHub: bez tokenu</span>
+    <button class="btn small" id="btn-reload" title="Znovu načíst všechna data">↻ Obnovit</button>
+    <nav class="tabs" role="tablist" aria-label="Sekce">
+      <button class="tab" role="tab" data-tab="overview" aria-selected="true">Přehled</button>
+      <button class="tab" role="tab" data-tab="queue">Fronta <span class="badge" id="queue-count">–</span></button>
+      <button class="tab" role="tab" data-tab="prices">Ceny a akce</button>
+      <button class="tab" role="tab" data-tab="qa">Kontrola receptů</button>
+      <button class="tab" role="tab" data-tab="settings">Nastavení</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div id="global-notice"></div>
+
+  <!-- (1) Přehled -->
+  <section class="panel active" id="panel-overview" role="tabpanel">
+    <div class="grid cols-4" style="margin-bottom:16px">
+      <div class="card stat"><span class="value" id="ov-date">–</span><span class="label">Poslední běh</span></div>
+      <div class="card stat"><span class="value" id="ov-duration">–</span><span class="label">Trvání běhu</span></div>
+      <div class="card stat"><span class="value" id="ov-offers">–</span><span class="label">Nabídek celkem</span></div>
+      <div class="card stat"><span class="value" id="ov-deals">–</span><span class="label">Akcí v prices.json</span></div>
+      <div class="card stat"><span class="value" id="ov-priced">–</span><span class="label">Oceněných surovin</span></div>
+      <div class="card stat"><span class="value" id="ov-unmatched">–</span><span class="label">Ve frontě k přiřazení</span></div>
+    </div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="card-header">
+          <h2>Stav zdrojů</h2>
+          <span class="muted small" id="health-updated"></span>
+        </div>
+        <ul class="health-list" id="health-list"><li class="muted">Načítám…</li></ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Spuštění pipeline</h2>
+          <span id="run-status" class="badge">–</span>
+        </div>
+        <p class="muted small">Spustí workflow <code id="run-workflow-name">update.yml</code> přes GitHub API (<em>workflow_dispatch</em>). Vyžaduje token s oprávněním <em>actions: write</em>.</p>
+        <div class="row">
+          <button class="btn primary" id="btn-run">▶ Spustit teď</button>
+          <a class="btn text" id="link-actions" href="#" target="_blank" rel="noopener">Otevřít Actions ↗</a>
+        </div>
+        <div id="run-result" class="small" style="margin-top:8px"></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <div class="card-header">
+        <h2>Nabídky podle zdroje / obchodu</h2>
+        <span class="muted small">z posledního běhu</span>
+      </div>
+      <div class="table-wrap"><table id="per-source-table"><tbody><tr><td class="muted">Načítám…</td></tr></tbody></table></div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <div class="card-header">
+        <h2>Historie běhů</h2>
+        <div class="row">
+          <select class="input" id="hist-metric" style="width:auto">
+            <option value="offers">Nabídek</option>
+            <option value="deals">Akcí</option>
+            <option value="priced">Oceněných surovin</option>
+            <option value="unmatched">Nepřiřazených</option>
+            <option value="durationSec">Trvání (s)</option>
+          </select>
+        </div>
+      </div>
+      <div id="history-chart"><p class="muted">Načítám…</p></div>
+    </div>
+  </section>
+
+  <!-- (2) Fronta -->
+  <section class="panel" id="panel-queue" role="tabpanel">
+    <div class="notice info">
+      Přiřazení a ignorování se ukládá jako pravidlo do <code>data/mappings.json</code> v repozitáři.
+      <strong>Změny se projeví až v příštím běhu pipeline</strong> (denně, nebo tlačítkem „Spustit teď“ v Přehledu).
+    </div>
+    <div class="toolbar">
+      <input class="input" id="queue-filter" type="search" placeholder="Filtrovat frontu (název, obchod)…">
+      <select class="input" id="queue-status" style="width:auto">
+        <option value="all">Vše</option>
+        <option value="unmatched">Nepřiřazené</option>
+        <option value="review">Ke kontrole</option>
+      </select>
+      <select class="input" id="queue-store" style="width:auto"><option value="">Všechny obchody</option></select>
+      <label class="chip"><input type="checkbox" id="queue-show-done"> zobrazit vyřízené</label>
+      <span class="muted small" id="queue-info"></span>
+    </div>
+    <div id="queue-list"><p class="muted">Načítám…</p></div>
+    <div class="row" style="margin-top:8px"><button class="btn small" id="queue-more" hidden>Zobrazit dalších 50</button></div>
+
+    <div class="pending-bar" id="pending-bar" hidden>
+      <strong id="pending-count">0 změn</strong>
+      <span class="muted small" id="pending-detail"></span>
+      <span class="spacer" style="flex:1"></span>
+      <button class="btn small" id="btn-pending-clear">Zahodit</button>
+      <button class="btn primary" id="btn-pending-save">Uložit změny</button>
+    </div>
+  </section>
+
+  <!-- (3) Ceny a akce -->
+  <section class="panel" id="panel-prices" role="tabpanel">
+    <div class="card" style="margin-bottom:16px">
+      <div class="card-header">
+        <h2>Ceny za kg <span class="muted small" id="prices-meta"></span></h2>
+      </div>
+      <div class="toolbar">
+        <input class="input" id="price-filter" type="search" placeholder="Surovina (např. máslo, kuřecí prsa)…">
+        <div class="checks" id="price-stores"></div>
+        <label class="chip"><input type="checkbox" id="price-only-deals"> jen s akcí</label>
+      </div>
+      <div class="table-wrap"><table id="price-table"><thead></thead><tbody></tbody></table></div>
+      <div class="row" style="margin-top:8px"><button class="btn small" id="price-more" hidden>Zobrazit dalších 100</button><span class="muted small" id="price-info"></span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Akce <span class="muted small" id="deals-meta"></span></h2>
+        <label class="chip"><input type="checkbox" id="deals-only-active" checked> jen platné dnes</label>
+      </div>
+      <div class="table-wrap"><table id="deals-table"><thead>
+        <tr><th>Surovina</th><th>Obchod</th><th class="num">Kč/kg</th><th>Platnost</th><th>Popis</th><th></th></tr>
+      </thead><tbody></tbody></table></div>
+      <div class="row" style="margin-top:8px"><button class="btn small" id="deals-more" hidden>Zobrazit dalších 100</button><span class="muted small" id="deals-info"></span></div>
+    </div>
+  </section>
+
+  <!-- (5) Kontrola receptů -->
+  <section class="panel" id="panel-qa" role="tabpanel">
+    <div class="grid cols-2">
+      <div class="card"><div class="card-header"><h2>Zdroje receptů</h2><span class="muted small mono">data/qa/sources_report.md</span></div><div class="md" id="qa-sources"><p class="muted">Načítám…</p></div></div>
+      <div class="card"><div class="card-header"><h2>Statistika obsahu</h2><span class="muted small mono">data/qa/content_stats.md</span></div><div class="md" id="qa-stats"><p class="muted">Načítám…</p></div></div>
+    </div>
+  </section>
+
+  <!-- (4) Nastavení -->
+  <section class="panel" id="panel-settings" role="tabpanel">
+    <div class="grid cols-2">
+      <div class="card">
+        <h2>GitHub</h2>
+        <p class="muted small">Token se ukládá <strong>jen v tomto prohlížeči</strong> (localStorage) a posílá se výhradně na <code>api.github.com</code>. Postup vytvoření tokenu je v <a href="README.md" target="_blank" rel="noopener">README</a>.</p>
+        <div class="field"><label for="set-token">Fine-grained PAT (contents: write, actions: write)</label>
+          <div class="row"><input class="input" id="set-token" type="password" autocomplete="off" placeholder="github_pat_…" style="flex:1"><button class="btn small" id="btn-token-show" type="button">👁</button></div></div>
+        <div class="row">
+          <div class="field" style="flex:1"><label for="set-owner">Vlastník (owner)</label><input class="input" id="set-owner" placeholder="stanislavmudra-hue"></div>
+          <div class="field" style="flex:1"><label for="set-repo">Repozitář</label><input class="input" id="set-repo" placeholder="vareska-data"></div>
+        </div>
+        <div class="row">
+          <div class="field" style="flex:1"><label for="set-branch">Větev</label><input class="input" id="set-branch" placeholder="main"></div>
+          <div class="field" style="flex:1"><label for="set-workflow">Workflow (soubor v .github/workflows)</label><input class="input" id="set-workflow" placeholder="update.yml"></div>
+        </div>
+        <div class="field"><label for="set-mappings">Cesta k mappings.json</label><input class="input" id="set-mappings" placeholder="data/mappings.json"></div>
+        <div class="row">
+          <button class="btn primary" id="btn-settings-save">Uložit nastavení</button>
+          <button class="btn" id="btn-settings-test">Otestovat připojení</button>
+          <button class="btn danger" id="btn-token-forget">Zapomenout token</button>
+        </div>
+        <div id="settings-result" style="margin-top:12px"></div>
+      </div>
+      <div class="card">
+        <h2>Diagnostika dat</h2>
+        <p class="muted small">Které soubory se podařilo načíst (relativně k <code>docs/</code>).</p>
+        <ul class="health-list" id="data-diag"></ul>
+        <p class="muted small" style="margin-top:12px">Lokální spuštění: <code>cd docs &amp;&amp; python -m http.server 8000</code> → <code>http://localhost:8000/admin/</code></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>Vařeška admin · data: <a href="../prices.json">prices.json</a> · <a href="https://github.com/stanislavmudra-hue/vareska-data" target="_blank" rel="noopener">vareska-data</a></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="admin.js"></script>
+</body>
+</html>
