@@ -1,0 +1,25 @@
+{
+ "_doc": [
+  "Learned mapping rules, applied by pipeline/mapper.py BEFORE the scorer (first match wins).",
+  "pattern: matched against the FOLDED title (lowercase, no diacritics, punctuation -> space).",
+  "  plain text  -> whole-word match of the folded pattern ('pro psy' matches 'konzerva pro psy s hovezim')",
+  "  'sub:...'   -> raw substring match of the folded pattern",
+  "  're:...'    -> regular expression (case-insensitive) on the folded title",
+  "store: '*' for every store or one of albert|lidl|kaufland|tesco|billa|penny|globus.",
+  "ingredientId: an id from catalog/ingredients.json, or 'ignore' to drop the offer.",
+  "note: free text (why the rule exists). The review panel appends rules here."
+ ],
+ "rules": [
+  {"pattern": "pro psy", "store": "*", "ingredientId": "ignore", "note": "pet food"},
+  {"pattern": "pro kocky", "store": "*", "ingredientId": "ignore", "note": "pet food"},
+  {"pattern": "re:\\b(granule|kapsicky|kapsicka)\\b.*\\b(pes|psy|kocka|kocky|kocek)\\b", "store": "*", "ingredientId": "ignore", "note": "pet food"},
+  {"pattern": "re:\\bkrmivo\\b", "store": "*", "ingredientId": "ignore", "note": "pet food"},
+  {"pattern": "re:\\b(praci|prasek na prani|avivaz|jar|myci|cistic|cistici|toaletni papir|kapesnicky|pleny|plenky|sampon|sprchovy gel|deodorant|zubni pasta)\\b", "store": "*", "ingredientId": "ignore", "note": "drugstore"},
+  {"pattern": "pomazankove maslo", "store": "*", "ingredientId": "ignore", "note": "spread, not butter and not in the catalog"},
+  {"pattern": "re:\\bvejce\\b.*\\bm\\b|\\bvejce\\b.*\\bl\\b|\\bvajicka\\b", "store": "*", "ingredientId": "vejce", "note": "hen eggs of any size class"},
+  {"pattern": "kure bez drobu", "store": "*", "ingredientId": "kure_cele", "note": "whole chicken without giblets"},
+  {"pattern": "re:\\bkure\\b.*\\bchlazene\\b", "store": "*", "ingredientId": "kure_cele", "note": "whole chilled chicken"},
+  {"pattern": "hovezi zadni", "store": "*", "ingredientId": "hovezi_zadni", "note": "beef round"},
+  {"pattern": "cottage", "store": "*", "ingredientId": "ignore", "note": "cottage cheese is not in the catalog"}
+ ]
+}
