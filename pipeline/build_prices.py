@@ -389,7 +389,9 @@ def build_table(rows: list[Row], today: dt.date, previous: dict | None,
         seen_keys: set[tuple] = set()
         uniq: list[dict] = []
         for d in sorted(deals_by_pair[key], key=lambda x: (x["czkPerKg"], x["validTo"], x["title"])):
-            k = (d["czkPerKg"], d["validFrom"], d["validTo"], d["title"])
+            # Same product (title) valid to the same day from two sources/prices is one deal:
+            # keep the cheapest (rows are sorted by price asc), regardless of validFrom.
+            k = (d["title"].strip().casefold(), d["validTo"])
             if k in seen_keys:
                 continue
             seen_keys.add(k)
