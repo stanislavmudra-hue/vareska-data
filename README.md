@@ -1,6 +1,6 @@
 # vareska-data
 
-Datový repozitář aplikace **Vařeška** (Flutter, `C:\AI\Jídlo`). Každý den stáhne akční
+Datový repozitář aplikace **Vareska** (Flutter, `C:\AI\Jídlo`). Každý den stáhne akční
 nabídky českých řetězců (Albert, Lidl, Kaufland, Tesco, Billa, Penny, Globus), přiřadí je
 k surovinám z katalogu aplikace a publikuje cenovou tabulku `prices.json`, kterou aplikace
 stahuje přes GitHub Pages:

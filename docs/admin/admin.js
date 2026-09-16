@@ -1,4 +1,4 @@
-/* Vařeška admin panel – vanilla JS, no build step.
+/* Vareska admin panel – vanilla JS, no build step.
  * Reads the pipeline outputs published on GitHub Pages (docs/) and writes
  * mapping rules / triggers workflow runs through the GitHub REST API.
  */

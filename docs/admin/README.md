@@ -1,4 +1,4 @@
-# Vařeška – admin panel (docs/admin)
+# Vareska – admin panel (docs/admin)
 
 Statická stránka bez build kroku (vanilla JS), která zobrazuje výstupy pipeline
 cen a akcí a umožňuje ručně přiřazovat nepřiřazené produkty k surovinám.

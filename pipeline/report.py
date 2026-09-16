@@ -48,6 +48,7 @@ OFFERS_CANDIDATES = (
     os.path.join(OUT_DIR, "raw_offers.json"),
 )
 FETCH_REPORT_CANDIDATES = (
+    os.path.join(OUT_DIR, "health.json"),          # written by pipeline/providers/fetch.py
     os.path.join(OUT_DIR, "fetch_report.json"),
     os.path.join(OUT_DIR, "sources.json"),
     os.path.join(OUT_DIR, "fetch.json"),
@@ -278,6 +279,9 @@ def build_report(today: dt.date, matched_path: str = MATCHED_PATH,
     for src, n in offers.items():
         if n == 0:
             warnings.append(f"source '{src}' returned 0 offers")
+    for src, f in _fetch_sources(fetch_status).items():
+        if f.get("ok") is False:
+            warnings.append(f"source '{src}' failed: {f.get('error') or 'unknown error'}")
     if table["deals"] < MIN_DEALS_WARN:
         warnings.append(f"only {table['deals']} deals in prices.json")
     if table["ingredients"] < MIN_INGREDIENTS_WARN:
@@ -346,7 +350,13 @@ def health(report: dict, history: list[dict]) -> dict:
             last_ok = h.get("date")
             break
     fetch_sources = _fetch_sources(report.get("fetch"))
-    ids = set(report["offers"]["perSource"]) | set(report["matching"]["matchedPerSource"]) | set(fetch_sources)
+    # the leaflet-text providers label their offers "<name>-text" - merge the
+    # fetch status under that name so the panel shows one row per source
+    per_source = set(report["offers"]["perSource"]) | set(report["matching"]["matchedPerSource"])
+    for k in list(fetch_sources):
+        if k not in per_source and f"{k}-text" in per_source:
+            fetch_sources[f"{k}-text"] = fetch_sources.pop(k)
+    ids = per_source | set(fetch_sources)
     sources: dict[str, dict] = {}
     for src in sorted(ids):
         f = dict(fetch_sources.get(src) or {})
@@ -361,9 +371,11 @@ def health(report: dict, history: list[dict]) -> dict:
             "items": offers,
             "matched": report["matching"]["matchedPerSource"].get(src),
             "requests": f.get("requests"),
-            "durationSec": f.get("durationSec", f.get("duration_sec", f.get("duration"))),
+            "durationSec": f.get("durationSec", f.get("duration_sec", f.get("duration", f.get("elapsed_s")))),
             "error": f.get("error") or f.get("message") or None,
             "robots": f.get("robots"),
+            "notes": f.get("notes"),
+            "tier": f.get("tier"),
             "fetchedAt": f.get("fetchedAt", f.get("fetched_at", f.get("at"))),
         }
         if f.get("status") is not None:
