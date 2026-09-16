@@ -20,6 +20,7 @@
       <button class="tab" role="tab" data-tab="queue">Fronta <span class="badge" id="queue-count">–</span></button>
       <button class="tab" role="tab" data-tab="prices">Ceny a akce</button>
       <button class="tab" role="tab" data-tab="qa">Kontrola receptů</button>
+      <button class="tab" role="tab" data-tab="moderation">Moderace <span class="badge" id="mod-count">–</span></button>
       <button class="tab" role="tab" data-tab="settings">Nastavení</button>
     </nav>
   </div>
@@ -151,6 +152,63 @@
     </div>
   </section>
 
+  <!-- (6) Moderace (Supabase: komunitní recepty + hodnocení) -->
+  <section class="panel" id="panel-moderation" role="tabpanel">
+    <div id="mod-notice"></div>
+
+    <div class="card" id="mod-login-card" style="margin-bottom:16px">
+      <div class="card-header">
+        <h2>Přihlášení moderátora</h2>
+        <span class="badge" id="mod-session">nepřihlášen</span>
+      </div>
+      <p class="muted small">Stejný účet jako v aplikaci Vareska; práva moderátora přiděluje správce projektu (<code>supabase/seed_moderator.sql</code>). Přihlášení se ukládá jen v tomto prohlížeči.</p>
+      <form id="mod-login-form" autocomplete="on">
+        <div class="row">
+          <div class="field" style="flex:1"><label for="mod-email">E-mail</label><input class="input" id="mod-email" type="email" autocomplete="username" required></div>
+          <div class="field" style="flex:1"><label for="mod-password">Heslo</label><input class="input" id="mod-password" type="password" autocomplete="current-password" required></div>
+        </div>
+        <div class="row">
+          <button class="btn primary" id="btn-mod-login" type="submit">Přihlásit</button>
+          <button class="btn" id="btn-mod-logout" type="button" hidden>Odhlásit</button>
+          <span class="muted small" id="mod-login-result"></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="card" id="mod-queue-card" style="margin-bottom:16px">
+      <div class="card-header">
+        <h2>Komunitní recepty</h2>
+        <div class="row">
+          <select class="input" id="mod-status" style="width:auto">
+            <option value="pending">Čekající na schválení</option>
+            <option value="approved">Schválené</option>
+            <option value="rejected">Zamítnuté</option>
+            <option value="draft">Rozepsané</option>
+            <option value="all">Vše</option>
+          </select>
+          <button class="btn small" id="btn-mod-refresh" type="button">↻ Načíst</button>
+          <span class="muted small" id="mod-queue-info"></span>
+        </div>
+      </div>
+      <div id="mod-list"><p class="muted">Přihlaste se jako moderátor.</p></div>
+      <div class="row" style="margin-top:8px"><button class="btn small" id="mod-more" type="button" hidden>Zobrazit dalších 20</button></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Hodnocení <span class="muted small">nejlépe hodnocené recepty (recipe_ratings_summary)</span></h2>
+        <div class="row">
+          <label class="chip"><input type="checkbox" id="mod-ratings-min3" checked> jen s ≥ 3 hodnoceními</label>
+          <button class="btn small" id="btn-mod-ratings" type="button">↻ Načíst</button>
+          <span class="muted small" id="mod-ratings-info"></span>
+        </div>
+      </div>
+      <div class="table-wrap"><table id="mod-ratings-table"><thead>
+        <tr><th>#</th><th>Recept</th><th class="num">Hodnocení</th><th class="num">Chuť</th><th class="num">Náročnost</th><th class="num">Uvařím znovu</th><th>Aktualizováno</th></tr>
+      </thead><tbody><tr><td class="muted" colspan="7">Zatím nenačteno.</td></tr></tbody></table></div>
+    </div>
+  </section>
+
   <!-- (4) Nastavení -->
   <section class="panel" id="panel-settings" role="tabpanel">
     <div class="grid cols-2">
@@ -188,6 +246,9 @@
 <footer>Vareska admin · data: <a href="../prices.json">prices.json</a> · <a href="https://github.com/stanislavmudra-hue/vareska-data" target="_blank" rel="noopener">vareska-data</a></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" crossorigin="anonymous"></script>
+<script src="config.js"></script>
 <script src="admin.js"></script>
+<script src="moderation.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Makefile-style runner for the price pipeline.
 
-    python run_all.py                 # fetch -> mapper -> build -> validate -> report
+    python run_all.py                 # fetch -> mapper -> build -> ratings -> validate -> report
     python run_all.py --skip fetch    # reuse out/offers.json from a previous run
     python run_all.py --only build,validate,report
     python run_all.py --sync-catalog "C:/AI/Jídlo"   # copy ingredients + fallbacks from the app
@@ -28,11 +28,12 @@ import time
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PIPELINE = os.path.join(ROOT, "pipeline")
 
-STEP_ORDER = ["fetch", "mapper", "build", "validate", "report"]
+STEP_ORDER = ["fetch", "mapper", "build", "ratings", "validate", "report"]
 STEP_SCRIPTS = {
     "fetch": ["fetch.py", "fetch_all.py", "fetch_offers.py", "fetcher.py"],
     "mapper": ["mapper.py", "map_offers.py", "match.py", "matcher.py", "map.py"],
     "build": ["build_prices.py"],
+    "ratings": ["export_ratings.py"],   # Supabase recipe_ratings_summary -> docs/ratings.json (never fails the run)
     "validate": ["validate.py"],
     "report": ["report.py"],
 }
@@ -109,7 +110,7 @@ def main(argv: list[str] | None = None) -> int:
     for step in STEP_ORDER:
         if step not in steps or step in skip:
             continue
-        extra = ["--today", args.today] if args.today and step in ("build", "validate", "report") else []
+        extra = ["--today", args.today] if args.today and step in ("build", "ratings", "validate", "report") else []
         if step == "mapper":
             extra += ["--offers", os.path.join("out", "offers.json"), "--out-dir", "out"]
         if step == "report" and "fetch" in steps and "fetch" not in skip:

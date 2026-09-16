@@ -16,6 +16,7 @@ cen a akcí a umožňuje ručně přiřazovat nepřiřazené produkty k surovin�
 | **Fronta** | nepřiřazené a „ke kontrole“ položky, návrhy top‑3, vyhledávání v katalogu (folding + stemming shodné s aplikací), **Přiřadit / Ignorovat** → fronta změn → **Uložit N změn** (jeden commit do `data/mappings.json`) | `../data/unmatched.json`, katalog surovin |
 | **Ceny a akce** | prohlížeč `prices.json`: filtr podle suroviny, obchody, tabulka Kč/kg (nejnižší cena zeleně, aktivní akce označena ▲), seznam akcí s platností | `../prices.json` |
 | **Kontrola receptů** | zobrazí `docs/data/qa/sources_report.md` a `content_stats.md`, pokud existují (jinak placeholder) | `../data/qa/*.md` |
+| **Moderace** | přihlášení moderátora (e‑mail + heslo účtu z aplikace), fronta komunitních receptů (`user_recipes`, filtr podle stavu, náhled fotky, autor, suroviny a postup), tlačítka **Schválit / Zamítnout** (s poznámkou pro autora), sekce **Hodnocení** – nejlépe hodnocené recepty z `recipe_ratings_summary` | Supabase (`config.js`, `moderation.js`) |
 | **Nastavení** | GitHub token, owner/repo/větev/workflow, test připojení, diagnostika načtených souborů | `localStorage` |
 
 Změny uložené z fronty se **projeví až v příštím běhu pipeline** – panel jen zapíše
@@ -39,6 +40,28 @@ Token se ukládá pouze v `localStorage` prohlížeče a posílá se výhradně 
 7. Tlačítko **Zapomenout token** token z prohlížeče odstraní.
 
 Na sdíleném počítači token neukládejte; tento panel nemá žádný backend, kdo má token, může zapisovat do repozitáře.
+
+## Moderace (Supabase)
+
+Záložka **Moderace** je jediná část panelu, která mluví s backendem aplikace (Supabase, projekt v EU).
+Používá knihovnu `supabase-js` z CDN (`https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2`) a veřejný
+*anon* klíč z `docs/admin/config.js` (stejný soubor je i v `docs/auth/config.js`; oba musí zůstat shodné).
+Klíč je veřejný – co smí kdo dělat, určuje Row Level Security v databázi (viz `docs/BACKEND.md` v repozitáři aplikace).
+
+* **Přihlášení**: e‑mail + heslo účtu založeného v aplikaci Vareska. Práva moderátora přiděluje správce
+  projektu spuštěním `supabase/seed_moderator.sql` (tabulka `moderators`); panel volá `rpc('is_moderator')`
+  a bez práv frontu nezobrazí. Přihlášení se ukládá jen v tomto prohlížeči (`localStorage`, klíč `vareska.admin.auth`).
+* **Fronta**: `user_recipes` podle stavu (`pending` výchozí; `approved`, `rejected`, `draft`, vše), autor přes
+  `profiles_public` (embed `author:profiles_public(username, display_name)`, při `PGRST200` druhý dotaz),
+  fotka z veřejného bucketu `recipe-photos` (`/storage/v1/object/public/recipe-photos/<author>/<id>.jpg`),
+  názvy surovin z katalogu (`catalogById` z ostatních záložek), postup s minutami.
+* **Schválit** → `update({status:'approved'})` (server doplní `published_at`); **Zamítnout** → `update({status:'rejected',
+  moderation_note})` – poznámka je povinná (min. 3 znaky, max. 500), autor ji uvidí v aplikaci. Guard trigger
+  na serveru hlídá, že moderátor mění jen `status`/`moderation_note`.
+* **Hodnocení**: `recipe_ratings_summary` (čte i nepřihlášený) seřazené podle průměrné chuti a počtu hlasů,
+  přepínač „jen s ≥ 3 hodnoceními“; komunitní recepty (`u:<uuid>`) se doplní názvem, pokud jsou schválené.
+* **Degradace**: bez knihovny (offline / blokovaný CDN) se zobrazí upozornění; když migrace v Supabase ještě
+  neproběhla (HTTP 404 / `42P01`), panel napíše *Backend zatím není nasazen*; výpadek sítě → *Připojení není k dispozici*.
 
 ## Formáty dat, které panel čte
 
@@ -110,3 +133,5 @@ Volitelné Markdown zprávy z CI aplikace (nadpisy, seznamy, tabulky, kód). Bez
 ## Testy
 `python -m pytest tests/test_admin_panel.py` (nebo `python tests/test_admin_panel.py`) – kontrola syntaxe JS (`node --check`),
 párování HTML značek, existence odkazovaných souborů a shoda JS normalizéru s pravidly aplikace (přes `node`).
+`python -m pytest tests/test_moderation_auth.py` – totéž pro záložku Moderace (`moderation.js`, `config.js`) a stránky
+`docs/auth/` (klasifikace chyb, formát surovin, řazení hodnocení, parsování odkazu pro obnovení hesla).

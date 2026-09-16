@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Vareska – nové heslo</title>
+<link rel="stylesheet" href="auth.css">
+</head>
+<body>
+<main>
+  <div class="brand"><span class="logo" aria-hidden="true">🥄</span> Vareska</div>
+  <div class="card">
+    <h1>Nastavení nového hesla</h1>
+    <div id="notice"><div class="notice info">Ověřuji odkaz…</div></div>
+
+    <form id="reset-form" hidden autocomplete="off">
+      <p class="muted small">Zadejte nové heslo pro účet <strong id="who">–</strong>. Heslo musí mít alespoň 8 znaků.</p>
+      <div class="field">
+        <label for="password">Nové heslo</label>
+        <input class="input" id="password" type="password" autocomplete="new-password" minlength="8" required>
+      </div>
+      <div class="field">
+        <label for="password2">Nové heslo znovu</label>
+        <input class="input" id="password2" type="password" autocomplete="new-password" minlength="8" required>
+      </div>
+      <button class="btn primary" id="btn-submit" type="submit">Uložit nové heslo</button>
+      <p class="muted small" id="form-result" style="margin-top:10px"></p>
+    </form>
+
+    <div id="done" hidden>
+      <p>Heslo bylo změněno. Vraťte se do aplikace <strong>Vareska</strong> a přihlaste se novým heslem.</p>
+      <p class="muted small">Toto okno můžete zavřít.</p>
+    </div>
+
+    <p class="muted small" id="help" hidden>
+      Odkaz na obnovení hesla platí jen jednou a omezenou dobu. V aplikaci Vareska zvolte
+      <em>Přihlášení → Zapomenuté heslo</em> a nechte si poslat nový e-mail.
+    </p>
+  </div>
+</main>
+<footer>Vareska · <a href="index.html">účet</a> · <a href="../">vareska-data</a></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" crossorigin="anonymous"></script>
+<script src="config.js"></script>
+<script src="reset.js"></script>
+</body>
+</html>

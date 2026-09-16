@@ -18,6 +18,9 @@ Aplikace počítá cenu receptu a hledá akce. Bez aktuálních dat by používa
 |---|---|
 | `docs/prices.json` | publikovaná tabulka (schéma v1, viz níže) – to, co aplikace stahuje |
 | `docs/prices.schema.json` | JSON Schema tabulky |
+| `docs/ratings.json` | denní export průměrných hodnocení receptů ze Supabase (viz níže) |
+| `docs/auth/` | stránky účtu pro e‑mailové odkazy Supabase: `index.html` (Site URL), `reset.html` (nové heslo) |
+| `docs/privacy.html` | zásady ochrany soukromí aplikace (kopie `docs/PRIVACY.md` z repozitáře aplikace; odkaz při registraci); generuje `tool/build_privacy.py` |
 | `docs/admin/` | webový panel (stav zdrojů, historie běhů, fronta nepřiřazených položek) |
 | `docs/data/` | data pro panel: `health.json`, `history.json`, `report.json`, `unmatched.json`, `matched.json`, `catalog/ingredients.json` |
 | `docs/SOURCES.md`, `docs/kupi_terms.json` | rešerše zdrojů a hledané výrazy pro kupi.cz |
@@ -102,6 +105,40 @@ Kč/l ≈ Kč/kg, kusové zboží mapper přepočítá přes `unitGrams` katalog
 výčet obchodů, kladné ceny, ISO data, existenci id surovin v katalogu, `validFrom ≤ validTo`,
 neprošlé akce a limit 5 000 akcí.
 
+## Hodnocení receptů – `docs/ratings.json`
+
+Aplikace ukládá hodnocení (chuť, náročnost, „uvařím znovu“) do Supabase; veřejný pohled
+`recipe_ratings_summary` drží jen průměry bez osobních údajů. Krok `ratings`
+(`pipeline/export_ratings.py`, běží v workflow po `build`) ho jednou denně stáhne anon klíčem a zapíše:
+
+```json
+{"v": 1, "updated": "2026-09-16",
+ "ratings": {"cz_hovezi_gulas": {"n": 23, "taste": 4.6, "difficulty": 2.3, "cookAgain": 0.87},
+             "u:6f1c…":         {"n": 4,  "taste": 4.0, "difficulty": 3.5, "cookAgain": null}}}
+```
+
+* `n` = počet hodnocení, `taste`/`difficulty` = průměr 1–5 (jedno desetinné místo),
+  `cookAgain` = podíl 0–1 odpovědí „ano“ (`null`, když nikdo neodpověděl); `u:<uuid>` jsou komunitní recepty.
+* `--min-count N` (nebo `RATINGS_MIN_COUNT`) vynechá recepty s méně hlasy; výchozí 1 = vše (aplikace sama
+  zobrazuje veřejné hvězdičky až od 3 hlasů).
+* Krok **nikdy neshodí běh**: když tabulka ještě neexistuje (migrace neproběhla, HTTP 404), zapíše prázdnou
+  tabulku; při výpadku sítě nebo chybě 5xx ponechá předchozí soubor a jen vypíše varování.
+* Adresa a anon klíč Supabase jsou v `pipeline/export_ratings.py` (přepsatelné proměnnými `SUPABASE_URL`,
+  `SUPABASE_ANON_KEY`); stejný klíč používá `docs/admin/config.js` a `docs/auth/config.js`. Je veřejný – práva
+  určuje RLS v databázi.
+* Aplikace čte `https://okolnik.cz/vareska-data/ratings.json` stejně jako `prices.json` (ETag, 24 h cache).
+
+### Stránky účtu – `docs/auth/`
+
+Supabase Auth posílá uživatele z e‑mailů na statické stránky tohoto webu (nastavení v dashboardu:
+*Site URL* `https://okolnik.cz/vareska-data/auth/`, *Redirect URLs* `…/auth/reset.html` na obou hostech):
+
+* `auth/index.html` – rozcestník „Vareska – účet“; odkaz na obnovení hesla přesměruje na `reset.html`
+  (i když Supabase kvůli chybějící redirect URL pošle tokeny sem), potvrzení e‑mailu jen oznámí.
+* `auth/reset.html` + `reset.js` – přečte parametry odkazu (`#access_token…&type=recovery`, `?token_hash=…`
+  nebo `?code=…`), odstraní je z adresy, ověří je přes `supabase-js` a po zadání hesla 2× zavolá
+  `auth.updateUser({password})` (případně `PUT /auth/v1/user`). Texty česky, funguje na GitHub Pages bez buildu.
+
 ## Rozvrh
 
 Workflow `update-prices` běží denně v **02:00 UTC** (04:00 Praha v letním čase, 03:00 v zimním)
@@ -109,6 +146,7 @@ a ručně přes *Actions → update-prices → Run workflow* (volba `skip_fetch`
 nabídky). Letáky řetězců se mění ve středu (Albert, Billa, Penny, Globus, Kaufland, Tesco) a
 v pondělí + čtvrtek (Lidl); nové letáky jsou online obvykle den předem, takže ranní běh je stihne.
 
+Mezi `build` a `validate` běží krok `ratings` (export hodnocení, viz výše).
 Po úspěšném běhu workflow commituje `docs/**` a `out/**` (`chore: prices YYYY-MM-DD`), pokud se
 něco změnilo. Když validace selže, nic se necommituje a běh je červený; report a panel se přesto
 zapíší (krok *Report* běží vždy), takže chybu uvidíte i v `docs/data/health.json` po dalším
