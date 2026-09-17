@@ -165,11 +165,25 @@
     }
   }
 
+  /** GoTrue answers `/authorize` for a disabled provider with a bare JSON 400
+   *  instead of redirecting back, so ask `/auth/v1/settings` first. Returns
+   *  true/false, or null when the check itself failed (then just try). */
+  async function providerEnabled(name) {
+    try {
+      const res = await withTimeout(fetch(`${String(CFG.supabaseUrl).replace(/\/+$/, '')}/auth/v1/settings`, { headers: { apikey: CFG.supabaseAnonKey } }), 6000);
+      if (!res.ok) return null;
+      const json = await res.json();
+      const ext = json && json.external;
+      return ext && typeof ext[name] === 'boolean' ? ext[name] : null;
+    } catch (e) { return null; }
+  }
+
   async function loginGoogle() {
     const res = $('login-result');
     res.textContent = 'Přesměrovávám na Google…';
     $('btn-google').disabled = true;
     try {
+      if ((await providerEnabled('google')) === false) throw new Error('Unsupported provider: provider is not enabled');
       await q(state.sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: pageUrl() } }));
       // The browser is navigating away; nothing more to do here.
     } catch (e) {
