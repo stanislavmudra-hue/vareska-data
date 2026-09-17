@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Vareska – smazání účtu</title>
+<link rel="stylesheet" href="auth.css">
+<style>
+  .btn.danger { background: var(--err); color: #fff; border-color: transparent; width: 100%; }
+  .btn.google { width: 100%; }
+  .btn.google .g { font-weight: 700; color: #4285f4; }
+  .divider { display: flex; align-items: center; gap: 10px; color: var(--text-2); font-size: 13px; margin: 14px 0; }
+  .divider::before, .divider::after { content: ""; flex: 1; border-top: 1px solid var(--border); }
+  h2 { font-size: 16px; margin: 18px 0 6px; font-weight: 600; }
+  ul.plain { margin: 0 0 10px; padding-left: 20px; }
+  .actions { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+  .linkbtn { background: none; border: 0; padding: 0; color: var(--primary); cursor: pointer; text-decoration: underline; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><span class="logo" aria-hidden="true">🥄</span> Vareska – účet</div>
+  <div class="card">
+    <h1>Smazání účtu Vareska</h1>
+    <div id="notice"></div>
+
+    <p>Nejrychlejší cesta je přímo v aplikaci: <em>Nastavení → Účet → Smazat účet</em>.
+      Účet, e‑mail, uživatelské jméno, všechna hodnocení, vlastní recepty i fotky se smažou okamžitě;
+      ze záloh zmizí do 30 dnů.</p>
+    <p class="muted small">Pokud už aplikaci nemáte nainstalovanou, můžete účet smazat i zde: přihlaste se a potvrďte smazání.</p>
+
+    <h2>Smazat účet přes web</h2>
+
+    <!-- Step 1: sign in -->
+    <form id="login-form" autocomplete="on">
+      <div class="field">
+        <label for="email">E‑mail</label>
+        <input class="input" id="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="password">Heslo</label>
+        <input class="input" id="password" type="password" autocomplete="current-password" required>
+      </div>
+      <button class="btn primary" id="btn-login" type="submit">Přihlásit se</button>
+      <div class="divider">nebo</div>
+      <button class="btn google" id="btn-google" type="button"><span class="g">G</span> Přihlásit přes Google</button>
+      <p class="muted small" id="login-result" style="margin-top:10px"></p>
+    </form>
+
+    <!-- Step 2: what will be deleted -->
+    <div id="confirm" hidden>
+      <p>Přihlášen(a) jako <strong id="who">–</strong>.</p>
+      <p>Smazáním účtu se <strong>nevratně</strong> odstraní:</p>
+      <ul class="plain">
+        <li>účet, e‑mail a uživatelské jméno,</li>
+        <li>všechna vaše hodnocení receptů,</li>
+        <li>vaše vlastní recepty včetně těch schválených,</li>
+        <li>nahrané fotky.</li>
+      </ul>
+      <p class="muted small">Recepty a poznámky uložené jen v telefonu (bez účtu) zůstanou v aplikaci.</p>
+      <div class="actions">
+        <button class="btn danger" id="btn-delete" type="button">Smazat účet</button>
+        <button class="linkbtn" id="btn-logout" type="button">Odhlásit se bez smazání</button>
+      </div>
+    </div>
+
+    <!-- Step 2b: final confirmation -->
+    <div id="confirm2" hidden>
+      <div class="notice warn">Opravdu chcete účet <strong id="who2">–</strong> smazat? Tuto akci nelze vzít zpět.</div>
+      <div class="actions">
+        <button class="btn danger" id="btn-delete-final" type="button">Ano, smazat účet natrvalo</button>
+        <button class="btn" id="btn-cancel" type="button">Zpět</button>
+      </div>
+      <p class="muted small" id="delete-result" style="margin-top:10px"></p>
+    </div>
+
+    <!-- Step 3: done -->
+    <div id="done" hidden>
+      <p>Účet byl smazán. Děkujeme, že jste Varesku používali.</p>
+      <p class="muted small">Ze záloh data zmizí do 30 dnů. Toto okno můžete zavřít.</p>
+    </div>
+
+    <h2>Nemůžete se přihlásit?</h2>
+    <p>Napište z e‑mailu účtu na <a href="mailto:stamu.apps@gmail.com?subject=Vareska%20%E2%80%93%20smaz%C3%A1n%C3%AD%20%C3%BA%C4%8Dtu">stamu.apps@gmail.com</a>,
+      účet smažeme do 30 dnů.</p>
+
+    <h2>Které údaje lze smazat bez smazání účtu</h2>
+    <p class="muted small">Jednotlivá hodnocení i vlastní recepty můžete kdykoli smazat přímo v aplikaci
+      (hodnocení u daného receptu, recepty v sekci <em>Od uživatelů → Moje recepty</em>). Uživatelské jméno lze změnit v <em>Nastavení → Účet</em>.
+      Podrobnosti najdete v <a href="../privacy.html">zásadách ochrany soukromí</a>.</p>
+  </div>
+</main>
+<footer>Vareska · <a href="index.html">účet</a> · <a href="../privacy.html">soukromí</a> · <a href="../">vareska-data</a></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" crossorigin="anonymous"></script>
+<script src="config.js"></script>
+<script src="delete.js"></script>
+</body>
+</html>

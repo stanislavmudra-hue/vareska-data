@@ -19,7 +19,7 @@ Aplikace počítá cenu receptu a hledá akce. Bez aktuálních dat by používa
 | `docs/prices.json` | publikovaná tabulka (schéma v1, viz níže) – to, co aplikace stahuje |
 | `docs/prices.schema.json` | JSON Schema tabulky |
 | `docs/ratings.json` | denní export průměrných hodnocení receptů ze Supabase (viz níže) |
-| `docs/auth/` | stránky účtu pro e‑mailové odkazy Supabase: `index.html` (Site URL), `reset.html` (nové heslo) |
+| `docs/auth/` | stránky účtu pro e‑mailové odkazy Supabase: `index.html` (Site URL), `reset.html` (nové heslo), `delete.html` (smazání účtu – URL pro Play Data safety) |
 | `docs/privacy.html` | zásady ochrany soukromí aplikace (kopie `docs/PRIVACY.md` z repozitáře aplikace; odkaz při registraci); generuje `tool/build_privacy.py` |
 | `docs/admin/` | webový panel (stav zdrojů, historie běhů, fronta nepřiřazených položek) |
 | `docs/data/` | data pro panel: `health.json`, `history.json`, `report.json`, `unmatched.json`, `matched.json`, `catalog/ingredients.json` |
@@ -138,6 +138,11 @@ Supabase Auth posílá uživatele z e‑mailů na statické stránky tohoto webu
 * `auth/reset.html` + `reset.js` – přečte parametry odkazu (`#access_token…&type=recovery`, `?token_hash=…`
   nebo `?code=…`), odstraní je z adresy, ověří je přes `supabase-js` a po zadání hesla 2× zavolá
   `auth.updateUser({password})` (případně `PUT /auth/v1/user`). Texty česky, funguje na GitHub Pages bez buildu.
+* `auth/delete.html` + `delete.js` – veřejná stránka pro smazání účtu (`https://okolnik.cz/vareska-data/auth/delete.html`,
+  URL pro Play Console → Data safety). Přihlášení e‑mailem + heslem nebo `signInWithOAuth({provider:'google'})`
+  (vyžaduje zapnutý Google provider a `…/auth/delete.html` v *Redirect URLs*), výpis mazaných dat, potvrzení,
+  smazání vlastních fotek z bucketu, `rpc('delete_my_account')` a lokální odhlášení; session jen v `sessionStorage`.
+  Bez přihlášení: e‑mail na stamu.apps@gmail.com, smazání do 30 dnů.
 
 ## Rozvrh
 
