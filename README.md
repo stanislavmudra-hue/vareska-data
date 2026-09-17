@@ -21,7 +21,7 @@ Aplikace počítá cenu receptu a hledá akce. Bez aktuálních dat by používa
 | `docs/ratings.json` | denní export průměrných hodnocení receptů ze Supabase (viz níže) |
 | `docs/auth/` | stránky účtu pro e‑mailové odkazy Supabase: `index.html` (Site URL), `reset.html` (nové heslo), `delete.html` (smazání účtu – URL pro Play Data safety) |
 | `docs/privacy.html` | zásady ochrany soukromí aplikace (kopie `docs/PRIVACY.md` z repozitáře aplikace; odkaz při registraci); generuje `tool/build_privacy.py` |
-| `docs/admin/` | webový panel (stav zdrojů, historie běhů, fronta nepřiřazených položek) |
+| `docs/admin/` | webový panel (stav zdrojů, historie běhů, fronta nepřiřazených položek, moderace komunitních receptů a nahlášení) |
 | `docs/data/` | data pro panel: `health.json`, `history.json`, `report.json`, `unmatched.json`, `matched.json`, `catalog/ingredients.json` |
 | `docs/SOURCES.md`, `docs/kupi_terms.json` | rešerše zdrojů a hledané výrazy pro kupi.cz |
 | `catalog/ingredients.json` | kopie katalogu surovin z aplikace (`assets/data/ingredients.json`) |
@@ -208,6 +208,12 @@ Statická stránka bez backendu (`docs/admin/index.html`), čte:
 | `docs/data/matched.json` | ořezaný seznam přiřazených řádků (kontrola, co se k čemu přiřadilo) |
 | `docs/data/report.json` | plný report běhu včetně seznamu přenesených (stale) hodnot |
 | `docs/data/catalog/ingredients.json` | katalog pro našeptávač surovin |
+
+Záložky **Moderace** a **Nahlášení** mluví se Supabase (`docs/admin/config.js`, veřejný anon klíč; práva určuje RLS):
+fronta komunitních receptů (schválit / zamítnout / Ověřeno), nahlášení z aplikace (zamítnout / vyřešit / skrýt recept /
+zablokovat účet) a hledání účtů. Vyžadují účet ze seznamu `moderators`; nahlášení, zákazy a Ověřeno navíc migraci
+`0002_reports_moderation.sql` v repozitáři aplikace – bez ní panel napíše *Migrace 0002 není spuštěna*.
+Podrobnosti v [docs/admin/README.md](docs/admin/README.md).
 
 Ruční přiřazení z panelu se ukládají do `data/mappings.json` (přes GitHub API s tokenem
 uživatele); mapper je při dalším běhu použije přednostně. Panel funguje i offline nad lokální

@@ -150,6 +150,9 @@ class ModerationTabTests(unittest.TestCase):
         src, ids = check_html(self, os.path.join(ADMIN, "index.html"))
         self.assertIn('data-tab="moderation"', src)
         self.assertIn('id="panel-moderation"', src)
+        self.assertIn('data-tab="reports"', src)
+        self.assertIn('id="panel-reports"', src)
+        self.assertIn('id="rep-count"', src)
         self.assertIn('<script src="' + CDN + '"', src)
         self.assertIn('<script src="config.js">', src)
         self.assertIn('<script src="moderation.js">', src)
@@ -167,7 +170,11 @@ class ModerationTabTests(unittest.TestCase):
         src = read(os.path.join(ADMIN, "moderation.js"))
         for needle in ("from('user_recipes')", "rpc('is_moderator')", "from('recipe_ratings_summary')",
                        "profiles_public", "status: 'approved'", "status: 'rejected'", "moderation_note",
-                       "signInWithPassword", "Připojení není k dispozici"):
+                       "signInWithPassword", "Připojení není k dispozici",
+                       # migration 0002 (BACKEND.md §4.10): reports, bans, verified badge, counts
+                       "rpc('reports_overview'", "rpc('resolve_report'", "rpc('moderation_counts'",
+                       "rpc('ban_user'", "rpc('unban_user'", "rpc('set_recipe_verified'", "rpc('search_profiles'",
+                       "Migrace 0002 není spuštěna", "0002_reports_moderation.sql"):
             self.assertIn(needle, src, needle)
         self.assertNotIn("service_role", src)
         insecure = set(re.findall(r"http://[\w.]+", src))
@@ -219,6 +226,11 @@ class NodeTests(unittest.TestCase):
     def test_js_syntax(self):
         for f in self.FILES:
             subprocess.run([NODE, "--check", f], check=True)
+
+    def test_js_helpers_script(self):
+        script = os.path.join(ROOT, "tests", "moderation_helpers.test.js")
+        r = subprocess.run([NODE, script], capture_output=True, text=True, encoding="utf-8", check=True)
+        self.assertIn("checks ok", r.stdout)
 
     def test_js_behaviour(self):
         harness = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_moderation_harness.js")

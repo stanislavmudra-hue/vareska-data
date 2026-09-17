@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
-<title>Vareska – správa cen a akcí</title>
+<title>Vareska – správa cen, akcí a moderace</title>
 <link rel="stylesheet" href="admin.css">
 </head>
 <body>
@@ -21,6 +21,7 @@
       <button class="tab" role="tab" data-tab="prices">Ceny a akce</button>
       <button class="tab" role="tab" data-tab="qa">Kontrola receptů</button>
       <button class="tab" role="tab" data-tab="moderation">Moderace <span class="badge" id="mod-count">–</span></button>
+      <button class="tab" role="tab" data-tab="reports">Nahlášení <span class="badge" id="rep-count">–</span></button>
       <button class="tab" role="tab" data-tab="settings">Nastavení</button>
     </nav>
   </div>
@@ -206,6 +207,48 @@
       <div class="table-wrap"><table id="mod-ratings-table"><thead>
         <tr><th>#</th><th>Recept</th><th class="num">Hodnocení</th><th class="num">Chuť</th><th class="num">Náročnost</th><th class="num">Uvařím znovu</th><th>Aktualizováno</th></tr>
       </thead><tbody><tr><td class="muted" colspan="7">Zatím nenačteno.</td></tr></tbody></table></div>
+    </div>
+  </section>
+
+  <!-- (7) Nahlášení (Supabase, migrace 0002: reports_overview / resolve_report / ban_user / search_profiles) -->
+  <section class="panel" id="panel-reports" role="tabpanel">
+    <div id="rep-notice"></div>
+    <div class="notice info">
+      Nahlášení z aplikace (recepty, uživatelé, vestavěné recepty) seskupená podle cíle. Přihlášení je společné se záložkou
+      <a href="#moderation">Moderace</a>. <strong>Zamítnout</strong> = nahlášení je neoprávněné, obsah zůstává;
+      <strong>Vyřešit</strong> = vyřízeno (poznámka jen pro moderátory); <strong>Skrýt recept</strong> = recept se zamítne
+      (autor uvidí poznámku) a nahlášení se uzavřou; <strong>Zablokovat</strong> = omezení účtu (autor nemůže odesílat recepty,
+      jeho schválené recepty se v aplikaci skryjí, čekající se zamítnou). Každá akce uzavře všechna otevřená nahlášení daného cíle.
+    </div>
+
+    <div class="card" id="rep-list-card" style="margin-bottom:16px">
+      <div class="card-header">
+        <h2>Nahlášení</h2>
+        <div class="row">
+          <select class="input" id="rep-status" style="width:auto">
+            <option value="open">Otevřená</option>
+            <option value="resolved">Vyřešená</option>
+            <option value="dismissed">Zamítnutá</option>
+          </select>
+          <button class="btn small" id="btn-rep-refresh" type="button">↻ Načíst</button>
+          <span class="muted small" id="rep-info"></span>
+        </div>
+      </div>
+      <div id="rep-list"><p class="muted">Přihlaste se jako moderátor v záložce <a href="#moderation">Moderace</a>.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Uživatelé <span class="muted small">omezení účtů (search_profiles / ban_user)</span></h2>
+        <form id="rep-users-form" class="row" autocomplete="off">
+          <input class="input" id="rep-users-query" type="search" placeholder="uživatelské jméno, e-mail nebo id (prázdné = nejnovější účty)" style="min-width:280px">
+          <button class="btn small" type="submit">Hledat</button>
+          <span class="muted small" id="rep-users-info"></span>
+        </form>
+      </div>
+      <div class="table-wrap"><table id="rep-users-table"><thead>
+        <tr><th>Účet</th><th>Založen</th><th class="num">Recepty (schválené / čekající)</th><th>Stav</th><th>Důvod omezení</th><th></th></tr>
+      </thead><tbody><tr><td class="muted" colspan="6">Zadejte uživatelské jméno, e-mail nebo id; prázdné hledání vypíše nejnovější účty.</td></tr></tbody></table></div>
     </div>
   </section>
 

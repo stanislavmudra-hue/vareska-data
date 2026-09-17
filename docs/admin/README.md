@@ -16,7 +16,8 @@ cen a akcí a umožňuje ručně přiřazovat nepřiřazené produkty k surovin�
 | **Fronta** | nepřiřazené a „ke kontrole“ položky, návrhy top‑3, vyhledávání v katalogu (folding + stemming shodné s aplikací), **Přiřadit / Ignorovat** → fronta změn → **Uložit N změn** (jeden commit do `data/mappings.json`) | `../data/unmatched.json`, katalog surovin |
 | **Ceny a akce** | prohlížeč `prices.json`: filtr podle suroviny, obchody, tabulka Kč/kg (nejnižší cena zeleně, aktivní akce označena ▲), seznam akcí s platností | `../prices.json` |
 | **Kontrola receptů** | zobrazí `docs/data/qa/sources_report.md` a `content_stats.md`, pokud existují (jinak placeholder) | `../data/qa/*.md` |
-| **Moderace** | přihlášení moderátora (e‑mail + heslo účtu z aplikace), fronta komunitních receptů (`user_recipes`, filtr podle stavu, náhled fotky, autor, suroviny a postup), tlačítka **Schválit / Zamítnout** (s poznámkou pro autora), sekce **Hodnocení** – nejlépe hodnocené recepty z `recipe_ratings_summary` | Supabase (`config.js`, `moderation.js`) |
+| **Moderace** | přihlášení moderátora (e‑mail + heslo účtu z aplikace), fronta komunitních receptů (`user_recipes`, filtr podle stavu, náhled fotky, autor, suroviny a postup), tlačítka **Schválit / Zamítnout** (s poznámkou pro autora), přepínač **Ověřeno** u schválených receptů, stav účtu autora + **Zablokovat / Odblokovat autora**, sekce **Hodnocení** – nejlépe hodnocené recepty z `recipe_ratings_summary` | Supabase (`config.js`, `moderation.js`) |
+| **Nahlášení** | nahlášení z aplikace seskupená podle cíle (recept / uživatel / vestavěný recept): důvody s počty, poslední poznámka, počet nahlašujících, náhled receptu; tlačítka **Zamítnout / Vyřešit / Skrýt recept / Zablokovat**; sekce **Uživatelé** – hledání účtů a omezení (ban) | Supabase, migrace 0002 (`moderation.js`) |
 | **Nastavení** | GitHub token, owner/repo/větev/workflow, test připojení, diagnostika načtených souborů | `localStorage` |
 
 Změny uložené z fronty se **projeví až v příštím běhu pipeline** – panel jen zapíše
@@ -60,8 +61,39 @@ Klíč je veřejný – co smí kdo dělat, určuje Row Level Security v databá
   na serveru hlídá, že moderátor mění jen `status`/`moderation_note`.
 * **Hodnocení**: `recipe_ratings_summary` (čte i nepřihlášený) seřazené podle průměrné chuti a počtu hlasů,
   přepínač „jen s ≥ 3 hodnoceními“; komunitní recepty (`u:<uuid>`) se doplní názvem, pokud jsou schválené.
+* **Ověřeno** (migrace 0002): u schváleného receptu přepínač 🛡 Ověřeno → `rpc('set_recipe_verified', {p_id, p_verified})`;
+  aplikace pak u receptu ukazuje štít. Značka se na serveru zruší, když recept přestane být schválený.
+* **Autor**: u každého receptu panel dohledá stav účtu autora (`rpc('search_profiles', {p_query: <id>})`, jen moderátor)
+  a nabídne **Zablokovat autora** (`rpc('ban_user', {p_user, p_reason})`, důvod povinný – autor ho uvidí v aplikaci;
+  server zároveň zamítne jeho čekající recepty a schválené skryje) nebo **Odblokovat** (`rpc('unban_user')`).
+* **Suroviny**: řádky s `ingredientId` se překládají katalogem; vlastní suroviny bez id (pole `name`) se vypíší tak, jak je autor napsal.
 * **Degradace**: bez knihovny (offline / blokovaný CDN) se zobrazí upozornění; když migrace v Supabase ještě
   neproběhla (HTTP 404 / `42P01`), panel napíše *Backend zatím není nasazen*; výpadek sítě → *Připojení není k dispozici*.
+  Když chybí jen migrace **0002** (rpc `moderation_counts`, `reports_overview`… → `PGRST202` / `42883` / 404), panel napíše
+  *Migrace 0002 není spuštěna*, skryje Ověřeno a zákazy a fronta receptů dál funguje jako dřív (počet čekajících se
+  spočítá dotazem `head`).
+
+## Nahlášení (Supabase, migrace 0002)
+
+Záložka **Nahlášení** sdílí přihlášení se záložkou Moderace a používá rpc z `docs/BACKEND.md` §4.10 (všechny jen pro
+účty v `moderators`):
+
+* **Odznak v záložkách**: `rpc('moderation_counts')` → `{pending_recipes, open_reports}` plní počty u záložek *Moderace* a *Nahlášení*.
+* **Seznam**: `rpc('reports_overview', {p_status})` (`open` výchozí; `resolved`, `dismissed`) – jeden řádek na nahlášený cíl:
+  typ cíle, název receptu / `@uživatel`, stav receptu, počet nahlášení (= počet nahlašujících, každý účet má na cíl nejvýš
+  jedno otevřené nahlášení), důvody s počty (`spam`, `offensive`, `wrong_content`, `copyright`, `dangerous`, `other`),
+  poslední poznámka nahlašujícího, první a poslední nahlášení. **Zobrazit recept** načte kartu receptu (stejnou jako ve
+  frontě, včetně Schválit / Zamítnout / Ověřeno) přímo pod nahlášením.
+* **Zamítnout** → `rpc('resolve_report', {p_id, p_status:'dismissed', p_note, p_whole_target:true})` – nahlášení bylo neoprávněné, obsah zůstává;
+  **Vyřešit** → totéž se stavem `resolved`; **Skrýt recept** → `update user_recipes {status:'rejected', moderation_note}`
+  (poznámka povinná, autor ji uvidí) a pak `resolve_report(resolved)`; **Zablokovat autora / uživatele** → `rpc('ban_user')`
+  (důvod povinný) a pak `resolve_report(resolved)`. Každá akce uzavře **všechna otevřená nahlášení daného cíle**
+  (`p_whole_target`). V seznamech *Vyřešená* / *Zamítnutá* je tlačítko **Znovu otevřít**.
+* **Uživatelé**: `rpc('search_profiles', {p_query})` – uživatelské jméno / zobrazované jméno (část), přesný e‑mail nebo id
+  (e‑mail se nikdy nevrací); prázdný dotaz = 50 nejnovějších účtů. Tabulka ukazuje datum založení, počty receptů
+  (schválené / čekající), stav (aktivní / omezen od…) a důvod; tlačítko **Zablokovat / Odblokovat**.
+* Chybové kódy z rpc (`not_moderator`, `report_not_found`, `not_approved`, `user_not_found`, `cannot_ban_self`,
+  `cannot_ban_moderator`, `status_not_allowed`…) panel překládá do češtiny (`RULE_TEXT` v `moderation.js`).
 
 ## Formáty dat, které panel čte
 
@@ -133,5 +165,7 @@ Volitelné Markdown zprávy z CI aplikace (nadpisy, seznamy, tabulky, kód). Bez
 ## Testy
 `python -m pytest tests/test_admin_panel.py` (nebo `python tests/test_admin_panel.py`) – kontrola syntaxe JS (`node --check`),
 párování HTML značek, existence odkazovaných souborů a shoda JS normalizéru s pravidly aplikace (přes `node`).
-`python -m pytest tests/test_moderation_auth.py` – totéž pro záložku Moderace (`moderation.js`, `config.js`) a stránky
+`python -m pytest tests/test_moderation_auth.py` – totéž pro záložky Moderace a Nahlášení (`moderation.js`, `config.js`) a stránky
 `docs/auth/` (klasifikace chyb, formát surovin, řazení hodnocení, parsování odkazu pro obnovení hesla).
+`node tests/moderation_helpers.test.js` – čisté pomocné funkce z `moderation.js` (`window.VareskaModeration`: klasifikace chyb
+včetně kódů z 0002, vlastní suroviny, souhrn důvodů nahlášení, normalizace řádků `reports_overview` a `moderation_counts`).
