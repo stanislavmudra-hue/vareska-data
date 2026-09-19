@@ -16,6 +16,12 @@ Outputs:
 * ``out/history.json`` - list, one entry per run date (same-day reruns replace),
 * ``docs/data/report.json``, ``history.json``, ``unmatched.json``, ``health.json``,
   ``matched.json`` (trimmed) - what the panel in ``docs/`` reads.
+
+Markets: ``--market sk`` uses the market's paths (``out/sk/…``,
+``docs/prices/sk.json``, panel data under ``docs/data/sk/``); the Czech market
+keeps the paths above. Every run also refreshes ``docs/data/markets.json`` -
+one row per market (currency, prices updated, ingredients, deals, sources
+ok/error) for the panel's market list.
 """
 from __future__ import annotations
 
@@ -36,7 +42,8 @@ from build_prices import (  # noqa: E402
     STORES, dump_json, find_catalog, is_promo, iter_items, load_json, parse_iso_date,
     prague_today,
 )
-from validate import validate_file  # noqa: E402
+from pipeline import markets  # noqa: E402
+from validate import table_version, validate_file  # noqa: E402
 
 REPORT_PATH = os.path.join(OUT_DIR, "report.json")
 HISTORY_PATH = os.path.join(OUT_DIR, "history.json")
@@ -85,10 +92,10 @@ def _list(obj: Any, *keys: str) -> list:
     return []
 
 
-def offers_per_source() -> tuple[dict[str, int], str | None]:
+def offers_per_source(offers_path: str | None = None) -> tuple[dict[str, int], str | None]:
     """Count raw offers per source from the fetch output (best effort)."""
     counts: dict[str, int] = defaultdict(int)
-    path = _first_existing(OFFERS_CANDIDATES)
+    path = _first_existing([offers_path] if offers_path else OFFERS_CANDIDATES)
     if path:
         raw = load_json(path, [])
         if isinstance(raw, dict) and not any(isinstance(raw.get(k), list) for k in ("offers", "items", "results")) \
@@ -109,7 +116,8 @@ def offers_per_source() -> tuple[dict[str, int], str | None]:
     return {}, None
 
 
-def matched_summary(matched_path: str) -> dict:
+def matched_summary(matched_path: str, stores: tuple[str, ...] = STORES,
+                    unmatched_path: str | None = None) -> dict:
     """Matched / review / unmatched / ignored rows from the mapper output.
 
     Accepts the embedded form (``review``/``unmatched`` lists next to ``items``),
@@ -123,9 +131,10 @@ def matched_summary(matched_path: str) -> dict:
         rest += [("review", it) for it in _list(raw, "review")]
         rest += [("unmatched", it) for it in _list(raw, "unmatched")]
     if not rest:
-        rest += [("review", it) for it in _list(load_json(os.path.join(OUT_DIR, "review.json"), []), "items", "review")]
+        out_dir = os.path.dirname(os.path.abspath(unmatched_path)) if unmatched_path else OUT_DIR
+        rest += [("review", it) for it in _list(load_json(os.path.join(out_dir, "review.json"), []), "items", "review")]
         rest += [("unmatched", it) for it in
-                 _list(load_json(os.path.join(OUT_DIR, "unmatched.json"), []), "items", "unmatched")]
+                 _list(load_json(unmatched_path or os.path.join(OUT_DIR, "unmatched.json"), []), "items", "unmatched")]
     by_status: dict[str, int] = defaultdict(int)
     matched_items: list[dict] = []
     review: list[dict] = []
@@ -155,8 +164,8 @@ def matched_summary(matched_path: str) -> dict:
     promo = 0
     for it in matched_items:
         per_source[_source_of(it)] += 1
-        st = str(it.get("store", "")).lower()
-        if st in STORES:
+        st = str(it.get("store", ""))
+        if st in stores:
             per_store[st] += 1
         if is_promo(it):
             promo += 1
@@ -172,7 +181,7 @@ def matched_summary(matched_path: str) -> dict:
         "ignored": ignored,
         "byStatus": dict(sorted(by_status.items())),
         "matchedPerSource": dict(sorted(per_source.items())),
-        "matchedPerStore": {s: per_store.get(s, 0) for s in STORES},
+        "matchedPerStore": {s: per_store.get(s, 0) for s in stores},
         "promoRows": promo,
         "mapperStats": stats if isinstance(stats, dict) else None,
         "_items": matched_items,
@@ -203,21 +212,24 @@ def _trim_item(it: dict) -> dict:
     return out
 
 
-def table_summary(prices_path: str) -> dict:
+def table_summary(prices_path: str, stores: tuple[str, ...] = STORES) -> dict:
     table = load_json(prices_path, None) or {}
-    prices = table.get("czkPerKg") or {}
+    prices = (table.get("perKg") if table_version(table) == 2 else table.get("czkPerKg")) or {}
     deals = table.get("deals") or []
-    per_store = {s: 0 for s in STORES}
+    per_store = {s: 0 for s in stores}
     for per in prices.values():
         for s in per:
             if s in per_store:
                 per_store[s] += 1
-    deals_per_store = {s: 0 for s in STORES}
+    deals_per_store = {s: 0 for s in stores}
     for d in deals:
         if d.get("store") in deals_per_store:
             deals_per_store[d["store"]] += 1
     return {
         "path": os.path.relpath(prices_path, REPO_ROOT),
+        "v": table_version(table) if table else None,
+        "market": table.get("market"),
+        "currency": table.get("currency"),
         "updated": table.get("updated"),
         "ingredients": len(prices),
         "pairs": sum(len(p) for p in prices.values()),
@@ -256,25 +268,37 @@ def _fetch_sources(fetch_status: Any) -> dict[str, dict]:
 def build_report(today: dt.date, matched_path: str = MATCHED_PATH,
                  prices_path: str = PRICES_PATH,
                  build_report_path: str = BUILD_REPORT_PATH,
-                 started_at: dt.datetime | None = None) -> tuple[dict, dict]:
+                 started_at: dt.datetime | None = None,
+                 market: str = markets.DEFAULT_MARKET,
+                 offers_path: str | None = None, health_path: str | None = None,
+                 prices_v2_path: str | None = None) -> tuple[dict, dict]:
+    mk = markets.get(market)
     now_utc = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
     duration = None
     if started_at is not None:
         if started_at.tzinfo is None:
             started_at = started_at.replace(tzinfo=dt.timezone.utc)
         duration = max(0, int((now_utc - started_at).total_seconds()))
-    offers, offers_path = offers_per_source()
-    m = matched_summary(matched_path)
+    offers, offers_path = offers_per_source(offers_path)
+    m = matched_summary(matched_path, mk.stores, os.path.join(os.path.dirname(os.path.abspath(matched_path)),
+                                                              "unmatched.json"))
     build = load_json(build_report_path, {}) or {}
-    table = table_summary(prices_path)
-    validation_errors = validate_file(prices_path, today=today, require_catalog=False)
-    fetch_status_path = _first_existing(FETCH_REPORT_CANDIDATES)
+    table = table_summary(prices_path, mk.stores)
+    validation_errors = validate_file(prices_path, today=today, require_catalog=False, market=mk.code)
+    if prices_v2_path and os.path.abspath(prices_v2_path) != os.path.abspath(prices_path):
+        validation_errors += [f"{os.path.relpath(prices_v2_path, REPO_ROOT)}: {e}" for e in
+                              validate_file(prices_v2_path, today=today, require_catalog=False, market=mk.code)]
+    fetch_status_path = health_path if health_path and os.path.exists(health_path) else (
+        _first_existing(FETCH_REPORT_CANDIDATES) if mk.is_default else None)
     fetch_status = load_json(fetch_status_path, None) if fetch_status_path else None
 
     warnings: list[str] = []
+    not_fetched = set((fetch_status or {}).get("notFetched") or []) if isinstance(fetch_status, dict) else set()
     if not offers and offers_path is None:
         warnings.append("no fetch output found (out/offers.json) - offers per source unknown")
     for s in build.get("storesMissing") or []:
+        if s in not_fetched:
+            continue   # no provider for this chain yet - nothing to carry forward
         warnings.append(f"store '{s}' had no matched rows today (carry-forward only)")
     for src, n in offers.items():
         if n == 0:
@@ -282,9 +306,11 @@ def build_report(today: dt.date, matched_path: str = MATCHED_PATH,
     for src, f in _fetch_sources(fetch_status).items():
         if f.get("ok") is False:
             warnings.append(f"source '{src}' failed: {f.get('error') or 'unknown error'}")
-    if table["deals"] < MIN_DEALS_WARN:
+    # size thresholds apply to the Czech table; the other markets start small
+    # (one provider) and an empty table is a valid result for them
+    if mk.is_default and table["deals"] < MIN_DEALS_WARN:
         warnings.append(f"only {table['deals']} deals in prices.json")
-    if table["ingredients"] < MIN_INGREDIENTS_WARN:
+    if mk.is_default and table["ingredients"] < MIN_INGREDIENTS_WARN:
         warnings.append(f"only {table['ingredients']} ingredients priced")
     if build.get("droppedCount"):
         warnings.append(f"{build['droppedCount']} stale price(s) dropped (> 21 days)")
@@ -292,6 +318,8 @@ def build_report(today: dt.date, matched_path: str = MATCHED_PATH,
         warnings.append(f"validation failed with {len(validation_errors)} error(s)")
 
     report = {
+        "market": mk.code,
+        "currency": mk.currency,
         "date": today.isoformat(),
         "generatedAt": now_utc.isoformat().replace("+00:00", "Z"),
         "startedAt": started_at.isoformat().replace("+00:00", "Z") if started_at else None,
@@ -304,8 +332,10 @@ def build_report(today: dt.date, matched_path: str = MATCHED_PATH,
         "matching": {k: v for k, v in m.items() if not k.startswith("_")},
         "build": build,
         "prices": table,
+        "pricesV2Path": os.path.relpath(prices_v2_path, REPO_ROOT) if prices_v2_path else None,
         "fetch": fetch_status,
         "fetchPath": os.path.relpath(fetch_status_path, REPO_ROOT) if fetch_status_path else None,
+        "notFetched": (fetch_status or {}).get("notFetched") if isinstance(fetch_status, dict) else None,
     }
     return report, m
 
@@ -316,6 +346,7 @@ def append_history(report: dict, history_path: str = HISTORY_PATH) -> list[dict]
         history = []
     entry = {
         "date": report["date"],
+        "market": report.get("market", markets.DEFAULT_MARKET),
         "generatedAt": report["generatedAt"],
         "durationSec": report.get("durationSec"),
         "status": report["status"],
@@ -343,6 +374,7 @@ def append_history(report: dict, history_path: str = HISTORY_PATH) -> list[dict]
 
 def health(report: dict, history: list[dict]) -> dict:
     """Panel health document (docs/admin reads ``run`` + ``sources``)."""
+    mk = markets.get(report.get("market"))
     per_store = report["prices"]["perStore"]
     last_ok = None
     for h in reversed(history):
@@ -382,6 +414,8 @@ def health(report: dict, history: list[dict]) -> dict:
             entry["status"] = f["status"]
         sources[src] = entry
     return {
+        "market": mk.code,
+        "currency": mk.currency,
         "date": report["date"],
         "generatedAt": report["generatedAt"],
         "status": report["status"],
@@ -405,8 +439,10 @@ def health(report: dict, history: list[dict]) -> dict:
         "perStore": {s: {"priced": per_store.get(s, 0),
                          "deals": report["prices"]["dealsPerStore"].get(s, 0),
                          "rowsToday": (report["build"].get("rowsPerStore") or {}).get(s, 0),
-                         "missingToday": s in (report["build"].get("storesMissing") or [])}
-                     for s in STORES},
+                         "missingToday": s in (report["build"].get("storesMissing") or []),
+                         "notFetched": s in (report.get("notFetched") or [])}
+                     for s in mk.stores},
+        "notFetched": report.get("notFetched") or [],
         "stale": report["build"].get("staleCount", 0),
         "dropped": report["build"].get("droppedCount", 0),
         "warnings": report["warnings"],
@@ -454,13 +490,61 @@ def _panel_report(report: dict) -> dict:
     return out
 
 
-def write_all(today: dt.date | None = None, matched_path: str = MATCHED_PATH,
-              prices_path: str = PRICES_PATH, report_path: str = REPORT_PATH,
-              history_path: str = HISTORY_PATH, panel_dir: str = PANEL_DATA_DIR,
-              build_report_path: str = BUILD_REPORT_PATH,
-              started_at: dt.datetime | None = None, publish_catalog_copy: bool = True) -> dict:
+def markets_summary(panel_root: str = PANEL_DATA_DIR) -> dict:
+    """``docs/data/markets.json``: one row per market from the per-market
+    ``health.json`` files that exist (cz: ``docs/data/health.json``, others:
+    ``docs/data/<market>/health.json``)."""
+    rows: dict[str, dict] = {}
+    for code, mk in markets.MARKETS.items():
+        hp = os.path.join(panel_root if mk.is_default else os.path.join(panel_root, code), "health.json")
+        h = load_json(hp, None)
+        row: dict = {"label": mk.label, "currency": mk.currency, "lang": mk.lang, "stores": list(mk.stores),
+                     "prices": os.path.relpath(markets.paths(code)["prices"], DOCS_DIR).replace(os.sep, "/"),
+                     "panelDir": ("" if mk.is_default else code + "/")}
+        if isinstance(h, dict):
+            srcs = h.get("sources") or {}
+            row.update({
+                "date": h.get("date"), "ok": h.get("ok"), "status": h.get("status"),
+                "pricesUpdated": h.get("pricesUpdated"),
+                "priced": (h.get("run") or {}).get("priced"), "deals": (h.get("run") or {}).get("deals"),
+                "offers": (h.get("run") or {}).get("offers"),
+                "review": (h.get("run") or {}).get("review"), "unmatched": (h.get("run") or {}).get("unmatched"),
+                "sourcesOk": sum(1 for s in srcs.values() if s.get("ok")),
+                "sourcesError": sum(1 for s in srcs.values() if s.get("ok") is False and not s.get("skipped")),
+                "notFetched": h.get("notFetched") or [],
+                "warnings": len(h.get("warnings") or []),
+            })
+        else:
+            row.update({"date": None, "ok": None, "status": "missing"})
+        rows[code] = row
+    return {"v": 1, "generatedAt": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+            .replace("+00:00", "Z"), "markets": rows}
+
+
+def write_all(today: dt.date | None = None, matched_path: str | None = None,
+              prices_path: str | None = None, report_path: str | None = None,
+              history_path: str | None = None, panel_dir: str | None = None,
+              build_report_path: str | None = None,
+              started_at: dt.datetime | None = None, publish_catalog_copy: bool = True,
+              market: str = markets.DEFAULT_MARKET, offers_path: str | None = None,
+              health_path: str | None = None, prices_v2_path: str | None = None,
+              markets_summary_path: str | None = "") -> dict:
+    mk = markets.get(market)
+    mp = markets.paths(mk.code)
+    matched_path = matched_path or mp["matched"]
+    prices_path = prices_path or mp["prices_v1"] or mp["prices"]
+    if prices_v2_path is None and mk.is_default and prices_path == mp["prices_v1"]:
+        prices_v2_path = mp["prices"]
+    report_path = report_path or mp["report"]
+    history_path = history_path or mp["history"]
+    panel_dir = panel_dir or mp["panel_dir"]
+    build_report_path = build_report_path or mp["build_report"]
+    offers_path = offers_path or (None if mk.is_default else mp["offers"])
+    health_path = health_path or mp["health"]
     today = today or prague_today()
-    report, m = build_report(today, matched_path, prices_path, build_report_path, started_at)
+    report, m = build_report(today, matched_path, prices_path, build_report_path, started_at,
+                             market=mk.code, offers_path=offers_path, health_path=health_path,
+                             prices_v2_path=prices_v2_path)
     dump_json(report_path, report)
     history = append_history(report, history_path)
     dump_json(os.path.join(panel_dir, "report.json"), _panel_report(report))
@@ -478,17 +562,23 @@ def write_all(today: dt.date | None = None, matched_path: str = MATCHED_PATH,
         "total": len(m["_items"]),
         "items": [_trim_item(i) for i in m["_items"]][:PANEL_MATCHED_MAX],
     }, indent=None)
-    if publish_catalog_copy:
+    if publish_catalog_copy and mk.is_default:
         publish_catalog(panel_dir)
         publish_mappings(panel_dir)
+    if markets_summary_path == "":
+        markets_summary_path = os.path.join(PANEL_DATA_DIR, "markets.json") if panel_dir in (
+            PANEL_DATA_DIR, markets.paths(mk.code)["panel_dir"]) else None
+    if markets_summary_path:
+        dump_json(markets_summary_path, markets_summary(os.path.dirname(markets_summary_path)))
     return report
 
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Write out/report.json, out/history.json and docs/data/*")
+    ap.add_argument("--market", default=markets.DEFAULT_MARKET, help="cz | sk | pl | de | at")
     ap.add_argument("--today", default=None)
-    ap.add_argument("--matched", default=MATCHED_PATH)
-    ap.add_argument("--prices", default=PRICES_PATH)
+    ap.add_argument("--matched", default=None)
+    ap.add_argument("--prices", default=None)
     ap.add_argument("--started-at", default=None, help="ISO datetime (UTC) when the run started")
     args = ap.parse_args(argv)
     started = None
@@ -498,8 +588,8 @@ def main(argv: list[str] | None = None) -> int:
         except ValueError:
             started = None
     report = write_all(parse_iso_date(args.today) if args.today else None, args.matched,
-                       args.prices, started_at=started)
-    print(f"report: status={report['status']} offers={report['offers']['total']} "
+                       args.prices, started_at=started, market=args.market)
+    print(f"[{report['market']}] report: status={report['status']} offers={report['offers']['total']} "
           f"matched={report['matching']['matched']} review={report['matching']['review']} "
           f"unmatched={report['matching']['unmatched']} ingredients={report['prices']['ingredients']} "
           f"deals={report['prices']['deals']}")

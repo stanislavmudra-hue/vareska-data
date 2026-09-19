@@ -1,0 +1,139 @@
+{
+ "market": "at",
+ "currency": "EUR",
+ "date": "2026-09-19",
+ "generatedAt": "2026-09-19T19:19:53Z",
+ "status": "ok",
+ "ok": true,
+ "run": {
+  "date": "2026-09-19",
+  "startedAt": "2026-09-19T19:15:54Z",
+  "finishedAt": "2026-09-19T19:19:53Z",
+  "durationSec": 239,
+  "offers": 167,
+  "deals": 8,
+  "priced": 3,
+  "matched": 8,
+  "review": 31,
+  "unmatched": 121,
+  "ok": true
+ },
+ "lastSuccessfulRun": "2026-09-19",
+ "pricesUpdated": "2026-09-19",
+ "sources": {
+  "lidl_at": {
+   "label": "lidl_at",
+   "ok": true,
+   "skipped": false,
+   "items": 167,
+   "matched": 8,
+   "requests": 0,
+   "durationSec": 0.0,
+   "error": null,
+   "robots": null,
+   "notes": [
+    "17 categories, 167 products"
+   ],
+   "tier": "primary",
+   "fetchedAt": null
+  }
+ },
+ "perStore": {
+  "billa": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "spar": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "interspar": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "hofer": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "lidl": {
+   "priced": 3,
+   "deals": 8,
+   "rowsToday": 8,
+   "missingToday": false,
+   "notFetched": false
+  },
+  "penny": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "mpreis": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  }
+ },
+ "notFetched": [
+  "billa",
+  "spar",
+  "interspar",
+  "hofer",
+  "penny",
+  "mpreis"
+ ],
+ "stale": 0,
+ "dropped": 0,
+ "warnings": [],
+ "validation": {
+  "ok": true,
+  "errors": []
+ },
+ "recentRuns": [
+  {
+   "date": "2026-09-19",
+   "market": "at",
+   "generatedAt": "2026-09-19T19:19:53Z",
+   "durationSec": 239,
+   "status": "ok",
+   "ok": true,
+   "offers": 167,
+   "perSource": {
+    "lidl_at": 167
+   },
+   "matched": 8,
+   "review": 31,
+   "unmatched": 121,
+   "deals": 8,
+   "priced": 3,
+   "pairsPriced": 3,
+   "perStore": {
+    "billa": 0,
+    "spar": 0,
+    "interspar": 0,
+    "hofer": 0,
+    "lidl": 3,
+    "penny": 0,
+    "mpreis": 0
+   },
+   "stale": 0,
+   "dropped": 0,
+   "warnings": 0
+  }
+ ]
+}

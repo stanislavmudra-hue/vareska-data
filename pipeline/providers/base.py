@@ -13,19 +13,25 @@ import re
 from dataclasses import dataclass, field
 from typing import Any, Optional
 
-STORES = ('albert', 'lidl', 'kaufland', 'tesco', 'billa', 'penny', 'globus')
+from .. import markets
+
+# stores of the default (Czech) market; other markets: ``markets.stores_of(code)``
+STORES = markets.stores_of(markets.DEFAULT_MARKET)
 UNITS = ('kg', 'l', 'ks', 'g', 'ml')
 
 # Eggs are sold per piece; the app converts 10 pcs -> 0.55 kg (55 g per egg).
+# cs vejce/vajíčka, sk vajcia/vajíčka, pl jaja/jajka, de Eier.
 EGG_KG_PER_PIECE = 0.055
-_EGG_RE = re.compile(r'\b(vejce|vajec|vajic|vajíčk|vajick|egg)', re.IGNORECASE)
+_EGG_RE = re.compile(r'(?<![a-z])(vejce|vajec|vajic|vajíčk|vajick|vajcia|vajíčok|vajc|jaja|jajk|jajec|eier|egg)',
+                     re.IGNORECASE)
 
 
 @dataclass
 class Offer:
-    store: str                       # one of STORES
+    store: str                       # a store of ``market`` (markets.stores_of)
     title: str                       # product name as printed by the source
-    price_czk: float                 # price of one pack / one selling unit
+    price_czk: float                 # price of one pack / one selling unit in ``currency``
+                                     # (field name kept for the cz pipeline; see ``currency``)
     unit: Optional[str] = None       # 'kg' | 'l' | 'ks' | 'g' | 'ml'
     quantity: Optional[float] = None  # amount of ``unit`` the price refers to
     price_per_kg: Optional[float] = None  # CZK per kg (l treated as kg)
@@ -39,10 +45,16 @@ class Offer:
     original_price_czk: Optional[float] = None
     club: bool = False               # loyalty-card price
     is_promo: bool = True            # False for regular assortment prices
+    market: str = markets.DEFAULT_MARKET  # cz | sk | pl | de | at
+    currency: str = ''               # ISO 4217; defaults to the market currency
 
     def __post_init__(self) -> None:
-        if self.store not in STORES:
-            raise ValueError(f'unknown store {self.store!r}')
+        m = markets.get(self.market)
+        self.market = m.code
+        if not self.currency:
+            self.currency = m.currency
+        if self.store not in m.stores:
+            raise ValueError(f'unknown store {self.store!r} for market {m.code}')
         if self.unit is not None and self.unit not in UNITS:
             raise ValueError(f'unknown unit {self.unit!r}')
         if self.price_per_kg is None:
@@ -70,6 +82,7 @@ class Offer:
             'url': self.source_url,
             'category': category,
             'ingredientId': self.ingredient_id,
+            'perKg': self.price_per_kg,
         })
         return d
 
@@ -170,6 +183,123 @@ def parse_unit_price(text: Optional[str], title: str = '') -> Optional[float]:
     if unit.startswith('kus'):
         unit = 'ks'
     return compute_price_per_kg(price, unit, qty, title)
+
+
+# ---- multilingual pack / unit-price texts (Lidl sk/pl/de/at, ...) -----------
+# Piece words: cs ks/kus, sk kus/kusy/kusov, pl szt./sztuk, de St./Stk./Stück.
+_PIECE = r'ks|kus[a-zů]*|szt\.?|sztuk[a-z]*|stk\.?|st\.|stück|stueck|stuck'
+_ANY_UNIT = r'(kg|g|l|ml|cl|dl|' + _PIECE + r')'
+# Currency words that may follow a price: Kč, €, zł, EUR, PLN, CZK.
+_CURRENCY = r'(?:kč|kc|czk|€|eur|zł|zl|pln)?'
+# "1 kg = 174,75 Kč", "100 g = 0,16", "1 L = 13,32", "1 Stk. = 0.22", "1 szt. = 2,33"
+_UNIT_EQ_PRICE_RE = re.compile(
+    r'(\d+(?:[,.]\d+)?)\s*' + _ANY_UNIT + r'\s*=\s*(?:od\s*|ab\s*)?(\d+(?:[,.]\d+)?)(?![\d,.])\s*' + _CURRENCY
+    + r'(?!\s*(?:kg|g|l|ml|cl|dl)(?![a-z]))',   # "5 x 50 g = 250 g" is a pack, not a price
+    re.IGNORECASE)
+# "125/150 g" (two pack sizes) -> the first one
+_ALT_PACK_RE = re.compile(r'(\d+(?:[,.]\d+)?)/(\d+(?:[,.]\d+)?)(?:/\d+(?:[,.]\d+)?)*\s*(?=' + _ANY_UNIT + r'(?![a-z]))',
+                          re.IGNORECASE)
+# "15,96 Kč / 100 g", "2,49/100 g", "5,49/szt.", "0,33 €/l"
+# The price needs decimals or a currency word so that "125/150 g" (two pack
+# sizes) is not read as 125 per 150 g.
+_PRICE_PER_UNIT_RE = re.compile(
+    r'(?:(\d+[,.]\d+)\s*' + _CURRENCY + r'|(\d+)\s*' + _CURRENCY.rstrip('?') + r')'
+    r'\s*/\s*(\d+(?:[,.]\d+)?)?\s*' + _ANY_UNIT + r'(?![a-z])',
+    re.IGNORECASE)
+_MULTI_ANY_RE = re.compile(r'(\d+)\s*[x×]\s*(\d+(?:[,.]\d+)?)\s*(kg|g|l|ml|cl|dl)(?![a-z])', re.IGNORECASE)
+_PACK_ANY_RE = re.compile(r'(?<![\d.,])(\d+(?:[,.]\d+)?)\s*' + _ANY_UNIT + r'(?![a-z])', re.IGNORECASE)
+# Everything after these markers describes a *previous* price / a limit / a
+# deposit, not the current pack: "* cena przed obniżką: 1 kg = 14,99",
+# "+ kaucja 1,00 zł", "Limit: 5 kg", "statt 2,49", "Najniższa cena z 30 dni".
+# "je Stk." / "je kus" / "za kus" -> the price is per piece; "je kg" / "cena za
+# kg" / "za 1 kg" -> per kilogram; a bare "kus" / "kg" means the same.
+_PER_PIECE_RE = re.compile(r'(?:\b(?:je|pro|za|per|cena za)\s+|^\s*)(?:1\s*)?(?:' + _PIECE + r')\s*$', re.IGNORECASE)
+_PER_UNIT_RE = re.compile(r'(?:\b(?:je|pro|za|per|cena za)\s+|^\s*)(?:1\s*)?(kg|l)\s*$', re.IGNORECASE)
+_DISCLAIMER_RE = re.compile(
+    r'(\*|\bcena przed\b|\bnajni[żz]sza cena\b|\blimit:|\+\s*kaucja|\bstatt\b|\bpůvodn[íi]\b|\bp[ôo]vodn[áa]\b'
+    r'|\bcena p[řr]ed\b|\bcena pred\b|\bUVP\b|\bbisher\b)',
+    re.IGNORECASE)
+
+
+def strip_disclaimers(text: Optional[str]) -> str:
+    """Cut a unit-price / packaging text at the first old-price disclaimer."""
+    if not text:
+        return ''
+    t = text.replace(NBSP, ' ')
+    m = _DISCLAIMER_RE.search(t)
+    return t[:m.start()] if m else t
+
+
+def normalise_unit(u: str) -> str:
+    u = u.lower().rstrip('.')
+    if u in ('kg', 'g', 'l', 'ml', 'cl', 'dl'):
+        return u
+    return 'ks'   # ks, kus*, szt*, stk, st, stück
+
+
+def parse_unit_price_any(text: Optional[str], title: str = '') -> Optional[float]:
+    """Unit price per kg from a text in any supported locale; decimal comma
+    or point, optional currency word: ``"1 kg = 174,75 Kč"``, ``"100 g = 0,16"``,
+    ``"1 L = 13,32"``, ``"Je 250 g (1 kg = 13.96)"``, ``"2,49/100 g"``,
+    ``"1 Stk. = 0.22"`` (eggs only for pieces). The first unit-price expression
+    before any old-price disclaimer wins."""
+    t = strip_disclaimers(text)
+    if not t:
+        return None
+    m = _UNIT_EQ_PRICE_RE.search(t)
+    if m:
+        qty, unit, price = _num(m.group(1)), normalise_unit(m.group(2)), _num(m.group(3))
+    else:
+        m = _PRICE_PER_UNIT_RE.search(t)
+        if not m:
+            return None
+        price = _num(m.group(1) or m.group(2))
+        qty, unit = _num(m.group(3)) if m.group(3) else 1.0, normalise_unit(m.group(4))
+    if unit == 'cl':
+        qty, unit = qty * 10, 'ml'
+    elif unit == 'dl':
+        qty, unit = qty * 100, 'ml'
+    return compute_price_per_kg(price, unit, qty, title)
+
+
+def parse_pack_any(text: Optional[str]) -> tuple[Optional[float], Optional[str]]:
+    """Pack size from a packaging / unit-price text in any supported locale.
+    Unit-price expressions (``1 kg = 2,64``) are removed first, then the first
+    multipack (``2 x 1 L``, ``5 x 50 g``), else the first weight/volume
+    (``Je 250 g``, ``500 g balenie``, ``750 ml``), else the first piece count
+    (``3 szt.``, ``12 Stück``, ``3 kusy``). Returns (quantity, unit) with unit in
+    kg/g/l/ml/ks."""
+    t = strip_disclaimers(text)
+    if not t:
+        return None, None
+    t = _UNIT_EQ_PRICE_RE.sub(' ', t)
+    t = _PRICE_PER_UNIT_RE.sub(' ', t)
+    t = _ALT_PACK_RE.sub(r'\1 ', t)
+    m = _MULTI_ANY_RE.search(t)
+    if m:
+        n, q, u = int(m.group(1)), _num(m.group(2)), m.group(3).lower()
+        if u == 'cl':
+            q, u = q * 10, 'ml'
+        elif u == 'dl':
+            q, u = q * 100, 'ml'
+        return n * q, u
+    m = _PER_UNIT_RE.search(t)
+    if m:
+        return 1.0, m.group(1).lower()          # "Je kg", "cena za kg", "kg"
+    if _PER_PIECE_RE.search(t):
+        return 1.0, 'ks'                         # "Bei 3 Stk. je Stück", "kus", "za kus"
+    piece: tuple[Optional[float], Optional[str]] = (None, None)
+    for m in _PACK_ANY_RE.finditer(t):
+        q, u = _num(m.group(1)), normalise_unit(m.group(2))
+        if u in ('kg', 'g', 'l', 'ml'):
+            return q, u
+        if u == 'cl':
+            return q * 10, 'ml'
+        if u == 'dl':
+            return q * 100, 'ml'
+        if piece == (None, None):
+            piece = (q, 'ks')
+    return piece
 
 
 # ---- dates ------------------------------------------------------------------

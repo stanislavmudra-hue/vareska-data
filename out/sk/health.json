@@ -1,0 +1,59 @@
+{
+ "v": 1,
+ "market": "sk",
+ "currency": "EUR",
+ "run": "2026-09-19T19:19:37+00:00",
+ "today": "2026-09-19",
+ "sources": {
+  "lidl_sk": {
+   "source": "lidl_sk",
+   "ok": true,
+   "count": 75,
+   "error": null,
+   "stores": {
+    "lidl": 75
+   },
+   "requests": 0,
+   "elapsed_s": 0.0,
+   "notes": [
+    "0 categories, 75 products"
+   ],
+   "tier": "primary",
+   "market": "sk"
+  }
+ },
+ "hosts": {},
+ "robots": [
+  {
+   "host": "www.lidl.sk",
+   "status": 200,
+   "error": null,
+   "rules": 14,
+   "disallow": [
+    "Disallow: /cc.js*",
+    "Disallow: /cdn/assets/cwv/",
+    "Disallow: /user-api/*",
+    "Disallow: /cqe/*",
+    "Disallow: *search?q=*",
+    "Disallow: *?offset=*",
+    "Disallow: *idsOnly=*",
+    "Disallow: *productsOnly=*",
+    "Disallow: *id=*",
+    "Disallow: *pageId=*",
+    "Disallow: *advisor=*",
+    "Disallow: *sort=*"
+   ],
+   "crawl_delay": null
+  }
+ ],
+ "notFetched": [
+  "tesco",
+  "kaufland",
+  "billa",
+  "coopJednota",
+  "terno",
+  "fresh"
+ ],
+ "requests_made": 0,
+ "cache_hits": 2
+}

@@ -10,5 +10,9 @@ out/*.log
 out/offers*.json
 out/matched.json
 out/unmatched.json
+# the same per market (out/sk/, out/pl/, out/de/, out/at/)
+out/*/offers*.json
+out/*/matched.json
+out/*/unmatched.json
 # local scratch
 .venv/

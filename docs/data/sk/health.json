@@ -1,0 +1,139 @@
+{
+ "market": "sk",
+ "currency": "EUR",
+ "date": "2026-09-19",
+ "generatedAt": "2026-09-19T19:19:52Z",
+ "status": "ok",
+ "ok": true,
+ "run": {
+  "date": "2026-09-19",
+  "startedAt": "2026-09-19T19:15:54Z",
+  "finishedAt": "2026-09-19T19:19:52Z",
+  "durationSec": 238,
+  "offers": 75,
+  "deals": 35,
+  "priced": 19,
+  "matched": 36,
+  "review": 21,
+  "unmatched": 15,
+  "ok": true
+ },
+ "lastSuccessfulRun": "2026-09-19",
+ "pricesUpdated": "2026-09-19",
+ "sources": {
+  "lidl_sk": {
+   "label": "lidl_sk",
+   "ok": true,
+   "skipped": false,
+   "items": 75,
+   "matched": 36,
+   "requests": 0,
+   "durationSec": 0.0,
+   "error": null,
+   "robots": null,
+   "notes": [
+    "0 categories, 75 products"
+   ],
+   "tier": "primary",
+   "fetchedAt": null
+  }
+ },
+ "perStore": {
+  "tesco": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "lidl": {
+   "priced": 19,
+   "deals": 35,
+   "rowsToday": 36,
+   "missingToday": false,
+   "notFetched": false
+  },
+  "kaufland": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "billa": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "coopJednota": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "terno": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "fresh": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  }
+ },
+ "notFetched": [
+  "tesco",
+  "kaufland",
+  "billa",
+  "coopJednota",
+  "terno",
+  "fresh"
+ ],
+ "stale": 0,
+ "dropped": 0,
+ "warnings": [],
+ "validation": {
+  "ok": true,
+  "errors": []
+ },
+ "recentRuns": [
+  {
+   "date": "2026-09-19",
+   "market": "sk",
+   "generatedAt": "2026-09-19T19:19:52Z",
+   "durationSec": 238,
+   "status": "ok",
+   "ok": true,
+   "offers": 75,
+   "perSource": {
+    "lidl_sk": 75
+   },
+   "matched": 36,
+   "review": 21,
+   "unmatched": 15,
+   "deals": 35,
+   "priced": 19,
+   "pairsPriced": 19,
+   "perStore": {
+    "tesco": 0,
+    "lidl": 19,
+    "kaufland": 0,
+    "billa": 0,
+    "coopJednota": 0,
+    "terno": 0,
+    "fresh": 0
+   },
+   "stale": 0,
+   "dropped": 0,
+   "warnings": 0
+  }
+ ]
+}

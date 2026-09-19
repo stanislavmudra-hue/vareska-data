@@ -12,7 +12,7 @@ cen a akcí a umožňuje ručně přiřazovat nepřiřazené produkty k surovin�
 
 | Záložka | Co dělá | Data |
 |---|---|---|
-| **Přehled** | poslední běh (datum, trvání, počty), stav zdrojů, tabulka nabídek per zdroj/obchod, graf historie (inline SVG), tlačítko **Spustit teď** (`workflow_dispatch`) | `../data/health.json`, `../data/history.json`, `../prices.json` |
+| **Přehled** | poslední běh (datum, trvání, počty), stav zdrojů, karta **Trhy** (řádek na trh: měna, datum tabulky, oceněné suroviny, akce, fronta, zdroje ok/chyba, řetězce bez zdroje, odkaz na `prices/<trh>.json`), tabulka nabídek per zdroj/obchod, graf historie (inline SVG), tlačítko **Spustit teď** (`workflow_dispatch`) | `../data/health.json`, `../data/markets.json`, `../data/history.json`, `../prices.json` |
 | **Fronta** | nepřiřazené a „ke kontrole“ položky, návrhy top‑3, vyhledávání v katalogu (folding + stemming shodné s aplikací), **Přiřadit / Ignorovat** → fronta změn → **Uložit N změn** (jeden commit do `data/mappings.json`) | `../data/unmatched.json`, katalog surovin |
 | **Ceny a akce** | prohlížeč `prices.json`: filtr podle suroviny, obchody, tabulka Kč/kg (nejnižší cena zeleně, aktivní akce označena ▲), seznam akcí s platností | `../prices.json` |
 | **Kontrola receptů** | zobrazí `docs/data/qa/sources_report.md` a `content_stats.md`, pokud existují (jinak placeholder) | `../data/qa/*.md` |
@@ -103,6 +103,24 @@ Doporučené tvary, které pipeline zapisuje do `docs/`:
 ### `docs/prices.json`
 Kontrakt aplikace (v1): `{"v":1,"updated":"YYYY-MM-DD","czkPerKg":{ingredientId:{store:price}},"deals":[{ingredientId,store,czkPerKg,validFrom,validTo,title}],"categoryFallbackCzkPerKg":{…}}`.
 Volitelné pole `url` u akce panel zobrazí jako odkaz.
+
+### `docs/data/markets.json`
+
+Přehled trhů (`pipeline/report.py` → `markets_summary`), zapisuje ho každý krok `report`:
+
+```json
+{"v": 1, "generatedAt": "2026-09-19T19:09:44Z",
+ "markets": {"cz": {"label": "Česko", "currency": "CZK", "lang": "cs", "stores": ["albert", "..."],
+                    "prices": "prices/cz.json", "panelDir": "", "date": "2026-09-19", "ok": true, "status": "ok",
+                    "pricesUpdated": "2026-09-19", "priced": 239, "deals": 733, "offers": 4866,
+                    "review": 748, "unmatched": 1206, "sourcesOk": 7, "sourcesError": 0,
+                    "notFetched": [], "warnings": 0},
+             "sk": {"...": "...", "panelDir": "sk/", "notFetched": ["tesco", "kaufland", "billa", "coopJednota", "terno", "fresh"]}}}
+```
+
+Ostatní záložky panelu (fronta, ceny, akce) ukazují český trh; data ostatních trhů leží ve
+stejném formátu v `docs/data/<trh>/` (`health.json`, `history.json`, `report.json`, `unmatched.json`,
+`matched.json`) a v `docs/prices/<trh>.json` (schéma v2, `perKg` v měně trhu).
 
 ### `docs/data/health.json`
 ```json

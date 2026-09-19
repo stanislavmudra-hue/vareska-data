@@ -557,3 +557,27 @@ curl -sA "$UA" 'https://www.kupi.cz/slevy/kaufland?f=m%C3%A1slo'
 4. Kupi matcher: implement the Python mirror of `text_normalizer.dart` (`fold`, `tokens`, `stem`, `tokenMatches`)
    and the per-term negative lists from `docs/kupi_terms.json`.
 5. Respect `Crawl-delay`/1 rps, exponential backoff on 429/5xx, and stop the whole provider on the first 403.
+
+## 15. Markets (R2, 2026-09-19) – Lidl storefront per country
+
+Smoke runs on **2026-09-19** from a Czech residential IP, same User-Agent and 1 req/s policy,
+via `python -m pipeline.fetch --market <m>` (`pipeline/providers/lidl.py`, `SITES`). Every Lidl
+storefront runs the same platform: `GET https://www.lidl.<tld>/q/api/category/{path}?assortment=XX&locale=xx_XX&version=v2.0.0&fetchsize=200`;
+the root food category id `s10068374` is shared, only the slug differs. robots.txt on all five hosts
+disallows `*pageId=*`, `*id=*`, `*sort=*` etc. (never sent); lidl.at additionally disallows paths
+starting with a digit (`/1*` … `/9*`), which the API path does not.
+
+| Market | Root food category | Assortment / locale | Result | Requests | Unit-price texts | Notes |
+|---|---|---|---|---|---|---|
+| cz | `/c/potraviny-a-napoje/s10068374` | `CZ` / `cs_CZ` | **works** (unchanged, section 1) | ~15 | `basePrice.text` "cena za 100 g", "400 g, 1 kg = 174,75 Kč" | root items are parsed too now |
+| sk | `/c/jedlo-a-napoje/s10068374` | `SK` / `sk_SK` | **works** – 75 products (weekly in-store offers), all in the root response, 72 promo, 67 with a validity period | 2 | `basePrice.text` "1 kg = 0,54", "100 g = 1,81" (EUR, no currency word); `packaging.text` "500 g balenie", "kus", "3 kusy v balení", "cena za 1 kg" | bakery items carry up to six future periods → the one containing today is chosen |
+| pl | `/c/zywnosc-i-napoje/s10068374` | `PL` / `pl_PL` | **works** – 66 products, all in the root response, 42 promo | 2 | `basePrice.text` mostly empty; `packaging.text` "250 g 100 g = 4,40", "750 ml 1 L = 13,32", "3 szt. 1 szt. = 2,33 * cena przed obniżką: 9,99/opak.", "Dwusztuk, 2 x 1 L 1 L = 4,99 + kaucja 1,00 zł" | everything after `*`, "cena przed obniżką", "Najniższa cena", "Limit:", "+ kaucja" is the *old* price / a limit / a deposit and is cut off; badge types `IN_STORE_TODAY_DATE_RANGE`, `IN_STORE_FROM_DATE_TODAY` added |
+| de | `/c/essen-trinken/s10068374` | `DE` / `de_DE` | **API differs** – the food root lists only the **online shop** (1 056 of 1 068 items are wine/spirits cases); the in-store grocery offers of lidl.de are not exposed by this API (`/c/eigenmarken-food/s10007656`, `/c/billiger-montag/…`, `/c/lebensmittel/…` return no items). Provider kept (wine subtree skipped, `max_requests=15`, 111 products, 0 matched) | 3 | `basePrice.text` "1 l = 1.66" (point decimal) | German in-store deals need another source (lidl.de "Frische"/leaflet pages, or a leaflet aggregator) – open item |
+| at | `/c/essen-trinken/s10068374` | `AT` / `de_AT` | **works** – 167 products from 17 sub-categories, weekly offers (every item carries `IN_STORE_TODAY_DATE_RANGE`) | 14 | `basePrice.text` "Je 250 g (1 kg = 13.96)", "Ab 3 Stk. je 500 g (1 kg = 2.64)", "Bei 3 Stk. je Stück", "Je 12x 0,33 l (0,5 l = 1.26)", "Je 125/150 g (1 kg = 18.32/15.27)", "Je kg" | pack with a decimal comma, unit price with a point; "je Stk./je kg" = price per piece / per kg |
+
+Mapper results of the smoke run (catalogue names in the market language, `pipeline/mapper.py`):
+sk 36 matched / 21 review / 15 unmatched, pl 6 / 13 / 46, at 7 / 32 / 121, de 0 / 40 / 71 – the
+review/unmatched rows land in `docs/data/<market>/unmatched.json` for the panel, exactly like the Czech
+queue. Other chains of the sk/pl/de/at markets (Tesco SK, Kaufland, Biedronka, Aldi, Rewe, Spar, Hofer,
+…) are **not fetched** yet; the per-market tables are published with what Lidl delivers
+(`registry.not_fetched(market)` lists them, the panel shows them as "bez zdroje").

@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-"""Validate ``docs/prices.json`` against ``docs/prices.schema.json`` and the
-rules the Flutter app enforces at load time (lib/models/price.dart):
+"""Validate a price table against its JSON Schema and the rules the Flutter
+app enforces at load time (lib/models/price.dart):
 
-* stores are one of the seven ``Store`` enum names,
-* every price is a positive number,
-* dates are ``YYYY-MM-DD`` and ``validFrom <= validTo``,
-* ingredient ids exist in the catalog,
-* at most 5 000 deals, ``updated`` not in the future.
+* ``docs/prices.json`` (v1, ``docs/prices.schema.json``) - Czech market,
+* ``docs/prices/<market>.json`` (v2, ``docs/prices.schema.v2.json``) - one per
+  market; ``market``/``currency`` must agree with ``pipeline/markets.py`` and
+  only the market's own stores may appear.
 
-Exit code 1 on the first failing rule set (all errors are printed).
+Rules: stores are ``Store`` enum names of the market, every price is a
+positive number, dates are ``YYYY-MM-DD`` and ``validFrom <= validTo``,
+ingredient ids exist in the catalog, at most 5 000 deals, ``updated`` not in
+the future. ``--market cz`` validates both the v1 and the v2 file; ``--market
+all`` every market. Exit code 1 on the first failing rule set (all errors are
+printed).
 
 The schema check uses ``jsonschema`` when it is installed and otherwise a
 small built-in validator covering the subset of JSON Schema the file uses
@@ -30,8 +34,10 @@ from build_prices import (  # noqa: E402
     CATEGORIES, DOCS_DIR, MAX_DEALS_TOTAL, PRICES_PATH, STORES, load_catalog,
     load_json, parse_iso_date, prague_today,
 )
+from pipeline import markets  # noqa: E402
 
 SCHEMA_PATH = os.path.join(DOCS_DIR, "prices.schema.json")
+SCHEMA_V2_PATH = os.path.join(DOCS_DIR, "prices.schema.v2.json")
 
 
 # ---------------------------------------------------------------------------
@@ -139,36 +145,62 @@ def schema_errors(table, schema: dict) -> list[str]:
 # ---------------------------------------------------------------------------
 
 
-def rule_errors(table, catalog_ids: set[str] | None, today: dt.date | None = None) -> list[str]:
-    """Rules mirrored from PriceTable.fromJson / Deal.fromJson plus sanity checks."""
+def table_version(table) -> int:
+    """1 for the legacy Czech table, 2 for a per-market table (by ``v``)."""
+    return 2 if isinstance(table, dict) and table.get("v") == 2 else 1
+
+
+def rule_errors(table, catalog_ids: set[str] | None, today: dt.date | None = None,
+                market: str | None = None) -> list[str]:
+    """Rules mirrored from PriceTable.fromJson / Deal.fromJson plus sanity
+    checks. v1 tables use ``czkPerKg``/``deals[].czkPerKg`` and the Czech
+    stores; v2 tables ``perKg``/``deals[].perKg`` plus ``market``/``currency``
+    (checked against ``market`` when given, else against the file's own)."""
     errors: list[str] = []
     today = today or prague_today()
     if not isinstance(table, dict):
         return ["root: expected object"]
-    if table.get("v") != 1:
-        errors.append(f"v: expected 1, got {table.get('v')!r}")
+    v = table_version(table)
+    price_key = "perKg" if v == 2 else "czkPerKg"
+    if v == 2:
+        code = str(table.get("market") or "")
+        if code not in markets.MARKETS:
+            errors.append(f"market: unknown market {code!r}")
+            code = market or markets.DEFAULT_MARKET
+        if market and markets.get(market).code != code:
+            errors.append(f"market: expected {markets.get(market).code!r}, got {code!r}")
+        m = markets.get(code)
+        if table.get("currency") != m.currency:
+            errors.append(f"currency: expected {m.currency!r} for market {m.code}, got {table.get('currency')!r}")
+        stores = m.stores
+    else:
+        if table.get("v") != 1:
+            errors.append(f"v: expected 1, got {table.get('v')!r}")
+        if market and markets.get(market).code != markets.DEFAULT_MARKET:
+            errors.append(f"v: schema v1 is Czech only, cannot hold market {market!r}")
+        stores = STORES
     upd = parse_iso_date(table.get("updated"))
     if upd is None:
         errors.append(f"updated: not an ISO date: {table.get('updated')!r}")
     elif upd > today:
         errors.append(f"updated: {upd} is in the future (today {today})")
 
-    prices = table.get("czkPerKg")
+    prices = table.get(price_key)
     if not isinstance(prices, dict):
-        errors.append("czkPerKg: expected object")
+        errors.append(f"{price_key}: expected object")
         prices = {}
     for ing, per_store in prices.items():
         if catalog_ids is not None and ing not in catalog_ids:
-            errors.append(f"czkPerKg.{ing}: unknown ingredient id")
+            errors.append(f"{price_key}.{ing}: unknown ingredient id")
         if not isinstance(per_store, dict) or not per_store:
-            errors.append(f"czkPerKg.{ing}: expected non-empty object")
+            errors.append(f"{price_key}.{ing}: expected non-empty object")
             continue
         for store, price in per_store.items():
-            if store not in STORES:
-                errors.append(f"czkPerKg.{ing}.{store}: unknown store")
+            if store not in stores:
+                errors.append(f"{price_key}.{ing}.{store}: unknown store")
             if not isinstance(price, (int, float)) or isinstance(price, bool) or price <= 0 \
                     or price != price or price == float("inf"):
-                errors.append(f"czkPerKg.{ing}.{store}: price must be a positive number, got {price!r}")
+                errors.append(f"{price_key}.{ing}.{store}: price must be a positive number, got {price!r}")
 
     deals = table.get("deals")
     if not isinstance(deals, list):
@@ -181,17 +213,17 @@ def rule_errors(table, catalog_ids: set[str] | None, today: dt.date | None = Non
         if not isinstance(d, dict):
             errors.append(f"{ctx}: expected object")
             continue
-        for key in ("ingredientId", "store", "czkPerKg", "validFrom", "validTo", "title"):
+        for key in ("ingredientId", "store", price_key, "validFrom", "validTo", "title"):
             if key not in d:
                 errors.append(f"{ctx}: missing {key}")
         ing = d.get("ingredientId")
         if catalog_ids is not None and isinstance(ing, str) and ing not in catalog_ids:
             errors.append(f"{ctx}: unknown ingredient id {ing!r}")
-        if d.get("store") not in STORES:
+        if d.get("store") not in stores:
             errors.append(f"{ctx}: unknown store {d.get('store')!r}")
-        p = d.get("czkPerKg")
+        p = d.get(price_key)
         if not isinstance(p, (int, float)) or isinstance(p, bool) or p <= 0:
-            errors.append(f"{ctx}: czkPerKg must be a positive number")
+            errors.append(f"{ctx}: {price_key} must be a positive number")
         vf, vt = parse_iso_date(d.get("validFrom")), parse_iso_date(d.get("validTo"))
         if vf is None or vt is None:
             errors.append(f"{ctx}: validFrom/validTo must be YYYY-MM-DD")
@@ -203,24 +235,29 @@ def rule_errors(table, catalog_ids: set[str] | None, today: dt.date | None = Non
         if not isinstance(d.get("title"), str) or not d.get("title", "").strip():
             errors.append(f"{ctx}: title must be a non-empty string")
 
-    fb = table.get("categoryFallbackCzkPerKg")
+    fb_key = "categoryFallbackPerKg" if v == 2 else "categoryFallbackCzkPerKg"
+    fb = table.get(fb_key)
     if not isinstance(fb, dict):
-        errors.append("categoryFallbackCzkPerKg: expected object")
+        errors.append(f"{fb_key}: expected object")
     else:
         for cat, price in fb.items():
             if cat not in CATEGORIES:
-                errors.append(f"categoryFallbackCzkPerKg.{cat}: unknown category")
+                errors.append(f"{fb_key}.{cat}: unknown category")
             if not isinstance(price, (int, float)) or isinstance(price, bool) or price <= 0:
-                errors.append(f"categoryFallbackCzkPerKg.{cat}: price must be positive")
+                errors.append(f"{fb_key}.{cat}: price must be positive")
     return errors
 
 
-def validate_file(prices_path: str = PRICES_PATH, schema_path: str = SCHEMA_PATH,
+def validate_file(prices_path: str = PRICES_PATH, schema_path: str | None = None,
                   catalog_path: str | None = None, today: dt.date | None = None,
-                  require_catalog: bool = True) -> list[str]:
+                  require_catalog: bool = True, market: str | None = None) -> list[str]:
+    """Errors of one file. The schema defaults to the one matching the file's
+    ``v`` (``prices.schema.json`` / ``prices.schema.v2.json``)."""
     table = load_json(prices_path, None)
     if table is None:
         return [f"{prices_path}: file not found"]
+    if schema_path is None:
+        schema_path = SCHEMA_V2_PATH if table_version(table) == 2 else SCHEMA_PATH
     schema = load_json(schema_path, None)
     errors: list[str] = []
     if schema is None:
@@ -234,35 +271,52 @@ def validate_file(prices_path: str = PRICES_PATH, schema_path: str = SCHEMA_PATH
         ids = None
     else:
         ids = set(catalog)
-    errors += rule_errors(table, ids, today)
+    errors += rule_errors(table, ids, today, market)
     # de-duplicate while keeping order
     seen: set[str] = set()
     return [e for e in errors if not (e in seen or seen.add(e))]
 
 
+def market_files(code: str) -> list[str]:
+    """Files to validate for a market: v1 + v2 for cz, v2 otherwise."""
+    mp = markets.paths(code)
+    return [p for p in (mp["prices_v1"], mp["prices"]) if p]
+
+
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description="Validate docs/prices.json (exit 1 on failure)")
-    ap.add_argument("path", nargs="?", default=PRICES_PATH)
-    ap.add_argument("--schema", default=SCHEMA_PATH)
+    ap = argparse.ArgumentParser(description="Validate price tables (exit 1 on failure)")
+    ap.add_argument("path", nargs="?", default=None, help="one file (default: the market's files)")
+    ap.add_argument("--market", default=None, help="cz | sk | pl | de | at | all (default: cz, or the file's own)")
+    ap.add_argument("--schema", default=None, help="default: by the file's v")
     ap.add_argument("--catalog", default=None)
     ap.add_argument("--today", default=None)
     ap.add_argument("--no-catalog", action="store_true", help="skip ingredient id check")
     ap.add_argument("--max-print", type=int, default=50)
     args = ap.parse_args(argv)
-    errors = validate_file(args.path, args.schema, args.catalog,
-                           parse_iso_date(args.today) if args.today else None,
-                           require_catalog=not args.no_catalog)
-    if errors:
-        print(f"INVALID: {len(errors)} error(s) in {args.path}")
-        for e in errors[:args.max_print]:
-            print(" - " + e)
-        if len(errors) > args.max_print:
-            print(f" ... and {len(errors) - args.max_print} more")
-        return 1
-    table = load_json(args.path)
-    print(f"OK: {args.path} - {len(table.get('czkPerKg', {}))} ingredients, "
-          f"{len(table.get('deals', []))} deals, updated {table.get('updated')}")
-    return 0
+    today = parse_iso_date(args.today) if args.today else None
+    if args.path:
+        targets = [(args.path, args.market if args.market and args.market != "all" else None)]
+    else:
+        codes = markets.parse_selection(args.market or markets.DEFAULT_MARKET)
+        targets = [(f, c) for c in codes for f in market_files(c)]
+    rc = 0
+    for path, code in targets:
+        errors = validate_file(path, args.schema, args.catalog, today,
+                               require_catalog=not args.no_catalog, market=code)
+        if errors:
+            print(f"INVALID: {len(errors)} error(s) in {path}")
+            for e in errors[:args.max_print]:
+                print(" - " + e)
+            if len(errors) > args.max_print:
+                print(f" ... and {len(errors) - args.max_print} more")
+            rc = 1
+            continue
+        table = load_json(path)
+        key = "perKg" if table_version(table) == 2 else "czkPerKg"
+        print(f"OK: {os.path.relpath(path)} - v{table_version(table)} {table.get('market', 'cz')} "
+              f"{table.get('currency', 'CZK')}: {len(table.get(key, {}))} ingredients, "
+              f"{len(table.get('deals', []))} deals, updated {table.get('updated')}")
+    return rc
 
 
 if __name__ == "__main__":

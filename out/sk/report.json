@@ -1,0 +1,198 @@
+{
+ "market": "sk",
+ "currency": "EUR",
+ "date": "2026-09-19",
+ "generatedAt": "2026-09-19T19:19:52Z",
+ "startedAt": "2026-09-19T19:15:54Z",
+ "durationSec": 238,
+ "status": "ok",
+ "ok": true,
+ "warnings": [],
+ "validation": {
+  "ok": true,
+  "errors": []
+ },
+ "offers": {
+  "perSource": {
+   "lidl_sk": 75
+  },
+  "total": 75,
+  "path": "out\\sk\\offers.json"
+ },
+ "matching": {
+  "path": "out\\sk\\matched.json",
+  "generated": "2026-09-19",
+  "matched": 36,
+  "review": 21,
+  "unmatched": 15,
+  "ignored": 3,
+  "byStatus": {
+   "matched": 36
+  },
+  "matchedPerSource": {
+   "lidl_sk": 36
+  },
+  "matchedPerStore": {
+   "tesco": 0,
+   "lidl": 36,
+   "kaufland": 0,
+   "billa": 0,
+   "coopJednota": 0,
+   "terno": 0,
+   "fresh": 0
+  },
+  "promoRows": 35,
+  "mapperStats": {
+   "matched": 36,
+   "review": 21,
+   "unmatched": 15,
+   "ignored": 3
+  }
+ },
+ "build": {
+  "market": "sk",
+  "currency": "EUR",
+  "matchedPath": "out\\sk\\matched.json",
+  "catalogPath": "catalog\\ingredients.json",
+  "catalogSize": 1191,
+  "skipped": {},
+  "previousUpdated": "2026-09-19",
+  "today": "2026-09-19",
+  "rows": 36,
+  "rowsPerStore": {
+   "lidl": 36
+  },
+  "rowsPerSource": {
+   "lidl_sk": 36
+  },
+  "promoRows": 35,
+  "clubRows": 0,
+  "ingredientsPriced": 19,
+  "pairsPriced": 19,
+  "pairsFresh": 19,
+  "pairsFromPromoOnly": 18,
+  "storesPriced": {
+   "tesco": 0,
+   "lidl": 19,
+   "kaufland": 0,
+   "billa": 0,
+   "coopJednota": 0,
+   "terno": 0,
+   "fresh": 0
+  },
+  "deals": 35,
+  "dealsCarried": 0,
+  "stale": [],
+  "staleCount": 0,
+  "dropped": [],
+  "droppedCount": 0,
+  "storesMissing": [
+   "tesco",
+   "kaufland",
+   "billa",
+   "coopJednota",
+   "terno",
+   "fresh"
+  ],
+  "pricesPath": "docs\\prices\\sk.json",
+  "pricesV2Path": "docs\\prices\\sk.json"
+ },
+ "prices": {
+  "path": "docs\\prices\\sk.json",
+  "v": 2,
+  "market": "sk",
+  "currency": "EUR",
+  "updated": "2026-09-19",
+  "ingredients": 19,
+  "pairs": 19,
+  "perStore": {
+   "tesco": 0,
+   "lidl": 19,
+   "kaufland": 0,
+   "billa": 0,
+   "coopJednota": 0,
+   "terno": 0,
+   "fresh": 0
+  },
+  "deals": 35,
+  "dealsPerStore": {
+   "tesco": 0,
+   "lidl": 35,
+   "kaufland": 0,
+   "billa": 0,
+   "coopJednota": 0,
+   "terno": 0,
+   "fresh": 0
+  },
+  "sizeBytes": 7116
+ },
+ "pricesV2Path": null,
+ "fetch": {
+  "v": 1,
+  "market": "sk",
+  "currency": "EUR",
+  "run": "2026-09-19T19:19:37+00:00",
+  "today": "2026-09-19",
+  "sources": {
+   "lidl_sk": {
+    "source": "lidl_sk",
+    "ok": true,
+    "count": 75,
+    "error": null,
+    "stores": {
+     "lidl": 75
+    },
+    "requests": 0,
+    "elapsed_s": 0.0,
+    "notes": [
+     "0 categories, 75 products"
+    ],
+    "tier": "primary",
+    "market": "sk"
+   }
+  },
+  "hosts": {},
+  "robots": [
+   {
+    "host": "www.lidl.sk",
+    "status": 200,
+    "error": null,
+    "rules": 14,
+    "disallow": [
+     "Disallow: /cc.js*",
+     "Disallow: /cdn/assets/cwv/",
+     "Disallow: /user-api/*",
+     "Disallow: /cqe/*",
+     "Disallow: *search?q=*",
+     "Disallow: *?offset=*",
+     "Disallow: *idsOnly=*",
+     "Disallow: *productsOnly=*",
+     "Disallow: *id=*",
+     "Disallow: *pageId=*",
+     "Disallow: *advisor=*",
+     "Disallow: *sort=*"
+    ],
+    "crawl_delay": null
+   }
+  ],
+  "notFetched": [
+   "tesco",
+   "kaufland",
+   "billa",
+   "coopJednota",
+   "terno",
+   "fresh"
+  ],
+  "requests_made": 0,
+  "cache_hits": 2
+ },
+ "fetchPath": "out\\sk\\health.json",
+ "notFetched": [
+  "tesco",
+  "kaufland",
+  "billa",
+  "coopJednota",
+  "terno",
+  "fresh"
+ ]
+}

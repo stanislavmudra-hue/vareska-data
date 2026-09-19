@@ -54,9 +54,22 @@ Output (``matched.json`` -> ``items[]``, consumed by ``pipeline/build_prices.py`
 validTo, status, club, url, pack, confidence, method, priceMethod, flags, reasons,
 suggestions[{ingredientId, score, nameCs}]`` - ``raw`` is dropped.
 
+Markets
+-------
+``--market sk|pl|de|at`` (default cz) selects the store list, the currency
+(prices stay in the market currency; ``czkPerKg`` then means "per kg in that
+currency"), the catalogue language (``names.<lang>`` + ``namesPlural.<lang>``
+from ``catalog/ingredients.json`` next to the Czech name; Czech aliases are
+used for sk only) and the per-language stop-words / suffix stemmer
+(``LANG_NOISE_WORDS``, ``LANG_SUFFIXES``). ``refPriceCzkPerKg`` is converted
+with ``markets.fx`` for the plausibility band. Learned rules in
+``data/mappings.json`` apply to the market named in their ``market`` field
+(``"*"`` = all; missing = cz).
+
 CLI
 ---
     python -m pipeline.mapper --offers out/offers.json [--out-dir out]
+    python -m pipeline.mapper --market sk --offers out/sk/offers.json --out-dir out/sk
     python -m pipeline.mapper --explain "Madeta Jihočeské máslo 82% 250 g"
     python -m pipeline.mapper --sync-catalog [path/to/app/assets/data/ingredients.json]
 """
@@ -74,6 +87,12 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Any, Iterable
 
+try:
+    from . import markets
+except ImportError:  # run as a script (python pipeline/mapper.py)
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from pipeline import markets
+
 # --------------------------------------------------------------------------- #
 # Paths
 # --------------------------------------------------------------------------- #
@@ -84,7 +103,7 @@ MAPPINGS_PATH = os.path.join(REPO_ROOT, "data", "mappings.json")
 KUPI_TERMS_PATH = os.path.join(REPO_ROOT, "docs", "kupi_terms.json")
 DEFAULT_APP_CATALOG = os.path.join("C:", os.sep, "AI", "Jídlo", "assets", "data", "ingredients.json")
 
-STORES = ("albert", "lidl", "kaufland", "tesco", "billa", "penny", "globus")
+STORES = markets.stores_of(markets.DEFAULT_MARKET)   # Czech market; others via markets.stores_of()
 
 AUTO_ACCEPT = 0.85
 REVIEW_MIN = 0.60
@@ -185,12 +204,26 @@ def tokens(s: str) -> list[str]:
     return [t for t in s.split(" ") if len(t) >= 2]
 
 
-def stem(t: str) -> str:
-    """Czech suffix stemmer (folded input). Tokens of 5+ chars lose the first
+# Per-language suffix lists (folded tokens, longest first). cs/sk share the
+# Czech list; pl/de add their own inflection endings. The stemmer is applied to
+# catalogue names and titles alike, so it only has to be consistent, not
+# linguistically exact.
+LANG_SUFFIXES: dict[str, tuple[str, ...]] = {
+    "cs": SUFFIXES,
+    "sk": SUFFIXES,
+    "pl": ("ami", "ach", "iem", "ich", "owe", "owy", "owa", "ego", "emu", "ych", "ymi",
+           "ow", "om", "em", "ie", "ia", "iu", "ek", "ka", "ki", "ko",
+           "e", "i", "u", "y", "a", "o"),
+    "de": ("chen", "lein", "ern", "en", "er", "es", "em", "st", "e", "n", "s"),
+}
+
+
+def stem(t: str, lang: str = "cs") -> str:
+    """Suffix stemmer (folded input). Tokens of 5+ chars lose the first
     matching suffix (longest first) but never go below 4 characters."""
     if len(t) < 5:
         return t
-    for suf in SUFFIXES:
+    for suf in LANG_SUFFIXES.get(lang, SUFFIXES):
         if t.endswith(suf) and len(t) - len(suf) >= 4:
             return t[: len(t) - len(suf)]
     return t
@@ -268,6 +301,15 @@ BRANDS: tuple[str, ...] = (
     "bonduelle", "giana", "franz josef", "kaiser", "sedlcansky", "sedlcanska", "sedlcanske",
     "tatra", "olma", "olomoucky", "olomoucke", "kunin", "kuninska", "valasska", "valassky",
     "z valasska", "madeta", "jihoceske", "krajanka", "milkpol", "laktos", "meggle",
+    # Lidl private labels and regional brands of the sk/pl/de/at storefronts
+    "baresa", "alesto", "sondey", "vitasia", "metzgerfrisch", "kuchenmeister", "mcennedy", "tastino",
+    "eridanous", "lord nelson", "bellarom", "saskia", "freeway", "grafschafter", "perlenbacher",
+    "alpengut", "wiesentaler", "ein gutes stuck heimat", "nautica", "white panther", "radatz",
+    "villacher", "wieselburger", "ryba z polski", "mistrz", "tarczynski", "mlekovita", "piatnica",
+    "muszynianka", "artezan", "koliba", "sabi", "banovecky", "polske", "polska", "polski", "polskie",
+    "osterreich", "osterreichische", "osterreichischer", "osterreichisches", "deutsche", "deutscher",
+    "deutsches", "slovenske", "slovensky", "slovenska", "chef select", "pikok", "duc de coeur",
+    "parkside", "livarno", "silvercrest", "esmara", "lupilu", "crivit",
 )
 
 # Filler words (folded, whole words). Symmetric: stripped from titles AND from
@@ -294,6 +336,57 @@ NOISE_WORDS: frozenset[str] = frozenset(
     svetly svetla svetle
     """.split()
 )
+
+# Extra stop-words per catalogue language (folded, whole words), merged with
+# NOISE_WORDS for that market. Slovak/Polish/German leaflet fillers, pack words,
+# prepositions and articles.
+LANG_NOISE_WORDS: dict[str, frozenset[str]] = {
+    "cs": frozenset(),
+    "sk": frozenset(
+        """
+        akcia zlava zlavy cena ceny eur kus kusy kusov balenie balene baleny balena chladene chladeny
+        chladena mrazene mrazeny mrazena cerstve cerstvy cerstva trvanlive trvanlivy trvanliva
+        druhov rozne rozny rozna vybrane vybrany len teraz viac zdarma jemne jemny jemna vyberove
+        vyberovy vyberova klasicke klasicky klasicka velke velky velka male maly mala
+        a i s so z zo v vo na za od do pre alebo ci bez k ku o u po pri
+        sklo plech plechovka flasa flase kartón karton krabica vrecko kelimok vanicka tuba
+        """.split()
+    ),
+    "pl": frozenset(
+        """
+        promocja promocji cena ceny zl pln szt sztuk sztuka opak opakowanie opakowania paczka
+        swieze swiezy swieza mrozone mrozony mrozona schlodzone schlodzony rozne rozny rozna rodzaje
+        rodzaj rodzajow wybrane wybrany tylko teraz wiecej gratis klasyczne klasyczny oryginalne
+        oryginalny duze duzy duza male maly mala luzem ekstra extra swiezo
+        a i z ze w we na do od dla lub o u po przy bez za oraz
+        szklo puszka butelka butelki karton sloik sloiku kubek tacka tuba
+        """.split()
+    ),
+    "de": frozenset(
+        """
+        aktion angebot preis stuck stk st packung pack packungen frisch frische frischer frisches
+        gefroren tiefgefroren tiefkuhl gekuhlt verschiedene versch sorten sorte ausgewahlte nur jetzt
+        mehr gratis klassisch klassische klassischer original je ab bei pro
+        und oder mit ohne von aus im in der die das den dem des ein eine einer eines einem
+        flasche flaschen dose dosen glas becher beutel schale netz tute tasse
+        gross grosse grosser klein kleine kleiner
+        """.split()
+    ),
+}
+
+# Per-language noise phrases (folded), removed before tokenising.
+LANG_NOISE_PHRASES: dict[str, tuple[str, ...]] = {
+    "cs": (),
+    "sk": ("cena za", "za kus", "za kg", "za 1 kg", "za 100 g", "za balenie", "v akcii", "rozne druhy",
+           "vybrane druhy", "viac druhov", "bez kosti", "s kostou", "bez koze", "s kozou", "v oleji",
+           "vo vlastnej stave", "v naleve"),
+    "pl": ("cena za", "za szt", "za kg", "za 1 kg", "za 100 g", "za opak", "w promocji", "rozne rodzaje",
+           "wybrane rodzaje", "bez kosci", "z koscia", "bez skory", "ze skora", "w oleju", "w sosie wlasnym",
+           "w zalewie", "luzem"),
+    "de": ("je kg", "je stuck", "je stk", "je packung", "pro kg", "pro stuck", "in der aktion",
+           "verschiedene sorten", "versch sorten", "ohne knochen", "mit knochen", "ohne haut", "mit haut",
+           "in ol", "im eigenen saft", "in lake", "aus osterreich", "aus deutschland", "aus der region"),
+}
 
 # Form / cut words stripped from titles only (never from catalog names, where
 # "gouda plátky" or "strouhaný chléb" carry meaning).
@@ -476,6 +569,7 @@ class Ingredient:
     unit_grams: dict[str, float]
     density: float | None
     ref_price: float | None
+    name: str = ""            # name in the catalogue language of the market (== name_cs for cz)
     variants: list[tuple[str, tuple[str, ...], float]] = field(default_factory=list)  # (source text, stems, weight)
     negatives: set[str] = field(default_factory=set)
 
@@ -485,22 +579,31 @@ class Ingredient:
         return float(v) if v else None
 
 
-def _clean_stems(text: str) -> tuple[tuple[str, ...], bool]:
+def noise_words_for(lang: str) -> frozenset[str]:
+    return NOISE_WORDS | LANG_NOISE_WORDS.get(lang, frozenset())
+
+
+def noise_phrases_for(lang: str) -> tuple[str, ...]:
+    return NOISE_PHRASES + LANG_NOISE_PHRASES.get(lang, ())
+
+
+def _clean_stems(text: str, lang: str = "cs") -> tuple[tuple[str, ...], bool]:
     """fold -> remove noise phrases/words -> tokens -> stems. Returns the stems
     and whether a noise *phrase* was removed (such variants are slightly
     down-weighted so "vepřová kotleta" beats "vepřová kotleta bez kosti").
     Falls back to the raw stems when everything was noise (e.g. "extra")."""
     f = fold(text)
     reduced = False
-    for ph in NOISE_PHRASES:
+    for ph in noise_phrases_for(lang):
         f2 = re.sub(r"(?<![a-z0-9])" + re.escape(ph) + r"(?![a-z0-9])", " ", f)
         if f2 != f:
             reduced = True
             f = f2
-    toks = [t for t in f.split(" ") if len(t) >= 2 and t not in NOISE_WORDS and not t.isdigit()]
+    noise = noise_words_for(lang)
+    toks = [t for t in f.split(" ") if len(t) >= 2 and t not in noise and not t.isdigit()]
     if not toks:
         toks = tokens(f)
-    return tuple(stem(t) for t in toks), reduced
+    return tuple(stem(t, lang) for t in toks), reduced
 
 
 # Extra per-ingredient negative stems on top of docs/kupi_terms.json.
@@ -575,26 +678,30 @@ def _species_negatives(ingredient_id: str) -> set[str]:
 # offers to skip entirely. None = no opinion.
 NONFOOD = "nonfood"
 HINT_RULES: tuple[tuple[str, Any], ...] = (
-    (r"pet_|_pet|pets|for_cats|for_dogs|cat_|dog_|mazlic|krmiv|pro psy|pro kocky|drogeri|cleaning|cleaner|cisti|čisti|praci|prací|hygien|garden|zahrad|hnojiv|electro|elektro|toys|hracky|hračky|hobby|nadobi|nádobí|textil|obuv|odev|oděv|kancel|kvetin|květin|rostlin|substrat|charcoal|uhli|briket|barbecue|television|audio|appliance|robot|mixer|kettle|microwave|elektro_grill|electric_grill|myck|pleny|kosmet|fuel|firelighter|fertilizer|insect|rodent|barkmulch|toalet|maker", NONFOOD),
-    (r"cheese|syr|sýr|mlec|mléč|dairy|milk|yogurt|jogurt|butter|maslo|máslo|smetan|cream|quark|tvaroh", {"dairy", "egg", "other", "beverage", "condiment", "oil"}),
-    (r"egg|vejce|vajic", {"egg"}),
-    (r"poultry|drubez|drůbež|chicken|kure|kuř", {"poultry", "beverage"}),
-    (r"meat|maso|pork|beef|veal|veprov|hovez|telec|jehnec|lamb|salami|salam|ham|sunk|šunk|sausage|uzenin|klobas|park|frankfurter|bacon|slanin", {"meat", "poultry", "oil"}),
-    (r"fish|ryb|seafood|morsk|mořsk|tuna|salmon|losos|canned_fish", {"fish", "seafood"}),
-    (r"vegetable|zelenin|salad|salat", {"vegetable", "herb", "legume", "condiment"}),
-    (r"fruit|ovoce|citrus|stone_fruit|berries", {"fruit"}),
-    (r"bread|pastry|peciv|pekar|pekař|bakery|croissant|bagel", {"bakery"}),
+    (r"pet_|_pet|pets|for_cats|for_dogs|cat_|dog_|mazlic|krmiv|pro psy|pro kocky|drogeri|cleaning|cleaner|cisti|čisti|praci|prací|hygien|garden|zahrad|hnojiv|electro|elektro|toys|hracky|hračky|hobby|nadobi|nádobí|textil|obuv|odev|oděv|kancel|kvetin|květin|rostlin|substrat|charcoal|uhli|briket|barbecue|television|audio|appliance|robot|mixer|kettle|microwave|elektro_grill|electric_grill|myck|pleny|kosmet|fuel|firelighter|fertilizer|insect|rodent|barkmulch|toalet|maker"
+     r"|haushalt|tiernahrung|tierfutter|blumen|pflanzen|garten|reinig|waschmittel|drogerie|spielzeug|werkzeug|kwiaty|rosliny|rośliny|zwierz|chemia|srodki czysto|środki czysto|zabawk|narzedz|narzędz|domacnos|domácnos|kvety|zdravie a krasa|zdrowie i uroda|gesundheit", NONFOOD),
+    (r"cheese|syr|sýr|mlec|mléč|dairy|milk|yogurt|jogurt|butter|maslo|máslo|smetan|cream|quark|tvaroh"
+     r"|kase|käse|milch|nabial|nabiał|sery\b|mliecn|mlieč|jogurt", {"dairy", "egg", "other", "beverage", "condiment", "oil"}),
+    (r"egg|vejce|vajic|vajcia|\bjaja\b|eier", {"egg"}),
+    (r"poultry|drubez|drůbež|chicken|kure|kuř|hydina|\bdrob\b|drób|geflugel|geflügel|gefluegel|hahnchen|hähnchen|pute", {"poultry", "beverage"}),
+    (r"meat|maso|pork|beef|veal|veprov|hovez|telec|jehnec|lamb|salami|salam|ham|sunk|šunk|sausage|uzenin|klobas|park|frankfurter|bacon|slanin"
+     r"|fleisch|wurst|schinken|mieso|mięso|wedlin|wędlin|maso|udenin|údenin", {"meat", "poultry", "oil"}),
+    (r"fish|ryb|seafood|morsk|mořsk|tuna|salmon|losos|canned_fish|fisch|meeresfr", {"fish", "seafood"}),
+    (r"vegetable|zelenin|salad|salat|gemuse|gemüse|gemuese|warzyw|salat", {"vegetable", "herb", "legume", "condiment"}),
+    (r"fruit|ovoce|citrus|stone_fruit|berries|obst|owoce|ovocie", {"fruit"}),
+    (r"bread|pastry|peciv|pekar|pekař|bakery|croissant|bagel|backwaren|brot|piekarni|pieczyw", {"bakery"}),
     (r"pasta|testovin|těstovin|couscous|rice|ryz|rýž|grain|cereal|musli|flour|mouk|obilov", {"pasta", "grain"}),
     (r"oil|olej|tuk|fat", {"oil", "condiment"}),
     (r"spice|koren|kořen|seasoning|flavors|sauce|omack|omáčk|ketchup|mustard|condiment|dressing|pesto|dochuc", {"spice", "condiment", "herb", "oil"}),
-    (r"beer|pivo|wine|vino|víno|spirits|lihov|liker|likér|alkohol|alcohol|vodka|rum|whisky|prosecco", {"alcohol"}),
-    (r"drink|napoj|nápoj|beverage|water|voda|juice|dzus|džus|stav|šťáv|mineral|lemonade|limonad|cola|energy", {"beverage", "alcohol"}),
-    (r"coffee|kav|káv|tea|caj|čaj|cocoa|kakao", {"other", "beverage"}),
-    (r"sweet|sladk|candy|chocolate|cokolad|čokolád|biscuit|susenk|sušenk|wafer|snack|chips|crisps|salty_delic|dessert|dezert|ice_cream|icecream|zmrzlin|spread|pomazank", {"other", "sweetener", "bakery", "dairy", "nut", "condiment", "fruit"}),
+    (r"beer|pivo|wine|vino|víno|spirits|lihov|liker|likér|alkohol|alcohol|vodka|rum|whisky|prosecco|bier|wein|spirituosen|piwo|wino|liehovin", {"alcohol"}),
+    (r"drink|napoj|nápoj|beverage|water|voda|juice|dzus|džus|stav|šťáv|mineral|lemonade|limonad|cola|energy|getrank|getränk|getraenk|wasser|saft|napoje", {"beverage", "alcohol"}),
+    (r"coffee|kav|káv|tea|caj|čaj|cocoa|kakao|kaffee|tee\b|herbat", {"other", "beverage"}),
+    (r"sweet|sladk|candy|chocolate|cokolad|čokolád|biscuit|susenk|sušenk|wafer|snack|chips|crisps|salty_delic|dessert|dezert|ice_cream|icecream|zmrzlin|spread|pomazank"
+     r"|suss|süß|suess|schokolad|slodycz|słodycz|przekask|przekąsk|aufstrich|eis\b", {"other", "sweetener", "bakery", "dairy", "nut", "condiment", "fruit"}),
     (r"canned|konzerv|sterilov|legume|lustenin|luštěnin|fazol|cizrn|cock|čočk", {"legume", "vegetable", "condiment", "fruit"}),
     (r"nut|orech|ořech|seed|semin|semínk|dried_fruit|susene", {"nut", "fruit", "spice"}),
-    (r"frozen|mraz|mraž", None),
-    (r"ready|hotov|instant|soup|polevk|polévk|dumpling|knedl", {"other", "grain", "bakery", "pasta"}),
+    (r"frozen|mraz|mraž|tiefkuhl|tiefkühl|tiefgek|mrozon", None),
+    (r"ready|hotov|instant|soup|polevk|polévk|dumpling|knedl|fertiggericht|suppe|dania gotowe", {"other", "grain", "bakery", "pasta"}),
 )
 
 # Strong title stems -> categories the target ingredient must be in (penalty ×0.5
@@ -663,14 +770,31 @@ def category_from_hint(hint: Any) -> set[str] | str | None:
 @dataclass
 class SiblingGroup:
     ids: tuple[str, ...]
-    pct_split: tuple[float, str, str] | None = None   # (threshold, id_if_below, id_if_at_or_above)
+    # (threshold, id_if_below, id_if_at_or_above) or a list of (upper_bound, id)
+    # bands in ascending order, the last one open-ended (``math.inf``)
+    pct_split: tuple[float, str, str] | tuple[tuple[float, str], ...] | None = None
     keywords: dict[str, tuple[str, ...]] = field(default_factory=dict)  # id -> stems that select it
     default: str | None = None
 
+    def choose_by_percent(self, pct: float) -> str | None:
+        if not self.pct_split:
+            return None
+        if isinstance(self.pct_split[0], tuple):
+            for bound, iid in self.pct_split:  # type: ignore[misc]
+                if pct < bound:
+                    return iid
+            return None
+        thr, lo, hi = self.pct_split  # type: ignore[misc]
+        return lo if pct < thr else hi
+
 
 SIBLING_GROUPS: tuple[SiblingGroup, ...] = (
-    SiblingGroup(("mleko_15", "mleko_35"), pct_split=(2.5, "mleko_15", "mleko_35"),
-                 keywords={"mleko_15": ("polotucn",), "mleko_35": ("plnotucn", "tucn", "selsk")}, default="mleko_15"),
+    SiblingGroup(("mleko_odtucnene", "mleko_15", "mleko_35"),
+                 pct_split=((1.0, "mleko_odtucnene"), (2.5, "mleko_15"), (math.inf, "mleko_35")),
+                 keywords={"mleko_odtucnene": ("odtucn", "odstred", "nizkotucn", "odtlusz", "mager", "skim"),
+                           "mleko_15": ("polotucn", "poltlust", "fettarm", "semi"),
+                           "mleko_35": ("plnotucn", "tucn", "selsk", "pelnotlust", "vollmilch", "whole")},
+                 default="mleko_15"),
     SiblingGroup(("smetana_12", "smetana_33"), pct_split=(20.0, "smetana_12", "smetana_33"),
                  keywords={"smetana_12": ("varen",), "smetana_33": ("slehan",)}, default="smetana_33"),
     SiblingGroup(("fazole_cervene_sterilovane", "fazole_cervene_susene"),
@@ -694,27 +818,49 @@ SIBLING_GROUPS: tuple[SiblingGroup, ...] = (
 )
 
 
+def catalog_names(raw: dict[str, Any], lang: str = "cs") -> list[str]:
+    """Search terms of one catalogue entry for a language: cs -> Czech name,
+    plural and aliases; other languages -> ``names.<lang>`` and
+    ``namesPlural.<lang>`` first, then the Czech name/plural (brand words and
+    the near-identical Slovak vocabulary), Czech aliases for sk only."""
+    names: list[str] = []
+    if lang != "cs":
+        for key in ("names", "namesPlural"):
+            v = raw.get(key)
+            if isinstance(v, dict) and v.get(lang):
+                names.append(str(v[lang]))
+    for key in ("nameCs", "namePluralCs"):
+        if raw.get(key):
+            names.append(raw[key])
+    if lang in ("cs", "sk"):
+        names.extend(raw.get("aliases") or [])
+    return names
+
+
 class Catalog:
-    def __init__(self, ingredients: Iterable[dict[str, Any]], negatives_extra: dict[str, Iterable[str]] | None = None):
+    def __init__(self, ingredients: Iterable[dict[str, Any]], negatives_extra: dict[str, Iterable[str]] | None = None,
+                 market: str = markets.DEFAULT_MARKET):
+        self.market = markets.get(market)
+        self.lang = self.market.lang
+        self.fx = self.market.fx
         self.items: dict[str, Ingredient] = {}
         self.index: dict[str, set[str]] = {}  # first 3 chars of a stem -> ingredient ids
         for raw in ingredients:
+            ref = raw.get("refPriceCzkPerKg")
+            localized = ((raw.get("names") or {}).get(self.lang) if isinstance(raw.get("names"), dict) else None)
             ing = Ingredient(
                 id=raw["id"],
                 name_cs=raw.get("nameCs") or raw["id"],
                 category=raw.get("category") or "other",
+                name=str(localized or raw.get("nameCs") or raw["id"]),
                 unit_grams={k: float(v) for k, v in (raw.get("unitGrams") or {}).items() if v},
                 density=raw.get("densityGPerMl"),
-                ref_price=raw.get("refPriceCzkPerKg"),
+                ref_price=(markets.convert_czk(float(ref), self.market.code) if ref else None),
             )
-            names: list[str] = []
-            for key in ("nameCs", "namePluralCs"):
-                if raw.get(key):
-                    names.append(raw[key])
-            names.extend(raw.get("aliases") or [])
+            names = catalog_names(raw, self.lang)
             seen: set[tuple[str, ...]] = set()
             for n in names:
-                stems, reduced = _clean_stems(n)
+                stems, reduced = _clean_stems(n, self.lang)
                 if not stems or stems in seen:
                     continue
                 seen.add(stems)
@@ -733,7 +879,8 @@ class Catalog:
                     self.sibling_of[i] = g
 
     @classmethod
-    def load(cls, path: str = CATALOG_PATH, kupi_terms_path: str | None = KUPI_TERMS_PATH) -> "Catalog":
+    def load(cls, path: str = CATALOG_PATH, kupi_terms_path: str | None = KUPI_TERMS_PATH,
+             market: str = markets.DEFAULT_MARKET) -> "Catalog":
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
         items = data["ingredients"] if isinstance(data, dict) else data
@@ -746,7 +893,7 @@ class Catalog:
                             negatives.setdefault(term["id"], []).extend(term["neg"])
             except (OSError, ValueError):
                 pass
-        return cls(items, negatives)
+        return cls(items, negatives, market=market)
 
     def candidates_for(self, stems: Iterable[str]) -> set[str]:
         out: set[str] = set()
@@ -771,6 +918,7 @@ class Rule:
     store: str
     ingredient_id: str          # catalog id or "ignore"
     note: str = ""
+    market: str = markets.DEFAULT_MARKET   # market code or "*" (rules without a market are Czech)
     _regex: re.Pattern | None = None
     _sub: str = ""
 
@@ -793,7 +941,9 @@ class Rule:
         return bool(self._sub) and re.search(r"(?<![a-z0-9])" + re.escape(self._sub) + r"(?![a-z0-9])", folded_title) is not None
 
 
-def load_rules(path: str = MAPPINGS_PATH) -> list[Rule]:
+def load_rules(path: str = MAPPINGS_PATH, market: str | None = None) -> list[Rule]:
+    """Rules of ``data/mappings.json``; with ``market`` only the rules of that
+    market (``market`` field; ``"*"`` = every market; missing = cz)."""
     if not os.path.exists(path):
         return []
     with open(path, encoding="utf-8") as f:
@@ -802,7 +952,10 @@ def load_rules(path: str = MAPPINGS_PATH) -> list[Rule]:
     for r in data.get("rules", []):
         if not r.get("pattern") or not r.get("ingredientId"):
             continue
-        rules.append(Rule(r["pattern"], r.get("store") or "*", r["ingredientId"], r.get("note", "")))
+        rm = str(r.get("market") or markets.DEFAULT_MARKET).lower()
+        if market is not None and rm not in ("*", markets.get(market).code):
+            continue
+        rules.append(Rule(r["pattern"], r.get("store") or "*", r["ingredientId"], r.get("note", ""), rm))
     return rules
 
 
@@ -840,7 +993,7 @@ def _brand_regexes() -> list[re.Pattern]:
     return _BRAND_RES
 
 
-def analyze_title(title: str, extra_pack: str | None = None) -> TitleInfo:
+def analyze_title(title: str, extra_pack: str | None = None, lang: str = "cs") -> TitleInfo:
     raw = (title or "").replace(" ", " ")
     percents = tuple(float(m.group(1).replace(",", ".")) for m in PERCENT_RE.finditer(raw))
     price_basis = parse_price_basis(raw)
@@ -850,15 +1003,16 @@ def analyze_title(title: str, extra_pack: str | None = None) -> TitleInfo:
     t = PACK_MULTI_RE.sub(" ", t)
     t = PACK_RE.sub(" ", t)
     f = fold(t)
-    for ph in NOISE_PHRASES:
+    noise = noise_words_for(lang)
+    for ph in noise_phrases_for(lang):
         f = re.sub(r"(?<![a-z0-9])" + re.escape(ph) + r"(?![a-z0-9])", " ", f)
     # words that carry product identity (brands and cut/form words included)
-    n_raw = len([x for x in f.split(" ") if len(x) >= 2 and x not in NOISE_WORDS and not x.isdigit()])
+    n_raw = len([x for x in f.split(" ") if len(x) >= 2 and x not in noise and not x.isdigit()])
     for rx in _brand_regexes():
         f = rx.sub(" ", f)
     toks = [x for x in f.split(" ")
-            if len(x) >= 2 and x not in NOISE_WORDS and x not in TITLE_NOISE_WORDS and not x.isdigit()]
-    stems = tuple(stem(x) for x in toks)
+            if len(x) >= 2 and x not in noise and x not in TITLE_NOISE_WORDS and not x.isdigit()]
+    stems = tuple(stem(x, lang) for x in toks)
     if extra_pack and not pack:
         pack = parse_pack(extra_pack)
     folded = fold(raw)
@@ -884,6 +1038,8 @@ class Suggestion:
         d: dict[str, Any] = {"ingredientId": self.ingredient_id, "score": round(self.score, 3), "via": self.variant}
         if catalog and self.ingredient_id in catalog.items:
             d["nameCs"] = catalog.items[self.ingredient_id].name_cs
+            if catalog.lang != "cs":
+                d["name"] = catalog.items[self.ingredient_id].name
         if self.reasons:
             d["reasons"] = self.reasons
         return d
@@ -970,9 +1126,8 @@ def score_title(info: TitleInfo, catalog: Catalog, hint: Any = None) -> list[Sug
             continue
         chosen: str | None = None
         if g.pct_split and info.percents:
-            thr, lo, hi = g.pct_split
             pct = min(info.percents)  # "82 %" butter is not in a group; milk 1,5 % / 3,5 %
-            chosen = lo if pct < thr else hi
+            chosen = g.choose_by_percent(pct)
         if chosen is None:
             for iid, kws in g.keywords.items():
                 if any(any(ts.startswith(k) for ts in stems) for k in kws):
@@ -1124,16 +1279,25 @@ STORE_ALIASES = {
 }
 
 
-def normalize_store(value: Any) -> str | None:
+def normalize_store(value: Any, stores: tuple[str, ...] = STORES) -> str | None:
     if not value:
         return None
-    f = fold(str(value))
-    if f in STORES:
+    raw = str(value).strip()
+    if raw in stores:               # camelCase app ids (coopJednota, aldiNord, ...)
+        return raw
+    f = fold(raw)
+    if f in stores:
         return f
-    if f in STORE_ALIASES:
+    if f in STORE_ALIASES and STORE_ALIASES[f] in stores:
         return STORE_ALIASES[f]
-    for s in STORES:
-        if f.startswith(s):
+    folded_ids = {fold(s): s for s in stores}
+    compact = f.replace(" ", "")
+    if f in folded_ids:
+        return folded_ids[f]
+    if compact in folded_ids:               # "COOP Jednota" -> coopjednota, "Aldi Nord" -> aldinord
+        return folded_ids[compact]
+    for fs, s in folded_ids.items():
+        if f.startswith(fs) or compact.startswith(fs):
             return s
     return None
 
@@ -1145,13 +1309,13 @@ def _first(offer: dict[str, Any], *keys: str) -> Any:
     return None
 
 
-def normalise_offer(offer: dict[str, Any]) -> dict[str, Any]:
+def normalise_offer(offer: dict[str, Any], stores: tuple[str, ...] = STORES) -> dict[str, Any]:
     """Canonical camelCase view of an offer (accepts the fetch layer's
     snake_case ``Offer.to_dict()`` as well). ``raw`` is not copied."""
     raw = offer.get("raw") if isinstance(offer.get("raw"), dict) else {}
-    o: dict[str, Any] = {k: v for k, v in offer.items() if k != "raw"}
+    o: dict[str, Any] = {k: v for k, v in offer.items() if k != "raw" and k != "perKg"}
     o["title"] = str(_first(offer, "title", "name", "product") or "").strip()
-    o["store"] = normalize_store(_first(offer, "store", "shop"))
+    o["store"] = normalize_store(_first(offer, "store", "shop"), stores)
     o["price"] = _num(_first(offer, "price", "price_czk", "priceCzk"))
     orig = _num(_first(offer, "originalPrice", "oldPrice", "original_price_czk", "crossed", "regularPrice"))
     o["originalPrice"] = orig if orig and orig > 0 else None
@@ -1200,12 +1364,15 @@ def normalise_offer(offer: dict[str, Any]) -> dict[str, Any]:
 class Mapper:
     def __init__(self, catalog: Catalog, rules: list[Rule] | None = None):
         self.catalog = catalog
-        self.rules = rules or []
+        self.market = catalog.market
+        self.rules = [r for r in (rules or []) if r.market in ("*", self.market.code)]
 
     def map_offer(self, offer: dict[str, Any]) -> dict[str, Any]:
-        base = normalise_offer(offer)
+        base = normalise_offer(offer, self.market.stores)
+        base["market"] = self.market.code
+        base["currency"] = self.market.currency
         title, store = base["title"], base["store"]
-        info = analyze_title(title, extra_pack=base.get("pack"))
+        info = analyze_title(title, extra_pack=base.get("pack"), lang=self.catalog.lang)
         base["fragmentTitle"] = info.fragment
         hint = base.get("category")
         reasons: list[str] = []
@@ -1293,6 +1460,7 @@ class Mapper:
             "status": status,
             "ingredientId": ing.id if status != "unmatched" else None,
             "ingredientNameCs": ing.name_cs if status != "unmatched" else None,
+            "ingredientName": ing.name if status != "unmatched" else None,
             "ingredientCategory": ing.category,
             "confidence": round(conf, 3),
             "method": method,
@@ -1335,11 +1503,12 @@ def load_offers(path: str) -> list[dict[str, Any]]:
     return data
 
 
-MATCHED_KEYS = ("ingredientId", "ingredientNameCs", "ingredientCategory", "store", "source", "title", "czkPerKg",
+MATCHED_KEYS = ("market", "currency", "ingredientId", "ingredientNameCs", "ingredientName", "ingredientCategory",
+                "store", "source", "title", "czkPerKg",
                 "price", "originalPrice", "promo", "club", "validFrom", "validTo", "status", "url", "pack",
                 "unitPriceText", "confidence", "method", "priceMethod", "priceDetail", "flags", "reasons",
                 "suggestions", "category", "termId", "sourceConfidence", "id", "key")
-UNMATCHED_KEYS = ("status", "title", "store", "source", "price", "originalPrice", "promo", "club", "pack",
+UNMATCHED_KEYS = ("status", "market", "currency", "title", "store", "source", "price", "originalPrice", "promo", "club", "pack",
                   "unitPriceText", "url", "validFrom", "validTo", "category", "czkPerKg", "ingredientId",
                   "confidence", "reasons", "flags", "suggestions", "tokens", "rule", "termId", "sourceConfidence",
                   "id", "key")
@@ -1350,9 +1519,10 @@ def _entry(r: dict[str, Any], keys: tuple[str, ...]) -> dict[str, Any]:
 
 
 def write_outputs(matched: list[dict[str, Any]], rest: list[dict[str, Any]], out_dir: str,
-                  today: str | None = None) -> tuple[str, str]:
+                  today: str | None = None, market: str = markets.DEFAULT_MARKET) -> tuple[str, str]:
     os.makedirs(out_dir, exist_ok=True)
     today = today or date.today().isoformat()
+    m = markets.get(market)
     counts = {
         "matched": len(matched),
         "review": sum(1 for r in rest if r["status"] == "review"),
@@ -1365,14 +1535,16 @@ def write_outputs(matched: list[dict[str, Any]], rest: list[dict[str, Any]], out
     matched_path = os.path.join(out_dir, "matched.json")
     unmatched_path = os.path.join(out_dir, "unmatched.json")
     with open(matched_path, "w", encoding="utf-8", newline="\n") as f:
-        json.dump({"v": 1, "generated": today, "counts": counts, "matchedPerStore": per_store,
+        json.dump({"v": 1, "market": m.code, "currency": m.currency, "generated": today, "counts": counts,
+                   "matchedPerStore": per_store,
                    "items": [_entry(r, MATCHED_KEYS) for r in matched]}, f, ensure_ascii=False, indent=1)
         f.write("\n")
     order = {"review": 0, "unmatched": 1, "ignored": 2}
     items = sorted((_entry(r, UNMATCHED_KEYS) for r in rest),
                    key=lambda r: (order.get(r["status"], 9), -(r.get("confidence") or 0), r.get("title", "")))
     with open(unmatched_path, "w", encoding="utf-8", newline="\n") as f:
-        json.dump({"v": 1, "generated": today, "counts": counts, "items": items}, f, ensure_ascii=False, indent=1)
+        json.dump({"v": 1, "market": m.code, "currency": m.currency, "generated": today, "counts": counts,
+                   "items": items}, f, ensure_ascii=False, indent=1)
         f.write("\n")
     return matched_path, unmatched_path
 
@@ -1391,7 +1563,7 @@ def sync_catalog(app_catalog: str, dest: str = CATALOG_PATH) -> str:
 
 
 def explain(title: str, catalog: Catalog, store: str | None = None, hint: Any = None) -> str:
-    info = analyze_title(title)
+    info = analyze_title(title, lang=catalog.lang)
     lines = [f"title : {title}", f"folded: {info.folded}", f"stems : {' '.join(info.stems)}",
              f"pack  : {info.pack.as_dict() if info.pack else None}   percents: {info.percents}"]
     for s in score_title(info, catalog, hint)[:8]:
@@ -1402,8 +1574,9 @@ def explain(title: str, catalog: Catalog, store: str | None = None, hint: Any = 
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="python -m pipeline.mapper", description=__doc__.split("\n\n")[0])
-    ap.add_argument("--offers", help="input offers.json (list or {offers:[...]})")
-    ap.add_argument("--out-dir", default=os.path.join(REPO_ROOT, "out"))
+    ap.add_argument("--market", default=markets.DEFAULT_MARKET, help="cz | sk | pl | de | at")
+    ap.add_argument("--offers", help="input offers.json (list or {offers:[...]}); default: the market's offers")
+    ap.add_argument("--out-dir", default=None, help="default: the market's out dir (out/ or out/<market>/)")
     ap.add_argument("--catalog", default=CATALOG_PATH)
     ap.add_argument("--mappings", default=MAPPINGS_PATH)
     ap.add_argument("--explain", metavar="TITLE", help="print the scoring of one title and exit")
@@ -1416,20 +1589,26 @@ def main(argv: list[str] | None = None) -> int:
     if args.sync_catalog:
         print(sync_catalog(args.sync_catalog, args.catalog))
         return 0
-    catalog = Catalog.load(args.catalog)
+    m = markets.get(args.market)
+    catalog = Catalog.load(args.catalog, market=m.code)
     if args.explain:
         print(explain(args.explain, catalog, args.store, args.hint))
         return 0
-    if not args.offers:
-        ap.error("--offers is required (or use --explain / --sync-catalog)")
-    offers = load_offers(args.offers)
-    mapper = Mapper(catalog, load_rules(args.mappings))
+    mp_paths = markets.paths(m.code)
+    offers_path = args.offers or mp_paths["offers"]
+    out_dir = args.out_dir or mp_paths["out_dir"]
+    if not os.path.exists(offers_path):
+        print(f"[{m.code}] {offers_path} not found - writing empty matched/unmatched files")
+        offers = []
+    else:
+        offers = load_offers(offers_path)
+    mapper = Mapper(catalog, load_rules(args.mappings, m.code))
     matched, rest = mapper.map_offers(offers)
-    mp, up = write_outputs(matched, rest, args.out_dir)
+    mp, up = write_outputs(matched, rest, out_dir, market=m.code)
     counts = {"matched": len(matched)}
     for r in rest:
         counts[r["status"]] = counts.get(r["status"], 0) + 1
-    print(f"offers: {len(offers)}  " + "  ".join(f"{k}: {v}" for k, v in sorted(counts.items())))
+    print(f"[{m.code}] offers: {len(offers)}  " + "  ".join(f"{k}: {v}" for k, v in sorted(counts.items())))
     print(f"wrote {mp} and {up}")
     return 0
 

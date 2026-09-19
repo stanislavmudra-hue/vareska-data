@@ -163,7 +163,7 @@ class Http:
     def __init__(self, cache_dir: str = DEFAULT_CACHE_DIR, min_interval: float = 1.0,
                  timeout: float = DEFAULT_TIMEOUT, user_agent: str = USER_AGENT,
                  use_cache: bool = True, retries: int = 3, today: Optional[dt.date] = None,
-                 check_robots: bool = True, sleep=time.sleep):
+                 check_robots: bool = True, sleep=time.sleep, accept_language: str = 'cs-CZ,cs;q=0.9'):
         self.cache_dir = cache_dir
         self.min_interval = min_interval
         self.timeout = timeout
@@ -176,7 +176,7 @@ class Http:
         self._last: dict[str, float] = {}
         self._robots: dict[str, RobotsInfo] = {}
         self.session = requests.Session()
-        self.session.headers.update({'User-Agent': user_agent, 'Accept-Language': 'cs-CZ,cs;q=0.9'})
+        self.session.headers.update({'User-Agent': user_agent, 'Accept-Language': accept_language})
         self.log: list[dict[str, Any]] = []
         self.requests_made = 0
         self.cache_hits = 0

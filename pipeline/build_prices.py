@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
-"""Build ``docs/prices.json`` (app schema v1) from ``out/matched.json``.
+"""Build the price tables from the mapper output.
+
+* ``docs/prices.json``            schema **v1**, Czech market only (unchanged shape -
+                                  older app versions read it),
+* ``docs/prices/<market>.json``   schema **v2** for every market (cz, sk, pl, de, at):
+                                  ``{v: 2, market, currency, updated, perKg, deals[{…, perKg}],
+                                  categoryFallbackPerKg}``, prices in the market currency.
+
+``--market cz`` (default) reads ``out/matched.json`` and writes both files;
+``--market sk`` reads ``out/sk/matched.json`` and writes ``docs/prices/sk.json``
+(paths from ``pipeline/markets.py``). The rules below (medians, deals,
+carry-forward with ``out/last_seen[_<market>].json``, outlier band against
+``refPriceCzkPerKg`` × ``fx``, category fallback = CZ values × ``fx``) are the
+same for every market; an empty ``perKg``/``deals`` is a valid result for a
+market whose sources delivered nothing.
 
 Input contract (``out/matched.json``, written by the mapper step)
 ----------------------------------------------------------------
@@ -57,6 +71,9 @@ from typing import Any, Iterable
 
 PIPELINE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(PIPELINE_DIR)
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
+from pipeline import markets  # noqa: E402
 OUT_DIR = os.path.join(REPO_ROOT, "out")
 DOCS_DIR = os.path.join(REPO_ROOT, "docs")
 CATALOG_DIR = os.path.join(REPO_ROOT, "catalog")
@@ -67,7 +84,7 @@ LAST_SEEN_PATH = os.path.join(OUT_DIR, "last_seen.json")
 BUILD_REPORT_PATH = os.path.join(OUT_DIR, "build_report.json")
 CATEGORY_FALLBACK_PATH = os.path.join(CATALOG_DIR, "category_fallback.json")
 
-STORES = ("albert", "lidl", "kaufland", "tesco", "billa", "penny", "globus")
+STORES = markets.stores_of(markets.DEFAULT_MARKET)   # Czech market; per market: markets.stores_of()
 CATEGORIES = (
     "vegetable", "fruit", "herb", "spice", "meat", "poultry", "fish", "seafood",
     "dairy", "egg", "grain", "pasta", "bakery", "legume", "nut", "oil",
@@ -251,10 +268,15 @@ class Row:
         return True
 
 
-def normalise_rows(matched: Any, catalog: dict[str, dict], report: dict) -> list[Row]:
-    """Matched items -> Row list; skipped rows are counted in ``report``."""
+def normalise_rows(matched: Any, catalog: dict[str, dict], report: dict,
+                   stores: tuple[str, ...] = STORES, fx: float = 1.0) -> list[Row]:
+    """Matched items -> Row list; skipped rows are counted in ``report``.
+    ``stores`` = the market's store enum, ``fx`` converts the catalogue's CZK
+    reference prices into the market currency for the outlier band."""
     skipped = report.setdefault("skipped", defaultdict(int))
     rows: list[Row] = []
+    max_per_kg = MAX_CZK_PER_KG * fx
+    store_ids = {s.lower(): s for s in stores}
     for it in iter_items(matched):
         status = str(_first(it, "status", default="matched")).lower()
         if status not in ("matched", "ok", "auto", "manual"):
@@ -263,22 +285,26 @@ def normalise_rows(matched: Any, catalog: dict[str, dict], report: dict) -> list
         ing = _first(it, "ingredientId", "ingredient_id", "ingredient", "id")
         if isinstance(ing, dict):  # {"id": ..., "score": ...}
             ing = ing.get("id") or ing.get("ingredientId")
-        store = str(_first(it, "store", default="")).lower().strip()
-        czk = _as_float(_first(it, "czkPerKg", "czk_per_kg", "pricePerKg", "price_per_kg",
+        store = str(_first(it, "store", default="")).strip()
+        if store not in stores:             # case-insensitive fallback ("Lidl", "coopjednota")
+            store = store_ids.get(store.lower(), store)
+        czk = _as_float(_first(it, "czkPerKg", "perKg", "czk_per_kg", "pricePerKg", "price_per_kg",
                                 "unitPrice", "unit_price"))
         if not isinstance(ing, str) or not ing:
             skipped["no_ingredient"] += 1
             continue
-        if store not in STORES:
+        if store not in stores:
             skipped["bad_store"] += 1
             continue
         if catalog and ing not in catalog:
             skipped["unknown_ingredient"] += 1
             continue
-        if czk is None or czk <= 0 or czk > MAX_CZK_PER_KG:
+        if czk is None or czk <= 0 or czk > max_per_kg:
             skipped["bad_price"] += 1
             continue
         ref = _as_float((catalog.get(ing) or {}).get("refPriceCzkPerKg"))
+        if ref:
+            ref = ref * fx
         if ref and ref > 0 and not (ref * OUTLIER_LOW <= czk <= ref * OUTLIER_HIGH):
             skipped["outlier"] += 1
             continue
@@ -304,10 +330,30 @@ def _median(values: list[float]) -> float:
     return round(float(statistics.median(values)), 1)
 
 
+def previous_as_v1(previous: Any) -> dict | None:
+    """A previous table in either schema -> the v1 field names used here
+    (``czkPerKg`` / ``deals[].czkPerKg``); None when unusable."""
+    if not isinstance(previous, dict):
+        return None
+    if "perKg" in previous and "czkPerKg" not in previous:
+        deals = []
+        for d in previous.get("deals") or []:
+            if isinstance(d, dict):
+                d = dict(d)
+                if "czkPerKg" not in d and "perKg" in d:
+                    d["czkPerKg"] = d.pop("perKg")
+                deals.append(d)
+        return {**previous, "czkPerKg": previous.get("perKg") or {}, "deals": deals}
+    return previous
+
+
 def build_table(rows: list[Row], today: dt.date, previous: dict | None,
                 last_seen: dict, category_fallback: dict[str, float],
-                report: dict) -> tuple[dict, dict]:
-    """Return (prices.json table, new last_seen map)."""
+                report: dict, stores: tuple[str, ...] = STORES) -> tuple[dict, dict]:
+    """Return (v1-shaped table, new last_seen map). ``stores`` = the market's
+    store enum (carry-forward ignores previous values of unknown stores)."""
+    previous = previous_as_v1(previous)
+    STORES_ = stores
     today_iso = today.isoformat()
     current: dict[tuple[str, str], dict[str, list[float]]] = defaultdict(lambda: {"regular": [], "promo": []})
     stores_seen: dict[str, int] = defaultdict(int)
@@ -337,7 +383,7 @@ def build_table(rows: list[Row], today: dt.date, previous: dict | None,
         if not isinstance(per_store, dict):
             continue
         for store, value in per_store.items():
-            if store not in STORES or not isinstance(value, (int, float)) or value <= 0:
+            if store not in STORES_ or not isinstance(value, (int, float)) or value <= 0:
                 continue
             if store in prices.get(ing, {}):
                 continue
@@ -372,7 +418,7 @@ def build_table(rows: list[Row], today: dt.date, previous: dict | None,
             continue
         store = d.get("store")
         vt = parse_iso_date(d.get("validTo"))
-        if store in STORES and stores_seen.get(store, 0) == 0 and vt and vt >= today \
+        if store in STORES_ and stores_seen.get(store, 0) == 0 and vt and vt >= today \
                 and isinstance(d.get("ingredientId"), str) and isinstance(d.get("czkPerKg"), (int, float)):
             deals_by_pair[(d["ingredientId"], store)].append({
                 "ingredientId": d["ingredientId"],
@@ -421,14 +467,14 @@ def build_table(rows: list[Row], today: dt.date, previous: dict | None,
         "pairsPriced": sum(len(v) for v in table["czkPerKg"].values()),
         "pairsFresh": fresh_pairs,
         "pairsFromPromoOnly": sum(1 for v in price_source.values() if v == "promo"),
-        "storesPriced": _stores_priced(table["czkPerKg"]),
+        "storesPriced": _stores_priced(table["czkPerKg"], STORES_),
         "deals": len(deals),
         "dealsCarried": carried_deals,
         "stale": stale,
         "staleCount": len(stale),
         "dropped": dropped,
         "droppedCount": len(dropped),
-        "storesMissing": [s for s in STORES if stores_seen.get(s, 0) == 0],
+        "storesMissing": [s for s in STORES_ if stores_seen.get(s, 0) == 0],
     })
     return table, {k: dict(sorted(v.items())) for k, v in sorted(new_last_seen.items())}
 
@@ -440,22 +486,62 @@ def _count(rows: list[Row], attr: str) -> dict[str, int]:
     return dict(sorted(c.items()))
 
 
-def _stores_priced(prices: dict[str, dict[str, float]]) -> dict[str, int]:
-    c: dict[str, int] = {s: 0 for s in STORES}
+def _stores_priced(prices: dict[str, dict[str, float]], stores: tuple[str, ...] = STORES) -> dict[str, int]:
+    c: dict[str, int] = {s: 0 for s in stores}
     for per_store in prices.values():
         for s in per_store:
             c[s] += 1
     return c
 
 
-def build(matched_path: str = MATCHED_PATH, prices_path: str = PRICES_PATH,
-          last_seen_path: str = LAST_SEEN_PATH, catalog_path: str | None = None,
+def to_v2(table: dict, market: str) -> dict:
+    """v1-shaped table -> schema v2 document of ``market``."""
+    m = markets.get(market)
+    deals = []
+    for d in table.get("deals") or []:
+        deals.append({
+            "ingredientId": d["ingredientId"], "store": d["store"], "perKg": d["czkPerKg"],
+            "validFrom": d["validFrom"], "validTo": d["validTo"], "title": d["title"],
+        })
+    return {
+        "v": 2,
+        "market": m.code,
+        "currency": m.currency,
+        "updated": table["updated"],
+        "perKg": table.get("czkPerKg") or {},
+        "deals": deals,
+        "categoryFallbackPerKg": dict(table.get("categoryFallbackCzkPerKg") or {}),
+    }
+
+
+def build(matched_path: str | None = None, prices_path: str | None = None,
+          last_seen_path: str | None = None, catalog_path: str | None = None,
           category_fallback_path: str = CATEGORY_FALLBACK_PATH,
-          build_report_path: str | None = BUILD_REPORT_PATH,
-          today: dt.date | None = None, previous_path: str | None = None) -> tuple[dict, dict]:
-    """Run the whole build; returns (table, build_report)."""
+          build_report_path: str | None = "",
+          today: dt.date | None = None, previous_path: str | None = None,
+          market: str = markets.DEFAULT_MARKET, prices_v2_path: str | None = None) -> tuple[dict, dict]:
+    """Run the whole build for one market; returns (table, build_report).
+
+    ``prices_path`` is the v1 file (cz only; ignored for other markets),
+    ``prices_v2_path`` the v2 file. Defaults come from ``markets.paths``.
+    The returned table is v1-shaped for cz (what ``docs/prices.json`` holds)
+    and v2 for the other markets."""
+    m = markets.get(market)
+    mp = markets.paths(m.code)
+    matched_path = matched_path or mp["matched"]
+    last_seen_path = last_seen_path or mp["last_seen"]
+    if build_report_path == "":
+        build_report_path = mp["build_report"]
+    v1_path = (prices_path or mp["prices_v1"]) if m.is_default else None
+    if prices_v2_path:
+        v2_path = prices_v2_path
+    elif prices_path:   # explicit v1 target (tests, manual runs): v2 goes next to it
+        v2_path = os.path.join(os.path.dirname(os.path.abspath(prices_path)), "prices", f"{m.code}.json")
+    else:
+        v2_path = mp["prices"]
     today = today or prague_today()
-    report: dict[str, Any] = {"matchedPath": os.path.relpath(matched_path, REPO_ROOT)}
+    report: dict[str, Any] = {"market": m.code, "currency": m.currency,
+                              "matchedPath": os.path.relpath(matched_path, REPO_ROOT)}
     matched = load_json(matched_path, None)
     if matched is None:
         report["warning"] = "matched.json missing - only carry-forward applied"
@@ -463,36 +549,44 @@ def build(matched_path: str = MATCHED_PATH, prices_path: str = PRICES_PATH,
     catalog = load_catalog(catalog_path)
     report["catalogPath"] = os.path.relpath(find_catalog(catalog_path) or "", REPO_ROOT) or None
     report["catalogSize"] = len(catalog)
-    rows = normalise_rows(matched, catalog, report)
-    previous = load_json(previous_path or prices_path, None)
+    rows = normalise_rows(matched, catalog, report, m.stores, m.fx)
+    previous = load_json(previous_path or v1_path or v2_path, None)
     if isinstance(previous, dict):
         report["previousUpdated"] = previous.get("updated")
     else:
         previous = None
     last_seen = load_json(last_seen_path, {}) or {}
-    table, new_last_seen = build_table(rows, today, previous, last_seen,
-                                       load_category_fallback(category_fallback_path), report)
-    dump_json(prices_path, table)
+    fallback = markets.category_fallback(load_category_fallback(category_fallback_path), m.code)
+    table, new_last_seen = build_table(rows, today, previous, last_seen, fallback, report, m.stores)
+    v2 = to_v2(table, m.code)
+    if v1_path:
+        dump_json(v1_path, table)
+    dump_json(v2_path, v2)
     dump_json(last_seen_path, new_last_seen)
+    report["pricesPath"] = os.path.relpath(v1_path or v2_path, REPO_ROOT)
+    report["pricesV2Path"] = os.path.relpath(v2_path, REPO_ROOT)
     if build_report_path:
         dump_json(build_report_path, report)
-    return table, report
+    return (table if v1_path else v2), report
 
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n", 1)[0])
-    ap.add_argument("--matched", default=MATCHED_PATH)
-    ap.add_argument("--out", default=PRICES_PATH, help="docs/prices.json")
-    ap.add_argument("--previous", default=None, help="previous prices.json (default: --out)")
-    ap.add_argument("--last-seen", default=LAST_SEEN_PATH)
+    ap.add_argument("--market", default=markets.DEFAULT_MARKET, help="cz | sk | pl | de | at")
+    ap.add_argument("--matched", default=None, help="default: the market's out/…/matched.json")
+    ap.add_argument("--out", default=None, help="v1 docs/prices.json (cz only); default from markets.paths")
+    ap.add_argument("--out-v2", default=None, help="v2 docs/prices/<market>.json; default from markets.paths")
+    ap.add_argument("--previous", default=None, help="previous table (default: the output file)")
+    ap.add_argument("--last-seen", default=None)
     ap.add_argument("--catalog", default=None)
     ap.add_argument("--category-fallback", default=CATEGORY_FALLBACK_PATH)
     ap.add_argument("--today", default=None, help="YYYY-MM-DD override (tests)")
     args = ap.parse_args(argv)
     today = parse_iso_date(args.today) if args.today else None
     table, report = build(args.matched, args.out, args.last_seen, args.catalog,
-                          args.category_fallback, today=today, previous_path=args.previous)
-    print(f"prices.json: {report['ingredientsPriced']} ingredients, {report['pairsPriced']} pairs "
+                          args.category_fallback, today=today, previous_path=args.previous,
+                          market=args.market, prices_v2_path=args.out_v2)
+    print(f"[{report['market']}] {report['pricesPath']}: {report['ingredientsPriced']} ingredients, {report['pairsPriced']} pairs "
           f"({report['pairsFresh']} fresh, {report['staleCount']} stale, {report['droppedCount']} dropped), "
           f"{report['deals']} deals, rows {report['rows']}, skipped {report.get('skipped')}")
     if report.get("storesMissing"):

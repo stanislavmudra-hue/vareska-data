@@ -338,6 +338,14 @@ class TitleMatching(unittest.TestCase):
         ("Jahody 250 g", "jahody"),
         ("Žampiony 250 g", "zampiony"),
         ("Zmrzlina smetanová jahoda 420 ml", "zmrzlina_vanilkova"),
+        # catalogue 2026-09 (1 191 ingredients): venison and chicken ham exist now
+        ("Jelení kýta bez kosti mražená 800g", "jeleni_maso"),
+        ("Trvanlivé mléko 0,5 %", "mleko_odtucnene"),
+        ("Bezlaktózové trvanlivé mléko 1,5%", "mleko_bez_laktozy"),
+    ]
+    # scorer only (a learned rule in data/mappings.json still maps this to "sunka")
+    AUTO_SCORER = [
+        ("Kuřecí šunka", "kureci_sunka"),
     ]
 
     # Plausible but not certain: an unknown adjective next to a generic noun.
@@ -345,8 +353,6 @@ class TitleMatching(unittest.TestCase):
         ("Chléb Horal Globus 500 g", "chleb"),
         ("Selské máslo 84%", "maslo"),
         ("Jablka Golden", "jablko"),
-        ("Kuřecí šunka", "sunka"),
-        ("Bezlaktózové trvanlivé mléko 1,5%", "mleko_15"),
         ("Chilli sýr", "eidam"),
         ("Gouda se zeleným pestem cca.140g", None),
         ("Filé z aljašské tresky", None),
@@ -357,9 +363,7 @@ class TitleMatching(unittest.TestCase):
         "Pomazánkové máslo",
         "Leerdammer Original 100 g",
         "Znojmia Moravanka sterilovaná pikantní směs 330 g",
-        "Jelení kýta bez kosti mražená 800g",
         "Lotus Biscoff Sandwich Milk Chocolate 150g",
-        "Junior salám Globus",
         "Šála dámská",
         "Blue seven kabát pánský",
         "Perla Margarín s máslovou příchutí 39% tuku",
@@ -373,6 +377,11 @@ class TitleMatching(unittest.TestCase):
                 failures.append((title, expected, r["status"], r["ingredientId"], r["confidence"],
                                  [(s["ingredientId"], s["score"]) for s in r["suggestions"][:3]]))
         self.assertEqual(failures, [], "\n" + "\n".join(map(str, failures)))
+
+    def test_auto_accepted_by_scorer(self):
+        for title, expected in self.AUTO_SCORER:
+            r = SCORER.map_offer(_priced(title, expected))
+            self.assertEqual((r["status"], r["ingredientId"]), ("matched", expected), title)
 
     def test_review_tier(self):
         for title, expected in self.REVIEW:

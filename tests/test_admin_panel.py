@@ -45,6 +45,8 @@ out.md = A.renderMarkdown('# H\n\n| a | b |\n|---|---|\n| 1 | <b>x</b> |\n\n- li
 out.health = A.normalizeHealth({ run: { durationSec: 5, offers: 10 }, sources: { globus: { ok: true, items: 3 }, kaufland: { status: 'skipped' }, albert: { error: 'boom' } } });
 out.unmatched = A.normalizeUnmatched({ unmatched: [{ title: 'A', store: 'lidl' }], review: [{ title: 'B', store: 'penny', ingredientId: 'maslo', confidence: 0.5, suggestions: ['x'] }] });
 out.history = A.normalizeHistory([{ date: '2026-09-02', offers: 2 }, { date: '2026-09-01', items: 1 }]);
+out.markets = A.normalizeMarkets({ v: 1, markets: { cz: { label: 'Cesko', currency: 'CZK', ok: true, status: 'ok', pricesUpdated: '2026-09-19', priced: 239, deals: 733, sourcesOk: 7, sourcesError: 0, notFetched: [] },
+  sk: { currency: 'EUR', ok: true, status: 'warning', priced: 19, deals: 34, notFetched: ['tesco', 'kaufland'] }, pl: { status: 'missing' } } });
 process.stdout.write(JSON.stringify(out));
 """
 
@@ -166,6 +168,12 @@ class AdminPanelTests(unittest.TestCase):
         self.assertEqual(u[0]["key"], "a|lidl")
         self.assertEqual([r["date"] for r in out["history"]], ["2026-09-01", "2026-09-02"])
         self.assertEqual(out["history"][0]["offers"], 1)
+        # normalizeMarkets(): docs/data/markets.json rows in market order, label fallback, missing market
+        mk = out["markets"]
+        self.assertEqual([m["code"] for m in mk], ["cz", "sk", "pl"])
+        self.assertEqual((mk[0]["label"], mk[0]["currency"], mk[0]["date"], mk[0]["priced"]), ("Cesko", "CZK", "2026-09-19", 239))
+        self.assertEqual((mk[1]["label"], mk[1]["notFetched"], mk[1]["prices"]), ("Slovensko", ["tesco", "kaufland"], "prices/sk.json"))
+        self.assertEqual((mk[2]["status"], mk[2]["ok"]), ("missing", None))
 
 
 if __name__ == "__main__":

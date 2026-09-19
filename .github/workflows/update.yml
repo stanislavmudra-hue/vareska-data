@@ -1,6 +1,9 @@
-# Daily price update: fetch leaflets/APIs -> map to ingredients -> build docs/prices.json
-# -> export ratings (Supabase -> docs/ratings.json) -> validate -> report;
-# commit docs/** + out/** when they changed.
+# Daily price update, for every market (cz, sk, pl, de, at - pipeline/markets.py):
+# fetch leaflets/APIs -> map to ingredients -> build docs/prices.json (v1, cz) and
+# docs/prices/<market>.json (v2) -> export ratings (Supabase -> docs/ratings.json)
+# -> validate -> report; commit docs/** + out/** when they changed.
+# run_all.py runs each per-market step for all markets (--market all is the default);
+# a failing fetch of a non-Czech market is a warning, its table carries forward.
 # GitHub Pages serves the docs/ folder of the default branch (classic
 # "Deploy from a branch" mode, see README.md "Nasazení"), so a push is the deploy.
 name: update-prices
@@ -14,6 +17,10 @@ on:
         description: "Reuse out/offers.json instead of fetching (debugging)"
         type: boolean
         default: false
+      markets:
+        description: "Markets to run: all | cz | sk | pl | de | at (comma-separated)"
+        type: string
+        default: "all"
 
 permissions:
   contents: write
@@ -47,33 +54,33 @@ jobs:
         if: ${{ github.event.inputs.skip_fetch != 'true' }}
         env:
           PYTHONUTF8: "1"
-        run: python run_all.py --only fetch
+        run: python run_all.py --only fetch --market "${{ github.event.inputs.markets || 'all' }}"
 
       - name: Map offers to ingredients
         env:
           PYTHONUTF8: "1"
-        run: python run_all.py --only mapper
+        run: python run_all.py --only mapper --market "${{ github.event.inputs.markets || 'all' }}"
 
-      - name: Build prices.json
+      - name: Build prices.json (v1) and prices/<market>.json (v2)
         env:
           PYTHONUTF8: "1"
-        run: python run_all.py --only build
+        run: python run_all.py --only build --market "${{ github.event.inputs.markets || 'all' }}"
 
       - name: Export ratings.json (Supabase recipe_ratings_summary)
         env:
           PYTHONUTF8: "1"
         run: python run_all.py --only ratings
 
-      - name: Validate prices.json
+      - name: Validate price tables (every market)
         env:
           PYTHONUTF8: "1"
-        run: python run_all.py --only validate
+        run: python run_all.py --only validate --market "${{ github.event.inputs.markets || 'all' }}"
 
       - name: Report + panel data
         if: ${{ always() }}
         env:
           PYTHONUTF8: "1"
-        run: python run_all.py --only report
+        run: python run_all.py --only report --market "${{ github.event.inputs.markets || 'all' }}"
 
       - name: Commit and push changes
         if: ${{ success() }}
@@ -97,7 +104,10 @@ jobs:
           path: |
             out/report.json
             out/build_report.json
+            out/*/report.json
+            out/*/build_report.json
             docs/prices.json
+            docs/prices/*.json
             docs/ratings.json
           if-no-files-found: ignore
           retention-days: 14

@@ -1,0 +1,212 @@
+{
+ "market": "pl",
+ "currency": "PLN",
+ "date": "2026-09-19",
+ "generatedAt": "2026-09-19T19:19:52Z",
+ "startedAt": "2026-09-19T19:15:54Z",
+ "durationSec": 238,
+ "status": "ok",
+ "ok": true,
+ "warnings": [],
+ "validation": {
+  "ok": true,
+  "errors": []
+ },
+ "offers": {
+  "perSource": {
+   "lidl_pl": 66
+  },
+  "total": 66,
+  "path": "out\\pl\\offers.json"
+ },
+ "matching": {
+  "path": "out\\pl\\matched.json",
+  "generated": "2026-09-19",
+  "matched": 6,
+  "review": 13,
+  "unmatched": 46,
+  "ignored": 1,
+  "byStatus": {
+   "matched": 6
+  },
+  "matchedPerSource": {
+   "lidl_pl": 6
+  },
+  "matchedPerStore": {
+   "biedronka": 0,
+   "lidl": 6,
+   "kaufland": 0,
+   "auchan": 0,
+   "carrefour": 0,
+   "netto": 0,
+   "dino": 0,
+   "aldi": 0,
+   "zabka": 0
+  },
+  "promoRows": 6,
+  "mapperStats": {
+   "matched": 6,
+   "review": 13,
+   "unmatched": 46,
+   "ignored": 1
+  }
+ },
+ "build": {
+  "market": "pl",
+  "currency": "PLN",
+  "matchedPath": "out\\pl\\matched.json",
+  "catalogPath": "catalog\\ingredients.json",
+  "catalogSize": 1191,
+  "skipped": {},
+  "previousUpdated": "2026-09-19",
+  "today": "2026-09-19",
+  "rows": 6,
+  "rowsPerStore": {
+   "lidl": 6
+  },
+  "rowsPerSource": {
+   "lidl_pl": 6
+  },
+  "promoRows": 6,
+  "clubRows": 0,
+  "ingredientsPriced": 6,
+  "pairsPriced": 6,
+  "pairsFresh": 6,
+  "pairsFromPromoOnly": 6,
+  "storesPriced": {
+   "biedronka": 0,
+   "lidl": 6,
+   "kaufland": 0,
+   "auchan": 0,
+   "carrefour": 0,
+   "netto": 0,
+   "dino": 0,
+   "aldi": 0,
+   "zabka": 0
+  },
+  "deals": 6,
+  "dealsCarried": 0,
+  "stale": [],
+  "staleCount": 0,
+  "dropped": [],
+  "droppedCount": 0,
+  "storesMissing": [
+   "biedronka",
+   "kaufland",
+   "auchan",
+   "carrefour",
+   "netto",
+   "dino",
+   "aldi",
+   "zabka"
+  ],
+  "pricesPath": "docs\\prices\\pl.json",
+  "pricesV2Path": "docs\\prices\\pl.json"
+ },
+ "prices": {
+  "path": "docs\\prices\\pl.json",
+  "v": 2,
+  "market": "pl",
+  "currency": "PLN",
+  "updated": "2026-09-19",
+  "ingredients": 6,
+  "pairs": 6,
+  "perStore": {
+   "biedronka": 0,
+   "lidl": 6,
+   "kaufland": 0,
+   "auchan": 0,
+   "carrefour": 0,
+   "netto": 0,
+   "dino": 0,
+   "aldi": 0,
+   "zabka": 0
+  },
+  "deals": 6,
+  "dealsPerStore": {
+   "biedronka": 0,
+   "lidl": 6,
+   "kaufland": 0,
+   "auchan": 0,
+   "carrefour": 0,
+   "netto": 0,
+   "dino": 0,
+   "aldi": 0,
+   "zabka": 0
+  },
+  "sizeBytes": 1740
+ },
+ "pricesV2Path": null,
+ "fetch": {
+  "v": 1,
+  "market": "pl",
+  "currency": "PLN",
+  "run": "2026-09-19T19:19:38+00:00",
+  "today": "2026-09-19",
+  "sources": {
+   "lidl_pl": {
+    "source": "lidl_pl",
+    "ok": true,
+    "count": 66,
+    "error": null,
+    "stores": {
+     "lidl": 66
+    },
+    "requests": 0,
+    "elapsed_s": 0.0,
+    "notes": [
+     "0 categories, 66 products"
+    ],
+    "tier": "primary",
+    "market": "pl"
+   }
+  },
+  "hosts": {},
+  "robots": [
+   {
+    "host": "www.lidl.pl",
+    "status": 200,
+    "error": null,
+    "rules": 14,
+    "disallow": [
+     "Disallow: /cc.js*",
+     "Disallow: /cdn/assets/cwv/",
+     "Disallow: /user-api/*",
+     "Disallow: /cqe/*",
+     "Disallow: *search?q=*",
+     "Disallow: *?offset=*",
+     "Disallow: *idsOnly=*",
+     "Disallow: *productsOnly=*",
+     "Disallow: *id=*",
+     "Disallow: *pageId=*",
+     "Disallow: *advisor=*",
+     "Disallow: *sort=*"
+    ],
+    "crawl_delay": null
+   }
+  ],
+  "notFetched": [
+   "biedronka",
+   "kaufland",
+   "auchan",
+   "carrefour",
+   "netto",
+   "dino",
+   "aldi",
+   "zabka"
+  ],
+  "requests_made": 0,
+  "cache_hits": 2
+ },
+ "fetchPath": "out\\pl\\health.json",
+ "notFetched": [
+  "biedronka",
+  "kaufland",
+  "auchan",
+  "carrefour",
+  "netto",
+  "dino",
+  "aldi",
+  "zabka"
+ ]
+}

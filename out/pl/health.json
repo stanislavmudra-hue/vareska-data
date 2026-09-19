@@ -1,0 +1,61 @@
+{
+ "v": 1,
+ "market": "pl",
+ "currency": "PLN",
+ "run": "2026-09-19T19:19:38+00:00",
+ "today": "2026-09-19",
+ "sources": {
+  "lidl_pl": {
+   "source": "lidl_pl",
+   "ok": true,
+   "count": 66,
+   "error": null,
+   "stores": {
+    "lidl": 66
+   },
+   "requests": 0,
+   "elapsed_s": 0.0,
+   "notes": [
+    "0 categories, 66 products"
+   ],
+   "tier": "primary",
+   "market": "pl"
+  }
+ },
+ "hosts": {},
+ "robots": [
+  {
+   "host": "www.lidl.pl",
+   "status": 200,
+   "error": null,
+   "rules": 14,
+   "disallow": [
+    "Disallow: /cc.js*",
+    "Disallow: /cdn/assets/cwv/",
+    "Disallow: /user-api/*",
+    "Disallow: /cqe/*",
+    "Disallow: *search?q=*",
+    "Disallow: *?offset=*",
+    "Disallow: *idsOnly=*",
+    "Disallow: *productsOnly=*",
+    "Disallow: *id=*",
+    "Disallow: *pageId=*",
+    "Disallow: *advisor=*",
+    "Disallow: *sort=*"
+   ],
+   "crawl_delay": null
+  }
+ ],
+ "notFetched": [
+  "biedronka",
+  "kaufland",
+  "auchan",
+  "carrefour",
+  "netto",
+  "dino",
+  "aldi",
+  "zabka"
+ ],
+ "requests_made": 0,
+ "cache_hits": 2
+}

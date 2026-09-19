@@ -18,8 +18,13 @@
     billa: 'Billa (Publitas)', kaufland: 'Kaufland (Schwarz)', tesco: 'Tesco', kupi: 'kupi.cz',
     akcniceny: 'akcniceny.cz',
   };
+  // Markets (pipeline/markets.py): docs/data/markets.json has one row per market;
+  // the panel itself shows the Czech market, the other markets publish
+  // docs/prices/<market>.json (schema v2) and docs/data/<market>/…
+  const MARKET_LABEL = { cz: 'Česko', sk: 'Slovensko', pl: 'Polsko', de: 'Německo', at: 'Rakousko' };
   const DATA = {
     prices: '../prices.json',
+    markets: '../data/markets.json',
     health: '../data/health.json',
     history: '../data/history.json',
     unmatched: '../data/unmatched.json',
@@ -153,7 +158,7 @@
   const state = {
     settings: Object.assign({}, DEFAULT_SETTINGS, lsGet(LS.settings, {})),
     prices: null, health: null, history: [], unmatched: [], catalog: [], catalogById: new Map(),
-    mappings: null, diag: [],
+    mappings: null, markets: [], diag: [],
     pending: lsGet(LS.pending, []),       // [{key, title, store, source, action, ingredientId, ts}]
     handled: pruneHandled(lsGet(LS.handled, {})), // key -> {action, ingredientId, ts}; hidden locally until the next run picks the rule up
     queueShown: 50, priceShown: 100, dealsShown: 100,
@@ -229,6 +234,22 @@
       robots: s.robots || null,
       fetchedAt: s.fetchedAt || s.fetched_at || s.at || null,
     };
+  }
+  function normalizeMarkets(doc) {
+    const rows = doc && typeof doc === 'object' ? (doc.markets || doc) : null;
+    if (!rows || typeof rows !== 'object' || Array.isArray(rows)) return [];
+    return Object.entries(rows).map(([code, m]) => {
+      m = m || {};
+      return {
+        code, label: m.label || MARKET_LABEL[code] || code.toUpperCase(),
+        currency: m.currency || null, ok: m.ok === undefined ? null : m.ok, status: m.status || null,
+        date: m.pricesUpdated || m.date || null, priced: m.priced ?? null, deals: m.deals ?? null,
+        offers: m.offers ?? null, review: m.review ?? null, unmatched: m.unmatched ?? null,
+        sourcesOk: m.sourcesOk ?? null, sourcesError: m.sourcesError ?? null,
+        notFetched: Array.isArray(m.notFetched) ? m.notFetched : [],
+        prices: m.prices || ('prices/' + code + '.json'),
+      };
+    });
   }
   function normalizeHistory(h) {
     let runs = Array.isArray(h) ? h : (h && (h.runs || h.history || h.items)) || [];
@@ -332,15 +353,17 @@
 
   async function loadAll() {
     state.diag = [];
-    const [prices, health, history, unmatched, catalog, mappings] = await Promise.all([
+    const [prices, health, history, unmatched, catalog, mappings, marketsDoc] = await Promise.all([
       tryLoad('prices.json', DATA.prices, fetchJson),
       tryLoad('health.json', DATA.health, fetchJson),
       tryLoad('history.json', DATA.history, fetchJson),
       tryLoad('unmatched.json', DATA.unmatched, fetchJson),
       tryLoad('catalog/ingredients.json', DATA.catalog, fetchJson),
       tryLoad('mappings.json (kopie)', DATA.mappings, fetchJson),
+      tryLoad('markets.json', DATA.markets, fetchJson),
     ]);
     state.prices = prices;
+    state.markets = normalizeMarkets(marketsDoc);
     state.health = normalizeHealth(health);
     state.history = normalizeHistory(history);
     state.unmatched = normalizeUnmatched(unmatched);
@@ -494,6 +517,7 @@
   function renderAll() {
     renderOverview();
     renderHealth();
+    renderMarkets();
     renderPerSource();
     renderHistory();
     renderQueue();
@@ -548,6 +572,33 @@
         el('span', { class: 'name', text: s.label }),
         el('span', { class: 'badge ' + cls, text: s.skipped ? 'přeskočen' : (s.ok === null ? '?' : (s.ok ? 'ok' : 'chyba')) }),
         el('span', { class: 'detail', text: detail.join(' · ') }),
+      ));
+    }
+  }
+
+  function renderMarkets() {
+    const ul = $('markets-list');
+    if (!ul) return;
+    ul.innerHTML = '';
+    const rows = state.markets || [];
+    if (!rows.length) { ul.append(el('li', { class: 'muted', text: 'data/markets.json není k dispozici (jen český trh).' })); return; }
+    for (const m of rows) {
+      const missing = m.status === 'missing' || m.ok === null;
+      const cls = missing ? '' : (m.status === 'error' || m.ok === false ? 'err' : (m.status === 'warning' ? 'warn' : 'ok'));
+      const detail = [];
+      if (m.date) detail.push('k ' + fmtDate(m.date));
+      if (m.priced !== null) detail.push(`${fmtNum(m.priced, 0)} surovin`);
+      if (m.deals !== null) detail.push(`${fmtNum(m.deals, 0)} akcí`);
+      if (m.offers !== null) detail.push(`${fmtNum(m.offers, 0)} nabídek`);
+      if (m.review !== null || m.unmatched !== null) detail.push(`fronta ${fmtNum((m.review || 0) + (m.unmatched || 0), 0)}`);
+      if (m.sourcesOk !== null) detail.push(`zdroje ${fmtNum(m.sourcesOk, 0)} ok` + (m.sourcesError ? ` / ${fmtNum(m.sourcesError, 0)} chyba` : ''));
+      if (m.notFetched.length) detail.push('bez zdroje: ' + m.notFetched.join(', '));
+      ul.append(el('li', null,
+        el('span', { class: 'dot ' + cls }),
+        el('span', { class: 'name', text: `${m.label} (${m.currency || '?'})` }),
+        el('span', { class: 'badge ' + cls, text: missing ? 'bez dat' : (cls === 'err' ? 'chyba' : (cls === 'warn' ? 'varování' : 'ok')) }),
+        el('span', { class: 'detail', text: detail.join(' · ') }),
+        el('a', { class: 'small mono', href: '../' + m.prices, target: '_blank', rel: 'noopener', text: m.prices }),
       ));
     }
   }
@@ -1129,7 +1180,7 @@
   }
 
   // Expose a few internals for tests / console debugging.
-  window.VareskaAdmin = { fold, stem, normalizeTokens, tokenMatches, searchCatalog, renderMarkdown, applyPending, normalizeHealth, normalizeUnmatched, normalizeHistory, state };
+  window.VareskaAdmin = { fold, stem, normalizeTokens, tokenMatches, searchCatalog, renderMarkdown, applyPending, normalizeHealth, normalizeUnmatched, normalizeHistory, normalizeMarkets, state };
 
   document.addEventListener('DOMContentLoaded', () => { bind(); loadAll(); });
 })();

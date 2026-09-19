@@ -1,0 +1,160 @@
+{
+ "market": "de",
+ "currency": "EUR",
+ "date": "2026-09-19",
+ "generatedAt": "2026-09-19T19:19:53Z",
+ "status": "warning",
+ "ok": true,
+ "run": {
+  "date": "2026-09-19",
+  "startedAt": "2026-09-19T19:15:54Z",
+  "finishedAt": "2026-09-19T19:19:53Z",
+  "durationSec": 239,
+  "offers": 111,
+  "deals": 0,
+  "priced": 0,
+  "matched": 0,
+  "review": 40,
+  "unmatched": 71,
+  "ok": true
+ },
+ "lastSuccessfulRun": "2026-09-19",
+ "pricesUpdated": "2026-09-19",
+ "sources": {
+  "lidl_de": {
+   "label": "lidl_de",
+   "ok": true,
+   "skipped": false,
+   "items": 111,
+   "matched": null,
+   "requests": 0,
+   "durationSec": 0.0,
+   "error": null,
+   "robots": null,
+   "notes": [
+    "category API lists the online wine shop only; in-store groceries are not exposed",
+    "7 categories, 111 products"
+   ],
+   "tier": "primary",
+   "fetchedAt": null
+  }
+ },
+ "perStore": {
+  "aldiNord": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "aldiSued": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "lidl": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": false
+  },
+  "kaufland": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "edeka": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "rewe": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "penny": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "netto": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  },
+  "norma": {
+   "priced": 0,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
+   "notFetched": true
+  }
+ },
+ "notFetched": [
+  "aldiNord",
+  "aldiSued",
+  "kaufland",
+  "edeka",
+  "rewe",
+  "penny",
+  "netto",
+  "norma"
+ ],
+ "stale": 0,
+ "dropped": 0,
+ "warnings": [
+  "store 'lidl' had no matched rows today (carry-forward only)"
+ ],
+ "validation": {
+  "ok": true,
+  "errors": []
+ },
+ "recentRuns": [
+  {
+   "date": "2026-09-19",
+   "market": "de",
+   "generatedAt": "2026-09-19T19:19:53Z",
+   "durationSec": 239,
+   "status": "warning",
+   "ok": true,
+   "offers": 111,
+   "perSource": {
+    "lidl_de": 111
+   },
+   "matched": 0,
+   "review": 40,
+   "unmatched": 71,
+   "deals": 0,
+   "priced": 0,
+   "pairsPriced": 0,
+   "perStore": {
+    "aldiNord": 0,
+    "aldiSued": 0,
+    "lidl": 0,
+    "kaufland": 0,
+    "edeka": 0,
+    "rewe": 0,
+    "penny": 0,
+    "netto": 0,
+    "norma": 0
+   },
+   "stale": 0,
+   "dropped": 0,
+   "warnings": 1
+  }
+ ]
+}
