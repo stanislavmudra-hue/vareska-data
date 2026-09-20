@@ -1,10 +1,10 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-09-19",
- "generatedAt": "2026-09-19T19:19:52Z",
- "startedAt": "2026-09-19T19:15:54Z",
- "durationSec": 238,
+ "date": "2026-09-20",
+ "generatedAt": "2026-09-20T07:23:18Z",
+ "startedAt": null,
+ "durationSec": null,
  "status": "ok",
  "ok": true,
  "warnings": [],
@@ -14,27 +14,27 @@
  },
  "offers": {
   "perSource": {
-   "lidl_pl": 66
+   "lidl_pl": 34
   },
-  "total": 66,
-  "path": "out\\pl\\offers.json"
+  "total": 34,
+  "path": "out/pl/offers.json"
  },
  "matching": {
-  "path": "out\\pl\\matched.json",
-  "generated": "2026-09-19",
-  "matched": 6,
-  "review": 13,
-  "unmatched": 46,
+  "path": "out/pl/matched.json",
+  "generated": "2026-09-20",
+  "matched": 5,
+  "review": 5,
+  "unmatched": 23,
   "ignored": 1,
   "byStatus": {
-   "matched": 6
+   "matched": 5
   },
   "matchedPerSource": {
-   "lidl_pl": 6
+   "lidl_pl": 5
   },
   "matchedPerStore": {
    "biedronka": 0,
-   "lidl": 6,
+   "lidl": 5,
    "kaufland": 0,
    "auchan": 0,
    "carrefour": 0,
@@ -43,36 +43,36 @@
    "aldi": 0,
    "zabka": 0
   },
-  "promoRows": 6,
+  "promoRows": 5,
   "mapperStats": {
-   "matched": 6,
-   "review": 13,
-   "unmatched": 46,
+   "matched": 5,
+   "review": 5,
+   "unmatched": 23,
    "ignored": 1
   }
  },
  "build": {
   "market": "pl",
   "currency": "PLN",
-  "matchedPath": "out\\pl\\matched.json",
-  "catalogPath": "catalog\\ingredients.json",
+  "matchedPath": "out/pl/matched.json",
+  "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
   "previousUpdated": "2026-09-19",
-  "today": "2026-09-19",
-  "rows": 6,
+  "today": "2026-09-20",
+  "rows": 5,
   "rowsPerStore": {
-   "lidl": 6
+   "lidl": 5
   },
   "rowsPerSource": {
-   "lidl_pl": 6
+   "lidl_pl": 5
   },
-  "promoRows": 6,
+  "promoRows": 5,
   "clubRows": 0,
   "ingredientsPriced": 6,
   "pairsPriced": 6,
-  "pairsFresh": 6,
-  "pairsFromPromoOnly": 6,
+  "pairsFresh": 0,
+  "pairsFromPromoOnly": 0,
   "storesPriced": {
    "biedronka": 0,
    "lidl": 6,
@@ -84,10 +84,59 @@
    "aldi": 0,
    "zabka": 0
   },
-  "deals": 6,
+  "deals": 5,
   "dealsCarried": 0,
-  "stale": [],
-  "staleCount": 0,
+  "stale": [
+   {
+    "ingredientId": "dyne_hokkaido",
+    "store": "lidl",
+    "czkPerKg": 4.0,
+    "lastSeen": "2026-09-19",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mandarinka",
+    "store": "lidl",
+    "czkPerKg": 7.0,
+    "lastSeen": "2026-09-19",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "marakuja",
+    "store": "lidl",
+    "czkPerKg": 46.6,
+    "lastSeen": "2026-09-19",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "svestky",
+    "store": "lidl",
+    "czkPerKg": 4.0,
+    "lastSeen": "2026-09-19",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "zampiony",
+    "store": "lidl",
+    "czkPerKg": 10.0,
+    "lastSeen": "2026-09-19",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "zazvor",
+    "store": "lidl",
+    "czkPerKg": 16.9,
+    "lastSeen": "2026-09-19",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   }
+  ],
+  "staleCount": 6,
   "dropped": [],
   "droppedCount": 0,
   "storesMissing": [
@@ -100,15 +149,15 @@
    "aldi",
    "zabka"
   ],
-  "pricesPath": "docs\\prices\\pl.json",
-  "pricesV2Path": "docs\\prices\\pl.json"
+  "pricesPath": "docs/prices/pl.json",
+  "pricesV2Path": "docs/prices/pl.json"
  },
  "prices": {
-  "path": "docs\\prices\\pl.json",
+  "path": "docs/prices/pl.json",
   "v": 2,
   "market": "pl",
   "currency": "PLN",
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "ingredients": 6,
   "pairs": 6,
   "perStore": {
@@ -122,10 +171,10 @@
    "aldi": 0,
    "zabka": 0
   },
-  "deals": 6,
+  "deals": 5,
   "dealsPerStore": {
    "biedronka": 0,
-   "lidl": 6,
+   "lidl": 5,
    "kaufland": 0,
    "auchan": 0,
    "carrefour": 0,
@@ -134,34 +183,43 @@
    "aldi": 0,
    "zabka": 0
   },
-  "sizeBytes": 1740
+  "sizeBytes": 1575
  },
  "pricesV2Path": null,
  "fetch": {
   "v": 1,
   "market": "pl",
   "currency": "PLN",
-  "run": "2026-09-19T19:19:38+00:00",
-  "today": "2026-09-19",
+  "run": "2026-09-20T07:22:42+00:00",
+  "today": "2026-09-20",
   "sources": {
    "lidl_pl": {
     "source": "lidl_pl",
     "ok": true,
-    "count": 66,
+    "count": 34,
     "error": null,
     "stores": {
-     "lidl": 66
+     "lidl": 34
     },
-    "requests": 0,
-    "elapsed_s": 0.0,
+    "requests": 2,
+    "elapsed_s": 1.3,
     "notes": [
-     "0 categories, 66 products"
+     "0 categories, 34 products"
     ],
     "tier": "primary",
     "market": "pl"
    }
   },
-  "hosts": {},
+  "hosts": {
+   "www.lidl.pl": {
+    "requests": 2,
+    "statuses": {
+     "200": 2
+    },
+    "server": "myracloud",
+    "cf_mitigated": null
+   }
+  },
   "robots": [
    {
     "host": "www.lidl.pl",
@@ -195,10 +253,10 @@
    "aldi",
    "zabka"
   ],
-  "requests_made": 0,
-  "cache_hits": 2
+  "requests_made": 2,
+  "cache_hits": 0
  },
- "fetchPath": "out\\pl\\health.json",
+ "fetchPath": "out/pl/health.json",
  "notFetched": [
   "biedronka",
   "kaufland",

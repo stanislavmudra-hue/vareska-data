@@ -1,10 +1,10 @@
 {
  "market": "sk",
  "currency": "EUR",
- "date": "2026-09-19",
- "generatedAt": "2026-09-19T19:19:52Z",
- "startedAt": "2026-09-19T19:15:54Z",
- "durationSec": 238,
+ "date": "2026-09-20",
+ "generatedAt": "2026-09-20T07:23:18Z",
+ "startedAt": null,
+ "durationSec": null,
  "status": "ok",
  "ok": true,
  "warnings": [],
@@ -17,11 +17,11 @@
    "lidl_sk": 75
   },
   "total": 75,
-  "path": "out\\sk\\offers.json"
+  "path": "out/sk/offers.json"
  },
  "matching": {
-  "path": "out\\sk\\matched.json",
-  "generated": "2026-09-19",
+  "path": "out/sk/matched.json",
+  "generated": "2026-09-20",
   "matched": 36,
   "review": 21,
   "unmatched": 15,
@@ -52,12 +52,12 @@
  "build": {
   "market": "sk",
   "currency": "EUR",
-  "matchedPath": "out\\sk\\matched.json",
-  "catalogPath": "catalog\\ingredients.json",
+  "matchedPath": "out/sk/matched.json",
+  "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
   "previousUpdated": "2026-09-19",
-  "today": "2026-09-19",
+  "today": "2026-09-20",
   "rows": 36,
   "rowsPerStore": {
    "lidl": 36
@@ -94,15 +94,15 @@
    "terno",
    "fresh"
   ],
-  "pricesPath": "docs\\prices\\sk.json",
-  "pricesV2Path": "docs\\prices\\sk.json"
+  "pricesPath": "docs/prices/sk.json",
+  "pricesV2Path": "docs/prices/sk.json"
  },
  "prices": {
-  "path": "docs\\prices\\sk.json",
+  "path": "docs/prices/sk.json",
   "v": 2,
   "market": "sk",
   "currency": "EUR",
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "ingredients": 19,
   "pairs": 19,
   "perStore": {
@@ -131,8 +131,8 @@
   "v": 1,
   "market": "sk",
   "currency": "EUR",
-  "run": "2026-09-19T19:19:37+00:00",
-  "today": "2026-09-19",
+  "run": "2026-09-20T07:22:41+00:00",
+  "today": "2026-09-20",
   "sources": {
    "lidl_sk": {
     "source": "lidl_sk",
@@ -142,8 +142,8 @@
     "stores": {
      "lidl": 75
     },
-    "requests": 0,
-    "elapsed_s": 0.0,
+    "requests": 2,
+    "elapsed_s": 1.4,
     "notes": [
      "0 categories, 75 products"
     ],
@@ -151,7 +151,16 @@
     "market": "sk"
    }
   },
-  "hosts": {},
+  "hosts": {
+   "www.lidl.sk": {
+    "requests": 2,
+    "statuses": {
+     "200": 2
+    },
+    "server": "myracloud",
+    "cf_mitigated": null
+   }
+  },
   "robots": [
    {
     "host": "www.lidl.sk",
@@ -183,10 +192,10 @@
    "terno",
    "fresh"
   ],
-  "requests_made": 0,
-  "cache_hits": 2
+  "requests_made": 2,
+  "cache_hits": 0
  },
- "fetchPath": "out\\sk\\health.json",
+ "fetchPath": "out/sk/health.json",
  "notFetched": [
   "tesco",
   "kaufland",

@@ -1,38 +1,38 @@
 {
  "market": "at",
  "currency": "EUR",
- "date": "2026-09-19",
- "generatedAt": "2026-09-19T19:19:53Z",
+ "date": "2026-09-20",
+ "generatedAt": "2026-09-20T07:23:19Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-09-19",
-  "startedAt": "2026-09-19T19:15:54Z",
-  "finishedAt": "2026-09-19T19:19:53Z",
-  "durationSec": 239,
-  "offers": 167,
-  "deals": 8,
+  "date": "2026-09-20",
+  "startedAt": null,
+  "finishedAt": "2026-09-20T07:23:19Z",
+  "durationSec": null,
+  "offers": 245,
+  "deals": 16,
   "priced": 3,
-  "matched": 8,
-  "review": 31,
-  "unmatched": 121,
+  "matched": 17,
+  "review": 62,
+  "unmatched": 153,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-19",
- "pricesUpdated": "2026-09-19",
+ "lastSuccessfulRun": "2026-09-20",
+ "pricesUpdated": "2026-09-20",
  "sources": {
   "lidl_at": {
    "label": "lidl_at",
    "ok": true,
    "skipped": false,
-   "items": 167,
-   "matched": 8,
-   "requests": 0,
-   "durationSec": 0.0,
+   "items": 245,
+   "matched": 17,
+   "requests": 16,
+   "durationSec": 16.1,
    "error": null,
    "robots": null,
    "notes": [
-    "17 categories, 167 products"
+    "17 categories, 245 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -69,8 +69,8 @@
   },
   "lidl": {
    "priced": 3,
-   "deals": 8,
-   "rowsToday": 8,
+   "deals": 16,
+   "rowsToday": 17,
    "missingToday": false,
    "notFetched": false
   },
@@ -97,7 +97,7 @@
   "penny",
   "mpreis"
  ],
- "stale": 0,
+ "stale": 3,
  "dropped": 0,
  "warnings": [],
  "validation": {
@@ -132,6 +132,36 @@
     "mpreis": 0
    },
    "stale": 0,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-09-20",
+   "market": "at",
+   "generatedAt": "2026-09-20T07:23:19Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 245,
+   "perSource": {
+    "lidl_at": 245
+   },
+   "matched": 17,
+   "review": 62,
+   "unmatched": 153,
+   "deals": 16,
+   "priced": 3,
+   "pairsPriced": 3,
+   "perStore": {
+    "billa": 0,
+    "spar": 0,
+    "interspar": 0,
+    "hofer": 0,
+    "lidl": 3,
+    "penny": 0,
+    "mpreis": 0
+   },
+   "stale": 3,
    "dropped": 0,
    "warnings": 0
   }

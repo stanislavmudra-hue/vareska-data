@@ -1,25 +1,25 @@
 {
  "market": "pl",
  "currency": "PLN",
- "matchedPath": "out\\pl\\matched.json",
- "catalogPath": "catalog\\ingredients.json",
+ "matchedPath": "out/pl/matched.json",
+ "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
  "previousUpdated": "2026-09-19",
- "today": "2026-09-19",
- "rows": 6,
+ "today": "2026-09-20",
+ "rows": 5,
  "rowsPerStore": {
-  "lidl": 6
+  "lidl": 5
  },
  "rowsPerSource": {
-  "lidl_pl": 6
+  "lidl_pl": 5
  },
- "promoRows": 6,
+ "promoRows": 5,
  "clubRows": 0,
  "ingredientsPriced": 6,
  "pairsPriced": 6,
- "pairsFresh": 6,
- "pairsFromPromoOnly": 6,
+ "pairsFresh": 0,
+ "pairsFromPromoOnly": 0,
  "storesPriced": {
   "biedronka": 0,
   "lidl": 6,
@@ -31,10 +31,59 @@
   "aldi": 0,
   "zabka": 0
  },
- "deals": 6,
+ "deals": 5,
  "dealsCarried": 0,
- "stale": [],
- "staleCount": 0,
+ "stale": [
+  {
+   "ingredientId": "dyne_hokkaido",
+   "store": "lidl",
+   "czkPerKg": 4.0,
+   "lastSeen": "2026-09-19",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "mandarinka",
+   "store": "lidl",
+   "czkPerKg": 7.0,
+   "lastSeen": "2026-09-19",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "marakuja",
+   "store": "lidl",
+   "czkPerKg": 46.6,
+   "lastSeen": "2026-09-19",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "svestky",
+   "store": "lidl",
+   "czkPerKg": 4.0,
+   "lastSeen": "2026-09-19",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "zampiony",
+   "store": "lidl",
+   "czkPerKg": 10.0,
+   "lastSeen": "2026-09-19",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "zazvor",
+   "store": "lidl",
+   "czkPerKg": 16.9,
+   "lastSeen": "2026-09-19",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  }
+ ],
+ "staleCount": 6,
  "dropped": [],
  "droppedCount": 0,
  "storesMissing": [
@@ -47,6 +96,6 @@
   "aldi",
   "zabka"
  ],
- "pricesPath": "docs\\prices\\pl.json",
- "pricesV2Path": "docs\\prices\\pl.json"
+ "pricesPath": "docs/prices/pl.json",
+ "pricesV2Path": "docs/prices/pl.json"
 }

@@ -2,8 +2,8 @@
  "v": 1,
  "market": "sk",
  "currency": "EUR",
- "run": "2026-09-19T19:19:37+00:00",
- "today": "2026-09-19",
+ "run": "2026-09-20T07:22:41+00:00",
+ "today": "2026-09-20",
  "sources": {
   "lidl_sk": {
    "source": "lidl_sk",
@@ -13,8 +13,8 @@
    "stores": {
     "lidl": 75
    },
-   "requests": 0,
-   "elapsed_s": 0.0,
+   "requests": 2,
+   "elapsed_s": 1.4,
    "notes": [
     "0 categories, 75 products"
    ],
@@ -22,7 +22,16 @@
    "market": "sk"
   }
  },
- "hosts": {},
+ "hosts": {
+  "www.lidl.sk": {
+   "requests": 2,
+   "statuses": {
+    "200": 2
+   },
+   "server": "myracloud",
+   "cf_mitigated": null
+  }
+ },
  "robots": [
   {
    "host": "www.lidl.sk",
@@ -54,6 +63,6 @@
   "terno",
   "fresh"
  ],
- "requests_made": 0,
- "cache_hits": 2
+ "requests_made": 2,
+ "cache_hits": 0
 }

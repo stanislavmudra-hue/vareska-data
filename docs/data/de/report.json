@@ -1,10 +1,10 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-09-19",
- "generatedAt": "2026-09-19T19:19:53Z",
- "startedAt": "2026-09-19T19:15:54Z",
- "durationSec": 239,
+ "date": "2026-09-20",
+ "generatedAt": "2026-09-20T07:23:19Z",
+ "startedAt": null,
+ "durationSec": null,
  "status": "warning",
  "ok": true,
  "warnings": [
@@ -19,14 +19,14 @@
    "lidl_de": 111
   },
   "total": 111,
-  "path": "out\\de\\offers.json"
+  "path": "out/de/offers.json"
  },
  "matching": {
-  "path": "out\\de\\matched.json",
-  "generated": "2026-09-19",
+  "path": "out/de/matched.json",
+  "generated": "2026-09-20",
   "matched": 0,
-  "review": 40,
-  "unmatched": 71,
+  "review": 45,
+  "unmatched": 66,
   "ignored": 0,
   "byStatus": {},
   "matchedPerSource": {},
@@ -44,20 +44,20 @@
   "promoRows": 0,
   "mapperStats": {
    "matched": 0,
-   "review": 40,
-   "unmatched": 71,
+   "review": 45,
+   "unmatched": 66,
    "ignored": 0
   }
  },
  "build": {
   "market": "de",
   "currency": "EUR",
-  "matchedPath": "out\\de\\matched.json",
-  "catalogPath": "catalog\\ingredients.json",
+  "matchedPath": "out/de/matched.json",
+  "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
   "previousUpdated": "2026-09-19",
-  "today": "2026-09-19",
+  "today": "2026-09-20",
   "rows": 0,
   "rowsPerStore": {},
   "rowsPerSource": {},
@@ -95,15 +95,15 @@
    "netto",
    "norma"
   ],
-  "pricesPath": "docs\\prices\\de.json",
-  "pricesV2Path": "docs\\prices\\de.json"
+  "pricesPath": "docs/prices/de.json",
+  "pricesV2Path": "docs/prices/de.json"
  },
  "prices": {
-  "path": "docs\\prices\\de.json",
+  "path": "docs/prices/de.json",
   "v": 2,
   "market": "de",
   "currency": "EUR",
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "ingredients": 0,
   "pairs": 0,
   "perStore": {
@@ -136,8 +136,8 @@
   "v": 1,
   "market": "de",
   "currency": "EUR",
-  "run": "2026-09-19T19:19:38+00:00",
-  "today": "2026-09-19",
+  "run": "2026-09-20T07:22:44+00:00",
+  "today": "2026-09-20",
   "sources": {
    "lidl_de": {
     "source": "lidl_de",
@@ -147,8 +147,8 @@
     "stores": {
      "lidl": 111
     },
-    "requests": 0,
-    "elapsed_s": 0.0,
+    "requests": 5,
+    "elapsed_s": 6.8,
     "notes": [
      "category API lists the online wine shop only; in-store groceries are not exposed",
      "7 categories, 111 products"
@@ -157,7 +157,16 @@
     "market": "de"
    }
   },
-  "hosts": {},
+  "hosts": {
+   "www.lidl.de": {
+    "requests": 5,
+    "statuses": {
+     "200": 5
+    },
+    "server": "myracloud",
+    "cf_mitigated": null
+   }
+  },
   "robots": [
    {
     "host": "www.lidl.de",
@@ -191,10 +200,10 @@
    "netto",
    "norma"
   ],
-  "requests_made": 0,
-  "cache_hits": 5
+  "requests_made": 5,
+  "cache_hits": 0
  },
- "fetchPath": "out\\de\\health.json",
+ "fetchPath": "out/de/health.json",
  "notFetched": [
   "aldiNord",
   "aldiSued",

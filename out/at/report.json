@@ -1,10 +1,10 @@
 {
  "market": "at",
  "currency": "EUR",
- "date": "2026-09-19",
- "generatedAt": "2026-09-19T19:19:53Z",
- "startedAt": "2026-09-19T19:15:54Z",
- "durationSec": 239,
+ "date": "2026-09-20",
+ "generatedAt": "2026-09-20T07:23:19Z",
+ "startedAt": null,
+ "durationSec": null,
  "status": "ok",
  "ok": true,
  "warnings": [],
@@ -14,63 +14,63 @@
  },
  "offers": {
   "perSource": {
-   "lidl_at": 167
+   "lidl_at": 245
   },
-  "total": 167,
-  "path": "out\\at\\offers.json"
+  "total": 245,
+  "path": "out/at/offers.json"
  },
  "matching": {
-  "path": "out\\at\\matched.json",
-  "generated": "2026-09-19",
-  "matched": 8,
-  "review": 31,
-  "unmatched": 121,
-  "ignored": 7,
+  "path": "out/at/matched.json",
+  "generated": "2026-09-20",
+  "matched": 17,
+  "review": 62,
+  "unmatched": 153,
+  "ignored": 13,
   "byStatus": {
-   "matched": 8
+   "matched": 17
   },
   "matchedPerSource": {
-   "lidl_at": 8
+   "lidl_at": 17
   },
   "matchedPerStore": {
    "billa": 0,
    "spar": 0,
    "interspar": 0,
    "hofer": 0,
-   "lidl": 8,
+   "lidl": 17,
    "penny": 0,
    "mpreis": 0
   },
-  "promoRows": 8,
+  "promoRows": 17,
   "mapperStats": {
-   "matched": 8,
-   "review": 31,
-   "unmatched": 121,
-   "ignored": 7
+   "matched": 17,
+   "review": 62,
+   "unmatched": 153,
+   "ignored": 13
   }
  },
  "build": {
   "market": "at",
   "currency": "EUR",
-  "matchedPath": "out\\at\\matched.json",
-  "catalogPath": "catalog\\ingredients.json",
+  "matchedPath": "out/at/matched.json",
+  "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
   "previousUpdated": "2026-09-19",
-  "today": "2026-09-19",
-  "rows": 8,
+  "today": "2026-09-20",
+  "rows": 17,
   "rowsPerStore": {
-   "lidl": 8
+   "lidl": 17
   },
   "rowsPerSource": {
-   "lidl_at": 8
+   "lidl_at": 17
   },
-  "promoRows": 8,
+  "promoRows": 17,
   "clubRows": 0,
   "ingredientsPriced": 3,
   "pairsPriced": 3,
-  "pairsFresh": 3,
-  "pairsFromPromoOnly": 3,
+  "pairsFresh": 0,
+  "pairsFromPromoOnly": 0,
   "storesPriced": {
    "billa": 0,
    "spar": 0,
@@ -80,10 +80,35 @@
    "penny": 0,
    "mpreis": 0
   },
-  "deals": 8,
+  "deals": 16,
   "dealsCarried": 0,
-  "stale": [],
-  "staleCount": 0,
+  "stale": [
+   {
+    "ingredientId": "kren",
+    "store": "lidl",
+    "czkPerKg": 12.6,
+    "lastSeen": "2026-09-19",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "losos_uzeny",
+    "store": "lidl",
+    "czkPerKg": 20.0,
+    "lastSeen": "2026-09-19",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "salotka",
+    "store": "lidl",
+    "czkPerKg": 2.0,
+    "lastSeen": "2026-09-19",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   }
+  ],
+  "staleCount": 3,
   "dropped": [],
   "droppedCount": 0,
   "storesMissing": [
@@ -94,15 +119,15 @@
    "penny",
    "mpreis"
   ],
-  "pricesPath": "docs\\prices\\at.json",
-  "pricesV2Path": "docs\\prices\\at.json"
+  "pricesPath": "docs/prices/at.json",
+  "pricesV2Path": "docs/prices/at.json"
  },
  "prices": {
-  "path": "docs\\prices\\at.json",
+  "path": "docs/prices/at.json",
   "v": 2,
   "market": "at",
   "currency": "EUR",
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "ingredients": 3,
   "pairs": 3,
   "perStore": {
@@ -114,44 +139,53 @@
    "penny": 0,
    "mpreis": 0
   },
-  "deals": 8,
+  "deals": 16,
   "dealsPerStore": {
    "billa": 0,
    "spar": 0,
    "interspar": 0,
    "hofer": 0,
-   "lidl": 8,
+   "lidl": 16,
    "penny": 0,
    "mpreis": 0
   },
-  "sizeBytes": 2000
+  "sizeBytes": 3393
  },
  "pricesV2Path": null,
  "fetch": {
   "v": 1,
   "market": "at",
   "currency": "EUR",
-  "run": "2026-09-19T19:19:39+00:00",
-  "today": "2026-09-19",
+  "run": "2026-09-20T07:22:51+00:00",
+  "today": "2026-09-20",
   "sources": {
    "lidl_at": {
     "source": "lidl_at",
     "ok": true,
-    "count": 167,
+    "count": 245,
     "error": null,
     "stores": {
-     "lidl": 167
+     "lidl": 245
     },
-    "requests": 0,
-    "elapsed_s": 0.0,
+    "requests": 16,
+    "elapsed_s": 16.1,
     "notes": [
-     "17 categories, 167 products"
+     "17 categories, 245 products"
     ],
     "tier": "primary",
     "market": "at"
    }
   },
-  "hosts": {},
+  "hosts": {
+   "www.lidl.at": {
+    "requests": 16,
+    "statuses": {
+     "200": 16
+    },
+    "server": "myracloud",
+    "cf_mitigated": null
+   }
+  },
   "robots": [
    {
     "host": "www.lidl.at",
@@ -183,10 +217,10 @@
    "penny",
    "mpreis"
   ],
-  "requests_made": 0,
-  "cache_hits": 16
+  "requests_made": 16,
+  "cache_hits": 0
  },
- "fetchPath": "out\\at\\health.json",
+ "fetchPath": "out/at/health.json",
  "notFetched": [
   "billa",
   "spar",

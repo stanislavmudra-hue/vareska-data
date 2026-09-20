@@ -1,25 +1,25 @@
 {
  "market": "at",
  "currency": "EUR",
- "matchedPath": "out\\at\\matched.json",
- "catalogPath": "catalog\\ingredients.json",
+ "matchedPath": "out/at/matched.json",
+ "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
  "previousUpdated": "2026-09-19",
- "today": "2026-09-19",
- "rows": 8,
+ "today": "2026-09-20",
+ "rows": 17,
  "rowsPerStore": {
-  "lidl": 8
+  "lidl": 17
  },
  "rowsPerSource": {
-  "lidl_at": 8
+  "lidl_at": 17
  },
- "promoRows": 8,
+ "promoRows": 17,
  "clubRows": 0,
  "ingredientsPriced": 3,
  "pairsPriced": 3,
- "pairsFresh": 3,
- "pairsFromPromoOnly": 3,
+ "pairsFresh": 0,
+ "pairsFromPromoOnly": 0,
  "storesPriced": {
   "billa": 0,
   "spar": 0,
@@ -29,10 +29,35 @@
   "penny": 0,
   "mpreis": 0
  },
- "deals": 8,
+ "deals": 16,
  "dealsCarried": 0,
- "stale": [],
- "staleCount": 0,
+ "stale": [
+  {
+   "ingredientId": "kren",
+   "store": "lidl",
+   "czkPerKg": 12.6,
+   "lastSeen": "2026-09-19",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "losos_uzeny",
+   "store": "lidl",
+   "czkPerKg": 20.0,
+   "lastSeen": "2026-09-19",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "salotka",
+   "store": "lidl",
+   "czkPerKg": 2.0,
+   "lastSeen": "2026-09-19",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  }
+ ],
+ "staleCount": 3,
  "dropped": [],
  "droppedCount": 0,
  "storesMissing": [
@@ -43,6 +68,6 @@
   "penny",
   "mpreis"
  ],
- "pricesPath": "docs\\prices\\at.json",
- "pricesV2Path": "docs\\prices\\at.json"
+ "pricesPath": "docs/prices/at.json",
+ "pricesV2Path": "docs/prices/at.json"
 }
