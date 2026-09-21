@@ -1,38 +1,38 @@
 {
  "market": "sk",
  "currency": "EUR",
- "date": "2026-09-20",
- "generatedAt": "2026-09-20T07:23:18Z",
+ "date": "2026-09-21",
+ "generatedAt": "2026-09-21T07:30:29Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "startedAt": null,
-  "finishedAt": "2026-09-20T07:23:18Z",
+  "finishedAt": "2026-09-21T07:30:29Z",
   "durationSec": null,
-  "offers": 75,
-  "deals": 35,
-  "priced": 19,
-  "matched": 36,
-  "review": 21,
-  "unmatched": 15,
+  "offers": 35,
+  "deals": 20,
+  "priced": 25,
+  "matched": 20,
+  "review": 7,
+  "unmatched": 6,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-20",
- "pricesUpdated": "2026-09-20",
+ "lastSuccessfulRun": "2026-09-21",
+ "pricesUpdated": "2026-09-21",
  "sources": {
   "lidl_sk": {
    "label": "lidl_sk",
    "ok": true,
    "skipped": false,
-   "items": 75,
-   "matched": 36,
+   "items": 35,
+   "matched": 20,
    "requests": 2,
-   "durationSec": 1.4,
+   "durationSec": 1.6,
    "error": null,
    "robots": null,
    "notes": [
-    "0 categories, 75 products"
+    "0 categories, 35 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -47,9 +47,9 @@
    "notFetched": true
   },
   "lidl": {
-   "priced": 19,
-   "deals": 35,
-   "rowsToday": 36,
+   "priced": 25,
+   "deals": 20,
+   "rowsToday": 20,
    "missingToday": false,
    "notFetched": false
   },
@@ -97,7 +97,7 @@
   "terno",
   "fresh"
  ],
- "stale": 0,
+ "stale": 16,
  "dropped": 0,
  "warnings": [],
  "validation": {
@@ -162,6 +162,36 @@
     "fresh": 0
    },
    "stale": 0,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-09-21",
+   "market": "sk",
+   "generatedAt": "2026-09-21T07:30:29Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 35,
+   "perSource": {
+    "lidl_sk": 35
+   },
+   "matched": 20,
+   "review": 7,
+   "unmatched": 6,
+   "deals": 20,
+   "priced": 25,
+   "pairsPriced": 25,
+   "perStore": {
+    "tesco": 0,
+    "lidl": 25,
+    "kaufland": 0,
+    "billa": 0,
+    "coopJednota": 0,
+    "terno": 0,
+    "fresh": 0
+   },
+   "stale": 16,
    "dropped": 0,
    "warnings": 0
   }

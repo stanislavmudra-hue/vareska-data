@@ -1,38 +1,38 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-09-20",
- "generatedAt": "2026-09-20T07:23:18Z",
+ "date": "2026-09-21",
+ "generatedAt": "2026-09-21T07:30:29Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "startedAt": null,
-  "finishedAt": "2026-09-20T07:23:18Z",
+  "finishedAt": "2026-09-21T07:30:29Z",
   "durationSec": null,
-  "offers": 34,
+  "offers": 60,
   "deals": 5,
-  "priced": 6,
-  "matched": 5,
-  "review": 5,
-  "unmatched": 23,
+  "priced": 13,
+  "matched": 7,
+  "review": 15,
+  "unmatched": 37,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-20",
- "pricesUpdated": "2026-09-20",
+ "lastSuccessfulRun": "2026-09-21",
+ "pricesUpdated": "2026-09-21",
  "sources": {
   "lidl_pl": {
    "label": "lidl_pl",
    "ok": true,
    "skipped": false,
-   "items": 34,
-   "matched": 5,
+   "items": 60,
+   "matched": 7,
    "requests": 2,
-   "durationSec": 1.3,
+   "durationSec": 1.8,
    "error": null,
    "robots": null,
    "notes": [
-    "0 categories, 34 products"
+    "0 categories, 60 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -47,9 +47,9 @@
    "notFetched": true
   },
   "lidl": {
-   "priced": 6,
+   "priced": 13,
    "deals": 5,
-   "rowsToday": 5,
+   "rowsToday": 7,
    "missingToday": false,
    "notFetched": false
   },
@@ -173,6 +173,38 @@
    "perStore": {
     "biedronka": 0,
     "lidl": 6,
+    "kaufland": 0,
+    "auchan": 0,
+    "carrefour": 0,
+    "netto": 0,
+    "dino": 0,
+    "aldi": 0,
+    "zabka": 0
+   },
+   "stale": 6,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-09-21",
+   "market": "pl",
+   "generatedAt": "2026-09-21T07:30:29Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 60,
+   "perSource": {
+    "lidl_pl": 60
+   },
+   "matched": 7,
+   "review": 15,
+   "unmatched": 37,
+   "deals": 5,
+   "priced": 13,
+   "pairsPriced": 13,
+   "perStore": {
+    "biedronka": 0,
+    "lidl": 13,
     "kaufland": 0,
     "auchan": 0,
     "carrefour": 0,

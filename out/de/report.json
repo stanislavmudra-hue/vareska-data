@@ -1,8 +1,8 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-09-20",
- "generatedAt": "2026-09-20T07:23:19Z",
+ "date": "2026-09-21",
+ "generatedAt": "2026-09-21T07:30:29Z",
  "startedAt": null,
  "durationSec": null,
  "status": "warning",
@@ -23,11 +23,11 @@
  },
  "matching": {
   "path": "out/de/matched.json",
-  "generated": "2026-09-20",
+  "generated": "2026-09-21",
   "matched": 0,
   "review": 45,
-  "unmatched": 66,
-  "ignored": 0,
+  "unmatched": 65,
+  "ignored": 1,
   "byStatus": {},
   "matchedPerSource": {},
   "matchedPerStore": {
@@ -45,8 +45,8 @@
   "mapperStats": {
    "matched": 0,
    "review": 45,
-   "unmatched": 66,
-   "ignored": 0
+   "unmatched": 65,
+   "ignored": 1
   }
  },
  "build": {
@@ -56,8 +56,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-09-19",
-  "today": "2026-09-20",
+  "previousUpdated": "2026-09-20",
+  "today": "2026-09-21",
   "rows": 0,
   "rowsPerStore": {},
   "rowsPerSource": {},
@@ -103,7 +103,7 @@
   "v": 2,
   "market": "de",
   "currency": "EUR",
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "ingredients": 0,
   "pairs": 0,
   "perStore": {
@@ -136,8 +136,8 @@
   "v": 1,
   "market": "de",
   "currency": "EUR",
-  "run": "2026-09-20T07:22:44+00:00",
-  "today": "2026-09-20",
+  "run": "2026-09-21T07:29:56+00:00",
+  "today": "2026-09-21",
   "sources": {
    "lidl_de": {
     "source": "lidl_de",
@@ -148,7 +148,7 @@
      "lidl": 111
     },
     "requests": 5,
-    "elapsed_s": 6.8,
+    "elapsed_s": 4.5,
     "notes": [
      "category API lists the online wine shop only; in-store groceries are not exposed",
      "7 categories, 111 products"
