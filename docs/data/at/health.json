@@ -1,16 +1,16 @@
 {
  "market": "at",
  "currency": "EUR",
- "date": "2026-09-21",
- "generatedAt": "2026-09-21T07:30:29Z",
+ "date": "2026-09-22",
+ "generatedAt": "2026-09-22T07:12:07Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "startedAt": null,
-  "finishedAt": "2026-09-21T07:30:29Z",
+  "finishedAt": "2026-09-22T07:12:07Z",
   "durationSec": null,
-  "offers": 245,
+  "offers": 237,
   "deals": 16,
   "priced": 8,
   "matched": 17,
@@ -18,21 +18,21 @@
   "unmatched": 153,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-21",
- "pricesUpdated": "2026-09-21",
+ "lastSuccessfulRun": "2026-09-22",
+ "pricesUpdated": "2026-09-22",
  "sources": {
   "lidl_at": {
    "label": "lidl_at",
    "ok": true,
    "skipped": false,
-   "items": 245,
+   "items": 237,
    "matched": 17,
    "requests": 16,
-   "durationSec": 16.1,
+   "durationSec": 15.2,
    "error": null,
    "robots": null,
    "notes": [
-    "17 categories, 245 products"
+    "17 categories, 237 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -175,6 +175,36 @@
    "offers": 245,
    "perSource": {
     "lidl_at": 245
+   },
+   "matched": 17,
+   "review": 62,
+   "unmatched": 153,
+   "deals": 16,
+   "priced": 8,
+   "pairsPriced": 8,
+   "perStore": {
+    "billa": 0,
+    "spar": 0,
+    "interspar": 0,
+    "hofer": 0,
+    "lidl": 8,
+    "penny": 0,
+    "mpreis": 0
+   },
+   "stale": 3,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-09-22",
+   "market": "at",
+   "generatedAt": "2026-09-22T07:12:07Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 237,
+   "perSource": {
+    "lidl_at": 237
    },
    "matched": 17,
    "review": 62,

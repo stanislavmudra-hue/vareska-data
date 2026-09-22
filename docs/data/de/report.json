@@ -1,8 +1,8 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-09-21",
- "generatedAt": "2026-09-21T07:30:29Z",
+ "date": "2026-09-22",
+ "generatedAt": "2026-09-22T07:12:07Z",
  "startedAt": null,
  "durationSec": null,
  "status": "warning",
@@ -16,18 +16,18 @@
  },
  "offers": {
   "perSource": {
-   "lidl_de": 111
+   "lidl_de": 63
   },
-  "total": 111,
+  "total": 63,
   "path": "out/de/offers.json"
  },
  "matching": {
   "path": "out/de/matched.json",
-  "generated": "2026-09-21",
+  "generated": "2026-09-22",
   "matched": 0,
-  "review": 45,
-  "unmatched": 65,
-  "ignored": 1,
+  "review": 29,
+  "unmatched": 34,
+  "ignored": 0,
   "byStatus": {},
   "matchedPerSource": {},
   "matchedPerStore": {
@@ -44,9 +44,9 @@
   "promoRows": 0,
   "mapperStats": {
    "matched": 0,
-   "review": 45,
-   "unmatched": 65,
-   "ignored": 1
+   "review": 29,
+   "unmatched": 34,
+   "ignored": 0
   }
  },
  "build": {
@@ -56,8 +56,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-09-20",
-  "today": "2026-09-21",
+  "previousUpdated": "2026-09-21",
+  "today": "2026-09-22",
   "rows": 0,
   "rowsPerStore": {},
   "rowsPerSource": {},
@@ -103,7 +103,7 @@
   "v": 2,
   "market": "de",
   "currency": "EUR",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "ingredients": 0,
   "pairs": 0,
   "perStore": {
@@ -136,22 +136,22 @@
   "v": 1,
   "market": "de",
   "currency": "EUR",
-  "run": "2026-09-21T07:29:56+00:00",
-  "today": "2026-09-21",
+  "run": "2026-09-22T07:11:34+00:00",
+  "today": "2026-09-22",
   "sources": {
    "lidl_de": {
     "source": "lidl_de",
     "ok": true,
-    "count": 111,
+    "count": 63,
     "error": null,
     "stores": {
-     "lidl": 111
+     "lidl": 63
     },
     "requests": 5,
     "elapsed_s": 4.5,
     "notes": [
      "category API lists the online wine shop only; in-store groceries are not exposed",
-     "7 categories, 111 products"
+     "7 categories, 63 products"
     ],
     "tier": "primary",
     "market": "de"

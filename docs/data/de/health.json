@@ -1,31 +1,31 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-09-21",
- "generatedAt": "2026-09-21T07:30:29Z",
+ "date": "2026-09-22",
+ "generatedAt": "2026-09-22T07:12:07Z",
  "status": "warning",
  "ok": true,
  "run": {
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "startedAt": null,
-  "finishedAt": "2026-09-21T07:30:29Z",
+  "finishedAt": "2026-09-22T07:12:07Z",
   "durationSec": null,
-  "offers": 111,
+  "offers": 63,
   "deals": 0,
   "priced": 0,
   "matched": 0,
-  "review": 45,
-  "unmatched": 65,
+  "review": 29,
+  "unmatched": 34,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-21",
- "pricesUpdated": "2026-09-21",
+ "lastSuccessfulRun": "2026-09-22",
+ "pricesUpdated": "2026-09-22",
  "sources": {
   "lidl_de": {
    "label": "lidl_de",
    "ok": true,
    "skipped": false,
-   "items": 111,
+   "items": 63,
    "matched": null,
    "requests": 5,
    "durationSec": 4.5,
@@ -33,7 +33,7 @@
    "robots": null,
    "notes": [
     "category API lists the online wine shop only; in-store groceries are not exposed",
-    "7 categories, 111 products"
+    "7 categories, 63 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -202,6 +202,38 @@
    "matched": 0,
    "review": 45,
    "unmatched": 65,
+   "deals": 0,
+   "priced": 0,
+   "pairsPriced": 0,
+   "perStore": {
+    "aldiNord": 0,
+    "aldiSued": 0,
+    "lidl": 0,
+    "kaufland": 0,
+    "edeka": 0,
+    "rewe": 0,
+    "penny": 0,
+    "netto": 0,
+    "norma": 0
+   },
+   "stale": 0,
+   "dropped": 0,
+   "warnings": 1
+  },
+  {
+   "date": "2026-09-22",
+   "market": "de",
+   "generatedAt": "2026-09-22T07:12:07Z",
+   "durationSec": null,
+   "status": "warning",
+   "ok": true,
+   "offers": 63,
+   "perSource": {
+    "lidl_de": 63
+   },
+   "matched": 0,
+   "review": 29,
+   "unmatched": 34,
    "deals": 0,
    "priced": 0,
    "pairsPriced": 0,

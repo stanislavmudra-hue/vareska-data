@@ -1,8 +1,8 @@
 {
  "market": "at",
  "currency": "EUR",
- "date": "2026-09-21",
- "generatedAt": "2026-09-21T07:30:29Z",
+ "date": "2026-09-22",
+ "generatedAt": "2026-09-22T07:12:07Z",
  "startedAt": null,
  "durationSec": null,
  "status": "ok",
@@ -14,18 +14,18 @@
  },
  "offers": {
   "perSource": {
-   "lidl_at": 245
+   "lidl_at": 237
   },
-  "total": 245,
+  "total": 237,
   "path": "out/at/offers.json"
  },
  "matching": {
   "path": "out/at/matched.json",
-  "generated": "2026-09-21",
+  "generated": "2026-09-22",
   "matched": 17,
   "review": 62,
   "unmatched": 153,
-  "ignored": 13,
+  "ignored": 5,
   "byStatus": {
    "matched": 17
   },
@@ -46,7 +46,7 @@
    "matched": 17,
    "review": 62,
    "unmatched": 153,
-   "ignored": 13
+   "ignored": 5
   }
  },
  "build": {
@@ -56,8 +56,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-09-20",
-  "today": "2026-09-21",
+  "previousUpdated": "2026-09-21",
+  "today": "2026-09-22",
   "rows": 17,
   "rowsPerStore": {
    "lidl": 17
@@ -88,7 +88,7 @@
     "store": "lidl",
     "czkPerKg": 12.6,
     "lastSeen": "2026-09-19",
-    "ageDays": 2,
+    "ageDays": 3,
     "reason": "not_matched_today"
    },
    {
@@ -96,7 +96,7 @@
     "store": "lidl",
     "czkPerKg": 20.0,
     "lastSeen": "2026-09-19",
-    "ageDays": 2,
+    "ageDays": 3,
     "reason": "not_matched_today"
    },
    {
@@ -104,7 +104,7 @@
     "store": "lidl",
     "czkPerKg": 2.0,
     "lastSeen": "2026-09-19",
-    "ageDays": 2,
+    "ageDays": 3,
     "reason": "not_matched_today"
    }
   ],
@@ -127,7 +127,7 @@
   "v": 2,
   "market": "at",
   "currency": "EUR",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "ingredients": 8,
   "pairs": 8,
   "perStore": {
@@ -156,21 +156,21 @@
   "v": 1,
   "market": "at",
   "currency": "EUR",
-  "run": "2026-09-21T07:30:01+00:00",
-  "today": "2026-09-21",
+  "run": "2026-09-22T07:11:38+00:00",
+  "today": "2026-09-22",
   "sources": {
    "lidl_at": {
     "source": "lidl_at",
     "ok": true,
-    "count": 245,
+    "count": 237,
     "error": null,
     "stores": {
-     "lidl": 245
+     "lidl": 237
     },
     "requests": 16,
-    "elapsed_s": 16.1,
+    "elapsed_s": 15.2,
     "notes": [
-     "17 categories, 245 products"
+     "17 categories, 237 products"
     ],
     "tier": "primary",
     "market": "at"
