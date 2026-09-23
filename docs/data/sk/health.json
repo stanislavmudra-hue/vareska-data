@@ -1,38 +1,38 @@
 {
  "market": "sk",
  "currency": "EUR",
- "date": "2026-09-22",
- "generatedAt": "2026-09-22T07:12:07Z",
+ "date": "2026-09-23",
+ "generatedAt": "2026-09-23T07:07:21Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-09-22",
+  "date": "2026-09-23",
   "startedAt": null,
-  "finishedAt": "2026-09-22T07:12:07Z",
+  "finishedAt": "2026-09-23T07:07:21Z",
   "durationSec": null,
-  "offers": 39,
-  "deals": 23,
+  "offers": 40,
+  "deals": 24,
   "priced": 26,
-  "matched": 23,
+  "matched": 24,
   "review": 7,
   "unmatched": 7,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-22",
- "pricesUpdated": "2026-09-22",
+ "lastSuccessfulRun": "2026-09-23",
+ "pricesUpdated": "2026-09-23",
  "sources": {
   "lidl_sk": {
    "label": "lidl_sk",
    "ok": true,
    "skipped": false,
-   "items": 39,
-   "matched": 23,
+   "items": 40,
+   "matched": 24,
    "requests": 2,
-   "durationSec": 1.4,
+   "durationSec": 1.7,
    "error": null,
    "robots": null,
    "notes": [
-    "0 categories, 39 products"
+    "0 categories, 40 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -48,8 +48,8 @@
   },
   "lidl": {
    "priced": 26,
-   "deals": 23,
-   "rowsToday": 23,
+   "deals": 24,
+   "rowsToday": 24,
    "missingToday": false,
    "notFetched": false
   },
@@ -97,7 +97,7 @@
   "terno",
   "fresh"
  ],
- "stale": 16,
+ "stale": 14,
  "dropped": 0,
  "warnings": [],
  "validation": {
@@ -222,6 +222,36 @@
     "fresh": 0
    },
    "stale": 16,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-09-23",
+   "market": "sk",
+   "generatedAt": "2026-09-23T07:07:21Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 40,
+   "perSource": {
+    "lidl_sk": 40
+   },
+   "matched": 24,
+   "review": 7,
+   "unmatched": 7,
+   "deals": 24,
+   "priced": 26,
+   "pairsPriced": 26,
+   "perStore": {
+    "tesco": 0,
+    "lidl": 26,
+    "kaufland": 0,
+    "billa": 0,
+    "coopJednota": 0,
+    "terno": 0,
+    "fresh": 0
+   },
+   "stale": 14,
    "dropped": 0,
    "warnings": 0
   }
