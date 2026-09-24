@@ -2,21 +2,21 @@
  "v": 1,
  "market": "pl",
  "currency": "PLN",
- "run": "2026-09-23T07:06:36+00:00",
- "today": "2026-09-23",
+ "run": "2026-09-24T07:04:54+00:00",
+ "today": "2026-09-24",
  "sources": {
   "lidl_pl": {
    "source": "lidl_pl",
    "ok": true,
-   "count": 74,
+   "count": 58,
    "error": null,
    "stores": {
-    "lidl": 74
+    "lidl": 58
    },
-   "requests": 14,
-   "elapsed_s": 13.4,
+   "requests": 13,
+   "elapsed_s": 12.3,
    "notes": [
-    "14 categories, 74 products"
+    "12 categories, 58 products"
    ],
    "tier": "primary",
    "market": "pl"
@@ -24,9 +24,9 @@
  },
  "hosts": {
   "www.lidl.pl": {
-   "requests": 14,
+   "requests": 13,
    "statuses": {
-    "200": 14
+    "200": 13
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -65,6 +65,6 @@
   "aldi",
   "zabka"
  ],
- "requests_made": 14,
+ "requests_made": 13,
  "cache_hits": 0
 }

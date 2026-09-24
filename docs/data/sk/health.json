@@ -1,25 +1,25 @@
 {
  "market": "sk",
  "currency": "EUR",
- "date": "2026-09-23",
- "generatedAt": "2026-09-23T07:07:21Z",
+ "date": "2026-09-24",
+ "generatedAt": "2026-09-24T07:05:34Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-09-23",
+  "date": "2026-09-24",
   "startedAt": null,
-  "finishedAt": "2026-09-23T07:07:21Z",
+  "finishedAt": "2026-09-24T07:05:34Z",
   "durationSec": null,
   "offers": 40,
   "deals": 24,
-  "priced": 26,
+  "priced": 33,
   "matched": 24,
   "review": 7,
   "unmatched": 7,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-23",
- "pricesUpdated": "2026-09-23",
+ "lastSuccessfulRun": "2026-09-24",
+ "pricesUpdated": "2026-09-24",
  "sources": {
   "lidl_sk": {
    "label": "lidl_sk",
@@ -28,7 +28,7 @@
    "items": 40,
    "matched": 24,
    "requests": 2,
-   "durationSec": 1.7,
+   "durationSec": 1.9,
    "error": null,
    "robots": null,
    "notes": [
@@ -47,7 +47,7 @@
    "notFetched": true
   },
   "lidl": {
-   "priced": 26,
+   "priced": 33,
    "deals": 24,
    "rowsToday": 24,
    "missingToday": false,
@@ -97,7 +97,7 @@
   "terno",
   "fresh"
  ],
- "stale": 14,
+ "stale": 11,
  "dropped": 0,
  "warnings": [],
  "validation": {
@@ -252,6 +252,36 @@
     "fresh": 0
    },
    "stale": 14,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-09-24",
+   "market": "sk",
+   "generatedAt": "2026-09-24T07:05:34Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 40,
+   "perSource": {
+    "lidl_sk": 40
+   },
+   "matched": 24,
+   "review": 7,
+   "unmatched": 7,
+   "deals": 24,
+   "priced": 33,
+   "pairsPriced": 33,
+   "perStore": {
+    "tesco": 0,
+    "lidl": 33,
+    "kaufland": 0,
+    "billa": 0,
+    "coopJednota": 0,
+    "terno": 0,
+    "fresh": 0
+   },
+   "stale": 11,
    "dropped": 0,
    "warnings": 0
   }

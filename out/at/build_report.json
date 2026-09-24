@@ -5,19 +5,19 @@
  "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
- "previousUpdated": "2026-09-22",
- "today": "2026-09-23",
- "rows": 18,
+ "previousUpdated": "2026-09-23",
+ "today": "2026-09-24",
+ "rows": 12,
  "rowsPerStore": {
-  "lidl": 18
+  "lidl": 12
  },
  "rowsPerSource": {
-  "lidl_at": 18
+  "lidl_at": 12
  },
- "promoRows": 18,
+ "promoRows": 12,
  "clubRows": 0,
- "ingredientsPriced": 9,
- "pairsPriced": 9,
+ "ingredientsPriced": 15,
+ "pairsPriced": 15,
  "pairsFresh": 6,
  "pairsFromPromoOnly": 6,
  "storesPriced": {
@@ -25,19 +25,35 @@
   "spar": 0,
   "interspar": 0,
   "hofer": 0,
-  "lidl": 9,
+  "lidl": 15,
   "penny": 0,
   "mpreis": 0
  },
- "deals": 17,
+ "deals": 11,
  "dealsCarried": 0,
  "stale": [
+  {
+   "ingredientId": "creme_fraiche",
+   "store": "lidl",
+   "czkPerKg": 6.2,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "granatove_jablko",
+   "store": "lidl",
+   "czkPerKg": 4.0,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
   {
    "ingredientId": "kren",
    "store": "lidl",
    "czkPerKg": 12.6,
    "lastSeen": "2026-09-19",
-   "ageDays": 4,
+   "ageDays": 5,
    "reason": "not_matched_today"
   },
   {
@@ -45,7 +61,39 @@
    "store": "lidl",
    "czkPerKg": 20.0,
    "lastSeen": "2026-09-19",
-   "ageDays": 4,
+   "ageDays": 5,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "lunchmeat",
+   "store": "lidl",
+   "czkPerKg": 7.0,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "mandarinka",
+   "store": "lidl",
+   "czkPerKg": 2.6,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "mrkev",
+   "store": "lidl",
+   "czkPerKg": 1.0,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "paprika_spicata",
+   "store": "lidl",
+   "czkPerKg": 6.0,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
    "reason": "not_matched_today"
   },
   {
@@ -53,11 +101,11 @@
    "store": "lidl",
    "czkPerKg": 2.0,
    "lastSeen": "2026-09-19",
-   "ageDays": 4,
+   "ageDays": 5,
    "reason": "not_matched_today"
   }
  ],
- "staleCount": 3,
+ "staleCount": 9,
  "dropped": [],
  "droppedCount": 0,
  "storesMissing": [

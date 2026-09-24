@@ -5,24 +5,24 @@
  "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
- "previousUpdated": "2026-09-22",
- "today": "2026-09-23",
- "rows": 13,
+ "previousUpdated": "2026-09-23",
+ "today": "2026-09-24",
+ "rows": 6,
  "rowsPerStore": {
-  "lidl": 13
+  "lidl": 6
  },
  "rowsPerSource": {
-  "lidl_pl": 13
+  "lidl_pl": 6
  },
- "promoRows": 13,
+ "promoRows": 6,
  "clubRows": 0,
- "ingredientsPriced": 13,
- "pairsPriced": 13,
- "pairsFresh": 7,
- "pairsFromPromoOnly": 7,
+ "ingredientsPriced": 17,
+ "pairsPriced": 17,
+ "pairsFresh": 6,
+ "pairsFromPromoOnly": 6,
  "storesPriced": {
   "biedronka": 0,
-  "lidl": 13,
+  "lidl": 17,
   "kaufland": 0,
   "auchan": 0,
   "carrefour": 0,
@@ -31,15 +31,31 @@
   "aldi": 0,
   "zabka": 0
  },
- "deals": 11,
+ "deals": 6,
  "dealsCarried": 0,
  "stale": [
+  {
+   "ingredientId": "banan",
+   "store": "lidl",
+   "czkPerKg": 9.0,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
   {
    "ingredientId": "dyne_hokkaido",
    "store": "lidl",
    "czkPerKg": 4.0,
    "lastSeen": "2026-09-19",
-   "ageDays": 4,
+   "ageDays": 5,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "kedlubna",
+   "store": "lidl",
+   "czkPerKg": 6.6,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
    "reason": "not_matched_today"
   },
   {
@@ -47,7 +63,7 @@
    "store": "lidl",
    "czkPerKg": 7.0,
    "lastSeen": "2026-09-19",
-   "ageDays": 4,
+   "ageDays": 5,
    "reason": "not_matched_today"
   },
   {
@@ -55,7 +71,39 @@
    "store": "lidl",
    "czkPerKg": 46.6,
    "lastSeen": "2026-09-19",
-   "ageDays": 4,
+   "ageDays": 5,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "mineralka",
+   "store": "lidl",
+   "czkPerKg": 0.9,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "mrkev",
+   "store": "lidl",
+   "czkPerKg": 2.0,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "rajcata_cherry",
+   "store": "lidl",
+   "czkPerKg": 26.6,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "soda",
+   "store": "lidl",
+   "czkPerKg": 1.2,
+   "lastSeen": "2026-09-23",
+   "ageDays": 1,
    "reason": "not_matched_today"
   },
   {
@@ -63,7 +111,7 @@
    "store": "lidl",
    "czkPerKg": 4.0,
    "lastSeen": "2026-09-19",
-   "ageDays": 4,
+   "ageDays": 5,
    "reason": "not_matched_today"
   },
   {
@@ -71,19 +119,11 @@
    "store": "lidl",
    "czkPerKg": 10.0,
    "lastSeen": "2026-09-19",
-   "ageDays": 4,
-   "reason": "not_matched_today"
-  },
-  {
-   "ingredientId": "zazvor",
-   "store": "lidl",
-   "czkPerKg": 16.9,
-   "lastSeen": "2026-09-19",
-   "ageDays": 4,
+   "ageDays": 5,
    "reason": "not_matched_today"
   }
  ],
- "staleCount": 6,
+ "staleCount": 11,
  "dropped": [],
  "droppedCount": 0,
  "storesMissing": [
