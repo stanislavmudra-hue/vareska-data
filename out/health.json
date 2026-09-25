@@ -2,8 +2,8 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-09-24T07:00:25+00:00",
- "today": "2026-09-24",
+ "run": "2026-09-25T06:56:19+00:00",
+ "today": "2026-09-25",
  "sources": {
   "globus": {
    "source": "globus",
@@ -13,8 +13,8 @@
    "stores": {
     "globus": 1037
    },
-   "requests": 12,
-   "elapsed_s": 62.3,
+   "requests": 11,
+   "elapsed_s": 27.3,
    "notes": [
     "house 4005: totalCount=1001, offers=1037"
    ],
@@ -24,16 +24,16 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 330,
+   "count": 389,
    "error": null,
    "stores": {
-    "lidl": 330
+    "lidl": 389
    },
-   "requests": 20,
-   "elapsed_s": 19.3,
+   "requests": 21,
+   "elapsed_s": 20.3,
    "notes": [
-    "Mražené / Zmrzlina: 73 items, only 60 returned",
-    "22 categories, 330 products"
+    "Mražené / Zmrzlina: 74 items, only 60 returned",
+    "23 categories, 389 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -63,7 +63,7 @@
     "albert": 883
    },
    "requests": 5,
-   "elapsed_s": 5.6,
+   "elapsed_s": 4.7,
    "notes": [
     "Albert - 39HM_akcni_letak (2026-09-23..2026-09-29): 28 spreads, 496 offers",
     "Albert - 39SM_akcni_letak (2026-09-23..2026-09-29): 23 spreads, 387 offers"
@@ -80,7 +80,7 @@
     "billa": 314
    },
    "requests": 5,
-   "elapsed_s": 4.4,
+   "elapsed_s": 4.6,
    "notes": [
     "velky-letak-23-9-29-9-2026: 21 spreads, 279 offers",
     "maly-letak-23-9-29-9-2026: 5 spreads, 35 offers"
@@ -95,7 +95,7 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.6,
+   "elapsed_s": 1.8,
    "notes": [
     "23.09.2026 - 29.09.2026: 2026-09-23..2026-09-29",
     "23.09.2026 - 29.09.2026: 2026-09-23..2026-09-29",
@@ -136,22 +136,14 @@
   },
   "kupi": {
    "source": "kupi",
-   "ok": true,
-   "count": 789,
-   "error": null,
-   "stores": {
-    "tesco": 104,
-    "albert": 241,
-    "kaufland": 97,
-    "billa": 107,
-    "globus": 105,
-    "penny": 104,
-    "lidl": 31
-   },
-   "requests": 171,
-   "elapsed_s": 171.8,
+   "ok": false,
+   "count": 0,
+   "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
+   "stores": {},
+   "requests": 2,
+   "elapsed_s": 1.0,
    "notes": [
-    "170 terms, 0 failed, 789 offers"
+    "stopped at term maslo: blocked/robots"
    ],
    "tier": "fallback",
    "market": "cz"
@@ -159,18 +151,17 @@
  },
  "hosts": {
   "www.globus.cz": {
-   "requests": 12,
+   "requests": 11,
    "statuses": {
-    "200": 11,
-    "None": 1
+    "200": 11
    },
    "server": "cloudflare",
    "cf_mitigated": null
   },
   "www.lidl.cz": {
-   "requests": 20,
+   "requests": 21,
    "statuses": {
-    "200": 20
+    "200": 21
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -227,12 +218,12 @@
    "cf_mitigated": null
   },
   "www.kupi.cz": {
-   "requests": 171,
+   "requests": 2,
    "statuses": {
-    "200": 171
+    "403": 2
    },
    "server": "cloudflare",
-   "cf_mitigated": null
+   "cf_mitigated": "challenge"
   }
  },
  "robots": [
@@ -359,55 +350,14 @@
   },
   {
    "host": "www.kupi.cz",
-   "status": 200,
-   "error": null,
-   "rules": 148,
-   "disallow": [
-    "Disallow: /",
-    "Disallow: /",
-    "Disallow: /",
-    "Disallow: /welcome",
-    "Disallow: /404",
-    "Disallow: /login",
-    "Disallow: /popup/*",
-    "Disallow: /logging",
-    "Disallow: /get-locality-by-gps",
-    "Disallow: /nakupni-listek",
-    "Disallow: /get-mesto",
-    "Disallow: /get-slevy",
-    "Disallow: /get-letaky",
-    "Disallow: /get-akce",
-    "Disallow: /get-znacky",
-    "Disallow: /hlidani",
-    "Disallow: /uzivatel",
-    "Disallow: /oblibene",
-    "Disallow: /oblibene-kategorie",
-    "Disallow: /set-oblibene-letaky",
-    "Disallow: /send",
-    "Disallow: /kupici",
-    "Disallow: /objednavka",
-    "Disallow: /redir/*",
-    "Disallow: /nakup/*",
-    "Disallow: /mailing",
-    "Disallow: /redir.php",
-    "Disallow: /tipy",
-    "Disallow: /letak2/*",
-    "Disallow: /letak-dots/*",
-    "Disallow: /mailing/unsubscribe/*",
-    "Disallow: /magazin/pr-clanky",
-    "Disallow: /magazin/clanek-nahled/*",
-    "Disallow: /uzivatel/autorizace",
-    "Disallow: /prihlasit/facebook",
-    "Disallow: /oauth/*",
-    "Disallow: /odhlasit-se",
-    "Disallow: /prihlasit/facebook/overeni",
-    "Disallow: /prihlasit/facebook/potvrzeni-uctu",
-    "Disallow: /letak/nahled/*"
-   ],
+   "status": 403,
+   "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/robots.txt",
+   "rules": 0,
+   "disallow": [],
    "crawl_delay": null
   }
  ],
  "notFetched": [],
- "requests_made": 217,
+ "requests_made": 48,
  "cache_hits": 0
 }
