@@ -1,25 +1,25 @@
 {
  "market": "cz",
  "currency": "CZK",
- "date": "2026-09-25",
- "generatedAt": "2026-09-25T06:58:06Z",
- "status": "warning",
+ "date": "2026-09-26",
+ "generatedAt": "2026-09-26T07:00:35Z",
+ "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-09-25",
+  "date": "2026-09-26",
   "startedAt": null,
-  "finishedAt": "2026-09-25T06:58:06Z",
+  "finishedAt": "2026-09-26T07:00:35Z",
   "durationSec": null,
-  "offers": 2677,
-  "deals": 475,
+  "offers": 3527,
+  "deals": 887,
   "priced": 270,
-  "matched": 559,
-  "review": 587,
-  "unmatched": 861,
+  "matched": 1350,
+  "review": 633,
+  "unmatched": 859,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-25",
- "pricesUpdated": "2026-09-25",
+ "lastSuccessfulRun": "2026-09-26",
+ "pricesUpdated": "2026-09-26",
  "sources": {
   "albert-text": {
    "label": "albert-text",
@@ -28,7 +28,7 @@
    "items": 883,
    "matched": 151,
    "requests": 5,
-   "durationSec": 4.7,
+   "durationSec": 4.6,
    "error": null,
    "robots": null,
    "notes": [
@@ -45,7 +45,7 @@
    "items": 314,
    "matched": 61,
    "requests": 5,
-   "durationSec": 4.6,
+   "durationSec": 4.4,
    "error": null,
    "robots": null,
    "notes": [
@@ -62,7 +62,7 @@
    "items": 1037,
    "matched": 169,
    "requests": 11,
-   "durationSec": 27.3,
+   "durationSec": 30.8,
    "error": null,
    "robots": null,
    "notes": [
@@ -78,7 +78,7 @@
    "items": 0,
    "matched": null,
    "requests": 2,
-   "durationSec": 1.8,
+   "durationSec": 1.7,
    "error": null,
    "robots": null,
    "notes": [
@@ -92,16 +92,16 @@
   },
   "kupi": {
    "label": "kupi",
-   "ok": false,
+   "ok": true,
    "skipped": false,
-   "items": 0,
-   "matched": null,
-   "requests": 2,
-   "durationSec": 1.0,
-   "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
+   "items": 841,
+   "matched": 791,
+   "requests": 171,
+   "durationSec": 172.0,
+   "error": null,
    "robots": null,
    "notes": [
-    "stopped at term maslo: blocked/robots"
+    "170 terms, 0 failed, 841 offers"
    ],
    "tier": "fallback",
    "fetchedAt": null
@@ -110,7 +110,7 @@
    "label": "lidl",
    "ok": true,
    "skipped": false,
-   "items": 389,
+   "items": 398,
    "matched": 173,
    "requests": 21,
    "durationSec": 20.3,
@@ -118,7 +118,7 @@
    "robots": null,
    "notes": [
     "Mražené / Zmrzlina: 74 items, only 60 returned",
-    "23 categories, 389 products"
+    "23 categories, 398 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -143,62 +143,58 @@
  "perStore": {
   "albert": {
    "priced": 170,
-   "deals": 104,
-   "rowsToday": 151,
+   "deals": 222,
+   "rowsToday": 365,
    "missingToday": false,
    "notFetched": false
   },
   "lidl": {
    "priced": 128,
-   "deals": 63,
-   "rowsToday": 173,
+   "deals": 126,
+   "rowsToday": 271,
    "missingToday": false,
    "notFetched": false
   },
   "kaufland": {
-   "priced": 109,
-   "deals": 81,
-   "rowsToday": 0,
-   "missingToday": true,
+   "priced": 110,
+   "deals": 80,
+   "rowsToday": 90,
+   "missingToday": false,
    "notFetched": false
   },
   "tesco": {
    "priced": 87,
-   "deals": 85,
-   "rowsToday": 0,
-   "missingToday": true,
+   "deals": 84,
+   "rowsToday": 95,
+   "missingToday": false,
    "notFetched": false
   },
   "billa": {
    "priced": 120,
-   "deals": 46,
-   "rowsToday": 61,
+   "deals": 127,
+   "rowsToday": 162,
    "missingToday": false,
    "notFetched": false
   },
   "penny": {
-   "priced": 112,
-   "deals": 5,
-   "rowsToday": 5,
+   "priced": 113,
+   "deals": 92,
+   "rowsToday": 98,
    "missingToday": false,
    "notFetched": false
   },
   "globus": {
    "priced": 162,
-   "deals": 91,
-   "rowsToday": 169,
+   "deals": 156,
+   "rowsToday": 269,
    "missingToday": false,
    "notFetched": false
   }
  },
  "notFetched": [],
- "stale": 604,
+ "stale": 312,
  "dropped": 0,
- "warnings": [
-  "store 'kaufland' had no matched rows today (carry-forward only)",
-  "store 'tesco' had no matched rows today (carry-forward only)",
-  "source 'kupi' failed: blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo"
- ],
+ "warnings": [],
  "validation": {
   "ok": true,
   "errors": []
@@ -579,6 +575,41 @@
    "stale": 604,
    "dropped": 0,
    "warnings": 3
+  },
+  {
+   "date": "2026-09-26",
+   "market": "cz",
+   "generatedAt": "2026-09-26T07:00:35Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 3527,
+   "perSource": {
+    "albert-text": 883,
+    "billa-text": 314,
+    "globus": 1037,
+    "kupi": 841,
+    "lidl": 398,
+    "penny": 54
+   },
+   "matched": 1350,
+   "review": 633,
+   "unmatched": 859,
+   "deals": 887,
+   "priced": 270,
+   "pairsPriced": 890,
+   "perStore": {
+    "albert": 170,
+    "lidl": 128,
+    "kaufland": 110,
+    "tesco": 87,
+    "billa": 120,
+    "penny": 113,
+    "globus": 162
+   },
+   "stale": 312,
+   "dropped": 0,
+   "warnings": 0
   }
  ]
 }

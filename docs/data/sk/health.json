@@ -1,38 +1,38 @@
 {
  "market": "sk",
  "currency": "EUR",
- "date": "2026-09-25",
- "generatedAt": "2026-09-25T06:58:07Z",
+ "date": "2026-09-26",
+ "generatedAt": "2026-09-26T07:00:36Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-09-25",
+  "date": "2026-09-26",
   "startedAt": null,
-  "finishedAt": "2026-09-25T06:58:07Z",
+  "finishedAt": "2026-09-26T07:00:36Z",
   "durationSec": null,
-  "offers": 40,
-  "deals": 25,
-  "priced": 34,
-  "matched": 25,
-  "review": 7,
-  "unmatched": 6,
+  "offers": 54,
+  "deals": 30,
+  "priced": 35,
+  "matched": 31,
+  "review": 13,
+  "unmatched": 8,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-25",
- "pricesUpdated": "2026-09-25",
+ "lastSuccessfulRun": "2026-09-26",
+ "pricesUpdated": "2026-09-26",
  "sources": {
   "lidl_sk": {
    "label": "lidl_sk",
    "ok": true,
    "skipped": false,
-   "items": 40,
-   "matched": 25,
+   "items": 54,
+   "matched": 31,
    "requests": 2,
-   "durationSec": 2.0,
+   "durationSec": 1.8,
    "error": null,
    "robots": null,
    "notes": [
-    "0 categories, 40 products"
+    "0 categories, 54 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -47,9 +47,9 @@
    "notFetched": true
   },
   "lidl": {
-   "priced": 34,
-   "deals": 25,
-   "rowsToday": 25,
+   "priced": 35,
+   "deals": 30,
+   "rowsToday": 31,
    "missingToday": false,
    "notFetched": false
   },
@@ -305,6 +305,36 @@
    "perStore": {
     "tesco": 0,
     "lidl": 34,
+    "kaufland": 0,
+    "billa": 0,
+    "coopJednota": 0,
+    "terno": 0,
+    "fresh": 0
+   },
+   "stale": 11,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-09-26",
+   "market": "sk",
+   "generatedAt": "2026-09-26T07:00:36Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 54,
+   "perSource": {
+    "lidl_sk": 54
+   },
+   "matched": 31,
+   "review": 13,
+   "unmatched": 8,
+   "deals": 30,
+   "priced": 35,
+   "pairsPriced": 35,
+   "perStore": {
+    "tesco": 0,
+    "lidl": 35,
     "kaufland": 0,
     "billa": 0,
     "coopJednota": 0,

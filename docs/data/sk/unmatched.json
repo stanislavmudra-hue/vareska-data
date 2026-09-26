@@ -1,6 +1,68 @@
 {
- "date": "2026-09-25",
+ "date": "2026-09-26",
  "review": [
+  {
+   "ingredientId": "kesu",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Kešu orechy XXL",
+   "price": 3.99,
+   "validFrom": "2026-08-31",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kesu",
+     "score": 1.0,
+     "via": "kešu ořechy",
+     "nameCs": "kešu",
+     "name": "kešu"
+    },
+    {
+     "ingredientId": "orechy_smes",
+     "score": 0.78,
+     "via": "mix ořechů",
+     "nameCs": "směs ořechů",
+     "name": "zmes orechov"
+    },
+    {
+     "ingredientId": "vlasske_orechy",
+     "score": 0.78,
+     "via": "ořechy",
+     "nameCs": "vlašské ořechy",
+     "name": "vlašské orechy"
+    }
+   ],
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "ingredientId": "mandarinka",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Mandarínky Satsumas",
+   "czkPerKg": 1.59,
+   "price": 1.59,
+   "originalPrice": 2.69,
+   "validFrom": "2026-09-28",
+   "validTo": "2026-10-04",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mandarinka",
+     "score": 0.839,
+     "via": "mandarínka",
+     "nameCs": "mandarinka",
+     "name": "mandarínka"
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
   {
    "ingredientId": "pstruh",
    "store": "lidl",
@@ -38,6 +100,48 @@
     }
    ],
    "pack": "100 g",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "mineralka",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Baldovská Minerálna voda pomaranč",
+   "czkPerKg": 0.53,
+   "price": 0.79,
+   "validFrom": "2026-10-01",
+   "validTo": "2026-10-04",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mineralka",
+     "score": 0.78,
+     "via": "minerálna voda",
+     "nameCs": "minerální voda",
+     "name": "minerálna voda"
+    },
+    {
+     "ingredientId": "voda",
+     "score": 0.674,
+     "via": "voda",
+     "nameCs": "voda",
+     "name": "voda"
+    },
+    {
+     "ingredientId": "pomeranc",
+     "score": 0.337,
+     "via": "pomaranč",
+     "nameCs": "pomeranč",
+     "name": "pomaranč",
+     "reasons": [
+      "hint-category:fruit"
+     ]
+    }
+   ],
+   "pack": "1.5 l",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -90,6 +194,65 @@
     }
    ],
    "pack": "500 g",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "hrozny",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Ružové hrozno",
+   "czkPerKg": 1.99,
+   "price": 1.99,
+   "originalPrice": 3.99,
+   "validFrom": "2026-09-28",
+   "validTo": "2026-10-04",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "hrozny",
+     "score": 0.78,
+     "via": "hrozno",
+     "nameCs": "hroznové víno",
+     "name": "hrozno"
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "sunka",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Toastová šunka",
+   "czkPerKg": 8.0,
+   "price": 1.59,
+   "originalPrice": 2.19,
+   "validFrom": "2026-10-01",
+   "validTo": "2026-10-04",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "sunka",
+     "score": 0.78,
+     "via": "šunka",
+     "nameCs": "šunka",
+     "name": "šunka"
+    },
+    {
+     "ingredientId": "sunka_od_kosti",
+     "score": 0.741,
+     "via": "šunka s kostí",
+     "nameCs": "šunka od kosti",
+     "name": "šunka od kosti"
+    }
+   ],
+   "pack": "200 g",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -231,6 +394,42 @@
    "pack": "1 kg",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
+  },
+  {
+   "ingredientId": "jablko",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Červené jablká sypané",
+   "czkPerKg": 0.69,
+   "price": 0.69,
+   "originalPrice": 1.39,
+   "validFrom": "2026-10-01",
+   "validTo": "2026-10-04",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "jablko",
+     "score": 0.714,
+     "via": "jablko",
+     "nameCs": "jablko",
+     "name": "jablko"
+    },
+    {
+     "ingredientId": "calvados",
+     "score": 0.285,
+     "via": "jablkovice",
+     "nameCs": "calvados",
+     "name": "calvados",
+     "reasons": [
+      "hint-category:alcohol"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
   }
  ],
  "unmatched": [
@@ -309,6 +508,34 @@
   {
    "store": "lidl",
    "source": "lidl_sk",
+   "title": "Kuracie prsné rezne",
+   "price": 4.99,
+   "originalPrice": 7.49,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 kg",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Kuracie štvrte zadné XXL",
+   "price": 1.89,
+   "originalPrice": 3.39,
+   "validFrom": "2026-10-01",
+   "validTo": "2026-10-04",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 kg",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_sk",
    "title": "Morčacia polievková zmes",
    "price": 2.99,
    "originalPrice": 3.99,
@@ -337,6 +564,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 7,
- "unmatchedTotal": 6
+ "reviewTotal": 13,
+ "unmatchedTotal": 8
 }
