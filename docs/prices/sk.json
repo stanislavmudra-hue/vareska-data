@@ -2,7 +2,7 @@
  "v": 2,
  "market": "sk",
  "currency": "EUR",
- "updated": "2026-09-27",
+ "updated": "2026-09-28",
  "perKg": {
   "avokado": {
    "lidl": 5.8
@@ -64,11 +64,17 @@
   "losos": {
    "lidl": 20.0
   },
+  "majoneza": {
+   "lidl": 4.8
+  },
   "mlete_hovezi": {
    "lidl": 6.9
   },
   "mlete_kruti": {
    "lidl": 7.0
+  },
+  "mlete_maso_mix": {
+   "lidl": 6.0
   },
   "mlete_veprove": {
    "lidl": 3.5
@@ -97,6 +103,9 @@
   "svestky": {
    "lidl": 1.2
   },
+  "tatarska_omacka": {
+   "lidl": 5.0
+  },
   "treska_mrazena_file": {
    "lidl": 11.9
   },
@@ -112,52 +121,12 @@
  },
  "deals": [
   {
-   "ingredientId": "avokado",
-   "store": "lidl",
-   "perKg": 5.8,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Avokádo"
-  },
-  {
-   "ingredientId": "banan",
-   "store": "lidl",
-   "perKg": 1.1,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Banány"
-  },
-  {
-   "ingredientId": "brokolice_mrazena",
-   "store": "lidl",
-   "perKg": 2.6,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Brokolica"
-  },
-  {
-   "ingredientId": "broskve",
-   "store": "lidl",
-   "perKg": 1.7,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Broskyne"
-  },
-  {
    "ingredientId": "dyne_hokkaido",
    "store": "lidl",
    "perKg": 1.0,
    "validFrom": "2026-09-01",
    "validTo": "2026-09-30",
    "title": "Tekvica Hokkaido"
-  },
-  {
-   "ingredientId": "dzus_multivitamin",
-   "store": "lidl",
-   "perKg": 1.1,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Džús 100% multivitamín"
   },
   {
    "ingredientId": "eidam",
@@ -168,52 +137,12 @@
    "title": "Pilos Eidam"
   },
   {
-   "ingredientId": "fiky_cerstve",
-   "store": "lidl",
-   "perKg": 5.8,
-   "validFrom": "2026-09-17",
-   "validTo": "2026-09-27",
-   "title": "Čerstvé figy"
-  },
-  {
-   "ingredientId": "hruska",
-   "store": "lidl",
-   "perKg": 1.5,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Hrušky"
-  },
-  {
    "ingredientId": "kastany",
    "store": "lidl",
    "perKg": 6.5,
    "validFrom": "2026-10-01",
    "validTo": "2026-10-04",
    "title": "Jedlé gaštany"
-  },
-  {
-   "ingredientId": "kedlubna",
-   "store": "lidl",
-   "perKg": 1.6,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Kaleráb"
-  },
-  {
-   "ingredientId": "kureci_stehna",
-   "store": "lidl",
-   "perKg": 2.6,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Kuracie stehná dolné"
-  },
-  {
-   "ingredientId": "kureci_stehna",
-   "store": "lidl",
-   "perKg": 2.6,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Kuracie stehná horné"
   },
   {
    "ingredientId": "majoneza",
@@ -232,116 +161,12 @@
    "title": "Mleté mäso mix XXL"
   },
   {
-   "ingredientId": "mlete_veprove",
-   "store": "lidl",
-   "perKg": 3.5,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Mleté bravčové mäso"
-  },
-  {
-   "ingredientId": "mrkev",
-   "store": "lidl",
-   "perKg": 0.6,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Mrkva"
-  },
-  {
-   "ingredientId": "okurka_salatova",
-   "store": "lidl",
-   "perKg": 2.0,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Šalátové uhorky"
-  },
-  {
-   "ingredientId": "paprika_cervena",
-   "store": "lidl",
-   "perKg": 2.0,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Červená paprika"
-  },
-  {
-   "ingredientId": "porek",
-   "store": "lidl",
-   "perKg": 2.5,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Pór"
-  },
-  {
-   "ingredientId": "rajcata_cherry",
-   "store": "lidl",
-   "perKg": 6.0,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Cherry paradajky datľové"
-  },
-  {
-   "ingredientId": "salat_ledovy",
-   "store": "lidl",
-   "perKg": 2.0,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Ľadový šalát"
-  },
-  {
-   "ingredientId": "sunka",
-   "store": "lidl",
-   "perKg": 5.6,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Výberová dusená šunka"
-  },
-  {
-   "ingredientId": "svestky",
-   "store": "lidl",
-   "perKg": 1.2,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Slivky"
-  },
-  {
    "ingredientId": "tatarska_omacka",
    "store": "lidl",
    "perKg": 5.0,
    "validFrom": "2026-09-28",
    "validTo": "2026-10-04",
    "title": "Tatárska omáčka"
-  },
-  {
-   "ingredientId": "treska_mrazena_file",
-   "store": "lidl",
-   "perKg": 11.9,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Prémium treska"
-  },
-  {
-   "ingredientId": "veprova_panenka",
-   "store": "lidl",
-   "perKg": 5.5,
-   "validFrom": "2026-09-22",
-   "validTo": "2026-09-27",
-   "title": "Bravčová panenka"
-  },
-  {
-   "ingredientId": "veprova_pecene",
-   "store": "lidl",
-   "perKg": 3.2,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Bravčové karé"
-  },
-  {
-   "ingredientId": "veprova_pecene",
-   "store": "lidl",
-   "perKg": 4.7,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Bravčové karé plátky"
   },
   {
    "ingredientId": "veprovy_bucek",

@@ -2,21 +2,21 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-09-27T07:25:07+00:00",
- "today": "2026-09-27",
+ "run": "2026-09-28T08:03:10+00:00",
+ "today": "2026-09-28",
  "sources": {
   "globus": {
    "source": "globus",
    "ok": true,
-   "count": 1037,
+   "count": 774,
    "error": null,
    "stores": {
-    "globus": 1037
+    "globus": 774
    },
-   "requests": 11,
-   "elapsed_s": 54.2,
+   "requests": 9,
+   "elapsed_s": 14.6,
    "notes": [
-    "house 4005: totalCount=1001, offers=1037"
+    "house 4005: totalCount=734, offers=774"
    ],
    "tier": "primary",
    "market": "cz"
@@ -24,16 +24,16 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 398,
+   "count": 357,
    "error": null,
    "stores": {
-    "lidl": 398
+    "lidl": 357
    },
-   "requests": 21,
-   "elapsed_s": 20.3,
+   "requests": 20,
+   "elapsed_s": 20.7,
    "notes": [
-    "Mražené / Zmrzlina: 74 items, only 60 returned",
-    "23 categories, 398 products"
+    "Mražené / Zmrzlina: 73 items, only 60 returned",
+    "22 categories, 357 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -57,16 +57,18 @@
   "albert": {
    "source": "albert",
    "ok": true,
-   "count": 883,
+   "count": 1666,
    "error": null,
    "stores": {
-    "albert": 883
+    "albert": 1666
    },
-   "requests": 5,
-   "elapsed_s": 4.1,
+   "requests": 7,
+   "elapsed_s": 6.1,
    "notes": [
     "Albert - 39HM_akcni_letak (2026-09-23..2026-09-29): 28 spreads, 496 offers",
-    "Albert - 39SM_akcni_letak (2026-09-23..2026-09-29): 23 spreads, 387 offers"
+    "Albert - 39SM_akcni_letak (2026-09-23..2026-09-29): 23 spreads, 387 offers",
+    "Albert - 40HM_akcni_letak (2026-09-30..2026-10-06): 28 spreads, 461 offers",
+    "Albert - 40SM_akcni_letak (2026-09-30..2026-10-06): 23 spreads, 322 offers"
    ],
    "tier": "secondary",
    "market": "cz"
@@ -95,7 +97,7 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.7,
+   "elapsed_s": 1.5,
    "notes": [
     "23.09.2026 - 29.09.2026: 2026-09-23..2026-09-29",
     "30.09.2026 - 06.10.2026: 2026-09-30..2026-10-06",
@@ -171,17 +173,17 @@
  },
  "hosts": {
   "www.globus.cz": {
-   "requests": 11,
+   "requests": 9,
    "statuses": {
-    "200": 11
+    "200": 9
    },
    "server": "cloudflare",
    "cf_mitigated": null
   },
   "www.lidl.cz": {
-   "requests": 21,
+   "requests": 20,
    "statuses": {
-    "200": 21
+    "200": 20
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -203,10 +205,10 @@
    "cf_mitigated": null
   },
   "letaky.albert.cz": {
-   "requests": 3,
+   "requests": 5,
    "statuses": {
     "404": 1,
-    "200": 2
+    "200": 4
    },
    "server": "Apache",
    "cf_mitigated": null
@@ -378,6 +380,6 @@
   }
  ],
  "notFetched": [],
- "requests_made": 48,
+ "requests_made": 47,
  "cache_hits": 0
 }

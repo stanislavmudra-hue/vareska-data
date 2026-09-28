@@ -1,6 +1,6 @@
 {
  "v": 1,
- "updated": "2026-09-27",
+ "updated": "2026-09-28",
  "czkPerKg": {
   "ananas": {
    "globus": 55.4,
@@ -253,7 +253,7 @@
   "eidam": {
    "albert": 254.0,
    "billa": 194.0,
-   "globus": 164.0,
+   "globus": 129.0,
    "kaufland": 141.0,
    "lidl": 129.0,
    "penny": 174.0,
@@ -283,7 +283,7 @@
   "fernet": {
    "albert": 369.1,
    "billa": 247.2,
-   "globus": 309.1
+   "globus": 267.8
   },
   "feta": {
    "albert": 552.0,
@@ -313,7 +313,7 @@
   "gouda": {
    "albert": 239.2,
    "billa": 174.5,
-   "globus": 216.8,
+   "globus": 149.0,
    "kaufland": 149.0,
    "lidl": 129.8,
    "penny": 172.8,
@@ -432,7 +432,7 @@
   "jogurt_bily": {
    "albert": 96.0,
    "billa": 49.8,
-   "globus": 49.9,
+   "globus": 41.8,
    "kaufland": 57.4,
    "lidl": 59.7,
    "penny": 49.9,
@@ -483,7 +483,7 @@
   },
   "kava_instantni": {
    "billa": 1099.0,
-   "globus": 242.1,
+   "globus": 749.5,
    "penny": 599.5
   },
   "kava_mleta": {
@@ -614,7 +614,7 @@
   },
   "kureci_stehenni_rizky": {
    "kaufland": 129.9,
-   "lidl": 129.9,
+   "lidl": 139.9,
    "penny": 99.9
   },
   "kureci_stehna": {
@@ -762,7 +762,7 @@
   },
   "mineralka": {
    "albert": 9.9,
-   "globus": 8.6,
+   "globus": 7.9,
    "lidl": 10.6
   },
   "mleko_15": {
@@ -810,7 +810,7 @@
    "albert": 104.0,
    "globus": 149.0,
    "kaufland": 89.9,
-   "lidl": 114.9,
+   "lidl": 139.8,
    "penny": 79.9,
    "tesco": 129.8
   },
@@ -856,7 +856,7 @@
   "niva": {
    "albert": 259.0,
    "billa": 274.0,
-   "globus": 254.0,
+   "globus": 259.0,
    "kaufland": 229.0,
    "lidl": 249.0,
    "penny": 239.0,
@@ -887,7 +887,7 @@
   "olej_olivovy": {
    "albert": 148.3,
    "billa": 391.1,
-   "globus": 271.6,
+   "globus": 217.3,
    "kaufland": 260.6,
    "lidl": 347.6,
    "penny": 217.2,
@@ -975,7 +975,7 @@
   },
   "pivo_lezak": {
    "albert": 26.3,
-   "globus": 32.5,
+   "globus": 33.5,
    "lidl": 108.0,
    "penny": 19.6
   },
@@ -1008,7 +1008,7 @@
   },
   "prazma": {
    "albert": 289.0,
-   "lidl": 294.0
+   "lidl": 289.0
   },
   "prosciutto": {
    "albert": 1580.0
@@ -1343,13 +1343,13 @@
    "billa": 119.9,
    "globus": 149.0,
    "kaufland": 57.4,
-   "lidl": 119.9,
+   "lidl": 109.9,
    "penny": 69.9,
    "tesco": 59.9
   },
   "veprova_panenka": {
    "billa": 129.9,
-   "lidl": 169.9,
+   "lidl": 209.9,
    "penny": 129.9,
    "tesco": 219.9
   },
@@ -1396,7 +1396,7 @@
   "vodka": {
    "albert": 297.7,
    "billa": 259.8,
-   "globus": 361.5,
+   "globus": 416.2,
    "lidl": 676.1,
    "penny": 233.8
   },
@@ -1437,6 +1437,14 @@
   {
    "ingredientId": "arasidy",
    "store": "albert",
+   "czkPerKg": 248.3,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Arašídy solené"
+  },
+  {
+   "ingredientId": "arasidy",
+   "store": "albert",
    "czkPerKg": 266.0,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
@@ -1465,14 +1473,6 @@
    "validFrom": "2026-09-26",
    "validTo": "2026-09-29",
    "title": "Avokádo"
-  },
-  {
-   "ingredientId": "balkansky_syr",
-   "store": "lidl",
-   "czkPerKg": 149.8,
-   "validFrom": "2026-09-25",
-   "validTo": "2026-09-27",
-   "title": "PILOS Balkánský sýr"
   },
   {
    "ingredientId": "balkansky_syr",
@@ -1509,6 +1509,22 @@
   {
    "ingredientId": "becherovka",
    "store": "albert",
+   "czkPerKg": 374.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Becherovka"
+  },
+  {
+   "ingredientId": "becherovka",
+   "store": "albert",
+   "czkPerKg": 494.7,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Becherovka Jägermeister"
+  },
+  {
+   "ingredientId": "becherovka",
+   "store": "albert",
    "czkPerKg": 554.9,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
@@ -1523,12 +1539,28 @@
    "title": "Karlovarská Becherovka"
   },
   {
+   "ingredientId": "bobkovy_list_cerstvy",
+   "store": "albert",
+   "czkPerKg": 483.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Kotányi Bobkový list"
+  },
+  {
    "ingredientId": "boruvky",
    "store": "albert",
    "czkPerKg": 299.6,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Albert Borůvky"
+  },
+  {
+   "ingredientId": "boruvky",
+   "store": "albert",
+   "czkPerKg": 319.6,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Borůvky"
   },
   {
    "ingredientId": "boruvky",
@@ -1563,18 +1595,18 @@
    "title": "Brambory přílohové"
   },
   {
-   "ingredientId": "brambory",
-   "store": "lidl",
-   "czkPerKg": 10.0,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Brambory na uskladnění"
+   "ingredientId": "brokolice_mrazena",
+   "store": "albert",
+   "czkPerKg": 166.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Brokolice"
   },
   {
    "ingredientId": "brokolice_mrazena",
    "store": "globus",
    "czkPerKg": 49.8,
-   "validFrom": "2026-09-25",
+   "validFrom": "2026-09-28",
    "validTo": "2026-09-29",
    "title": "Brokolice 500g"
   },
@@ -1584,14 +1616,6 @@
    "czkPerKg": 34.9,
    "validFrom": "2026-09-26",
    "validTo": "2026-09-29",
-   "title": "Broskve"
-  },
-  {
-   "ingredientId": "broskve",
-   "store": "lidl",
-   "czkPerKg": 34.9,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
    "title": "Broskve"
   },
   {
@@ -1617,6 +1641,14 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Bio Bujón"
+  },
+  {
+   "ingredientId": "caj_cerny",
+   "store": "albert",
+   "czkPerKg": 166.6,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Lipton Černý čaj"
   },
   {
    "ingredientId": "caj_cerny",
@@ -1684,6 +1716,22 @@
   },
   {
    "ingredientId": "chleb",
+   "store": "albert",
+   "czkPerKg": 67.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Mlynářský chléb žitný"
+  },
+  {
+   "ingredientId": "chleb",
+   "store": "albert",
+   "czkPerKg": 75.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Mlynářský toustový chléb žitný"
+  },
+  {
+   "ingredientId": "chleb",
    "store": "billa",
    "czkPerKg": 98.8,
    "validFrom": "2026-09-23",
@@ -1717,17 +1765,9 @@
   {
    "ingredientId": "chleb",
    "store": "lidl",
-   "czkPerKg": 48.9,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Chléb s podmáslím"
-  },
-  {
-   "ingredientId": "chleb",
-   "store": "lidl",
    "czkPerKg": 59.8,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
+   "validFrom": "2026-09-29",
+   "validTo": "2026-10-04",
    "title": "Lámankový chléb"
   },
   {
@@ -1844,6 +1884,14 @@
   },
   {
    "ingredientId": "cokolada_horka",
+   "store": "albert",
+   "czkPerKg": 784.3,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Milka Čokoláda"
+  },
+  {
+   "ingredientId": "cokolada_horka",
    "store": "lidl",
    "czkPerKg": 279.6,
    "validFrom": "2026-10-01",
@@ -1861,9 +1909,25 @@
   {
    "ingredientId": "croissant",
    "store": "albert",
+   "czkPerKg": 171.2,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Máslový croissant"
+  },
+  {
+   "ingredientId": "croissant",
+   "store": "albert",
    "czkPerKg": 181.7,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
+   "title": "Croissant"
+  },
+  {
+   "ingredientId": "croissant",
+   "store": "albert",
+   "czkPerKg": 338.0,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
    "title": "Croissant"
   },
   {
@@ -1891,20 +1955,12 @@
    "title": "Korunní Cukr krupice 1kg"
   },
   {
-   "ingredientId": "cukr",
-   "store": "lidl",
-   "czkPerKg": 9.9,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "BELBAKE Cukr krystal"
-  },
-  {
-   "ingredientId": "cukr",
-   "store": "tesco",
-   "czkPerKg": 14.9,
-   "validFrom": "2026-09-26",
-   "validTo": "2026-09-27",
-   "title": "Cukr krystal Korunní"
+   "ingredientId": "cukr_moucka",
+   "store": "albert",
+   "czkPerKg": 49.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Cukr moučka"
   },
   {
    "ingredientId": "cukr_trtinovy",
@@ -1921,6 +1977,14 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "TropiCane Třtinový cukr"
+  },
+  {
+   "ingredientId": "cukr_trtinovy",
+   "store": "albert",
+   "czkPerKg": 59.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Cassonade Třtinový cukr"
   },
   {
    "ingredientId": "cukr_trtinovy",
@@ -1972,27 +2036,11 @@
   },
   {
    "ingredientId": "eidam",
-   "store": "globus",
-   "czkPerKg": 199.0,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Madeta Jihočeský eidam 30% plátky 100 g"
-  },
-  {
-   "ingredientId": "eidam",
    "store": "kaufland",
    "czkPerKg": 139.0,
    "validFrom": "2026-09-26",
    "validTo": "2026-09-29",
    "title": "Sýr Eidam 30% Agricol"
-  },
-  {
-   "ingredientId": "eidam",
-   "store": "lidl",
-   "czkPerKg": 129.0,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "PILOS Eidam"
   },
   {
    "ingredientId": "eidam",
@@ -2028,11 +2076,27 @@
   },
   {
    "ingredientId": "fazole_bile_sterilovane",
-   "store": "globus",
-   "czkPerKg": 108.2,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Heinz fazole 415g"
+   "store": "albert",
+   "czkPerKg": 49.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Giana Fazole"
+  },
+  {
+   "ingredientId": "fazolove_lusky",
+   "store": "albert",
+   "czkPerKg": 166.3,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Zelené fazolky"
+  },
+  {
+   "ingredientId": "fernet",
+   "store": "albert",
+   "czkPerKg": 288.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Fernet Stock"
   },
   {
    "ingredientId": "fernet",
@@ -2067,20 +2131,20 @@
    "title": "Fíky čerstvé"
   },
   {
-   "ingredientId": "fiky_cerstve",
-   "store": "lidl",
-   "czkPerKg": 158.0,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Čerstvé fíky"
+   "ingredientId": "gin",
+   "store": "albert",
+   "czkPerKg": 127.2,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Gordon's Dry Gin"
   },
   {
-   "ingredientId": "ghi",
-   "store": "globus",
-   "czkPerKg": 646.1,
-   "validFrom": "2026-09-01",
-   "validTo": "2026-09-29",
-   "title": "České Ghíčko BIO Přepuštěné máslo ghí 340 ml"
+   "ingredientId": "gin",
+   "store": "albert",
+   "czkPerKg": 454.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Dynybyl Gin"
   },
   {
    "ingredientId": "gin",
@@ -2113,14 +2177,6 @@
    "validFrom": "2026-09-22",
    "validTo": "2026-09-29",
    "title": "Sýr Gouda 48% plátky"
-  },
-  {
-   "ingredientId": "gouda",
-   "store": "globus",
-   "czkPerKg": 284.5,
-   "validFrom": "2026-08-31",
-   "validTo": "2026-09-29",
-   "title": "Jeden Tag Bio Gouda plátky 200g"
   },
   {
    "ingredientId": "gouda",
@@ -2163,14 +2219,6 @@
    "title": "Sýr Gouda 48% Zlatý sýr Milkpol"
   },
   {
-   "ingredientId": "granatove_jablko",
-   "store": "lidl",
-   "czkPerKg": 79.6,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Granátové jablko"
-  },
-  {
    "ingredientId": "halibut",
    "store": "globus",
    "czkPerKg": 539.0,
@@ -2179,20 +2227,36 @@
    "title": "Halibut filet"
   },
   {
+   "ingredientId": "halloumi",
+   "store": "albert",
+   "czkPerKg": 282.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Hello XXL"
+  },
+  {
+   "ingredientId": "hermelin",
+   "store": "albert",
+   "czkPerKg": 249.2,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Král Sýrů Hermelín"
+  },
+  {
+   "ingredientId": "hermelin",
+   "store": "albert",
+   "czkPerKg": 299.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Sedlčanský Hermelín duopack"
+  },
+  {
    "ingredientId": "hermelin",
    "store": "billa",
    "czkPerKg": 474.2,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Hermelín"
-  },
-  {
-   "ingredientId": "hermelin",
-   "store": "globus",
-   "czkPerKg": 299.0,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Sedlčanský Hermelín originál 100g"
   },
   {
    "ingredientId": "hermelin",
@@ -2209,14 +2273,6 @@
    "validFrom": "2026-09-29",
    "validTo": "2026-09-30",
    "title": "PILOS Camembert"
-  },
-  {
-   "ingredientId": "hermelin",
-   "store": "tesco",
-   "czkPerKg": 269.0,
-   "validFrom": "2026-09-26",
-   "validTo": "2026-09-27",
-   "title": "Sýr Hermelín Sedlčanský"
   },
   {
    "ingredientId": "hermelin",
@@ -2269,6 +2325,14 @@
   {
    "ingredientId": "horcice_dijonska",
    "store": "albert",
+   "czkPerKg": 76.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Boneco Hořčice Dijon"
+  },
+  {
+   "ingredientId": "horcice_dijonska",
+   "store": "albert",
    "czkPerKg": 237.6,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
@@ -2281,6 +2345,14 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-10-06",
    "title": "Maille Originální dijonská hořčice 215 g"
+  },
+  {
+   "ingredientId": "hovezi_kliska",
+   "store": "albert",
+   "czkPerKg": 149.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Hovězí přední bez kosti – kližka"
   },
   {
    "ingredientId": "hovezi_kliska",
@@ -2309,10 +2381,18 @@
   {
    "ingredientId": "hrozny",
    "store": "albert",
-   "czkPerKg": 99.8,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
+   "czkPerKg": 49.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
    "title": "Hrozny bílé bezsemenné"
+  },
+  {
+   "ingredientId": "hrozny",
+   "store": "albert",
+   "czkPerKg": 59.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Hrozny tmavé bezsemenné odrůda Nadorcott, lehce loupatelná"
   },
   {
    "ingredientId": "hrozny",
@@ -2395,14 +2475,6 @@
    "title": "Jablka červená"
   },
   {
-   "ingredientId": "jahody",
-   "store": "tesco",
-   "czkPerKg": 139.8,
-   "validFrom": "2026-09-26",
-   "validTo": "2026-09-27",
-   "title": "Jahody Tesco"
-  },
-  {
    "ingredientId": "jogurt_bily",
    "store": "albert",
    "czkPerKg": 29.9,
@@ -2421,10 +2493,10 @@
   {
    "ingredientId": "jogurt_bily",
    "store": "albert",
-   "czkPerKg": 92.7,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
-   "title": "Bio Jogurt bílý"
+   "czkPerKg": 59.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Florian Smetanový jogurt"
   },
   {
    "ingredientId": "jogurt_bily",
@@ -2441,14 +2513,6 @@
    "validFrom": "2026-09-22",
    "validTo": "2026-09-29",
    "title": "Hollandia Jogurt Selský bílý 500g"
-  },
-  {
-   "ingredientId": "jogurt_bily",
-   "store": "globus",
-   "czkPerKg": 49.8,
-   "validFrom": "2026-08-31",
-   "validTo": "2026-09-29",
-   "title": "HOLLANDIA BIO Jogurt selský bílý 400g"
   },
   {
    "ingredientId": "jogurt_bily",
@@ -2485,14 +2549,6 @@
   {
    "ingredientId": "jogurt_bily",
    "store": "tesco",
-   "czkPerKg": 49.5,
-   "validFrom": "2026-09-26",
-   "validTo": "2026-09-27",
-   "title": "Bílý jogurt selský Hollandia"
-  },
-  {
-   "ingredientId": "jogurt_bily",
-   "store": "tesco",
    "czkPerKg": 66.0,
    "validFrom": "2026-09-26",
    "validTo": "2026-09-29",
@@ -2509,18 +2565,18 @@
   {
    "ingredientId": "jogurt_recky",
    "store": "albert",
+   "czkPerKg": 106.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Milko Řecký jogurt"
+  },
+  {
+   "ingredientId": "jogurt_recky",
+   "store": "albert",
    "czkPerKg": 124.2,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Zvolenský jogurt řeckého typu"
-  },
-  {
-   "ingredientId": "jogurt_recky",
-   "store": "globus",
-   "czkPerKg": 79.9,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Milko Řecký jogurt 0% bílý 1 kg"
   },
   {
    "ingredientId": "jogurt_recky",
@@ -2529,14 +2585,6 @@
    "validFrom": "2026-09-26",
    "validTo": "2026-09-29",
    "title": "Ochucený jogurt řecký 0% Milko"
-  },
-  {
-   "ingredientId": "kachna_cela",
-   "store": "lidl",
-   "czkPerKg": 89.9,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Česká kachna"
   },
   {
    "ingredientId": "kachna_cela",
@@ -2571,14 +2619,6 @@
    "title": "Kakao holandské Marila"
   },
   {
-   "ingredientId": "kapusta_ruzickova",
-   "store": "lidl",
-   "czkPerKg": 39.9,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Růžičková kapusta"
-  },
-  {
    "ingredientId": "kava_instantni",
    "store": "billa",
    "czkPerKg": 1099.0,
@@ -2593,14 +2633,6 @@
    "validFrom": "2026-09-22",
    "validTo": "2026-10-12",
    "title": "Tchibo Gold Selection Instantní káva 200 g"
-  },
-  {
-   "ingredientId": "kava_instantni",
-   "store": "globus",
-   "czkPerKg": 949.5,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Nescafé Gold Original, instantní káva 200 g"
   },
   {
    "ingredientId": "kava_mleta",
@@ -2669,18 +2701,18 @@
   {
    "ingredientId": "kecup",
    "store": "albert",
-   "czkPerKg": 96.0,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
-   "title": "Otma Gurmán Kečup"
+   "czkPerKg": 39.9,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Gustona Kečup jemný"
   },
   {
    "ingredientId": "kecup",
    "store": "albert",
-   "czkPerKg": 130.6,
+   "czkPerKg": 96.0,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
-   "title": "Heinz Kečup"
+   "title": "Otma Gurmán Kečup"
   },
   {
    "ingredientId": "kecup",
@@ -2689,14 +2721,6 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Hellmann’s Kečup"
-  },
-  {
-   "ingredientId": "kecup",
-   "store": "globus",
-   "czkPerKg": 66.6,
-   "validFrom": "2026-09-01",
-   "validTo": "2026-09-29",
-   "title": "Hamé Kečup sladký 900 g"
   },
   {
    "ingredientId": "kecup",
@@ -2748,6 +2772,14 @@
   },
   {
    "ingredientId": "kefir",
+   "store": "albert",
+   "czkPerKg": 66.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Kunín Kefírové mléko"
+  },
+  {
+   "ingredientId": "kefir",
    "store": "billa",
    "czkPerKg": 71.1,
    "validFrom": "2026-09-23",
@@ -2781,6 +2813,14 @@
   {
    "ingredientId": "kesu",
    "store": "albert",
+   "czkPerKg": 239.6,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Emma Kešu natural"
+  },
+  {
+   "ingredientId": "kesu",
+   "store": "albert",
    "czkPerKg": 279.6,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
@@ -2793,14 +2833,6 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Kešu pražené solené"
-  },
-  {
-   "ingredientId": "kesu",
-   "store": "globus",
-   "czkPerKg": 208.1,
-   "validFrom": "2026-09-01",
-   "validTo": "2026-09-29",
-   "title": "Valsoia Kešu kornout slaný karamel 4x120ml"
   },
   {
    "ingredientId": "kiwi",
@@ -2899,6 +2931,14 @@
    "title": "Kokosové mléko"
   },
   {
+   "ingredientId": "kozi_syr",
+   "store": "albert",
+   "czkPerKg": 741.7,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Kozí sýr – kostky"
+  },
+  {
    "ingredientId": "kralik",
    "store": "kaufland",
    "czkPerKg": 199.9,
@@ -2913,6 +2953,22 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Krevety marinované s česnekem"
+  },
+  {
+   "ingredientId": "krevety",
+   "store": "albert",
+   "czkPerKg": 1112.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Krevety s dipem"
+  },
+  {
+   "ingredientId": "krevety",
+   "store": "albert",
+   "czkPerKg": 1271.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Krevety v chilli"
   },
   {
    "ingredientId": "krevety",
@@ -2957,18 +3013,18 @@
   {
    "ingredientId": "krevety",
    "store": "lidl",
-   "czkPerKg": 359.8,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Krevety celé vařené"
-  },
-  {
-   "ingredientId": "krevety",
-   "store": "lidl",
    "czkPerKg": 459.8,
    "validFrom": "2026-10-01",
    "validTo": "2026-10-04",
    "title": "Krevety loupané vařené"
+  },
+  {
+   "ingredientId": "kroupy",
+   "store": "albert",
+   "czkPerKg": 92.7,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Kiri a křup"
   },
   {
    "ingredientId": "kruti_prsa",
@@ -2988,6 +3044,14 @@
   },
   {
    "ingredientId": "kure_cele",
+   "store": "albert",
+   "czkPerKg": 49.9,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Kuře bez drobů"
+  },
+  {
+   "ingredientId": "kure_cele",
    "store": "kaufland",
    "czkPerKg": 49.9,
    "validFrom": "2026-09-26",
@@ -3001,14 +3065,6 @@
    "validFrom": "2026-10-01",
    "validTo": "2026-10-04",
    "title": "Kuře"
-  },
-  {
-   "ingredientId": "kureci_jatra",
-   "store": "lidl",
-   "czkPerKg": 69.9,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Kuřecí játra"
   },
   {
    "ingredientId": "kureci_kridla",
@@ -3030,17 +3086,17 @@
    "ingredientId": "kureci_prsa",
    "store": "lidl",
    "czkPerKg": 179.9,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Kuřecí medailonky z prsních řízků"
-  },
-  {
-   "ingredientId": "kureci_prsa",
-   "store": "lidl",
-   "czkPerKg": 179.9,
    "validFrom": "2026-09-29",
    "validTo": "2026-09-30",
    "title": "Kukuřičné kuřecí prsní řízky"
+  },
+  {
+   "ingredientId": "kureci_stehenni_rizky",
+   "store": "albert",
+   "czkPerKg": 265.0,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Kuřecí prsní a stehenní řízky mix"
   },
   {
    "ingredientId": "kureci_stehenni_rizky",
@@ -3049,14 +3105,6 @@
    "validFrom": "2026-09-26",
    "validTo": "2026-09-29",
    "title": "Kuřecí stehenní řízky"
-  },
-  {
-   "ingredientId": "kureci_stehenni_rizky",
-   "store": "lidl",
-   "czkPerKg": 119.9,
-   "validFrom": "2026-09-25",
-   "validTo": "2026-09-27",
-   "title": "Kuřecí prsní a stehenní řízky mix"
   },
   {
    "ingredientId": "kureci_stehna",
@@ -3076,27 +3124,11 @@
   },
   {
    "ingredientId": "kureci_stehna",
-   "store": "globus",
-   "czkPerKg": 69.9,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Vodňanská drůbež Kuřecí čtvrtky XXL"
-  },
-  {
-   "ingredientId": "kureci_stehna",
    "store": "lidl",
    "czkPerKg": 59.9,
    "validFrom": "2026-09-29",
    "validTo": "2026-09-30",
    "title": "Kuřecí zadní čtvrtky"
-  },
-  {
-   "ingredientId": "kureci_stehna",
-   "store": "lidl",
-   "czkPerKg": 79.9,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Kuřecí stehna a křídla mix"
   },
   {
    "ingredientId": "kureci_stehna",
@@ -3155,14 +3187,6 @@
    "title": "Těsto listové Wewalka"
   },
   {
-   "ingredientId": "listove_teste",
-   "store": "lidl",
-   "czkPerKg": 72.4,
-   "validFrom": "2026-09-25",
-   "validTo": "2026-09-27",
-   "title": "CHEF SELECT Listové těsto"
-  },
-  {
    "ingredientId": "losos",
    "store": "albert",
    "czkPerKg": 699.5,
@@ -3193,14 +3217,6 @@
    "validFrom": "2026-10-01",
    "validTo": "2026-10-04",
    "title": "Filet z lososa s kůží"
-  },
-  {
-   "ingredientId": "losos",
-   "store": "lidl",
-   "czkPerKg": 566.3,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Norský uzený losos"
   },
   {
    "ingredientId": "losos",
@@ -3244,19 +3260,19 @@
   },
   {
    "ingredientId": "majoneza",
+   "store": "albert",
+   "czkPerKg": 123.3,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Hellmann's Majonéza/"
+  },
+  {
+   "ingredientId": "majoneza",
    "store": "billa",
    "czkPerKg": 117.4,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Hellmann’s Delikátní majonéza,"
-  },
-  {
-   "ingredientId": "majoneza",
-   "store": "globus",
-   "czkPerKg": 123.2,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Hellmann's Majonéza 405 ml"
   },
   {
    "ingredientId": "majoneza",
@@ -3307,12 +3323,36 @@
    "title": "Queso Manchego – plátky"
   },
   {
+   "ingredientId": "manchego",
+   "store": "albert",
+   "czkPerKg": 752.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Queso Manchego – plátky"
+  },
+  {
+   "ingredientId": "mandarinka",
+   "store": "albert",
+   "czkPerKg": 79.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Giana Mandarinky"
+  },
+  {
    "ingredientId": "mandarinka",
    "store": "globus",
    "czkPerKg": 49.9,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Mandarinky volné"
+  },
+  {
+   "ingredientId": "mandle",
+   "store": "albert",
+   "czkPerKg": 199.0,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Emma Mandle"
   },
   {
    "ingredientId": "mandle",
@@ -3329,14 +3369,6 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Emma Mandle blanšírované plátky"
-  },
-  {
-   "ingredientId": "mandle",
-   "store": "albert",
-   "czkPerKg": 349.0,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
-   "title": "Emma Mandle blanšírované hranolky"
   },
   {
    "ingredientId": "mandle",
@@ -3453,10 +3485,18 @@
   {
    "ingredientId": "mineralka",
    "store": "albert",
-   "czkPerKg": 9.9,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
-   "title": "Magnesia Mattoni"
+   "czkPerKg": 9.3,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "minerální voda"
+  },
+  {
+   "ingredientId": "mineralka",
+   "store": "albert",
+   "czkPerKg": 9.3,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "minerální voda bez cukru a sladidel"
   },
   {
    "ingredientId": "mineralka",
@@ -3523,6 +3563,22 @@
    "title": "Kuřecí steak mletý"
   },
   {
+   "ingredientId": "mlete_kureci",
+   "store": "albert",
+   "czkPerKg": 139.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Kuřecí steak mletý"
+  },
+  {
+   "ingredientId": "mlete_maso_mix",
+   "store": "albert",
+   "czkPerKg": 149.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Výrobek z mletého masa mix"
+  },
+  {
    "ingredientId": "mlete_maso_mix",
    "store": "kaufland",
    "czkPerKg": 139.9,
@@ -3556,14 +3612,6 @@
   },
   {
    "ingredientId": "mlete_veprove",
-   "store": "lidl",
-   "czkPerKg": 89.9,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Mleté vepřové maso"
-  },
-  {
-   "ingredientId": "mlete_veprove",
    "store": "tesco",
    "czkPerKg": 129.8,
    "validFrom": "2026-09-26",
@@ -3577,6 +3625,14 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Mortadella"
+  },
+  {
+   "ingredientId": "mouka_hladka",
+   "store": "albert",
+   "czkPerKg": 9.9,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Mouka"
   },
   {
    "ingredientId": "mouka_hladka",
@@ -3596,11 +3652,11 @@
   },
   {
    "ingredientId": "mozzarella",
-   "store": "globus",
-   "czkPerKg": 199.2,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Galbani Mozzarella 125 g"
+   "store": "albert",
+   "czkPerKg": 191.2,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Galbani Mozzarella"
   },
   {
    "ingredientId": "mozzarella",
@@ -3628,19 +3684,19 @@
   },
   {
    "ingredientId": "mrkev",
+   "store": "albert",
+   "czkPerKg": 53.2,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Maliny Mrkev"
+  },
+  {
+   "ingredientId": "mrkev",
    "store": "lidl",
    "czkPerKg": 11.9,
    "validFrom": "2026-09-29",
    "validTo": "2026-09-30",
    "title": "Mrkev"
-  },
-  {
-   "ingredientId": "niva",
-   "store": "globus",
-   "czkPerKg": 249.0,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Jihočeská Niva 45% 100g"
   },
   {
    "ingredientId": "niva",
@@ -3675,19 +3731,19 @@
    "title": "Jablečný ocet"
   },
   {
-   "ingredientId": "ocet_jablecny",
-   "store": "globus",
-   "czkPerKg": 89.8,
-   "validFrom": "2026-09-01",
-   "validTo": "2026-09-29",
-   "title": "Globus Bio jablečný ocet 500ml"
-  },
-  {
    "ingredientId": "okurka_salatova",
    "store": "albert",
    "czkPerKg": 97.0,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
+   "title": "Znojmia Okurky"
+  },
+  {
+   "ingredientId": "okurka_salatova",
+   "store": "albert",
+   "czkPerKg": 134.2,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
    "title": "Znojmia Okurky"
   },
   {
@@ -3715,14 +3771,6 @@
    "title": "Okurka salátová"
   },
   {
-   "ingredientId": "olej_kokosovy",
-   "store": "globus",
-   "czkPerKg": 173.8,
-   "validFrom": "2026-09-01",
-   "validTo": "2026-09-29",
-   "title": "Váš Výběr Kokosový olej BIO XXL 1000 ml"
-  },
-  {
    "ingredientId": "olej_olivovy",
    "store": "albert",
    "czkPerKg": 131.7,
@@ -3732,19 +3780,19 @@
   },
   {
    "ingredientId": "olej_olivovy",
+   "store": "albert",
+   "czkPerKg": 279.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "olivový olej"
+  },
+  {
+   "ingredientId": "olej_olivovy",
    "store": "globus",
    "czkPerKg": 202.8,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Váš Výběr Olivový olej extra panenský 750ml"
-  },
-  {
-   "ingredientId": "olej_olivovy",
-   "store": "globus",
-   "czkPerKg": 369.4,
-   "validFrom": "2026-09-01",
-   "validTo": "2026-09-29",
-   "title": "Alnatura BIO Olivový olej extra 500 ml"
   },
   {
    "ingredientId": "olej_olivovy",
@@ -3787,12 +3835,12 @@
    "title": "Řepkový olej Manka Fabio"
   },
   {
-   "ingredientId": "olej_ryzovy",
-   "store": "globus",
-   "czkPerKg": 159.3,
-   "validFrom": "2026-09-01",
-   "validTo": "2026-09-29",
-   "title": "Franz Josef Kaiser Rýžový olej 750 ml"
+   "ingredientId": "olej_slunecnicovy",
+   "store": "albert",
+   "czkPerKg": 11.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Majola Slunečnicový olej"
   },
   {
    "ingredientId": "olej_slunecnicovy",
@@ -3827,6 +3875,14 @@
    "title": "Franz Josef Olivy"
   },
   {
+   "ingredientId": "olivy_cerne",
+   "store": "albert",
+   "czkPerKg": 230.0,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Franz Josef Olivy"
+  },
+  {
    "ingredientId": "orechy_smes",
    "store": "globus",
    "czkPerKg": 274.5,
@@ -3836,11 +3892,11 @@
   },
   {
    "ingredientId": "ovesne_vlocky",
-   "store": "globus",
-   "czkPerKg": 49.8,
-   "validFrom": "2026-09-01",
-   "validTo": "2026-09-29",
-   "title": "Váš Výběr Ovesné vločky BIO 500 g"
+   "store": "albert",
+   "czkPerKg": 25.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Ovesné vločky"
   },
   {
    "ingredientId": "ovesne_vlocky",
@@ -3875,6 +3931,22 @@
    "title": "Paprika mix"
   },
   {
+   "ingredientId": "paprika_mleta_sladka",
+   "store": "albert",
+   "czkPerKg": 159.6,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Paprika sladká"
+  },
+  {
+   "ingredientId": "parenica",
+   "store": "albert",
+   "czkPerKg": 199.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Parenica"
+  },
+  {
    "ingredientId": "parky",
    "store": "albert",
    "czkPerKg": 149.8,
@@ -3893,10 +3965,10 @@
   {
    "ingredientId": "parky",
    "store": "albert",
-   "czkPerKg": 249.0,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
-   "title": "Vídeňské párky"
+   "czkPerKg": 219.0,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "párky"
   },
   {
    "ingredientId": "parky",
@@ -3979,14 +4051,6 @@
    "title": "Vitana Pepř černý mletý"
   },
   {
-   "ingredientId": "pesto",
-   "store": "globus",
-   "czkPerKg": 383.9,
-   "validFrom": "2026-09-01",
-   "validTo": "2026-09-29",
-   "title": "Alnatura BIO Bazalkové pesto 130 g"
-  },
-  {
    "ingredientId": "piskoty",
    "store": "albert",
    "czkPerKg": 132.5,
@@ -4005,9 +4069,17 @@
   {
    "ingredientId": "pivo_lezak",
    "store": "albert",
-   "czkPerKg": 37.4,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
+   "czkPerKg": 26.3,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Krušovice Ležák"
+  },
+  {
+   "ingredientId": "pivo_lezak",
+   "store": "albert",
+   "czkPerKg": 31.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
    "title": "pivo"
   },
   {
@@ -4067,22 +4139,6 @@
    "title": "Pohanka"
   },
   {
-   "ingredientId": "pomeranc",
-   "store": "tesco",
-   "czkPerKg": 26.9,
-   "validFrom": "2026-09-26",
-   "validTo": "2026-09-27",
-   "title": "Pomeranče"
-  },
-  {
-   "ingredientId": "prazma",
-   "store": "lidl",
-   "czkPerKg": 299.0,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Mořský vlk"
-  },
-  {
    "ingredientId": "prosecco",
    "store": "albert",
    "czkPerKg": 94.1,
@@ -4093,18 +4149,18 @@
   {
    "ingredientId": "prosecco",
    "store": "albert",
-   "czkPerKg": 121.1,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
-   "title": "Cielo Prosecco"
+   "czkPerKg": 94.1,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Prosecco Frizzante DOC"
   },
   {
    "ingredientId": "prosecco",
    "store": "albert",
-   "czkPerKg": 134.6,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
-   "title": "Mionetto Prosecco DOC"
+   "czkPerKg": 94.1,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Solicello Prosecco"
   },
   {
    "ingredientId": "prosecco",
@@ -4113,22 +4169,6 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Contello Prosecco"
-  },
-  {
-   "ingredientId": "prosecco",
-   "store": "globus",
-   "czkPerKg": 188.4,
-   "validFrom": "2026-09-01",
-   "validTo": "2026-09-29",
-   "title": "Alnatura BIO Prosecco Veneto 0,75 l"
-  },
-  {
-   "ingredientId": "prosecco",
-   "store": "lidl",
-   "czkPerKg": 188.4,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Prosecco Asolo Spumante"
   },
   {
    "ingredientId": "pudinkovy_prasek",
@@ -4148,22 +4188,6 @@
   },
   {
    "ingredientId": "rajcata",
-   "store": "lidl",
-   "czkPerKg": 89.8,
-   "validFrom": "2026-09-25",
-   "validTo": "2026-09-27",
-   "title": "Cherry rajčata keříková koktejlová"
-  },
-  {
-   "ingredientId": "rajcata",
-   "store": "tesco",
-   "czkPerKg": 39.9,
-   "validFrom": "2026-09-26",
-   "validTo": "2026-09-27",
-   "title": "Rajčata keříková"
-  },
-  {
-   "ingredientId": "rajcata",
    "store": "tesco",
    "czkPerKg": 139.6,
    "validFrom": "2026-09-26",
@@ -4177,6 +4201,14 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Rajčata cherry oválná"
+  },
+  {
+   "ingredientId": "rajcata_cherry",
+   "store": "albert",
+   "czkPerKg": 159.6,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Rajčata cherry oválná Hranáček"
   },
   {
    "ingredientId": "rajcata_cherry",
@@ -4197,10 +4229,26 @@
   {
    "ingredientId": "rajcata_sterilovana",
    "store": "albert",
+   "czkPerKg": 49.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Giana Rajčata krájená"
+  },
+  {
+   "ingredientId": "rajcata_sterilovana",
+   "store": "albert",
    "czkPerKg": 51.8,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Rajčata loupaná"
+  },
+  {
+   "ingredientId": "rajcatovy_protlak",
+   "store": "albert",
+   "czkPerKg": 106.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Giana Rajčatový protlak"
   },
   {
    "ingredientId": "rajcatovy_protlak",
@@ -4252,27 +4300,11 @@
   },
   {
    "ingredientId": "rohlik",
-   "store": "lidl",
-   "czkPerKg": 95.6,
-   "validFrom": "2026-09-21",
-   "validTo": "2026-09-27",
-   "title": "Žitný rohlík s posypem"
-  },
-  {
-   "ingredientId": "rohlik",
    "store": "tesco",
    "czkPerKg": 143.3,
    "validFrom": "2026-09-26",
    "validTo": "2026-09-29",
    "title": "Rohlík se sýrem"
-  },
-  {
-   "ingredientId": "romadur",
-   "store": "globus",
-   "czkPerKg": 249.0,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Madeta Romadur 100 g"
   },
   {
    "ingredientId": "rybi_file",
@@ -4307,6 +4339,22 @@
    "title": "Basmati Rýže extra dlouhá"
   },
   {
+   "ingredientId": "ryze_basmati",
+   "store": "lidl",
+   "czkPerKg": 65.0,
+   "validFrom": "2026-10-01",
+   "validTo": "2026-10-04",
+   "title": "Basmati / Jasmínová rýže"
+  },
+  {
+   "ingredientId": "ryze_dlouhozrnna",
+   "store": "albert",
+   "czkPerKg": 44.9,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Giana Rýže parboiled"
+  },
+  {
    "ingredientId": "ryze_dlouhozrnna",
    "store": "albert",
    "czkPerKg": 49.8,
@@ -4317,9 +4365,9 @@
   {
    "ingredientId": "ryze_dlouhozrnna",
    "store": "albert",
-   "czkPerKg": 62.4,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
+   "czkPerKg": 62.3,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
    "title": "Lagris Rýže parboiled"
   },
   {
@@ -4337,14 +4385,6 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Giana Rýže jasmínová"
-  },
-  {
-   "ingredientId": "ryze_jasminova",
-   "store": "globus",
-   "czkPerKg": 36.0,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Giana Rýže jasmínová 5 kg"
   },
   {
    "ingredientId": "ryze_jasminova",
@@ -4369,14 +4409,6 @@
    "validFrom": "2026-09-26",
    "validTo": "2026-10-06",
    "title": "Rýže jasmínová Giana"
-  },
-  {
-   "ingredientId": "ryze_kulatozrnna",
-   "store": "globus",
-   "czkPerKg": 79.4,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Kunín Mléčná rýže jahoda 175 g"
   },
   {
    "ingredientId": "sadlo",
@@ -4412,6 +4444,14 @@
   },
   {
    "ingredientId": "salam_trvanlivy",
+   "store": "albert",
+   "czkPerKg": 292.0,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Poličan"
+  },
+  {
+   "ingredientId": "salam_trvanlivy",
    "store": "billa",
    "czkPerKg": 142.7,
    "validFrom": "2026-09-23",
@@ -4425,6 +4465,14 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Salát ledový"
+  },
+  {
+   "ingredientId": "sardinky_konzerva",
+   "store": "albert",
+   "czkPerKg": 175.2,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Giana Sardinky"
   },
   {
    "ingredientId": "sardinky_konzerva",
@@ -4477,6 +4525,14 @@
   {
    "ingredientId": "smetana_33",
    "store": "albert",
+   "czkPerKg": 74.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Kunín Smetana"
+  },
+  {
+   "ingredientId": "smetana_33",
+   "store": "albert",
    "czkPerKg": 124.5,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
@@ -4508,14 +4564,6 @@
   },
   {
    "ingredientId": "smetana_33",
-   "store": "globus",
-   "czkPerKg": 114.5,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-28",
-   "title": "Olma Smetana ke šlehání 33% 200 g"
-  },
-  {
-   "ingredientId": "smetana_33",
    "store": "kaufland",
    "czkPerKg": 99.5,
    "validFrom": "2026-09-26",
@@ -4529,14 +4577,6 @@
    "validFrom": "2026-09-29",
    "validTo": "2026-09-30",
    "title": "PILOS Smetana ke šlehání"
-  },
-  {
-   "ingredientId": "smetana_33",
-   "store": "lidl",
-   "czkPerKg": 99.5,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "OLMA Smetana ke šlehání"
   },
   {
    "ingredientId": "smetana_33",
@@ -4557,6 +4597,14 @@
   {
    "ingredientId": "smetana_zakysana",
    "store": "albert",
+   "czkPerKg": 99.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Milko Zakysaná"
+  },
+  {
+   "ingredientId": "smetana_zakysana",
+   "store": "albert",
    "czkPerKg": 115.3,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
@@ -4569,14 +4617,6 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Jihočeská zakysaná"
-  },
-  {
-   "ingredientId": "smetana_zakysana",
-   "store": "globus",
-   "czkPerKg": 94.2,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Kunín Zakysaná smetana Krémovitá 15% 190 g"
   },
   {
    "ingredientId": "smetana_zakysana",
@@ -4601,14 +4641,6 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Žervé"
-  },
-  {
-   "ingredientId": "smetanovy_syr",
-   "store": "globus",
-   "czkPerKg": 248.8,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Gervais Original Krémový tvarohový sýr 80 g"
   },
   {
    "ingredientId": "spagety",
@@ -4669,10 +4701,10 @@
   {
    "ingredientId": "sunka",
    "store": "albert",
-   "czkPerKg": 249.0,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
-   "title": "Mistrovská šunka"
+   "czkPerKg": 239.0,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Vepřová šunka*"
   },
   {
    "ingredientId": "sunka",
@@ -4697,14 +4729,6 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Řeznická šunka z pultu lahůdek"
-  },
-  {
-   "ingredientId": "sunka",
-   "store": "globus",
-   "czkPerKg": 299.0,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Kostelecké Uzeniny Poctivá šunka od kosti 100g"
   },
   {
    "ingredientId": "sunka",
@@ -4748,10 +4772,18 @@
   },
   {
    "ingredientId": "svestky",
+   "store": "albert",
+   "czkPerKg": 34.9,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Švestky"
+  },
+  {
+   "ingredientId": "svestky",
    "store": "lidl",
    "czkPerKg": 29.9,
-   "validFrom": "2026-09-25",
-   "validTo": "2026-09-27",
+   "validFrom": "2026-09-29",
+   "validTo": "2026-09-30",
    "title": "Švestky"
   },
   {
@@ -4769,6 +4801,22 @@
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
    "title": "Hellmann's Tatarská omáčka/"
+  },
+  {
+   "ingredientId": "tatarska_omacka",
+   "store": "albert",
+   "czkPerKg": 117.8,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Hellmann's Tatarská omáčka 625 ml"
+  },
+  {
+   "ingredientId": "treska",
+   "store": "albert",
+   "czkPerKg": 399.0,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Treska tmavá – filet"
   },
   {
    "ingredientId": "treska",
@@ -4803,12 +4851,12 @@
    "title": "Aljašská treska"
   },
   {
-   "ingredientId": "treska",
-   "store": "lidl",
-   "czkPerKg": 649.0,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Treska obecná"
+   "ingredientId": "tunak_cerstvy",
+   "store": "albert",
+   "czkPerKg": 324.2,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Franz Josef Tuňák – steak"
   },
   {
    "ingredientId": "tunak_cerstvy",
@@ -4869,6 +4917,14 @@
   {
    "ingredientId": "tvaroh",
    "store": "albert",
+   "czkPerKg": 166.4,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Olešnický tvaroh"
+  },
+  {
+   "ingredientId": "tvaroh",
+   "store": "albert",
    "czkPerKg": 224.5,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
@@ -4885,26 +4941,10 @@
   {
    "ingredientId": "tvaroh",
    "store": "globus",
-   "czkPerKg": 75.6,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Milko Tvaroh polotučný 250 g"
-  },
-  {
-   "ingredientId": "tvaroh",
-   "store": "globus",
    "czkPerKg": 91.6,
    "validFrom": "2026-09-22",
    "validTo": "2026-09-29",
    "title": "Váš výběr tvaroh tučný 250 g"
-  },
-  {
-   "ingredientId": "tvaroh",
-   "store": "globus",
-   "czkPerKg": 119.2,
-   "validFrom": "2026-08-31",
-   "validTo": "2026-09-29",
-   "title": "Milko Matylda BIO tvaroh a smetanový jogurt čokoládová 125g"
   },
   {
    "ingredientId": "tvaroh",
@@ -4913,14 +4953,6 @@
    "validFrom": "2026-09-26",
    "validTo": "2026-09-29",
    "title": "Tvaroháček Milko"
-  },
-  {
-   "ingredientId": "tvaroh",
-   "store": "lidl",
-   "czkPerKg": 51.6,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "PILOS Polotučný tvaroh"
   },
   {
    "ingredientId": "tvaroh",
@@ -4964,14 +4996,6 @@
   },
   {
    "ingredientId": "uzene_maso",
-   "store": "globus",
-   "czkPerKg": 189.9,
-   "validFrom": "2026-09-08",
-   "validTo": "2026-09-29",
-   "title": "Kostelecké Uzeniny Uzená rolovaná plec"
-  },
-  {
-   "ingredientId": "uzene_maso",
    "store": "tesco",
    "czkPerKg": 189.0,
    "validFrom": "2026-09-26",
@@ -4980,11 +5004,11 @@
   },
   {
    "ingredientId": "vejce",
-   "store": "globus",
-   "czkPerKg": 199.8,
-   "validFrom": "2026-08-31",
-   "validTo": "2026-09-29",
-   "title": "Bio vejce 10 kusů"
+   "store": "albert",
+   "czkPerKg": 72.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Vejce z podestýlky L"
   },
   {
    "ingredientId": "vejce",
@@ -5012,6 +5036,14 @@
   },
   {
    "ingredientId": "veprova_krkovice",
+   "store": "albert",
+   "czkPerKg": 159.0,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Vepřová krkovice bez kosti"
+  },
+  {
+   "ingredientId": "veprova_krkovice",
    "store": "lidl",
    "czkPerKg": 109.9,
    "validFrom": "2026-09-29",
@@ -5028,14 +5060,6 @@
   },
   {
    "ingredientId": "veprova_kyta",
-   "store": "lidl",
-   "czkPerKg": 129.9,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Vepřové řízky z kýty"
-  },
-  {
-   "ingredientId": "veprova_kyta",
    "store": "tesco",
    "czkPerKg": 59.9,
    "validFrom": "2026-09-26",
@@ -5049,14 +5073,6 @@
    "validFrom": "2026-09-26",
    "validTo": "2026-09-29",
    "title": "Vepřová kýta bez kosti Tesco"
-  },
-  {
-   "ingredientId": "veprova_panenka",
-   "store": "lidl",
-   "czkPerKg": 129.9,
-   "validFrom": "2026-09-24",
-   "validTo": "2026-09-27",
-   "title": "Vepřová panenská svíčková"
   },
   {
    "ingredientId": "veprova_pecene",
@@ -5109,18 +5125,18 @@
   {
    "ingredientId": "vodka",
    "store": "albert",
-   "czkPerKg": 276.4,
-   "validFrom": "2026-09-23",
-   "validTo": "2026-09-29",
-   "title": "Božkov Vodka"
+   "czkPerKg": 255.1,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Nicolaus Vodka"
   },
   {
    "ingredientId": "vodka",
    "store": "albert",
-   "czkPerKg": 297.7,
+   "czkPerKg": 276.4,
    "validFrom": "2026-09-23",
    "validTo": "2026-09-29",
-   "title": "Pražská Vodka"
+   "title": "Božkov Vodka"
   },
   {
    "ingredientId": "vodka",
@@ -5204,6 +5220,14 @@
   },
   {
    "ingredientId": "zeli_bile",
+   "store": "albert",
+   "czkPerKg": 79.6,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Bílé zelí krouhané"
+  },
+  {
+   "ingredientId": "zeli_bile",
    "store": "kaufland",
    "czkPerKg": 9.9,
    "validFrom": "2026-09-26",
@@ -5217,6 +5241,14 @@
    "validFrom": "2026-10-01",
    "validTo": "2026-10-04",
    "title": "FRESHONA Červené zelí"
+  },
+  {
+   "ingredientId": "zmrzlina_vanilkova",
+   "store": "albert",
+   "czkPerKg": 82.5,
+   "validFrom": "2026-09-30",
+   "validTo": "2026-10-06",
+   "title": "Zmrzlina Activia"
   }
  ],
  "categoryFallbackCzkPerKg": {
