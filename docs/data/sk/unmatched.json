@@ -1,5 +1,5 @@
 {
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "review": [
   {
    "ingredientId": "kesu",
@@ -7,7 +7,8 @@
    "source": "lidl_sk",
    "title": "Kešu orechy XXL",
    "price": 3.99,
-   "validFrom": "2026-08-31",
+   "validFrom": "2026-09-28",
+   "validTo": "2026-10-04",
    "confidence": 0.84,
    "status": "review",
    "club": false,
@@ -35,7 +36,7 @@
     }
    ],
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
-   "promo": false
+   "promo": true
   },
   {
    "ingredientId": "mandarinka",
@@ -192,6 +193,34 @@
    "promo": true
   },
   {
+   "ingredientId": "jogurt_bily",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Zvolenský smotanový jogurt XXL",
+   "czkPerKg": 2.8,
+   "price": 0.55,
+   "validFrom": "2026-09-28",
+   "validTo": "2026-10-04",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "jogurt_bily",
+     "score": 0.78,
+     "via": "jogurt",
+     "nameCs": "bílý jogurt",
+     "name": "biely jogurt",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "jablko",
    "store": "lidl",
    "source": "lidl_sk",
@@ -245,7 +274,7 @@
   {
    "store": "lidl",
    "source": "lidl_sk",
-   "title": "Kuracie štvrte zadné XXL",
+   "title": "Kuracie štvrte",
    "price": 1.89,
    "originalPrice": 3.39,
    "validFrom": "2026-10-01",
@@ -258,6 +287,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 7,
+ "reviewTotal": 8,
  "unmatchedTotal": 2
 }
