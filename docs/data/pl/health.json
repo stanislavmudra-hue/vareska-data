@@ -1,38 +1,38 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-09-30",
- "generatedAt": "2026-09-30T07:49:10Z",
- "status": "ok",
+ "date": "2026-10-01",
+ "generatedAt": "2026-10-01T08:07:29Z",
+ "status": "warning",
  "ok": true,
  "run": {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "startedAt": null,
-  "finishedAt": "2026-09-30T07:49:10Z",
+  "finishedAt": "2026-10-01T08:07:29Z",
   "durationSec": null,
-  "offers": 41,
-  "deals": 4,
+  "offers": 39,
+  "deals": 0,
   "priced": 19,
-  "matched": 4,
-  "review": 8,
-  "unmatched": 26,
+  "matched": 0,
+  "review": 5,
+  "unmatched": 31,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-30",
- "pricesUpdated": "2026-09-30",
+ "lastSuccessfulRun": "2026-10-01",
+ "pricesUpdated": "2026-10-01",
  "sources": {
   "lidl_pl": {
    "label": "lidl_pl",
    "ok": true,
    "skipped": false,
-   "items": 41,
-   "matched": 4,
+   "items": 39,
+   "matched": null,
    "requests": 2,
-   "durationSec": 1.6,
+   "durationSec": 2.0,
    "error": null,
    "robots": null,
    "notes": [
-    "0 categories, 41 products"
+    "0 categories, 39 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -48,9 +48,9 @@
   },
   "lidl": {
    "priced": 19,
-   "deals": 4,
-   "rowsToday": 4,
-   "missingToday": false,
+   "deals": 0,
+   "rowsToday": 0,
+   "missingToday": true,
    "notFetched": false
   },
   "kaufland": {
@@ -113,9 +113,11 @@
   "aldi",
   "zabka"
  ],
- "stale": 15,
+ "stale": 19,
  "dropped": 0,
- "warnings": [],
+ "warnings": [
+  "store 'lidl' had no matched rows today (carry-forward only)"
+ ],
  "validation": {
   "ok": true,
   "errors": []
@@ -504,6 +506,38 @@
    "stale": 15,
    "dropped": 0,
    "warnings": 0
+  },
+  {
+   "date": "2026-10-01",
+   "market": "pl",
+   "generatedAt": "2026-10-01T08:07:29Z",
+   "durationSec": null,
+   "status": "warning",
+   "ok": true,
+   "offers": 39,
+   "perSource": {
+    "lidl_pl": 39
+   },
+   "matched": 0,
+   "review": 5,
+   "unmatched": 31,
+   "deals": 0,
+   "priced": 19,
+   "pairsPriced": 19,
+   "perStore": {
+    "biedronka": 0,
+    "lidl": 19,
+    "kaufland": 0,
+    "auchan": 0,
+    "carrefour": 0,
+    "netto": 0,
+    "dino": 0,
+    "aldi": 0,
+    "zabka": 0
+   },
+   "stale": 19,
+   "dropped": 0,
+   "warnings": 1
   }
  ]
 }

@@ -1,38 +1,38 @@
 {
  "market": "sk",
  "currency": "EUR",
- "date": "2026-09-30",
- "generatedAt": "2026-09-30T07:49:10Z",
+ "date": "2026-10-01",
+ "generatedAt": "2026-10-01T08:07:29Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "startedAt": null,
-  "finishedAt": "2026-09-30T07:49:10Z",
+  "finishedAt": "2026-10-01T08:07:29Z",
   "durationSec": null,
-  "offers": 20,
-  "deals": 8,
-  "priced": 38,
-  "matched": 8,
+  "offers": 18,
+  "deals": 6,
+  "priced": 40,
+  "matched": 6,
   "review": 8,
   "unmatched": 2,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-30",
- "pricesUpdated": "2026-09-30",
+ "lastSuccessfulRun": "2026-10-01",
+ "pricesUpdated": "2026-10-01",
  "sources": {
   "lidl_sk": {
    "label": "lidl_sk",
    "ok": true,
    "skipped": false,
-   "items": 20,
-   "matched": 8,
+   "items": 18,
+   "matched": 6,
    "requests": 2,
-   "durationSec": 1.9,
+   "durationSec": 2.4,
    "error": null,
    "robots": null,
    "notes": [
-    "0 categories, 20 products"
+    "0 categories, 18 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -47,9 +47,9 @@
    "notFetched": true
   },
   "lidl": {
-   "priced": 38,
-   "deals": 8,
-   "rowsToday": 8,
+   "priced": 40,
+   "deals": 6,
+   "rowsToday": 6,
    "missingToday": false,
    "notFetched": false
   },
@@ -97,7 +97,7 @@
   "terno",
   "fresh"
  ],
- "stale": 32,
+ "stale": 34,
  "dropped": 0,
  "warnings": [],
  "validation": {
@@ -462,6 +462,36 @@
     "fresh": 0
    },
    "stale": 32,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-10-01",
+   "market": "sk",
+   "generatedAt": "2026-10-01T08:07:29Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 18,
+   "perSource": {
+    "lidl_sk": 18
+   },
+   "matched": 6,
+   "review": 8,
+   "unmatched": 2,
+   "deals": 6,
+   "priced": 40,
+   "pairsPriced": 40,
+   "perStore": {
+    "tesco": 0,
+    "lidl": 40,
+    "kaufland": 0,
+    "billa": 0,
+    "coopJednota": 0,
+    "terno": 0,
+    "fresh": 0
+   },
+   "stale": 34,
    "dropped": 0,
    "warnings": 0
   }

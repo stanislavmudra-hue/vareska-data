@@ -1,25 +1,25 @@
 {
  "market": "cz",
  "currency": "CZK",
- "date": "2026-09-30",
- "generatedAt": "2026-09-30T07:49:10Z",
+ "date": "2026-10-01",
+ "generatedAt": "2026-10-01T08:07:29Z",
  "status": "warning",
  "ok": true,
  "run": {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "startedAt": null,
-  "finishedAt": "2026-09-30T07:49:10Z",
+  "finishedAt": "2026-10-01T08:07:29Z",
   "durationSec": null,
-  "offers": 2406,
-  "deals": 258,
-  "priced": 288,
-  "matched": 481,
-  "review": 540,
-  "unmatched": 779,
+  "offers": 2328,
+  "deals": 263,
+  "priced": 291,
+  "matched": 470,
+  "review": 496,
+  "unmatched": 756,
   "ok": true
  },
- "lastSuccessfulRun": "2026-09-30",
- "pricesUpdated": "2026-09-30",
+ "lastSuccessfulRun": "2026-10-01",
+ "pricesUpdated": "2026-10-01",
  "sources": {
   "albert-text": {
    "label": "albert-text",
@@ -28,7 +28,7 @@
    "items": 783,
    "matched": 130,
    "requests": 5,
-   "durationSec": 6.3,
+   "durationSec": 4.8,
    "error": null,
    "robots": null,
    "notes": [
@@ -45,7 +45,7 @@
    "items": 273,
    "matched": 54,
    "requests": 5,
-   "durationSec": 4.2,
+   "durationSec": 4.0,
    "error": null,
    "robots": null,
    "notes": [
@@ -60,9 +60,9 @@
    "ok": true,
    "skipped": false,
    "items": 957,
-   "matched": 140,
+   "matched": 141,
    "requests": 11,
-   "durationSec": 54.2,
+   "durationSec": 22.1,
    "error": null,
    "robots": null,
    "notes": [
@@ -78,7 +78,7 @@
    "items": 0,
    "matched": null,
    "requests": 2,
-   "durationSec": 1.6,
+   "durationSec": 1.4,
    "error": null,
    "robots": null,
    "notes": [
@@ -109,15 +109,14 @@
    "label": "lidl",
    "ok": true,
    "skipped": false,
-   "items": 352,
-   "matched": 148,
-   "requests": 20,
-   "durationSec": 19.5,
+   "items": 274,
+   "matched": 136,
+   "requests": 15,
+   "durationSec": 14.7,
    "error": null,
    "robots": null,
    "notes": [
-    "Mražené / Zmrzlina: 73 items, only 60 returned",
-    "22 categories, 352 products"
+    "17 categories, 274 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -148,9 +147,9 @@
    "notFetched": false
   },
   "lidl": {
-   "priced": 131,
-   "deals": 37,
-   "rowsToday": 148,
+   "priced": 139,
+   "deals": 27,
+   "rowsToday": 136,
    "missingToday": false,
    "notFetched": false
   },
@@ -184,14 +183,14 @@
   },
   "globus": {
    "priced": 184,
-   "deals": 57,
-   "rowsToday": 140,
+   "deals": 72,
+   "rowsToday": 141,
    "missingToday": false,
    "notFetched": false
   }
  },
  "notFetched": [],
- "stale": 676,
+ "stale": 682,
  "dropped": 0,
  "warnings": [
   "store 'kaufland' had no matched rows today (carry-forward only)",
@@ -203,40 +202,6 @@
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-09-17",
-   "generatedAt": "2026-09-17T07:02:15Z",
-   "durationSec": null,
-   "status": "ok",
-   "ok": true,
-   "offers": 3164,
-   "perSource": {
-    "albert-text": 883,
-    "billa-text": 290,
-    "globus": 885,
-    "kupi": 722,
-    "lidl": 349,
-    "penny": 35
-   },
-   "matched": 1165,
-   "review": 410,
-   "unmatched": 926,
-   "deals": 767,
-   "priced": 203,
-   "pairsPriced": 695,
-   "perStore": {
-    "albert": 132,
-    "lidl": 89,
-    "kaufland": 89,
-    "tesco": 75,
-    "billa": 96,
-    "penny": 92,
-    "globus": 122
-   },
-   "stale": 184,
-   "dropped": 0,
-   "warnings": 0
-  },
   {
    "date": "2026-09-18",
    "generatedAt": "2026-09-18T06:58:55Z",
@@ -681,6 +646,40 @@
     "globus": 184
    },
    "stale": 676,
+   "dropped": 0,
+   "warnings": 3
+  },
+  {
+   "date": "2026-10-01",
+   "market": "cz",
+   "generatedAt": "2026-10-01T08:07:29Z",
+   "durationSec": null,
+   "status": "warning",
+   "ok": true,
+   "offers": 2328,
+   "perSource": {
+    "albert-text": 783,
+    "billa-text": 273,
+    "globus": 957,
+    "lidl": 274,
+    "penny": 41
+   },
+   "matched": 470,
+   "review": 496,
+   "unmatched": 756,
+   "deals": 263,
+   "priced": 291,
+   "pairsPriced": 941,
+   "perStore": {
+    "albert": 179,
+    "lidl": 139,
+    "kaufland": 110,
+    "tesco": 87,
+    "billa": 127,
+    "penny": 115,
+    "globus": 184
+   },
+   "stale": 682,
    "dropped": 0,
    "warnings": 3
   }
