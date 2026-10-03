@@ -1,5 +1,5 @@
 {
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "review": [
   {
    "ingredientId": "kesu",
@@ -134,6 +134,36 @@
    "promo": false
   },
   {
+   "ingredientId": "sunka",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "ITALIAMO Fiocchetto šunka",
+   "price": 1.79,
+   "validFrom": "2026-10-05",
+   "validTo": "2026-10-11",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "sunka",
+     "score": 0.78,
+     "via": "šunka",
+     "nameCs": "šunka",
+     "name": "šunka"
+    },
+    {
+     "ingredientId": "sunka_od_kosti",
+     "score": 0.741,
+     "via": "šunka s kostí",
+     "nameCs": "šunka od kosti",
+     "name": "šunka od kosti"
+    }
+   ],
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "hrozny",
    "store": "lidl",
    "source": "lidl_sk",
@@ -221,6 +251,85 @@
    "promo": true
   },
   {
+   "ingredientId": "prosecco",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Prosecco Treviso DOC frizzante",
+   "czkPerKg": 4.03,
+   "price": 2.99,
+   "originalPrice": 4.59,
+   "validFrom": "2026-10-05",
+   "validTo": "2026-10-25",
+   "confidence": 0.725,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "prosecco",
+     "score": 0.725,
+     "via": "prosecco",
+     "nameCs": "prosecco",
+     "name": "prosecco"
+    },
+    {
+     "ingredientId": "jahly",
+     "score": 0.29,
+     "via": "proso",
+     "nameCs": "jáhly",
+     "name": "pšeno",
+     "reasons": [
+      "hint-category:grain"
+     ]
+    }
+   ],
+   "pack": "0.75 l",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "brambory",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Konzumné zemiaky skoré",
+   "czkPerKg": 0.56,
+   "price": 2.8,
+   "originalPrice": 3.99,
+   "validFrom": "2026-10-05",
+   "validTo": "2026-10-11",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "brambory",
+     "score": 0.714,
+     "via": "zemiaky",
+     "nameCs": "brambory",
+     "name": "zemiaky"
+    },
+    {
+     "ingredientId": "cerny_koren",
+     "score": 0.571,
+     "via": "skorzonera",
+     "nameCs": "černý kořen",
+     "name": "čierny koreň"
+    },
+    {
+     "ingredientId": "skorice_mleta",
+     "score": 0.285,
+     "via": "skořice",
+     "nameCs": "mletá skořice",
+     "name": "mletá škorica",
+     "reasons": [
+      "hint-category:spice"
+     ]
+    }
+   ],
+   "pack": "5 kg",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "jablko",
    "store": "lidl",
    "source": "lidl_sk",
@@ -287,6 +396,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 8,
+ "reviewTotal": 11,
  "unmatchedTotal": 2
 }

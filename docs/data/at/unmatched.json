@@ -1,5 +1,5 @@
 {
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "review": [
   {
    "ingredientId": "olivy_zelene",
@@ -119,6 +119,42 @@
    ],
    "pack": "800 g",
    "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "hruska",
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Birnen Migo® aus Österreich",
+   "czkPerKg": 1.99,
+   "price": 1.99,
+   "originalPrice": 2.99,
+   "validFrom": "2026-10-01",
+   "validTo": "2026-10-03",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "hruska",
+     "score": 0.839,
+     "via": "Birne",
+     "nameCs": "hruška",
+     "name": "Birne"
+    },
+    {
+     "ingredientId": "dzus_hruskovy",
+     "score": 0.336,
+     "via": "Birnensaft",
+     "nameCs": "hruškový džus",
+     "name": "Birnensaft",
+     "reasons": [
+      "hint-category:beverage"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.at/q/api/category/h/obst-gemuese/h10071012?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2899,6 +2935,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 43,
+ "reviewTotal": 44,
  "unmatchedTotal": 88
 }
