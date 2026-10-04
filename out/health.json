@@ -2,37 +2,33 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-03T07:23:19+00:00",
- "today": "2026-10-03",
+ "run": "2026-10-04T07:37:42+00:00",
+ "today": "2026-10-04",
  "sources": {
   "globus": {
    "source": "globus",
-   "ok": true,
-   "count": 959,
-   "error": null,
-   "stores": {
-    "globus": 959
-   },
-   "requests": 11,
-   "elapsed_s": 20.4,
-   "notes": [
-    "house 4005: totalCount=869, offers=959"
-   ],
+   "ok": false,
+   "count": 0,
+   "error": "http: ReadTimeout for https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "stores": {},
+   "requests": 6,
+   "elapsed_s": 120.0,
+   "notes": [],
    "tier": "primary",
    "market": "cz"
   },
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 368,
+   "count": 365,
    "error": null,
    "stores": {
-    "lidl": 368
+    "lidl": 365
    },
    "requests": 23,
-   "elapsed_s": 22.5,
+   "elapsed_s": 22.3,
    "notes": [
-    "25 categories, 368 products"
+    "25 categories, 365 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -46,7 +42,7 @@
     "penny": 41
    },
    "requests": 2,
-   "elapsed_s": 1.2,
+   "elapsed_s": 1.4,
    "notes": [
     "total=33, offers=41"
    ],
@@ -62,7 +58,7 @@
     "albert": 783
    },
    "requests": 5,
-   "elapsed_s": 4.3,
+   "elapsed_s": 4.4,
    "notes": [
     "Albert - 40HM_akcni_letak (2026-09-30..2026-10-06): 28 spreads, 461 offers",
     "Albert - 40SM_akcni_letak (2026-09-30..2026-10-06): 23 spreads, 322 offers"
@@ -79,7 +75,7 @@
     "billa": 273
    },
    "requests": 5,
-   "elapsed_s": 4.6,
+   "elapsed_s": 4.3,
    "notes": [
     "velky-letak-30-9-6-10-2026: 19 spreads, 237 offers",
     "maly-letak-30-9-6-10-2026: 5 spreads, 36 offers"
@@ -94,10 +90,13 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.5,
+   "elapsed_s": 1.6,
    "notes": [
     "30.09.2026 - 06.10.2026: 2026-09-30..2026-10-06",
+    "07.10.2026 - 13.10.2026: 2026-10-07..2026-10-13",
     "30.09.2026 - 06.10.2026: 2026-09-30..2026-10-06",
+    "07.10.2026 - 13.10.2026: 2026-10-07..2026-10-13",
+    "07.10.2026 - 03.11.2026: 2026-10-07..2026-11-03",
     "metadata only - Kaufland prices come from the kupi provider"
    ],
    "periods": [
@@ -112,12 +111,39 @@
     },
     {
      "name": "Kaufland",
+     "title": "07.10.2026 - 13.10.2026",
+     "offer_from": "2026-10-07",
+     "offer_to": "2026-10-13",
+     "published": "2026-10-04",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a0eea0-ae38-7793-95de-c518c13724f4/Kaufland-07-10-2026-13-10-2026-00.pdf",
+     "subcategory": "KDZ"
+    },
+    {
+     "name": "Kaufland",
      "title": "30.09.2026 - 06.10.2026",
      "offer_from": "2026-09-30",
      "offer_to": "2026-10-06",
      "published": "2026-09-27",
      "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a0ce03-0fcf-7447-ae7a-e576ccb96a8f/Kaufland-30-09-2026-06-10-2026-00.pdf",
      "subcategory": "Hyper1"
+    },
+    {
+     "name": "Kaufland",
+     "title": "07.10.2026 - 13.10.2026",
+     "offer_from": "2026-10-07",
+     "offer_to": "2026-10-13",
+     "published": "2026-10-04",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a0fbb9-19d9-7846-8046-af670cb4c478/Kaufland-07-10-2026-13-10-2026-00.pdf",
+     "subcategory": "Hyper1"
+    },
+    {
+     "name": "Kaufland",
+     "title": "07.10.2026 - 03.11.2026",
+     "offer_from": "2026-10-07",
+     "offer_to": "2026-11-03",
+     "published": "2026-10-04",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a0fd02-cc78-79e5-aa3a-7cdb75d575ae/Kaufland-07-10-2026-03-11-2026-00.pdf",
+     "subcategory": "Wrapper1"
     }
    ],
    "tier": "metadata",
@@ -130,7 +156,7 @@
    "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.1,
+   "elapsed_s": 1.0,
    "notes": [
     "stopped at term maslo: blocked/robots"
    ],
@@ -140,9 +166,11 @@
  },
  "hosts": {
   "www.globus.cz": {
-   "requests": 11,
+   "requests": 6,
    "statuses": {
-    "200": 11
+    "200": 2,
+    "502": 2,
+    "None": 2
    },
    "server": "cloudflare",
    "cf_mitigated": null
@@ -347,6 +375,6 @@
   }
  ],
  "notFetched": [],
- "requests_made": 50,
+ "requests_made": 45,
  "cache_hits": 0
 }

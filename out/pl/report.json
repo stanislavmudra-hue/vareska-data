@@ -1,40 +1,38 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-10-03",
- "generatedAt": "2026-10-03T07:24:45Z",
+ "date": "2026-10-04",
+ "generatedAt": "2026-10-04T07:40:52Z",
  "startedAt": null,
  "durationSec": null,
- "status": "ok",
+ "status": "warning",
  "ok": true,
- "warnings": [],
+ "warnings": [
+  "store 'lidl' had no matched rows today (carry-forward only)"
+ ],
  "validation": {
   "ok": true,
   "errors": []
  },
  "offers": {
   "perSource": {
-   "lidl_pl": 38
+   "lidl_pl": 40
   },
-  "total": 38,
+  "total": 40,
   "path": "out/pl/offers.json"
  },
  "matching": {
   "path": "out/pl/matched.json",
-  "generated": "2026-10-03",
-  "matched": 1,
-  "review": 3,
+  "generated": "2026-10-04",
+  "matched": 0,
+  "review": 8,
   "unmatched": 31,
-  "ignored": 3,
-  "byStatus": {
-   "matched": 1
-  },
-  "matchedPerSource": {
-   "lidl_pl": 1
-  },
+  "ignored": 1,
+  "byStatus": {},
+  "matchedPerSource": {},
   "matchedPerStore": {
    "biedronka": 0,
-   "lidl": 1,
+   "lidl": 0,
    "kaufland": 0,
    "auchan": 0,
    "carrefour": 0,
@@ -43,12 +41,12 @@
    "aldi": 0,
    "zabka": 0
   },
-  "promoRows": 1,
+  "promoRows": 0,
   "mapperStats": {
-   "matched": 1,
-   "review": 3,
+   "matched": 0,
+   "review": 8,
    "unmatched": 31,
-   "ignored": 3
+   "ignored": 1
   }
  },
  "build": {
@@ -58,21 +56,17 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-10-02",
-  "today": "2026-10-03",
-  "rows": 1,
-  "rowsPerStore": {
-   "lidl": 1
-  },
-  "rowsPerSource": {
-   "lidl_pl": 1
-  },
-  "promoRows": 1,
+  "previousUpdated": "2026-10-03",
+  "today": "2026-10-04",
+  "rows": 0,
+  "rowsPerStore": {},
+  "rowsPerSource": {},
+  "promoRows": 0,
   "clubRows": 0,
   "ingredientsPriced": 19,
   "pairsPriced": 19,
-  "pairsFresh": 1,
-  "pairsFromPromoOnly": 1,
+  "pairsFresh": 0,
+  "pairsFromPromoOnly": 0,
   "storesPriced": {
    "biedronka": 0,
    "lidl": 19,
@@ -92,151 +86,160 @@
     "store": "lidl",
     "czkPerKg": 9.0,
     "lastSeen": "2026-09-23",
-    "ageDays": 10,
-    "reason": "not_matched_today"
+    "ageDays": 11,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "cesnek",
     "store": "lidl",
     "czkPerKg": 29.9,
     "lastSeen": "2026-09-26",
-    "ageDays": 7,
-    "reason": "not_matched_today"
+    "ageDays": 8,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "citron",
     "store": "lidl",
     "czkPerKg": 8.0,
     "lastSeen": "2026-09-26",
-    "ageDays": 7,
-    "reason": "not_matched_today"
+    "ageDays": 8,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "dyne_hokkaido",
     "store": "lidl",
     "czkPerKg": 4.0,
     "lastSeen": "2026-09-19",
-    "ageDays": 14,
-    "reason": "not_matched_today"
+    "ageDays": 15,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "hruska",
     "store": "lidl",
     "czkPerKg": 4.0,
     "lastSeen": "2026-09-30",
-    "ageDays": 3,
-    "reason": "not_matched_today"
+    "ageDays": 4,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kedlubna",
     "store": "lidl",
     "czkPerKg": 6.6,
     "lastSeen": "2026-09-23",
-    "ageDays": 10,
-    "reason": "not_matched_today"
+    "ageDays": 11,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "maliny",
     "store": "lidl",
     "czkPerKg": 47.9,
     "lastSeen": "2026-09-30",
-    "ageDays": 3,
-    "reason": "not_matched_today"
+    "ageDays": 4,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mandarinka",
     "store": "lidl",
     "czkPerKg": 7.0,
     "lastSeen": "2026-09-19",
-    "ageDays": 14,
-    "reason": "not_matched_today"
+    "ageDays": 15,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "marakuja",
     "store": "lidl",
     "czkPerKg": 46.6,
     "lastSeen": "2026-09-19",
-    "ageDays": 14,
-    "reason": "not_matched_today"
+    "ageDays": 15,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mineralka",
     "store": "lidl",
     "czkPerKg": 0.9,
     "lastSeen": "2026-09-23",
-    "ageDays": 10,
-    "reason": "not_matched_today"
+    "ageDays": 11,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mrkev",
     "store": "lidl",
     "czkPerKg": 2.0,
     "lastSeen": "2026-09-23",
-    "ageDays": 10,
-    "reason": "not_matched_today"
+    "ageDays": 11,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "okurky_nakladacky",
     "store": "lidl",
     "czkPerKg": 4.0,
     "lastSeen": "2026-09-30",
-    "ageDays": 3,
-    "reason": "not_matched_today"
+    "ageDays": 4,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "pomeranc",
     "store": "lidl",
     "czkPerKg": 6.0,
     "lastSeen": "2026-09-26",
-    "ageDays": 7,
-    "reason": "not_matched_today"
+    "ageDays": 8,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "porek",
     "store": "lidl",
     "czkPerKg": 22.4,
     "lastSeen": "2026-09-30",
-    "ageDays": 3,
-    "reason": "not_matched_today"
+    "ageDays": 4,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "rajcata_cherry",
     "store": "lidl",
     "czkPerKg": 26.6,
     "lastSeen": "2026-09-23",
-    "ageDays": 10,
-    "reason": "not_matched_today"
+    "ageDays": 11,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "soda",
     "store": "lidl",
     "czkPerKg": 1.2,
     "lastSeen": "2026-09-23",
-    "ageDays": 10,
-    "reason": "not_matched_today"
+    "ageDays": 11,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "svestky",
     "store": "lidl",
     "czkPerKg": 4.0,
     "lastSeen": "2026-09-19",
-    "ageDays": 14,
-    "reason": "not_matched_today"
+    "ageDays": 15,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "zampiony",
+    "store": "lidl",
+    "czkPerKg": 10.0,
+    "lastSeen": "2026-10-03",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "zazvor",
     "store": "lidl",
     "czkPerKg": 16.9,
     "lastSeen": "2026-09-26",
-    "ageDays": 7,
-    "reason": "not_matched_today"
+    "ageDays": 8,
+    "reason": "store_missing"
    }
   ],
-  "staleCount": 18,
+  "staleCount": 19,
   "dropped": [],
   "droppedCount": 0,
   "storesMissing": [
    "biedronka",
+   "lidl",
    "kaufland",
    "auchan",
    "carrefour",
@@ -253,7 +256,7 @@
   "v": 2,
   "market": "pl",
   "currency": "PLN",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "ingredients": 19,
   "pairs": 19,
   "perStore": {
@@ -286,21 +289,21 @@
   "v": 1,
   "market": "pl",
   "currency": "PLN",
-  "run": "2026-10-03T07:24:17+00:00",
-  "today": "2026-10-03",
+  "run": "2026-10-04T07:40:19+00:00",
+  "today": "2026-10-04",
   "sources": {
    "lidl_pl": {
     "source": "lidl_pl",
     "ok": true,
-    "count": 38,
+    "count": 40,
     "error": null,
     "stores": {
-     "lidl": 38
+     "lidl": 40
     },
     "requests": 2,
-    "elapsed_s": 1.9,
+    "elapsed_s": 1.7,
     "notes": [
-     "0 categories, 38 products"
+     "0 categories, 40 products"
     ],
     "tier": "primary",
     "market": "pl"
