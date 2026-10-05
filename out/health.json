@@ -2,33 +2,37 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-04T07:37:42+00:00",
- "today": "2026-10-04",
+ "run": "2026-10-05T08:02:11+00:00",
+ "today": "2026-10-05",
  "sources": {
   "globus": {
    "source": "globus",
-   "ok": false,
-   "count": 0,
-   "error": "http: ReadTimeout for https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
-   "stores": {},
-   "requests": 6,
-   "elapsed_s": 120.0,
-   "notes": [],
+   "ok": true,
+   "count": 939,
+   "error": null,
+   "stores": {
+    "globus": 939
+   },
+   "requests": 10,
+   "elapsed_s": 23.6,
+   "notes": [
+    "house 4005: totalCount=839, offers=939"
+   ],
    "tier": "primary",
    "market": "cz"
   },
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 365,
+   "count": 316,
    "error": null,
    "stores": {
-    "lidl": 365
+    "lidl": 316
    },
-   "requests": 23,
-   "elapsed_s": 22.3,
+   "requests": 15,
+   "elapsed_s": 14.4,
    "notes": [
-    "25 categories, 365 products"
+    "17 categories, 316 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -42,7 +46,7 @@
     "penny": 41
    },
    "requests": 2,
-   "elapsed_s": 1.4,
+   "elapsed_s": 1.5,
    "notes": [
     "total=33, offers=41"
    ],
@@ -52,16 +56,18 @@
   "albert": {
    "source": "albert",
    "ok": true,
-   "count": 783,
+   "count": 1537,
    "error": null,
    "stores": {
-    "albert": 783
+    "albert": 1537
    },
-   "requests": 5,
-   "elapsed_s": 4.4,
+   "requests": 7,
+   "elapsed_s": 6.8,
    "notes": [
     "Albert - 40HM_akcni_letak (2026-09-30..2026-10-06): 28 spreads, 461 offers",
-    "Albert - 40SM_akcni_letak (2026-09-30..2026-10-06): 23 spreads, 322 offers"
+    "Albert - 40SM_akcni_letak (2026-09-30..2026-10-06): 23 spreads, 322 offers",
+    "Albert - 41HM_akcni_letak (2026-10-07..2026-10-13): 31 spreads, 458 offers",
+    "Albert - 41SM_akcni_letak (2026-10-07..2026-10-13): 22 spreads, 296 offers"
    ],
    "tier": "secondary",
    "market": "cz"
@@ -75,7 +81,7 @@
     "billa": 273
    },
    "requests": 5,
-   "elapsed_s": 4.3,
+   "elapsed_s": 4.2,
    "notes": [
     "velky-letak-30-9-6-10-2026: 19 spreads, 237 offers",
     "maly-letak-30-9-6-10-2026: 5 spreads, 36 offers"
@@ -166,19 +172,17 @@
  },
  "hosts": {
   "www.globus.cz": {
-   "requests": 6,
+   "requests": 10,
    "statuses": {
-    "200": 2,
-    "502": 2,
-    "None": 2
+    "200": 10
    },
    "server": "cloudflare",
    "cf_mitigated": null
   },
   "www.lidl.cz": {
-   "requests": 23,
+   "requests": 15,
    "statuses": {
-    "200": 23
+    "200": 15
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -200,10 +204,10 @@
    "cf_mitigated": null
   },
   "letaky.albert.cz": {
-   "requests": 3,
+   "requests": 5,
    "statuses": {
     "404": 1,
-    "200": 2
+    "200": 4
    },
    "server": "Apache",
    "cf_mitigated": null
@@ -375,6 +379,6 @@
   }
  ],
  "notFetched": [],
- "requests_made": 45,
+ "requests_made": 43,
  "cache_hits": 0
 }

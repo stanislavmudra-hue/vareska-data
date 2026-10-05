@@ -1,14 +1,14 @@
 {
  "market": "at",
  "currency": "EUR",
- "date": "2026-10-04",
- "generatedAt": "2026-10-04T07:40:52Z",
+ "date": "2026-10-05",
+ "generatedAt": "2026-10-05T08:03:41Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "startedAt": null,
-  "finishedAt": "2026-10-04T07:40:52Z",
+  "finishedAt": "2026-10-05T08:03:41Z",
   "durationSec": null,
   "offers": 176,
   "deals": 8,
@@ -18,8 +18,8 @@
   "unmatched": 114,
   "ok": true
  },
- "lastSuccessfulRun": "2026-10-04",
- "pricesUpdated": "2026-10-04",
+ "lastSuccessfulRun": "2026-10-05",
+ "pricesUpdated": "2026-10-05",
  "sources": {
   "lidl_at": {
    "label": "lidl_at",
@@ -28,7 +28,7 @@
    "items": 176,
    "matched": 8,
    "requests": 15,
-   "durationSec": 15.6,
+   "durationSec": 15.7,
    "error": null,
    "robots": null,
    "notes": [
@@ -97,7 +97,7 @@
   "penny",
   "mpreis"
  ],
- "stale": 25,
+ "stale": 24,
  "dropped": 0,
  "warnings": [],
  "validation": {
@@ -105,36 +105,6 @@
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-09-21",
-   "market": "at",
-   "generatedAt": "2026-09-21T07:30:29Z",
-   "durationSec": null,
-   "status": "ok",
-   "ok": true,
-   "offers": 245,
-   "perSource": {
-    "lidl_at": 245
-   },
-   "matched": 17,
-   "review": 62,
-   "unmatched": 153,
-   "deals": 16,
-   "priced": 8,
-   "pairsPriced": 8,
-   "perStore": {
-    "billa": 0,
-    "spar": 0,
-    "interspar": 0,
-    "hofer": 0,
-    "lidl": 8,
-    "penny": 0,
-    "mpreis": 0
-   },
-   "stale": 3,
-   "dropped": 0,
-   "warnings": 0
-  },
   {
    "date": "2026-09-22",
    "market": "at",
@@ -522,6 +492,36 @@
     "mpreis": 0
    },
    "stale": 25,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-10-05",
+   "market": "at",
+   "generatedAt": "2026-10-05T08:03:41Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 176,
+   "perSource": {
+    "lidl_at": 176
+   },
+   "matched": 8,
+   "review": 44,
+   "unmatched": 114,
+   "deals": 8,
+   "priced": 25,
+   "pairsPriced": 25,
+   "perStore": {
+    "billa": 0,
+    "spar": 0,
+    "interspar": 0,
+    "hofer": 0,
+    "lidl": 25,
+    "penny": 0,
+    "mpreis": 0
+   },
+   "stale": 24,
    "dropped": 0,
    "warnings": 0
   }

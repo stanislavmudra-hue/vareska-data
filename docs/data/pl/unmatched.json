@@ -1,5 +1,5 @@
 {
- "date": "2026-10-04",
+ "date": "2026-10-05",
  "review": [
   {
    "ingredientId": "prosciutto",
@@ -8,6 +8,7 @@
    "title": "ITALIAMO Prosciutto cotto",
    "czkPerKg": 69.9,
    "price": 6.99,
+   "validFrom": "2026-10-05",
    "confidence": 0.839,
    "status": "review",
    "club": false,
@@ -99,6 +100,7 @@
    "title": "ITALIAMO Salami",
    "czkPerKg": 83.3,
    "price": 9.99,
+   "validFrom": "2026-10-05",
    "confidence": 0.8,
    "status": "review",
    "club": false,
@@ -122,6 +124,7 @@
    "title": "ITALIAMO Sos z pomidorów koktajlowych",
    "czkPerKg": 18.15,
    "price": 5.99,
+   "validFrom": "2026-10-05",
    "confidence": 0.752,
    "status": "review",
    "club": false,
@@ -146,12 +149,37 @@
    "promo": false
   },
   {
+   "ingredientId": "salam_trvanlivy",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "ITALIAMO Salami spianata rossa piccante",
+   "czkPerKg": 108.3,
+   "price": 12.99,
+   "validFrom": "2026-10-05",
+   "confidence": 0.725,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.725,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám",
+     "name": "salami dojrzewające"
+    }
+   ],
+   "pack": "120 g",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
    "ingredientId": "rajcata",
    "store": "lidl",
    "source": "lidl_pl",
    "title": "ITALIAMO Przecier z pomidorów wiśniowych",
    "czkPerKg": 11.98,
    "price": 5.99,
+   "validFrom": "2026-10-05",
    "confidence": 0.714,
    "status": "review",
    "club": false,
@@ -208,6 +236,7 @@
    "title": "Dulano Selection Bresaola della Valtellina",
    "czkPerKg": 187.4,
    "price": 14.99,
+   "validFrom": "2026-10-05",
    "confidence": 0.674,
    "status": "review",
    "club": false,
@@ -221,6 +250,30 @@
     }
    ],
    "pack": "80 g",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "ingredientId": "mortadela",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "ITALIAMO Mortadella Bologna",
+   "czkPerKg": 66.6,
+   "price": 9.99,
+   "validFrom": "2026-10-05",
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mortadela",
+     "score": 0.671,
+     "via": "mortadela",
+     "nameCs": "mortadela",
+     "name": "mortadela"
+    }
+   ],
+   "pack": "150 g",
    "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   }
@@ -345,6 +398,7 @@
    "source": "lidl_pl",
    "title": "Coca-Cola, Coca-Cola Zero, Fanta Orange lub Sprite",
    "price": 13.98,
+   "validFrom": "2026-10-05",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
@@ -450,6 +504,7 @@
    "source": "lidl_pl",
    "title": "ITALIAMO Spody do pizzy",
    "price": 9.99,
+   "validFrom": "2026-10-05",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
@@ -666,6 +721,6 @@
    "promo": false
   }
  ],
- "reviewTotal": 8,
+ "reviewTotal": 10,
  "unmatchedTotal": 31
 }
