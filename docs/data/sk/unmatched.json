@@ -1,6 +1,41 @@
 {
- "date": "2026-10-07",
+ "date": "2026-10-08",
  "review": [
+  {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Karfiol",
+   "price": 1.39,
+   "originalPrice": 2.49,
+   "validFrom": "2026-10-08",
+   "validTo": "2026-10-11",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mrazený karfiol",
+     "nameCs": "mražený květák",
+     "name": "mrazený karfiol"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "karfiol",
+     "nameCs": "květák",
+     "name": "karfiol",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
   {
    "ingredientId": "sunka",
    "store": "lidl",
@@ -109,9 +144,101 @@
    "pack": "5 kg",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
+  },
+  {
+   "ingredientId": "malinovka",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Magnesia RED malina",
+   "czkPerKg": 0.76,
+   "price": 1.19,
+   "validFrom": "2026-10-08",
+   "validTo": "2026-10-11",
+   "confidence": 0.624,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "malinovka",
+     "score": 0.624,
+     "via": "malinovka",
+     "nameCs": "malinovka",
+     "name": "malinovka"
+    },
+    {
+     "ingredientId": "maliny",
+     "score": 0.39,
+     "via": "maliny",
+     "nameCs": "maliny",
+     "name": "maliny",
+     "reasons": [
+      "hint-category:fruit"
+     ]
+    },
+    {
+     "ingredientId": "redkev_cerna",
+     "score": 0.336,
+     "via": "ředkev",
+     "nameCs": "černá ředkev",
+     "name": "čierna reďkev",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    }
+   ],
+   "pack": "1.5 l",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
   }
  ],
  "unmatched": [
+  {
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Magnesia RED",
+   "czkPerKg": 0.79,
+   "price": 1.19,
+   "validFrom": "2026-10-08",
+   "validTo": "2026-10-11",
+   "confidence": 0.4,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "redkev_cerna",
+     "score": 0.4,
+     "via": "ředkev",
+     "nameCs": "černá ředkev",
+     "name": "čierna reďkev",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    },
+    {
+     "ingredientId": "redkvicky",
+     "score": 0.4,
+     "via": "reďkovky",
+     "nameCs": "ředkvičky",
+     "name": "reďkovky",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    },
+    {
+     "ingredientId": "rybiz_cerveny",
+     "score": 0.4,
+     "via": "redcurrants",
+     "nameCs": "červený rybíz",
+     "name": "červené ríbezle",
+     "reasons": [
+      "hint-category:fruit"
+     ]
+    }
+   ],
+   "pack": "1.5 l",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
   {
    "store": "lidl",
    "source": "lidl_sk",
@@ -124,8 +251,22 @@
    "pack": "1 kg",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Staropramen Smíchov",
+   "price": 3.99,
+   "validFrom": "2026-10-08",
+   "validTo": "2026-10-11",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "4 l",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
   }
  ],
- "reviewTotal": 3,
- "unmatchedTotal": 1
+ "reviewTotal": 5,
+ "unmatchedTotal": 3
 }

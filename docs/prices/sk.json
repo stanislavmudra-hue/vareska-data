@@ -2,7 +2,7 @@
  "v": 2,
  "market": "sk",
  "currency": "EUR",
- "updated": "2026-10-07",
+ "updated": "2026-10-08",
  "perKg": {
   "avokado": {
    "lidl": 5.8
@@ -30,6 +30,9 @@
   },
   "eidam": {
    "lidl": 5.2
+  },
+  "emental": {
+   "lidl": 7.5
   },
   "fiky_cerstve": {
    "lidl": 5.8
@@ -113,7 +116,7 @@
    "lidl": 11.9
   },
   "veprova_krkovice": {
-   "lidl": 5.0
+   "lidl": 4.0
   },
   "veprova_panenka": {
    "lidl": 5.5
@@ -126,6 +129,14 @@
   }
  },
  "deals": [
+  {
+   "ingredientId": "emental",
+   "store": "lidl",
+   "perKg": 7.5,
+   "validFrom": "2026-10-08",
+   "validTo": "2026-10-11",
+   "title": "Ementál"
+  },
   {
    "ingredientId": "mlete_veprove",
    "store": "lidl",
@@ -141,6 +152,14 @@
    "validFrom": "2026-10-05",
    "validTo": "2026-10-11",
    "title": "Šalátové uhorky"
+  },
+  {
+   "ingredientId": "veprova_krkovice",
+   "store": "lidl",
+   "perKg": 4.0,
+   "validFrom": "2026-10-08",
+   "validTo": "2026-10-11",
+   "title": "Bravčová krkovička"
   }
  ],
  "categoryFallbackPerKg": {
