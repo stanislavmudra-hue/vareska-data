@@ -2,8 +2,8 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-08T08:14:02+00:00",
- "today": "2026-10-08",
+ "run": "2026-10-09T08:15:28+00:00",
+ "today": "2026-10-09",
  "sources": {
   "globus": {
    "source": "globus",
@@ -14,7 +14,7 @@
     "globus": 738
    },
    "requests": 8,
-   "elapsed_s": 15.9,
+   "elapsed_s": 13.9,
    "notes": [
     "house 4005: totalCount=662, offers=738"
    ],
@@ -24,15 +24,15 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 308,
+   "count": 348,
    "error": null,
    "stores": {
-    "lidl": 308
+    "lidl": 348
    },
-   "requests": 16,
-   "elapsed_s": 19.8,
+   "requests": 25,
+   "elapsed_s": 24.7,
    "notes": [
-    "17 categories, 308 products"
+    "27 categories, 348 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -46,7 +46,7 @@
     "penny": 30
    },
    "requests": 2,
-   "elapsed_s": 1.4,
+   "elapsed_s": 1.2,
    "notes": [
     "total=26, offers=30"
    ],
@@ -62,7 +62,7 @@
     "albert": 752
    },
    "requests": 5,
-   "elapsed_s": 6.5,
+   "elapsed_s": 4.7,
    "notes": [
     "Albert - 41HM_akcni_letak (2026-10-07..2026-10-13): 31 spreads, 456 offers",
     "Albert - 41SM_akcni_letak (2026-10-07..2026-10-13): 22 spreads, 296 offers"
@@ -79,7 +79,7 @@
     "billa": 326
    },
    "requests": 5,
-   "elapsed_s": 4.4,
+   "elapsed_s": 3.9,
    "notes": [
     "velky-letak-7-10-13-10-2026: 21 spreads, 290 offers",
     "maly-letak-7-10-13-10-2026: 5 spreads, 36 offers"
@@ -135,14 +135,22 @@
   },
   "kupi": {
    "source": "kupi",
-   "ok": false,
-   "count": 0,
-   "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
-   "stores": {},
-   "requests": 2,
-   "elapsed_s": 1.0,
+   "ok": true,
+   "count": 681,
+   "error": null,
+   "stores": {
+    "albert": 153,
+    "globus": 96,
+    "kaufland": 90,
+    "billa": 104,
+    "tesco": 94,
+    "lidl": 34,
+    "penny": 110
+   },
+   "requests": 171,
+   "elapsed_s": 172.1,
    "notes": [
-    "stopped at term maslo: blocked/robots"
+    "170 terms, 0 failed, 681 offers"
    ],
    "tier": "fallback",
    "market": "cz"
@@ -158,10 +166,9 @@
    "cf_mitigated": null
   },
   "www.lidl.cz": {
-   "requests": 16,
+   "requests": 25,
    "statuses": {
-    "200": 15,
-    "None": 1
+    "200": 25
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -218,12 +225,12 @@
    "cf_mitigated": null
   },
   "www.kupi.cz": {
-   "requests": 2,
+   "requests": 171,
    "statuses": {
-    "403": 2
+    "200": 171
    },
    "server": "cloudflare",
-   "cf_mitigated": "challenge"
+   "cf_mitigated": null
   }
  },
  "robots": [
@@ -350,14 +357,55 @@
   },
   {
    "host": "www.kupi.cz",
-   "status": 403,
-   "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/robots.txt",
-   "rules": 0,
-   "disallow": [],
+   "status": 200,
+   "error": null,
+   "rules": 148,
+   "disallow": [
+    "Disallow: /",
+    "Disallow: /",
+    "Disallow: /",
+    "Disallow: /welcome",
+    "Disallow: /404",
+    "Disallow: /login",
+    "Disallow: /popup/*",
+    "Disallow: /logging",
+    "Disallow: /get-locality-by-gps",
+    "Disallow: /nakupni-listek",
+    "Disallow: /get-mesto",
+    "Disallow: /get-slevy",
+    "Disallow: /get-letaky",
+    "Disallow: /get-akce",
+    "Disallow: /get-znacky",
+    "Disallow: /hlidani",
+    "Disallow: /uzivatel",
+    "Disallow: /oblibene",
+    "Disallow: /oblibene-kategorie",
+    "Disallow: /set-oblibene-letaky",
+    "Disallow: /send",
+    "Disallow: /kupici",
+    "Disallow: /objednavka",
+    "Disallow: /redir/*",
+    "Disallow: /nakup/*",
+    "Disallow: /mailing",
+    "Disallow: /redir.php",
+    "Disallow: /tipy",
+    "Disallow: /letak2/*",
+    "Disallow: /letak-dots/*",
+    "Disallow: /mailing/unsubscribe/*",
+    "Disallow: /magazin/pr-clanky",
+    "Disallow: /magazin/clanek-nahled/*",
+    "Disallow: /uzivatel/autorizace",
+    "Disallow: /prihlasit/facebook",
+    "Disallow: /oauth/*",
+    "Disallow: /odhlasit-se",
+    "Disallow: /prihlasit/facebook/overeni",
+    "Disallow: /prihlasit/facebook/potvrzeni-uctu",
+    "Disallow: /letak/nahled/*"
+   ],
    "crawl_delay": null
   }
  ],
  "notFetched": [],
- "requests_made": 40,
+ "requests_made": 218,
  "cache_hits": 0
 }

@@ -1,6 +1,108 @@
 {
- "date": "2026-10-08",
+ "date": "2026-10-09",
  "review": [
+  {
+   "ingredientId": "kompot_ananasovy",
+   "store": "albert",
+   "source": "kupi",
+   "title": "Ananas",
+   "czkPerKg": 997.5,
+   "price": 39.9,
+   "originalPrice": 64.76,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kompot_ananasovy",
+     "score": 1.0,
+     "via": "ananas v plechovce",
+     "nameCs": "ananasový kompot"
+    },
+    {
+     "ingredientId": "ananas",
+     "score": 0.85,
+     "via": "ananas",
+     "nameCs": "ananas",
+     "reasons": [
+      "ambiguous:kompot_ananasovy"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=ananas",
+   "promo": true
+  },
+  {
+   "ingredientId": "kompot_ananasovy",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Ananas",
+   "czkPerKg": 1122.5,
+   "price": 44.9,
+   "originalPrice": 64.76,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "kompot_ananasovy",
+     "score": 1.0,
+     "via": "ananas v plechovce",
+     "nameCs": "ananasový kompot"
+    },
+    {
+     "ingredientId": "ananas",
+     "score": 0.85,
+     "via": "ananas",
+     "nameCs": "ananas",
+     "reasons": [
+      "ambiguous:kompot_ananasovy"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=ananas",
+   "promo": true
+  },
+  {
+   "ingredientId": "kompot_ananasovy",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Ananas",
+   "czkPerKg": 872.5,
+   "price": 34.9,
+   "originalPrice": 64.76,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-11",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kompot_ananasovy",
+     "score": 1.0,
+     "via": "ananas v plechovce",
+     "nameCs": "ananasový kompot"
+    },
+    {
+     "ingredientId": "ananas",
+     "score": 0.85,
+     "via": "ananas",
+     "nameCs": "ananas",
+     "reasons": [
+      "ambiguous:kompot_ananasovy"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=ananas",
+   "promo": true
+  },
   {
    "ingredientId": "mrkev",
    "store": "lidl",
@@ -22,6 +124,39 @@
    "pack": "250 g",
    "url": "https://www.lidl.cz/q/api/category/h/hotova-jidla/h10071020?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "ingredientId": "brokolice_mrazena",
+   "store": "billa",
+   "source": "kupi",
+   "title": "Brokolice",
+   "price": 29.9,
+   "originalPrice": 43.23,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "brokolice_mrazena",
+     "score": 1.0,
+     "via": "mražená brokolice",
+     "nameCs": "mražená brokolice"
+    },
+    {
+     "ingredientId": "brokolice",
+     "score": 0.85,
+     "via": "brokolice",
+     "nameCs": "brokolice",
+     "reasons": [
+      "ambiguous:brokolice_mrazena"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=brokolice",
+   "promo": true
   },
   {
    "ingredientId": "brusinky_kompot",
@@ -55,6 +190,31 @@
    ],
    "pack": "500 g",
    "url": "https://view.publitas.com/billa-cz/velky-letak-7-10-13-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "chleb",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Chléb Slim & Crispy Brick",
+   "czkPerKg": 191.54,
+   "price": 24.9,
+   "originalPrice": 38.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "chleb",
+     "score": 1.0,
+     "via": "rule:chleb",
+     "nameCs": "chléb"
+    }
+   ],
+   "pack": "130 g",
+   "url": "https://www.kupi.cz/hledej?f=chl%C3%A9b",
    "promo": true
   },
   {
@@ -226,6 +386,43 @@
    "promo": true
   },
   {
+   "ingredientId": "hrasek_mrazeny",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Gyros hrachový Pan Hrášek Emco",
+   "czkPerKg": 332.78,
+   "price": 59.9,
+   "originalPrice": 97.33,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-20",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "hrasek_mrazeny",
+     "score": 0.9,
+     "via": "mražený hrášek",
+     "nameCs": "mražený hrášek"
+    },
+    {
+     "ingredientId": "gyros_koreni",
+     "score": 0.725,
+     "via": "gyros",
+     "nameCs": "gyros koření"
+    },
+    {
+     "ingredientId": "hrach_zeleny_sterilovany",
+     "score": 0.674,
+     "via": "hrášek v plechovce",
+     "nameCs": "sterilovaný hrášek"
+    }
+   ],
+   "pack": "180 g",
+   "url": "https://www.kupi.cz/hledej?f=hr%C3%A1%C5%A1ek",
+   "promo": true
+  },
+  {
    "ingredientId": "zeli_bile",
    "store": "globus",
    "source": "globus",
@@ -305,6 +502,66 @@
    ],
    "pack": "100 g",
    "url": "https://view.publitas.com/billa-cz/velky-letak-7-10-13-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "horcice",
+   "store": "penny",
+   "source": "kupi",
+   "title": "Hořčice Boneco",
+   "price": 21.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "horcice",
+     "score": 1.0,
+     "via": "rule:horcice",
+     "nameCs": "plnotučná hořčice"
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=ho%C5%99%C4%8Dice",
+   "promo": true
+  },
+  {
+   "ingredientId": "hrasek_mrazeny",
+   "store": "billa",
+   "source": "kupi",
+   "title": "Hrachový burger Pan Hrášek Emco",
+   "czkPerKg": 416.11,
+   "price": 74.9,
+   "originalPrice": 89.12,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-20",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "hrasek_mrazeny",
+     "score": 0.9,
+     "via": "mražený hrášek",
+     "nameCs": "mražený hrášek"
+    },
+    {
+     "ingredientId": "hrasek_cerstvy",
+     "score": 0.674,
+     "via": "čerstvý hrášek",
+     "nameCs": "čerstvý hrášek"
+    },
+    {
+     "ingredientId": "hrach",
+     "score": 0.58,
+     "via": "hrách",
+     "nameCs": "hrách"
+    }
+   ],
+   "pack": "180 g",
+   "url": "https://www.kupi.cz/hledej?f=hr%C3%A1%C5%A1ek",
    "promo": true
   },
   {
@@ -402,6 +659,35 @@
    ],
    "pack": "200 g",
    "url": "https://view.publitas.com/billa-cz/velky-letak-7-10-13-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "kopr",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Kopr",
+   "price": 29.9,
+   "originalPrice": 39.9,
+   "validFrom": "2026-10-12",
+   "validTo": "2026-10-14",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kopr",
+     "score": 1.0,
+     "via": "kopr",
+     "nameCs": "kopr"
+    },
+    {
+     "ingredientId": "kopriva",
+     "score": 0.8,
+     "via": "kopřiva",
+     "nameCs": "kopřiva"
+    }
+   ],
+   "url": "https://www.lidl.cz/q/api/category/h/ovoce-a-zelenina/h10071012?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -547,6 +833,72 @@
    ],
    "pack": "1 kg",
    "url": "https://letaky.albert.cz/41hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Květák",
+   "price": 24.9,
+   "originalPrice": 61.94,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mražený květák",
+     "nameCs": "mražený květák"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "květák",
+     "nameCs": "květák",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=kv%C4%9Bt%C3%A1k",
+   "promo": true
+  },
+  {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Květák",
+   "price": 34.9,
+   "originalPrice": 61.94,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mražený květák",
+     "nameCs": "mražený květák"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "květák",
+     "nameCs": "květák",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=kv%C4%9Bt%C3%A1k",
    "promo": true
   },
   {
@@ -780,6 +1132,37 @@
    "promo": true
   },
   {
+   "ingredientId": "petrzel_koren",
+   "store": "billa",
+   "source": "kupi",
+   "title": "Petržel kudrnka čerstvá",
+   "czkPerKg": 249.0,
+   "price": 24.9,
+   "originalPrice": 23.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "petrzel_koren",
+     "score": 0.9,
+     "via": "petržel",
+     "nameCs": "petržel kořenová"
+    },
+    {
+     "ingredientId": "petrzel_nat",
+     "score": 0.671,
+     "via": "petrželka",
+     "nameCs": "petrželová nať"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=petr%C5%BEel",
+   "promo": true
+  },
+  {
    "ingredientId": "pastika_jatrova",
    "store": "albert",
    "source": "albert-text",
@@ -989,6 +1372,30 @@
    "promo": true
   },
   {
+   "ingredientId": "gouda",
+   "store": "albert",
+   "source": "kupi",
+   "title": "Tapas Duo Gouda - Fuet Albert Excellent",
+   "czkPerKg": 890.0,
+   "price": 89.0,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "gouda",
+     "score": 0.9,
+     "via": "gouda",
+     "nameCs": "gouda"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=gouda",
+   "promo": true
+  },
+  {
    "ingredientId": "veprova_krkovice",
    "store": "albert",
    "source": "albert-text",
@@ -1135,7 +1542,7 @@
     }
    ],
    "pack": "1.5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -1232,6 +1639,43 @@
    ],
    "pack": "58 g",
    "url": "https://view.publitas.com/billa-cz/maly-letak-7-10-13-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "zeli_bile",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Zelí s fenyklem a koprem Beavia",
+   "czkPerKg": 314.0,
+   "price": 109.9,
+   "originalPrice": 154.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "zeli_bile",
+     "score": 0.9,
+     "via": "zelí",
+     "nameCs": "bílé zelí"
+    },
+    {
+     "ingredientId": "fenykl_bulva",
+     "score": 0.674,
+     "via": "fenykl",
+     "nameCs": "fenykl"
+    },
+    {
+     "ingredientId": "kopr",
+     "score": 0.674,
+     "via": "kopr",
+     "nameCs": "kopr"
+    }
+   ],
+   "pack": "350 g",
+   "url": "https://www.kupi.cz/hledej?f=zel%C3%AD",
    "promo": true
   },
   {
@@ -1477,6 +1921,152 @@
    "promo": true
   },
   {
+   "ingredientId": "cervena_repa",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Červená řepa s křenem Beavia",
+   "czkPerKg": 314.0,
+   "price": 109.9,
+   "originalPrice": 179.48,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "cervena_repa",
+     "score": 0.9,
+     "via": "červená řepa",
+     "nameCs": "červená řepa"
+    },
+    {
+     "ingredientId": "cervena_repa_sterilovana",
+     "score": 0.797,
+     "via": "červená řepa v nálevu",
+     "nameCs": "sterilovaná červená řepa"
+    },
+    {
+     "ingredientId": "kren",
+     "score": 0.674,
+     "via": "křen",
+     "nameCs": "křen"
+    }
+   ],
+   "pack": "350 g",
+   "url": "https://www.kupi.cz/hledej?f=%C4%8Derven%C3%A1%20%C5%99epa",
+   "promo": true
+  },
+  {
+   "ingredientId": "kapr",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Čokoládový kapr zlatý Orion",
+   "czkPerKg": 854.76,
+   "price": 35.9,
+   "originalPrice": 52.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kapr",
+     "score": 0.9,
+     "via": "kapr",
+     "nameCs": "kapr"
+    },
+    {
+     "ingredientId": "cokolada_horka",
+     "score": 0.307,
+     "via": "čokoláda",
+     "nameCs": "hořká čokoláda",
+     "reasons": [
+      "title-category:other"
+     ]
+    }
+   ],
+   "pack": "42 g",
+   "url": "https://www.kupi.cz/hledej?f=kapr",
+   "promo": true
+  },
+  {
+   "ingredientId": "redkvicky",
+   "store": "albert",
+   "source": "kupi",
+   "title": "Ředkvičky svazek",
+   "czkPerKg": 987.5,
+   "price": 7.9,
+   "originalPrice": 17.02,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-11",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "redkvicky",
+     "score": 1.0,
+     "via": "rule:redkvicky",
+     "nameCs": "ředkvičky"
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=%C5%99edkvi%C4%8Dky",
+   "promo": true
+  },
+  {
+   "ingredientId": "redkvicky",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Ředkvičky svazek",
+   "czkPerKg": 1112.5,
+   "price": 8.9,
+   "originalPrice": 17.02,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "redkvicky",
+     "score": 1.0,
+     "via": "rule:redkvicky",
+     "nameCs": "ředkvičky"
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=%C5%99edkvi%C4%8Dky",
+   "promo": true
+  },
+  {
+   "ingredientId": "redkvicky",
+   "store": "lidl",
+   "source": "kupi",
+   "title": "Ředkvičky svazek",
+   "czkPerKg": 1237.5,
+   "price": 9.9,
+   "originalPrice": 17.02,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-11",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "redkvicky",
+     "score": 1.0,
+     "via": "rule:redkvicky",
+     "nameCs": "ředkvičky"
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=%C5%99edkvi%C4%8Dky",
+   "promo": true
+  },
+  {
    "ingredientId": "spagety",
    "store": "albert",
    "source": "albert-text",
@@ -1588,7 +2178,7 @@
     }
    ],
    "pack": "250 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -1613,7 +2203,32 @@
     }
    ],
    "pack": "2 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "bagel",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Bagel s posypem",
+   "czkPerKg": 108.2,
+   "price": 11.9,
+   "originalPrice": 14.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "bagel",
+     "score": 0.839,
+     "via": "bagel",
+     "nameCs": "bagel"
+    }
+   ],
+   "pack": "110 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1790,6 +2405,46 @@
    "promo": true
   },
   {
+   "ingredientId": "fazole_bile_sterilovane",
+   "store": "billa",
+   "source": "kupi",
+   "title": "Fazole v omáčce Billa",
+   "czkPerKg": 48.54,
+   "price": 19.9,
+   "originalPrice": 24.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-20",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "fazole_bile_sterilovane",
+     "score": 0.839,
+     "via": "fazole v nálevu",
+     "nameCs": "sterilované bílé fazole",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "fazolky_mrazene",
+     "score": 0.671,
+     "via": "fazolky mražené",
+     "nameCs": "mražené zelené fazolky"
+    },
+    {
+     "ingredientId": "fazolove_lusky",
+     "score": 0.671,
+     "via": "fazolky",
+     "nameCs": "zelené fazolky"
+    }
+   ],
+   "pack": "410 g",
+   "url": "https://www.kupi.cz/hledej?f=fazole",
+   "promo": true
+  },
+  {
    "ingredientId": "margarin",
    "store": "lidl",
    "source": "lidl",
@@ -1916,7 +2571,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -2186,7 +2841,40 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/ovoce-a-zelenina/h10071012?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "jablko",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Jablka červená",
+   "czkPerKg": 17.9,
+   "price": 17.9,
+   "validFrom": "2026-10-12",
+   "validTo": "2026-10-14",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "jablko",
+     "score": 0.839,
+     "via": "jablko",
+     "nameCs": "jablko"
+    },
+    {
+     "ingredientId": "calvados",
+     "score": 0.336,
+     "via": "jablkovice",
+     "nameCs": "calvados",
+     "reasons": [
+      "hint-category:alcohol"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/h/ovoce-a-zelenina/h10071012?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2360,7 +3048,31 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "kiwi",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Kiwi žluté",
+   "czkPerKg": 158.67,
+   "price": 11.9,
+   "originalPrice": 19.9,
+   "validFrom": "2026-10-12",
+   "validTo": "2026-10-14",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kiwi",
+     "score": 0.839,
+     "via": "kiwi",
+     "nameCs": "kiwi"
+    }
+   ],
+   "url": "https://www.lidl.cz/q/api/category/h/ovoce-a-zelenina/h10071012?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2393,6 +3105,79 @@
    "pack": "1 kg",
    "url": "https://www.lidl.cz/q/api/category/h/trvanlive-potraviny/h10096095?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "ingredientId": "kruti_prsa",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Krůtí křídla",
+   "czkPerKg": 99.9,
+   "price": 99.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kruti_prsa",
+     "score": 0.839,
+     "via": "krůtí",
+     "nameCs": "krůtí prsa"
+    },
+    {
+     "ingredientId": "kureci_kridla",
+     "score": 0.195,
+     "via": "křídla",
+     "nameCs": "kuřecí křídla",
+     "reasons": [
+      "negative:krut"
+     ]
+    },
+    {
+     "ingredientId": "krutony",
+     "score": 0.168,
+     "via": "krutony",
+     "nameCs": "krutony",
+     "reasons": [
+      "hint-category:bakery",
+      "title-category:bakery"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "kureci_prsa",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Kuřecí kyblík",
+   "czkPerKg": 266.53,
+   "price": 199.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kureci_prsa",
+     "score": 0.839,
+     "via": "kuřecí",
+     "nameCs": "kuřecí prsa"
+    },
+    {
+     "ingredientId": "kure_cele",
+     "score": 0.671,
+     "via": "kuře",
+     "nameCs": "celé kuře"
+    }
+   ],
+   "pack": "750 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "kureci_prsa",
@@ -2566,6 +3351,50 @@
    "pack": "1 kg",
    "url": "https://www.lidl.cz/q/api/category/h/oleje-dochucovadla-a-omacky/h10096110?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "ingredientId": "mleko_bez_laktozy",
+   "store": "penny",
+   "source": "kupi",
+   "title": "Mléko trvanlivé bez laktózy Pragolaktos - 3,5% plnotučné",
+   "czkPerKg": 19.32,
+   "price": 19.9,
+   "originalPrice": 30.65,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mleko_bez_laktozy",
+     "score": 0.839,
+     "via": "mléko bez laktózy",
+     "nameCs": "bezlaktózové mléko"
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.713,
+     "via": "plnotučné mléko",
+     "nameCs": "plnotučné mléko",
+     "reasons": [
+      "sibling:chosen",
+      "ambiguous:mleko_bez_laktozy"
+     ]
+    },
+    {
+     "ingredientId": "mleko_15",
+     "score": 0.435,
+     "via": "mléko",
+     "nameCs": "polotučné mléko",
+     "reasons": [
+      "sibling:other"
+     ]
+    }
+   ],
+   "pack": "1 l",
+   "url": "https://www.kupi.cz/hledej?f=ml%C3%A9ko%20plnotu%C4%8Dn%C3%A9",
+   "promo": true
   },
   {
    "ingredientId": "okurka_salatova",
@@ -2819,6 +3648,206 @@
    "promo": false
   },
   {
+   "ingredientId": "salam_trvanlivy",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Salám Paprikáš",
+   "czkPerKg": 259.0,
+   "price": 25.9,
+   "originalPrice": 30.23,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.839,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.839,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám"
+    },
+    {
+     "ingredientId": "salam_pikantni",
+     "score": 0.713,
+     "via": "salám",
+     "nameCs": "pikantní salám",
+     "reasons": [
+      "ambiguous:salam_trvanlivy"
+     ]
+    },
+    {
+     "ingredientId": "paprika_bila",
+     "score": 0.624,
+     "via": "světlá paprika",
+     "nameCs": "bílá paprika"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=paprika",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_trvanlivy",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Salám Paprikáš Kmotr",
+   "czkPerKg": 292.0,
+   "price": 21.9,
+   "originalPrice": 32.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.839,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.839,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám"
+    },
+    {
+     "ingredientId": "salam_pikantni",
+     "score": 0.713,
+     "via": "salám",
+     "nameCs": "pikantní salám",
+     "reasons": [
+      "ambiguous:salam_trvanlivy"
+     ]
+    },
+    {
+     "ingredientId": "paprika_bila",
+     "score": 0.624,
+     "via": "světlá paprika",
+     "nameCs": "bílá paprika"
+    }
+   ],
+   "pack": "75 g",
+   "url": "https://www.kupi.cz/hledej?f=paprika",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_trvanlivy",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Salám Paprikáš Kmotr",
+   "czkPerKg": 332.0,
+   "price": 24.9,
+   "originalPrice": 32.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.839,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám"
+    },
+    {
+     "ingredientId": "salam_pikantni",
+     "score": 0.713,
+     "via": "salám",
+     "nameCs": "pikantní salám",
+     "reasons": [
+      "ambiguous:salam_trvanlivy"
+     ]
+    },
+    {
+     "ingredientId": "paprika_bila",
+     "score": 0.624,
+     "via": "světlá paprika",
+     "nameCs": "bílá paprika"
+    }
+   ],
+   "pack": "75 g",
+   "url": "https://www.kupi.cz/hledej?f=paprika",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_trvanlivy",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Salám Paprikáš Tesco",
+   "czkPerKg": 239.0,
+   "price": 23.9,
+   "originalPrice": 29.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.839,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.839,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám"
+    },
+    {
+     "ingredientId": "salam_pikantni",
+     "score": 0.713,
+     "via": "salám",
+     "nameCs": "pikantní salám",
+     "reasons": [
+      "ambiguous:salam_trvanlivy"
+     ]
+    },
+    {
+     "ingredientId": "paprika_bila",
+     "score": 0.624,
+     "via": "světlá paprika",
+     "nameCs": "bílá paprika"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=paprika",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_trvanlivy",
+   "store": "penny",
+   "source": "kupi",
+   "title": "Salám Paprikáš Řezníkův talíř",
+   "czkPerKg": 199.0,
+   "price": 19.9,
+   "originalPrice": 32.21,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.839,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám"
+    },
+    {
+     "ingredientId": "salam_pikantni",
+     "score": 0.713,
+     "via": "salám",
+     "nameCs": "pikantní salám",
+     "reasons": [
+      "ambiguous:salam_trvanlivy"
+     ]
+    },
+    {
+     "ingredientId": "paprika_bila",
+     "score": 0.624,
+     "via": "světlá paprika",
+     "nameCs": "bílá paprika"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=paprika",
+   "promo": true
+  },
+  {
    "ingredientId": "salatova_smes",
    "store": "albert",
    "source": "albert-text",
@@ -2887,8 +3916,32 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
+  },
+  {
+   "ingredientId": "slepice",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Slepice bez drobů",
+   "czkPerKg": 59.9,
+   "price": 59.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "slepice",
+     "score": 0.839,
+     "via": "slepice",
+     "nameCs": "slepice"
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "jahody",
@@ -2990,7 +4043,47 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "taveny_syr",
+   "store": "albert",
+   "source": "kupi",
+   "title": "Sýr tavený smetanový Madetka",
+   "czkPerKg": 174.5,
+   "price": 34.9,
+   "originalPrice": 48.4,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "taveny_syr",
+     "score": 0.839,
+     "via": "tavený sýr",
+     "nameCs": "tavený sýr"
+    },
+    {
+     "ingredientId": "eidam",
+     "score": 0.725,
+     "via": "sýr",
+     "nameCs": "eidam"
+    },
+    {
+     "ingredientId": "smetanovy_syr",
+     "score": 0.713,
+     "via": "smetanový sýr",
+     "nameCs": "smetanový sýr",
+     "reasons": [
+      "ambiguous:taveny_syr"
+     ]
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://www.kupi.cz/hledej?f=smetanov%C3%BD%20s%C3%BDr",
    "promo": true
   },
   {
@@ -3087,7 +4180,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -3140,7 +4233,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -3177,7 +4270,7 @@
     }
    ],
    "pack": "1550 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -3560,6 +4653,50 @@
    "promo": true
   },
   {
+   "ingredientId": "cocka_sterilovana",
+   "store": "penny",
+   "source": "kupi",
+   "title": "Čočka Gustito",
+   "czkPerKg": 49.8,
+   "price": 24.9,
+   "originalPrice": 33.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.839,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "cocka_sterilovana",
+     "score": 0.839,
+     "via": "čočka v plechovce",
+     "nameCs": "sterilovaná čočka"
+    },
+    {
+     "ingredientId": "cocka_cervena",
+     "score": 0.713,
+     "via": "čočka",
+     "nameCs": "červená čočka",
+     "reasons": [
+      "sibling:chosen",
+      "ambiguous:cocka_sterilovana"
+     ]
+    },
+    {
+     "ingredientId": "cocka_hneda",
+     "score": 0.503,
+     "via": "čočka",
+     "nameCs": "hnědá čočka",
+     "reasons": [
+      "sibling:other"
+     ]
+    }
+   ],
+   "pack": "500 g",
+   "url": "https://www.kupi.cz/hledej?f=%C4%8Do%C4%8Dka",
+   "promo": true
+  },
+  {
    "ingredientId": "sneci",
    "store": "albert",
    "source": "albert-text",
@@ -3704,7 +4841,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -3833,7 +4970,7 @@
     }
    ],
    "pack": "1 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": false
   },
   {
@@ -3933,7 +5070,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.lidl.cz/q/api/category/h/syry-mlecne-vyrobky-a-vejce/h10095761?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/syr/h10096077?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -3992,7 +5129,7 @@
     }
    ],
    "pack": "270 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -4062,7 +5199,7 @@
     }
    ],
    "pack": "200 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -4230,7 +5367,7 @@
     }
    ],
    "pack": "500 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -4327,7 +5464,7 @@
     }
    ],
    "pack": "275 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -4579,6 +5716,45 @@
    "promo": true
   },
   {
+   "ingredientId": "kureci_skelet",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Kuřecí prsní kostky",
+   "czkPerKg": 189.9,
+   "price": 189.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.809,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kureci_skelet",
+     "score": 0.809,
+     "via": "kuřecí kosti",
+     "nameCs": "kuřecí skelet"
+    },
+    {
+     "ingredientId": "kureci_prsa",
+     "score": 0.767,
+     "via": "kuřecí",
+     "nameCs": "kuřecí prsa"
+    },
+    {
+     "ingredientId": "kure_cele",
+     "score": 0.153,
+     "via": "kuře",
+     "nameCs": "celé kuře",
+     "reasons": [
+      "negative:prs"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "emental",
    "store": "globus",
    "source": "globus",
@@ -4612,7 +5788,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -4635,7 +5811,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -5109,6 +6285,47 @@
    "promo": true
   },
   {
+   "ingredientId": "mleko_bez_laktozy",
+   "store": "albert",
+   "source": "kupi",
+   "title": "Mléko čerstvé bez laktózy Free From Nature's Promise - 1,5% polotučné",
+   "czkPerKg": 28.06,
+   "price": 28.9,
+   "originalPrice": 36.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.798,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mleko_bez_laktozy",
+     "score": 0.798,
+     "via": "mléko bez laktózy",
+     "nameCs": "bezlaktózové mléko"
+    },
+    {
+     "ingredientId": "mleko_15",
+     "score": 0.678,
+     "via": "polotučné mléko",
+     "nameCs": "polotučné mléko",
+     "reasons": [
+      "sibling:chosen",
+      "ambiguous:mleko_bez_laktozy"
+     ]
+    },
+    {
+     "ingredientId": "freekeh",
+     "score": 0.518,
+     "via": "freekeh",
+     "nameCs": "freekeh"
+    }
+   ],
+   "pack": "1 l",
+   "url": "https://www.kupi.cz/hledej?f=ml%C3%A9ko%20polotu%C4%8Dn%C3%A9",
+   "promo": true
+  },
+  {
    "ingredientId": "uzene_maso",
    "store": "billa",
    "source": "billa-text",
@@ -5278,7 +6495,7 @@
     }
    ],
    "pack": "280 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -5592,7 +6809,7 @@
     }
    ],
    "pack": "90 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/pekarna/h10096086?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -5660,7 +6877,7 @@
     }
    ],
    "pack": "500 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -5971,7 +7188,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -6082,7 +7299,7 @@
     }
    ],
    "pack": "250 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
@@ -6116,7 +7333,7 @@
     }
    ],
    "pack": "250 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -6149,8 +7366,33 @@
     }
    ],
    "pack": "1000 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
+  },
+  {
+   "ingredientId": "boruvky",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Kanadské borůvky",
+   "czkPerKg": 319.2,
+   "price": 39.9,
+   "originalPrice": 49.9,
+   "validFrom": "2026-10-12",
+   "validTo": "2026-10-14",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "boruvky",
+     "score": 0.78,
+     "via": "borůvky",
+     "nameCs": "borůvky"
+    }
+   ],
+   "pack": "125 g",
+   "url": "https://www.lidl.cz/q/api/category/h/mrazene-vyrobky/h10071049?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "salam_trvanlivy",
@@ -6335,6 +7577,30 @@
    ],
    "pack": "500 ml",
    "url": "https://letaky.albert.cz/41hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "cokolada_horka",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "MCENNEDY Muffiny s čokoládou",
+   "czkPerKg": 177.56,
+   "price": 79.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "cokolada_horka",
+     "score": 0.78,
+     "via": "čokoláda",
+     "nameCs": "hořká čokoláda"
+    }
+   ],
+   "pack": "450 g",
+   "url": "https://www.lidl.cz/q/api/category/h/pekarna/h10096086?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -6556,7 +7822,7 @@
     }
    ],
    "pack": "200 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -6738,7 +8004,7 @@
     }
    ],
    "pack": "2 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": false
   },
   {
@@ -6763,7 +8029,7 @@
     }
    ],
    "pack": "42 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -6879,8 +8145,47 @@
     }
    ],
    "pack": "1 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": false
+  },
+  {
+   "ingredientId": "nutricni_drozdi",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Pomazánka s lahůdkovým droždím Veto",
+   "czkPerKg": 199.0,
+   "price": 19.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-20",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "nutricni_drozdi",
+     "score": 0.78,
+     "via": "lahůdkové droždí",
+     "nameCs": "lahůdkové droždí"
+    },
+    {
+     "ingredientId": "drozdi_cerstve",
+     "score": 0.674,
+     "via": "čerstvé droždí",
+     "nameCs": "čerstvé droždí",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "pomazankove_maslo",
+     "score": 0.58,
+     "via": "pomazánkové",
+     "nameCs": "pomazánkové máslo"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=dro%C5%BEd%C3%AD",
+   "promo": true
   },
   {
    "ingredientId": "kruti_stehna",
@@ -6920,7 +8225,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -7372,7 +8677,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -7524,7 +8829,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -7596,7 +8901,7 @@
     }
    ],
    "pack": "500 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -7669,6 +8974,52 @@
    ],
    "pack": "0.5 l",
    "url": "https://letaky.albert.cz/41hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "smetana_33",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Špenát se smetanou mražený Globus",
+   "czkPerKg": 59.8,
+   "price": 29.9,
+   "originalPrice": 37.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-20",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "smetana_33",
+     "score": 0.78,
+     "via": "smetana",
+     "nameCs": "smetana ke šlehání 33 %",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "smetana_12",
+     "score": 0.468,
+     "via": "smetana 12 %",
+     "nameCs": "smetana na vaření 12 %",
+     "reasons": [
+      "sibling:other"
+     ]
+    },
+    {
+     "ingredientId": "spenat_cerstvy",
+     "score": 0.419,
+     "via": "čerstvý špenát",
+     "nameCs": "čerstvý špenát",
+     "reasons": [
+      "title-category:vegetable"
+     ]
+    }
+   ],
+   "pack": "500 g",
+   "url": "https://www.kupi.cz/hledej?f=%C5%A1pen%C3%A1t",
    "promo": true
   },
   {
@@ -7844,7 +9195,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -8055,7 +9406,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -8246,7 +9597,7 @@
     }
    ],
    "pack": "125 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -8283,7 +9634,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -8320,7 +9671,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -8360,7 +9711,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -8452,6 +9803,47 @@
    ],
    "pack": "500 g",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "cocka_sterilovana",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Čočka Menu Gold",
+   "czkPerKg": 49.8,
+   "price": 24.9,
+   "originalPrice": 41.23,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.767,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "cocka_sterilovana",
+     "score": 0.767,
+     "via": "čočka v plechovce",
+     "nameCs": "sterilovaná čočka"
+    },
+    {
+     "ingredientId": "cocka_cervena",
+     "score": 0.652,
+     "via": "čočka",
+     "nameCs": "červená čočka",
+     "reasons": [
+      "sibling:chosen",
+      "ambiguous:cocka_sterilovana"
+     ]
+    },
+    {
+     "ingredientId": "fyzalis",
+     "score": 0.571,
+     "via": "goldenberry",
+     "nameCs": "fyzalis"
+    }
+   ],
+   "pack": "500 g",
+   "url": "https://www.kupi.cz/hledej?f=%C4%8Do%C4%8Dka",
    "promo": true
   },
   {
@@ -8564,7 +9956,7 @@
     }
    ],
    "pack": "330 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -8608,7 +10000,7 @@
     }
    ],
    "pack": "140 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -8834,7 +10226,7 @@
     }
    ],
    "pack": "190 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -8902,7 +10294,7 @@
     }
    ],
    "pack": "250 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -8938,7 +10330,7 @@
     }
    ],
    "pack": "110 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -8977,7 +10369,7 @@
     }
    ],
    "pack": "450 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -9042,7 +10434,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -9076,7 +10468,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -9142,7 +10534,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -9178,7 +10570,7 @@
     }
    ],
    "pack": "200 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -9220,7 +10612,7 @@
     }
    ],
    "pack": "485 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -9249,7 +10641,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
@@ -9331,7 +10723,7 @@
     }
    ],
    "pack": "2 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -9512,7 +10904,7 @@
     }
    ],
    "pack": "400 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -9557,7 +10949,7 @@
     }
    ],
    "pack": "500 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -9644,7 +11036,7 @@
     }
    ],
    "pack": "110 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
@@ -9678,7 +11070,7 @@
     }
    ],
    "pack": "110 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -10084,7 +11476,7 @@
     }
    ],
    "pack": "1200 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -10181,7 +11573,7 @@
     }
    ],
    "pack": "0.5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -10222,7 +11614,7 @@
     }
    ],
    "pack": "112 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -10334,7 +11726,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -10636,7 +12028,7 @@
     }
    ],
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": false
   },
   {
@@ -10703,7 +12095,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -10763,7 +12155,7 @@
     }
    ],
    "pack": "1.33 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": false
   },
   {
@@ -10787,7 +12179,7 @@
     }
    ],
    "pack": "118.4 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -10836,7 +12228,7 @@
     }
    ],
    "pack": "300 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -11102,7 +12494,7 @@
     }
    ],
    "pack": "350 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -11554,7 +12946,7 @@
     }
    ],
    "pack": "350 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -11624,7 +13016,7 @@
     }
    ],
    "pack": "180 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -11708,7 +13100,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": false
   },
   {
@@ -11771,7 +13163,7 @@
     }
    ],
    "pack": "150 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -11805,7 +13197,7 @@
     }
    ],
    "pack": "500 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -12044,7 +13436,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/syry-mlecne-vyrobky-a-vejce/h10095761?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -12153,7 +13545,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -12580,7 +13972,7 @@
     }
    ],
    "pack": "80 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": false
   },
   {
@@ -12877,7 +14269,7 @@
     }
    ],
    "pack": "250 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -12934,7 +14326,7 @@
     }
    ],
    "pack": "70 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -13001,7 +14393,7 @@
     }
    ],
    "pack": "150 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -13032,7 +14424,7 @@
     }
    ],
    "pack": "30 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": true
   },
   {
@@ -13159,7 +14551,7 @@
     }
    ],
    "pack": "140 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -13202,7 +14594,7 @@
     }
    ],
    "pack": "250 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -13977,7 +15369,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -14033,7 +15425,7 @@
     }
    ],
    "pack": "2 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -14710,7 +16102,7 @@
     }
    ],
    "pack": "180 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -14778,6 +16170,46 @@
    "promo": true
   },
   {
+   "ingredientId": "eidam",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Rostlinné plátky sýra s příchutí Gouda Daily Plant Deli Q",
+   "czkPerKg": 249.0,
+   "price": 24.9,
+   "originalPrice": 46.9,
+   "validFrom": "2026-10-09",
+   "validTo": "2026-10-13",
+   "confidence": 0.612,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "eidam",
+     "score": 0.612,
+     "via": "sýra",
+     "nameCs": "eidam"
+    },
+    {
+     "ingredientId": "gouda",
+     "score": 0.529,
+     "via": "sýr gouda",
+     "nameCs": "gouda",
+     "reasons": [
+      "ambiguous:eidam"
+     ]
+    },
+    {
+     "ingredientId": "platano",
+     "score": 0.489,
+     "via": "plantain",
+     "nameCs": "plantain"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=gouda",
+   "promo": true
+  },
+  {
    "ingredientId": "jablko",
    "store": "globus",
    "source": "globus",
@@ -14814,7 +16246,7 @@
     }
    ],
    "pack": "120 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -14882,7 +16314,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -14995,7 +16427,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -15094,7 +16526,7 @@
     }
    ],
    "pack": "145 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": false
   },
   {
@@ -15152,7 +16584,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -15503,7 +16935,7 @@
     }
    ],
    "pack": "500 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -15526,7 +16958,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -15624,7 +17056,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -15842,7 +17274,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": true
   },
   {
@@ -16039,7 +17471,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": true
   },
   {
@@ -16069,7 +17501,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -16091,7 +17523,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -16115,7 +17547,7 @@
     }
    ],
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -16163,7 +17595,7 @@
     }
    ],
    "pack": "50 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -16186,7 +17618,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -16290,7 +17722,7 @@
     }
    ],
    "pack": "1100 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -16332,7 +17764,7 @@
     }
    ],
    "pack": "0.7 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -16355,7 +17787,7 @@
     }
    ],
    "pack": "4.5 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -16379,7 +17811,7 @@
     }
    ],
    "pack": "4.5 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -16453,7 +17885,7 @@
     }
    ],
    "pack": "100 praní",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -16483,7 +17915,7 @@
     }
    ],
    "pack": "100 praní",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -16553,7 +17985,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -16755,7 +18187,7 @@
     }
    ],
    "pack": "150 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -16896,7 +18328,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -16954,7 +18386,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": false
   },
   {
@@ -17110,7 +18542,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -17139,7 +18571,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -17175,7 +18607,33 @@
     }
    ],
    "pack": "230 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "MCENNEDY Pomerančová 100% šťáva",
+   "czkPerKg": 69.95,
+   "price": 139.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.5,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "pomeranc",
+     "score": 0.5,
+     "via": "pomerančová šťáva",
+     "nameCs": "pomeranč",
+     "reasons": [
+      "hint-category:fruit"
+     ]
+    }
+   ],
+   "pack": "2 l",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -17234,7 +18692,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": true
   },
   {
@@ -17357,7 +18815,7 @@
     }
    ],
    "pack": "250 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -17458,7 +18916,7 @@
     }
    ],
    "pack": "0.5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -17595,7 +19053,7 @@
     }
    ],
    "pack": "500 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -17665,7 +19123,7 @@
     }
    ],
    "pack": "300 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/hotova-jidla/h10071020?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -17823,6 +19281,80 @@
    "pack": "0.5 l",
    "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "RADEGAST Ryze hořká 12",
+   "czkPerKg": 39.8,
+   "price": 19.9,
+   "originalPrice": 25.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.399,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "ryze_predvarena",
+     "score": 0.399,
+     "via": "rýže ve varných sáčcích",
+     "nameCs": "předvařená rýže",
+     "reasons": [
+      "hint-category:grain"
+     ]
+    },
+    {
+     "ingredientId": "ryze_dlouhozrnna",
+     "score": 0.105,
+     "via": "rýže",
+     "nameCs": "dlouhozrnná rýže",
+     "reasons": [
+      "negative:hork",
+      "hint-category:grain"
+     ]
+    }
+   ],
+   "pack": "0.5 l",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Radegast Ryze hořká 12",
+   "czkPerKg": 39.8,
+   "price": 19.9,
+   "originalPrice": 25.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.399,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "ryze_predvarena",
+     "score": 0.399,
+     "via": "rýže ve varných sáčcích",
+     "nameCs": "předvařená rýže",
+     "reasons": [
+      "hint-category:grain"
+     ]
+    },
+    {
+     "ingredientId": "ryze_dlouhozrnna",
+     "score": 0.105,
+     "via": "rýže",
+     "nameCs": "dlouhozrnná rýže",
+     "reasons": [
+      "negative:hork",
+      "hint-category:grain"
+     ]
+    }
+   ],
+   "pack": "0.5 l",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "store": "albert",
@@ -18251,7 +19783,7 @@
     }
    ],
    "pack": "0.5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -18287,7 +19819,7 @@
     }
    ],
    "pack": "140 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -18426,7 +19958,7 @@
     }
    ],
    "pack": "75 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -18462,7 +19994,68 @@
     }
    ],
    "pack": "75 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Lebka s bonbony",
+   "czkPerKg": 450.15,
+   "price": 149.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.336,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "pernikove_koreni",
+     "score": 0.336,
+     "via": "lebkuchengewürz",
+     "nameCs": "perníkové koření",
+     "reasons": [
+      "hint-category:spice"
+     ]
+    }
+   ],
+   "pack": "333 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Medové kuličky",
+   "czkPerKg": 510.2,
+   "price": 119.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.336,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "medovina",
+     "score": 0.336,
+     "via": "medovina",
+     "nameCs": "medovina",
+     "reasons": [
+      "hint-category:alcohol"
+     ]
+    },
+    {
+     "ingredientId": "med",
+     "score": 0.168,
+     "via": "med",
+     "nameCs": "med",
+     "reasons": [
+      "negative:medov,medovnik"
+     ]
+    }
+   ],
+   "pack": "235 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -18585,8 +20178,34 @@
     }
    ],
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "HALLOWEEN Makronky",
+   "czkPerKg": 693.8,
+   "price": 99.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.312,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mak",
+     "score": 0.312,
+     "via": "mák",
+     "nameCs": "mák",
+     "reasons": [
+      "hint-category:spice"
+     ]
+    }
+   ],
+   "pack": "144 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "store": "albert",
@@ -18663,7 +20282,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": false
   },
   {
@@ -18749,7 +20368,7 @@
     }
    ],
    "pack": "600 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/cerealie-a-pomazanky/h10096153?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -18956,7 +20575,7 @@
     }
    ],
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -19019,7 +20638,7 @@
     }
    ],
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -19200,7 +20819,7 @@
     }
    ],
    "pack": "1000 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -19357,7 +20976,7 @@
     }
    ],
    "pack": "190 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -19432,6 +21051,43 @@
     }
    ],
    "pack": "120 g",
+   "url": "https://www.lidl.cz/q/api/category/h/pekarna/h10096086?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Kuřecí polévková směs",
+   "czkPerKg": 49.86,
+   "price": 34.9,
+   "validFrom": "2026-10-12",
+   "validTo": "2026-10-14",
+   "confidence": 0.096,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kureci_prsa",
+     "score": 0.096,
+     "via": "kuřecí",
+     "nameCs": "kuřecí prsa",
+     "reasons": [
+      "negative:polevk",
+      "hint-category:poultry"
+     ]
+    },
+    {
+     "ingredientId": "kure_cele",
+     "score": 0.077,
+     "via": "kuře",
+     "nameCs": "celé kuře",
+     "reasons": [
+      "negative:polevk",
+      "hint-category:poultry"
+     ]
+    }
+   ],
+   "pack": "700 g",
    "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -19464,6 +21120,21 @@
    "promo": true
   },
   {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "ALLINI Secco Bianco/Rosato",
+   "price": 13.9,
+   "originalPrice": 19.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "200 ml",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "ARANŽMÁ BETON RUCE KV.16 CM",
@@ -19475,7 +21146,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -19490,7 +21161,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -19579,7 +21250,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -19796,6 +21467,20 @@
   {
    "store": "lidl",
    "source": "lidl",
+   "title": "BIRELL",
+   "price": 18.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
    "title": "BORN 11°, 4,4 % PET",
    "price": 72.9,
    "confidence": 0.0,
@@ -19817,6 +21502,20 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 l",
+   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "BUDWEISER Budvar",
+   "price": 9.9,
+   "validFrom": "2026-10-16",
+   "validTo": "2026-10-18",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
    "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -19833,6 +21532,21 @@
    "club": false,
    "pack": "1 ks",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "BUMBU",
+   "price": 799.9,
+   "originalPrice": 1098.9,
+   "validFrom": "2026-10-16",
+   "validTo": "2026-10-18",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.7 l",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -19907,18 +21621,6 @@
    "promo": true
   },
   {
-   "store": "lidl",
-   "source": "lidl",
-   "title": "Big Sushi Set",
-   "price": 249.9,
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "434 g",
-   "url": "https://www.lidl.cz/q/api/category/h/ryby-a-morske-plody/h10071050?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
    "store": "globus",
    "source": "globus",
    "title": "Biggril Globuskořeněný",
@@ -19928,7 +21630,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -20256,7 +21958,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -20426,7 +22128,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -20441,7 +22143,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -20675,7 +22377,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.33 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -20704,6 +22406,20 @@
    "club": true,
    "pack": "330 ml",
    "url": "https://letaky.albert.cz/41hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Cronut",
+   "price": 16.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "80 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -20770,7 +22486,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "97 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/pekarna/h10096086?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -20785,7 +22501,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "800 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -20814,7 +22530,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "55 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -20828,7 +22544,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": false
   },
   {
@@ -20957,7 +22673,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "540 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -20986,7 +22702,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -21190,7 +22906,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -21560,7 +23276,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -21575,7 +23291,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -21602,7 +23318,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "110 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -21616,7 +23332,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "80 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
@@ -21689,7 +23405,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "48 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -21704,7 +23420,7 @@
    "status": "unmatched",
    "club": true,
    "pack": "48 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -22082,7 +23798,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -22155,7 +23871,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "115.2 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -22351,7 +24067,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "32 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -22465,7 +24181,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "100 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -22568,7 +24284,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -22696,7 +24412,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": false
   },
   {
@@ -22710,22 +24426,23 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": false
   },
   {
    "store": "globus",
    "source": "globus",
    "title": "Kytice Podzimní mix S",
-   "price": 139.9,
-   "validFrom": "2026-10-07",
+   "price": 99.9,
+   "originalPrice": 139.9,
+   "validFrom": "2026-10-09",
    "validTo": "2026-10-13",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
-   "promo": false
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "promo": true
   },
   {
    "store": "albert",
@@ -22781,7 +24498,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "208 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -22836,7 +24553,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -22921,7 +24638,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "131 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -23110,6 +24827,34 @@
    "promo": true
   },
   {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "MCENNEDY Karamelizovaný popcorn",
+   "price": 79.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "250 g",
+   "url": "https://www.lidl.cz/q/api/category/h/sladkosti-a-slane-snacky/h10096205?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "MCENNEDY Lívance v americkém stylu",
+   "price": 54.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "300 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "store": "albert",
    "source": "albert-text",
    "title": "Madeta Jihočeská",
@@ -23136,7 +24881,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -23364,7 +25109,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "121 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -23379,7 +25124,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "45 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -23636,7 +25381,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "30 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -23680,7 +25425,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "343.5 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -23695,7 +25440,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "29 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -23710,7 +25455,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "85 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -23866,7 +25611,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -23881,7 +25626,7 @@
    "status": "unmatched",
    "club": true,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -23910,7 +25655,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -23982,7 +25727,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "347 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -24011,7 +25756,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.5 l",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -24025,7 +25770,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -24085,7 +25830,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -24158,7 +25903,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "90 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -24173,7 +25918,7 @@
    "status": "unmatched",
    "club": true,
    "pack": "90 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -24259,7 +26004,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 kg",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/ovoce-a-zelenina/h10071012?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -24274,7 +26019,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -24400,7 +26145,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.33 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -24859,7 +26604,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "160 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/trvanlive-potraviny/h10096095?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -24987,7 +26732,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "180 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -25057,7 +26802,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "150 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -25155,7 +26900,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25170,7 +26915,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25185,7 +26930,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25200,7 +26945,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25215,7 +26960,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25245,7 +26990,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25260,7 +27005,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25275,7 +27020,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25290,7 +27035,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25470,7 +27215,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25484,7 +27229,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -25529,7 +27274,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25544,7 +27289,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -25589,7 +27334,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25678,7 +27423,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -25723,7 +27468,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -25788,6 +27533,20 @@
   {
    "store": "lidl",
    "source": "lidl",
+   "title": "SELECT & GO Sushi set",
+   "price": 219.9,
+   "validFrom": "2026-10-15",
+   "validTo": "2026-10-18",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "379 g",
+   "url": "https://www.lidl.cz/q/api/category/h/ryby-a-morske-plody/h10071050?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
    "title": "SVIJANY Svijanská Desítka",
    "price": 9.9,
    "validFrom": "2026-10-12",
@@ -25796,7 +27555,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.5 l",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -25836,7 +27595,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "250 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/hotova-jidla/h10071020?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -25962,7 +27721,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "27 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/sladkosti-a-slane-snacky/h10096205?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -26091,7 +27850,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -26105,7 +27864,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": false
   },
   {
@@ -26120,7 +27879,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": true
   },
   {
@@ -26134,7 +27893,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": false
   },
   {
@@ -26288,7 +28047,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "125 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -26317,7 +28076,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -26332,7 +28091,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "150 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -26706,7 +28465,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "220 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -26887,7 +28646,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -26929,7 +28688,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -26958,7 +28717,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -27096,7 +28855,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -27871,6 +29630,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 493,
- "unmatchedTotal": 745
+ "reviewTotal": 535,
+ "unmatchedTotal": 759
 }
