@@ -1,25 +1,25 @@
 {
  "market": "cz",
  "currency": "CZK",
- "date": "2026-10-09",
- "generatedAt": "2026-10-09T08:19:44Z",
- "status": "ok",
+ "date": "2026-10-10",
+ "generatedAt": "2026-10-10T08:01:51Z",
+ "status": "warning",
  "ok": true,
  "run": {
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "startedAt": null,
-  "finishedAt": "2026-10-09T08:19:44Z",
+  "finishedAt": "2026-10-10T08:01:51Z",
   "durationSec": null,
-  "offers": 2875,
-  "deals": 787,
-  "priced": 302,
-  "matched": 1139,
-  "review": 535,
+  "offers": 2935,
+  "deals": 818,
+  "priced": 298,
+  "matched": 1182,
+  "review": 537,
   "unmatched": 759,
   "ok": true
  },
- "lastSuccessfulRun": "2026-10-09",
- "pricesUpdated": "2026-10-09",
+ "lastSuccessfulRun": "2026-10-10",
+ "pricesUpdated": "2026-10-10",
  "sources": {
   "albert-text": {
    "label": "albert-text",
@@ -28,7 +28,7 @@
    "items": 752,
    "matched": 142,
    "requests": 5,
-   "durationSec": 4.7,
+   "durationSec": 4.0,
    "error": null,
    "robots": null,
    "notes": [
@@ -45,7 +45,7 @@
    "items": 326,
    "matched": 64,
    "requests": 5,
-   "durationSec": 3.9,
+   "durationSec": 4.5,
    "error": null,
    "robots": null,
    "notes": [
@@ -62,7 +62,7 @@
    "items": 738,
    "matched": 107,
    "requests": 8,
-   "durationSec": 13.9,
+   "durationSec": 15.1,
    "error": null,
    "robots": null,
    "notes": [
@@ -78,7 +78,7 @@
    "items": 0,
    "matched": null,
    "requests": 2,
-   "durationSec": 1.8,
+   "durationSec": 1.5,
    "error": null,
    "robots": null,
    "notes": [
@@ -94,14 +94,14 @@
    "label": "kupi",
    "ok": true,
    "skipped": false,
-   "items": 681,
-   "matched": 642,
+   "items": 726,
+   "matched": 685,
    "requests": 171,
-   "durationSec": 172.1,
+   "durationSec": 171.1,
    "error": null,
    "robots": null,
    "notes": [
-    "170 terms, 0 failed, 681 offers"
+    "170 terms, 0 failed, 726 offers"
    ],
    "tier": "fallback",
    "fetchedAt": null
@@ -110,14 +110,14 @@
    "label": "lidl",
    "ok": true,
    "skipped": false,
-   "items": 348,
+   "items": 363,
    "matched": 172,
    "requests": 25,
-   "durationSec": 24.7,
+   "durationSec": 24.3,
    "error": null,
    "robots": null,
    "notes": [
-    "27 categories, 348 products"
+    "27 categories, 363 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -129,7 +129,7 @@
    "items": 30,
    "matched": 12,
    "requests": 2,
-   "durationSec": 1.2,
+   "durationSec": 1.4,
    "error": null,
    "robots": null,
    "notes": [
@@ -141,99 +141,66 @@
  },
  "perStore": {
   "albert": {
-   "priced": 181,
+   "priced": 178,
    "deals": 184,
    "rowsToday": 287,
    "missingToday": false,
    "notFetched": false
   },
   "lidl": {
-   "priced": 146,
-   "deals": 90,
-   "rowsToday": 205,
+   "priced": 145,
+   "deals": 129,
+   "rowsToday": 258,
    "missingToday": false,
    "notFetched": false
   },
   "kaufland": {
-   "priced": 114,
+   "priced": 113,
    "deals": 78,
    "rowsToday": 83,
    "missingToday": false,
    "notFetched": false
   },
   "tesco": {
-   "priced": 98,
-   "deals": 82,
-   "rowsToday": 88,
+   "priced": 96,
+   "deals": 79,
+   "rowsToday": 85,
    "missingToday": false,
    "notFetched": false
   },
   "billa": {
    "priced": 147,
-   "deals": 132,
-   "rowsToday": 164,
+   "deals": 130,
+   "rowsToday": 162,
    "missingToday": false,
    "notFetched": false
   },
   "penny": {
-   "priced": 119,
-   "deals": 103,
-   "rowsToday": 115,
+   "priced": 116,
+   "deals": 101,
+   "rowsToday": 112,
    "missingToday": false,
    "notFetched": false
   },
   "globus": {
-   "priced": 190,
-   "deals": 118,
-   "rowsToday": 197,
+   "priced": 188,
+   "deals": 117,
+   "rowsToday": 195,
    "missingToday": false,
    "notFetched": false
   }
  },
  "notFetched": [],
- "stale": 455,
- "dropped": 0,
- "warnings": [],
+ "stale": 446,
+ "dropped": 12,
+ "warnings": [
+  "12 stale price(s) dropped (> 21 days)"
+ ],
  "validation": {
   "ok": true,
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-09-26",
-   "market": "cz",
-   "generatedAt": "2026-09-26T07:00:35Z",
-   "durationSec": null,
-   "status": "ok",
-   "ok": true,
-   "offers": 3527,
-   "perSource": {
-    "albert-text": 883,
-    "billa-text": 314,
-    "globus": 1037,
-    "kupi": 841,
-    "lidl": 398,
-    "penny": 54
-   },
-   "matched": 1350,
-   "review": 633,
-   "unmatched": 859,
-   "deals": 887,
-   "priced": 270,
-   "pairsPriced": 890,
-   "perStore": {
-    "albert": 170,
-    "lidl": 128,
-    "kaufland": 110,
-    "tesco": 87,
-    "billa": 120,
-    "penny": 113,
-    "globus": 162
-   },
-   "stale": 312,
-   "dropped": 0,
-   "warnings": 0
-  },
   {
    "date": "2026-09-27",
    "market": "cz",
@@ -676,6 +643,41 @@
    "stale": 455,
    "dropped": 0,
    "warnings": 0
+  },
+  {
+   "date": "2026-10-10",
+   "market": "cz",
+   "generatedAt": "2026-10-10T08:01:51Z",
+   "durationSec": null,
+   "status": "warning",
+   "ok": true,
+   "offers": 2935,
+   "perSource": {
+    "albert-text": 752,
+    "billa-text": 326,
+    "globus": 738,
+    "kupi": 726,
+    "lidl": 363,
+    "penny": 30
+   },
+   "matched": 1182,
+   "review": 537,
+   "unmatched": 759,
+   "deals": 818,
+   "priced": 298,
+   "pairsPriced": 983,
+   "perStore": {
+    "albert": 178,
+    "lidl": 145,
+    "kaufland": 113,
+    "tesco": 96,
+    "billa": 147,
+    "penny": 116,
+    "globus": 188
+   },
+   "stale": 446,
+   "dropped": 12,
+   "warnings": 1
   }
  ]
 }
