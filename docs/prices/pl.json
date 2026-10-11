@@ -2,7 +2,7 @@
  "v": 2,
  "market": "pl",
  "currency": "PLN",
- "updated": "2026-10-10",
+ "updated": "2026-10-11",
  "perKg": {
   "banan": {
    "lidl": 9.0
@@ -13,8 +13,8 @@
   "citron": {
    "lidl": 8.0
   },
-  "dyne_hokkaido": {
-   "lidl": 4.0
+  "edamame": {
+   "lidl": 39.9
   },
   "hruska": {
    "lidl": 4.0
@@ -25,14 +25,11 @@
   "maliny": {
    "lidl": 47.9
   },
-  "mandarinka": {
-   "lidl": 7.0
-  },
-  "marakuja": {
-   "lidl": 46.6
-  },
   "mineralka": {
    "lidl": 0.9
+  },
+  "mochi_ryzove": {
+   "lidl": 117.1
   },
   "mrkev": {
    "lidl": 2.0
@@ -52,9 +49,6 @@
   "soda": {
    "lidl": 1.2
   },
-  "svestky": {
-   "lidl": 4.0
-  },
   "zampiony": {
    "lidl": 10.0
   },
@@ -62,7 +56,32 @@
    "lidl": 16.9
   }
  },
- "deals": [],
+ "deals": [
+  {
+   "ingredientId": "kaki",
+   "store": "lidl",
+   "perKg": 23.5,
+   "validFrom": "2026-10-12",
+   "validTo": "2026-10-14",
+   "title": "Kaki"
+  },
+  {
+   "ingredientId": "ostruziny",
+   "store": "lidl",
+   "perKg": 95.9,
+   "validFrom": "2026-10-12",
+   "validTo": "2026-10-14",
+   "title": "Jeżyny"
+  },
+  {
+   "ingredientId": "zampiony",
+   "store": "lidl",
+   "perKg": 10.0,
+   "validFrom": "2026-10-12",
+   "validTo": "2026-10-14",
+   "title": "Pieczarki"
+  }
+ ],
  "categoryFallbackPerKg": {
   "vegetable": 7.65,
   "fruit": 10.2,

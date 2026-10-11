@@ -1,25 +1,25 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-10-10",
- "generatedAt": "2026-10-10T08:01:51Z",
+ "date": "2026-10-11",
+ "generatedAt": "2026-10-11T08:10:23Z",
  "status": "warning",
  "ok": true,
  "run": {
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "startedAt": null,
-  "finishedAt": "2026-10-10T08:01:51Z",
+  "finishedAt": "2026-10-11T08:10:23Z",
   "durationSec": null,
   "offers": 63,
   "deals": 0,
   "priced": 0,
   "matched": 0,
-  "review": 33,
-  "unmatched": 30,
+  "review": 31,
+  "unmatched": 32,
   "ok": true
  },
- "lastSuccessfulRun": "2026-10-10",
- "pricesUpdated": "2026-10-10",
+ "lastSuccessfulRun": "2026-10-11",
+ "pricesUpdated": "2026-10-11",
  "sources": {
   "lidl_de": {
    "label": "lidl_de",
@@ -28,7 +28,7 @@
    "items": 63,
    "matched": null,
    "requests": 5,
-   "durationSec": 4.4,
+   "durationSec": 4.3,
    "error": null,
    "robots": null,
    "notes": [
@@ -124,38 +124,6 @@
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-09-27",
-   "market": "de",
-   "generatedAt": "2026-09-27T07:27:08Z",
-   "durationSec": null,
-   "status": "warning",
-   "ok": true,
-   "offers": 64,
-   "perSource": {
-    "lidl_de": 64
-   },
-   "matched": 0,
-   "review": 33,
-   "unmatched": 31,
-   "deals": 0,
-   "priced": 0,
-   "pairsPriced": 0,
-   "perStore": {
-    "aldiNord": 0,
-    "aldiSued": 0,
-    "lidl": 0,
-    "kaufland": 0,
-    "edeka": 0,
-    "rewe": 0,
-    "penny": 0,
-    "netto": 0,
-    "norma": 0
-   },
-   "stale": 0,
-   "dropped": 0,
-   "warnings": 1
-  },
   {
    "date": "2026-09-28",
    "market": "de",
@@ -554,6 +522,38 @@
    "matched": 0,
    "review": 33,
    "unmatched": 30,
+   "deals": 0,
+   "priced": 0,
+   "pairsPriced": 0,
+   "perStore": {
+    "aldiNord": 0,
+    "aldiSued": 0,
+    "lidl": 0,
+    "kaufland": 0,
+    "edeka": 0,
+    "rewe": 0,
+    "penny": 0,
+    "netto": 0,
+    "norma": 0
+   },
+   "stale": 0,
+   "dropped": 0,
+   "warnings": 1
+  },
+  {
+   "date": "2026-10-11",
+   "market": "de",
+   "generatedAt": "2026-10-11T08:10:23Z",
+   "durationSec": null,
+   "status": "warning",
+   "ok": true,
+   "offers": 63,
+   "perSource": {
+    "lidl_de": 63
+   },
+   "matched": 0,
+   "review": 31,
+   "unmatched": 32,
    "deals": 0,
    "priced": 0,
    "pairsPriced": 0,
