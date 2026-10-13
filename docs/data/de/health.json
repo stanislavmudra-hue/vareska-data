@@ -1,14 +1,14 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-10-12",
- "generatedAt": "2026-10-12T08:24:05Z",
+ "date": "2026-10-13",
+ "generatedAt": "2026-10-13T08:51:36Z",
  "status": "warning",
  "ok": true,
  "run": {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "startedAt": null,
-  "finishedAt": "2026-10-12T08:24:05Z",
+  "finishedAt": "2026-10-13T08:51:36Z",
   "durationSec": null,
   "offers": 63,
   "deals": 0,
@@ -18,8 +18,8 @@
   "unmatched": 32,
   "ok": true
  },
- "lastSuccessfulRun": "2026-10-12",
- "pricesUpdated": "2026-10-12",
+ "lastSuccessfulRun": "2026-10-13",
+ "pricesUpdated": "2026-10-13",
  "sources": {
   "lidl_de": {
    "label": "lidl_de",
@@ -27,8 +27,8 @@
    "skipped": false,
    "items": 63,
    "matched": null,
-   "requests": 6,
-   "durationSec": 6.5,
+   "requests": 5,
+   "durationSec": 4.3,
    "error": null,
    "robots": null,
    "notes": [
@@ -124,38 +124,6 @@
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-09-29",
-   "market": "de",
-   "generatedAt": "2026-09-29T07:45:14Z",
-   "durationSec": null,
-   "status": "warning",
-   "ok": true,
-   "offers": 64,
-   "perSource": {
-    "lidl_de": 64
-   },
-   "matched": 0,
-   "review": 29,
-   "unmatched": 35,
-   "deals": 0,
-   "priced": 0,
-   "pairsPriced": 0,
-   "perStore": {
-    "aldiNord": 0,
-    "aldiSued": 0,
-    "lidl": 0,
-    "kaufland": 0,
-    "edeka": 0,
-    "rewe": 0,
-    "penny": 0,
-    "netto": 0,
-    "norma": 0
-   },
-   "stale": 0,
-   "dropped": 0,
-   "warnings": 1
-  },
   {
    "date": "2026-09-30",
    "market": "de",
@@ -544,6 +512,38 @@
    "date": "2026-10-12",
    "market": "de",
    "generatedAt": "2026-10-12T08:24:05Z",
+   "durationSec": null,
+   "status": "warning",
+   "ok": true,
+   "offers": 63,
+   "perSource": {
+    "lidl_de": 63
+   },
+   "matched": 0,
+   "review": 31,
+   "unmatched": 32,
+   "deals": 0,
+   "priced": 0,
+   "pairsPriced": 0,
+   "perStore": {
+    "aldiNord": 0,
+    "aldiSued": 0,
+    "lidl": 0,
+    "kaufland": 0,
+    "edeka": 0,
+    "rewe": 0,
+    "penny": 0,
+    "netto": 0,
+    "norma": 0
+   },
+   "stale": 0,
+   "dropped": 0,
+   "warnings": 1
+  },
+  {
+   "date": "2026-10-13",
+   "market": "de",
+   "generatedAt": "2026-10-13T08:51:36Z",
    "durationSec": null,
    "status": "warning",
    "ok": true,

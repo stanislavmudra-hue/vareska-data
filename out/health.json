@@ -2,21 +2,21 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-12T08:22:32+00:00",
- "today": "2026-10-12",
+ "run": "2026-10-13T08:47:25+00:00",
+ "today": "2026-10-13",
  "sources": {
   "globus": {
    "source": "globus",
    "ok": true,
-   "count": 738,
+   "count": 592,
    "error": null,
    "stores": {
-    "globus": 738
+    "globus": 592
    },
-   "requests": 8,
-   "elapsed_s": 16.6,
+   "requests": 7,
+   "elapsed_s": 10.9,
    "notes": [
-    "house 4005: totalCount=662, offers=738"
+    "house 4005: totalCount=518, offers=592"
    ],
    "tier": "primary",
    "market": "cz"
@@ -24,15 +24,15 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 310,
+   "count": 311,
    "error": null,
    "stores": {
-    "lidl": 310
+    "lidl": 311
    },
-   "requests": 18,
-   "elapsed_s": 21.8,
+   "requests": 16,
+   "elapsed_s": 15.3,
    "notes": [
-    "18 categories, 310 products"
+    "18 categories, 311 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -46,7 +46,7 @@
     "penny": 63
    },
    "requests": 2,
-   "elapsed_s": 1.4,
+   "elapsed_s": 1.3,
    "notes": [
     "total=53, offers=63"
    ],
@@ -56,18 +56,18 @@
   "albert": {
    "source": "albert",
    "ok": true,
-   "count": 1601,
+   "count": 1570,
    "error": null,
    "stores": {
-    "albert": 1601
+    "albert": 1570
    },
    "requests": 7,
-   "elapsed_s": 6.0,
+   "elapsed_s": 6.4,
    "notes": [
     "Albert - 41HM_akcni_letak (2026-10-07..2026-10-13): 31 spreads, 456 offers",
     "Albert - 41SM_akcni_letak (2026-10-07..2026-10-13): 22 spreads, 296 offers",
-    "Albert - 42HM_akcni_letak (2026-10-14..2026-10-20): 32 spreads, 482 offers",
-    "Albert - 42SM_akcni_letak (2026-10-14..2026-10-20): 24 spreads, 367 offers"
+    "Albert - 42HM_akcni_letak (2026-10-14..2026-10-20): 31 spreads, 470 offers",
+    "Albert - 42SM_akcni_letak (2026-10-14..2026-10-20): 24 spreads, 348 offers"
    ],
    "tier": "secondary",
    "market": "cz"
@@ -81,7 +81,7 @@
     "billa": 618
    },
    "requests": 7,
-   "elapsed_s": 6.2,
+   "elapsed_s": 5.9,
    "notes": [
     "velky-letak-7-10-13-10-2026: 21 spreads, 290 offers",
     "maly-letak-7-10-13-10-2026: 5 spreads, 36 offers",
@@ -98,11 +98,12 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 2.0,
+   "elapsed_s": 1.7,
    "notes": [
     "07.10.2026 - 13.10.2026: 2026-10-07..2026-10-13",
     "14.10.2026 - 20.10.2026: 2026-10-14..2026-10-20",
     "07.10.2026 - 13.10.2026: 2026-10-07..2026-10-13",
+    "14.10.2026 - 20.10.2026: 2026-10-14..2026-10-20",
     "07.10.2026 - 03.11.2026: 2026-10-07..2026-11-03",
     "metadata only - Kaufland prices come from the kupi provider"
    ],
@@ -136,6 +137,15 @@
     },
     {
      "name": "Kaufland",
+     "title": "14.10.2026 - 20.10.2026",
+     "offer_from": "2026-10-14",
+     "offer_to": "2026-10-20",
+     "published": "2026-10-11",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a13073-99cc-78a5-ac61-4eb54e6d8b03/Kaufland-14-10-2026-20-10-2026-00.pdf",
+     "subcategory": "Hyper1"
+    },
+    {
+     "name": "Kaufland",
      "title": "07.10.2026 - 03.11.2026",
      "offer_from": "2026-10-07",
      "offer_to": "2026-11-03",
@@ -149,14 +159,22 @@
   },
   "kupi": {
    "source": "kupi",
-   "ok": false,
-   "count": 0,
-   "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
-   "stores": {},
-   "requests": 2,
-   "elapsed_s": 1.1,
+   "ok": true,
+   "count": 1072,
+   "error": null,
+   "stores": {
+    "globus": 168,
+    "albert": 278,
+    "penny": 175,
+    "billa": 93,
+    "tesco": 146,
+    "kaufland": 156,
+    "lidl": 56
+   },
+   "requests": 171,
+   "elapsed_s": 173.1,
    "notes": [
-    "stopped at term maslo: blocked/robots"
+    "170 terms, 0 failed, 1072 offers"
    ],
    "tier": "fallback",
    "market": "cz"
@@ -164,18 +182,17 @@
  },
  "hosts": {
   "www.globus.cz": {
-   "requests": 8,
+   "requests": 7,
    "statuses": {
-    "200": 8
+    "200": 7
    },
    "server": "cloudflare",
    "cf_mitigated": null
   },
   "www.lidl.cz": {
-   "requests": 18,
+   "requests": 16,
    "statuses": {
-    "200": 16,
-    "503": 2
+    "200": 16
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -232,12 +249,12 @@
    "cf_mitigated": null
   },
   "www.kupi.cz": {
-   "requests": 2,
+   "requests": 171,
    "statuses": {
-    "403": 2
+    "200": 171
    },
    "server": "cloudflare",
-   "cf_mitigated": "challenge"
+   "cf_mitigated": null
   }
  },
  "robots": [
@@ -245,7 +262,7 @@
    "host": "www.globus.cz",
    "status": 200,
    "error": null,
-   "rules": 57,
+   "rules": 62,
    "disallow": [
     "Disallow: /o-nas/dokumenty-pro-dodavatele/",
     "Disallow: /globus/hypermarket/akcni-nabidka/*/p/",
@@ -253,6 +270,11 @@
     "Disallow: /fresh-*/hypermarket/*/p/",
     "Disallow: /fresh-*/hypermarket/cela-nabidka/*",
     "Disallow: /fresh-*/hypermarket/akcni-nabidka/*",
+    "Disallow: /*/online-objednavka/reznictvi/produkt-*",
+    "Disallow: /blog/aktuality-z-globusu/",
+    "Disallow: /zmena-prezentace.html?",
+    "Disallow: /*/letaky/akcni-letak-*",
+    "Disallow: /*/akcni-letaky/akcni-letak-*",
     "Disallow: /brno/hypermarket/*/p/",
     "Disallow: /brno/hypermarket/cela-nabidka/*/",
     "Disallow: /brno/hypermarket/akcni-nabidka/*/",
@@ -281,12 +303,7 @@
     "Disallow: /opava/hypermarket/cela-nabidka/*/",
     "Disallow: /opava/hypermarket/akcni-nabidka/*/",
     "Disallow: /ostrava/hypermarket/*/p/",
-    "Disallow: /ostrava/hypermarket/cela-nabidka/*/",
-    "Disallow: /ostrava/hypermarket/akcni-nabidka/*/",
-    "Disallow: /pardubice/hypermarket/*/p/",
-    "Disallow: /pardubice/hypermarket/cela-nabidka/*/",
-    "Disallow: /pardubice/hypermarket/akcni-nabidka/*/",
-    "Disallow: /praha-cakovice/hypermarket/*/p/"
+    "Disallow: /ostrava/hypermarket/cela-nabidka/*/"
    ],
    "crawl_delay": null
   },
@@ -364,14 +381,55 @@
   },
   {
    "host": "www.kupi.cz",
-   "status": 403,
-   "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/robots.txt",
-   "rules": 0,
-   "disallow": [],
+   "status": 200,
+   "error": null,
+   "rules": 148,
+   "disallow": [
+    "Disallow: /",
+    "Disallow: /",
+    "Disallow: /",
+    "Disallow: /welcome",
+    "Disallow: /404",
+    "Disallow: /login",
+    "Disallow: /popup/*",
+    "Disallow: /logging",
+    "Disallow: /get-locality-by-gps",
+    "Disallow: /nakupni-listek",
+    "Disallow: /get-mesto",
+    "Disallow: /get-slevy",
+    "Disallow: /get-letaky",
+    "Disallow: /get-akce",
+    "Disallow: /get-znacky",
+    "Disallow: /hlidani",
+    "Disallow: /uzivatel",
+    "Disallow: /oblibene",
+    "Disallow: /oblibene-kategorie",
+    "Disallow: /set-oblibene-letaky",
+    "Disallow: /send",
+    "Disallow: /kupici",
+    "Disallow: /objednavka",
+    "Disallow: /redir/*",
+    "Disallow: /nakup/*",
+    "Disallow: /mailing",
+    "Disallow: /redir.php",
+    "Disallow: /tipy",
+    "Disallow: /letak2/*",
+    "Disallow: /letak-dots/*",
+    "Disallow: /mailing/unsubscribe/*",
+    "Disallow: /magazin/pr-clanky",
+    "Disallow: /magazin/clanek-nahled/*",
+    "Disallow: /uzivatel/autorizace",
+    "Disallow: /prihlasit/facebook",
+    "Disallow: /oauth/*",
+    "Disallow: /odhlasit-se",
+    "Disallow: /prihlasit/facebook/overeni",
+    "Disallow: /prihlasit/facebook/potvrzeni-uctu",
+    "Disallow: /letak/nahled/*"
+   ],
    "crawl_delay": null
   }
  ],
  "notFetched": [],
- "requests_made": 46,
+ "requests_made": 212,
  "cache_hits": 0
 }
