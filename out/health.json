@@ -2,8 +2,8 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-14T06:56:56+00:00",
- "today": "2026-10-14",
+ "run": "2026-10-15T06:48:56+00:00",
+ "today": "2026-10-15",
  "sources": {
   "globus": {
    "source": "globus",
@@ -14,7 +14,7 @@
     "globus": 870
    },
    "requests": 10,
-   "elapsed_s": 33.5,
+   "elapsed_s": 17.3,
    "notes": [
     "house 4005: totalCount=764, offers=870"
    ],
@@ -24,15 +24,15 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 310,
+   "count": 316,
    "error": null,
    "stores": {
-    "lidl": 310
+    "lidl": 316
    },
    "requests": 16,
    "elapsed_s": 15.4,
    "notes": [
-    "18 categories, 310 products"
+    "18 categories, 316 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -46,7 +46,7 @@
     "penny": 33
    },
    "requests": 2,
-   "elapsed_s": 1.3,
+   "elapsed_s": 1.2,
    "notes": [
     "total=27, offers=33"
    ],
@@ -62,10 +62,10 @@
     "albert": 818
    },
    "requests": 5,
-   "elapsed_s": 4.8,
+   "elapsed_s": 4.0,
    "notes": [
     "Albert - 42HM_akcni_letak (2026-10-14..2026-10-20): 31 spreads, 470 offers",
-    "Albert - 42SM_akcni_letak (2026-10-14..2026-10-20): 24 spreads, 348 offers"
+    "Albert - 42SM_akcni_letak (2026-10-14..2026-10-20): 23 spreads, 348 offers"
    ],
    "tier": "secondary",
    "market": "cz"
@@ -79,7 +79,7 @@
     "billa": 292
    },
    "requests": 5,
-   "elapsed_s": 4.4,
+   "elapsed_s": 4.0,
    "notes": [
     "velky-letak-14-10-20-10-2026: 20 spreads, 251 offers",
     "maly-letak-14-10-20-10-2026: 5 spreads, 41 offers"
@@ -94,7 +94,7 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.5,
+   "elapsed_s": 1.4,
    "notes": [
     "14.10.2026 - 20.10.2026: 2026-10-14..2026-10-20",
     "14.10.2026 - 20.10.2026: 2026-10-14..2026-10-20",
@@ -136,21 +136,21 @@
   "kupi": {
    "source": "kupi",
    "ok": true,
-   "count": 681,
+   "count": 661,
    "error": null,
    "stores": {
-    "globus": 106,
-    "penny": 88,
-    "billa": 92,
-    "albert": 152,
-    "tesco": 97,
+    "globus": 108,
+    "penny": 91,
+    "billa": 96,
+    "albert": 153,
+    "tesco": 98,
     "kaufland": 88,
-    "lidl": 58
+    "lidl": 27
    },
    "requests": 171,
-   "elapsed_s": 172.5,
+   "elapsed_s": 171.5,
    "notes": [
-    "170 terms, 0 failed, 681 offers"
+    "170 terms, 0 failed, 661 offers"
    ],
    "tier": "fallback",
    "market": "cz"
