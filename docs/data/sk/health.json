@@ -1,14 +1,14 @@
 {
  "market": "sk",
  "currency": "EUR",
- "date": "2026-10-15",
- "generatedAt": "2026-10-15T06:53:06Z",
+ "date": "2026-10-16",
+ "generatedAt": "2026-10-16T06:41:33Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "startedAt": null,
-  "finishedAt": "2026-10-15T06:53:06Z",
+  "finishedAt": "2026-10-16T06:41:33Z",
   "durationSec": null,
   "offers": 26,
   "deals": 5,
@@ -18,8 +18,8 @@
   "unmatched": 6,
   "ok": true
  },
- "lastSuccessfulRun": "2026-10-15",
- "pricesUpdated": "2026-10-15",
+ "lastSuccessfulRun": "2026-10-16",
+ "pricesUpdated": "2026-10-16",
  "sources": {
   "lidl_sk": {
    "label": "lidl_sk",
@@ -28,7 +28,7 @@
    "items": 26,
    "matched": 5,
    "requests": 2,
-   "durationSec": 1.4,
+   "durationSec": 1.8,
    "error": null,
    "robots": null,
    "notes": [
@@ -105,36 +105,6 @@
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-10-02",
-   "market": "sk",
-   "generatedAt": "2026-10-02T07:49:45Z",
-   "durationSec": null,
-   "status": "ok",
-   "ok": true,
-   "offers": 19,
-   "perSource": {
-    "lidl_sk": 19
-   },
-   "matched": 6,
-   "review": 8,
-   "unmatched": 2,
-   "deals": 6,
-   "priced": 40,
-   "pairsPriced": 40,
-   "perStore": {
-    "tesco": 0,
-    "lidl": 40,
-    "kaufland": 0,
-    "billa": 0,
-    "coopJednota": 0,
-    "terno": 0,
-    "fresh": 0
-   },
-   "stale": 34,
-   "dropped": 0,
-   "warnings": 0
-  },
   {
    "date": "2026-10-03",
    "market": "sk",
@@ -499,6 +469,36 @@
    "date": "2026-10-15",
    "market": "sk",
    "generatedAt": "2026-10-15T06:53:06Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 26,
+   "perSource": {
+    "lidl_sk": 26
+   },
+   "matched": 5,
+   "review": 1,
+   "unmatched": 6,
+   "deals": 5,
+   "priced": 32,
+   "pairsPriced": 32,
+   "perStore": {
+    "tesco": 0,
+    "lidl": 32,
+    "kaufland": 0,
+    "billa": 0,
+    "coopJednota": 0,
+    "terno": 0,
+    "fresh": 0
+   },
+   "stale": 27,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-10-16",
+   "market": "sk",
+   "generatedAt": "2026-10-16T06:41:33Z",
    "durationSec": null,
    "status": "ok",
    "ok": true,
