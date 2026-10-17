@@ -2,8 +2,8 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-16T06:37:20+00:00",
- "today": "2026-10-16",
+ "run": "2026-10-17T06:26:10+00:00",
+ "today": "2026-10-17",
  "sources": {
   "globus": {
    "source": "globus",
@@ -14,7 +14,7 @@
     "globus": 870
    },
    "requests": 10,
-   "elapsed_s": 20.7,
+   "elapsed_s": 17.7,
    "notes": [
     "house 4005: totalCount=764, offers=870"
    ],
@@ -30,7 +30,7 @@
     "lidl": 365
    },
    "requests": 19,
-   "elapsed_s": 18.4,
+   "elapsed_s": 18.3,
    "notes": [
     "21 categories, 365 products"
    ],
@@ -40,15 +40,15 @@
   "penny": {
    "source": "penny",
    "ok": true,
-   "count": 33,
+   "count": 73,
    "error": null,
    "stores": {
-    "penny": 33
+    "penny": 73
    },
    "requests": 2,
-   "elapsed_s": 1.3,
+   "elapsed_s": 1.5,
    "notes": [
-    "total=27, offers=33"
+    "total=59, offers=73"
    ],
    "tier": "primary",
    "market": "cz"
@@ -56,16 +56,16 @@
   "albert": {
    "source": "albert",
    "ok": true,
-   "count": 818,
+   "count": 829,
    "error": null,
    "stores": {
-    "albert": 818
+    "albert": 829
    },
    "requests": 5,
-   "elapsed_s": 4.5,
+   "elapsed_s": 3.9,
    "notes": [
     "Albert - 42HM_akcni_letak (2026-10-14..2026-10-20): 31 spreads, 470 offers",
-    "Albert - 42SM_akcni_letak (2026-10-14..2026-10-20): 23 spreads, 348 offers"
+    "Albert - 42SM_akcni_letak (2026-10-14..2026-10-20): 23 spreads, 359 offers"
    ],
    "tier": "secondary",
    "market": "cz"
@@ -79,7 +79,7 @@
     "billa": 292
    },
    "requests": 5,
-   "elapsed_s": 4.1,
+   "elapsed_s": 4.5,
    "notes": [
     "velky-letak-14-10-20-10-2026: 20 spreads, 251 offers",
     "maly-letak-14-10-20-10-2026: 5 spreads, 41 offers"
@@ -94,7 +94,7 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.7,
+   "elapsed_s": 1.5,
    "notes": [
     "14.10.2026 - 20.10.2026: 2026-10-14..2026-10-20",
     "14.10.2026 - 20.10.2026: 2026-10-14..2026-10-20",
@@ -136,21 +136,21 @@
   "kupi": {
    "source": "kupi",
    "ok": true,
-   "count": 654,
+   "count": 708,
    "error": null,
    "stores": {
-    "globus": 108,
+    "globus": 107,
     "penny": 89,
-    "billa": 92,
+    "billa": 91,
     "albert": 153,
-    "tesco": 98,
-    "kaufland": 87,
-    "lidl": 27
+    "tesco": 97,
+    "kaufland": 85,
+    "lidl": 86
    },
    "requests": 171,
-   "elapsed_s": 171.0,
+   "elapsed_s": 172.5,
    "notes": [
-    "170 terms, 0 failed, 654 offers"
+    "170 terms, 0 failed, 708 offers"
    ],
    "tier": "fallback",
    "market": "cz"
