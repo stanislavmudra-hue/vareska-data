@@ -2,8 +2,8 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-17T06:26:10+00:00",
- "today": "2026-10-17",
+ "run": "2026-10-18T06:50:41+00:00",
+ "today": "2026-10-18",
  "sources": {
   "globus": {
    "source": "globus",
@@ -14,7 +14,7 @@
     "globus": 870
    },
    "requests": 10,
-   "elapsed_s": 17.7,
+   "elapsed_s": 21.8,
    "notes": [
     "house 4005: totalCount=764, offers=870"
    ],
@@ -24,15 +24,15 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 365,
+   "count": 366,
    "error": null,
    "stores": {
-    "lidl": 365
+    "lidl": 366
    },
    "requests": 19,
-   "elapsed_s": 18.3,
+   "elapsed_s": 19.9,
    "notes": [
-    "21 categories, 365 products"
+    "21 categories, 366 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -62,7 +62,7 @@
     "albert": 829
    },
    "requests": 5,
-   "elapsed_s": 3.9,
+   "elapsed_s": 4.3,
    "notes": [
     "Albert - 42HM_akcni_letak (2026-10-14..2026-10-20): 31 spreads, 470 offers",
     "Albert - 42SM_akcni_letak (2026-10-14..2026-10-20): 23 spreads, 359 offers"
@@ -79,7 +79,7 @@
     "billa": 292
    },
    "requests": 5,
-   "elapsed_s": 4.5,
+   "elapsed_s": 4.3,
    "notes": [
     "velky-letak-14-10-20-10-2026: 20 spreads, 251 offers",
     "maly-letak-14-10-20-10-2026: 5 spreads, 41 offers"
@@ -97,7 +97,9 @@
    "elapsed_s": 1.5,
    "notes": [
     "14.10.2026 - 20.10.2026: 2026-10-14..2026-10-20",
+    "21.10.2026 - 27.10.2026: 2026-10-21..2026-10-27",
     "14.10.2026 - 20.10.2026: 2026-10-14..2026-10-20",
+    "21.10.2026 - 27.10.2026: 2026-10-21..2026-10-27",
     "07.10.2026 - 03.11.2026: 2026-10-07..2026-11-03",
     "metadata only - Kaufland prices come from the kupi provider"
    ],
@@ -113,11 +115,29 @@
     },
     {
      "name": "Kaufland",
+     "title": "21.10.2026 - 27.10.2026",
+     "offer_from": "2026-10-21",
+     "offer_to": "2026-10-27",
+     "published": "2026-10-18",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a13ee4-cfd3-7de7-a249-08468b3b4494/Kaufland-21-10-2026-27-10-2026-00.pdf",
+     "subcategory": "KDZ"
+    },
+    {
+     "name": "Kaufland",
      "title": "14.10.2026 - 20.10.2026",
      "offer_from": "2026-10-14",
      "offer_to": "2026-10-20",
      "published": "2026-10-11",
      "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a13073-99cc-78a5-ac61-4eb54e6d8b03/Kaufland-14-10-2026-20-10-2026-00.pdf",
+     "subcategory": "Hyper1"
+    },
+    {
+     "name": "Kaufland",
+     "title": "21.10.2026 - 27.10.2026",
+     "offer_from": "2026-10-21",
+     "offer_to": "2026-10-27",
+     "published": "2026-10-18",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a14587-fd13-7f31-822a-1ea56e8aabe5/Kaufland-21-10-2026-27-10-2026-00.pdf",
      "subcategory": "Hyper1"
     },
     {
@@ -136,21 +156,21 @@
   "kupi": {
    "source": "kupi",
    "ok": true,
-   "count": 708,
+   "count": 810,
    "error": null,
    "stores": {
-    "globus": 107,
-    "penny": 89,
+    "globus": 105,
+    "penny": 200,
     "billa": 91,
-    "albert": 153,
-    "tesco": 97,
-    "kaufland": 85,
-    "lidl": 86
+    "albert": 150,
+    "tesco": 96,
+    "kaufland": 83,
+    "lidl": 85
    },
    "requests": 171,
-   "elapsed_s": 172.5,
+   "elapsed_s": 171.6,
    "notes": [
-    "170 terms, 0 failed, 708 offers"
+    "170 terms, 0 failed, 810 offers"
    ],
    "tier": "fallback",
    "market": "cz"
