@@ -1,25 +1,25 @@
 {
  "market": "cz",
  "currency": "CZK",
- "date": "2026-10-19",
- "generatedAt": "2026-10-19T07:11:40Z",
+ "date": "2026-10-20",
+ "generatedAt": "2026-10-20T06:58:45Z",
  "status": "warning",
  "ok": true,
  "run": {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "startedAt": null,
-  "finishedAt": "2026-10-19T07:11:40Z",
+  "finishedAt": "2026-10-20T06:58:45Z",
   "durationSec": null,
   "offers": 3394,
   "deals": 506,
   "priced": 286,
   "matched": 630,
   "review": 733,
-  "unmatched": 1229,
+  "unmatched": 1228,
   "ok": true
  },
- "lastSuccessfulRun": "2026-10-19",
- "pricesUpdated": "2026-10-19",
+ "lastSuccessfulRun": "2026-10-20",
+ "pricesUpdated": "2026-10-20",
  "sources": {
   "albert-text": {
    "label": "albert-text",
@@ -28,7 +28,7 @@
    "items": 1551,
    "matched": 258,
    "requests": 7,
-   "durationSec": 6.0,
+   "durationSec": 5.9,
    "error": null,
    "robots": null,
    "notes": [
@@ -47,7 +47,7 @@
    "items": 588,
    "matched": 99,
    "requests": 7,
-   "durationSec": 5.9,
+   "durationSec": 6.2,
    "error": null,
    "robots": null,
    "notes": [
@@ -66,7 +66,7 @@
    "items": 870,
    "matched": 102,
    "requests": 10,
-   "durationSec": 20.4,
+   "durationSec": 22.3,
    "error": null,
    "robots": null,
    "notes": [
@@ -82,7 +82,7 @@
    "items": 0,
    "matched": null,
    "requests": 2,
-   "durationSec": 1.5,
+   "durationSec": 1.6,
    "error": null,
    "robots": null,
    "notes": [
@@ -103,7 +103,7 @@
    "items": 0,
    "matched": null,
    "requests": 2,
-   "durationSec": 1.1,
+   "durationSec": 1.0,
    "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
    "robots": null,
    "notes": [
@@ -119,7 +119,7 @@
    "items": 312,
    "matched": 146,
    "requests": 15,
-   "durationSec": 14.6,
+   "durationSec": 14.3,
    "error": null,
    "robots": null,
    "notes": [
@@ -135,7 +135,7 @@
    "items": 73,
    "matched": 25,
    "requests": 2,
-   "durationSec": 1.4,
+   "durationSec": 1.7,
    "error": null,
    "robots": null,
    "notes": [
@@ -154,7 +154,7 @@
    "notFetched": false
   },
   "lidl": {
-   "priced": 139,
+   "priced": 138,
    "deals": 39,
    "rowsToday": 146,
    "missingToday": false,
@@ -197,54 +197,19 @@
   }
  },
  "notFetched": [],
- "stale": 686,
- "dropped": 15,
+ "stale": 685,
+ "dropped": 1,
  "warnings": [
   "store 'kaufland' had no matched rows today (carry-forward only)",
   "store 'tesco' had no matched rows today (carry-forward only)",
   "source 'kupi' failed: blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
-  "15 stale price(s) dropped (> 21 days)"
+  "1 stale price(s) dropped (> 21 days)"
  ],
  "validation": {
   "ok": true,
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-10-06",
-   "market": "cz",
-   "generatedAt": "2026-10-06T08:28:10Z",
-   "durationSec": null,
-   "status": "ok",
-   "ok": true,
-   "offers": 4325,
-   "perSource": {
-    "albert-text": 1535,
-    "billa-text": 599,
-    "globus": 761,
-    "kupi": 1042,
-    "lidl": 317,
-    "penny": 71
-   },
-   "matched": 1682,
-   "review": 801,
-   "unmatched": 1093,
-   "deals": 1084,
-   "priced": 296,
-   "pairsPriced": 992,
-   "perStore": {
-    "albert": 182,
-    "lidl": 146,
-    "kaufland": 121,
-    "tesco": 98,
-    "billa": 134,
-    "penny": 121,
-    "globus": 190
-   },
-   "stale": 482,
-   "dropped": 0,
-   "warnings": 0
-  },
   {
    "date": "2026-10-07",
    "market": "cz",
@@ -694,6 +659,40 @@
    },
    "stale": 686,
    "dropped": 15,
+   "warnings": 4
+  },
+  {
+   "date": "2026-10-20",
+   "market": "cz",
+   "generatedAt": "2026-10-20T06:58:45Z",
+   "durationSec": null,
+   "status": "warning",
+   "ok": true,
+   "offers": 3394,
+   "perSource": {
+    "albert-text": 1551,
+    "billa-text": 588,
+    "globus": 870,
+    "lidl": 312,
+    "penny": 73
+   },
+   "matched": 630,
+   "review": 733,
+   "unmatched": 1228,
+   "deals": 506,
+   "priced": 286,
+   "pairsPriced": 920,
+   "perStore": {
+    "albert": 169,
+    "lidl": 138,
+    "kaufland": 109,
+    "tesco": 90,
+    "billa": 138,
+    "penny": 109,
+    "globus": 167
+   },
+   "stale": 685,
+   "dropped": 1,
    "warnings": 4
   }
  ]

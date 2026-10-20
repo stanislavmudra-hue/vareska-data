@@ -1,5 +1,5 @@
 {
- "date": "2026-10-19",
+ "date": "2026-10-20",
  "review": [
   {
    "ingredientId": "gouda",
@@ -94,41 +94,6 @@
    ],
    "pack": "500 g",
    "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "ingredientId": "houska",
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "Brotaufstrich",
-   "czkPerKg": 7.62,
-   "price": 0.99,
-   "validFrom": "2026-10-22",
-   "validTo": "2026-10-24",
-   "confidence": 0.8,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "houska",
-     "score": 0.8,
-     "via": "Brötchen",
-     "nameCs": "houska",
-     "name": "Brötchen"
-    },
-    {
-     "ingredientId": "chleb",
-     "score": 0.68,
-     "via": "Brot",
-     "nameCs": "chléb",
-     "name": "Brot",
-     "reasons": [
-      "ambiguous:houska"
-     ]
-    }
-   ],
-   "pack": "130 g",
-   "url": "https://www.lidl.at/q/api/category/h/cerealien-aufstriche/h10096153?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -403,7 +368,7 @@
     }
    ],
    "pack": "1.5 l",
-   "url": "https://www.lidl.at/q/api/category/h/kaffee-tee-kakao/h10071683?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/getraenke/h10071022?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -490,6 +455,31 @@
    ],
    "pack": "1 kg",
    "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "coppa",
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "PIVAC Coppa",
+   "czkPerKg": 19.9,
+   "price": 1.99,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "coppa",
+     "score": 0.78,
+     "via": "Coppa",
+     "nameCs": "coppa",
+     "name": "Coppa"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -882,7 +872,7 @@
    "promo": true
   },
   {
-   "ingredientId": "malinovka",
+   "ingredientId": "maliny",
    "store": "lidl",
    "source": "lidl_at",
    "title": "Himbeer-Joghurt-Stange",
@@ -893,13 +883,6 @@
    "status": "review",
    "club": false,
    "suggestions": [
-    {
-     "ingredientId": "malinovka",
-     "score": 0.614,
-     "via": "Himbeerlimonade",
-     "nameCs": "malinovka",
-     "name": "Himbeerlimonade"
-    },
     {
      "ingredientId": "maliny",
      "score": 0.614,
@@ -913,10 +896,20 @@
      "via": "Himbeeressig",
      "nameCs": "malinový ocet",
      "name": "Himbeeressig"
+    },
+    {
+     "ingredientId": "dzem_malinovy",
+     "score": 0.522,
+     "via": "Himbeermarmelade",
+     "nameCs": "malinový džem",
+     "name": "Himbeermarmelade",
+     "reasons": [
+      "ambiguous:maliny"
+     ]
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/backwaren/h10096086?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -960,32 +953,6 @@
    "pack": "150 g",
    "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
-  },
-  {
-   "ingredientId": "redkvicky",
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "Red Bull Organics",
-   "czkPerKg": 3.0,
-   "price": 0.99,
-   "originalPrice": 1.59,
-   "validFrom": "2026-10-27",
-   "validTo": "2026-10-28",
-   "confidence": 0.614,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "redkvicky",
-     "score": 0.614,
-     "via": "ředkvičky",
-     "nameCs": "ředkvičky",
-     "name": "Radieschen"
-    }
-   ],
-   "pack": "0.33 l",
-   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
   }
  ],
  "unmatched": [
@@ -1018,40 +985,6 @@
    ],
    "pack": "750 g",
    "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "Toast Duo Schinken & Käse",
-   "czkPerKg": 13.3,
-   "price": 3.99,
-   "validFrom": "2026-10-27",
-   "validTo": "2026-10-28",
-   "confidence": 0.58,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "chleb_toustovy",
-     "score": 0.58,
-     "via": "Toastbrot",
-     "nameCs": "toustový chléb",
-     "name": "Toastbrot"
-    },
-    {
-     "ingredientId": "salam_sunkovy",
-     "score": 0.27,
-     "via": "Schinkenwurst",
-     "nameCs": "šunkový salám",
-     "name": "Schinkenwurst",
-     "reasons": [
-      "hint-category:meat"
-     ]
-    }
-   ],
-   "pack": "300 g",
-   "url": "https://www.lidl.at/q/api/category/h/backwaren/h10096086?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1446,7 +1379,7 @@
     }
    ],
    "pack": "270 g",
-   "url": "https://www.lidl.at/q/api/category/h/backwaren/h10096086?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1551,6 +1484,40 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Toast Duo Schinken & Käse",
+   "czkPerKg": 13.3,
+   "price": 3.99,
+   "validFrom": "2026-10-27",
+   "validTo": "2026-10-28",
+   "confidence": 0.539,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_sunkovy",
+     "score": 0.539,
+     "via": "Schinkenwurst",
+     "nameCs": "šunkový salám",
+     "name": "Schinkenwurst"
+    },
+    {
+     "ingredientId": "chleb_toustovy",
+     "score": 0.29,
+     "via": "Toastbrot",
+     "nameCs": "toustový chléb",
+     "name": "Toastbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    }
+   ],
+   "pack": "300 g",
+   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Esskastanien",
    "czkPerKg": 4.58,
    "price": 2.29,
@@ -1574,6 +1541,43 @@
    ],
    "pack": "500 g",
    "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Brotaufstrich",
+   "czkPerKg": 7.62,
+   "price": 0.99,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.4,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "chleb",
+     "score": 0.4,
+     "via": "Brot",
+     "nameCs": "chléb",
+     "name": "Brot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "houska",
+     "score": 0.4,
+     "via": "Brötchen",
+     "nameCs": "houska",
+     "name": "Brötchen",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    }
+   ],
+   "pack": "130 g",
+   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1628,33 +1632,6 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "PIVAC Coppa",
-   "czkPerKg": 19.9,
-   "price": 1.99,
-   "validFrom": "2026-10-22",
-   "validTo": "2026-10-24",
-   "confidence": 0.39,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "coppa",
-     "score": 0.39,
-     "via": "Coppa",
-     "nameCs": "coppa",
-     "name": "Coppa",
-     "reasons": [
-      "hint-category:meat"
-     ]
-    }
-   ],
-   "pack": "100 g",
    "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -1811,7 +1788,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1877,6 +1854,34 @@
    ],
    "pack": "0.75 l",
    "url": "https://www.lidl.at/q/api/category/h/wein-bier-spirituosen/h10096268?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Red Bull Organics",
+   "czkPerKg": 3.0,
+   "price": 0.99,
+   "originalPrice": 1.59,
+   "validFrom": "2026-10-27",
+   "validTo": "2026-10-28",
+   "confidence": 0.307,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "redkvicky",
+     "score": 0.307,
+     "via": "ředkvičky",
+     "nameCs": "ředkvičky",
+     "name": "Radieschen",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    }
+   ],
+   "pack": "0.33 l",
+   "url": "https://www.lidl.at/q/api/category/h/getraenke/h10071022?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1987,7 +1992,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "350 g",
-   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2115,7 +2120,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "3 ks",
-   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/backwaren/h10096086?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2234,6 +2239,20 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Duplo Classic",
+   "price": 2.99,
+   "validFrom": "2026-10-27",
+   "validTo": "2026-10-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "182 g",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Duplo White",
    "price": 2.99,
    "validFrom": "2026-10-27",
@@ -2270,7 +2289,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.75 l",
-   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/getraenke/h10071022?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2473,6 +2492,20 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Hell",
+   "price": 0.79,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://www.lidl.at/q/api/category/h/wein-bier-spirituosen/h10096268?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "IGLO Kroketten oder Pommes",
    "price": 3.49,
    "originalPrice": 4.79,
@@ -2483,6 +2516,36 @@
    "club": false,
    "pack": "600 g",
    "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "JULIUS MEINL Der Klassiker",
+   "price": 6.49,
+   "originalPrice": 8.99,
+   "validFrom": "2026-10-27",
+   "validTo": "2026-10-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "500 g",
+   "url": "https://www.lidl.at/q/api/category/h/kaffee-tee-kakao/h10071683?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "JULIUS MEINL Der Klassiker",
+   "price": 6.49,
+   "originalPrice": 8.99,
+   "validFrom": "2026-10-27",
+   "validTo": "2026-10-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "500 g",
+   "url": "https://www.lidl.at/q/api/category/h/kaffee-tee-kakao/h10071683?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2601,6 +2664,20 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "KNORR Fix",
+   "price": 0.92,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "36 g",
+   "url": "https://www.lidl.at/q/api/category/h/lebensmittelvorrat/h10096095?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "KRAŠ Domaćica Kekse",
    "price": 2.99,
    "validFrom": "2026-10-22",
@@ -2609,6 +2686,20 @@
    "status": "unmatched",
    "club": false,
    "pack": "300 g",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Kinder Bueno Classic",
+   "price": 2.29,
+   "validFrom": "2026-10-27",
+   "validTo": "2026-10-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "129 g",
    "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -2629,6 +2720,36 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Kinder Cards",
+   "price": 1.99,
+   "originalPrice": 2.59,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-25",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "128 g",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Kinder Cards Halloween",
+   "price": 1.99,
+   "originalPrice": 2.59,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "128 g",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Kinder Choco Fresh",
    "price": 1.69,
    "originalPrice": 2.29,
@@ -2638,6 +2759,20 @@
    "status": "unmatched",
    "club": false,
    "pack": "102.5 g",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Kinder Country",
+   "price": 2.99,
+   "validFrom": "2026-10-27",
+   "validTo": "2026-10-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "211.5 g",
    "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -2751,7 +2886,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "720 ml",
-   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2793,7 +2928,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "230 g",
-   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2821,7 +2956,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 g",
-   "url": "https://www.lidl.at/q/api/category/h/fertiggerichte/h10071020?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2863,7 +2998,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "400 g",
-   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/fertiggerichte/h10071020?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2934,7 +3069,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.at/q/api/category/h/getraenke/h10071022?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2949,7 +3084,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.at/q/api/category/h/getraenke/h10071022?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2964,7 +3099,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.at/q/api/category/h/getraenke/h10071022?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2979,21 +3114,6 @@
    "club": false,
    "pack": "1 ks",
    "url": "https://www.lidl.at/q/api/category/h/backwaren/h10096086?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "MAX & MILA'S WORLD Herzhafte Pastete",
-   "price": 0.59,
-   "originalPrice": 0.75,
-   "validFrom": "2026-10-22",
-   "validTo": "2026-10-24",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "400 g",
-   "url": "https://www.lidl.at/q/api/category/h/lebensmittelvorrat/h10096095?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3584,6 +3704,20 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Swedy",
+   "price": 6.99,
+   "validFrom": "2026-10-27",
+   "validTo": "2026-10-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "300 g",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "TOPPO Kastanienpüree",
    "price": 2.29,
    "validFrom": "2026-10-22",
@@ -3592,7 +3726,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "250 g",
-   "url": "https://www.lidl.at/q/api/category/h/lebensmittelvorrat/h10096095?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3775,7 +3909,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "232 g",
-   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3807,6 +3941,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 31,
- "unmatchedTotal": 161
+ "reviewTotal": 30,
+ "unmatchedTotal": 171
 }
