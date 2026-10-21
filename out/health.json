@@ -2,21 +2,21 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-20T06:57:15+00:00",
- "today": "2026-10-20",
+ "run": "2026-10-21T06:51:26+00:00",
+ "today": "2026-10-21",
  "sources": {
   "globus": {
    "source": "globus",
    "ok": true,
-   "count": 870,
+   "count": 828,
    "error": null,
    "stores": {
-    "globus": 870
+    "globus": 828
    },
-   "requests": 10,
-   "elapsed_s": 22.3,
+   "requests": 9,
+   "elapsed_s": 19.4,
    "notes": [
-    "house 4005: totalCount=764, offers=870"
+    "house 4005: totalCount=776, offers=828"
    ],
    "tier": "primary",
    "market": "cz"
@@ -24,15 +24,15 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 312,
+   "count": 313,
    "error": null,
    "stores": {
-    "lidl": 312
+    "lidl": 313
    },
    "requests": 15,
    "elapsed_s": 14.3,
    "notes": [
-    "17 categories, 312 products"
+    "17 categories, 313 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -40,15 +40,15 @@
   "penny": {
    "source": "penny",
    "ok": true,
-   "count": 73,
+   "count": 40,
    "error": null,
    "stores": {
-    "penny": 73
+    "penny": 40
    },
    "requests": 2,
-   "elapsed_s": 1.7,
+   "elapsed_s": 1.4,
    "notes": [
-    "total=59, offers=73"
+    "total=32, offers=40"
    ],
    "tier": "primary",
    "market": "cz"
@@ -56,16 +56,14 @@
   "albert": {
    "source": "albert",
    "ok": true,
-   "count": 1551,
+   "count": 722,
    "error": null,
    "stores": {
-    "albert": 1551
+    "albert": 722
    },
-   "requests": 7,
-   "elapsed_s": 5.9,
+   "requests": 5,
+   "elapsed_s": 4.1,
    "notes": [
-    "Albert - 42HM_akcni_letak (2026-10-14..2026-10-20): 31 spreads, 470 offers",
-    "Albert - 42SM_akcni_letak (2026-10-14..2026-10-20): 23 spreads, 359 offers",
     "Albert - 43HM_akcni_letak (2026-10-21..2026-10-27): 26 spreads, 403 offers",
     "Albert - 43SM_akcni_letak (2026-10-21..2026-10-27): 22 spreads, 319 offers"
    ],
@@ -75,16 +73,14 @@
   "billa": {
    "source": "billa",
    "ok": true,
-   "count": 588,
+   "count": 296,
    "error": null,
    "stores": {
-    "billa": 588
+    "billa": 296
    },
-   "requests": 7,
-   "elapsed_s": 6.2,
+   "requests": 5,
+   "elapsed_s": 4.1,
    "notes": [
-    "velky-letak-14-10-20-10-2026: 20 spreads, 251 offers",
-    "maly-letak-14-10-20-10-2026: 5 spreads, 41 offers",
     "velky-letak-21-10-27-10-2026: 20 spreads, 259 offers",
     "maly-letak-21-10-27-10-2026: 5 spreads, 37 offers"
    ],
@@ -98,25 +94,14 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.6,
+   "elapsed_s": 1.5,
    "notes": [
-    "14.10.2026 - 20.10.2026: 2026-10-14..2026-10-20",
     "21.10.2026 - 27.10.2026: 2026-10-21..2026-10-27",
-    "14.10.2026 - 20.10.2026: 2026-10-14..2026-10-20",
     "21.10.2026 - 27.10.2026: 2026-10-21..2026-10-27",
     "07.10.2026 - 03.11.2026: 2026-10-07..2026-11-03",
     "metadata only - Kaufland prices come from the kupi provider"
    ],
    "periods": [
-    {
-     "name": "Kaufland",
-     "title": "14.10.2026 - 20.10.2026",
-     "offer_from": "2026-10-14",
-     "offer_to": "2026-10-20",
-     "published": "2026-10-11",
-     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a112ad-33f9-70c0-8574-d6571f7e6903/Kaufland-14-10-2026-20-10-2026-00.pdf",
-     "subcategory": "KDZ"
-    },
     {
      "name": "Kaufland",
      "title": "21.10.2026 - 27.10.2026",
@@ -125,15 +110,6 @@
      "published": "2026-10-18",
      "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a13ee4-cfd3-7de7-a249-08468b3b4494/Kaufland-21-10-2026-27-10-2026-00.pdf",
      "subcategory": "KDZ"
-    },
-    {
-     "name": "Kaufland",
-     "title": "14.10.2026 - 20.10.2026",
-     "offer_from": "2026-10-14",
-     "offer_to": "2026-10-20",
-     "published": "2026-10-11",
-     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a13073-99cc-78a5-ac61-4eb54e6d8b03/Kaufland-14-10-2026-20-10-2026-00.pdf",
-     "subcategory": "Hyper1"
     },
     {
      "name": "Kaufland",
@@ -174,9 +150,9 @@
  },
  "hosts": {
   "www.globus.cz": {
-   "requests": 10,
+   "requests": 9,
    "statuses": {
-    "200": 10
+    "200": 9
    },
    "server": "cloudflare",
    "cf_mitigated": null
@@ -206,10 +182,10 @@
    "cf_mitigated": null
   },
   "letaky.albert.cz": {
-   "requests": 5,
+   "requests": 3,
    "statuses": {
     "404": 1,
-    "200": 4
+    "200": 2
    },
    "server": "Apache",
    "cf_mitigated": null
@@ -223,10 +199,10 @@
    "cf_mitigated": null
   },
   "view.publitas.com": {
-   "requests": 5,
+   "requests": 3,
    "statuses": {
     "404": 1,
-    "200": 4
+    "200": 2
    },
    "server": "nginx",
    "cf_mitigated": null
@@ -381,6 +357,6 @@
   }
  ],
  "notFetched": [],
- "requests_made": 45,
+ "requests_made": 40,
  "cache_hits": 0
 }

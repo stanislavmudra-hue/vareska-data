@@ -1,6 +1,83 @@
 {
- "date": "2026-10-20",
+ "date": "2026-10-21",
  "review": [
+  {
+   "ingredientId": "meloun_vodni",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "Arbuz drobnopestkowy, luzem",
+   "czkPerKg": 7.99,
+   "price": 4.79,
+   "originalPrice": 7.99,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "meloun_vodni",
+     "score": 0.839,
+     "via": "arbuz",
+     "nameCs": "vodní meloun",
+     "name": "arbuz"
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "avokado",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "Awokado zielone",
+   "czkPerKg": 35.24,
+   "price": 5.99,
+   "validFrom": "2026-10-19",
+   "validTo": "2026-10-24",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "avokado",
+     "score": 0.839,
+     "via": "awokado",
+     "nameCs": "avokádo",
+     "name": "awokado"
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.lidl.pl/q/api/category/h/owoce-i-warzywa/h10071012?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "klobasa",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "PIKOK Kiełbasa śląska, XXL",
+   "czkPerKg": 9.93,
+   "price": 14.9,
+   "originalPrice": 33.9,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "klobasa",
+     "score": 0.839,
+     "via": "kiełbasa",
+     "nameCs": "klobása",
+     "name": "kiełbasa"
+    }
+   ],
+   "pack": "1.5 kg",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
   {
    "ingredientId": "jablko",
    "store": "lidl",
@@ -76,7 +153,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/owoce-i-warzywa/h10071012?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -133,7 +210,76 @@
     }
    ],
    "pack": "2.5 kg",
+   "url": "https://www.lidl.pl/q/api/category/h/owoce-i-warzywa/h10071012?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "brambory",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "Ziemniaki jadalne, luzem",
+   "czkPerKg": 1.99,
+   "price": 0.99,
+   "originalPrice": 1.99,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "brambory",
+     "score": 0.839,
+     "via": "ziemniaki",
+     "nameCs": "brambory",
+     "name": "ziemniaki"
+    }
+   ],
+   "pack": "1 kg",
    "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "svestky",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "Śliwki okrągłe, luzem",
+   "czkPerKg": 12.99,
+   "price": 5.99,
+   "originalPrice": 12.99,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "svestky",
+     "score": 0.839,
+     "via": "śliwki",
+     "nameCs": "švestky",
+     "name": "śliwki"
+    },
+    {
+     "ingredientId": "okra",
+     "score": 0.624,
+     "via": "okra",
+     "nameCs": "okra",
+     "name": "okra"
+    },
+    {
+     "ingredientId": "slivovice",
+     "score": 0.336,
+     "via": "śliwowica",
+     "nameCs": "slivovice",
+     "name": "śliwowica",
+     "reasons": [
+      "hint-category:alcohol"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.pl/q/api/category/h/owoce-i-warzywa/h10071012?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -159,6 +305,91 @@
     }
    ],
    "pack": "1 kg",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "hrozny",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "Winogrona jasne bezpestkowe, luzem",
+   "czkPerKg": 14.99,
+   "price": 7.99,
+   "originalPrice": 14.99,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.767,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "hrozny",
+     "score": 0.767,
+     "via": "winogrona",
+     "nameCs": "hroznové víno",
+     "name": "winogrona"
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "losos",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "Łosoś atlantycki, filet ze skórą, XXL",
+   "czkPerKg": 49.9,
+   "price": 4.99,
+   "originalPrice": 6.99,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.767,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "losos",
+     "score": 0.767,
+     "via": "łosoś",
+     "nameCs": "losos",
+     "name": "łosoś"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "gouda",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "MILBONA Ser gouda w kawałku, XXL",
+   "czkPerKg": 14.98,
+   "price": 7.49,
+   "originalPrice": 14.99,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "gouda",
+     "score": 0.714,
+     "via": "gouda",
+     "nameCs": "gouda",
+     "name": "gouda"
+    },
+    {
+     "ingredientId": "syrovatka",
+     "score": 0.614,
+     "via": "serwatka",
+     "nameCs": "syrovátka",
+     "name": "serwatka"
+    }
+   ],
+   "pack": "500 g",
    "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -241,6 +472,34 @@
     }
    ],
    "pack": "100 g",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "PIKOK Szynka konserwowa, XXL",
+   "czkPerKg": 19.19,
+   "price": 4.99,
+   "originalPrice": 8.99,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.399,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "sunka_od_kosti",
+     "score": 0.399,
+     "via": "szynka z kością",
+     "nameCs": "šunka od kosti",
+     "name": "szynka z kością",
+     "reasons": [
+      "hint-category:meat"
+     ]
+    }
+   ],
+   "pack": "260 g",
    "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -341,7 +600,7 @@
     }
    ],
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -395,6 +654,34 @@
     }
    ],
    "pack": "100 g",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "RZEŹNIK Boczek, XXL",
+   "czkPerKg": 14.99,
+   "price": 9.99,
+   "originalPrice": 14.99,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-24",
+   "confidence": 0.312,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "hliva_ustricna",
+     "score": 0.312,
+     "via": "boczniaki",
+     "nameCs": "hlíva ústřičná",
+     "name": "boczniaki",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    }
+   ],
+   "pack": "1 kg",
    "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -460,7 +747,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -524,7 +811,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -550,7 +837,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -589,7 +876,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -642,7 +929,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -668,7 +955,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -681,7 +968,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -694,7 +981,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/piekarnia/h10096086?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -776,7 +1063,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -802,7 +1089,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -815,7 +1102,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/wina-piwa-i-alkohole-mocne/h10096268?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -841,7 +1128,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.pl/q/api/category/h/piekarnia/h10096086?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -858,6 +1145,6 @@
    "promo": false
   }
  ],
- "reviewTotal": 8,
- "unmatchedTotal": 40
+ "reviewTotal": 16,
+ "unmatchedTotal": 42
 }
