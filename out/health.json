@@ -2,8 +2,8 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-21T06:51:26+00:00",
- "today": "2026-10-21",
+ "run": "2026-10-22T06:55:08+00:00",
+ "today": "2026-10-22",
  "sources": {
   "globus": {
    "source": "globus",
@@ -14,7 +14,7 @@
     "globus": 828
    },
    "requests": 9,
-   "elapsed_s": 19.4,
+   "elapsed_s": 15.1,
    "notes": [
     "house 4005: totalCount=776, offers=828"
    ],
@@ -24,15 +24,15 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 313,
+   "count": 354,
    "error": null,
    "stores": {
-    "lidl": 313
+    "lidl": 354
    },
-   "requests": 15,
-   "elapsed_s": 14.3,
+   "requests": 25,
+   "elapsed_s": 25.8,
    "notes": [
-    "17 categories, 313 products"
+    "27 categories, 354 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -56,16 +56,16 @@
   "albert": {
    "source": "albert",
    "ok": true,
-   "count": 722,
+   "count": 719,
    "error": null,
    "stores": {
-    "albert": 722
+    "albert": 719
    },
    "requests": 5,
-   "elapsed_s": 4.1,
+   "elapsed_s": 4.9,
    "notes": [
     "Albert - 43HM_akcni_letak (2026-10-21..2026-10-27): 26 spreads, 403 offers",
-    "Albert - 43SM_akcni_letak (2026-10-21..2026-10-27): 22 spreads, 319 offers"
+    "Albert - 43SM_akcni_letak (2026-10-21..2026-10-27): 22 spreads, 316 offers"
    ],
    "tier": "secondary",
    "market": "cz"
@@ -79,7 +79,7 @@
     "billa": 296
    },
    "requests": 5,
-   "elapsed_s": 4.1,
+   "elapsed_s": 4.5,
    "notes": [
     "velky-letak-21-10-27-10-2026: 20 spreads, 259 offers",
     "maly-letak-21-10-27-10-2026: 5 spreads, 37 offers"
@@ -94,7 +94,7 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.5,
+   "elapsed_s": 2.0,
    "notes": [
     "21.10.2026 - 27.10.2026: 2026-10-21..2026-10-27",
     "21.10.2026 - 27.10.2026: 2026-10-21..2026-10-27",
@@ -140,7 +140,7 @@
    "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.0,
+   "elapsed_s": 1.1,
    "notes": [
     "stopped at term maslo: blocked/robots"
    ],
@@ -158,9 +158,9 @@
    "cf_mitigated": null
   },
   "www.lidl.cz": {
-   "requests": 15,
+   "requests": 25,
    "statuses": {
-    "200": 15
+    "200": 25
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -357,6 +357,6 @@
   }
  ],
  "notFetched": [],
- "requests_made": 40,
+ "requests_made": 50,
  "cache_hits": 0
 }

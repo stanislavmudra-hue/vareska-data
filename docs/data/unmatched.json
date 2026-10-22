@@ -1,5 +1,5 @@
 {
- "date": "2026-10-21",
+ "date": "2026-10-22",
  "review": [
   {
    "ingredientId": "mouka_hladka",
@@ -495,7 +495,7 @@
      ]
     }
    ],
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/ovoce-a-zelenina/h10071012?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -555,7 +555,7 @@
      "nameCs": "prosecco"
     }
    ],
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -681,6 +681,35 @@
    "promo": true
   },
   {
+   "ingredientId": "petrzel_koren",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Petržel",
+   "price": 27.9,
+   "originalPrice": 39.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "petrzel_koren",
+     "score": 1.0,
+     "via": "petržel",
+     "nameCs": "petržel kořenová"
+    },
+    {
+     "ingredientId": "petrzel_nat",
+     "score": 0.8,
+     "via": "petrželka",
+     "nameCs": "petrželová nať"
+    }
+   ],
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "rajcata",
    "store": "albert",
    "source": "albert-text",
@@ -731,36 +760,6 @@
    "pack": "125 g",
    "url": "https://www.lidl.cz/q/api/category/h/trvanlive-potraviny/h10096095?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
-  },
-  {
-   "ingredientId": "salatova_smes",
-   "store": "lidl",
-   "source": "lidl",
-   "title": "Salátový mix",
-   "price": 19.9,
-   "originalPrice": 29.9,
-   "confidence": 0.84,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "salatova_smes",
-     "score": 1.0,
-     "via": "salátový mix",
-     "nameCs": "salátová směs"
-    },
-    {
-     "ingredientId": "salat_hlavkovy",
-     "score": 0.2,
-     "via": "salát",
-     "nameCs": "hlávkový salát",
-     "reasons": [
-      "negative:salatov"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.cz/q/api/category/h/hotova-jidla/h10071020?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": true
   },
   {
    "ingredientId": "chleb",
@@ -1164,23 +1163,59 @@
    "promo": true
   },
   {
-   "ingredientId": "redkvicky",
+   "ingredientId": "cervena_repa",
    "store": "lidl",
    "source": "lidl",
-   "title": "Ředkvičky",
-   "price": 7.9,
-   "originalPrice": 12.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
+   "title": "Řepa červená",
+   "price": 9.9,
+   "originalPrice": 19.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-27",
    "confidence": 0.84,
    "status": "review",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "redkvicky",
+     "ingredientId": "cervena_repa",
      "score": 1.0,
-     "via": "rule:redkvicky",
-     "nameCs": "ředkvičky"
+     "via": "červená řepa",
+     "nameCs": "červená řepa"
+    },
+    {
+     "ingredientId": "cervena_repa_sterilovana",
+     "score": 0.95,
+     "via": "červená řepa v nálevu",
+     "nameCs": "sterilovaná červená řepa"
+    }
+   ],
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "avokado",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Avokádo zelené",
+   "czkPerKg": 87.65,
+   "price": 14.9,
+   "originalPrice": 19.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "avokado",
+     "score": 0.839,
+     "via": "avokádo",
+     "nameCs": "avokádo"
+    },
+    {
+     "ingredientId": "zeleninova_smes_mrazena",
+     "score": 0.624,
+     "via": "mražená zelenina",
+     "nameCs": "mražená zeleninová směs"
     }
    ],
    "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
@@ -1452,7 +1487,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/syry-mlecne-vyrobky-a-vejce/h10095761?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -1612,7 +1647,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -1620,8 +1655,8 @@
    "store": "albert",
    "source": "albert-text",
    "title": "Jablka Golden",
-   "czkPerKg": 199.8,
-   "price": 99.9,
+   "czkPerKg": 24.9,
+   "price": 24.9,
    "validFrom": "2026-10-21",
    "validTo": "2026-10-27",
    "confidence": 0.839,
@@ -1647,8 +1682,48 @@
      "nameCs": "fyzalis"
     }
    ],
-   "pack": "0.5 l",
+   "pack": "1 kg",
    "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "jablko",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Jablka zelená",
+   "czkPerKg": 19.9,
+   "price": 19.9,
+   "originalPrice": 39.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "jablko",
+     "score": 0.839,
+     "via": "jablko",
+     "nameCs": "jablko"
+    },
+    {
+     "ingredientId": "zeleninova_smes_mrazena",
+     "score": 0.624,
+     "via": "mražená zelenina",
+     "nameCs": "mražená zeleninová směs"
+    },
+    {
+     "ingredientId": "calvados",
+     "score": 0.336,
+     "via": "jablkovice",
+     "nameCs": "calvados",
+     "reasons": [
+      "hint-category:alcohol"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1874,6 +1949,76 @@
    ],
    "pack": "25 g",
    "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "kruti_stehna",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Krůtí spodní stehna paličky",
+   "czkPerKg": 99.9,
+   "price": 99.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kruti_stehna",
+     "score": 0.839,
+     "via": "krůtí stehna",
+     "nameCs": "krůtí stehna"
+    },
+    {
+     "ingredientId": "kruti_prsa",
+     "score": 0.725,
+     "via": "krůtí",
+     "nameCs": "krůtí prsa"
+    },
+    {
+     "ingredientId": "krutony",
+     "score": 0.145,
+     "via": "krutony",
+     "nameCs": "krutony",
+     "reasons": [
+      "hint-category:bakery",
+      "title-category:bakery"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "kure_cele",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Kuře Duo",
+   "czkPerKg": 49.9,
+   "price": 49.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kure_cele",
+     "score": 0.839,
+     "via": "kuře",
+     "nameCs": "celé kuře"
+    },
+    {
+     "ingredientId": "kureci_prsa",
+     "score": 0.671,
+     "via": "kuřecí",
+     "nameCs": "kuřecí prsa"
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2137,42 +2282,6 @@
    "promo": false
   },
   {
-   "ingredientId": "okurka_salatova",
-   "store": "lidl",
-   "source": "lidl",
-   "title": "Okurka polní",
-   "czkPerKg": 49.67,
-   "price": 14.9,
-   "originalPrice": 19.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
-   "confidence": 0.839,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "okurka_salatova",
-     "score": 0.839,
-     "via": "okurka",
-     "nameCs": "salátová okurka"
-    },
-    {
-     "ingredientId": "okurky_kvasene",
-     "score": 0.797,
-     "via": "okurky v láku",
-     "nameCs": "kvašené okurky"
-    },
-    {
-     "ingredientId": "okurky_kysele",
-     "score": 0.797,
-     "via": "okurky ve sladkokyselém nálevu",
-     "nameCs": "kyselé okurky"
-    }
-   ],
-   "url": "https://www.lidl.cz/q/api/category/h/ovoce-a-zelenina/h10071012?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
    "ingredientId": "paprika_cervena",
    "store": "billa",
    "source": "billa-text",
@@ -2230,30 +2339,6 @@
    "promo": true
   },
   {
-   "ingredientId": "pomelo",
-   "store": "lidl",
-   "source": "lidl",
-   "title": "Pomelo červené",
-   "czkPerKg": 44.9,
-   "price": 44.9,
-   "originalPrice": 69.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
-   "confidence": 0.839,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "pomelo",
-     "score": 0.839,
-     "via": "pomelo",
-     "nameCs": "pomelo"
-    }
-   ],
-   "url": "https://www.lidl.cz/q/api/category/h/ovoce-a-zelenina/h10071012?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
    "ingredientId": "kureci_prsa",
    "store": "lidl",
    "source": "lidl",
@@ -2280,6 +2365,30 @@
    "pack": "1 kg",
    "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "ingredientId": "pstruh",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Pstruh potoční",
+   "czkPerKg": 299.0,
+   "price": 29.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "pstruh",
+     "score": 0.839,
+     "via": "pstruh",
+     "nameCs": "pstruh"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.lidl.cz/q/api/category/h/ryby-a-morske-plody/h10071050?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "margarin",
@@ -2560,56 +2669,6 @@
    ],
    "pack": "100 g",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
-   "promo": true
-  },
-  {
-   "ingredientId": "vejce",
-   "store": "globus",
-   "source": "globus",
-   "title": "Vejce M30 kusů podestýlka",
-   "czkPerKg": 1884.91,
-   "price": 99.9,
-   "originalPrice": 159.9,
-   "validFrom": "2026-10-20",
-   "validTo": "2026-10-27",
-   "confidence": 0.839,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "vejce",
-     "score": 0.839,
-     "via": "vejce",
-     "nameCs": "vejce"
-    }
-   ],
-   "pack": "53 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
-   "promo": true
-  },
-  {
-   "ingredientId": "vejce",
-   "store": "globus",
-   "source": "globus",
-   "title": "Vejce M30 kusů podestýlka",
-   "czkPerKg": 1696.23,
-   "price": 89.9,
-   "originalPrice": 159.9,
-   "validFrom": "2026-10-21",
-   "validTo": "2026-10-27",
-   "confidence": 0.839,
-   "status": "review",
-   "club": true,
-   "suggestions": [
-    {
-     "ingredientId": "vejce",
-     "score": 0.839,
-     "via": "vejce",
-     "nameCs": "vejce"
-    }
-   ],
-   "pack": "53 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -3158,42 +3217,6 @@
    "promo": false
   },
   {
-   "ingredientId": "para_orechy",
-   "store": "lidl",
-   "source": "lidl",
-   "title": "ALESTO SELECTION Para ořechy",
-   "czkPerKg": 459.8,
-   "price": 229.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
-   "confidence": 0.836,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "para_orechy",
-     "score": 0.836,
-     "via": "para ořechy",
-     "nameCs": "para ořechy"
-    },
-    {
-     "ingredientId": "orechy_smes",
-     "score": 0.714,
-     "via": "mix ořechů",
-     "nameCs": "směs ořechů"
-    },
-    {
-     "ingredientId": "vlasske_orechy",
-     "score": 0.714,
-     "via": "ořechy",
-     "nameCs": "vlašské ořechy"
-    }
-   ],
-   "pack": "1 kg",
-   "url": "https://www.lidl.cz/q/api/category/h/sladkosti-a-slane-snacky/h10096205?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
    "ingredientId": "tatarska_omacka",
    "store": "globus",
    "source": "globus",
@@ -3352,7 +3375,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/syry-mlecne-vyrobky-a-vejce/h10095761?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -3643,6 +3666,40 @@
    "promo": true
   },
   {
+   "ingredientId": "veprova_plec",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Mělněné vepřové maso",
+   "czkPerKg": 89.9,
+   "price": 89.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-27",
+   "confidence": 0.836,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "veprova_plec",
+     "score": 0.836,
+     "via": "vepřové maso",
+     "nameCs": "vepřová plec"
+    },
+    {
+     "ingredientId": "bujon_kostka",
+     "score": 0.143,
+     "via": "masox",
+     "nameCs": "bujón v kostce",
+     "reasons": [
+      "hint-category:condiment",
+      "title-category:condiment"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "kava_instantni",
    "store": "globus",
    "source": "globus",
@@ -3715,30 +3772,6 @@
    ],
    "pack": "85 g",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
-   "promo": true
-  },
-  {
-   "ingredientId": "energeticky_napoj",
-   "store": "lidl",
-   "source": "lidl",
-   "title": "TIGER Energetický nápoj",
-   "czkPerKg": 26.73,
-   "price": 13.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
-   "confidence": 0.836,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "energeticky_napoj",
-     "score": 0.836,
-     "via": "energetický nápoj",
-     "nameCs": "energetický nápoj"
-    }
-   ],
-   "pack": "0.5 l",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -4457,6 +4490,39 @@
   },
   {
    "ingredientId": "ryze_predvarena",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Radegast Ryze hořká 12",
+   "czkPerKg": 43.8,
+   "price": 21.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-10-27",
+   "confidence": 0.797,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "ryze_predvarena",
+     "score": 0.797,
+     "via": "rýže ve varných sáčcích",
+     "nameCs": "předvařená rýže"
+    },
+    {
+     "ingredientId": "ryze_dlouhozrnna",
+     "score": 0.21,
+     "via": "rýže",
+     "nameCs": "dlouhozrnná rýže",
+     "reasons": [
+      "negative:hork"
+     ]
+    }
+   ],
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "ryze_predvarena",
    "store": "billa",
    "source": "billa-text",
    "title": "Radegast Ryze hořká 12",
@@ -4519,39 +4585,6 @@
    ],
    "pack": "1 kg",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
-   "promo": true
-  },
-  {
-   "ingredientId": "ryze_predvarena",
-   "store": "albert",
-   "source": "albert-text",
-   "title": "Radegast Ryze hořká 12 5 bal.",
-   "czkPerKg": 43.8,
-   "price": 21.9,
-   "validFrom": "2026-10-21",
-   "validTo": "2026-10-27",
-   "confidence": 0.797,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "ryze_predvarena",
-     "score": 0.797,
-     "via": "rýže ve varných sáčcích",
-     "nameCs": "předvařená rýže"
-    },
-    {
-     "ingredientId": "ryze_dlouhozrnna",
-     "score": 0.21,
-     "via": "rýže",
-     "nameCs": "dlouhozrnná rýže",
-     "reasons": [
-      "negative:hork"
-     ]
-    }
-   ],
-   "pack": "0.5 l",
-   "url": "https://letaky.albert.cz/43hm_akcni_letak/",
    "promo": true
   },
   {
@@ -4947,6 +4980,30 @@
    "ingredientId": "eidam",
    "store": "lidl",
    "source": "lidl",
+   "title": "Burek se sýrem",
+   "czkPerKg": 146.0,
+   "price": 21.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "eidam",
+     "score": 0.78,
+     "via": "sýrem",
+     "nameCs": "eidam"
+    }
+   ],
+   "pack": "150 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "eidam",
+   "store": "lidl",
+   "source": "lidl",
    "title": "Chilli sýr",
    "czkPerKg": 569.0,
    "price": 56.9,
@@ -4974,7 +5031,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/syry-mlecne-vyrobky-a-vejce/h10095761?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -5113,6 +5170,49 @@
    "promo": true
   },
   {
+   "ingredientId": "cokolada_horka",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "FIN CARRÉ Hořká čokoláda 74 %",
+   "czkPerKg": 299.0,
+   "price": 29.9,
+   "originalPrice": 44.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "cokolada_horka",
+     "score": 0.78,
+     "via": "hořká čokoláda",
+     "nameCs": "hořká čokoláda"
+    },
+    {
+     "ingredientId": "sherry",
+     "score": 0.29,
+     "via": "fino",
+     "nameCs": "sherry",
+     "reasons": [
+      "hint-category:alcohol"
+     ]
+    },
+    {
+     "ingredientId": "mrkev",
+     "score": 0.27,
+     "via": "carrot",
+     "nameCs": "mrkev",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "jogurt_bily",
    "store": "albert",
    "source": "albert-text",
@@ -5199,30 +5299,6 @@
    ],
    "pack": "400 g",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
-   "promo": true
-  },
-  {
-   "ingredientId": "dyne_hokkaido",
-   "store": "lidl",
-   "source": "lidl",
-   "title": "Halloween dýně",
-   "czkPerKg": 49.92,
-   "price": 59.9,
-   "originalPrice": 69.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
-   "confidence": 0.78,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "dyne_hokkaido",
-     "score": 0.78,
-     "via": "dýně",
-     "nameCs": "dýně hokkaido"
-    }
-   ],
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -5443,7 +5519,7 @@
     }
    ],
    "pack": "150 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -5873,11 +5949,11 @@
    "ingredientId": "tunak_konzerva",
    "store": "lidl",
    "source": "lidl",
-   "title": "NIXE Tuňák",
-   "czkPerKg": 231.96,
-   "price": 129.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
+   "title": "NIXE Tuňák ve slunečnicovém oleji",
+   "czkPerKg": 231.33,
+   "price": 149.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-27",
    "confidence": 0.78,
    "status": "review",
    "club": false,
@@ -5898,8 +5974,77 @@
      ]
     }
    ],
-   "pack": "185 g",
+   "pack": "750 g",
    "url": "https://www.lidl.cz/q/api/category/h/trvanlive-potraviny/h10096095?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "eidam",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Nakládaný sýr v oleji",
+   "czkPerKg": 228.29,
+   "price": 79.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "eidam",
+     "score": 0.78,
+     "via": "sýr",
+     "nameCs": "eidam"
+    },
+    {
+     "ingredientId": "syridlo",
+     "score": 0.624,
+     "via": "syřidlo",
+     "nameCs": "syřidlo"
+    },
+    {
+     "ingredientId": "syrovatka",
+     "score": 0.624,
+     "via": "syrovátka",
+     "nameCs": "syrovátka"
+    }
+   ],
+   "pack": "350 g",
+   "url": "https://www.lidl.cz/q/api/category/h/syry-mlecne-vyrobky-a-vejce/h10095761?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "hruska",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Nashi hrušky",
+   "czkPerKg": 71.67,
+   "price": 12.9,
+   "originalPrice": 19.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-27",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "hruska",
+     "score": 0.78,
+     "via": "hruška",
+     "nameCs": "hruška"
+    },
+    {
+     "ingredientId": "hruskovice",
+     "score": 0.312,
+     "via": "hruškovice",
+     "nameCs": "hruškovice",
+     "reasons": [
+      "hint-category:alcohol"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -6577,7 +6722,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -6620,7 +6765,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -6760,6 +6905,30 @@
    "promo": true
   },
   {
+   "ingredientId": "ouzo",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "ZACHOS Ouzo",
+   "czkPerKg": 360.75,
+   "price": 239.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "ouzo",
+     "score": 0.78,
+     "via": "ouzo",
+     "nameCs": "ouzo"
+    }
+   ],
+   "pack": "0.7 l",
+   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "eidam",
    "store": "albert",
    "source": "albert-text",
@@ -6879,6 +7048,40 @@
    ],
    "pack": "1 ks",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "kava_uvarena",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "BELLAROM Espresso extra dark roast",
+   "czkPerKg": 299.9,
+   "price": 299.9,
+   "originalPrice": 399.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.767,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kava_uvarena",
+     "score": 0.767,
+     "via": "espresso",
+     "nameCs": "uvařená káva"
+    },
+    {
+     "ingredientId": "kure_cele",
+     "score": 0.285,
+     "via": "roaster",
+     "nameCs": "celé kuře",
+     "reasons": [
+      "hint-category:poultry"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/h/kava-caj-a-kakao/h10071683?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -7054,6 +7257,43 @@
    "promo": true
   },
   {
+   "ingredientId": "smetana_33",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "KUNÍN Smetana krémová do omáček",
+   "czkPerKg": 54.5,
+   "price": 10.9,
+   "originalPrice": 35.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-27",
+   "confidence": 0.767,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "smetana_33",
+     "score": 0.767,
+     "via": "smetana",
+     "nameCs": "smetana ke šlehání 33 %",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "smetana_12",
+     "score": 0.461,
+     "via": "smetana 12 %",
+     "nameCs": "smetana na vaření 12 %",
+     "reasons": [
+      "sibling:other"
+     ]
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "kastany",
    "store": "albert",
    "source": "albert-text",
@@ -7141,6 +7381,50 @@
    "pack": "1 kg",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
+  },
+  {
+   "ingredientId": "kruti_prsa",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Krůtí roláda s petrželí",
+   "czkPerKg": 183.17,
+   "price": 109.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.767,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kruti_prsa",
+     "score": 0.767,
+     "via": "krůtí",
+     "nameCs": "krůtí prsa"
+    },
+    {
+     "ingredientId": "petrzel_koren",
+     "score": 0.178,
+     "via": "petržel",
+     "nameCs": "petržel kořenová",
+     "reasons": [
+      "hint-category:vegetable",
+      "title-category:vegetable"
+     ]
+    },
+    {
+     "ingredientId": "krutony",
+     "score": 0.153,
+     "via": "krutony",
+     "nameCs": "krutony",
+     "reasons": [
+      "hint-category:bakery",
+      "title-category:bakery"
+     ]
+    }
+   ],
+   "pack": "600 g",
+   "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "hovezi_ledvinky",
@@ -8278,6 +8562,40 @@
    "promo": true
   },
   {
+   "ingredientId": "prosecco",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "BURG SCHÖNECK Sekt",
+   "czkPerKg": 94.14,
+   "price": 69.9,
+   "originalPrice": 89.9,
+   "validFrom": "2026-10-30",
+   "validTo": "2026-11-01",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "prosecco",
+     "score": 0.714,
+     "via": "sekt",
+     "nameCs": "prosecco"
+    },
+    {
+     "ingredientId": "bulgur",
+     "score": 0.307,
+     "via": "burghul",
+     "nameCs": "bulgur",
+     "reasons": [
+      "hint-category:grain"
+     ]
+    }
+   ],
+   "pack": "0.75 l",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "zeleninova_smes_mrazena",
    "store": "albert",
    "source": "albert-text",
@@ -8613,6 +8931,30 @@
    "promo": true
   },
   {
+   "ingredientId": "kureci_prsa",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Korean Fried Chicken",
+   "czkPerKg": 285.43,
+   "price": 99.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kureci_prsa",
+     "score": 0.714,
+     "via": "chicken",
+     "nameCs": "kuřecí prsa"
+    }
+   ],
+   "pack": "350 g",
+   "url": "https://www.lidl.cz/q/api/category/h/mrazene-vyrobky/h10071049?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "gruyere",
    "store": "lidl",
    "source": "lidl",
@@ -8738,6 +9080,56 @@
    "promo": true
   },
   {
+   "ingredientId": "vejce",
+   "store": "globus",
+   "source": "globus",
+   "title": "M30 vejce podestýlky",
+   "czkPerKg": 42.36,
+   "price": 69.9,
+   "originalPrice": 159.9,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-22",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vejce",
+     "score": 0.714,
+     "via": "vejce",
+     "nameCs": "vejce"
+    }
+   ],
+   "pack": "30 ks",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "vejce",
+   "store": "globus",
+   "source": "globus",
+   "title": "M30 vejce podestýlky",
+   "czkPerKg": 36.3,
+   "price": 59.9,
+   "originalPrice": 159.9,
+   "validFrom": "2026-10-22",
+   "validTo": "2026-10-22",
+   "confidence": 0.714,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "vejce",
+     "score": 0.714,
+     "via": "vejce",
+     "nameCs": "vejce"
+    }
+   ],
+   "pack": "30 ks",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "promo": true
+  },
+  {
    "ingredientId": "susenky_maslove",
    "store": "albert",
    "source": "albert-text",
@@ -8791,6 +9183,31 @@
    ],
    "pack": "0.5 l",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "zavinace",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "NAUTICA Lahůdkové řezy / Zavináče",
+   "czkPerKg": 213.2,
+   "price": 46.9,
+   "originalPrice": 59.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "zavinace",
+     "score": 0.714,
+     "via": "zavináče",
+     "nameCs": "zavináče"
+    }
+   ],
+   "pack": "400 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -8936,6 +9353,30 @@
    ],
    "pack": "330 ml",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "voda",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "QAPKA Voda s příchutí",
+   "czkPerKg": 49.8,
+   "price": 24.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "voda",
+     "score": 0.714,
+     "via": "voda",
+     "nameCs": "voda"
+    }
+   ],
+   "pack": "0.5 l",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -9512,7 +9953,7 @@
     }
    ],
    "pack": "1000 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -9583,7 +10024,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -9797,8 +10238,41 @@
     }
    ],
    "pack": "1 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
+  },
+  {
+   "ingredientId": "caj_cerny",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "KOTSAM Čajový koncentrát s medem",
+   "czkPerKg": 344.66,
+   "price": 199.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.674,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "caj_cerny",
+     "score": 0.674,
+     "via": "čajový sáček",
+     "nameCs": "černý čaj"
+    },
+    {
+     "ingredientId": "med",
+     "score": 0.337,
+     "via": "medem",
+     "nameCs": "med",
+     "reasons": [
+      "hint-category:sweetener"
+     ]
+    }
+   ],
+   "pack": "580 g",
+   "url": "https://www.lidl.cz/q/api/category/h/kava-caj-a-kakao/h10071683?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "krabi_maso",
@@ -10045,7 +10519,7 @@
     }
    ],
    "pack": "200 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
@@ -11149,6 +11623,31 @@
    ],
    "pack": "1 kg",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "pekanove_orechy",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Pekanový pletenec",
+   "czkPerKg": 123.8,
+   "price": 9.9,
+   "originalPrice": 13.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-11-01",
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "pekanove_orechy",
+     "score": 0.671,
+     "via": "pekany",
+     "nameCs": "pekanové ořechy"
+    }
+   ],
+   "pack": "80 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -13678,7 +14177,7 @@
     }
    ],
    "pack": "150 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -14577,7 +15076,7 @@
     }
    ],
    "pack": "16 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -14709,7 +15208,7 @@
     }
    ],
    "pack": "44 praní",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -14738,7 +15237,7 @@
     }
    ],
    "pack": "44 praní",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -15028,7 +15527,7 @@
     }
    ],
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -15577,6 +16076,33 @@
    "promo": false
   },
   {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "CHEF SELECT Kimchi",
+   "czkPerKg": 228.29,
+   "price": 79.9,
+   "originalPrice": 99.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.5,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kimchi",
+     "score": 0.5,
+     "via": "kimchi",
+     "nameCs": "kimchi",
+     "reasons": [
+      "hint-category:condiment"
+     ]
+    }
+   ],
+   "pack": "350 g",
+   "url": "https://www.lidl.cz/q/api/category/h/hotova-jidla/h10071020?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Leifheit Set Clean Twist Disc Mop Black",
@@ -15818,7 +16344,7 @@
     }
    ],
    "pack": "10 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -16253,43 +16779,7 @@
     }
    ],
    "pack": "144 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl",
-   "title": "RADEGAST Ryze hořká 12",
-   "czkPerKg": 43.73,
-   "price": 174.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
-   "confidence": 0.399,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "ryze_predvarena",
-     "score": 0.399,
-     "via": "rýže ve varných sáčcích",
-     "nameCs": "předvařená rýže",
-     "reasons": [
-      "hint-category:grain"
-     ]
-    },
-    {
-     "ingredientId": "ryze_dlouhozrnna",
-     "score": 0.105,
-     "via": "rýže",
-     "nameCs": "dlouhozrnná rýže",
-     "reasons": [
-      "negative:hork",
-      "hint-category:grain"
-     ]
-    }
-   ],
-   "pack": "0.5 l",
-   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/pekarna/h10096086?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -16431,6 +16921,94 @@
    ],
    "pack": "350 g",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Skořicový šnek",
+   "czkPerKg": 123.8,
+   "price": 9.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.39,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "sneci",
+     "score": 0.39,
+     "via": "šneků",
+     "nameCs": "šneci",
+     "reasons": [
+      "hint-category:seafood"
+     ]
+    },
+    {
+     "ingredientId": "skorice_mleta",
+     "score": 0.336,
+     "via": "skořice",
+     "nameCs": "mletá skořice",
+     "reasons": [
+      "hint-category:spice"
+     ]
+    }
+   ],
+   "pack": "80 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "ZLATÝ BAŽANT",
+   "czkPerKg": 23.8,
+   "price": 11.9,
+   "originalPrice": 23.9,
+   "validFrom": "2026-10-30",
+   "validTo": "2026-11-01",
+   "confidence": 0.39,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "bazant",
+     "score": 0.39,
+     "via": "bažant",
+     "nameCs": "bažant",
+     "reasons": [
+      "hint-category:poultry"
+     ]
+    }
+   ],
+   "pack": "0.5 l",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Řemeslný pecen",
+   "czkPerKg": 49.9,
+   "price": 49.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-11-01",
+   "confidence": 0.39,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "veprova_pecene",
+     "score": 0.39,
+     "via": "pečeně",
+     "nameCs": "vepřová pečeně",
+     "reasons": [
+      "hint-category:meat"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -16651,6 +17229,42 @@
   {
    "store": "lidl",
    "source": "lidl",
+   "title": "COCA - COLA Creamy Vanilla / Creamy Vanilla Zero",
+   "czkPerKg": 19.93,
+   "price": 29.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.348,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "smetana_33",
+     "score": 0.348,
+     "via": "cream",
+     "nameCs": "smetana ke šlehání 33 %",
+     "reasons": [
+      "hint-category:dairy",
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "vanilka_lusk",
+     "score": 0.324,
+     "via": "vanilla",
+     "nameCs": "vanilkový lusk",
+     "reasons": [
+      "hint-category:spice"
+     ]
+    }
+   ],
+   "pack": "1.5 l",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
    "title": "Gran Maestro Primitivo Manduria DOC",
    "czkPerKg": 399.87,
    "price": 299.9,
@@ -16847,6 +17461,33 @@
    ],
    "pack": "160 g",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Dýňová kostka z kamenné pece",
+   "czkPerKg": 110.0,
+   "price": 6.6,
+   "originalPrice": 9.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-11-01",
+   "confidence": 0.312,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "hovezi_kosti",
+     "score": 0.312,
+     "via": "kosti",
+     "nameCs": "hovězí kosti",
+     "reasons": [
+      "hint-category:meat"
+     ]
+    }
+   ],
+   "pack": "60 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -17330,7 +17971,7 @@
     }
    ],
    "pack": "0.5 l",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -17687,7 +18328,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.75 l",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -18362,20 +19003,6 @@
    "promo": true
   },
   {
-   "store": "lidl",
-   "source": "lidl",
-   "title": "COCA-COLA / COCA-COLA Zero",
-   "price": 99.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1.75 l",
-   "url": "https://www.lidl.cz/q/api/category/h/napoje/h10071022?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
    "store": "globus",
    "source": "globus",
    "title": "Cappa Racing Rukavice Detroit S",
@@ -18720,7 +19347,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "800 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -18742,14 +19369,14 @@
    "store": "albert",
    "source": "albert-text",
    "title": "Delicious skládaná",
-   "price": 15.9,
+   "price": 99.9,
    "validFrom": "2026-10-21",
    "validTo": "2026-10-27",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
    "pack": "0.5 l",
-   "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "url": "https://letaky.albert.cz/43hm_akcni_letak/",
    "promo": true
   },
   {
@@ -19416,6 +20043,20 @@
    "promo": true
   },
   {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Falešná svíčková",
+   "price": 299.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/h/oleje-dochucovadla-a-omacky/h10096110?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "store": "albert",
    "source": "albert-text",
    "title": "Fantasy",
@@ -19497,7 +20138,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -19743,6 +20384,20 @@
    "promo": true
   },
   {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "GAMBRINUS 10 Originál",
+   "price": 94.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-27",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "store": "albert",
    "source": "albert-text",
    "title": "GIGA",
@@ -19951,7 +20606,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "200 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -20309,41 +20964,13 @@
   {
    "store": "lidl",
    "source": "lidl",
-   "title": "Hovězí karabáček",
-   "price": 259.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 kg",
-   "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl",
-   "title": "Hovězí tatarský biftek",
-   "price": 79.9,
-   "validFrom": "2026-10-19",
-   "validTo": "2026-10-21",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "250 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl",
    "title": "Hovězí tatarský biftek",
    "price": 89.9,
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
    "pack": "250 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -20891,14 +21518,13 @@
    "store": "albert",
    "source": "albert-text",
    "title": "Kunín",
-   "price": 14.9,
-   "originalPrice": 99.9,
+   "price": 74.5,
    "validFrom": "2026-10-21",
    "validTo": "2026-10-27",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
-   "pack": "200 g",
+   "pack": "1 l",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
    "promo": true
   },
@@ -20907,13 +21533,12 @@
    "source": "albert-text",
    "title": "Kunín",
    "price": 9.9,
-   "originalPrice": 99.9,
    "validFrom": "2026-10-21",
    "validTo": "2026-10-27",
    "confidence": 0.0,
    "status": "unmatched",
    "club": true,
-   "pack": "200 g",
+   "pack": "1 l",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
    "promo": true
   },
@@ -20971,6 +21596,20 @@
    "club": false,
    "pack": "250 g",
    "url": "https://www.lidl.cz/q/api/category/h/sladkosti-a-slane-snacky/h10096205?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "LUČINA Cheesecake",
+   "price": 159.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "510 g",
+   "url": "https://www.lidl.cz/q/api/category/h/syry-mlecne-vyrobky-a-vejce/h10095761?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -21123,7 +21762,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "100 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -21403,6 +22042,20 @@
    "promo": true
   },
   {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "MADETA Jihočeské AB",
+   "price": 24.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-27",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "250 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "MARGARET Pánev s povrchovou úpravou Qualum Basic Stone Edition, mix barev, 16cm",
@@ -21596,7 +22249,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.7 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -22067,7 +22720,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "154 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/sladkosti-a-slane-snacky/h10096205?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -22331,6 +22984,21 @@
    "club": true,
    "pack": "350 g",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "PILOS Palouček v kelímku",
+   "price": 19.9,
+   "originalPrice": 25.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "150 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -22674,7 +23342,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "125 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/syry-mlecne-vyrobky-a-vejce/h10095761?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -22763,6 +23431,21 @@
    "promo": true
   },
   {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Pizza kapsa",
+   "price": 8.9,
+   "originalPrice": 11.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-11-01",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "90 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Polotričko pánské",
@@ -22832,7 +23515,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -22846,7 +23529,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -23204,7 +23887,7 @@
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -24301,6 +24984,21 @@
   {
    "store": "lidl",
    "source": "lidl",
+   "title": "SAMYANG BULDAK Carbonara/Cheese",
+   "price": 39.9,
+   "originalPrice": 59.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "130 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
    "title": "SELECT & GO Sushi box Sapporo",
    "price": 159.9,
    "validFrom": "2026-10-22",
@@ -24309,7 +25007,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "462.5 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/hotova-jidla/h10071020?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -24323,8 +25021,23 @@
    "status": "unmatched",
    "club": false,
    "pack": "400 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "SNACK DAY Chipsy",
+   "price": 17.9,
+   "originalPrice": 27.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "150 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "store": "globus",
@@ -24900,6 +25613,21 @@
    "store": "lidl",
    "source": "lidl",
    "title": "Sushi",
+   "price": 59.9,
+   "originalPrice": 79.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "190 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Sushi",
    "price": 79.9,
    "confidence": 0.0,
    "status": "unmatched",
@@ -25068,7 +25796,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "500 ml",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/napoje/h10071022?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -25555,18 +26283,6 @@
   {
    "store": "lidl",
    "source": "lidl",
-   "title": "Výběr.prsa bez kosti a k. cca 800g",
-   "price": 199.9,
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1000 g",
-   "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "store": "lidl",
-   "source": "lidl",
    "title": "Wagyu burger",
    "price": 119.9,
    "confidence": 0.0,
@@ -25816,6 +26532,21 @@
    "club": true,
    "pack": "0.75 l",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "a 2 čtvrtky",
+   "price": 59.9,
+   "originalPrice": 99.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-10-27",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 kg",
+   "url": "https://letaky.albert.cz/43sm_akcni_letak/",
    "promo": true
   },
   {
@@ -26383,6 +27114,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 427,
- "unmatchedTotal": 778
+ "reviewTotal": 442,
+ "unmatchedTotal": 789
 }

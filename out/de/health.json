@@ -2,22 +2,22 @@
  "v": 1,
  "market": "de",
  "currency": "EUR",
- "run": "2026-10-21T06:52:32+00:00",
- "today": "2026-10-21",
+ "run": "2026-10-22T06:56:19+00:00",
+ "today": "2026-10-22",
  "sources": {
   "lidl_de": {
    "source": "lidl_de",
    "ok": true,
-   "count": 63,
+   "count": 62,
    "error": null,
    "stores": {
-    "lidl": 63
+    "lidl": 62
    },
-   "requests": 5,
-   "elapsed_s": 4.9,
+   "requests": 4,
+   "elapsed_s": 3.4,
    "notes": [
     "category API lists the online wine shop only; in-store groceries are not exposed",
-    "6 categories, 63 products"
+    "5 categories, 62 products"
    ],
    "tier": "primary",
    "market": "de"
@@ -25,9 +25,9 @@
  },
  "hosts": {
   "www.lidl.de": {
-   "requests": 5,
+   "requests": 4,
    "statuses": {
-    "200": 5
+    "200": 4
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -66,6 +66,6 @@
   "netto",
   "norma"
  ],
- "requests_made": 5,
+ "requests_made": 4,
  "cache_hits": 0
 }

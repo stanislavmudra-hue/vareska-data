@@ -1,39 +1,39 @@
 {
  "market": "cz",
  "currency": "CZK",
- "date": "2026-10-21",
- "generatedAt": "2026-10-21T06:53:04Z",
+ "date": "2026-10-22",
+ "generatedAt": "2026-10-22T06:56:49Z",
  "status": "warning",
  "ok": true,
  "run": {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "startedAt": null,
-  "finishedAt": "2026-10-21T06:53:04Z",
+  "finishedAt": "2026-10-22T06:56:49Z",
   "durationSec": null,
-  "offers": 2199,
-  "deals": 264,
-  "priced": 282,
-  "matched": 438,
-  "review": 427,
-  "unmatched": 778,
+  "offers": 2237,
+  "deals": 289,
+  "priced": 283,
+  "matched": 464,
+  "review": 442,
+  "unmatched": 789,
   "ok": true
  },
- "lastSuccessfulRun": "2026-10-21",
- "pricesUpdated": "2026-10-21",
+ "lastSuccessfulRun": "2026-10-22",
+ "pricesUpdated": "2026-10-22",
  "sources": {
   "albert-text": {
    "label": "albert-text",
    "ok": true,
    "skipped": false,
-   "items": 722,
-   "matched": 128,
+   "items": 719,
+   "matched": 125,
    "requests": 5,
-   "durationSec": 4.1,
+   "durationSec": 4.9,
    "error": null,
    "robots": null,
    "notes": [
     "Albert - 43HM_akcni_letak (2026-10-21..2026-10-27): 26 spreads, 403 offers",
-    "Albert - 43SM_akcni_letak (2026-10-21..2026-10-27): 22 spreads, 319 offers"
+    "Albert - 43SM_akcni_letak (2026-10-21..2026-10-27): 22 spreads, 316 offers"
    ],
    "tier": "secondary",
    "fetchedAt": null
@@ -45,7 +45,7 @@
    "items": 296,
    "matched": 58,
    "requests": 5,
-   "durationSec": 4.1,
+   "durationSec": 4.5,
    "error": null,
    "robots": null,
    "notes": [
@@ -62,7 +62,7 @@
    "items": 828,
    "matched": 87,
    "requests": 9,
-   "durationSec": 19.4,
+   "durationSec": 15.1,
    "error": null,
    "robots": null,
    "notes": [
@@ -78,7 +78,7 @@
    "items": 0,
    "matched": null,
    "requests": 2,
-   "durationSec": 1.5,
+   "durationSec": 2.0,
    "error": null,
    "robots": null,
    "notes": [
@@ -97,7 +97,7 @@
    "items": 0,
    "matched": null,
    "requests": 2,
-   "durationSec": 1.0,
+   "durationSec": 1.1,
    "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
    "robots": null,
    "notes": [
@@ -110,14 +110,14 @@
    "label": "lidl",
    "ok": true,
    "skipped": false,
-   "items": 313,
-   "matched": 146,
-   "requests": 15,
-   "durationSec": 14.3,
+   "items": 354,
+   "matched": 175,
+   "requests": 25,
+   "durationSec": 25.8,
    "error": null,
    "robots": null,
    "notes": [
-    "17 categories, 313 products"
+    "27 categories, 354 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -142,15 +142,15 @@
  "perStore": {
   "albert": {
    "priced": 168,
-   "deals": 84,
-   "rowsToday": 128,
+   "deals": 81,
+   "rowsToday": 125,
    "missingToday": false,
    "notFetched": false
   },
   "lidl": {
-   "priced": 138,
-   "deals": 39,
-   "rowsToday": 146,
+   "priced": 141,
+   "deals": 67,
+   "rowsToday": 175,
    "missingToday": false,
    "notFetched": false
   },
@@ -191,53 +191,18 @@
   }
  },
  "notFetched": [],
- "stale": 675,
- "dropped": 31,
+ "stale": 672,
+ "dropped": 0,
  "warnings": [
   "store 'kaufland' had no matched rows today (carry-forward only)",
   "store 'tesco' had no matched rows today (carry-forward only)",
-  "source 'kupi' failed: blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
-  "31 stale price(s) dropped (> 21 days)"
+  "source 'kupi' failed: blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo"
  ],
  "validation": {
   "ok": true,
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-10-08",
-   "market": "cz",
-   "generatedAt": "2026-10-08T08:15:28Z",
-   "durationSec": null,
-   "status": "warning",
-   "ok": true,
-   "offers": 2154,
-   "perSource": {
-    "albert-text": 752,
-    "billa-text": 326,
-    "globus": 738,
-    "lidl": 308,
-    "penny": 30
-   },
-   "matched": 465,
-   "review": 493,
-   "unmatched": 745,
-   "deals": 376,
-   "priced": 299,
-   "pairsPriced": 955,
-   "perStore": {
-    "albert": 177,
-    "lidl": 142,
-    "kaufland": 107,
-    "tesco": 91,
-    "billa": 136,
-    "penny": 116,
-    "globus": 186
-   },
-   "stale": 713,
-   "dropped": 7,
-   "warnings": 4
-  },
   {
    "date": "2026-10-09",
    "market": "cz",
@@ -688,6 +653,40 @@
    "stale": 675,
    "dropped": 31,
    "warnings": 4
+  },
+  {
+   "date": "2026-10-22",
+   "market": "cz",
+   "generatedAt": "2026-10-22T06:56:49Z",
+   "durationSec": null,
+   "status": "warning",
+   "ok": true,
+   "offers": 2237,
+   "perSource": {
+    "albert-text": 719,
+    "billa-text": 296,
+    "globus": 828,
+    "lidl": 354,
+    "penny": 40
+   },
+   "matched": 464,
+   "review": 442,
+   "unmatched": 789,
+   "deals": 289,
+   "priced": 283,
+   "pairsPriced": 914,
+   "perStore": {
+    "albert": 168,
+    "lidl": 141,
+    "kaufland": 109,
+    "tesco": 90,
+    "billa": 134,
+    "penny": 112,
+    "globus": 160
+   },
+   "stale": 672,
+   "dropped": 0,
+   "warnings": 3
   }
  ]
 }
