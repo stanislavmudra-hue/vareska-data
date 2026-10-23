@@ -1,15 +1,13 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-10-22",
- "generatedAt": "2026-10-22T06:56:49Z",
+ "date": "2026-10-23",
+ "generatedAt": "2026-10-23T06:52:50Z",
  "startedAt": null,
  "durationSec": null,
- "status": "warning",
+ "status": "ok",
  "ok": true,
- "warnings": [
-  "4 stale price(s) dropped (> 21 days)"
- ],
+ "warnings": [],
  "validation": {
   "ok": true,
   "errors": []
@@ -23,7 +21,7 @@
  },
  "matching": {
   "path": "out/pl/matched.json",
-  "generated": "2026-10-22",
+  "generated": "2026-10-23",
   "matched": 5,
   "review": 8,
   "unmatched": 39,
@@ -60,8 +58,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-10-21",
-  "today": "2026-10-22",
+  "previousUpdated": "2026-10-22",
+  "today": "2026-10-23",
   "rows": 5,
   "rowsPerStore": {
    "lidl": 5
@@ -94,7 +92,7 @@
     "store": "lidl",
     "czkPerKg": 10.0,
     "lastSeen": "2026-10-21",
-    "ageDays": 1,
+    "ageDays": 2,
     "reason": "not_matched_today"
    },
    {
@@ -102,7 +100,7 @@
     "store": "lidl",
     "czkPerKg": 39.9,
     "lastSeen": "2026-10-17",
-    "ageDays": 5,
+    "ageDays": 6,
     "reason": "not_matched_today"
    },
    {
@@ -110,7 +108,7 @@
     "store": "lidl",
     "czkPerKg": 23.5,
     "lastSeen": "2026-10-14",
-    "ageDays": 8,
+    "ageDays": 9,
     "reason": "not_matched_today"
    },
    {
@@ -118,7 +116,7 @@
     "store": "lidl",
     "czkPerKg": 117.1,
     "lastSeen": "2026-10-17",
-    "ageDays": 5,
+    "ageDays": 6,
     "reason": "not_matched_today"
    },
    {
@@ -126,7 +124,7 @@
     "store": "lidl",
     "czkPerKg": 95.9,
     "lastSeen": "2026-10-14",
-    "ageDays": 8,
+    "ageDays": 9,
     "reason": "not_matched_today"
    },
    {
@@ -134,7 +132,7 @@
     "store": "lidl",
     "czkPerKg": 47.9,
     "lastSeen": "2026-10-17",
-    "ageDays": 5,
+    "ageDays": 6,
     "reason": "not_matched_today"
    },
    {
@@ -142,42 +140,13 @@
     "store": "lidl",
     "czkPerKg": 10.0,
     "lastSeen": "2026-10-14",
-    "ageDays": 8,
+    "ageDays": 9,
     "reason": "not_matched_today"
    }
   ],
   "staleCount": 7,
-  "dropped": [
-   {
-    "ingredientId": "hruska",
-    "store": "lidl",
-    "czkPerKg": 4.0,
-    "lastSeen": "2026-09-30",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "maliny",
-    "store": "lidl",
-    "czkPerKg": 47.9,
-    "lastSeen": "2026-09-30",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "okurky_nakladacky",
-    "store": "lidl",
-    "czkPerKg": 4.0,
-    "lastSeen": "2026-09-30",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "porek",
-    "store": "lidl",
-    "czkPerKg": 22.4,
-    "lastSeen": "2026-09-30",
-    "ageDays": 22
-   }
-  ],
-  "droppedCount": 4,
+  "dropped": [],
+  "droppedCount": 0,
   "storesMissing": [
    "biedronka",
    "kaufland",
@@ -196,7 +165,7 @@
   "v": 2,
   "market": "pl",
   "currency": "PLN",
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "ingredients": 12,
   "pairs": 12,
   "perStore": {
@@ -229,8 +198,8 @@
   "v": 1,
   "market": "pl",
   "currency": "PLN",
-  "run": "2026-10-22T06:56:04+00:00",
-  "today": "2026-10-22",
+  "run": "2026-10-23T06:52:06+00:00",
+  "today": "2026-10-23",
   "sources": {
    "lidl_pl": {
     "source": "lidl_pl",
@@ -241,7 +210,7 @@
      "lidl": 53
     },
     "requests": 15,
-    "elapsed_s": 14.6,
+    "elapsed_s": 14.3,
     "notes": [
      "14 categories, 53 products"
     ],

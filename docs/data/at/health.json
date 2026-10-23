@@ -1,14 +1,14 @@
 {
  "market": "at",
  "currency": "EUR",
- "date": "2026-10-22",
- "generatedAt": "2026-10-22T06:56:50Z",
- "status": "warning",
+ "date": "2026-10-23",
+ "generatedAt": "2026-10-23T06:52:51Z",
+ "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "startedAt": null,
-  "finishedAt": "2026-10-22T06:56:50Z",
+  "finishedAt": "2026-10-23T06:52:51Z",
   "durationSec": null,
   "offers": 177,
   "deals": 9,
@@ -18,8 +18,8 @@
   "unmatched": 135,
   "ok": true
  },
- "lastSuccessfulRun": "2026-10-22",
- "pricesUpdated": "2026-10-22",
+ "lastSuccessfulRun": "2026-10-23",
+ "pricesUpdated": "2026-10-23",
  "sources": {
   "lidl_at": {
    "label": "lidl_at",
@@ -28,7 +28,7 @@
    "items": 177,
    "matched": 9,
    "requests": 16,
-   "durationSec": 15.5,
+   "durationSec": 15.2,
    "error": null,
    "robots": null,
    "notes": [
@@ -98,45 +98,13 @@
   "mpreis"
  ],
  "stale": 21,
- "dropped": 3,
- "warnings": [
-  "3 stale price(s) dropped (> 21 days)"
- ],
+ "dropped": 0,
+ "warnings": [],
  "validation": {
   "ok": true,
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-10-09",
-   "market": "at",
-   "generatedAt": "2026-10-09T08:19:44Z",
-   "durationSec": null,
-   "status": "ok",
-   "ok": true,
-   "offers": 134,
-   "perSource": {
-    "lidl_at": 134
-   },
-   "matched": 7,
-   "review": 29,
-   "unmatched": 91,
-   "deals": 7,
-   "priced": 29,
-   "pairsPriced": 29,
-   "perStore": {
-    "billa": 0,
-    "spar": 0,
-    "interspar": 0,
-    "hofer": 0,
-    "lidl": 29,
-    "penny": 0,
-    "mpreis": 0
-   },
-   "stale": 24,
-   "dropped": 0,
-   "warnings": 0
-  },
   {
    "date": "2026-10-10",
    "market": "at",
@@ -526,6 +494,36 @@
    "stale": 21,
    "dropped": 3,
    "warnings": 1
+  },
+  {
+   "date": "2026-10-23",
+   "market": "at",
+   "generatedAt": "2026-10-23T06:52:51Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 177,
+   "perSource": {
+    "lidl_at": 177
+   },
+   "matched": 9,
+   "review": 24,
+   "unmatched": 135,
+   "deals": 9,
+   "priced": 25,
+   "pairsPriced": 25,
+   "perStore": {
+    "billa": 0,
+    "spar": 0,
+    "interspar": 0,
+    "hofer": 0,
+    "lidl": 25,
+    "penny": 0,
+    "mpreis": 0
+   },
+   "stale": 21,
+   "dropped": 0,
+   "warnings": 0
   }
  ]
 }

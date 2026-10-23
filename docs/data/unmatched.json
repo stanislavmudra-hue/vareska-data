@@ -1,5 +1,5 @@
 {
- "date": "2026-10-22",
+ "date": "2026-10-23",
  "review": [
   {
    "ingredientId": "mouka_hladka",
@@ -138,6 +138,31 @@
    "promo": true
   },
   {
+   "ingredientId": "brambory",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Brambory marcipánové Zentis",
+   "czkPerKg": 329.0,
+   "price": 32.9,
+   "originalPrice": 39.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-12-05",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "brambory",
+     "score": 1.0,
+     "via": "rule:brambory",
+     "nameCs": "brambory"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=brambory",
+   "promo": true
+  },
+  {
    "ingredientId": "cedar",
    "store": "albert",
    "source": "albert-text",
@@ -160,6 +185,56 @@
    ],
    "pack": "100 g",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "chleb",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Chléb bez lepku Classic Maestro Schär",
+   "czkPerKg": 233.0,
+   "price": 69.9,
+   "originalPrice": 86.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "chleb",
+     "score": 1.0,
+     "via": "rule:chleb",
+     "nameCs": "chléb"
+    }
+   ],
+   "pack": "300 g",
+   "url": "https://www.kupi.cz/hledej?f=chl%C3%A9b",
+   "promo": true
+  },
+  {
+   "ingredientId": "chleb",
+   "store": "billa",
+   "source": "kupi",
+   "title": "Chléb bez lepku cereální Maestro Schär",
+   "czkPerKg": 283.0,
+   "price": 84.9,
+   "originalPrice": 89.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "chleb",
+     "score": 1.0,
+     "via": "rule:chleb",
+     "nameCs": "chléb"
+    }
+   ],
+   "pack": "300 g",
+   "url": "https://www.kupi.cz/hledej?f=chl%C3%A9b",
    "promo": true
   },
   {
@@ -232,6 +307,34 @@
    ],
    "pack": "500 g",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "drozdi_cerstve",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Droždí Dr. Oetker",
+   "czkPerKg": 947.62,
+   "price": 19.9,
+   "originalPrice": 11.46,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-11-03",
+   "confidence": 0.84,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "drozdi_cerstve",
+     "score": 1.0,
+     "via": "čerstvé droždí",
+     "nameCs": "čerstvé droždí",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    }
+   ],
+   "pack": "21 g",
+   "url": "https://www.kupi.cz/hledej?f=dro%C5%BEd%C3%AD",
    "promo": true
   },
   {
@@ -366,7 +469,7 @@
     }
    ],
    "pack": "510 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -499,6 +602,270 @@
    "promo": true
   },
   {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Květák",
+   "price": 24.9,
+   "originalPrice": 61.94,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mražený květák",
+     "nameCs": "mražený květák"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "květák",
+     "nameCs": "květák",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=kv%C4%9Bt%C3%A1k",
+   "promo": true
+  },
+  {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "albert",
+   "source": "kupi",
+   "title": "Květák",
+   "price": 24.9,
+   "originalPrice": 61.94,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mražený květák",
+     "nameCs": "mražený květák"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "květák",
+     "nameCs": "květák",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=kv%C4%9Bt%C3%A1k",
+   "promo": true
+  },
+  {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "lidl",
+   "source": "kupi",
+   "title": "Květák",
+   "price": 24.9,
+   "originalPrice": 61.94,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-25",
+   "confidence": 0.84,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mražený květák",
+     "nameCs": "mražený květák"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "květák",
+     "nameCs": "květák",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=kv%C4%9Bt%C3%A1k",
+   "promo": true
+  },
+  {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Květák",
+   "price": 29.9,
+   "originalPrice": 61.94,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mražený květák",
+     "nameCs": "mražený květák"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "květák",
+     "nameCs": "květák",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=kv%C4%9Bt%C3%A1k",
+   "promo": true
+  },
+  {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "penny",
+   "source": "kupi",
+   "title": "Květák",
+   "price": 29.9,
+   "originalPrice": 61.94,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-25",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mražený květák",
+     "nameCs": "mražený květák"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "květák",
+     "nameCs": "květák",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=kv%C4%9Bt%C3%A1k",
+   "promo": true
+  },
+  {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "lidl",
+   "source": "kupi",
+   "title": "Květák",
+   "price": 29.9,
+   "originalPrice": 61.94,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-25",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mražený květák",
+     "nameCs": "mražený květák"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "květák",
+     "nameCs": "květák",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=kv%C4%9Bt%C3%A1k",
+   "promo": true
+  },
+  {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "billa",
+   "source": "kupi",
+   "title": "Květák",
+   "price": 34.9,
+   "originalPrice": 61.94,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mražený květák",
+     "nameCs": "mražený květák"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "květák",
+     "nameCs": "květák",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=kv%C4%9Bt%C3%A1k",
+   "promo": true
+  },
+  {
+   "ingredientId": "kvetak_mrazeny",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Květák",
+   "price": 34.9,
+   "originalPrice": 61.94,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kvetak_mrazeny",
+     "score": 1.0,
+     "via": "mražený květák",
+     "nameCs": "mražený květák"
+    },
+    {
+     "ingredientId": "kvetak",
+     "score": 0.85,
+     "via": "květák",
+     "nameCs": "květák",
+     "reasons": [
+      "ambiguous:kvetak_mrazeny"
+     ]
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=kv%C4%9Bt%C3%A1k",
+   "promo": true
+  },
+  {
    "ingredientId": "kysane_zeli",
    "store": "albert",
    "source": "albert-text",
@@ -556,6 +923,30 @@
     }
    ],
    "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "mineralka",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Magnesia Mionetto Prosecco",
+   "czkPerKg": 225.33,
+   "price": 169.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mineralka",
+     "score": 1.0,
+     "via": "rule:re:\\bmagnesia\\b",
+     "nameCs": "minerální voda"
+    }
+   ],
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -656,6 +1047,37 @@
    "promo": true
   },
   {
+   "ingredientId": "broskve",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Mrazem sušené broskve Emco",
+   "czkPerKg": 1663.33,
+   "price": 49.9,
+   "originalPrice": 79.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-11-03",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "broskve",
+     "score": 0.9,
+     "via": "broskve",
+     "nameCs": "broskve"
+    },
+    {
+     "ingredientId": "susenky_maslove",
+     "score": 0.571,
+     "via": "sušenky",
+     "nameCs": "máslové sušenky"
+    }
+   ],
+   "pack": "30 g",
+   "url": "https://www.kupi.cz/hledej?f=broskve",
+   "promo": true
+  },
+  {
    "ingredientId": "mrkev",
    "store": "globus",
    "source": "globus",
@@ -677,7 +1099,56 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "mrkev",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Mrkev svazková",
+   "czkPerKg": 161.25,
+   "price": 12.9,
+   "originalPrice": 34.13,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mrkev",
+     "score": 1.0,
+     "via": "rule:mrkev",
+     "nameCs": "mrkev"
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=mrkev",
+   "promo": true
+  },
+  {
+   "ingredientId": "avokado",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Obalovací směsi Air Fryer Avokádo",
+   "czkPerKg": 630.0,
+   "price": 18.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "avokado",
+     "score": 0.9,
+     "via": "avokádo",
+     "nameCs": "avokádo"
+    }
+   ],
+   "pack": "30 g",
+   "url": "https://www.kupi.cz/hledej?f=avok%C3%A1do",
    "promo": true
   },
   {
@@ -1017,6 +1488,51 @@
    "promo": true
   },
   {
+   "ingredientId": "mleko_35",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "plnotučné mléko",
+   "czkPerKg": 99.8,
+   "price": 39.92,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mleko_35",
+     "score": 1.0,
+     "via": "plnotučné mléko",
+     "nameCs": "plnotučné mléko",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "mleko_15",
+     "score": 0.468,
+     "via": "mléko",
+     "nameCs": "polotučné mléko",
+     "reasons": [
+      "sibling:other"
+     ]
+    },
+    {
+     "ingredientId": "mleko_odtucnene",
+     "score": 0.468,
+     "via": "mléko 0,5 %",
+     "nameCs": "odtučněné mléko",
+     "reasons": [
+      "sibling:other"
+     ]
+    }
+   ],
+   "pack": "400 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "dyne_hokkaido",
    "store": "albert",
    "source": "albert-text",
@@ -1164,6 +1680,136 @@
   },
   {
    "ingredientId": "cervena_repa",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Červená řepa s křenem Beavia",
+   "czkPerKg": 314.0,
+   "price": 109.9,
+   "originalPrice": 179.48,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "cervena_repa",
+     "score": 0.9,
+     "via": "červená řepa",
+     "nameCs": "červená řepa"
+    },
+    {
+     "ingredientId": "cervena_repa_sterilovana",
+     "score": 0.797,
+     "via": "červená řepa v nálevu",
+     "nameCs": "sterilovaná červená řepa"
+    },
+    {
+     "ingredientId": "kren",
+     "score": 0.674,
+     "via": "křen",
+     "nameCs": "křen"
+    }
+   ],
+   "pack": "350 g",
+   "url": "https://www.kupi.cz/hledej?f=%C4%8Derven%C3%A1%20%C5%99epa",
+   "promo": true
+  },
+  {
+   "ingredientId": "kapr",
+   "store": "globus",
+   "source": "kupi",
+   "title": "Čokoládový kapr",
+   "czkPerKg": 672.5,
+   "price": 26.9,
+   "originalPrice": 34.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-12-05",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kapr",
+     "score": 0.9,
+     "via": "kapr",
+     "nameCs": "kapr"
+    },
+    {
+     "ingredientId": "cokolada_horka",
+     "score": 0.336,
+     "via": "čokoláda",
+     "nameCs": "hořká čokoláda",
+     "reasons": [
+      "title-category:other"
+     ]
+    }
+   ],
+   "pack": "40 g",
+   "url": "https://www.kupi.cz/hledej?f=kapr",
+   "promo": true
+  },
+  {
+   "ingredientId": "kapr",
+   "store": "penny",
+   "source": "kupi",
+   "title": "Čokoládový kapr",
+   "czkPerKg": 872.5,
+   "price": 34.9,
+   "originalPrice": 34.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kapr",
+     "score": 0.9,
+     "via": "kapr",
+     "nameCs": "kapr"
+    },
+    {
+     "ingredientId": "cokolada_horka",
+     "score": 0.336,
+     "via": "čokoláda",
+     "nameCs": "hořká čokoláda",
+     "reasons": [
+      "title-category:other"
+     ]
+    }
+   ],
+   "pack": "40 g",
+   "url": "https://www.kupi.cz/hledej?f=kapr",
+   "promo": true
+  },
+  {
+   "ingredientId": "redkvicky",
+   "store": "albert",
+   "source": "kupi",
+   "title": "Ředkvičky svazek",
+   "czkPerKg": 1237.5,
+   "price": 9.9,
+   "originalPrice": 15.15,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "redkvicky",
+     "score": 1.0,
+     "via": "rule:redkvicky",
+     "nameCs": "ředkvičky"
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=%C5%99edkvi%C4%8Dky",
+   "promo": true
+  },
+  {
+   "ingredientId": "cervena_repa",
    "store": "lidl",
    "source": "lidl",
    "title": "Řepa červená",
@@ -1189,6 +1835,30 @@
     }
    ],
    "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "brambory",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Šťouchadlo na brambory Spice & Soul",
+   "czkPerKg": 415.83,
+   "price": 49.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.84,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "brambory",
+     "score": 1.0,
+     "via": "rule:brambory",
+     "nameCs": "brambory"
+    }
+   ],
+   "pack": "1 ks",
+   "url": "https://www.kupi.cz/hledej?f=brambory",
    "promo": true
   },
   {
@@ -1413,6 +2083,46 @@
    ],
    "pack": "300 g",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "fazole_bile_sterilovane",
+   "store": "penny",
+   "source": "kupi",
+   "title": "Fazole v omáčce Penny",
+   "czkPerKg": 35.48,
+   "price": 14.9,
+   "originalPrice": 19.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "fazole_bile_sterilovane",
+     "score": 0.839,
+     "via": "fazole v nálevu",
+     "nameCs": "sterilované bílé fazole",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "fazolky_mrazene",
+     "score": 0.671,
+     "via": "fazolky mražené",
+     "nameCs": "mražené zelené fazolky"
+    },
+    {
+     "ingredientId": "fazolove_lusky",
+     "score": 0.671,
+     "via": "fazolky",
+     "nameCs": "zelené fazolky"
+    }
+   ],
+   "pack": "420 g",
+   "url": "https://www.kupi.cz/hledej?f=fazole",
    "promo": true
   },
   {
@@ -1647,7 +2357,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -2172,7 +2882,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -2278,8 +2988,52 @@
     }
    ],
    "pack": "250 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
+  },
+  {
+   "ingredientId": "mleko_bez_laktozy",
+   "store": "penny",
+   "source": "kupi",
+   "title": "Mléko trvanlivé bez laktózy Pragolaktos - 1,5% polotučné",
+   "czkPerKg": 17.38,
+   "price": 17.9,
+   "originalPrice": 26.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mleko_bez_laktozy",
+     "score": 0.839,
+     "via": "mléko bez laktózy",
+     "nameCs": "bezlaktózové mléko"
+    },
+    {
+     "ingredientId": "mleko_15",
+     "score": 0.713,
+     "via": "polotučné mléko",
+     "nameCs": "polotučné mléko",
+     "reasons": [
+      "sibling:chosen",
+      "ambiguous:mleko_bez_laktozy"
+     ]
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.435,
+     "via": "mléko 3,5 %",
+     "nameCs": "plnotučné mléko",
+     "reasons": [
+      "sibling:other"
+     ]
+    }
+   ],
+   "pack": "1 l",
+   "url": "https://www.kupi.cz/hledej?f=ml%C3%A9ko%20polotu%C4%8Dn%C3%A9",
+   "promo": true
   },
   {
    "ingredientId": "paprika_cervena",
@@ -2368,6 +3122,43 @@
   },
   {
    "ingredientId": "pstruh",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Pstruh duhový lososovitý filet",
+   "czkPerKg": 329.0,
+   "price": 32.9,
+   "originalPrice": 38.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "pstruh",
+     "score": 0.839,
+     "via": "pstruh duhový",
+     "nameCs": "pstruh"
+    },
+    {
+     "ingredientId": "losos",
+     "score": 0.702,
+     "via": "lososí filet",
+     "nameCs": "losos"
+    },
+    {
+     "ingredientId": "rybi_file",
+     "score": 0.674,
+     "via": "filety",
+     "nameCs": "rybí filé"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=losos",
+   "promo": true
+  },
+  {
+   "ingredientId": "pstruh",
    "store": "lidl",
    "source": "lidl",
    "title": "Pstruh potoční",
@@ -2388,6 +3179,74 @@
    ],
    "pack": "100 g",
    "url": "https://www.lidl.cz/q/api/category/h/ryby-a-morske-plody/h10071050?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "rajcata_sterilovana",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Rajčata Cirio",
+   "czkPerKg": 74.75,
+   "price": 29.9,
+   "originalPrice": 39.7,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.839,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "rajcata_sterilovana",
+     "score": 0.839,
+     "via": "rajčata v plechovce",
+     "nameCs": "sterilovaná rajčata"
+    },
+    {
+     "ingredientId": "rajcata",
+     "score": 0.713,
+     "via": "rajčata",
+     "nameCs": "rajčata",
+     "reasons": [
+      "ambiguous:rajcata_sterilovana"
+     ]
+    }
+   ],
+   "pack": "400 g",
+   "url": "https://www.kupi.cz/hledej?f=raj%C4%8Data",
+   "promo": true
+  },
+  {
+   "ingredientId": "rajcata_sterilovana",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Rajčata Cirio",
+   "czkPerKg": 51.03,
+   "price": 19.9,
+   "originalPrice": 39.7,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "rajcata_sterilovana",
+     "score": 0.839,
+     "via": "rajčata v plechovce",
+     "nameCs": "sterilovaná rajčata"
+    },
+    {
+     "ingredientId": "rajcata",
+     "score": 0.713,
+     "via": "rajčata",
+     "nameCs": "rajčata",
+     "reasons": [
+      "ambiguous:rajcata_sterilovana"
+     ]
+    }
+   ],
+   "pack": "390 g",
+   "url": "https://www.kupi.cz/hledej?f=raj%C4%8Data",
    "promo": true
   },
   {
@@ -2450,6 +3309,86 @@
    ],
    "pack": "200 g",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_trvanlivy",
+   "store": "penny",
+   "source": "kupi",
+   "title": "Salám Paprikáš Řezníkův talíř",
+   "czkPerKg": 199.0,
+   "price": 19.9,
+   "originalPrice": 32.21,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.839,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám"
+    },
+    {
+     "ingredientId": "salam_pikantni",
+     "score": 0.713,
+     "via": "salám",
+     "nameCs": "pikantní salám",
+     "reasons": [
+      "ambiguous:salam_trvanlivy"
+     ]
+    },
+    {
+     "ingredientId": "paprika_bila",
+     "score": 0.624,
+     "via": "světlá paprika",
+     "nameCs": "bílá paprika"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=paprika",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_trvanlivy",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Salám česnekový Kmotr",
+   "czkPerKg": 195.88,
+   "price": 99.9,
+   "originalPrice": 159.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.839,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám"
+    },
+    {
+     "ingredientId": "salam_pikantni",
+     "score": 0.713,
+     "via": "salám",
+     "nameCs": "pikantní salám",
+     "reasons": [
+      "ambiguous:salam_trvanlivy"
+     ]
+    },
+    {
+     "ingredientId": "cesnek",
+     "score": 0.624,
+     "via": "česnek",
+     "nameCs": "česnek"
+    }
+   ],
+   "pack": "510 g",
+   "url": "https://www.kupi.cz/hledej?f=%C4%8Desnek",
    "promo": true
   },
   {
@@ -2599,6 +3538,46 @@
    ],
    "pack": "1 kg",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "taveny_syr",
+   "store": "albert",
+   "source": "kupi",
+   "title": "Sýr tavený smetanový Madetka",
+   "czkPerKg": 239.0,
+   "price": 23.9,
+   "originalPrice": 29.71,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "taveny_syr",
+     "score": 0.839,
+     "via": "tavený sýr",
+     "nameCs": "tavený sýr"
+    },
+    {
+     "ingredientId": "eidam",
+     "score": 0.725,
+     "via": "sýr",
+     "nameCs": "eidam"
+    },
+    {
+     "ingredientId": "smetanovy_syr",
+     "score": 0.713,
+     "via": "smetanový sýr",
+     "nameCs": "smetanový sýr",
+     "reasons": [
+      "ambiguous:taveny_syr"
+     ]
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=smetanov%C3%BD%20s%C3%BDr",
    "promo": true
   },
   {
@@ -3120,7 +4099,7 @@
     }
    ],
    "pack": "250 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -3264,6 +4243,39 @@
    "pack": "100 g",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
+  },
+  {
+   "ingredientId": "smetanovy_liker",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Baileys Irish Cream",
+   "czkPerKg": 474.84,
+   "price": 349.01,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.836,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "smetanovy_liker",
+     "score": 0.836,
+     "via": "irish cream",
+     "nameCs": "smetanový likér"
+    },
+    {
+     "ingredientId": "smetana_33",
+     "score": 0.714,
+     "via": "cream",
+     "nameCs": "smetana ke šlehání 33 %",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    }
+   ],
+   "pack": "0.7 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
   },
   {
    "ingredientId": "rajcata_sterilovana",
@@ -3868,6 +4880,51 @@
    "promo": false
   },
   {
+   "ingredientId": "mleko_15",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Bohemilk Mléko",
+   "czkPerKg": 82.14,
+   "price": 27.92,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.8,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mleko_15",
+     "score": 0.8,
+     "via": "mléko",
+     "nameCs": "polotučné mléko",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.48,
+     "via": "mléko 3,5 %",
+     "nameCs": "plnotučné mléko",
+     "reasons": [
+      "sibling:other"
+     ]
+    },
+    {
+     "ingredientId": "mleko_odtucnene",
+     "score": 0.48,
+     "via": "mléko 0,5 %",
+     "nameCs": "odtučněné mléko",
+     "reasons": [
+      "sibling:other"
+     ]
+    }
+   ],
+   "pack": "330 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "otruby_psenicne",
    "store": "billa",
    "source": "billa-text",
@@ -3937,6 +4994,30 @@
    "pack": "200 g",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
+  },
+  {
+   "ingredientId": "pomazankove_maslo",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Hamé Pomazánka",
+   "czkPerKg": 149.0,
+   "price": 14.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.8,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "pomazankove_maslo",
+     "score": 0.8,
+     "via": "pomazánkové",
+     "nameCs": "pomazánkové máslo"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
   },
   {
    "ingredientId": "hrebenatky_mrazene",
@@ -4055,6 +5136,30 @@
    "promo": false
   },
   {
+   "ingredientId": "eidam",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Madeta Jihočeský syreček",
+   "czkPerKg": 221.22,
+   "price": 19.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.8,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "eidam",
+     "score": 0.8,
+     "via": "sýr",
+     "nameCs": "eidam"
+    }
+   ],
+   "pack": "90 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "mak",
    "store": "albert",
    "source": "albert-text",
@@ -4129,6 +5234,54 @@
    "promo": true
   },
   {
+   "ingredientId": "pomazankove_maslo",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Milka Pomazánka",
+   "czkPerKg": 228.29,
+   "price": 79.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.8,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "pomazankove_maslo",
+     "score": 0.8,
+     "via": "pomazánkové",
+     "nameCs": "pomazánkové máslo"
+    }
+   ],
+   "pack": "350 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "ingredientId": "pomazankove_maslo",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Milka Pomazánka",
+   "czkPerKg": 228.29,
+   "price": 79.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.8,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "pomazankove_maslo",
+     "score": 0.8,
+     "via": "pomazánkové",
+     "nameCs": "pomazánkové máslo"
+    }
+   ],
+   "pack": "350 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "zampiony_hnede",
    "store": "albert",
    "source": "albert-text",
@@ -4154,6 +5307,30 @@
   },
   {
    "ingredientId": "fyzalis",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Nescafé Gold",
+   "czkPerKg": 650.98,
+   "price": 179.02,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.8,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "fyzalis",
+     "score": 0.8,
+     "via": "goldenberry",
+     "nameCs": "fyzalis"
+    }
+   ],
+   "pack": "275 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "ingredientId": "fyzalis",
    "store": "billa",
    "source": "billa-text",
    "title": "Nescafé Gold",
@@ -4174,6 +5351,31 @@
    ],
    "pack": "500 g",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "prosecco",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Olma Cavalier",
+   "czkPerKg": 106.92,
+   "price": 13.9,
+   "originalPrice": 18.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.8,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "prosecco",
+     "score": 0.8,
+     "via": "cava",
+     "nameCs": "prosecco"
+    }
+   ],
+   "pack": "130 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -4621,7 +5823,7 @@
     }
    ],
    "pack": "280 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -4694,7 +5896,7 @@
     }
    ],
    "pack": "0.7 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -4949,7 +6151,7 @@
     }
    ],
    "pack": "212 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -5089,6 +6291,70 @@
    ],
    "pack": "1 kg",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "smetana_33",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Dreamies Creamy",
+   "czkPerKg": 622.5,
+   "price": 24.9,
+   "originalPrice": 229.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "smetana_33",
+     "score": 0.78,
+     "via": "cream",
+     "nameCs": "smetana ke šlehání 33 %",
+     "reasons": [
+      "sibling:chosen"
+     ]
+    }
+   ],
+   "pack": "40 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "ingredientId": "eidam",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "ERIDANOUS Nakládaný sýr v oleji",
+   "czkPerKg": 228.29,
+   "price": 79.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "eidam",
+     "score": 0.78,
+     "via": "sýr",
+     "nameCs": "eidam"
+    },
+    {
+     "ingredientId": "syridlo",
+     "score": 0.624,
+     "via": "syřidlo",
+     "nameCs": "syřidlo"
+    },
+    {
+     "ingredientId": "syrovatka",
+     "score": 0.624,
+     "via": "syrovátka",
+     "nameCs": "syrovátka"
+    }
+   ],
+   "pack": "350 g",
+   "url": "https://www.lidl.cz/q/api/category/h/syry-mlecne-vyrobky-a-vejce/h10095761?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -5455,7 +6721,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -5858,6 +7124,30 @@
    "promo": true
   },
   {
+   "ingredientId": "cokolada_horka",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Milka Extra Fun Čokoláda",
+   "czkPerKg": 332.73,
+   "price": 49.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "cokolada_horka",
+     "score": 0.78,
+     "via": "čokoláda",
+     "nameCs": "hořká čokoláda"
+    }
+   ],
+   "pack": "150 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "cokolada_mlecna",
    "store": "globus",
    "source": "globus",
@@ -5895,6 +7185,30 @@
    ],
    "pack": "284 g",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "prosecco",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Mucha Sekt",
+   "czkPerKg": 134.55,
+   "price": 99.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "prosecco",
+     "score": 0.78,
+     "via": "sekt",
+     "nameCs": "prosecco"
+    }
+   ],
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -5976,42 +7290,6 @@
    ],
    "pack": "750 g",
    "url": "https://www.lidl.cz/q/api/category/h/trvanlive-potraviny/h10096095?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "ingredientId": "eidam",
-   "store": "lidl",
-   "source": "lidl",
-   "title": "Nakládaný sýr v oleji",
-   "czkPerKg": 228.29,
-   "price": 79.9,
-   "validFrom": "2026-10-29",
-   "validTo": "2026-11-01",
-   "confidence": 0.78,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "eidam",
-     "score": 0.78,
-     "via": "sýr",
-     "nameCs": "eidam"
-    },
-    {
-     "ingredientId": "syridlo",
-     "score": 0.624,
-     "via": "syřidlo",
-     "nameCs": "syřidlo"
-    },
-    {
-     "ingredientId": "syrovatka",
-     "score": 0.624,
-     "via": "syrovátka",
-     "nameCs": "syrovátka"
-    }
-   ],
-   "pack": "350 g",
-   "url": "https://www.lidl.cz/q/api/category/h/syry-mlecne-vyrobky-a-vejce/h10095761?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -6128,7 +7406,31 @@
     }
    ],
    "pack": "400 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "penne",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Omáčka na těstoviny",
+   "czkPerKg": 80.81,
+   "price": 29.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "penne",
+     "score": 0.78,
+     "via": "těstoviny",
+     "nameCs": "penne"
+    }
+   ],
+   "pack": "370 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -6535,6 +7837,66 @@
    "promo": true
   },
   {
+   "ingredientId": "penne",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "RUMMO Těstoviny",
+   "czkPerKg": 79.8,
+   "price": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "penne",
+     "score": 0.78,
+     "via": "těstoviny",
+     "nameCs": "penne"
+    },
+    {
+     "ingredientId": "rum",
+     "score": 0.671,
+     "via": "rum",
+     "nameCs": "rum"
+    }
+   ],
+   "pack": "500 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "ingredientId": "penne",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "RUMMO Těstoviny",
+   "czkPerKg": 79.8,
+   "price": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.78,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "penne",
+     "score": 0.78,
+     "via": "těstoviny",
+     "nameCs": "penne"
+    },
+    {
+     "ingredientId": "rum",
+     "score": 0.671,
+     "via": "rum",
+     "nameCs": "rum"
+    }
+   ],
+   "pack": "500 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "salatova_smes",
    "store": "globus",
    "source": "globus",
@@ -6722,7 +8084,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -6765,7 +8127,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -6794,6 +8156,54 @@
    "promo": true
   },
   {
+   "ingredientId": "zazvor",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Teekanne Zázvor",
+   "czkPerKg": 1254.29,
+   "price": 43.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "zazvor",
+     "score": 0.78,
+     "via": "zázvor",
+     "nameCs": "zázvor"
+    }
+   ],
+   "pack": "35 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "ingredientId": "zazvor",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Teekanne Zázvor",
+   "czkPerKg": 1140.0,
+   "price": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.78,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "zazvor",
+     "score": 0.78,
+     "via": "zázvor",
+     "nameCs": "zázvor"
+    }
+   ],
+   "pack": "35 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "veprova_krkovice",
    "store": "billa",
    "source": "billa-text",
@@ -6815,6 +8225,43 @@
    ],
    "pack": "600 g",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "eidam",
+   "store": "albert",
+   "source": "kupi",
+   "title": "Tvarohový sýr Almette Hochland",
+   "czkPerKg": 266.0,
+   "price": 39.9,
+   "originalPrice": 47.43,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "eidam",
+     "score": 0.78,
+     "via": "sýr",
+     "nameCs": "eidam"
+    },
+    {
+     "ingredientId": "tvaroh",
+     "score": 0.671,
+     "via": "tvaroh",
+     "nameCs": "tvaroh"
+    },
+    {
+     "ingredientId": "syridlo",
+     "score": 0.624,
+     "via": "syřidlo",
+     "nameCs": "syřidlo"
+    }
+   ],
+   "pack": "150 g",
+   "url": "https://www.kupi.cz/hledej?f=tvaroh",
    "promo": true
   },
   {
@@ -7002,6 +8449,31 @@
    "promo": true
   },
   {
+   "ingredientId": "vanocka",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Ölz Vánočka",
+   "czkPerKg": 99.8,
+   "price": 49.9,
+   "originalPrice": 67.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vanocka",
+     "score": 0.78,
+     "via": "vánočka",
+     "nameCs": "vánočka"
+    }
+   ],
+   "pack": "500 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "tlacenka",
    "store": "albert",
    "source": "albert-text",
@@ -7047,7 +8519,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -7229,7 +8701,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": false
   },
   {
@@ -7379,7 +8851,7 @@
     }
    ],
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": false
   },
   {
@@ -7613,6 +9085,45 @@
    "promo": true
   },
   {
+   "ingredientId": "rajcata_sterilovana",
+   "store": "albert",
+   "source": "kupi",
+   "title": "Rajčata sekaná Gustona",
+   "czkPerKg": 49.75,
+   "price": 19.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.767,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "rajcata_sterilovana",
+     "score": 0.767,
+     "via": "rajčata v plechovce",
+     "nameCs": "sterilovaná rajčata"
+    },
+    {
+     "ingredientId": "sekana_hotova",
+     "score": 0.714,
+     "via": "sekaná",
+     "nameCs": "sekaná"
+    },
+    {
+     "ingredientId": "rajcata",
+     "score": 0.652,
+     "via": "rajčata",
+     "nameCs": "rajčata",
+     "reasons": [
+      "ambiguous:rajcata_sterilovana"
+     ]
+    }
+   ],
+   "pack": "400 g",
+   "url": "https://www.kupi.cz/hledej?f=raj%C4%8Data",
+   "promo": true
+  },
+  {
    "ingredientId": "tunak_konzerva",
    "store": "lidl",
    "source": "lidl",
@@ -7652,6 +9163,46 @@
    "pack": "80 g",
    "url": "https://www.lidl.cz/q/api/category/h/trvanlive-potraviny/h10096095?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "ingredientId": "salam_trvanlivy",
+   "store": "kaufland",
+   "source": "kupi",
+   "title": "Salám Paprikáš K-Jarmark",
+   "czkPerKg": 229.0,
+   "price": 22.9,
+   "originalPrice": 31.9,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.767,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.767,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám"
+    },
+    {
+     "ingredientId": "salam_pikantni",
+     "score": 0.652,
+     "via": "salám",
+     "nameCs": "pikantní salám",
+     "reasons": [
+      "ambiguous:salam_trvanlivy"
+     ]
+    },
+    {
+     "ingredientId": "paprika_bila",
+     "score": 0.571,
+     "via": "světlá paprika",
+     "nameCs": "bílá paprika"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.kupi.cz/hledej?f=paprika",
+   "promo": true
   },
   {
    "ingredientId": "salatova_smes",
@@ -7902,6 +9453,36 @@
    "promo": true
   },
   {
+   "ingredientId": "voda",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "voda bez cukru a sladidel",
+   "czkPerKg": 7.94,
+   "price": 11.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.767,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "voda",
+     "score": 0.767,
+     "via": "voda",
+     "nameCs": "voda"
+    },
+    {
+     "ingredientId": "cukr",
+     "score": 0.714,
+     "via": "cukr",
+     "nameCs": "cukr krystal"
+    }
+   ],
+   "pack": "1.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "zampiony",
    "store": "penny",
    "source": "penny",
@@ -8108,6 +9689,80 @@
    ],
    "pack": "180 g",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_sunkovy",
+   "store": "tesco",
+   "source": "kupi",
+   "title": "Kuřecí salám Junior DZ Klatovy",
+   "czkPerKg": 79.75,
+   "price": 31.9,
+   "originalPrice": 41.1,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-27",
+   "confidence": 0.742,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "salam_sunkovy",
+     "score": 0.742,
+     "via": "junior salám",
+     "nameCs": "šunkový salám"
+    },
+    {
+     "ingredientId": "salam_pikantni",
+     "score": 0.647,
+     "via": "salám",
+     "nameCs": "pikantní salám"
+    },
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.647,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám"
+    }
+   ],
+   "pack": "400 g",
+   "url": "https://www.kupi.cz/hledej?f=ku%C5%99e",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_sunkovy",
+   "store": "billa",
+   "source": "kupi",
+   "title": "Kuřecí salám Junior DZ Klatovy",
+   "czkPerKg": 89.75,
+   "price": 35.9,
+   "originalPrice": 41.1,
+   "validFrom": "2026-10-23",
+   "validTo": "2026-11-10",
+   "confidence": 0.742,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_sunkovy",
+     "score": 0.742,
+     "via": "junior salám",
+     "nameCs": "šunkový salám"
+    },
+    {
+     "ingredientId": "salam_pikantni",
+     "score": 0.647,
+     "via": "salám",
+     "nameCs": "pikantní salám"
+    },
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.647,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám"
+    }
+   ],
+   "pack": "400 g",
+   "url": "https://www.kupi.cz/hledej?f=ku%C5%99e",
    "promo": true
   },
   {
@@ -8472,7 +10127,7 @@
     }
    ],
    "pack": "2 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -8668,7 +10323,7 @@
     }
    ],
    "pack": "100 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -8708,7 +10363,7 @@
     }
    ],
    "pack": "360 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -8748,7 +10403,7 @@
     }
    ],
    "pack": "350 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -8843,6 +10498,43 @@
    "promo": true
   },
   {
+   "ingredientId": "hovezi_rostenec",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Frosta Rybí steaky",
+   "czkPerKg": 239.6,
+   "price": 59.9,
+   "originalPrice": 79.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "hovezi_rostenec",
+     "score": 0.714,
+     "via": "steak",
+     "nameCs": "hovězí roštěná"
+    },
+    {
+     "ingredientId": "tbone_steak",
+     "score": 0.678,
+     "via": "steak s kostí",
+     "nameCs": "T-bone steak"
+    },
+    {
+     "ingredientId": "rybiz_cerveny",
+     "score": 0.571,
+     "via": "rybíz",
+     "nameCs": "červený rybíz"
+    }
+   ],
+   "pack": "250 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "hranolky_mrazene",
    "store": "globus",
    "source": "globus",
@@ -8864,7 +10556,7 @@
     }
    ],
    "pack": "750 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -9087,8 +10779,8 @@
    "czkPerKg": 42.36,
    "price": 69.9,
    "originalPrice": 159.9,
-   "validFrom": "2026-10-22",
-   "validTo": "2026-10-22",
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-24",
    "confidence": 0.714,
    "status": "review",
    "club": false,
@@ -9112,8 +10804,8 @@
    "czkPerKg": 36.3,
    "price": 59.9,
    "originalPrice": 159.9,
-   "validFrom": "2026-10-22",
-   "validTo": "2026-10-22",
+   "validFrom": "2026-10-23",
+   "validTo": "2026-10-24",
    "confidence": 0.714,
    "status": "review",
    "club": true,
@@ -9313,6 +11005,31 @@
    ],
    "pack": "1 kg",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "promo": true
+  },
+  {
+   "ingredientId": "anglicka_slanina",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Poctivá selská slanina",
+   "czkPerKg": 299.0,
+   "price": 29.9,
+   "originalPrice": 47.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "anglicka_slanina",
+     "score": 0.714,
+     "via": "slanina",
+     "nameCs": "anglická slanina"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -9613,7 +11330,7 @@
     }
    ],
    "pack": "0.5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -9638,7 +11355,7 @@
     }
    ],
    "pack": "0.5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -9783,6 +11500,30 @@
    ],
    "pack": "1 kg",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "olej_slunecnicovy",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "se silou esenciálních olejů",
+   "czkPerKg": 282.39,
+   "price": 129.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "olej_slunecnicovy",
+     "score": 0.714,
+     "via": "olej",
+     "nameCs": "slunečnicový olej"
+    }
+   ],
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -10134,7 +11875,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -10238,7 +11979,7 @@
     }
    ],
    "pack": "1 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
@@ -10616,7 +12357,7 @@
     }
    ],
    "pack": "500 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -10824,7 +12565,7 @@
     }
    ],
    "pack": "75 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -10861,7 +12602,7 @@
     }
    ],
    "pack": "75 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -10927,7 +12668,7 @@
     }
    ],
    "pack": "500 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -11036,7 +12777,7 @@
     }
    ],
    "pack": "57 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -11626,6 +13367,30 @@
    "promo": true
   },
   {
+   "ingredientId": "zampiony_hnede",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Nescafé Crema Refill",
+   "czkPerKg": 895.0,
+   "price": 179.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "zampiony_hnede",
+     "score": 0.671,
+     "via": "cremini",
+     "nameCs": "hnědé žampiony"
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "pekanove_orechy",
    "store": "lidl",
    "source": "lidl",
@@ -11727,6 +13492,30 @@
    "store": "albert",
    "source": "albert-text",
    "title": "Republica Exclusive",
+   "czkPerKg": 1141.41,
+   "price": 798.99,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "cervena_repa",
+     "score": 0.671,
+     "via": "řepu",
+     "nameCs": "červená řepa"
+    }
+   ],
+   "pack": "0.7 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "ingredientId": "cervena_repa",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Republica Exclusive",
    "czkPerKg": 438.0,
    "price": 219.0,
    "validFrom": "2026-10-21",
@@ -11792,6 +13581,30 @@
    ],
    "pack": "1 ks",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "ingredientId": "eidam",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Sýrařův výběr",
+   "czkPerKg": 179.6,
+   "price": 17.96,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "eidam",
+     "score": 0.671,
+     "via": "sýr",
+     "nameCs": "eidam"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -12041,7 +13854,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -12131,7 +13944,7 @@
     }
    ],
    "pack": "820 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -12231,7 +14044,7 @@
     }
    ],
    "pack": "0.7 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -12274,7 +14087,7 @@
     }
    ],
    "pack": "40 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -12356,7 +14169,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -12639,7 +14452,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -12996,6 +14809,30 @@
    "promo": true
   },
   {
+   "ingredientId": "amarant",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Rosteme s láskou.",
+   "czkPerKg": 458.0,
+   "price": 229.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.624,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "amarant",
+     "score": 0.624,
+     "via": "laskavec",
+     "nameCs": "amarant"
+    }
+   ],
+   "pack": "500 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "med",
    "store": "albert",
    "source": "albert-text",
@@ -13041,6 +14878,54 @@
    ],
    "pack": "0.75 l",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "taro",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Viña Tarapacá",
+   "czkPerKg": 318.67,
+   "price": 239.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.624,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "taro",
+     "score": 0.624,
+     "via": "tara",
+     "nameCs": "taro"
+    }
+   ],
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "ingredientId": "taro",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Viña Tarapacá",
+   "czkPerKg": 133.2,
+   "price": 99.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.624,
+   "status": "review",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "taro",
+     "score": 0.624,
+     "via": "tara",
+     "nameCs": "taro"
+    }
+   ],
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -13098,6 +14983,30 @@
    "pack": "2 ks",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
+  },
+  {
+   "ingredientId": "morsky_jazyk",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Zacapa Solera",
+   "czkPerKg": 398.0,
+   "price": 199.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.624,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "morsky_jazyk",
+     "score": 0.624,
+     "via": "sole",
+     "nameCs": "mořský jazyk"
+    }
+   ],
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
   },
   {
    "ingredientId": "kava_mleta",
@@ -13362,6 +15271,108 @@
    "promo": true
   },
   {
+   "ingredientId": "pomazankove_maslo",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Pom-Bär Crizzlies",
+   "czkPerKg": 386.52,
+   "price": 59.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.614,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "pomazankove_maslo",
+     "score": 0.614,
+     "via": "pomazánkové",
+     "nameCs": "pomazánkové máslo"
+    },
+    {
+     "ingredientId": "pomelo",
+     "score": 0.614,
+     "via": "pomelo",
+     "nameCs": "pomelo"
+    },
+    {
+     "ingredientId": "pomeranc",
+     "score": 0.614,
+     "via": "pomeranč",
+     "nameCs": "pomeranč"
+    }
+   ],
+   "pack": "155 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "ingredientId": "pomazankove_maslo",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Pom-Bär Kyblík",
+   "czkPerKg": 499.7,
+   "price": 149.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.614,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "pomazankove_maslo",
+     "score": 0.614,
+     "via": "pomazánkové",
+     "nameCs": "pomazánkové máslo"
+    },
+    {
+     "ingredientId": "pomelo",
+     "score": 0.614,
+     "via": "pomelo",
+     "nameCs": "pomelo"
+    },
+    {
+     "ingredientId": "pomeranc",
+     "score": 0.614,
+     "via": "pomeranč",
+     "nameCs": "pomeranč"
+    }
+   ],
+   "pack": "300 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "ingredientId": "karambola",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Stará žitná myslivecká",
+   "czkPerKg": 412.86,
+   "price": 289.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.614,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "karambola",
+     "score": 0.614,
+     "via": "starfruit",
+     "nameCs": "karambola"
+    },
+    {
+     "ingredientId": "musli_smes",
+     "score": 0.571,
+     "via": "mysli",
+     "nameCs": "müsli směs"
+    }
+   ],
+   "pack": "0.7 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "ingredientId": "tamari",
    "store": "globus",
    "source": "globus",
@@ -13445,8 +15456,8 @@
    "store": "globus",
    "source": "globus",
    "title": "Blue seven kabát pánský",
-   "price": 1699.0,
-   "originalPrice": 2299.0,
+   "price": 1499.0,
+   "originalPrice": 1999.0,
    "validFrom": "2026-10-13",
    "validTo": "2026-11-10",
    "confidence": 0.58,
@@ -13468,8 +15479,8 @@
    "store": "globus",
    "source": "globus",
    "title": "Blue seven kabát pánský",
-   "price": 1499.0,
-   "originalPrice": 1999.0,
+   "price": 1699.0,
+   "originalPrice": 2299.0,
    "validFrom": "2026-10-13",
    "validTo": "2026-11-10",
    "confidence": 0.58,
@@ -13720,7 +15731,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -13793,6 +15804,35 @@
    ],
    "pack": "50 g",
    "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Don Papa Masskara",
+   "czkPerKg": 1141.41,
+   "price": 798.99,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.571,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "papaja",
+     "score": 0.571,
+     "via": "papája",
+     "nameCs": "papája"
+    },
+    {
+     "ingredientId": "poppadom",
+     "score": 0.571,
+     "via": "papadam",
+     "nameCs": "papadam"
+    }
+   ],
+   "pack": "0.7 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -14177,31 +16217,30 @@
     }
    ],
    "pack": "150 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
-   "store": "globus",
-   "source": "globus",
-   "title": "Pokemon adventní kalendář deluxe",
-   "czkPerKg": 5995.0,
-   "price": 1199.0,
-   "originalPrice": 1599.0,
-   "validFrom": "2026-10-13",
-   "validTo": "2026-12-05",
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Pur Prostředek na nádobí",
+   "czkPerKg": 79.87,
+   "price": 59.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
    "confidence": 0.571,
    "status": "unmatched",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "kaderavek",
+     "ingredientId": "jahly",
      "score": 0.571,
-     "via": "kale",
-     "nameCs": "kadeřávek"
+     "via": "proso",
+     "nameCs": "jáhly"
     }
    ],
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
+   "pack": "750 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -14224,7 +16263,7 @@
     }
    ],
    "pack": "500 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
@@ -14247,7 +16286,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": true
   },
   {
@@ -14349,6 +16388,105 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Taft Gel na vlasy",
+   "czkPerKg": 274.8,
+   "price": 109.92,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.571,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vlasske_orechy",
+     "score": 0.571,
+     "via": "vlašáky",
+     "nameCs": "vlašské ořechy"
+    },
+    {
+     "ingredientId": "zelatina",
+     "score": 0.571,
+     "via": "gelatin",
+     "nameCs": "želatina"
+    },
+    {
+     "ingredientId": "zmrzlina_vanilkova",
+     "score": 0.571,
+     "via": "gelato",
+     "nameCs": "vanilková zmrzlina"
+    }
+   ],
+   "pack": "400 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Taft Gel na vlasy",
+   "czkPerKg": 274.75,
+   "price": 109.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.571,
+   "status": "unmatched",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "vlasske_orechy",
+     "score": 0.571,
+     "via": "vlašáky",
+     "nameCs": "vlašské ořechy"
+    },
+    {
+     "ingredientId": "zelatina",
+     "score": 0.571,
+     "via": "gelatin",
+     "nameCs": "želatina"
+    },
+    {
+     "ingredientId": "zmrzlina_vanilkova",
+     "score": 0.571,
+     "via": "gelato",
+     "nameCs": "vanilková zmrzlina"
+    }
+   ],
+   "pack": "400 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Teekanne Black Label",
+   "czkPerKg": 449.5,
+   "price": 89.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.571,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "ostruziny",
+     "score": 0.571,
+     "via": "blackberries",
+     "nameCs": "ostružiny"
+    },
+    {
+     "ingredientId": "rybiz_cerny",
+     "score": 0.571,
+     "via": "blackcurrants",
+     "nameCs": "černý rybíz"
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Tic Tac Spearmint 18g",
@@ -14369,7 +16507,7 @@
     }
    ],
    "pack": "18 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -14508,6 +16646,29 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "kompatibilní s kávovary Nespresso",
+   "czkPerKg": 541.21,
+   "price": 129.89,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.571,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kava_mleta",
+     "score": 0.571,
+     "via": "kávou",
+     "nameCs": "mletá káva"
+    }
+   ],
+   "pack": "240 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "billa",
    "source": "billa-text",
    "title": "lehká chutná křupavá",
@@ -14629,7 +16790,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -14921,6 +17082,93 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Gliss Expresní balzám na vlasy",
+   "czkPerKg": 659.91,
+   "price": 139.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.539,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "ocet_balzamikovy",
+     "score": 0.539,
+     "via": "balzamiko",
+     "nameCs": "balzamikový ocet"
+    },
+    {
+     "ingredientId": "vlasske_orechy",
+     "score": 0.539,
+     "via": "vlašáky",
+     "nameCs": "vlašské ořechy"
+    }
+   ],
+   "pack": "200 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Got2B Gel na definici kudrn",
+   "czkPerKg": 899.4,
+   "price": 134.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.539,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "zelatina",
+     "score": 0.539,
+     "via": "gelatin",
+     "nameCs": "želatina"
+    },
+    {
+     "ingredientId": "zmrzlina_vanilkova",
+     "score": 0.539,
+     "via": "gelato",
+     "nameCs": "vanilková zmrzlina"
+    }
+   ],
+   "pack": "150 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Got2B Gel na definici kudrn",
+   "czkPerKg": 799.33,
+   "price": 119.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.539,
+   "status": "unmatched",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "zelatina",
+     "score": 0.539,
+     "via": "gelatin",
+     "nameCs": "želatina"
+    },
+    {
+     "ingredientId": "zmrzlina_vanilkova",
+     "score": 0.539,
+     "via": "gelato",
+     "nameCs": "vanilková zmrzlina"
+    }
+   ],
+   "pack": "150 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "billa",
    "source": "billa-text",
    "title": "Halloween Čokoládové plněné kuličky",
@@ -14964,7 +17212,7 @@
     }
    ],
    "pack": "460 ml",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -14988,7 +17236,7 @@
     }
    ],
    "pack": "80 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -15372,7 +17620,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -15442,7 +17690,7 @@
     }
    ],
    "pack": "60 praní",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -15527,7 +17775,7 @@
     }
    ],
    "pack": "0.75 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
@@ -15649,7 +17897,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": false
   },
   {
@@ -15835,7 +18083,7 @@
     }
    ],
    "pack": "1 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -16152,7 +18400,7 @@
     }
    ],
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -16525,6 +18773,70 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Zdroj: Euromonitor International Limited; vydání Beauty and Personal Care 2026, dle definice kategorie ústní vody/ústní výplachy, maloobchodní hodnota podle doporučené prodejní ceny, údaje za rok 2025.",
+   "czkPerKg": 169.8,
+   "price": 84.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.422,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "rukola",
+     "score": 0.422,
+     "via": "roketa",
+     "nameCs": "rukola"
+    },
+    {
+     "ingredientId": "voda",
+     "score": 0.132,
+     "via": "vody",
+     "nameCs": "voda",
+     "reasons": [
+      "negative:ustn"
+     ]
+    }
+   ],
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Zdroj: Euromonitor International Limited; vydání Beauty and Personal Care 2026, dle definice kategorie ústní vody/ústní výplachy, maloobchodní hodnota podle doporučené prodejní ceny, údaje za rok 2025.",
+   "czkPerKg": 149.8,
+   "price": 74.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.422,
+   "status": "unmatched",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "rukola",
+     "score": 0.422,
+     "via": "roketa",
+     "nameCs": "rukola"
+    },
+    {
+     "ingredientId": "voda",
+     "score": 0.132,
+     "via": "vody",
+     "nameCs": "voda",
+     "reasons": [
+      "negative:ustn"
+     ]
+    }
+   ],
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Hamé Tresčí játra ve vlastním oleji 115 g",
@@ -16566,7 +18878,7 @@
     }
    ],
    "pack": "115 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -16785,6 +19097,32 @@
   {
    "store": "lidl",
    "source": "lidl",
+   "title": "Moravský koláč",
+   "czkPerKg": 140.8,
+   "price": 16.9,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-11-01",
+   "confidence": 0.4,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kola",
+     "score": 0.4,
+     "via": "kola",
+     "nameCs": "kola",
+     "reasons": [
+      "hint-category:beverage"
+     ]
+    }
+   ],
+   "pack": "120 g",
+   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
    "title": "Dýňový šnek",
    "czkPerKg": 165.3,
    "price": 11.9,
@@ -16875,7 +19213,7 @@
     }
    ],
    "pack": "400 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -16956,6 +19294,50 @@
    ],
    "pack": "80 g",
    "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Tuňákový salát",
+   "czkPerKg": 335.5,
+   "price": 60.39,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.39,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salatova_smes",
+     "score": 0.39,
+     "via": "mix salátů",
+     "nameCs": "salátová směs",
+     "reasons": [
+      "title-category:vegetable"
+     ]
+    },
+    {
+     "ingredientId": "tunak_cerstvy",
+     "score": 0.168,
+     "via": "čerstvý tuňák",
+     "nameCs": "čerstvý tuňák",
+     "reasons": [
+      "negative:salat"
+     ]
+    },
+    {
+     "ingredientId": "tunak_konzerva",
+     "score": 0.168,
+     "via": "tuňák",
+     "nameCs": "tuňák v konzervě",
+     "reasons": [
+      "negative:salat"
+     ]
+    }
+   ],
+   "pack": "180 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -17170,7 +19552,7 @@
     }
    ],
    "pack": "1.5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -17460,16 +19842,16 @@
     }
    ],
    "pack": "160 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
    "store": "lidl",
    "source": "lidl",
    "title": "Dýňová kostka z kamenné pece",
-   "czkPerKg": 110.0,
-   "price": 6.6,
-   "originalPrice": 9.9,
+   "czkPerKg": 106.0,
+   "price": 6.36,
+   "originalPrice": 8.9,
    "validFrom": "2026-10-26",
    "validTo": "2026-11-01",
    "confidence": 0.312,
@@ -17645,7 +20027,7 @@
     }
    ],
    "pack": "180 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -17998,7 +20380,7 @@
     }
    ],
    "pack": "150 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -18025,7 +20407,7 @@
     }
    ],
    "pack": "150 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -18136,7 +20518,7 @@
    "czkPerKg": 176.4,
    "price": 149.94,
    "validFrom": "2026-10-21",
-   "validTo": "2026-10-27",
+   "validTo": "2026-11-03",
    "confidence": 0.2,
    "status": "unmatched",
    "club": false,
@@ -18152,7 +20534,59 @@
     }
    ],
    "pack": "850 g",
-   "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Listerine Ústní voda",
+   "czkPerKg": 299.8,
+   "price": 149.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.178,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "voda",
+     "score": 0.178,
+     "via": "voda",
+     "nameCs": "voda",
+     "reasons": [
+      "negative:ustn"
+     ]
+    }
+   ],
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Listerine Ústní voda",
+   "czkPerKg": 289.8,
+   "price": 144.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.178,
+   "status": "unmatched",
+   "club": true,
+   "suggestions": [
+    {
+     "ingredientId": "voda",
+     "score": 0.178,
+     "via": "voda",
+     "nameCs": "voda",
+     "reasons": [
+      "negative:ustn"
+     ]
+    }
+   ],
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -18261,6 +20695,32 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Parodontax Ústní voda",
+   "czkPerKg": 239.8,
+   "price": 119.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.178,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "voda",
+     "score": 0.178,
+     "via": "voda",
+     "nameCs": "voda",
+     "reasons": [
+      "negative:ustn"
+     ]
+    }
+   ],
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "lidl",
    "source": "lidl",
    "title": "Hovězí carpaccio",
@@ -18286,6 +20746,33 @@
    ],
    "pack": "100 g",
    "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Milko Ovofit Tvarohový dezert",
+   "czkPerKg": 113.57,
+   "price": 15.9,
+   "originalPrice": 19.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.143,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "tvaroh",
+     "score": 0.143,
+     "via": "tvaroh",
+     "nameCs": "tvaroh",
+     "reasons": [
+      "negative:dezert"
+     ]
+    }
+   ],
+   "pack": "140 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -18378,6 +20865,20 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Active nápoj",
+   "price": 17.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "320 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Activia",
    "price": 9.9,
    "originalPrice": 19.9,
@@ -18416,7 +20917,21 @@
    "status": "unmatched",
    "club": false,
    "pack": "200 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "AirWick Osvěžovač vzduchu – náhradní náplň",
+   "price": 119.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "250 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -18431,7 +20946,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -18493,6 +21008,34 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Amundsen Twist",
+   "price": 169.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Antiperspirant sprej",
+   "price": 84.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "150 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Aroso Clona čelního skla 150 x 70 cm 1 ks",
@@ -18534,6 +21077,34 @@
    "club": true,
    "pack": "1 ks",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "BEBA Comfort",
+   "price": 399.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "800 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "BEBA Comfort",
+   "price": 79.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "800 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -18647,6 +21218,20 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Big Shock!",
+   "price": 26.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Biggril Globuskořeněný",
@@ -18688,6 +21273,20 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Birell",
+   "price": 18.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "billa",
    "source": "billa-text",
    "title": "Birell Bernard 11",
@@ -18713,7 +21312,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 kg",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -18785,6 +21384,34 @@
    "club": false,
    "pack": "750 ml",
    "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Bonpari Bonbony",
+   "price": 16.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "90 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Bonpari Bonbony",
+   "price": 15.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "90 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -18984,7 +21611,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -18999,7 +21626,7 @@
    "status": "unmatched",
    "club": true,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -19015,6 +21642,34 @@
    "pack": "1 ks",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Captain Morgan",
+   "price": 299.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.7 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Carte d'Or Dezert",
+   "price": 15.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "140 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
   },
   {
    "store": "billa",
@@ -19042,7 +21697,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -19057,7 +21712,7 @@
    "status": "unmatched",
    "club": true,
    "pack": "1 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -19119,6 +21774,34 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Château Valtice",
+   "price": 79.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Château Valtice",
+   "price": 79.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Cif Krém",
    "price": 69.9,
    "validFrom": "2026-10-21",
@@ -19142,6 +21825,34 @@
    "club": true,
    "pack": "500 ml",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Cillit Bang",
+   "price": 79.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "750 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Cillit Bang",
+   "price": 74.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "750 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -19284,6 +21995,34 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Cool+",
+   "price": 16.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Corega Fixační krém",
+   "price": 84.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "75 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Curver T box XS průhledný",
@@ -19347,7 +22086,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "800 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -19574,7 +22313,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "540 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -19868,6 +22607,34 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "El General",
+   "price": 999.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.7 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Elégance Cielo Primitivo",
+   "price": 99.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Eta Sendvičovač Crux 3163 90000",
@@ -20043,6 +22810,34 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "FRoSTA. Chutně a jednoduše.",
+   "price": 36.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "80 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "FRoSTA. Chutně a jednoduše.",
+   "price": 26.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "80 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "lidl",
    "source": "lidl",
    "title": "Falešná svíčková",
@@ -20138,7 +22933,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -20229,14 +23024,28 @@
    "store": "albert",
    "source": "albert-text",
    "title": "Franz Josef",
-   "price": 39.92,
+   "price": 139.9,
    "validFrom": "2026-10-21",
-   "validTo": "2026-10-27",
+   "validTo": "2026-11-03",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
-   "pack": "370 ml",
-   "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Franz Josef",
+   "price": 109.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -20245,10 +23054,80 @@
    "title": "Franz Josef",
    "price": 39.9,
    "validFrom": "2026-10-21",
-   "validTo": "2026-10-27",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "160 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Franz Josef",
+   "price": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
    "confidence": 0.0,
    "status": "unmatched",
    "club": true,
+   "pack": "160 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Franz Josef",
+   "price": 6.47,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "60 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Franz Josef",
+   "price": 87.28,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "400 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Franz Josef",
+   "price": 34.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "400 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Franz Josef",
+   "price": 39.92,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-10-27",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
    "pack": "370 ml",
    "url": "https://letaky.albert.cz/43sm_akcni_letak/",
    "promo": true
@@ -20307,6 +23186,34 @@
    "club": true,
    "pack": "300 g",
    "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Frisco",
+   "price": 17.92,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "330 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Frisco",
+   "price": 17.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "330 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -20426,6 +23333,20 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Gambrinus Patron 12",
+   "price": 17.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "billa",
    "source": "billa-text",
    "title": "Gambrinus Patron 12",
@@ -20437,6 +23358,21 @@
    "club": false,
    "pack": "1 kg",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Garden Gourmet",
+   "price": 69.9,
+   "originalPrice": 94.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "180 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -20470,6 +23406,20 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Garden Gourmet 90 Vegan",
+   "price": 69.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "180 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Gemerka Rajec",
    "price": 14.91,
    "validFrom": "2026-10-21",
@@ -20496,6 +23446,65 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Gerber Cereal",
+   "price": 59.92,
+   "originalPrice": 449.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "400 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Gerber Cereal",
+   "price": 59.9,
+   "originalPrice": 449.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "400 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Gervais High Protein",
+   "price": 36.9,
+   "originalPrice": 49.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "100 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Gervais Original",
+   "price": 36.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "150 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Gibowski Svíčka hřbitovní W-13 170g",
@@ -20507,7 +23516,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -20569,6 +23578,49 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Goldfish BIGsters",
+   "price": 16.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "80 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Goldfish BIGsters",
+   "price": 16.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "80 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Gourmet 90 Garden",
+   "price": 69.9,
+   "originalPrice": 94.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "200 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Gourmet Revelations",
    "price": 44.9,
    "validFrom": "2026-10-21",
@@ -20615,12 +23667,12 @@
    "title": "Habánské sklepy",
    "price": 79.91,
    "validFrom": "2026-10-21",
-   "validTo": "2026-10-27",
+   "validTo": "2026-11-03",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
    "pack": "0.75 l",
-   "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -20629,12 +23681,12 @@
    "title": "Habánské sklepy",
    "price": 79.9,
    "validFrom": "2026-10-21",
-   "validTo": "2026-10-27",
+   "validTo": "2026-11-03",
    "confidence": 0.0,
    "status": "unmatched",
    "club": true,
    "pack": "0.75 l",
-   "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -20766,6 +23818,20 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Happy Day",
+   "price": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.7 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "billa",
    "source": "billa-text",
    "title": "Haribo bonbony",
@@ -20777,6 +23843,20 @@
    "club": false,
    "pack": "80 g",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Hašlerky Bonbony",
+   "price": 109.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 ks",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -20805,6 +23885,20 @@
    "club": false,
    "pack": "800 ml",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Heffron",
+   "price": 219.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -21084,7 +24178,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -21342,6 +24436,48 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Kojenecká výživa",
+   "price": 79.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "230 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Koncentrát",
+   "price": 49.92,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "270 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Koncentrát",
+   "price": 49.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "270 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Korunní",
    "price": 11.91,
    "validFrom": "2026-10-21",
@@ -21381,6 +24517,50 @@
    "club": true,
    "pack": "900 g",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Kostelecké uzeniny",
+   "price": 49.95,
+   "originalPrice": 79.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "100 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Kostelecké uzeniny",
+   "price": 53.9,
+   "originalPrice": 49.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "180 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Kostelecké uzeniny",
+   "price": 26.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "100 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -21445,6 +24625,20 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Krušovice 11",
+   "price": 15.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Krušovice 12",
    "price": 31.64,
    "validFrom": "2026-10-21",
@@ -21454,6 +24648,20 @@
    "club": false,
    "pack": "1 kg",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Krušovice 12",
+   "price": 15.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -21476,12 +24684,12 @@
    "title": "Krušovice Bohém",
    "price": 16.9,
    "validFrom": "2026-10-21",
-   "validTo": "2026-10-27",
+   "validTo": "2026-11-03",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
    "pack": "0.5 l",
-   "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -21571,6 +24779,34 @@
    "promo": false
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "L'OR",
+   "price": 289.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "450 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "L'OR",
+   "price": 149.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "250 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "L'OR Lungo Profondo Intenzita 8 10 ks",
@@ -21583,6 +24819,34 @@
    "pack": "10 ks",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "L'Oréal Age Specialist",
+   "price": 189.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "50 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "L'Oréal Elseve",
+   "price": 189.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "200 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
   },
   {
    "store": "lidl",
@@ -21650,7 +24914,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -21693,6 +24957,20 @@
    "pack": "0.33 l",
    "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Legendario Elixir",
+   "price": 399.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.7 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
   },
   {
    "store": "globus",
@@ -21906,7 +25184,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
@@ -21921,7 +25199,7 @@
    "status": "unmatched",
    "club": true,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -22027,6 +25305,36 @@
    "promo": false
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Lučina Nadýchaná",
+   "price": 39.9,
+   "originalPrice": 44.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "140 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Lučina XXL",
+   "price": 59.9,
+   "originalPrice": 94.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "280 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Lučina XXL 280g",
@@ -22038,21 +25346,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "280 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl",
-   "title": "MADETA Jihočeské AB",
-   "price": 24.9,
-   "validFrom": "2026-10-26",
-   "validTo": "2026-10-27",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "250 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -22111,6 +25405,21 @@
    "club": false,
    "pack": "130 g",
    "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Madeta Blaťácké zlato",
+   "price": 32.9,
+   "originalPrice": 38.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "120 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -22210,6 +25519,20 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Mattoni Mocktails",
+   "price": 16.93,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "330 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "billa",
    "source": "billa-text",
    "title": "McCain Family",
@@ -22255,6 +25578,20 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Metaxa 5★",
+   "price": 299.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.7 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Milka Kuličky",
    "price": 49.91,
    "validFrom": "2026-10-21",
@@ -22293,7 +25630,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "90 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -22455,6 +25792,34 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Míchaný drink",
+   "price": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "250 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Míchaný drink",
+   "price": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "250 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Nature's Promise Kids",
    "price": 10.9,
    "validFrom": "2026-10-21",
@@ -22478,7 +25843,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "65.6 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -22680,7 +26045,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -22764,7 +26129,21 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 balení",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Olma Klasik",
+   "price": 49.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 kg",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -22779,6 +26158,21 @@
    "club": false,
    "pack": "200 g",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Olma Olmíci",
+   "price": 15.9,
+   "originalPrice": 24.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "110 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -23100,7 +26494,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -23144,7 +26538,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -23187,7 +26581,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -23202,7 +26596,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -23263,6 +26657,20 @@
    "promo": false
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Pantene Hydration",
+   "price": 265.2,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 kg",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "billa",
    "source": "billa-text",
    "title": "Panzani Omáčka",
@@ -23290,6 +26698,20 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Pedigree Dentastix",
+   "price": 169.02,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1080 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Pemap Artemis greek oil 1 l",
@@ -23301,7 +26723,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -23372,6 +26794,20 @@
    "club": true,
    "pack": "1 ks",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Pilsner Urquell",
+   "price": 25.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -23457,7 +26893,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -23592,6 +27028,20 @@
    "promo": true
   },
   {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Poslechni si náš audiopříběh",
+   "price": 299.0,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.7 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "Potah volantu FZ0171",
@@ -23604,6 +27054,34 @@
    "pack": "1 ks",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Používejte biocidy bezpečným způsobem.",
+   "price": 69.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Používejte biocidy bezpečným způsobem.",
+   "price": 59.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
   },
   {
    "store": "globus",
@@ -23922,6 +27400,34 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Protex Tekuté mýdlo",
+   "price": 99.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Protex Tekuté mýdlo",
+   "price": 89.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "500 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Proud",
    "price": 18.91,
    "validFrom": "2026-10-21",
@@ -24027,7 +27533,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
    "promo": true
   },
   {
@@ -24322,7 +27828,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -24337,7 +27843,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -24352,7 +27858,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -24367,7 +27873,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -24382,7 +27888,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -24427,7 +27933,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -24472,7 +27978,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -24651,7 +28157,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": false
   },
   {
@@ -24711,7 +28217,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": true
   },
   {
@@ -24771,7 +28277,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -24786,7 +28292,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -24801,7 +28307,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": true
   },
   {
@@ -24830,7 +28336,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
    "promo": false
   },
   {
@@ -24890,7 +28396,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=6&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": true
   },
   {
@@ -25021,7 +28527,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "400 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
   },
   {
@@ -25113,6 +28619,36 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Sanytol Dezinfekce na skvrny",
+   "price": 149.94,
+   "originalPrice": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "450 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Sanytol Dezinfekce na skvrny",
+   "price": 149.9,
+   "originalPrice": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "450 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Schweppes",
    "price": 19.91,
    "validFrom": "2026-10-21",
@@ -25193,7 +28729,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "90 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -25237,6 +28773,20 @@
    "club": true,
    "pack": "1 kg",
    "url": "https://view.publitas.com/billa-cz/velky-letak-21-10-27-10-2026",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Sladké zahuštěné",
+   "price": 13.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "150 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -25397,6 +28947,20 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Starbucks",
+   "price": 339.03,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "450 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Starobrno Štatl",
    "price": 17.9,
    "validFrom": "2026-10-21",
@@ -25419,7 +28983,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "0.5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -25434,7 +28998,7 @@
    "status": "unmatched",
    "club": true,
    "pack": "0.5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -25548,7 +29112,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -25563,7 +29127,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -25578,7 +29142,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -25755,8 +29319,36 @@
    "status": "unmatched",
    "club": false,
    "pack": "20 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Templářské sklepy",
+   "price": 79.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Templářské sklepy",
+   "price": 59.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
   },
   {
    "store": "billa",
@@ -25844,7 +29436,7 @@
    "store": "globus",
    "source": "globus",
    "title": "Triko dámské",
-   "price": 499.9,
+   "price": 299.9,
    "validFrom": "2026-10-13",
    "validTo": "2026-11-10",
    "confidence": 0.0,
@@ -25858,7 +29450,7 @@
    "store": "globus",
    "source": "globus",
    "title": "Triko dámské",
-   "price": 299.9,
+   "price": 499.9,
    "validFrom": "2026-10-13",
    "validTo": "2026-11-10",
    "confidence": 0.0,
@@ -25963,7 +29555,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -25978,7 +29570,7 @@
    "status": "unmatched",
    "club": true,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -26027,6 +29619,20 @@
    "store": "albert",
    "source": "albert-text",
    "title": "Velkopopovický Kozel 11",
+   "price": 19.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.5 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Velkopopovický Kozel 11",
    "price": 15.9,
    "validFrom": "2026-10-21",
    "validTo": "2026-10-27",
@@ -26049,6 +29655,92 @@
    "club": false,
    "pack": "0.5 l",
    "url": "https://letaky.albert.cz/43hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Veselá kráva",
+   "price": 16.9,
+   "originalPrice": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "35 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Veselá kráva",
+   "price": 16.9,
+   "originalPrice": 39.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "35 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Veselá kráva Lahodná",
+   "price": 29.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "120 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Veselá kráva Lahodná",
+   "price": 29.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "120 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Vinařství Ludwig",
+   "price": 79.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Vinařství Ludwig",
+   "price": 69.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -26083,6 +29775,20 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Vitana Lívanečky",
+   "price": 33.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "250 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Vitana Poctivá",
    "price": 24.9,
    "validFrom": "2026-10-21",
@@ -26092,6 +29798,20 @@
    "club": false,
    "pack": "1 kg",
    "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Vitana Poctivá polévka",
+   "price": 44.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "400 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -26278,6 +29998,34 @@
    "club": false,
    "pack": "250 g",
    "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "VŮNĚ",
+   "price": 131.1,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "750 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "VŮNĚ",
+   "price": 59.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "750 ml",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -27031,6 +30779,20 @@
   {
    "store": "albert",
    "source": "albert-text",
+   "title": "Ölz Houstičky",
+   "price": 49.91,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "350 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
    "title": "Ölz Super",
    "price": 49.95,
    "validFrom": "2026-10-21",
@@ -27040,6 +30802,48 @@
    "club": false,
    "pack": "750 g",
    "url": "https://letaky.albert.cz/43sm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Ölz Super Sandwich",
+   "price": 49.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "750 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Čejkovice",
+   "price": 119.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "Čejkovice",
+   "price": 119.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": true,
+   "pack": "0.75 l",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
    "promo": true
   },
   {
@@ -27102,6 +30906,20 @@
    "store": "albert",
    "source": "albert-text",
    "title": "– plátky",
+   "price": 44.9,
+   "validFrom": "2026-10-21",
+   "validTo": "2026-11-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "250 g",
+   "url": "https://letaky.albert.cz/43hm_akcni_katalog_brand/",
+   "promo": true
+  },
+  {
+   "store": "albert",
+   "source": "albert-text",
+   "title": "– plátky",
    "price": 31.9,
    "originalPrice": 34.9,
    "validFrom": "2026-10-21",
@@ -27114,6 +30932,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 442,
- "unmatchedTotal": 789
+ "reviewTotal": 508,
+ "unmatchedTotal": 899
 }

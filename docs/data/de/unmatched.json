@@ -1,5 +1,5 @@
 {
- "date": "2026-10-22",
+ "date": "2026-10-23",
  "review": [
   {
    "ingredientId": "ouzo",
@@ -44,6 +44,146 @@
    "promo": false
   },
   {
+   "ingredientId": "parky",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "DULANO Delikatess Wiener Würstchen",
+   "czkPerKg": 6.49,
+   "price": 6.49,
+   "originalPrice": 6.79,
+   "confidence": 0.836,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "parky",
+     "score": 0.836,
+     "via": "Wiener Würstchen",
+     "nameCs": "párky",
+     "name": "Wiener Würstchen"
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "makadamove_orechy",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "ALESTO Macadamia",
+   "czkPerKg": 19.92,
+   "price": 2.49,
+   "originalPrice": 2.99,
+   "confidence": 0.8,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "makadamove_orechy",
+     "score": 0.8,
+     "via": "Macadamianüsse",
+     "nameCs": "makadamové ořechy",
+     "name": "Macadamianüsse"
+    }
+   ],
+   "pack": "125 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "orechy_smes",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "ALESTO Premium Nuss-Mix",
+   "czkPerKg": 14.95,
+   "price": 2.99,
+   "originalPrice": 3.79,
+   "confidence": 0.8,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "orechy_smes",
+     "score": 0.8,
+     "via": "Nussmischung",
+     "nameCs": "směs ořechů",
+     "name": "Nussmischung"
+    },
+    {
+     "ingredientId": "orechova_napln",
+     "score": 0.68,
+     "via": "Nussfüllung",
+     "nameCs": "ořechová náplň",
+     "name": "Nussfüllung",
+     "reasons": [
+      "ambiguous:orechy_smes"
+     ]
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "susenky_maslove",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "SONDEY Butterkeks",
+   "czkPerKg": 4.48,
+   "price": 1.79,
+   "originalPrice": 1.89,
+   "confidence": 0.8,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "susenky_maslove",
+     "score": 0.8,
+     "via": "Butterkekse",
+     "nameCs": "máslové sušenky",
+     "name": "Butterkekse"
+    },
+    {
+     "ingredientId": "maslo",
+     "score": 0.68,
+     "via": "Butter",
+     "nameCs": "máslo",
+     "name": "Butter",
+     "reasons": [
+      "ambiguous:susenky_maslove"
+     ]
+    }
+   ],
+   "pack": "400 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "susenky_karamelizovane",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Vemondo Vegane Karamellkekse",
+   "czkPerKg": 10.95,
+   "price": 2.19,
+   "originalPrice": 2.54,
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "susenky_karamelizovane",
+     "score": 0.78,
+     "via": "Karamellkekse",
+     "nameCs": "karamelizované sušenky",
+     "name": "Karamellkekse"
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "grappa",
    "store": "lidl",
    "source": "lidl_de",
@@ -84,6 +224,30 @@
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "ingredientId": "sunka",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "DULANO Delikatess Kochschinken/Geflügelbrust",
+   "czkPerKg": 13.25,
+   "price": 2.65,
+   "originalPrice": 2.79,
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "sunka",
+     "score": 0.714,
+     "via": "Kochschinken",
+     "nameCs": "šunka",
+     "name": "Kochschinken"
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "ouzo",
@@ -253,6 +417,157 @@
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "ingredientId": "kesu_maslo",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "ALESTO Cashew-Erdnuss-Mix",
+   "czkPerKg": 8.45,
+   "price": 1.69,
+   "originalPrice": 1.99,
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kesu_maslo",
+     "score": 0.671,
+     "via": "Cashewmus",
+     "nameCs": "kešu máslo",
+     "name": "Cashewmus"
+    },
+    {
+     "ingredientId": "arasidove_maslo",
+     "score": 0.624,
+     "via": "Erdnussbutter",
+     "nameCs": "arašídové máslo",
+     "name": "Erdnussbutter"
+    },
+    {
+     "ingredientId": "arasidy",
+     "score": 0.624,
+     "via": "Erdnüsse",
+     "nameCs": "arašídy",
+     "name": "Erdnüsse"
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_sunkovy",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Frische Schinken-Zwiebelmettwurst",
+   "czkPerKg": 9.45,
+   "price": 1.89,
+   "originalPrice": 1.99,
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_sunkovy",
+     "score": 0.671,
+     "via": "Schinkenwurst",
+     "nameCs": "šunkový salám",
+     "name": "Schinkenwurst"
+    },
+    {
+     "ingredientId": "cibule",
+     "score": 0.312,
+     "via": "Zwiebel",
+     "nameCs": "cibule",
+     "name": "Zwiebel",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "cokoladovy_sirup",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "SONDEY Schoko Butterkeks",
+   "czkPerKg": 11.12,
+   "price": 1.39,
+   "originalPrice": 1.59,
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "cokoladovy_sirup",
+     "score": 0.671,
+     "via": "Schokoladensirup",
+     "nameCs": "čokoládový sirup",
+     "name": "Schokoladensirup"
+    },
+    {
+     "ingredientId": "pudink_cokoladovy",
+     "score": 0.671,
+     "via": "Schokoladenpuddingpulver",
+     "nameCs": "čokoládový pudink v prášku",
+     "name": "Schokoladenpuddingpulver"
+    },
+    {
+     "ingredientId": "maslo",
+     "score": 0.624,
+     "via": "Butter",
+     "nameCs": "máslo",
+     "name": "Butter"
+    }
+   ],
+   "pack": "125 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "cokoladovy_sirup",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "SONDEY Schoko Waffeln",
+   "czkPerKg": 13.09,
+   "price": 2.29,
+   "originalPrice": 2.59,
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "cokoladovy_sirup",
+     "score": 0.671,
+     "via": "Schokoladensirup",
+     "nameCs": "čokoládový sirup",
+     "name": "Schokoladensirup"
+    },
+    {
+     "ingredientId": "pudink_cokoladovy",
+     "score": 0.671,
+     "via": "Schokoladenpuddingpulver",
+     "nameCs": "čokoládový pudink v prášku",
+     "name": "Schokoladenpuddingpulver"
+    },
+    {
+     "ingredientId": "cokoladove_kapky",
+     "score": 0.571,
+     "via": "Schokoladentropfen",
+     "nameCs": "čokoládové kapky",
+     "name": "Schokoladentropfen",
+     "reasons": [
+      "ambiguous:cokoladovy_sirup"
+     ]
+    }
+   ],
+   "pack": "175 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "gin",
@@ -876,6 +1191,112 @@
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "ingredientId": "salam_sunkovy",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "DULANO Delikatess Schinkenwürfel",
+   "czkPerKg": 7.96,
+   "price": 1.99,
+   "originalPrice": 2.29,
+   "confidence": 0.624,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_sunkovy",
+     "score": 0.624,
+     "via": "Schinkenwurst",
+     "nameCs": "šunkový salám",
+     "name": "Schinkenwurst"
+    }
+   ],
+   "pack": "250 g",
+   "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "cokoladovy_sirup",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "SONDEY Schoko-Keks Sticks",
+   "czkPerKg": 14.33,
+   "price": 1.29,
+   "originalPrice": 1.49,
+   "confidence": 0.614,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "cokoladovy_sirup",
+     "score": 0.614,
+     "via": "Schokoladensirup",
+     "nameCs": "čokoládový sirup",
+     "name": "Schokoladensirup"
+    },
+    {
+     "ingredientId": "pudink_cokoladovy",
+     "score": 0.614,
+     "via": "Schokoladenpuddingpulver",
+     "nameCs": "čokoládový pudink v prášku",
+     "name": "Schokoladenpuddingpulver"
+    },
+    {
+     "ingredientId": "cokoladove_kapky",
+     "score": 0.522,
+     "via": "Schokoladentropfen",
+     "nameCs": "čokoládové kapky",
+     "name": "Schokoladentropfen",
+     "reasons": [
+      "ambiguous:cokoladovy_sirup"
+     ]
+    }
+   ],
+   "pack": "90 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "cokoladovy_sirup",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Schoko Waffel Röllchen",
+   "czkPerKg": 11.92,
+   "price": 1.49,
+   "originalPrice": 1.79,
+   "confidence": 0.614,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "cokoladovy_sirup",
+     "score": 0.614,
+     "via": "Schokoladensirup",
+     "nameCs": "čokoládový sirup",
+     "name": "Schokoladensirup"
+    },
+    {
+     "ingredientId": "pudink_cokoladovy",
+     "score": 0.614,
+     "via": "Schokoladenpuddingpulver",
+     "nameCs": "čokoládový pudink v prášku",
+     "name": "Schokoladenpuddingpulver"
+    },
+    {
+     "ingredientId": "cokoladove_kapky",
+     "score": 0.522,
+     "via": "Schokoladentropfen",
+     "nameCs": "čokoládové kapky",
+     "name": "Schokoladentropfen",
+     "reasons": [
+      "ambiguous:cokoladovy_sirup"
+     ]
+    }
+   ],
+   "pack": "125 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "rum",
@@ -1763,7 +2184,7 @@
    "title": "FIREBALL Likör mit Zimt- und Whiskygeschmack 33% Vol",
    "czkPerKg": 16.7,
    "price": 10.99,
-   "originalPrice": 12.9,
+   "originalPrice": 13.99,
    "confidence": 0.518,
    "status": "unmatched",
    "club": false,
@@ -1874,6 +2295,68 @@
    ],
    "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Apfelschorle",
+   "czkPerKg": 0.66,
+   "price": 2.99,
+   "originalPrice": 3.49,
+   "confidence": 0.4,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "jablko",
+     "score": 0.4,
+     "via": "Apfel",
+     "nameCs": "jablko",
+     "name": "Apfel",
+     "reasons": [
+      "hint-category:fruit"
+     ]
+    }
+   ],
+   "pack": "4.5 l",
+   "url": "https://www.lidl.de/q/api/category/h/getraenke/h10071022?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "EL TEQUITO Tortilla Chips",
+   "czkPerKg": 3.97,
+   "price": 1.19,
+   "originalPrice": 1.49,
+   "confidence": 0.39,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "tortilla_chips",
+     "score": 0.39,
+     "via": "Tortilla-Chips",
+     "nameCs": "tortilla chipsy",
+     "name": "Tortilla-Chips",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "chipotle",
+     "score": 0.27,
+     "via": "Chipotle",
+     "nameCs": "chipotle",
+     "name": "Chipotle",
+     "reasons": [
+      "hint-category:spice"
+     ]
+    }
+   ],
+   "pack": "300 g",
+   "url": "https://www.lidl.de/q/api/category/h/getraenke/h10071022?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "store": "lidl",
@@ -2445,11 +2928,24 @@
    "source": "lidl_de",
    "title": "2 x 5-l-Bierfass Krombacher Pils mit Zapfhahn",
    "price": 24.99,
-   "originalPrice": 26.99,
+   "originalPrice": 27.98,
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "ALESTO SELECTION ALESTO",
+   "price": 2.79,
+   "originalPrice": 2.99,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "200 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2477,6 +2973,84 @@
   {
    "store": "lidl",
    "source": "lidl_de",
+   "title": "DULANO Delikatess Mini Wiener",
+   "price": 2.39,
+   "originalPrice": 2.49,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "320 g",
+   "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "DULANO Leberwurst",
+   "price": 1.29,
+   "originalPrice": 1.39,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "250 g",
+   "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "DULANO Rohwurst",
+   "price": 1.59,
+   "originalPrice": 1.69,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "200 g",
+   "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "FAVORINI/SONDEY Waffel-/Gebäckmischung",
+   "price": 2.79,
+   "originalPrice": 2.89,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "400 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Freeway Erfrischungsgetränk",
+   "price": 0.49,
+   "originalPrice": 0.65,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1.5 l",
+   "url": "https://www.lidl.de/q/api/category/h/getraenke/h10071022?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Jaffa Cake",
+   "price": 1.79,
+   "originalPrice": 1.99,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "300 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
    "title": "Rotling Franken QbA halbtrocken, Literflasche, Rotling 2025",
    "price": 3.99,
    "confidence": 0.0,
@@ -2484,8 +3058,34 @@
    "club": false,
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "SNACK DAY Flips",
+   "price": 0.79,
+   "originalPrice": 0.99,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "125 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Schokoriegel",
+   "price": 1.99,
+   "originalPrice": 2.09,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "300 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   }
  ],
- "reviewTotal": 30,
- "unmatchedTotal": 32
+ "reviewTotal": 43,
+ "unmatchedTotal": 43
 }
