@@ -2,7 +2,7 @@
  "v": 2,
  "market": "sk",
  "currency": "EUR",
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "perKg": {
   "banan": {
    "lidl": 1.3
@@ -40,6 +40,9 @@
   "okurka_salatova": {
    "lidl": 1.6
   },
+  "porek": {
+   "lidl": 2.5
+  },
   "salat_ledovy": {
    "lidl": 1.6
   },
@@ -61,12 +64,68 @@
  },
  "deals": [
   {
+   "ingredientId": "banan",
+   "store": "lidl",
+   "perKg": 1.1,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "title": "Banány"
+  },
+  {
+   "ingredientId": "boruvky",
+   "store": "lidl",
+   "perKg": 14.3,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-11-01",
+   "title": "Čučoriedky"
+  },
+  {
+   "ingredientId": "brokolice_mrazena",
+   "store": "lidl",
+   "perKg": 2.0,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "title": "Brokolica"
+  },
+  {
+   "ingredientId": "kachna_cela",
+   "store": "lidl",
+   "perKg": 3.0,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-11-01",
+   "title": "Kačica celá"
+  },
+  {
    "ingredientId": "kedlubna",
    "store": "lidl",
    "perKg": 1.6,
    "validFrom": "2026-10-22",
    "validTo": "2026-10-25",
    "title": "Kaleráb"
+  },
+  {
+   "ingredientId": "kure_cele",
+   "store": "lidl",
+   "perKg": 2.4,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "title": "Kurča celé"
+  },
+  {
+   "ingredientId": "kureci_stehna",
+   "store": "lidl",
+   "perKg": 4.0,
+   "validFrom": "2026-10-26",
+   "validTo": "2026-11-01",
+   "title": "Kuracie stehná XXL"
+  },
+  {
+   "ingredientId": "porek",
+   "store": "lidl",
+   "perKg": 2.5,
+   "validFrom": "2026-10-24",
+   "validTo": "2026-10-25",
+   "title": "Pór"
   },
   {
    "ingredientId": "salat_ledovy",
@@ -99,6 +158,22 @@
    "validFrom": "2026-10-19",
    "validTo": "2026-10-25",
    "title": "Bravčový bôčik"
+  },
+  {
+   "ingredientId": "veprovy_bucek",
+   "store": "lidl",
+   "perKg": 3.5,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-11-01",
+   "title": "Bravčový bôčik"
+  },
+  {
+   "ingredientId": "vodka",
+   "store": "lidl",
+   "perKg": 10.6,
+   "validFrom": "2026-10-31",
+   "validTo": "2026-11-01",
+   "title": "Vodka 1906"
   }
  ],
  "categoryFallbackPerKg": {
