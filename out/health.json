@@ -2,8 +2,8 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-24T06:43:52+00:00",
- "today": "2026-10-24",
+ "run": "2026-10-25T07:09:24+00:00",
+ "today": "2026-10-25",
  "sources": {
   "globus": {
    "source": "globus",
@@ -14,7 +14,7 @@
     "globus": 837
    },
    "requests": 9,
-   "elapsed_s": 16.6,
+   "elapsed_s": 16.7,
    "notes": [
     "house 4005: totalCount=776, offers=837"
    ],
@@ -30,7 +30,7 @@
     "lidl": 356
    },
    "requests": 25,
-   "elapsed_s": 24.4,
+   "elapsed_s": 24.9,
    "notes": [
     "27 categories, 356 products"
    ],
@@ -46,7 +46,7 @@
     "penny": 40
    },
    "requests": 2,
-   "elapsed_s": 1.4,
+   "elapsed_s": 1.3,
    "notes": [
     "total=32, offers=40"
    ],
@@ -62,7 +62,7 @@
     "albert": 990
    },
    "requests": 6,
-   "elapsed_s": 5.5,
+   "elapsed_s": 5.1,
    "notes": [
     "Albert - 43HM_akcni_letak (2026-10-21..2026-10-27): 26 spreads, 403 offers",
     "Albert - 43HM_akcni_katalog_brand (2026-10-21..2026-11-03): 19 spreads, 277 offers",
@@ -80,7 +80,7 @@
     "billa": 296
    },
    "requests": 5,
-   "elapsed_s": 4.6,
+   "elapsed_s": 4.1,
    "notes": [
     "velky-letak-21-10-27-10-2026: 20 spreads, 259 offers",
     "maly-letak-21-10-27-10-2026: 5 spreads, 37 offers"
@@ -95,7 +95,7 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.5,
+   "elapsed_s": 1.4,
    "notes": [
     "21.10.2026 - 27.10.2026: 2026-10-21..2026-10-27",
     "21.10.2026 - 27.10.2026: 2026-10-21..2026-10-27",
@@ -136,22 +136,14 @@
   },
   "kupi": {
    "source": "kupi",
-   "ok": true,
-   "count": 736,
-   "error": null,
-   "stores": {
-    "albert": 125,
-    "globus": 87,
-    "lidl": 108,
-    "penny": 109,
-    "billa": 119,
-    "kaufland": 94,
-    "tesco": 94
-   },
-   "requests": 171,
-   "elapsed_s": 172.1,
+   "ok": false,
+   "count": 0,
+   "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
+   "stores": {},
+   "requests": 2,
+   "elapsed_s": 1.0,
    "notes": [
-    "170 terms, 0 failed, 736 offers"
+    "stopped at term maslo: blocked/robots"
    ],
    "tier": "fallback",
    "market": "cz"
@@ -226,12 +218,12 @@
    "cf_mitigated": null
   },
   "www.kupi.cz": {
-   "requests": 171,
+   "requests": 2,
    "statuses": {
-    "200": 171
+    "403": 2
    },
    "server": "cloudflare",
-   "cf_mitigated": null
+   "cf_mitigated": "challenge"
   }
  },
  "robots": [
@@ -358,55 +350,14 @@
   },
   {
    "host": "www.kupi.cz",
-   "status": 200,
-   "error": null,
-   "rules": 148,
-   "disallow": [
-    "Disallow: /",
-    "Disallow: /",
-    "Disallow: /",
-    "Disallow: /welcome",
-    "Disallow: /404",
-    "Disallow: /login",
-    "Disallow: /popup/*",
-    "Disallow: /logging",
-    "Disallow: /get-locality-by-gps",
-    "Disallow: /nakupni-listek",
-    "Disallow: /get-mesto",
-    "Disallow: /get-slevy",
-    "Disallow: /get-letaky",
-    "Disallow: /get-akce",
-    "Disallow: /get-znacky",
-    "Disallow: /hlidani",
-    "Disallow: /uzivatel",
-    "Disallow: /oblibene",
-    "Disallow: /oblibene-kategorie",
-    "Disallow: /set-oblibene-letaky",
-    "Disallow: /send",
-    "Disallow: /kupici",
-    "Disallow: /objednavka",
-    "Disallow: /redir/*",
-    "Disallow: /nakup/*",
-    "Disallow: /mailing",
-    "Disallow: /redir.php",
-    "Disallow: /tipy",
-    "Disallow: /letak2/*",
-    "Disallow: /letak-dots/*",
-    "Disallow: /mailing/unsubscribe/*",
-    "Disallow: /magazin/pr-clanky",
-    "Disallow: /magazin/clanek-nahled/*",
-    "Disallow: /uzivatel/autorizace",
-    "Disallow: /prihlasit/facebook",
-    "Disallow: /oauth/*",
-    "Disallow: /odhlasit-se",
-    "Disallow: /prihlasit/facebook/overeni",
-    "Disallow: /prihlasit/facebook/potvrzeni-uctu",
-    "Disallow: /letak/nahled/*"
-   ],
+   "status": 403,
+   "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/robots.txt",
+   "rules": 0,
+   "disallow": [],
    "crawl_delay": null
   }
  ],
  "notFetched": [],
- "requests_made": 220,
+ "requests_made": 51,
  "cache_hits": 0
 }

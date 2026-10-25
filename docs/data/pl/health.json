@@ -1,38 +1,38 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-10-24",
- "generatedAt": "2026-10-24T06:48:23Z",
+ "date": "2026-10-25",
+ "generatedAt": "2026-10-25T07:10:54Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "startedAt": null,
-  "finishedAt": "2026-10-24T06:48:23Z",
+  "finishedAt": "2026-10-25T07:10:54Z",
   "durationSec": null,
-  "offers": 54,
-  "deals": 4,
+  "offers": 42,
+  "deals": 3,
   "priced": 12,
-  "matched": 5,
-  "review": 8,
-  "unmatched": 40,
+  "matched": 3,
+  "review": 6,
+  "unmatched": 32,
   "ok": true
  },
- "lastSuccessfulRun": "2026-10-24",
- "pricesUpdated": "2026-10-24",
+ "lastSuccessfulRun": "2026-10-25",
+ "pricesUpdated": "2026-10-25",
  "sources": {
   "lidl_pl": {
    "label": "lidl_pl",
    "ok": true,
    "skipped": false,
-   "items": 54,
-   "matched": 5,
-   "requests": 15,
-   "durationSec": 14.5,
+   "items": 42,
+   "matched": 3,
+   "requests": 2,
+   "durationSec": 1.5,
    "error": null,
    "robots": null,
    "notes": [
-    "14 categories, 54 products"
+    "0 categories, 42 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -48,8 +48,8 @@
   },
   "lidl": {
    "priced": 12,
-   "deals": 4,
-   "rowsToday": 5,
+   "deals": 3,
+   "rowsToday": 3,
    "missingToday": false,
    "notFetched": false
   },
@@ -113,7 +113,7 @@
   "aldi",
   "zabka"
  ],
- "stale": 7,
+ "stale": 12,
  "dropped": 0,
  "warnings": [],
  "validation": {
@@ -121,38 +121,6 @@
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-10-11",
-   "market": "pl",
-   "generatedAt": "2026-10-11T08:10:23Z",
-   "durationSec": null,
-   "status": "warning",
-   "ok": true,
-   "offers": 46,
-   "perSource": {
-    "lidl_pl": 46
-   },
-   "matched": 5,
-   "review": 10,
-   "unmatched": 30,
-   "deals": 3,
-   "priced": 17,
-   "pairsPriced": 17,
-   "perStore": {
-    "biedronka": 0,
-    "lidl": 17,
-    "kaufland": 0,
-    "auchan": 0,
-    "carrefour": 0,
-    "netto": 0,
-    "dino": 0,
-    "aldi": 0,
-    "zabka": 0
-   },
-   "stale": 15,
-   "dropped": 4,
-   "warnings": 1
-  },
   {
    "date": "2026-10-12",
    "market": "pl",
@@ -566,6 +534,38 @@
     "zabka": 0
    },
    "stale": 7,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-10-25",
+   "market": "pl",
+   "generatedAt": "2026-10-25T07:10:54Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 42,
+   "perSource": {
+    "lidl_pl": 42
+   },
+   "matched": 3,
+   "review": 6,
+   "unmatched": 32,
+   "deals": 3,
+   "priced": 12,
+   "pairsPriced": 12,
+   "perStore": {
+    "biedronka": 0,
+    "lidl": 12,
+    "kaufland": 0,
+    "auchan": 0,
+    "carrefour": 0,
+    "netto": 0,
+    "dino": 0,
+    "aldi": 0,
+    "zabka": 0
+   },
+   "stale": 12,
    "dropped": 0,
    "warnings": 0
   }

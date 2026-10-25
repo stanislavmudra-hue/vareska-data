@@ -1,13 +1,17 @@
 {
  "market": "cz",
  "currency": "CZK",
- "date": "2026-10-24",
- "generatedAt": "2026-10-24T06:48:22Z",
+ "date": "2026-10-25",
+ "generatedAt": "2026-10-25T07:10:54Z",
  "startedAt": null,
  "durationSec": null,
- "status": "ok",
+ "status": "warning",
  "ok": true,
- "warnings": [],
+ "warnings": [
+  "store 'kaufland' had no matched rows today (carry-forward only)",
+  "store 'tesco' had no matched rows today (carry-forward only)",
+  "source 'kupi' failed: blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo"
+ ],
  "validation": {
   "ok": true,
   "errors": []
@@ -17,46 +21,44 @@
    "albert-text": 990,
    "billa-text": 296,
    "globus": 837,
-   "kupi": 736,
    "lidl": 356,
    "penny": 40
   },
-  "total": 3255,
+  "total": 2519,
   "path": "out/offers.json"
  },
  "matching": {
   "path": "out/matched.json",
-  "generated": "2026-10-24",
-  "matched": 1174,
-  "review": 508,
+  "generated": "2026-10-25",
+  "matched": 488,
+  "review": 475,
   "unmatched": 899,
-  "ignored": 674,
+  "ignored": 657,
   "byStatus": {
-   "matched": 1174
+   "matched": 488
   },
   "matchedPerSource": {
    "albert-text": 147,
    "billa-text": 58,
    "globus": 87,
-   "kupi": 686,
    "lidl": 177,
    "penny": 19
   },
   "matchedPerStore": {
-   "albert": 263,
-   "lidl": 273,
-   "kaufland": 88,
-   "tesco": 89,
-   "billa": 173,
-   "penny": 121,
-   "globus": 167
+   "albert": 147,
+   "lidl": 177,
+   "kaufland": 0,
+   "tesco": 0,
+   "billa": 58,
+   "penny": 19,
+   "globus": 87
   },
-  "promoRows": 1049,
+  "promoRows": 363,
   "mapperStats": {
-   "matched": 1174,
-   "review": 508,
+   "matched": 488,
+   "review": 475,
    "unmatched": 899,
-   "ignored": 674
+   "ignored": 657
   }
  },
  "build": {
@@ -66,32 +68,29 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-10-23",
-  "today": "2026-10-24",
-  "rows": 1174,
+  "previousUpdated": "2026-10-24",
+  "today": "2026-10-25",
+  "rows": 488,
   "rowsPerStore": {
-   "albert": 263,
-   "billa": 173,
-   "globus": 167,
-   "kaufland": 88,
-   "lidl": 273,
-   "penny": 121,
-   "tesco": 89
+   "albert": 147,
+   "billa": 58,
+   "globus": 87,
+   "lidl": 177,
+   "penny": 19
   },
   "rowsPerSource": {
    "albert-text": 147,
    "billa-text": 58,
    "globus": 87,
-   "kupi": 686,
    "lidl": 177,
    "penny": 19
   },
-  "promoRows": 1049,
-  "clubRows": 139,
+  "promoRows": 363,
+  "clubRows": 41,
   "ingredientsPriced": 287,
   "pairsPriced": 969,
-  "pairsFresh": 562,
-  "pairsFromPromoOnly": 492,
+  "pairsFresh": 250,
+  "pairsFromPromoOnly": 180,
   "storesPriced": {
    "albert": 174,
    "lidl": 143,
@@ -101,15 +100,47 @@
    "penny": 121,
    "globus": 164
   },
-  "deals": 844,
-  "dealsCarried": 0,
+  "deals": 436,
+  "dealsCarried": 160,
   "stale": [
+   {
+    "ingredientId": "anglicka_slanina",
+    "store": "billa",
+    "czkPerKg": 199.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
    {
     "ingredientId": "anglicka_slanina",
     "store": "globus",
     "czkPerKg": 237.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "anglicka_slanina",
+    "store": "kaufland",
+    "czkPerKg": 199.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "anglicka_slanina",
+    "store": "lidl",
+    "czkPerKg": 179.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "anglicka_slanina",
+    "store": "penny",
+    "czkPerKg": 189.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -117,15 +148,39 @@
     "store": "tesco",
     "czkPerKg": 214.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "aperol",
     "store": "albert",
     "czkPerKg": 366.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "arasidy",
+    "store": "billa",
+    "czkPerKg": 109.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "arasidy",
+    "store": "kaufland",
+    "czkPerKg": 79.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "arasidy",
+    "store": "penny",
+    "czkPerKg": 147.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -133,6 +188,14 @@
     "store": "tesco",
     "czkPerKg": 89.8,
     "lastSeen": "2026-10-23",
+    "ageDays": 2,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "avokado",
+    "store": "albert",
+    "czkPerKg": 175.9,
+    "lastSeen": "2026-10-24",
     "ageDays": 1,
     "reason": "not_matched_today"
    },
@@ -141,7 +204,15 @@
     "store": "billa",
     "czkPerKg": 175.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "avokado",
+    "store": "globus",
+    "czkPerKg": 175.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -149,23 +220,31 @@
     "store": "kaufland",
     "czkPerKg": 85.6,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "avokado",
     "store": "lidl",
     "czkPerKg": 146.5,
     "lastSeen": "2026-10-21",
-    "ageDays": 3,
+    "ageDays": 4,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "avokado",
+    "store": "tesco",
+    "czkPerKg": 85.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "balkansky_syr",
     "store": "billa",
     "czkPerKg": 169.5,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -173,7 +252,7 @@
     "store": "globus",
     "czkPerKg": 164.5,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -181,7 +260,15 @@
     "store": "lidl",
     "czkPerKg": 149.5,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "balkansky_syr",
+    "store": "penny",
+    "czkPerKg": 174.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -189,15 +276,31 @@
     "store": "tesco",
     "czkPerKg": 260.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "banan",
     "store": "albert",
     "czkPerKg": 24.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "banan",
+    "store": "billa",
+    "czkPerKg": 22.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "banan",
+    "store": "penny",
+    "czkPerKg": 24.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -205,15 +308,15 @@
     "store": "tesco",
     "czkPerKg": 26.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "batat",
     "store": "albert",
     "czkPerKg": 39.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -221,7 +324,7 @@
     "store": "billa",
     "czkPerKg": 44.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -229,15 +332,23 @@
     "store": "globus",
     "czkPerKg": 39.9,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "batat",
+    "store": "kaufland",
+    "czkPerKg": 36.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "batat",
     "store": "lidl",
     "czkPerKg": 34.9,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
     "reason": "not_matched_today"
    },
    {
@@ -245,7 +356,7 @@
     "store": "albert",
     "czkPerKg": 119.3,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -253,7 +364,7 @@
     "store": "billa",
     "czkPerKg": 345.7,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -261,7 +372,7 @@
     "store": "globus",
     "czkPerKg": 345.7,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -269,7 +380,23 @@
     "store": "albert",
     "czkPerKg": 483.6,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "boruvky",
+    "store": "albert",
+    "czkPerKg": 319.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "boruvky",
+    "store": "billa",
+    "czkPerKg": 279.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -277,15 +404,23 @@
     "store": "kaufland",
     "czkPerKg": 319.6,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
+    "ageDays": 12,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "boruvky",
     "store": "lidl",
     "czkPerKg": 319.2,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "boruvky",
+    "store": "penny",
+    "czkPerKg": 85.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -293,23 +428,39 @@
     "store": "tesco",
     "czkPerKg": 479.2,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
+    "ageDays": 12,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "bramborove_knedliky_hotove",
     "store": "globus",
     "czkPerKg": 57.2,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "brambory",
+    "store": "billa",
+    "czkPerKg": 17.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "brambory",
+    "store": "kaufland",
+    "czkPerKg": 11.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "brambory",
     "store": "lidl",
     "czkPerKg": 9.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -317,15 +468,23 @@
     "store": "penny",
     "czkPerKg": 12.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "brambory",
+    "store": "tesco",
+    "czkPerKg": 16.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "brokolice_mrazena",
     "store": "albert",
     "czkPerKg": 166.4,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -333,7 +492,7 @@
     "store": "globus",
     "czkPerKg": 49.8,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -341,15 +500,15 @@
     "store": "kaufland",
     "czkPerKg": 55.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "brokolice_mrazena",
     "store": "penny",
     "czkPerKg": 55.3,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -357,15 +516,31 @@
     "store": "tesco",
     "czkPerKg": 59.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "bujon_kostka",
+    "store": "albert",
+    "czkPerKg": 369.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "bujon_kostka",
+    "store": "kaufland",
+    "czkPerKg": 249.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "bujon_kostka",
     "store": "lidl",
     "czkPerKg": 311.6,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
     "reason": "not_matched_today"
    },
    {
@@ -373,7 +548,23 @@
     "store": "penny",
     "czkPerKg": 301.5,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "bulgur",
+    "store": "kaufland",
+    "czkPerKg": 49.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "bulgur",
+    "store": "penny",
+    "czkPerKg": 39.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -381,7 +572,7 @@
     "store": "billa",
     "czkPerKg": 685.1,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -389,7 +580,7 @@
     "store": "globus",
     "czkPerKg": 647.5,
     "lastSeen": "2026-10-12",
-    "ageDays": 12,
+    "ageDays": 13,
     "reason": "not_matched_today"
    },
    {
@@ -397,7 +588,7 @@
     "store": "globus",
     "czkPerKg": 399.0,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -405,15 +596,23 @@
     "store": "billa",
     "czkPerKg": 19.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "celer_bulva",
+    "store": "kaufland",
+    "czkPerKg": 19.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "celer_bulva",
     "store": "penny",
     "czkPerKg": 17.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -421,7 +620,15 @@
     "store": "kaufland",
     "czkPerKg": 13.3,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "cervena_repa",
+    "store": "penny",
+    "czkPerKg": 37.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -429,7 +636,15 @@
     "store": "billa",
     "czkPerKg": 149.5,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "cesnek",
+    "store": "globus",
+    "czkPerKg": 159.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -437,15 +652,15 @@
     "store": "kaufland",
     "czkPerKg": 119.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "cesnek",
     "store": "lidl",
     "czkPerKg": 247.5,
     "lastSeen": "2026-10-21",
-    "ageDays": 3,
+    "ageDays": 4,
     "reason": "not_matched_today"
    },
    {
@@ -453,7 +668,7 @@
     "store": "penny",
     "czkPerKg": 149.5,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
     "reason": "not_matched_today"
    },
    {
@@ -461,23 +676,47 @@
     "store": "tesco",
     "czkPerKg": 99.0,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
+    "ageDays": 19,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "chia",
     "store": "globus",
     "czkPerKg": 134.5,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "chleb",
+    "store": "kaufland",
+    "czkPerKg": 60.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "chleb",
+    "store": "penny",
+    "czkPerKg": 59.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "chleb",
+    "store": "tesco",
+    "czkPerKg": 100.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "cibule",
     "store": "albert",
     "czkPerKg": 59.8,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -485,7 +724,7 @@
     "store": "billa",
     "czkPerKg": 16.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -493,23 +732,87 @@
     "store": "kaufland",
     "czkPerKg": 12.9,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "cibule",
+    "store": "penny",
+    "czkPerKg": 12.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "cibule",
+    "store": "tesco",
+    "czkPerKg": 13.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "citron",
+    "store": "albert",
+    "czkPerKg": 89.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "citron",
+    "store": "billa",
+    "czkPerKg": 39.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "citron",
+    "store": "kaufland",
+    "czkPerKg": 43.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "citron",
     "store": "lidl",
     "czkPerKg": 37.8,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "citron",
+    "store": "penny",
+    "czkPerKg": 49.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "citron",
+    "store": "tesco",
+    "czkPerKg": 26.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "cizrna_sterilovana",
     "store": "billa",
     "czkPerKg": 46.1,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "cocka_cervena",
+    "store": "billa",
+    "czkPerKg": 49.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -517,7 +820,15 @@
     "store": "kaufland",
     "czkPerKg": 55.3,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "cocka_sterilovana",
+    "store": "albert",
+    "czkPerKg": 59.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -525,15 +836,31 @@
     "store": "billa",
     "czkPerKg": 58.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "cocka_sterilovana",
+    "store": "kaufland",
+    "czkPerKg": 49.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "cocka_sterilovana",
+    "store": "tesco",
+    "czkPerKg": 65.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "cokolada_horka",
     "store": "albert",
     "czkPerKg": 784.3,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -541,7 +868,7 @@
     "store": "globus",
     "czkPerKg": 332.2,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -549,7 +876,7 @@
     "store": "lidl",
     "czkPerKg": 233.0,
     "lastSeen": "2026-10-21",
-    "ageDays": 3,
+    "ageDays": 4,
     "reason": "not_matched_today"
    },
    {
@@ -557,7 +884,7 @@
     "store": "billa",
     "czkPerKg": 159.8,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -565,7 +892,7 @@
     "store": "albert",
     "czkPerKg": 338.0,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -573,7 +900,7 @@
     "store": "globus",
     "czkPerKg": 161.2,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -581,7 +908,23 @@
     "store": "lidl",
     "czkPerKg": 121.1,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "cuketa",
+    "store": "albert",
+    "czkPerKg": 99.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "cuketa",
+    "store": "globus",
+    "czkPerKg": 39.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -589,7 +932,7 @@
     "store": "lidl",
     "czkPerKg": 39.7,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -597,7 +940,7 @@
     "store": "albert",
     "czkPerKg": 33.9,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -605,7 +948,15 @@
     "store": "billa",
     "czkPerKg": 17.9,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "cukr",
+    "store": "globus",
+    "czkPerKg": 12.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -613,15 +964,15 @@
     "store": "kaufland",
     "czkPerKg": 9.9,
     "lastSeen": "2026-10-15",
-    "ageDays": 9,
-    "reason": "not_matched_today"
+    "ageDays": 10,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "cukr",
     "store": "penny",
     "czkPerKg": 14.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -629,15 +980,15 @@
     "store": "tesco",
     "czkPerKg": 12.9,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
-    "reason": "not_matched_today"
+    "ageDays": 14,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "cukr_moucka",
     "store": "albert",
     "czkPerKg": 25.9,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -645,7 +996,7 @@
     "store": "billa",
     "czkPerKg": 6.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -653,7 +1004,7 @@
     "store": "globus",
     "czkPerKg": 17.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -661,7 +1012,7 @@
     "store": "albert",
     "czkPerKg": 49.8,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -669,7 +1020,7 @@
     "store": "globus",
     "czkPerKg": 39.8,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -677,7 +1028,7 @@
     "store": "billa",
     "czkPerKg": 92.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -685,15 +1036,15 @@
     "store": "kaufland",
     "czkPerKg": 49.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "drstky",
     "store": "lidl",
     "czkPerKg": 119.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -701,15 +1052,15 @@
     "store": "kaufland",
     "czkPerKg": 112.2,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "dyne_hokkaido",
     "store": "lidl",
     "czkPerKg": 27.4,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
     "reason": "not_matched_today"
    },
    {
@@ -717,7 +1068,7 @@
     "store": "billa",
     "czkPerKg": 29.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -725,15 +1076,39 @@
     "store": "lidl",
     "czkPerKg": 29.9,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "eidam",
+    "store": "albert",
+    "czkPerKg": 153.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "eidam",
+    "store": "kaufland",
+    "czkPerKg": 219.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "eidam",
+    "store": "tesco",
+    "czkPerKg": 179.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "emental",
     "store": "globus",
     "czkPerKg": 319.0,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -741,15 +1116,15 @@
     "store": "kaufland",
     "czkPerKg": 157.2,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "emental",
     "store": "penny",
     "czkPerKg": 179.6,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -757,7 +1132,7 @@
     "store": "globus",
     "czkPerKg": 179.8,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -765,7 +1140,7 @@
     "store": "globus",
     "czkPerKg": 31.5,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -773,15 +1148,15 @@
     "store": "kaufland",
     "czkPerKg": 51.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
+    "ageDays": 19,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "fazole_bile_sterilovane",
     "store": "lidl",
     "czkPerKg": 60.2,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
     "reason": "not_matched_today"
    },
    {
@@ -789,15 +1164,23 @@
     "store": "penny",
     "czkPerKg": 37.2,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "fazole_bile_sterilovane",
+    "store": "tesco",
+    "czkPerKg": 96.1,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "fazole_cervene_sterilovane",
     "store": "globus",
     "czkPerKg": 92.8,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -805,15 +1188,15 @@
     "store": "kaufland",
     "czkPerKg": 50.0,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
+    "ageDays": 19,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "fazole_cervene_sterilovane",
     "store": "penny",
     "czkPerKg": 35.5,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -821,7 +1204,15 @@
     "store": "albert",
     "czkPerKg": 166.3,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "feta",
+    "store": "albert",
+    "czkPerKg": 690.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -829,7 +1220,7 @@
     "store": "globus",
     "czkPerKg": 158.0,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -837,7 +1228,7 @@
     "store": "lidl",
     "czkPerKg": 138.0,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
     "reason": "not_matched_today"
    },
    {
@@ -845,7 +1236,7 @@
     "store": "globus",
     "czkPerKg": 47.8,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -853,23 +1244,63 @@
     "store": "penny",
     "czkPerKg": 49.8,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "gouda",
+    "store": "albert",
+    "czkPerKg": 134.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "gouda",
+    "store": "billa",
+    "czkPerKg": 553.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "gouda",
+    "store": "kaufland",
+    "czkPerKg": 299.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "gouda",
     "store": "lidl",
     "czkPerKg": 457.5,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "gouda",
+    "store": "penny",
+    "czkPerKg": 166.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "gouda",
+    "store": "tesco",
+    "czkPerKg": 239.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "granatove_jablko",
     "store": "lidl",
     "czkPerKg": 59.6,
     "lastSeen": "2026-10-21",
-    "ageDays": 3,
+    "ageDays": 4,
     "reason": "not_matched_today"
    },
    {
@@ -877,7 +1308,7 @@
     "store": "albert",
     "czkPerKg": 567.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -885,7 +1316,7 @@
     "store": "penny",
     "czkPerKg": 149.5,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -893,7 +1324,7 @@
     "store": "albert",
     "czkPerKg": 282.5,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -901,31 +1332,87 @@
     "store": "kaufland",
     "czkPerKg": 266.2,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
+    "ageDays": 19,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "hermelin",
+    "store": "kaufland",
+    "czkPerKg": 279.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "hermelin",
     "store": "lidl",
     "czkPerKg": 179.3,
     "lastSeen": "2026-10-21",
-    "ageDays": 3,
+    "ageDays": 4,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "hermelin",
+    "store": "tesco",
+    "czkPerKg": 299.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "hliva_ustricna",
     "store": "lidl",
     "czkPerKg": 133.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "horcice",
+    "store": "billa",
+    "czkPerKg": 199.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "horcice",
+    "store": "kaufland",
+    "czkPerKg": 37.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "horcice",
+    "store": "penny",
+    "czkPerKg": 27.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "horcice",
+    "store": "tesco",
+    "czkPerKg": 62.3,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "horcice_dijonska",
     "store": "albert",
     "czkPerKg": 237.6,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "horcice_dijonska",
+    "store": "billa",
+    "czkPerKg": 224.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -933,7 +1420,7 @@
     "store": "penny",
     "czkPerKg": 76.5,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -941,15 +1428,39 @@
     "store": "albert",
     "czkPerKg": 39.9,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "hovezi_kliska",
+    "store": "kaufland",
+    "czkPerKg": 249.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "hovezi_kliska",
+    "store": "penny",
+    "czkPerKg": 229.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "hovezi_kliska",
+    "store": "tesco",
+    "czkPerKg": 249.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "hovezi_nizky_rostenec",
     "store": "albert",
     "czkPerKg": 155.3,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -957,7 +1468,15 @@
     "store": "albert",
     "czkPerKg": 369.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "hovezi_zadni",
+    "store": "albert",
+    "czkPerKg": 299.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -965,7 +1484,7 @@
     "store": "billa",
     "czkPerKg": 319.6,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -973,7 +1492,7 @@
     "store": "globus",
     "czkPerKg": 339.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -981,15 +1500,15 @@
     "store": "kaufland",
     "czkPerKg": 289.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "hovezi_zadni",
     "store": "lidl",
     "czkPerKg": 289.9,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
     "reason": "not_matched_today"
    },
    {
@@ -997,7 +1516,7 @@
     "store": "billa",
     "czkPerKg": 189.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -1005,7 +1524,15 @@
     "store": "globus",
     "czkPerKg": 199.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "hrasek_mrazeny",
+    "store": "billa",
+    "czkPerKg": 94.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1013,7 +1540,15 @@
     "store": "kaufland",
     "czkPerKg": 74.5,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "hrasek_mrazeny",
+    "store": "penny",
+    "czkPerKg": 66.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1021,7 +1556,23 @@
     "store": "penny",
     "czkPerKg": 39.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "hruska",
+    "store": "albert",
+    "czkPerKg": 34.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "hruska",
+    "store": "billa",
+    "czkPerKg": 131.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1029,7 +1580,7 @@
     "store": "globus",
     "czkPerKg": 29.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -1037,15 +1588,31 @@
     "store": "kaufland",
     "czkPerKg": 39.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "hruska",
     "store": "penny",
     "czkPerKg": 50.8,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "hruska",
+    "store": "tesco",
+    "czkPerKg": 29.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "jablko",
+    "store": "albert",
+    "czkPerKg": 37.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1053,31 +1620,55 @@
     "store": "billa",
     "czkPerKg": 38.4,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "jablko",
+    "store": "kaufland",
+    "czkPerKg": 20.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "jablko",
     "store": "lidl",
     "czkPerKg": 17.9,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "jablko",
+    "store": "penny",
+    "czkPerKg": 19.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "jablko",
+    "store": "tesco",
+    "czkPerKg": 19.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "jahody",
     "store": "kaufland",
     "czkPerKg": 239.6,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
+    "ageDays": 12,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "jaternice",
     "store": "billa",
     "czkPerKg": 133.0,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1085,15 +1676,47 @@
     "store": "globus",
     "czkPerKg": 356.1,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "jogurt_bily",
+    "store": "billa",
+    "czkPerKg": 85.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "jogurt_bily",
+    "store": "kaufland",
+    "czkPerKg": 47.1,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "jogurt_bily",
+    "store": "penny",
+    "czkPerKg": 52.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "jogurt_bily",
+    "store": "tesco",
+    "czkPerKg": 90.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "jogurt_recky",
     "store": "albert",
     "czkPerKg": 119.2,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1101,7 +1724,7 @@
     "store": "billa",
     "czkPerKg": 99.3,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1109,15 +1732,47 @@
     "store": "kaufland",
     "czkPerKg": 92.1,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
+    "ageDays": 12,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "jogurt_recky",
     "store": "lidl",
     "czkPerKg": 70.7,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "jogurt_recky",
+    "store": "penny",
+    "czkPerKg": 86.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "jogurt_recky",
+    "store": "tesco",
+    "czkPerKg": 106.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kachna_cela",
+    "store": "albert",
+    "czkPerKg": 99.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kachna_cela",
+    "store": "billa",
+    "czkPerKg": 79.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1125,7 +1780,23 @@
     "store": "globus",
     "czkPerKg": 89.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kachna_cela",
+    "store": "kaufland",
+    "czkPerKg": 79.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kachna_cela",
+    "store": "penny",
+    "czkPerKg": 69.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1133,7 +1804,15 @@
     "store": "tesco",
     "czkPerKg": 89.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kakao",
+    "store": "albert",
+    "czkPerKg": 719.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1141,23 +1820,47 @@
     "store": "kaufland",
     "czkPerKg": 349.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kakao",
     "store": "lidl",
     "czkPerKg": 349.5,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kakao",
+    "store": "penny",
+    "czkPerKg": 299.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kakao",
+    "store": "tesco",
+    "czkPerKg": 449.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kapr",
     "store": "kaufland",
     "czkPerKg": 229.0,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kapr",
+    "store": "lidl",
+    "czkPerKg": 229.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1165,39 +1868,87 @@
     "store": "penny",
     "czkPerKg": 219.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kava_mleta",
+    "store": "albert",
+    "czkPerKg": 419.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kava_mleta",
+    "store": "kaufland",
+    "czkPerKg": 189.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kava_mleta",
     "store": "lidl",
     "czkPerKg": 199.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kava_mleta",
+    "store": "tesco",
+    "czkPerKg": 339.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kecup",
     "store": "globus",
     "czkPerKg": 129.1,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kecup",
+    "store": "kaufland",
+    "czkPerKg": 55.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kecup",
     "store": "lidl",
     "czkPerKg": 79.9,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kecup",
+    "store": "penny",
+    "czkPerKg": 66.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kecup",
+    "store": "tesco",
+    "czkPerKg": 61.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kedlubna",
     "store": "albert",
     "czkPerKg": 39.7,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -1205,7 +1956,7 @@
     "store": "billa",
     "czkPerKg": 39.7,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1213,7 +1964,23 @@
     "store": "globus",
     "czkPerKg": 39.7,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kedlubna",
+    "store": "kaufland",
+    "czkPerKg": 39.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kedlubna",
+    "store": "penny",
+    "czkPerKg": 33.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1221,7 +1988,15 @@
     "store": "tesco",
     "czkPerKg": 39.7,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kefir",
+    "store": "albert",
+    "czkPerKg": 44.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1229,15 +2004,39 @@
     "store": "billa",
     "czkPerKg": 78.2,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kefir",
+    "store": "kaufland",
+    "czkPerKg": 40.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kefir",
+    "store": "penny",
+    "czkPerKg": 30.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kefir",
+    "store": "tesco",
+    "czkPerKg": 78.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kesu",
     "store": "albert",
     "czkPerKg": 279.6,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1245,7 +2044,7 @@
     "store": "billa",
     "czkPerKg": 266.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1253,7 +2052,7 @@
     "store": "globus",
     "czkPerKg": 299.5,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1261,7 +2060,55 @@
     "store": "billa",
     "czkPerKg": 359.7,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kiwi",
+    "store": "billa",
+    "czkPerKg": 172.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kiwi",
+    "store": "globus",
+    "czkPerKg": 238.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kiwi",
+    "store": "kaufland",
+    "czkPerKg": 118.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kiwi",
+    "store": "lidl",
+    "czkPerKg": 132.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kiwi",
+    "store": "tesco",
+    "czkPerKg": 118.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "klobasa",
+    "store": "billa",
+    "czkPerKg": 249.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1269,15 +2116,15 @@
     "store": "kaufland",
     "czkPerKg": 222.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "klobasa",
     "store": "penny",
     "czkPerKg": 171.5,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -1285,15 +2132,15 @@
     "store": "tesco",
     "czkPerKg": 139.0,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
+    "ageDays": 12,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kokos_strouhany",
     "store": "billa",
     "czkPerKg": 109.8,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1301,7 +2148,7 @@
     "store": "globus",
     "czkPerKg": 109.8,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -1309,7 +2156,15 @@
     "store": "kaufland",
     "czkPerKg": 87.2,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kokosove_mleko",
+    "store": "penny",
+    "czkPerKg": 74.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1317,7 +2172,7 @@
     "store": "globus",
     "czkPerKg": 19.4,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1325,7 +2180,7 @@
     "store": "billa",
     "czkPerKg": 39.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -1333,7 +2188,7 @@
     "store": "lidl",
     "czkPerKg": 29.9,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
     "reason": "not_matched_today"
    },
    {
@@ -1341,7 +2196,7 @@
     "store": "penny",
     "czkPerKg": 29.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -1349,15 +2204,15 @@
     "store": "kaufland",
     "czkPerKg": 53.5,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kondenzovane_mleko",
     "store": "globus",
     "czkPerKg": 87.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -1365,7 +2220,7 @@
     "store": "globus",
     "czkPerKg": 239.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1373,15 +2228,23 @@
     "store": "albert",
     "czkPerKg": 479.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kozi_syr",
+    "store": "kaufland",
+    "czkPerKg": 399.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kralik",
     "store": "albert",
     "czkPerKg": 199.0,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1389,7 +2252,31 @@
     "store": "billa",
     "czkPerKg": 199.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kralik",
+    "store": "globus",
+    "czkPerKg": 239.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "krevety",
+    "store": "albert",
+    "czkPerKg": 1271.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "krevety",
+    "store": "globus",
+    "czkPerKg": 349.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1397,15 +2284,31 @@
     "store": "kaufland",
     "czkPerKg": 499.0,
     "lastSeen": "2026-10-23",
+    "ageDays": 2,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "krevety",
+    "store": "penny",
+    "czkPerKg": 359.6,
+    "lastSeen": "2026-10-24",
     "ageDays": 1,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "krevety",
+    "store": "tesco",
+    "czkPerKg": 274.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kroupy",
     "store": "albert",
     "czkPerKg": 92.7,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -1413,15 +2316,23 @@
     "store": "albert",
     "czkPerKg": 199.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kruti_prsa",
+    "store": "kaufland",
+    "czkPerKg": 189.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kruti_prsa",
     "store": "penny",
     "czkPerKg": 199.9,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
     "reason": "not_matched_today"
    },
    {
@@ -1429,7 +2340,7 @@
     "store": "lidl",
     "czkPerKg": 89.9,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
     "reason": "not_matched_today"
    },
    {
@@ -1437,7 +2348,7 @@
     "store": "billa",
     "czkPerKg": 79.8,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1445,7 +2356,7 @@
     "store": "globus",
     "czkPerKg": 49.9,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1453,15 +2364,47 @@
     "store": "kaufland",
     "czkPerKg": 49.9,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kure_cele",
+    "store": "penny",
+    "czkPerKg": 64.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kure_cele",
+    "store": "tesco",
+    "czkPerKg": 49.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kureci_jatra",
+    "store": "kaufland",
+    "czkPerKg": 49.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kureci_jatra",
     "store": "penny",
     "czkPerKg": 49.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kureci_kridla",
+    "store": "albert",
+    "czkPerKg": 79.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1469,7 +2412,7 @@
     "store": "billa",
     "czkPerKg": 127.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1477,15 +2420,15 @@
     "store": "kaufland",
     "czkPerKg": 119.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kureci_kridla",
     "store": "lidl",
     "czkPerKg": 216.3,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -1493,7 +2436,7 @@
     "store": "penny",
     "czkPerKg": 79.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -1501,7 +2444,15 @@
     "store": "tesco",
     "czkPerKg": 79.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kureci_prsa",
+    "store": "albert",
+    "czkPerKg": 129.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1509,7 +2460,7 @@
     "store": "billa",
     "czkPerKg": 97.4,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -1517,7 +2468,7 @@
     "store": "globus",
     "czkPerKg": 99.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1525,15 +2476,15 @@
     "store": "kaufland",
     "czkPerKg": 99.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kureci_stehenni_rizky",
     "store": "albert",
     "czkPerKg": 265.0,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1541,7 +2492,31 @@
     "store": "globus",
     "czkPerKg": 89.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kureci_stehenni_rizky",
+    "store": "kaufland",
+    "czkPerKg": 129.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kureci_stehenni_rizky",
+    "store": "penny",
+    "czkPerKg": 99.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kureci_stehna",
+    "store": "albert",
+    "czkPerKg": 89.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1549,15 +2524,31 @@
     "store": "billa",
     "czkPerKg": 169.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kureci_stehna",
+    "store": "kaufland",
+    "czkPerKg": 92.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kureci_stehna",
+    "store": "tesco",
+    "czkPerKg": 89.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kuskus",
     "store": "albert",
     "czkPerKg": 72.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -1565,7 +2556,7 @@
     "store": "billa",
     "czkPerKg": 79.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -1573,7 +2564,15 @@
     "store": "kaufland",
     "czkPerKg": 59.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "kuskus",
+    "store": "penny",
+    "czkPerKg": 39.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1581,15 +2580,47 @@
     "store": "globus",
     "czkPerKg": 231.7,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kysane_zeli",
+    "store": "albert",
+    "czkPerKg": 27.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kysane_zeli",
+    "store": "billa",
+    "czkPerKg": 29.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kysane_zeli",
+    "store": "globus",
+    "czkPerKg": 73.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kysane_zeli",
+    "store": "kaufland",
+    "czkPerKg": 19.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "kysane_zeli",
     "store": "lidl",
     "czkPerKg": 26.8,
     "lastSeen": "2026-10-04",
-    "ageDays": 20,
+    "ageDays": 21,
     "reason": "not_matched_today"
    },
    {
@@ -1597,7 +2628,7 @@
     "store": "penny",
     "czkPerKg": 21.8,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1605,7 +2636,15 @@
     "store": "albert",
     "czkPerKg": 35.8,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "kysane_zeli_cervene",
+    "store": "globus",
+    "czkPerKg": 107.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1613,7 +2652,15 @@
     "store": "albert",
     "czkPerKg": 90.5,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "listove_teste",
+    "store": "billa",
+    "czkPerKg": 47.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1621,7 +2668,7 @@
     "store": "globus",
     "czkPerKg": 66.3,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1629,23 +2676,47 @@
     "store": "kaufland",
     "czkPerKg": 79.7,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "listove_teste",
     "store": "lidl",
     "czkPerKg": 130.0,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "listove_teste",
+    "store": "penny",
+    "czkPerKg": 42.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "listove_teste",
+    "store": "tesco",
+    "czkPerKg": 67.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "losos",
+    "store": "kaufland",
+    "czkPerKg": 479.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "losos",
     "store": "penny",
     "czkPerKg": 361.7,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -1653,15 +2724,15 @@
     "store": "tesco",
     "czkPerKg": 349.0,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
+    "ageDays": 12,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "maasdam",
     "store": "albert",
     "czkPerKg": 132.7,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1669,23 +2740,63 @@
     "store": "globus",
     "czkPerKg": 219.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "majoneza",
+    "store": "billa",
+    "czkPerKg": 113.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "majoneza",
+    "store": "globus",
+    "czkPerKg": 95.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "majoneza",
+    "store": "kaufland",
+    "czkPerKg": 82.1,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "majoneza",
     "store": "lidl",
     "czkPerKg": 93.5,
     "lastSeen": "2026-10-21",
-    "ageDays": 3,
+    "ageDays": 4,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "majoneza",
+    "store": "penny",
+    "czkPerKg": 111.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "majoneza",
+    "store": "tesco",
+    "czkPerKg": 109.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mak",
     "store": "billa",
     "czkPerKg": 149.5,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1693,7 +2804,23 @@
     "store": "globus",
     "czkPerKg": 114.5,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "makrela",
+    "store": "albert",
+    "czkPerKg": 293.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "makrela",
+    "store": "billa",
+    "czkPerKg": 322.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1701,7 +2828,7 @@
     "store": "globus",
     "czkPerKg": 222.1,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1709,15 +2836,23 @@
     "store": "kaufland",
     "czkPerKg": 199.0,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
+    "ageDays": 12,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "makrela",
     "store": "penny",
     "czkPerKg": 269.0,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "maliny",
+    "store": "billa",
+    "czkPerKg": 279.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1725,23 +2860,39 @@
     "store": "globus",
     "czkPerKg": 339.2,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "maliny",
+    "store": "kaufland",
+    "czkPerKg": 349.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "maliny",
     "store": "lidl",
     "czkPerKg": 295.2,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "maliny",
+    "store": "tesco",
+    "czkPerKg": 295.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mandarinka",
     "store": "albert",
     "czkPerKg": 26.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1749,7 +2900,7 @@
     "store": "globus",
     "czkPerKg": 44.9,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1757,7 +2908,15 @@
     "store": "lidl",
     "czkPerKg": 24.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mandle",
+    "store": "globus",
+    "czkPerKg": 259.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1765,7 +2924,39 @@
     "store": "kaufland",
     "czkPerKg": 274.5,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "mandle",
+    "store": "lidl",
+    "czkPerKg": 249.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mandle",
+    "store": "tesco",
+    "czkPerKg": 279.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "mango",
+    "store": "albert",
+    "czkPerKg": 71.1,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mango",
+    "store": "billa",
+    "czkPerKg": 99.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1773,15 +2964,23 @@
     "store": "globus",
     "czkPerKg": 99.7,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mango",
+    "store": "kaufland",
+    "czkPerKg": 85.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mango",
     "store": "lidl",
     "czkPerKg": 56.9,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
     "reason": "not_matched_today"
    },
    {
@@ -1789,7 +2988,7 @@
     "store": "penny",
     "czkPerKg": 56.9,
     "lastSeen": "2026-10-11",
-    "ageDays": 13,
+    "ageDays": 14,
     "reason": "not_matched_today"
    },
    {
@@ -1797,7 +2996,55 @@
     "store": "tesco",
     "czkPerKg": 56.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "margarin",
+    "store": "albert",
+    "czkPerKg": 107.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "margarin",
+    "store": "billa",
+    "czkPerKg": 212.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "margarin",
+    "store": "kaufland",
+    "czkPerKg": 66.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "margarin",
+    "store": "penny",
+    "czkPerKg": 111.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "margarin",
+    "store": "tesco",
+    "czkPerKg": 139.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "mascarpone",
+    "store": "billa",
+    "czkPerKg": 99.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1805,23 +3052,151 @@
     "store": "kaufland",
     "czkPerKg": 149.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mascarpone",
     "store": "penny",
     "czkPerKg": 159.6,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mascarpone",
+    "store": "tesco",
+    "czkPerKg": 199.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "maslo",
+    "store": "kaufland",
+    "czkPerKg": 599.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "maslo",
     "store": "tesco",
     "czkPerKg": 111.6,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "med",
+    "store": "albert",
+    "czkPerKg": 899.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "med",
+    "store": "billa",
+    "czkPerKg": 259.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "med",
+    "store": "globus",
+    "czkPerKg": 532.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "med",
+    "store": "kaufland",
+    "czkPerKg": 117.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "med",
+    "store": "lidl",
+    "czkPerKg": 116.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "med",
+    "store": "tesco",
+    "czkPerKg": 159.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "meloun_cukrovy",
+    "store": "kaufland",
+    "czkPerKg": 34.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "mleko_15",
+    "store": "albert",
+    "czkPerKg": 17.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mleko_15",
+    "store": "billa",
+    "czkPerKg": 8.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mleko_15",
+    "store": "globus",
+    "czkPerKg": 16.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mleko_15",
+    "store": "kaufland",
+    "czkPerKg": 9.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "mleko_15",
+    "store": "penny",
+    "czkPerKg": 15.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mleko_15",
+    "store": "tesco",
+    "czkPerKg": 10.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "mleko_35",
+    "store": "albert",
+    "czkPerKg": 11.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1829,7 +3204,31 @@
     "store": "billa",
     "czkPerKg": 31.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mleko_35",
+    "store": "globus",
+    "czkPerKg": 12.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mleko_35",
+    "store": "kaufland",
+    "czkPerKg": 11.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "mleko_35",
+    "store": "penny",
+    "czkPerKg": 12.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1837,7 +3236,15 @@
     "store": "tesco",
     "czkPerKg": 16.4,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "mleko_bez_laktozy",
+    "store": "billa",
+    "czkPerKg": 35.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1845,7 +3252,7 @@
     "store": "penny",
     "czkPerKg": 17.4,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -1853,23 +3260,47 @@
     "store": "albert",
     "czkPerKg": 108.6,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mlete_hovezi",
+    "store": "globus",
+    "czkPerKg": 229.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mlete_hovezi",
+    "store": "kaufland",
+    "czkPerKg": 249.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mlete_hovezi",
     "store": "penny",
     "czkPerKg": 219.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mlete_hovezi",
+    "store": "tesco",
+    "czkPerKg": 263.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mlete_kureci",
     "store": "albert",
     "czkPerKg": 139.8,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1877,15 +3308,23 @@
     "store": "globus",
     "czkPerKg": 139.8,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mlete_kureci",
+    "store": "kaufland",
+    "czkPerKg": 139.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mlete_kureci",
     "store": "lidl",
     "czkPerKg": 129.9,
     "lastSeen": "2026-10-07",
-    "ageDays": 17,
+    "ageDays": 18,
     "reason": "not_matched_today"
    },
    {
@@ -1893,15 +3332,15 @@
     "store": "tesco",
     "czkPerKg": 139.8,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
+    "ageDays": 19,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mlete_maso_mix",
     "store": "albert",
     "czkPerKg": 149.8,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -1909,31 +3348,39 @@
     "store": "kaufland",
     "czkPerKg": 159.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mlete_maso_mix",
     "store": "tesco",
     "czkPerKg": 149.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mlete_veprove",
     "store": "kaufland",
     "czkPerKg": 119.8,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
+    "ageDays": 12,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "mlete_veprove",
+    "store": "tesco",
+    "czkPerKg": 119.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mochi_ryzove",
     "store": "globus",
     "czkPerKg": 498.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -1941,7 +3388,7 @@
     "store": "albert",
     "czkPerKg": 44.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1949,7 +3396,7 @@
     "store": "billa",
     "czkPerKg": 66.4,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -1957,15 +3404,55 @@
     "store": "penny",
     "czkPerKg": 7.9,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mozzarella",
+    "store": "kaufland",
+    "czkPerKg": 191.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "mozzarella",
+    "store": "penny",
+    "czkPerKg": 133.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mozzarella",
+    "store": "tesco",
+    "czkPerKg": 203.1,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "mrazene_lesni_ovoce",
     "store": "billa",
     "czkPerKg": 158.0,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mrkev",
+    "store": "albert",
+    "czkPerKg": 53.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mrkev",
+    "store": "billa",
+    "czkPerKg": 11.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1973,7 +3460,71 @@
     "store": "globus",
     "czkPerKg": 12.9,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mrkev",
+    "store": "penny",
+    "czkPerKg": 11.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "mrkev",
+    "store": "tesco",
+    "czkPerKg": 12.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "niva",
+    "store": "albert",
+    "czkPerKg": 259.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "niva",
+    "store": "billa",
+    "czkPerKg": 264.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "niva",
+    "store": "kaufland",
+    "czkPerKg": 249.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "niva",
+    "store": "penny",
+    "czkPerKg": 279.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "niva",
+    "store": "tesco",
+    "czkPerKg": 249.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "okurka_salatova",
+    "store": "albert",
+    "czkPerKg": 78.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -1981,7 +3532,7 @@
     "store": "globus",
     "czkPerKg": 44.7,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -1989,31 +3540,135 @@
     "store": "kaufland",
     "czkPerKg": 43.0,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "okurka_salatova",
+    "store": "lidl",
+    "czkPerKg": 14.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "okurka_salatova",
+    "store": "penny",
+    "czkPerKg": 49.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "okurka_salatova",
+    "store": "tesco",
+    "czkPerKg": 39.7,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "okurky_kysele",
     "store": "albert",
     "czkPerKg": 110.8,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "okurky_kysele",
+    "store": "kaufland",
+    "czkPerKg": 40.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "olej_avokadovy",
+    "store": "billa",
+    "czkPerKg": 477.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "olej_olivovy",
+    "store": "billa",
+    "czkPerKg": 325.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "olej_olivovy",
+    "store": "kaufland",
+    "czkPerKg": 326.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "olej_olivovy",
     "store": "penny",
     "czkPerKg": 217.2,
     "lastSeen": "2026-10-23",
-    "ageDays": 1,
+    "ageDays": 2,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "olej_olivovy",
+    "store": "tesco",
+    "czkPerKg": 297.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "olej_repkovy",
     "store": "albert",
     "czkPerKg": 37.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "olej_repkovy",
+    "store": "billa",
+    "czkPerKg": 188.3,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "olej_repkovy",
+    "store": "kaufland",
+    "czkPerKg": 108.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "olej_repkovy",
+    "store": "tesco",
+    "czkPerKg": 41.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "olej_slunecnicovy",
+    "store": "billa",
+    "czkPerKg": 37.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "olej_slunecnicovy",
+    "store": "globus",
+    "czkPerKg": 54.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -2021,23 +3676,31 @@
     "store": "kaufland",
     "czkPerKg": 30.9,
     "lastSeen": "2026-10-23",
-    "ageDays": 1,
-    "reason": "not_matched_today"
+    "ageDays": 2,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "olej_slunecnicovy",
     "store": "penny",
     "czkPerKg": 29.2,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "olej_slunecnicovy",
+    "store": "tesco",
+    "czkPerKg": 51.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "olivy_cerne",
     "store": "globus",
     "czkPerKg": 89.2,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -2045,7 +3708,31 @@
     "store": "globus",
     "czkPerKg": 224.5,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "ovesne_vlocky",
+    "store": "billa",
+    "czkPerKg": 39.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "ovesne_vlocky",
+    "store": "kaufland",
+    "czkPerKg": 39.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "ovesne_vlocky",
+    "store": "penny",
+    "czkPerKg": 21.8,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -2053,7 +3740,7 @@
     "store": "lidl",
     "czkPerKg": 229.0,
     "lastSeen": "2026-10-04",
-    "ageDays": 20,
+    "ageDays": 21,
     "reason": "not_matched_today"
    },
    {
@@ -2061,7 +3748,15 @@
     "store": "albert",
     "czkPerKg": 99.7,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "paprika_cervena",
+    "store": "billa",
+    "czkPerKg": 59.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -2069,7 +3764,7 @@
     "store": "globus",
     "czkPerKg": 79.8,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -2077,15 +3772,23 @@
     "store": "kaufland",
     "czkPerKg": 22.4,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
+    "ageDays": 19,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "paprika_cervena",
     "store": "lidl",
     "czkPerKg": 79.8,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "paprika_cervena",
+    "store": "penny",
+    "czkPerKg": 48.2,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -2093,15 +3796,23 @@
     "store": "albert",
     "czkPerKg": 159.6,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "paprika_mleta_sladka",
+    "store": "tesco",
+    "czkPerKg": 191.6,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "paprika_spicata",
     "store": "lidl",
     "czkPerKg": 79.8,
     "lastSeen": "2026-10-14",
-    "ageDays": 10,
+    "ageDays": 11,
     "reason": "not_matched_today"
    },
    {
@@ -2109,7 +3820,7 @@
     "store": "albert",
     "czkPerKg": 231.2,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -2117,15 +3828,39 @@
     "store": "kaufland",
     "czkPerKg": 99.0,
     "lastSeen": "2026-10-17",
-    "ageDays": 7,
+    "ageDays": 8,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "parky",
+    "store": "lidl",
+    "czkPerKg": 199.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "parky",
+    "store": "penny",
+    "czkPerKg": 152.1,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "parky",
+    "store": "tesco",
+    "czkPerKg": 199.5,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "passata",
     "store": "albert",
     "czkPerKg": 49.1,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -2133,7 +3868,7 @@
     "store": "billa",
     "czkPerKg": 39.8,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -2141,7 +3876,7 @@
     "store": "penny",
     "czkPerKg": 39.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -2149,7 +3884,7 @@
     "store": "globus",
     "czkPerKg": 474.5,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -2157,7 +3892,7 @@
     "store": "billa",
     "czkPerKg": 396.1,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -2165,7 +3900,7 @@
     "store": "albert",
     "czkPerKg": 71.1,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -2173,7 +3908,7 @@
     "store": "billa",
     "czkPerKg": 71.1,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -2181,23 +3916,23 @@
     "store": "kaufland",
     "czkPerKg": 34.9,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
+    "ageDays": 19,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "petrzel_nat",
     "store": "tesco",
     "czkPerKg": 199.5,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "piskoty",
     "store": "billa",
     "czkPerKg": 103.6,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -2205,7 +3940,7 @@
     "store": "albert",
     "czkPerKg": 319.6,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -2213,7 +3948,7 @@
     "store": "globus",
     "czkPerKg": 299.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -2221,7 +3956,7 @@
     "store": "penny",
     "czkPerKg": 25.5,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -2229,7 +3964,23 @@
     "store": "albert",
     "czkPerKg": 74.8,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "podmasli",
+    "store": "kaufland",
+    "czkPerKg": 23.1,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
+   },
+   {
+    "ingredientId": "podmasli",
+    "store": "penny",
+    "czkPerKg": 17.4,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -2237,7 +3988,23 @@
     "store": "lidl",
     "czkPerKg": 39.9,
     "lastSeen": "2026-10-07",
-    "ageDays": 17,
+    "ageDays": 18,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "pomeranc",
+    "store": "albert",
+    "czkPerKg": 29.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "pomeranc",
+    "store": "billa",
+    "czkPerKg": 29.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -2245,7 +4012,15 @@
     "store": "globus",
     "czkPerKg": 24.9,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "pomeranc",
+    "store": "penny",
+    "czkPerKg": 24.9,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -2253,15 +4028,15 @@
     "store": "tesco",
     "czkPerKg": 24.9,
     "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
+    "ageDays": 7,
+    "reason": "store_missing"
    },
    {
     "ingredientId": "porek",
     "store": "albert",
     "czkPerKg": 99.5,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -2269,7 +4044,7 @@
     "store": "billa",
     "czkPerKg": 74.5,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -2277,7 +4052,7 @@
     "store": "globus",
     "czkPerKg": 74.5,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -2285,7 +4060,7 @@
     "store": "albert",
     "czkPerKg": 289.0,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -2293,7 +4068,7 @@
     "store": "globus",
     "czkPerKg": 289.0,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -2301,7 +4076,7 @@
     "store": "billa",
     "czkPerKg": 623.8,
     "lastSeen": "2026-10-13",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -2309,7 +4084,7 @@
     "store": "billa",
     "czkPerKg": 90.8,
     "lastSeen": "2026-10-20",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -2317,1063 +4092,35 @@
     "store": "penny",
     "czkPerKg": 80.7,
     "lastSeen": "2026-10-06",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
     "ingredientId": "pstruh",
-    "store": "lidl",
-    "czkPerKg": 199.0,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata",
-    "store": "billa",
-    "czkPerKg": 59.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata",
-    "store": "globus",
-    "czkPerKg": 99.8,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata",
     "store": "kaufland",
-    "czkPerKg": 39.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata",
-    "store": "lidl",
-    "czkPerKg": 49.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata",
-    "store": "penny",
-    "czkPerKg": 49.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata_cherry",
-    "store": "albert",
-    "czkPerKg": 179.6,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata_cherry",
-    "store": "globus",
-    "czkPerKg": 99.8,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata_cherry",
-    "store": "kaufland",
-    "czkPerKg": 116.7,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata_cherry",
-    "store": "lidl",
-    "czkPerKg": 159.6,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata_sterilovana",
-    "store": "albert",
-    "czkPerKg": 54.8,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcata_sterilovana",
-    "store": "globus",
-    "czkPerKg": 124.8,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcatovy_protlak",
-    "store": "albert",
-    "czkPerKg": 127.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcatovy_protlak",
-    "store": "kaufland",
-    "czkPerKg": 85.0,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rajcatovy_protlak",
-    "store": "lidl",
-    "czkPerKg": 85.0,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "ricotta",
-    "store": "billa",
-    "czkPerKg": 119.6,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "ricotta",
-    "store": "penny",
-    "czkPerKg": 99.6,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rohlik",
-    "store": "kaufland",
-    "czkPerKg": 33.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "romadur",
-    "store": "albert",
-    "czkPerKg": 199.0,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "romadur",
-    "store": "globus",
-    "czkPerKg": 249.0,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rozinky",
-    "store": "billa",
-    "czkPerKg": 89.8,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rozinky",
-    "store": "globus",
-    "czkPerKg": 89.8,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rukola",
-    "store": "billa",
-    "czkPerKg": 249.0,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rukola",
-    "store": "globus",
-    "czkPerKg": 175.2,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rukola",
-    "store": "kaufland",
-    "czkPerKg": 175.2,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rukola",
-    "store": "lidl",
-    "czkPerKg": 159.2,
-    "lastSeen": "2026-10-07",
-    "ageDays": 17,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rybi_file",
-    "store": "penny",
-    "czkPerKg": 159.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "rybi_file",
-    "store": "tesco",
-    "czkPerKg": 333.0,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "ryze_basmati",
-    "store": "albert",
-    "czkPerKg": 49.1,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "ryze_basmati",
-    "store": "billa",
-    "czkPerKg": 79.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "ryze_dlouhozrnna",
-    "store": "kaufland",
-    "czkPerKg": 49.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "ryze_dlouhozrnna",
-    "store": "penny",
-    "czkPerKg": 37.2,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "ryze_dlouhozrnna",
-    "store": "tesco",
-    "czkPerKg": 62.4,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "ryze_jasminova",
-    "store": "globus",
-    "czkPerKg": 38.0,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "sadlo",
-    "store": "globus",
-    "czkPerKg": 79.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "sadlo",
-    "store": "lidl",
-    "czkPerKg": 79.6,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "sadlo",
-    "store": "tesco",
-    "czkPerKg": 139.6,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "salam_trvanlivy",
-    "store": "billa",
-    "czkPerKg": 142.7,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "salam_trvanlivy",
-    "store": "globus",
-    "czkPerKg": 219.0,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "salat_ledovy",
-    "store": "albert",
-    "czkPerKg": 103.6,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "salat_ledovy",
-    "store": "billa",
-    "czkPerKg": 45.8,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "salat_ledovy",
-    "store": "globus",
-    "czkPerKg": 39.8,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "salat_ledovy",
-    "store": "kaufland",
-    "czkPerKg": 39.8,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "salat_ledovy",
-    "store": "lidl",
-    "czkPerKg": 39.8,
-    "lastSeen": "2026-10-07",
-    "ageDays": 17,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "salat_ledovy",
-    "store": "penny",
-    "czkPerKg": 39.8,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "salat_ledovy",
-    "store": "tesco",
-    "czkPerKg": 49.8,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "sardinky_konzerva",
-    "store": "kaufland",
-    "czkPerKg": 160.0,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "sardinky_konzerva",
-    "store": "tesco",
-    "czkPerKg": 199.2,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "sekana_hotova",
-    "store": "billa",
-    "czkPerKg": 87.8,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "sekana_hotova",
-    "store": "globus",
-    "czkPerKg": 129.0,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "skyr",
-    "store": "billa",
-    "czkPerKg": 114.6,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "sled",
-    "store": "globus",
-    "czkPerKg": 199.0,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "slivovice",
-    "store": "albert",
-    "czkPerKg": 459.3,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "slunecnicova_seminka",
-    "store": "globus",
-    "czkPerKg": 89.5,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "smetana_12",
-    "store": "globus",
-    "czkPerKg": 54.5,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "smetana_rostlinna",
-    "store": "tesco",
-    "czkPerKg": 179.6,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "smetana_zakysana",
-    "store": "tesco",
-    "czkPerKg": 104.7,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "smetanovy_syr",
-    "store": "billa",
-    "czkPerKg": 179.0,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "smetanovy_syr",
-    "store": "globus",
-    "czkPerKg": 286.2,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "sojova_omacka",
-    "store": "kaufland",
-    "czkPerKg": 112.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "spagety",
-    "store": "globus",
-    "czkPerKg": 65.8,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "spekacek",
-    "store": "albert",
-    "czkPerKg": 179.0,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "spekacek",
-    "store": "globus",
-    "czkPerKg": 139.0,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "spekacek",
-    "store": "lidl",
-    "czkPerKg": 99.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "spenat_cerstvy",
-    "store": "billa",
-    "czkPerKg": 249.0,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "spenat_cerstvy",
-    "store": "kaufland",
-    "czkPerKg": 175.2,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "spenat_mrazeny",
-    "store": "lidl",
-    "czkPerKg": 42.0,
-    "lastSeen": "2026-10-11",
-    "ageDays": 13,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "strouhanka",
-    "store": "billa",
-    "czkPerKg": 99.5,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "susene_svestky",
-    "store": "lidl",
-    "czkPerKg": 149.5,
-    "lastSeen": "2026-10-11",
-    "ageDays": 13,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "susenky_maslove",
-    "store": "billa",
-    "czkPerKg": 380.8,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "svestky",
-    "store": "globus",
-    "czkPerKg": 34.9,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "svestky",
-    "store": "lidl",
-    "czkPerKg": 24.9,
-    "lastSeen": "2026-10-11",
-    "ageDays": 13,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "svestky",
-    "store": "penny",
-    "czkPerKg": 58.7,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tatarska_omacka",
-    "store": "billa",
-    "czkPerKg": 184.9,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tatarska_omacka",
-    "store": "penny",
-    "czkPerKg": 100.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "taveny_syr",
-    "store": "albert",
-    "czkPerKg": 279.2,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "taveny_syr",
-    "store": "billa",
-    "czkPerKg": 295.2,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "taveny_syr",
-    "store": "globus",
-    "czkPerKg": 299.2,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "taveny_syr",
-    "store": "kaufland",
-    "czkPerKg": 279.2,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "teleci_maso",
-    "store": "globus",
-    "czkPerKg": 399.0,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tilapie",
-    "store": "lidl",
-    "czkPerKg": 239.0,
-    "lastSeen": "2026-10-11",
-    "ageDays": 13,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tofu",
-    "store": "billa",
-    "czkPerKg": 186.1,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tofu",
-    "store": "globus",
-    "czkPerKg": 219.3,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tofu",
-    "store": "lidl",
-    "czkPerKg": 88.7,
-    "lastSeen": "2026-10-11",
-    "ageDays": 13,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tofu_hedvabne",
-    "store": "globus",
-    "czkPerKg": 159.2,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "treska",
-    "store": "lidl",
-    "czkPerKg": 169.8,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "treska",
-    "store": "tesco",
-    "czkPerKg": 266.3,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tunak_cerstvy",
-    "store": "kaufland",
-    "czkPerKg": 359.0,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tunak_konzerva",
-    "store": "lidl",
-    "czkPerKg": 549.2,
-    "lastSeen": "2026-10-07",
-    "ageDays": 17,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tvaroh",
-    "store": "kaufland",
-    "czkPerKg": 59.8,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "tvaruzky",
-    "store": "globus",
-    "czkPerKg": 199.5,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "uzene_maso",
-    "store": "tesco",
-    "czkPerKg": 189.0,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "vajecny_liker",
-    "store": "globus",
-    "czkPerKg": 218.0,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "vanilkovy_cukr",
-    "store": "globus",
-    "czkPerKg": 443.2,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "vejce",
-    "store": "penny",
-    "czkPerKg": 169.4,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "vejce",
-    "store": "tesco",
-    "czkPerKg": 60.5,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_kotleta",
-    "store": "albert",
-    "czkPerKg": 119.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_kotleta",
-    "store": "lidl",
-    "czkPerKg": 119.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_krkovice",
-    "store": "kaufland",
-    "czkPerKg": 79.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_krkovice",
-    "store": "penny",
-    "czkPerKg": 89.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_panenka",
-    "store": "albert",
-    "czkPerKg": 112.0,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_panenka",
-    "store": "tesco",
-    "czkPerKg": 199.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_pecene",
-    "store": "albert",
-    "czkPerKg": 69.9,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_pecene",
-    "store": "globus",
-    "czkPerKg": 109.0,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_pecene",
-    "store": "tesco",
-    "czkPerKg": 180.3,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_plec",
-    "store": "billa",
-    "czkPerKg": 174.8,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_plec",
-    "store": "globus",
-    "czkPerKg": 139.0,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_plec",
-    "store": "penny",
-    "czkPerKg": 59.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_zebra",
-    "store": "kaufland",
-    "czkPerKg": 89.9,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprova_zebra",
-    "store": "lidl",
-    "czkPerKg": 283.2,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "veprove_koleno",
-    "store": "tesco",
-    "czkPerKg": 69.9,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "vlasske_orechy",
-    "store": "albert",
-    "czkPerKg": 279.8,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "vlasske_orechy",
-    "store": "billa",
-    "czkPerKg": 299.0,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "vlasske_orechy",
-    "store": "kaufland",
-    "czkPerKg": 274.5,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "vlasske_orechy",
-    "store": "lidl",
-    "czkPerKg": 274.5,
-    "lastSeen": "2026-10-11",
-    "ageDays": 13,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "vlasske_orechy",
-    "store": "penny",
-    "czkPerKg": 279.8,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zampiony",
-    "store": "albert",
-    "czkPerKg": 99.8,
-    "lastSeen": "2026-10-20",
-    "ageDays": 4,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zampiony",
-    "store": "globus",
-    "czkPerKg": 74.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zampiony",
-    "store": "tesco",
-    "czkPerKg": 89.8,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zavinace",
-    "store": "albert",
-    "czkPerKg": 299.0,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zavinace",
-    "store": "globus",
-    "czkPerKg": 179.0,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zazvor",
-    "store": "kaufland",
-    "czkPerKg": 69.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zeli_bile",
-    "store": "albert",
-    "czkPerKg": 79.6,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zeli_bile",
-    "store": "kaufland",
-    "czkPerKg": 8.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zeli_bile",
-    "store": "tesco",
-    "czkPerKg": 9.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zeli_cervene",
-    "store": "lidl",
-    "czkPerKg": 22.0,
-    "lastSeen": "2026-10-04",
-    "ageDays": 20,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zeli_pekingske",
-    "store": "billa",
-    "czkPerKg": 34.9,
-    "lastSeen": "2026-10-18",
-    "ageDays": 6,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zeli_pekingske",
-    "store": "globus",
-    "czkPerKg": 29.9,
-    "lastSeen": "2026-10-13",
-    "ageDays": 11,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zeli_pekingske",
-    "store": "lidl",
-    "czkPerKg": 24.9,
-    "lastSeen": "2026-10-21",
-    "ageDays": 3,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zmrzlina_vanilkova",
-    "store": "albert",
-    "czkPerKg": 86.7,
-    "lastSeen": "2026-10-06",
-    "ageDays": 18,
-    "reason": "not_matched_today"
+    "czkPerKg": 329.0,
+    "lastSeen": "2026-10-24",
+    "ageDays": 1,
+    "reason": "store_missing"
    }
   ],
-  "staleCount": 407,
+  "staleCount": 719,
   "dropped": [],
   "droppedCount": 0,
-  "storesMissing": [],
+  "storesMissing": [
+   "kaufland",
+   "tesco"
+  ],
   "pricesPath": "docs/prices.json",
-  "pricesV2Path": "docs/prices/cz.json"
+  "pricesV2Path": "docs/prices/cz.json",
+  "staleTruncated": 219
  },
  "prices": {
   "path": "docs/prices.json",
   "v": 1,
   "market": null,
   "currency": null,
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "ingredients": 287,
   "pairs": 969,
   "perStore": {
@@ -3385,25 +4132,25 @@
    "penny": 121,
    "globus": 164
   },
-  "deals": 844,
+  "deals": 436,
   "dealsPerStore": {
-   "albert": 181,
-   "lidl": 140,
+   "albert": 98,
+   "lidl": 68,
    "kaufland": 79,
    "tesco": 81,
-   "billa": 143,
-   "penny": 110,
-   "globus": 110
+   "billa": 45,
+   "penny": 16,
+   "globus": 49
   },
-  "sizeBytes": 179866
+  "sizeBytes": 104546
  },
  "pricesV2Path": "docs/prices/cz.json",
  "fetch": {
   "v": 1,
   "market": "cz",
   "currency": "CZK",
-  "run": "2026-10-24T06:43:52+00:00",
-  "today": "2026-10-24",
+  "run": "2026-10-25T07:09:24+00:00",
+  "today": "2026-10-25",
   "sources": {
    "globus": {
     "source": "globus",
@@ -3414,7 +4161,7 @@
      "globus": 837
     },
     "requests": 9,
-    "elapsed_s": 16.6,
+    "elapsed_s": 16.7,
     "notes": [
      "house 4005: totalCount=776, offers=837"
     ],
@@ -3430,7 +4177,7 @@
      "lidl": 356
     },
     "requests": 25,
-    "elapsed_s": 24.4,
+    "elapsed_s": 24.9,
     "notes": [
      "27 categories, 356 products"
     ],
@@ -3446,7 +4193,7 @@
      "penny": 40
     },
     "requests": 2,
-    "elapsed_s": 1.4,
+    "elapsed_s": 1.3,
     "notes": [
      "total=32, offers=40"
     ],
@@ -3462,7 +4209,7 @@
      "albert": 990
     },
     "requests": 6,
-    "elapsed_s": 5.5,
+    "elapsed_s": 5.1,
     "notes": [
      "Albert - 43HM_akcni_letak (2026-10-21..2026-10-27): 26 spreads, 403 offers",
      "Albert - 43HM_akcni_katalog_brand (2026-10-21..2026-11-03): 19 spreads, 277 offers",
@@ -3480,7 +4227,7 @@
      "billa": 296
     },
     "requests": 5,
-    "elapsed_s": 4.6,
+    "elapsed_s": 4.1,
     "notes": [
      "velky-letak-21-10-27-10-2026: 20 spreads, 259 offers",
      "maly-letak-21-10-27-10-2026: 5 spreads, 37 offers"
@@ -3495,7 +4242,7 @@
     "error": null,
     "stores": {},
     "requests": 2,
-    "elapsed_s": 1.5,
+    "elapsed_s": 1.4,
     "notes": [
      "21.10.2026 - 27.10.2026: 2026-10-21..2026-10-27",
      "21.10.2026 - 27.10.2026: 2026-10-21..2026-10-27",
@@ -3536,22 +4283,14 @@
    },
    "kupi": {
     "source": "kupi",
-    "ok": true,
-    "count": 736,
-    "error": null,
-    "stores": {
-     "albert": 125,
-     "globus": 87,
-     "lidl": 108,
-     "penny": 109,
-     "billa": 119,
-     "kaufland": 94,
-     "tesco": 94
-    },
-    "requests": 171,
-    "elapsed_s": 172.1,
+    "ok": false,
+    "count": 0,
+    "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/hledej?f=m%C3%A1slo",
+    "stores": {},
+    "requests": 2,
+    "elapsed_s": 1.0,
     "notes": [
-     "170 terms, 0 failed, 736 offers"
+     "stopped at term maslo: blocked/robots"
     ],
     "tier": "fallback",
     "market": "cz"
@@ -3626,12 +4365,12 @@
     "cf_mitigated": null
    },
    "www.kupi.cz": {
-    "requests": 171,
+    "requests": 2,
     "statuses": {
-     "200": 171
+     "403": 2
     },
     "server": "cloudflare",
-    "cf_mitigated": null
+    "cf_mitigated": "challenge"
    }
   },
   "robots": [
@@ -3758,56 +4497,15 @@
    },
    {
     "host": "www.kupi.cz",
-    "status": 200,
-    "error": null,
-    "rules": 148,
-    "disallow": [
-     "Disallow: /",
-     "Disallow: /",
-     "Disallow: /",
-     "Disallow: /welcome",
-     "Disallow: /404",
-     "Disallow: /login",
-     "Disallow: /popup/*",
-     "Disallow: /logging",
-     "Disallow: /get-locality-by-gps",
-     "Disallow: /nakupni-listek",
-     "Disallow: /get-mesto",
-     "Disallow: /get-slevy",
-     "Disallow: /get-letaky",
-     "Disallow: /get-akce",
-     "Disallow: /get-znacky",
-     "Disallow: /hlidani",
-     "Disallow: /uzivatel",
-     "Disallow: /oblibene",
-     "Disallow: /oblibene-kategorie",
-     "Disallow: /set-oblibene-letaky",
-     "Disallow: /send",
-     "Disallow: /kupici",
-     "Disallow: /objednavka",
-     "Disallow: /redir/*",
-     "Disallow: /nakup/*",
-     "Disallow: /mailing",
-     "Disallow: /redir.php",
-     "Disallow: /tipy",
-     "Disallow: /letak2/*",
-     "Disallow: /letak-dots/*",
-     "Disallow: /mailing/unsubscribe/*",
-     "Disallow: /magazin/pr-clanky",
-     "Disallow: /magazin/clanek-nahled/*",
-     "Disallow: /uzivatel/autorizace",
-     "Disallow: /prihlasit/facebook",
-     "Disallow: /oauth/*",
-     "Disallow: /odhlasit-se",
-     "Disallow: /prihlasit/facebook/overeni",
-     "Disallow: /prihlasit/facebook/potvrzeni-uctu",
-     "Disallow: /letak/nahled/*"
-    ],
+    "status": 403,
+    "error": "blocked: HTTP 403 bot protection (cloudflare) for https://www.kupi.cz/robots.txt",
+    "rules": 0,
+    "disallow": [],
     "crawl_delay": null
    }
   ],
   "notFetched": [],
-  "requests_made": 220,
+  "requests_made": 51,
   "cache_hits": 0
  },
  "fetchPath": "out/health.json",

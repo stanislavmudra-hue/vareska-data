@@ -2,16 +2,13 @@
  "v": 2,
  "market": "at",
  "currency": "EUR",
- "updated": "2026-10-24",
+ "updated": "2026-10-25",
  "perKg": {
   "arasidove_maslo": {
    "lidl": 5.2
   },
   "bagel": {
    "lidl": 6.6
-  },
-  "boruvky": {
-   "lidl": 11.1
   },
   "cuketa": {
    "lidl": 1.4
@@ -31,26 +28,17 @@
   "granatove_jablko": {
    "lidl": 4.0
   },
-  "halloumi": {
-   "lidl": 10.2
-  },
   "jablko": {
    "lidl": 1.6
   },
   "kachni_stehna": {
    "lidl": 16.0
   },
-  "kalamary": {
-   "lidl": 12.7
-  },
   "kompot_ananasovy": {
    "lidl": 1.3
   },
   "kureci_nugety": {
    "lidl": 6.0
-  },
-  "losos_uzeny": {
-   "lidl": 21.3
   },
   "margarin": {
    "lidl": 4.5
@@ -63,9 +51,6 @@
   },
   "mrkev": {
    "lidl": 1.0
-  },
-  "pistacie": {
-   "lidl": 9.9
   },
   "povidla": {
    "lidl": 6.9
@@ -81,6 +66,14 @@
   }
  },
  "deals": [
+  {
+   "ingredientId": "arasidy",
+   "store": "lidl",
+   "perKg": 4.5,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-10-31",
+   "title": "ALESTO Erdnüsse"
+  },
   {
    "ingredientId": "banan",
    "store": "lidl",
@@ -98,36 +91,76 @@
    "title": "Bio Zitronen"
   },
   {
-   "ingredientId": "jablko",
+   "ingredientId": "dzus_pomerancovy",
    "store": "lidl",
-   "perKg": 1.6,
-   "validFrom": "2026-10-22",
-   "validTo": "2026-10-24",
-   "title": "Bio Mini Äpfel aus Österreich"
+   "perKg": 2.2,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-10-31",
+   "title": "Solevita Orangensaft"
   },
   {
-   "ingredientId": "kola",
+   "ingredientId": "emental",
    "store": "lidl",
-   "perKg": 0.8,
-   "validFrom": "2026-10-27",
-   "validTo": "2026-10-28",
-   "title": "Freeway Cola"
+   "perKg": 7.0,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-04",
+   "title": "MILBONA Emmentaler Stück"
   },
   {
-   "ingredientId": "kompot_ananasovy",
+   "ingredientId": "feta",
    "store": "lidl",
-   "perKg": 1.3,
-   "validFrom": "2026-10-22",
-   "validTo": "2026-10-24",
-   "title": "Ananas"
+   "perKg": 10.4,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-10-31",
+   "title": "MILBONA Feta"
   },
   {
-   "ingredientId": "povidla",
+   "ingredientId": "hruska",
    "store": "lidl",
-   "perKg": 6.9,
-   "validFrom": "2026-10-22",
-   "validTo": "2026-10-24",
-   "title": "PODRAVKA Pflaumenmus"
+   "perKg": 1.0,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-04",
+   "title": "Birnen"
+  },
+  {
+   "ingredientId": "kesu",
+   "store": "lidl",
+   "perKg": 11.2,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-10-31",
+   "title": "ALESTO Cashewkerne"
+  },
+  {
+   "ingredientId": "losos_uzeny",
+   "store": "lidl",
+   "perKg": 15.9,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-10-31",
+   "title": "NAUTICA Räucherlachs"
+  },
+  {
+   "ingredientId": "lunchmeat",
+   "store": "lidl",
+   "perKg": 5.7,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-04",
+   "title": "DULANO Frühstücksfleisch"
+  },
+  {
+   "ingredientId": "para_orechy",
+   "store": "lidl",
+   "perKg": 16.0,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-10-31",
+   "title": "ALESTO Paranüsse"
+  },
+  {
+   "ingredientId": "pistacie",
+   "store": "lidl",
+   "perKg": 13.0,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-10-31",
+   "title": "ALESTO Pistazien"
   },
   {
    "ingredientId": "salat_ledovy",
@@ -138,20 +171,20 @@
    "title": "Eisbergsalat aus Österreich"
   },
   {
+   "ingredientId": "sardinky_konzerva",
+   "store": "lidl",
+   "perKg": 25.5,
+   "validFrom": "2026-10-29",
+   "validTo": "2026-10-31",
+   "title": "Sardinen"
+  },
+  {
    "ingredientId": "smetanovy_syr",
    "store": "lidl",
    "perKg": 9.7,
    "validFrom": "2026-10-27",
    "validTo": "2026-10-28",
    "title": "Philadelphia Frischkäse"
-  },
-  {
-   "ingredientId": "veprova_panenka",
-   "store": "lidl",
-   "perKg": 7.0,
-   "validFrom": "2026-10-22",
-   "validTo": "2026-10-24",
-   "title": "WIESENTALER Schweinefilet"
   }
  ],
  "categoryFallbackPerKg": {
