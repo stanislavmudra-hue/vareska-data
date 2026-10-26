@@ -1,8 +1,8 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-10-25",
- "generatedAt": "2026-10-25T07:10:54Z",
+ "date": "2026-10-26",
+ "generatedAt": "2026-10-26T07:20:54Z",
  "startedAt": null,
  "durationSec": null,
  "status": "ok",
@@ -21,7 +21,7 @@
  },
  "matching": {
   "path": "out/pl/matched.json",
-  "generated": "2026-10-25",
+  "generated": "2026-10-26",
   "matched": 3,
   "review": 6,
   "unmatched": 32,
@@ -58,8 +58,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-10-24",
-  "today": "2026-10-25",
+  "previousUpdated": "2026-10-25",
+  "today": "2026-10-26",
   "rows": 3,
   "rowsPerStore": {
    "lidl": 3
@@ -69,13 +69,13 @@
   },
   "promoRows": 3,
   "clubRows": 0,
-  "ingredientsPriced": 12,
-  "pairsPriced": 12,
-  "pairsFresh": 0,
-  "pairsFromPromoOnly": 0,
+  "ingredientsPriced": 14,
+  "pairsPriced": 14,
+  "pairsFresh": 3,
+  "pairsFromPromoOnly": 3,
   "storesPriced": {
    "biedronka": 0,
-   "lidl": 12,
+   "lidl": 14,
    "kaufland": 0,
    "auchan": 0,
    "carrefour": 0,
@@ -92,7 +92,7 @@
     "store": "lidl",
     "czkPerKg": 7.8,
     "lastSeen": "2026-10-24",
-    "ageDays": 1,
+    "ageDays": 2,
     "reason": "not_matched_today"
    },
    {
@@ -100,7 +100,7 @@
     "store": "lidl",
     "czkPerKg": 8.0,
     "lastSeen": "2026-10-24",
-    "ageDays": 1,
+    "ageDays": 2,
     "reason": "not_matched_today"
    },
    {
@@ -108,7 +108,7 @@
     "store": "lidl",
     "czkPerKg": 10.0,
     "lastSeen": "2026-10-21",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -116,7 +116,7 @@
     "store": "lidl",
     "czkPerKg": 39.9,
     "lastSeen": "2026-10-17",
-    "ageDays": 8,
+    "ageDays": 9,
     "reason": "not_matched_today"
    },
    {
@@ -124,7 +124,7 @@
     "store": "lidl",
     "czkPerKg": 23.5,
     "lastSeen": "2026-10-14",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -132,7 +132,7 @@
     "store": "lidl",
     "czkPerKg": 117.1,
     "lastSeen": "2026-10-17",
-    "ageDays": 8,
+    "ageDays": 9,
     "reason": "not_matched_today"
    },
    {
@@ -140,7 +140,7 @@
     "store": "lidl",
     "czkPerKg": 95.9,
     "lastSeen": "2026-10-14",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -148,7 +148,7 @@
     "store": "lidl",
     "czkPerKg": 60.0,
     "lastSeen": "2026-10-24",
-    "ageDays": 1,
+    "ageDays": 2,
     "reason": "not_matched_today"
    },
    {
@@ -156,7 +156,7 @@
     "store": "lidl",
     "czkPerKg": 47.9,
     "lastSeen": "2026-10-17",
-    "ageDays": 8,
+    "ageDays": 9,
     "reason": "not_matched_today"
    },
    {
@@ -164,15 +164,7 @@
     "store": "lidl",
     "czkPerKg": 41.6,
     "lastSeen": "2026-10-24",
-    "ageDays": 1,
-    "reason": "not_matched_today"
-   },
-   {
-    "ingredientId": "zampiony",
-    "store": "lidl",
-    "czkPerKg": 10.0,
-    "lastSeen": "2026-10-14",
-    "ageDays": 11,
+    "ageDays": 2,
     "reason": "not_matched_today"
    },
    {
@@ -180,11 +172,11 @@
     "store": "lidl",
     "czkPerKg": 16.9,
     "lastSeen": "2026-10-24",
-    "ageDays": 1,
+    "ageDays": 2,
     "reason": "not_matched_today"
    }
   ],
-  "staleCount": 12,
+  "staleCount": 11,
   "dropped": [],
   "droppedCount": 0,
   "storesMissing": [
@@ -205,12 +197,12 @@
   "v": 2,
   "market": "pl",
   "currency": "PLN",
-  "updated": "2026-10-25",
-  "ingredients": 12,
-  "pairs": 12,
+  "updated": "2026-10-26",
+  "ingredients": 14,
+  "pairs": 14,
   "perStore": {
    "biedronka": 0,
-   "lidl": 12,
+   "lidl": 14,
    "kaufland": 0,
    "auchan": 0,
    "carrefour": 0,
@@ -231,15 +223,15 @@
    "aldi": 0,
    "zabka": 0
   },
-  "sizeBytes": 1485
+  "sizeBytes": 1559
  },
  "pricesV2Path": null,
  "fetch": {
   "v": 1,
   "market": "pl",
   "currency": "PLN",
-  "run": "2026-10-25T07:10:22+00:00",
-  "today": "2026-10-25",
+  "run": "2026-10-26T07:20:22+00:00",
+  "today": "2026-10-26",
   "sources": {
    "lidl_pl": {
     "source": "lidl_pl",
@@ -250,7 +242,7 @@
      "lidl": 42
     },
     "requests": 2,
-    "elapsed_s": 1.5,
+    "elapsed_s": 1.7,
     "notes": [
      "0 categories, 42 products"
     ],

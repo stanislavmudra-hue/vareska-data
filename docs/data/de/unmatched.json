@@ -1,48 +1,6 @@
 {
- "date": "2026-10-25",
+ "date": "2026-10-26",
  "review": [
-  {
-   "ingredientId": "ouzo",
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "Ouzo 12 38% Vol",
-   "czkPerKg": 18.03,
-   "price": 11.99,
-   "confidence": 0.839,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "ouzo",
-     "score": 0.839,
-     "via": "Ouzo",
-     "nameCs": "ouzo",
-     "name": "Ouzo"
-    },
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.312,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.312,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
   {
    "ingredientId": "parky",
    "store": "lidl",
@@ -1841,6 +1799,49 @@
   {
    "store": "lidl",
    "source": "lidl_de",
+   "title": "Dieci.Nove.Dieci Montepulciano d´Abruzzo DOC trocken, Rotwein 2024",
+   "czkPerKg": 6.72,
+   "price": 4.99,
+   "confidence": 0.599,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vino_cervene",
+     "score": 0.599,
+     "via": "Rotwein",
+     "nameCs": "červené víno",
+     "name": "Rotwein"
+    },
+    {
+     "ingredientId": "drozdi_cerstve",
+     "score": 0.24,
+     "via": "Trockenhefe",
+     "nameCs": "čerstvé droždí",
+     "name": "frische Hefe",
+     "reasons": [
+      "hint-category:other",
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "drozdi_susene",
+     "score": 0.144,
+     "via": "Trockenhefe",
+     "nameCs": "sušené droždí",
+     "name": "Trockenhefe",
+     "reasons": [
+      "hint-category:other",
+      "sibling:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
    "title": "GIULIO PASOTTI Chiaretto di Bardolino DOC trocken, Roséwein 2025",
    "czkPerKg": 3.76,
    "price": 2.79,
@@ -2921,23 +2922,14 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "JACK DANIEL'S Old N°7 Tennessee Whiskey 40% Vol",
-   "czkPerKg": 28.56,
-   "price": 19.99,
-   "confidence": 0.256,
+   "title": "2 x 0,7-l-Flasche Spirituosenpaket Zünftler Alter Pflaumenbrand 1 Jahr 40% Vol",
+   "czkPerKg": 17.85,
+   "price": 24.99,
+   "originalPrice": 29.98,
+   "confidence": 0.251,
    "status": "unmatched",
    "club": false,
    "suggestions": [
-    {
-     "ingredientId": "jackfruit",
-     "score": 0.256,
-     "via": "jackfruit v nálevu",
-     "nameCs": "jackfruit v nálevu",
-     "name": "junge Jackfruit in Lake",
-     "reasons": [
-      "hint-category:fruit"
-     ]
-    },
     {
      "ingredientId": "chleb_celozrnny",
      "score": 0.251,
@@ -2957,10 +2949,21 @@
      "reasons": [
       "hint-category:other"
      ]
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.251,
+     "via": "Vollmilch",
+     "nameCs": "plnotučné mléko",
+     "name": "Vollmilch",
+     "reasons": [
+      "hint-category:dairy",
+      "sibling:chosen"
+     ]
     }
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
+   "promo": true
   },
   {
    "store": "lidl",
@@ -3113,6 +3116,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 44,
- "unmatchedTotal": 42
+ "reviewTotal": 43,
+ "unmatchedTotal": 43
 }
