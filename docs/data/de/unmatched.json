@@ -1,5 +1,5 @@
 {
- "date": "2026-10-26",
+ "date": "2026-10-27",
  "review": [
   {
    "ingredientId": "parky",
@@ -784,6 +784,48 @@
    "promo": false
   },
   {
+   "ingredientId": "vodka",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "RACHMANINOFF Wodka 3-fach destilliert 37,5% Vol",
+   "czkPerKg": 8.34,
+   "price": 5.49,
+   "confidence": 0.647,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vodka",
+     "score": 0.647,
+     "via": "Wodka",
+     "nameCs": "vodka",
+     "name": "Wodka"
+    },
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.259,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.259,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
    "ingredientId": "gin",
    "store": "lidl",
    "source": "lidl_de",
@@ -905,6 +947,48 @@
      "reasons": [
       "hint-category:other",
       "sibling:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "ingredientId": "vino_ruzove",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "CIMAROSA Zinfandel Rosé California lieblich, Roséwein 2025",
+   "czkPerKg": 3.35,
+   "price": 2.49,
+   "confidence": 0.627,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vino_ruzove",
+     "score": 0.627,
+     "via": "Roséwein",
+     "nameCs": "růžové víno",
+     "name": "Roséwein"
+    },
+    {
+     "ingredientId": "kapusta_ruzickova",
+     "score": 0.251,
+     "via": "Rosenkohl",
+     "nameCs": "růžičková kapusta",
+     "name": "Rosenkohl",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    },
+    {
+     "ingredientId": "ruzova_voda",
+     "score": 0.251,
+     "via": "Rosenwasser",
+     "nameCs": "růžová voda",
+     "name": "Rosenwasser",
+     "reasons": [
+      "hint-category:other"
      ]
     }
    ],
@@ -1500,7 +1584,7 @@
    "ingredientId": "vino_cervene",
    "store": "lidl",
    "source": "lidl_de",
-   "title": "GIULIO PASOTTI Bardolino DOP Classico trocken, Rotwein 2024",
+   "title": "GIULIO PASOTTI Bardolino DOP Classico trocken, Rotwein 2025",
    "czkPerKg": 3.76,
    "price": 2.79,
    "confidence": 0.612,
@@ -1885,47 +1969,6 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "ARDBEG Islay Single Malt Scotch Whisky 10 Jahre mit Geschenkbox 46% Vol",
-   "czkPerKg": 65.33,
-   "price": 42.99,
-   "confidence": 0.589,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "whisky",
-     "score": 0.589,
-     "via": "Whisky",
-     "nameCs": "whisky",
-     "name": "Whisky"
-    },
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.236,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.236,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "GRAF ADELMANN Brüssele Cuvée Schlossabfüllung VDP.Gutswein trocken, Rotwein 2021",
    "czkPerKg": 10.76,
    "price": 7.99,
@@ -2218,6 +2261,47 @@
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Christkindl Glühwein rot, Literflasche, Glühwein",
+   "czkPerKg": 2.01,
+   "price": 1.99,
+   "confidence": 0.518,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vino_cervene",
+     "score": 0.518,
+     "via": "Rotwein",
+     "nameCs": "červené víno",
+     "name": "Rotwein"
+    },
+    {
+     "ingredientId": "koreni_na_svarak",
+     "score": 0.259,
+     "via": "Glühweingewürz",
+     "nameCs": "koření na svařené víno",
+     "name": "Glühweingewürz",
+     "reasons": [
+      "hint-category:spice"
+     ]
+    },
+    {
+     "ingredientId": "zeli_cervene",
+     "score": 0.259,
+     "via": "Rotkohl",
+     "nameCs": "červené zelí",
+     "name": "Rotkohl",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
   },
   {
    "store": "lidl",
@@ -2626,52 +2710,6 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "6 x 0,7-l-Flasche Spirituosenpaket MASSARI Sambuca 40% Vol",
-   "czkPerKg": 12.62,
-   "price": 52.99,
-   "originalPrice": 59.94,
-   "confidence": 0.27,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.27,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.27,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    },
-    {
-     "ingredientId": "mleko_35",
-     "score": 0.27,
-     "via": "Vollmilch",
-     "nameCs": "plnotučné mléko",
-     "name": "Vollmilch",
-     "reasons": [
-      "hint-category:dairy",
-      "sibling:chosen"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "Echter Nordhäuser Doppelkorn 38% Vol",
    "czkPerKg": 11.41,
    "price": 7.99,
@@ -2777,52 +2815,6 @@
      "name": "Blumenkohl",
      "reasons": [
       "hint-category:vegetable"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "6 x 0,7-l-Flasche Spirituosenpaket ROMANETTI Aperitivo Rosato 15% Vol",
-   "czkPerKg": 7.62,
-   "price": 31.99,
-   "originalPrice": 37.74,
-   "confidence": 0.259,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.259,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.259,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    },
-    {
-     "ingredientId": "mleko_35",
-     "score": 0.259,
-     "via": "Vollmilch",
-     "nameCs": "plnotučné mléko",
-     "name": "Vollmilch",
-     "reasons": [
-      "hint-category:dairy",
-      "sibling:chosen"
      ]
     }
    ],
@@ -3042,19 +3034,6 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "FAVORINI/SONDEY Waffel-/Gebäckmischung",
-   "price": 2.79,
-   "originalPrice": 2.89,
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "400 g",
-   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "FREEWAY Erfrischungsgetränk",
    "price": 0.49,
    "originalPrice": 0.65,
@@ -3116,6 +3095,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 43,
- "unmatchedTotal": 43
+ "reviewTotal": 45,
+ "unmatchedTotal": 40
 }
