@@ -1,5 +1,5 @@
 {
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "review": [
   {
    "ingredientId": "parky",
@@ -377,44 +377,6 @@
    "promo": false
   },
   {
-   "ingredientId": "kesu_maslo",
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "ALESTO Cashew-Erdnuss-Mix",
-   "czkPerKg": 8.45,
-   "price": 1.69,
-   "originalPrice": 1.99,
-   "confidence": 0.671,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "kesu_maslo",
-     "score": 0.671,
-     "via": "Cashewmus",
-     "nameCs": "kešu máslo",
-     "name": "Cashewmus"
-    },
-    {
-     "ingredientId": "arasidove_maslo",
-     "score": 0.624,
-     "via": "Erdnussbutter",
-     "nameCs": "arašídové máslo",
-     "name": "Erdnussbutter"
-    },
-    {
-     "ingredientId": "arasidy",
-     "score": 0.624,
-     "via": "Erdnüsse",
-     "nameCs": "arašídy",
-     "name": "Erdnüsse"
-    }
-   ],
-   "pack": "200 g",
-   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
    "ingredientId": "salam_sunkovy",
    "store": "lidl",
    "source": "lidl_de",
@@ -446,6 +408,44 @@
    ],
    "pack": "200 g",
    "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "cokoladovy_sirup",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "SONDEY Schoko Butterkeks",
+   "czkPerKg": 11.12,
+   "price": 1.39,
+   "originalPrice": 1.59,
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "cokoladovy_sirup",
+     "score": 0.671,
+     "via": "Schokoladensirup",
+     "nameCs": "čokoládový sirup",
+     "name": "Schokoladensirup"
+    },
+    {
+     "ingredientId": "pudink_cokoladovy",
+     "score": 0.671,
+     "via": "Schokoladenpuddingpulver",
+     "nameCs": "čokoládový pudink v prášku",
+     "name": "Schokoladenpuddingpulver"
+    },
+    {
+     "ingredientId": "maslo",
+     "score": 0.624,
+     "via": "Butter",
+     "nameCs": "máslo",
+     "name": "Butter"
+    }
+   ],
+   "pack": "125 g",
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2098,48 +2098,6 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "ABRACHAN Blended Malt Scotch Whisky 18 Jahre Double Cask Matured 45% Vol",
-   "czkPerKg": 53.18,
-   "price": 34.99,
-   "originalPrice": 49.99,
-   "confidence": 0.58,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "whisky",
-     "score": 0.58,
-     "via": "Whisky",
-     "nameCs": "whisky",
-     "name": "Whisky"
-    },
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.232,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.232,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "Cour Saint Liénard Grand Cru Saint-Émilion AOP trocken, Rotwein 2022",
    "czkPerKg": 16.15,
    "price": 11.99,
@@ -2488,6 +2446,52 @@
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "6 x 1,0-l-Flasche Lidanis Pastis 40% Vol",
+   "czkPerKg": 11.66,
+   "price": 69.94,
+   "originalPrice": 89.94,
+   "confidence": 0.285,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.285,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.285,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.285,
+     "via": "Vollmilch",
+     "nameCs": "plnotučné mléko",
+     "name": "Vollmilch",
+     "reasons": [
+      "hint-category:dairy",
+      "sibling:chosen"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "store": "lidl",
@@ -2922,19 +2926,6 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "ALESTO SELECTION ALESTO",
-   "price": 2.79,
-   "originalPrice": 2.99,
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "200 g",
-   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "COMTE DE BRISMAND Brut Reserve, Champagner",
    "price": 17.99,
    "confidence": 0.0,
@@ -3071,5 +3062,5 @@
   }
  ],
  "reviewTotal": 44,
- "unmatchedTotal": 41
+ "unmatchedTotal": 40
 }
