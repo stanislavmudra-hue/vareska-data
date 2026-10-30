@@ -1,38 +1,38 @@
 {
  "market": "at",
  "currency": "EUR",
- "date": "2026-10-29",
- "generatedAt": "2026-10-29T07:54:58Z",
- "status": "warning",
+ "date": "2026-10-30",
+ "generatedAt": "2026-10-30T08:00:26Z",
+ "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "startedAt": null,
-  "finishedAt": "2026-10-29T07:54:58Z",
+  "finishedAt": "2026-10-30T08:00:26Z",
   "durationSec": null,
-  "offers": 116,
+  "offers": 115,
   "deals": 11,
   "priced": 30,
   "matched": 12,
   "review": 29,
-  "unmatched": 70,
+  "unmatched": 69,
   "ok": true
  },
- "lastSuccessfulRun": "2026-10-29",
- "pricesUpdated": "2026-10-29",
+ "lastSuccessfulRun": "2026-10-30",
+ "pricesUpdated": "2026-10-30",
  "sources": {
   "lidl_at": {
    "label": "lidl_at",
    "ok": true,
    "skipped": false,
-   "items": 116,
+   "items": 115,
    "matched": 12,
    "requests": 14,
-   "durationSec": 13.2,
+   "durationSec": 14.4,
    "error": null,
    "robots": null,
    "notes": [
-    "15 categories, 116 products"
+    "15 categories, 115 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -98,45 +98,13 @@
   "mpreis"
  ],
  "stale": 22,
- "dropped": 1,
- "warnings": [
-  "1 stale price(s) dropped (> 21 days)"
- ],
+ "dropped": 0,
+ "warnings": [],
  "validation": {
   "ok": true,
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-10-16",
-   "market": "at",
-   "generatedAt": "2026-10-16T06:41:33Z",
-   "durationSec": null,
-   "status": "ok",
-   "ok": true,
-   "offers": 180,
-   "perSource": {
-    "lidl_at": 180
-   },
-   "matched": 8,
-   "review": 31,
-   "unmatched": 128,
-   "deals": 8,
-   "priced": 29,
-   "pairsPriced": 29,
-   "perStore": {
-    "billa": 0,
-    "spar": 0,
-    "interspar": 0,
-    "hofer": 0,
-    "lidl": 29,
-    "penny": 0,
-    "mpreis": 0
-   },
-   "stale": 24,
-   "dropped": 0,
-   "warnings": 0
-  },
   {
    "date": "2026-10-17",
    "market": "at",
@@ -526,6 +494,36 @@
    "stale": 22,
    "dropped": 1,
    "warnings": 1
+  },
+  {
+   "date": "2026-10-30",
+   "market": "at",
+   "generatedAt": "2026-10-30T08:00:26Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 115,
+   "perSource": {
+    "lidl_at": 115
+   },
+   "matched": 12,
+   "review": 29,
+   "unmatched": 69,
+   "deals": 11,
+   "priced": 30,
+   "pairsPriced": 30,
+   "perStore": {
+    "billa": 0,
+    "spar": 0,
+    "interspar": 0,
+    "hofer": 0,
+    "lidl": 30,
+    "penny": 0,
+    "mpreis": 0
+   },
+   "stale": 22,
+   "dropped": 0,
+   "warnings": 0
   }
  ]
 }
