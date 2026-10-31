@@ -5,21 +5,17 @@
  "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
- "previousUpdated": "2026-10-29",
- "today": "2026-10-30",
- "rows": 2,
- "rowsPerStore": {
-  "lidl": 2
- },
- "rowsPerSource": {
-  "lidl_pl": 2
- },
- "promoRows": 2,
+ "previousUpdated": "2026-10-30",
+ "today": "2026-10-31",
+ "rows": 0,
+ "rowsPerStore": {},
+ "rowsPerSource": {},
+ "promoRows": 0,
  "clubRows": 0,
  "ingredientsPriced": 16,
  "pairsPriced": 16,
- "pairsFresh": 2,
- "pairsFromPromoOnly": 2,
+ "pairsFresh": 0,
+ "pairsFromPromoOnly": 0,
  "storesPriced": {
   "biedronka": 0,
   "lidl": 16,
@@ -32,126 +28,143 @@
   "zabka": 0
  },
  "deals": 1,
- "dealsCarried": 0,
+ "dealsCarried": 1,
  "stale": [
   {
    "ingredientId": "ananas",
    "store": "lidl",
    "czkPerKg": 8.0,
    "lastSeen": "2026-10-28",
-   "ageDays": 2,
-   "reason": "not_matched_today"
+   "ageDays": 3,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "brokolice_mrazena",
    "store": "lidl",
    "czkPerKg": 7.8,
    "lastSeen": "2026-10-24",
-   "ageDays": 6,
-   "reason": "not_matched_today"
+   "ageDays": 7,
+   "reason": "store_missing"
+  },
+  {
+   "ingredientId": "citron",
+   "store": "lidl",
+   "czkPerKg": 12.0,
+   "lastSeen": "2026-10-30",
+   "ageDays": 1,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "dyne_hokkaido",
    "store": "lidl",
    "czkPerKg": 10.0,
    "lastSeen": "2026-10-21",
-   "ageDays": 9,
-   "reason": "not_matched_today"
+   "ageDays": 10,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "edamame",
    "store": "lidl",
    "czkPerKg": 39.9,
    "lastSeen": "2026-10-17",
-   "ageDays": 13,
-   "reason": "not_matched_today"
+   "ageDays": 14,
+   "reason": "store_missing"
+  },
+  {
+   "ingredientId": "hruska",
+   "store": "lidl",
+   "czkPerKg": 4.0,
+   "lastSeen": "2026-10-30",
+   "ageDays": 1,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "kaki",
    "store": "lidl",
    "czkPerKg": 23.5,
    "lastSeen": "2026-10-14",
-   "ageDays": 16,
-   "reason": "not_matched_today"
+   "ageDays": 17,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "mochi_ryzove",
    "store": "lidl",
    "czkPerKg": 117.1,
    "lastSeen": "2026-10-17",
-   "ageDays": 13,
-   "reason": "not_matched_today"
+   "ageDays": 14,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "orechy_smes",
    "store": "lidl",
    "czkPerKg": 50.0,
    "lastSeen": "2026-10-28",
-   "ageDays": 2,
-   "reason": "not_matched_today"
+   "ageDays": 3,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "ostruziny",
    "store": "lidl",
    "czkPerKg": 95.9,
    "lastSeen": "2026-10-14",
-   "ageDays": 16,
-   "reason": "not_matched_today"
+   "ageDays": 17,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "paprika_cervena",
    "store": "lidl",
    "czkPerKg": 18.0,
    "lastSeen": "2026-10-29",
-   "ageDays": 1,
-   "reason": "not_matched_today"
+   "ageDays": 2,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "rajcata_cherry",
    "store": "lidl",
    "czkPerKg": 60.0,
    "lastSeen": "2026-10-24",
-   "ageDays": 6,
-   "reason": "not_matched_today"
+   "ageDays": 7,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "rukola",
    "store": "lidl",
    "czkPerKg": 47.9,
    "lastSeen": "2026-10-17",
-   "ageDays": 13,
-   "reason": "not_matched_today"
+   "ageDays": 14,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "veprova_zebra",
    "store": "lidl",
    "czkPerKg": 41.6,
    "lastSeen": "2026-10-24",
-   "ageDays": 6,
-   "reason": "not_matched_today"
+   "ageDays": 7,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "zampiony",
    "store": "lidl",
    "czkPerKg": 16.0,
    "lastSeen": "2026-10-28",
-   "ageDays": 2,
-   "reason": "not_matched_today"
+   "ageDays": 3,
+   "reason": "store_missing"
   },
   {
    "ingredientId": "zazvor",
    "store": "lidl",
    "czkPerKg": 16.9,
    "lastSeen": "2026-10-24",
-   "ageDays": 6,
-   "reason": "not_matched_today"
+   "ageDays": 7,
+   "reason": "store_missing"
   }
  ],
- "staleCount": 14,
+ "staleCount": 16,
  "dropped": [],
  "droppedCount": 0,
  "storesMissing": [
   "biedronka",
+  "lidl",
   "kaufland",
   "auchan",
   "carrefour",
