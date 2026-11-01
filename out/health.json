@@ -2,21 +2,21 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-10-31T07:49:48+00:00",
- "today": "2026-10-31",
+ "run": "2026-11-01T08:30:15+00:00",
+ "today": "2026-11-01",
  "sources": {
   "globus": {
    "source": "globus",
    "ok": true,
-   "count": 1009,
+   "count": 990,
    "error": null,
    "stores": {
-    "globus": 1009
+    "globus": 990
    },
    "requests": 11,
-   "elapsed_s": 18.3,
+   "elapsed_s": 17.2,
    "notes": [
-    "house 4005: totalCount=959, offers=1009"
+    "house 4005: totalCount=950, offers=990"
    ],
    "tier": "primary",
    "market": "cz"
@@ -30,7 +30,7 @@
     "lidl": 31
    },
    "requests": 2,
-   "elapsed_s": 1.3,
+   "elapsed_s": 1.6,
    "notes": [
     "0 categories, 31 products"
    ],
@@ -46,7 +46,7 @@
     "penny": 79
    },
    "requests": 2,
-   "elapsed_s": 1.3,
+   "elapsed_s": 1.5,
    "notes": [
     "total=64, offers=79"
    ],
@@ -62,7 +62,7 @@
     "albert": 1128
    },
    "requests": 6,
-   "elapsed_s": 5.3,
+   "elapsed_s": 5.4,
    "notes": [
     "Albert - 43HM_akcni_katalog_brand (2026-10-21..2026-11-03): 19 spreads, 286 offers",
     "Albert - 44HM_akcni_letak (2026-10-28..2026-11-03): 31 spreads, 479 offers",
@@ -80,7 +80,7 @@
     "billa": 315
    },
    "requests": 5,
-   "elapsed_s": 3.7,
+   "elapsed_s": 4.1,
    "notes": [
     "velky-letak-29-10-3-11-2026: 19 spreads, 278 offers",
     "maly-letak-29-10-3-11-2026: 5 spreads, 37 offers"
@@ -95,10 +95,13 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.7,
+   "elapsed_s": 1.8,
    "notes": [
     "29.10.2026 - 03.11.2026: 2026-10-29..2026-11-03",
+    "04.11.2026 - 10.11.2026: 2026-11-04..2026-11-10",
     "29.10.2026 - 03.11.2026: 2026-10-29..2026-11-03",
+    "04.11.2026 - 10.11.2026: 2026-11-04..2026-11-10",
+    "04.11.2026 - 17.11.2026: 2026-11-04..2026-11-17",
     "07.10.2026 - 03.11.2026: 2026-10-07..2026-11-03",
     "metadata only - Kaufland prices come from the kupi provider"
    ],
@@ -114,12 +117,39 @@
     },
     {
      "name": "Kaufland",
+     "title": "04.11.2026 - 10.11.2026",
+     "offer_from": "2026-11-04",
+     "offer_to": "2026-11-10",
+     "published": "2026-11-01",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a17ed2-bc41-770b-ab09-3c95dca33452/Kaufland-04-11-2026-10-11-2026-00.pdf",
+     "subcategory": "KDZ"
+    },
+    {
+     "name": "Kaufland",
      "title": "29.10.2026 - 03.11.2026",
      "offer_from": "2026-10-29",
      "offer_to": "2026-11-03",
      "published": "2026-10-26",
      "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a16994-817b-76cb-80fc-3ec167c21f76/Kaufland-29-10-2026-03-11-2026-00.pdf",
      "subcategory": "Hyper1"
+    },
+    {
+     "name": "Kaufland",
+     "title": "04.11.2026 - 10.11.2026",
+     "offer_from": "2026-11-04",
+     "offer_to": "2026-11-10",
+     "published": "2026-11-01",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a18da1-04f1-7ce2-bf64-95889646603b/Kaufland-04-11-2026-10-11-2026-00.pdf",
+     "subcategory": "Hyper1"
+    },
+    {
+     "name": "Kaufland",
+     "title": "04.11.2026 - 17.11.2026",
+     "offer_from": "2026-11-04",
+     "offer_to": "2026-11-17",
+     "published": "2026-11-01",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a1545e-fa7e-7e69-82e8-1f90bbd9fe13/Kaufland-04-11-2026-17-11-2026-00.pdf",
+     "subcategory": "Hyper2"
     },
     {
      "name": "Kaufland",
@@ -137,21 +167,21 @@
   "kupi": {
    "source": "kupi",
    "ok": true,
-   "count": 775,
+   "count": 880,
    "error": null,
    "stores": {
-    "tesco": 88,
+    "tesco": 90,
     "billa": 124,
-    "globus": 83,
+    "globus": 88,
     "albert": 192,
-    "kaufland": 84,
-    "lidl": 107,
-    "penny": 97
+    "penny": 198,
+    "kaufland": 83,
+    "lidl": 105
    },
-   "requests": 172,
-   "elapsed_s": 192.8,
+   "requests": 171,
+   "elapsed_s": 170.7,
    "notes": [
-    "170 terms, 0 failed, 775 offers"
+    "170 terms, 0 failed, 880 offers"
    ],
    "tier": "fallback",
    "market": "cz"
@@ -226,10 +256,9 @@
    "cf_mitigated": null
   },
   "www.kupi.cz": {
-   "requests": 172,
+   "requests": 171,
    "statuses": {
-    "200": 171,
-    "None": 1
+    "200": 171
    },
    "server": "cloudflare",
    "cf_mitigated": null
@@ -408,6 +437,6 @@
   }
  ],
  "notFetched": [],
- "requests_made": 200,
+ "requests_made": 199,
  "cache_hits": 0
 }
