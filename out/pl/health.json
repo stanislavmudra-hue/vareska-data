@@ -2,19 +2,21 @@
  "v": 1,
  "market": "pl",
  "currency": "PLN",
- "run": "2026-11-01T08:33:39+00:00",
- "today": "2026-11-01",
+ "run": "2026-11-02T08:42:45+00:00",
+ "today": "2026-11-02",
  "sources": {
   "lidl_pl": {
    "source": "lidl_pl",
-   "ok": false,
-   "count": 0,
-   "error": "no offers parsed",
-   "stores": {},
+   "ok": true,
+   "count": 6,
+   "error": null,
+   "stores": {
+    "lidl": 6
+   },
    "requests": 2,
-   "elapsed_s": 2.4,
+   "elapsed_s": 1.5,
    "notes": [
-    "0 categories, 0 products"
+    "0 categories, 6 products"
    ],
    "tier": "primary",
    "market": "pl"

@@ -2,7 +2,7 @@
  "v": 2,
  "market": "pl",
  "currency": "PLN",
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "perKg": {
   "ananas": {
    "lidl": 8.0
@@ -47,13 +47,22 @@
    "lidl": 41.6
   },
   "zampiony": {
-   "lidl": 16.0
+   "lidl": 10.0
   },
   "zazvor": {
    "lidl": 16.9
   }
  },
- "deals": [],
+ "deals": [
+  {
+   "ingredientId": "zampiony",
+   "store": "lidl",
+   "perKg": 10.0,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-04",
+   "title": "Pieczarki"
+  }
+ ],
  "categoryFallbackPerKg": {
   "vegetable": 7.65,
   "fruit": 10.2,

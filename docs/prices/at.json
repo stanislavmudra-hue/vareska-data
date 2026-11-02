@@ -2,7 +2,7 @@
  "v": 2,
  "market": "at",
  "currency": "EUR",
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "perKg": {
   "arasidove_maslo": {
    "lidl": 5.2
@@ -29,10 +29,13 @@
    "lidl": 2.2
   },
   "emental": {
-   "lidl": 9.7
+   "lidl": 7.0
   },
   "feta": {
    "lidl": 10.4
+  },
+  "hruska": {
+   "lidl": 1.0
   },
   "jablko": {
    "lidl": 1.6
@@ -48,6 +51,9 @@
   },
   "losos_uzeny": {
    "lidl": 15.9
+  },
+  "lunchmeat": {
+   "lidl": 5.7
   },
   "mineralka": {
    "lidl": 0.2
@@ -80,7 +86,88 @@
    "lidl": 7.0
   }
  },
- "deals": [],
+ "deals": [
+  {
+   "ingredientId": "emental",
+   "store": "lidl",
+   "perKg": 7.0,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-04",
+   "title": "MILBONA Emmentaler Stück"
+  },
+  {
+   "ingredientId": "hruska",
+   "store": "lidl",
+   "perKg": 1.0,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-04",
+   "title": "Birnen"
+  },
+  {
+   "ingredientId": "kachni_prsa_uzena",
+   "store": "lidl",
+   "perKg": 38.8,
+   "validFrom": "2026-12-10",
+   "validTo": "2026-12-12",
+   "title": "DELUXE Geräucherte Entenbrust"
+  },
+  {
+   "ingredientId": "lunchmeat",
+   "store": "lidl",
+   "perKg": 5.7,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-04",
+   "title": "Dulano Frühstücksfleisch"
+  },
+  {
+   "ingredientId": "mineralka",
+   "store": "lidl",
+   "perKg": 0.3,
+   "validFrom": "2026-11-05",
+   "validTo": "2026-11-07",
+   "title": "Mineralwasser"
+  },
+  {
+   "ingredientId": "mozzarella",
+   "store": "lidl",
+   "perKg": 5.2,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-11",
+   "title": "MILBONA Mozzarella"
+  },
+  {
+   "ingredientId": "mozzarella",
+   "store": "lidl",
+   "perKg": 5.2,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-11",
+   "title": "MILBONA Mozzarella classic"
+  },
+  {
+   "ingredientId": "olej_avokadovy",
+   "store": "lidl",
+   "perKg": 21.7,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
+   "title": "DELUXE Avocadoöl"
+  },
+  {
+   "ingredientId": "teleci_jatra",
+   "store": "lidl",
+   "perKg": 17.5,
+   "validFrom": "2026-11-05",
+   "validTo": "2026-11-07",
+   "title": "DELUXE Frische Kalbsleber"
+  },
+  {
+   "ingredientId": "teleci_kotlety",
+   "store": "lidl",
+   "perKg": 24.0,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
+   "title": "- Frisches Kalbskotelett"
+  }
+ ],
  "categoryFallbackPerKg": {
   "vegetable": 1.84,
   "fruit": 2.46,

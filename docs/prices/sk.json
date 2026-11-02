@@ -2,7 +2,7 @@
  "v": 2,
  "market": "sk",
  "currency": "EUR",
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "perKg": {
   "banan": {
    "lidl": 1.1
@@ -13,8 +13,8 @@
   "brokolice_mrazena": {
    "lidl": 2.4
   },
-  "emental": {
-   "lidl": 7.5
+  "cokolada_horka": {
+   "lidl": 12.5
   },
   "kachna_cela": {
    "lidl": 3.0
@@ -31,14 +31,14 @@
   "kureci_stehna": {
    "lidl": 4.0
   },
+  "margarin": {
+   "lidl": 3.2
+  },
   "mlete_maso_mix": {
    "lidl": 6.0
   },
   "mlete_veprove": {
    "lidl": 3.3
-  },
-  "okurka_salatova": {
-   "lidl": 1.6
   },
   "porek": {
    "lidl": 2.5
@@ -52,9 +52,6 @@
   "tatarska_omacka": {
    "lidl": 5.0
   },
-  "veprova_krkovice": {
-   "lidl": 4.0
-  },
   "veprova_pecene": {
    "lidl": 4.8
   },
@@ -67,12 +64,44 @@
  },
  "deals": [
   {
-   "ingredientId": "vodka",
+   "ingredientId": "cokolada_horka",
    "store": "lidl",
-   "perKg": 10.6,
-   "validFrom": "2026-10-31",
-   "validTo": "2026-11-01",
-   "title": "Vodka 1906"
+   "perKg": 12.5,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-08",
+   "title": "Čokoládová poleva"
+  },
+  {
+   "ingredientId": "margarin",
+   "store": "lidl",
+   "perKg": 3.2,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-08",
+   "title": "Hera Margarín"
+  },
+  {
+   "ingredientId": "mlete_veprove",
+   "store": "lidl",
+   "perKg": 3.3,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-08",
+   "title": "Mleté bravčové mäso"
+  },
+  {
+   "ingredientId": "rajcata_cherry",
+   "store": "lidl",
+   "perKg": 7.6,
+   "validFrom": "2026-11-07",
+   "validTo": "2026-11-08",
+   "title": "Cherry paradajky datľové"
+  },
+  {
+   "ingredientId": "veprovy_bucek",
+   "store": "lidl",
+   "perKg": 3.5,
+   "validFrom": "2026-11-07",
+   "validTo": "2026-11-08",
+   "title": "Bravčový bôčik"
   }
  ],
  "categoryFallbackPerKg": {
