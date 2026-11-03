@@ -5,17 +5,21 @@
  "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
- "previousUpdated": "2026-11-01",
- "today": "2026-11-02",
- "rows": 0,
- "rowsPerStore": {},
- "rowsPerSource": {},
- "promoRows": 0,
+ "previousUpdated": "2026-11-02",
+ "today": "2026-11-03",
+ "rows": 1,
+ "rowsPerStore": {
+  "lidl": 1
+ },
+ "rowsPerSource": {
+  "lidl_de": 1
+ },
+ "promoRows": 1,
  "clubRows": 0,
  "ingredientsPriced": 1,
  "pairsPriced": 1,
- "pairsFresh": 0,
- "pairsFromPromoOnly": 0,
+ "pairsFresh": 1,
+ "pairsFromPromoOnly": 1,
  "storesPriced": {
   "aldiNord": 0,
   "aldiSued": 0,
@@ -29,23 +33,13 @@
  },
  "deals": 0,
  "dealsCarried": 0,
- "stale": [
-  {
-   "ingredientId": "arasidy",
-   "store": "lidl",
-   "czkPerKg": 3.6,
-   "lastSeen": "2026-10-30",
-   "ageDays": 3,
-   "reason": "store_missing"
-  }
- ],
- "staleCount": 1,
+ "stale": [],
+ "staleCount": 0,
  "dropped": [],
  "droppedCount": 0,
  "storesMissing": [
   "aldiNord",
   "aldiSued",
-  "lidl",
   "kaufland",
   "edeka",
   "rewe",

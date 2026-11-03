@@ -1,39 +1,41 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-11-02",
- "generatedAt": "2026-11-02T08:43:19Z",
+ "date": "2026-11-03",
+ "generatedAt": "2026-11-03T08:57:28Z",
  "startedAt": null,
  "durationSec": null,
- "status": "warning",
+ "status": "ok",
  "ok": true,
- "warnings": [
-  "store 'lidl' had no matched rows today (carry-forward only)"
- ],
+ "warnings": [],
  "validation": {
   "ok": true,
   "errors": []
  },
  "offers": {
   "perSource": {
-   "lidl_de": 67
+   "lidl_de": 70
   },
-  "total": 67,
+  "total": 70,
   "path": "out/de/offers.json"
  },
  "matching": {
   "path": "out/de/matched.json",
-  "generated": "2026-11-02",
-  "matched": 0,
-  "review": 36,
-  "unmatched": 31,
+  "generated": "2026-11-03",
+  "matched": 1,
+  "review": 34,
+  "unmatched": 35,
   "ignored": 0,
-  "byStatus": {},
-  "matchedPerSource": {},
+  "byStatus": {
+   "matched": 1
+  },
+  "matchedPerSource": {
+   "lidl_de": 1
+  },
   "matchedPerStore": {
    "aldiNord": 0,
    "aldiSued": 0,
-   "lidl": 0,
+   "lidl": 1,
    "kaufland": 0,
    "edeka": 0,
    "rewe": 0,
@@ -41,11 +43,11 @@
    "netto": 0,
    "norma": 0
   },
-  "promoRows": 0,
+  "promoRows": 1,
   "mapperStats": {
-   "matched": 0,
-   "review": 36,
-   "unmatched": 31,
+   "matched": 1,
+   "review": 34,
+   "unmatched": 35,
    "ignored": 0
   }
  },
@@ -56,17 +58,21 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-11-01",
-  "today": "2026-11-02",
-  "rows": 0,
-  "rowsPerStore": {},
-  "rowsPerSource": {},
-  "promoRows": 0,
+  "previousUpdated": "2026-11-02",
+  "today": "2026-11-03",
+  "rows": 1,
+  "rowsPerStore": {
+   "lidl": 1
+  },
+  "rowsPerSource": {
+   "lidl_de": 1
+  },
+  "promoRows": 1,
   "clubRows": 0,
   "ingredientsPriced": 1,
   "pairsPriced": 1,
-  "pairsFresh": 0,
-  "pairsFromPromoOnly": 0,
+  "pairsFresh": 1,
+  "pairsFromPromoOnly": 1,
   "storesPriced": {
    "aldiNord": 0,
    "aldiSued": 0,
@@ -80,23 +86,13 @@
   },
   "deals": 0,
   "dealsCarried": 0,
-  "stale": [
-   {
-    "ingredientId": "arasidy",
-    "store": "lidl",
-    "czkPerKg": 3.6,
-    "lastSeen": "2026-10-30",
-    "ageDays": 3,
-    "reason": "store_missing"
-   }
-  ],
-  "staleCount": 1,
+  "stale": [],
+  "staleCount": 0,
   "dropped": [],
   "droppedCount": 0,
   "storesMissing": [
    "aldiNord",
    "aldiSued",
-   "lidl",
    "kaufland",
    "edeka",
    "rewe",
@@ -112,7 +108,7 @@
   "v": 2,
   "market": "de",
   "currency": "EUR",
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "ingredients": 1,
   "pairs": 1,
   "perStore": {
@@ -145,22 +141,22 @@
   "v": 1,
   "market": "de",
   "currency": "EUR",
-  "run": "2026-11-02T08:42:47+00:00",
-  "today": "2026-11-02",
+  "run": "2026-11-03T08:56:52+00:00",
+  "today": "2026-11-03",
   "sources": {
    "lidl_de": {
     "source": "lidl_de",
     "ok": true,
-    "count": 67,
+    "count": 70,
     "error": null,
     "stores": {
-     "lidl": 67
+     "lidl": 70
     },
     "requests": 4,
-    "elapsed_s": 3.7,
+    "elapsed_s": 3.8,
     "notes": [
      "category API lists the online wine shop only; in-store groceries are not exposed",
-     "4 categories, 67 products"
+     "4 categories, 70 products"
     ],
     "tier": "primary",
     "market": "de"

@@ -1,5 +1,5 @@
 {
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "review": [
   {
    "ingredientId": "grapefruit",
@@ -61,32 +61,6 @@
    "promo": true
   },
   {
-   "ingredientId": "losos",
-   "store": "lidl",
-   "source": "lidl_pl",
-   "title": "Łosoś atlantycki, filet ze skórą, XXL",
-   "czkPerKg": 49.9,
-   "price": 4.99,
-   "originalPrice": 6.99,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "confidence": 0.767,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "losos",
-     "score": 0.767,
-     "via": "łosoś",
-     "nameCs": "losos",
-     "name": "łosoś"
-    }
-   ],
-   "pack": "100 g",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
    "ingredientId": "gouda",
    "store": "lidl",
    "source": "lidl_pl",
@@ -116,6 +90,32 @@
     }
    ],
    "pack": "1 kg",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "losos",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "MOWI Łosoś atlantycki, filet ze skórą, XXL",
+   "czkPerKg": 49.9,
+   "price": 4.99,
+   "originalPrice": 6.99,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-04",
+   "confidence": 0.674,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "losos",
+     "score": 0.674,
+     "via": "łosoś",
+     "nameCs": "losos",
+     "name": "łosoś"
+    }
+   ],
+   "pack": "100 g",
    "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -154,9 +154,49 @@
    "pack": "1 kg",
    "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": true
+  },
+  {
+   "ingredientId": "rohlik",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "- Rogal świętomarciński",
+   "czkPerKg": 19.95,
+   "price": 3.99,
+   "originalPrice": 7.49,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-04",
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "rohlik",
+     "score": 0.671,
+     "via": "rogalik",
+     "nameCs": "rohlík",
+     "name": "rogalik"
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
   }
  ],
- "unmatched": [],
- "reviewTotal": 5,
- "unmatchedTotal": 0
+ "unmatched": [
+  {
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "Coca-Cola lub Coca-Cola Zero",
+   "price": 31.96,
+   "validFrom": "2026-11-02",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "8 l",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": false
+  }
+ ],
+ "reviewTotal": 6,
+ "unmatchedTotal": 1
 }

@@ -1,5 +1,5 @@
 {
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "review": [
   {
    "ingredientId": "kure_cele",
@@ -70,6 +70,48 @@
     }
    ],
    "pack": "5 kg",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "mlete_veprove",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Mäsiarova čerstvá porcia-Slovenskô Mleté bravčové mäso",
+   "czkPerKg": 3.29,
+   "price": 3.29,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-08",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mlete_veprove",
+     "score": 0.78,
+     "via": "mleté bravčové mäso",
+     "nameCs": "mleté vepřové maso",
+     "name": "mleté bravčové mäso"
+    },
+    {
+     "ingredientId": "mlete_maso_mix",
+     "score": 0.714,
+     "via": "mleté mäso mix",
+     "nameCs": "mleté maso mix",
+     "name": "mleté mäso mix"
+    },
+    {
+     "ingredientId": "bujon_kostka",
+     "score": 0.251,
+     "via": "masox",
+     "nameCs": "bujón v kostce",
+     "name": "bujón v kocke",
+     "reasons": [
+      "hint-category:condiment"
+     ]
+    }
+   ],
+   "pack": "1 kg",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -234,21 +276,6 @@
    "title": "Kuracie prsné rezne",
    "price": 4.79,
    "originalPrice": 6.99,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-08",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 kg",
-   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_sk",
-   "title": "Kuracie prsné rezne",
-   "price": 4.99,
-   "originalPrice": 7.49,
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
@@ -271,6 +298,20 @@
   {
    "store": "lidl",
    "source": "lidl_sk",
+   "title": "Relax džús",
+   "price": 1.19,
+   "validFrom": "2026-11-05",
+   "validTo": "2026-11-08",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 l",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_sk",
    "title": "Staropramen ležiak 12°",
    "price": 0.59,
    "originalPrice": 0.99,
@@ -284,6 +325,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 5,
+ "reviewTotal": 6,
  "unmatchedTotal": 6
 }
