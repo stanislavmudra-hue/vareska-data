@@ -1,8 +1,8 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-11-04",
- "generatedAt": "2026-11-04T08:24:36Z",
+ "date": "2026-11-05",
+ "generatedAt": "2026-11-05T08:51:14Z",
  "startedAt": null,
  "durationSec": null,
  "status": "ok",
@@ -14,17 +14,17 @@
  },
  "offers": {
   "perSource": {
-   "lidl_de": 69
+   "lidl_de": 82
   },
-  "total": 69,
+  "total": 82,
   "path": "out/de/offers.json"
  },
  "matching": {
   "path": "out/de/matched.json",
-  "generated": "2026-11-04",
+  "generated": "2026-11-05",
   "matched": 1,
-  "review": 37,
-  "unmatched": 31,
+  "review": 45,
+  "unmatched": 36,
   "ignored": 0,
   "byStatus": {
    "matched": 1
@@ -46,8 +46,8 @@
   "promoRows": 1,
   "mapperStats": {
    "matched": 1,
-   "review": 37,
-   "unmatched": 31,
+   "review": 45,
+   "unmatched": 36,
    "ignored": 0
   }
  },
@@ -58,8 +58,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-11-03",
-  "today": "2026-11-04",
+  "previousUpdated": "2026-11-04",
+  "today": "2026-11-05",
   "rows": 1,
   "rowsPerStore": {
    "lidl": 1
@@ -108,7 +108,7 @@
   "v": 2,
   "market": "de",
   "currency": "EUR",
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "ingredients": 1,
   "pairs": 1,
   "perStore": {
@@ -141,22 +141,22 @@
   "v": 1,
   "market": "de",
   "currency": "EUR",
-  "run": "2026-11-04T08:24:00+00:00",
-  "today": "2026-11-04",
+  "run": "2026-11-05T08:50:43+00:00",
+  "today": "2026-11-05",
   "sources": {
    "lidl_de": {
     "source": "lidl_de",
     "ok": true,
-    "count": 69,
+    "count": 82,
     "error": null,
     "stores": {
-     "lidl": 69
+     "lidl": 82
     },
-    "requests": 4,
-    "elapsed_s": 3.6,
+    "requests": 5,
+    "elapsed_s": 4.4,
     "notes": [
      "category API lists the online wine shop only; in-store groceries are not exposed",
-     "4 categories, 69 products"
+     "5 categories, 82 products"
     ],
     "tier": "primary",
     "market": "de"
@@ -164,9 +164,9 @@
   },
   "hosts": {
    "www.lidl.de": {
-    "requests": 4,
+    "requests": 5,
     "statuses": {
-     "200": 4
+     "200": 5
     },
     "server": "myracloud",
     "cf_mitigated": null
@@ -205,7 +205,7 @@
    "netto",
    "norma"
   ],
-  "requests_made": 4,
+  "requests_made": 5,
   "cache_hits": 0
  },
  "fetchPath": "out/de/health.json",

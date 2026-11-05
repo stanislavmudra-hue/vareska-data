@@ -1,5 +1,5 @@
 {
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "review": [
   {
    "ingredientId": "mrkev",
@@ -541,27 +541,24 @@
   },
   {
    "ingredientId": "husa_cela",
-   "store": "billa",
-   "source": "billa-text",
-   "title": "Husa chlazená",
-   "czkPerKg": 149.9,
-   "price": 149.9,
-   "originalPrice": 169.9,
-   "validFrom": "2026-11-04",
-   "validTo": "2026-11-10",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Husa celá s droby",
+   "price": 179.9,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-11",
    "confidence": 0.84,
    "status": "review",
    "club": false,
    "suggestions": [
     {
      "ingredientId": "husa_cela",
-     "score": 1.0,
-     "via": "husa",
+     "score": 0.899,
+     "via": "celá husa",
      "nameCs": "celá husa"
     }
    ],
-   "pack": "1 kg",
-   "url": "https://view.publitas.com/billa-cz/velky-letak-4-11-10-11-2026",
+   "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1274,7 +1271,7 @@
    "source": "billa-text",
    "title": "Zelí bílé, červené pozdní",
    "czkPerKg": 35.8,
-   "price": 16.9,
+   "price": 17.9,
    "originalPrice": 19.9,
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
@@ -1679,42 +1676,6 @@
    "promo": true
   },
   {
-   "ingredientId": "kysane_zeli_cervene",
-   "store": "billa",
-   "source": "billa-text",
-   "title": "zelí bílé, kysané, červené",
-   "czkPerKg": 59.8,
-   "price": 29.9,
-   "validFrom": "2026-11-04",
-   "validTo": "2026-11-10",
-   "confidence": 0.84,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "kysane_zeli_cervene",
-     "score": 0.926,
-     "via": "kysané červené zelí",
-     "nameCs": "kysané červené zelí"
-    },
-    {
-     "ingredientId": "kysane_zeli",
-     "score": 0.839,
-     "via": "kysané zelí",
-     "nameCs": "kysané zelí"
-    },
-    {
-     "ingredientId": "zeli_cervene",
-     "score": 0.839,
-     "via": "červené zelí",
-     "nameCs": "červené zelí"
-    }
-   ],
-   "pack": "500 g",
-   "url": "https://view.publitas.com/billa-cz/velky-letak-4-11-10-11-2026",
-   "promo": true
-  },
-  {
    "ingredientId": "cokolada_horka",
    "store": "albert",
    "source": "albert-text",
@@ -1736,31 +1697,6 @@
    ],
    "pack": "150 g",
    "url": "https://letaky.albert.cz/45sm_akcni_letak/",
-   "promo": true
-  },
-  {
-   "ingredientId": "redkvicky",
-   "store": "lidl",
-   "source": "lidl",
-   "title": "Ředkvičky",
-   "czkPerKg": 1112.5,
-   "price": 8.9,
-   "originalPrice": 13.9,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "confidence": 0.84,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "redkvicky",
-     "score": 1.0,
-     "via": "rule:redkvicky",
-     "nameCs": "ředkvičky"
-    }
-   ],
-   "pack": "kus",
-   "url": "https://www.lidl.cz/q/api/category/h/ovoce-a-zelenina/h10071012?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3551,7 +3487,7 @@
     }
    ],
    "pack": "250 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
   },
   {
@@ -4802,6 +4738,40 @@
    "promo": true
   },
   {
+   "ingredientId": "houska",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "- Špaldová houska",
+   "czkPerKg": 86.3,
+   "price": 6.9,
+   "originalPrice": 9.9,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-15",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "houska",
+     "score": 0.78,
+     "via": "houska",
+     "nameCs": "houska"
+    },
+    {
+     "ingredientId": "spalda_zrno",
+     "score": 0.336,
+     "via": "špalda",
+     "nameCs": "špaldové zrno",
+     "reasons": [
+      "hint-category:grain"
+     ]
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.lidl.cz/q/api/category/h/pekarna/h10096086?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "penne",
    "store": "albert",
    "source": "albert-text",
@@ -5184,6 +5154,30 @@
    "pack": "330 g",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": false
+  },
+  {
+   "ingredientId": "zeli_bile",
+   "store": "billa",
+   "source": "billa-text",
+   "title": "Efko zelí",
+   "czkPerKg": 282.79,
+   "price": 149.88,
+   "validFrom": "2026-11-04",
+   "validTo": "2026-11-10",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "zeli_bile",
+     "score": 0.78,
+     "via": "zelí",
+     "nameCs": "bílé zelí"
+    }
+   ],
+   "pack": "530 g",
+   "url": "https://view.publitas.com/billa-cz/velky-letak-4-11-10-11-2026",
+   "promo": true
   },
   {
    "ingredientId": "cervena_repa",
@@ -7486,10 +7480,10 @@
    "ingredientId": "vejce",
    "store": "globus",
    "source": "globus",
-   "title": "Vejce S30 podestýlka CV",
-   "czkPerKg": 1696.23,
+   "title": "Vejce S 30 kusů od nosnic v halách",
+   "czkPerKg": 54.48,
    "price": 89.9,
-   "originalPrice": 169.9,
+   "originalPrice": 199.9,
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "confidence": 0.767,
@@ -7503,18 +7497,18 @@
      "nameCs": "vejce"
     }
    ],
-   "pack": "53 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "pack": "30 ks",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
    "ingredientId": "vejce",
    "store": "globus",
    "source": "globus",
-   "title": "Vejce S30 podestýlka CV",
-   "czkPerKg": 1318.87,
+   "title": "Vejce S 30 kusů od nosnic v halách",
+   "czkPerKg": 42.36,
    "price": 69.9,
-   "originalPrice": 169.9,
+   "originalPrice": 199.9,
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "confidence": 0.767,
@@ -7528,8 +7522,8 @@
      "nameCs": "vejce"
     }
    ],
-   "pack": "53 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "pack": "30 ks",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -8991,7 +8985,7 @@
     }
    ],
    "pack": "1550 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -11580,7 +11574,7 @@
     }
    ],
    "pack": "0.7 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": false
   },
   {
@@ -12443,6 +12437,31 @@
    ],
    "pack": "500 g",
    "url": "https://letaky.albert.cz/45hm_akcni_letak/",
+   "promo": true
+  },
+  {
+   "ingredientId": "bageta",
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Cereální bagetka",
+   "czkPerKg": 61.0,
+   "price": 4.88,
+   "originalPrice": 6.5,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-15",
+   "confidence": 0.624,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "bageta",
+     "score": 0.624,
+     "via": "bageta",
+     "nameCs": "bageta"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.lidl.cz/q/api/category/h/pekarna/h10096086?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -13506,6 +13525,30 @@
    "promo": true
   },
   {
+   "ingredientId": "vejce_bilek",
+   "store": "billa",
+   "source": "billa-text",
+   "title": "bílé, kysané, červené",
+   "czkPerKg": 59.8,
+   "price": 29.9,
+   "validFrom": "2026-11-04",
+   "validTo": "2026-11-10",
+   "confidence": 0.614,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vejce_bilek",
+     "score": 0.614,
+     "via": "bílek",
+     "nameCs": "vaječný bílek"
+    }
+   ],
+   "pack": "500 g",
+   "url": "https://view.publitas.com/billa-cz/velky-letak-4-11-10-11-2026",
+   "promo": true
+  },
+  {
    "ingredientId": "ovesne_vlocky",
    "store": "billa",
    "source": "billa-text",
@@ -13611,8 +13654,31 @@
     }
    ],
    "pack": "284 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Bellarom Kávové kapsle Forte Lungo",
+   "price": 79.9,
+   "originalPrice": 109.9,
+   "validFrom": "2026-11-13",
+   "validTo": "2026-11-15",
+   "confidence": 0.58,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kava_mleta",
+     "score": 0.58,
+     "via": "kávou",
+     "nameCs": "mletá káva"
+    }
+   ],
+   "pack": "20 kusů",
+   "url": "https://www.lidl.cz/q/api/category/h/kava-caj-a-kakao/h10071683?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "store": "globus",
@@ -14806,7 +14872,7 @@
     }
    ],
    "pack": "83.75 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": true
   },
   {
@@ -15307,36 +15373,6 @@
    ],
    "pack": "150 g",
    "url": "https://view.publitas.com/billa-cz/velky-letak-4-11-10-11-2026",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "DŘEVĚNÁ ZATLOUKAČKA TVARY A BARVY",
-   "czkPerKg": 1199.6,
-   "price": 299.9,
-   "originalPrice": 399.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.539,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "tvaroh",
-     "score": 0.539,
-     "via": "tvaroh",
-     "nameCs": "tvaroh"
-    },
-    {
-     "ingredientId": "tvaruzky",
-     "score": 0.539,
-     "via": "tvarůžky",
-     "nameCs": "olomoucké tvarůžky"
-    }
-   ],
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
    "promo": true
   },
   {
@@ -18568,7 +18604,7 @@
     }
    ],
    "pack": "100 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
    "promo": false
   },
   {
@@ -19192,7 +19228,7 @@
     }
    ],
    "pack": "130 g",
-   "url": "https://www.lidl.cz/q/api/category/c/potraviny-a-napoje/s10068374?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.cz/q/api/category/h/pekarna/h10096086?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -19343,6 +19379,42 @@
    ],
    "pack": "400 g",
    "url": "https://www.penny.cz/api/product-discovery/categories/vsechny-akce-99000000/products?page=0&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "- Kuřecí hřbety na polévku",
+   "czkPerKg": 42.9,
+   "price": 42.9,
+   "originalPrice": 62.9,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-15",
+   "confidence": 0.192,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kureci_prsa",
+     "score": 0.192,
+     "via": "kuřecí",
+     "nameCs": "kuřecí prsa",
+     "reasons": [
+      "negative:polevk"
+     ]
+    },
+    {
+     "ingredientId": "kure_cele",
+     "score": 0.153,
+     "via": "kuře",
+     "nameCs": "celé kuře",
+     "reasons": [
+      "negative:polevk"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/h/maso-a-drubez/h10095752?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -19507,6 +19579,20 @@
   {
    "store": "lidl",
    "source": "lidl",
+   "title": "- Jablečná kapsa",
+   "price": 11.9,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-15",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "100 g",
+   "url": "https://www.lidl.cz/q/api/category/h/pekarna/h10096086?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
    "title": "ALLINI Piu Secco",
    "price": 54.9,
    "originalPrice": 69.9,
@@ -19558,7 +19644,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "174 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=2&pageSize=100",
    "promo": true
   },
   {
@@ -19602,6 +19688,21 @@
    "club": false,
    "pack": "1 ks",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "Allini Piu Secco",
+   "price": 49.9,
+   "originalPrice": 69.9,
+   "validFrom": "2026-11-13",
+   "validTo": "2026-11-15",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 l",
+   "url": "https://www.lidl.cz/q/api/category/h/vino-pivo-a-lihoviny/h10096268?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -20171,7 +20272,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": true
   },
   {
@@ -20186,7 +20287,7 @@
    "status": "unmatched",
    "club": true,
    "pack": "5 l",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=5&pageSize=100",
    "promo": true
   },
   {
@@ -20983,81 +21084,6 @@
   {
    "store": "globus",
    "source": "globus",
-   "title": "DĚTSKÁ LEDNIČKA",
-   "price": 149.9,
-   "originalPrice": 199.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "DŘEVĚNÁ FARMA 6 KS",
-   "price": 299.9,
-   "originalPrice": 399.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "DŘEVĚNÉ POZNÁVÁNÍ",
-   "price": 299.9,
-   "originalPrice": 399.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "DŘEVĚNÝ NÁKLAĎÁK SE ZVÍŘÁTKY 10 KS",
-   "price": 299.9,
-   "originalPrice": 399.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "DŘEVĚNÝ VLÁČEK MOŘSKÝ SVĚT",
-   "price": 299.9,
-   "originalPrice": 399.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
    "title": "ECG Rýžovar RZ 060F",
    "price": 429.9,
    "originalPrice": 499.9,
@@ -21068,21 +21094,6 @@
    "club": false,
    "pack": "1 ks",
    "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=9&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "ELEKTRICKÁ AUTODRÁHA DÉLKA 196 CM",
-   "price": 399.9,
-   "originalPrice": 599.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -21630,7 +21641,7 @@
    "store": "billa",
    "source": "billa-text",
    "title": "Gambrinus Originál 0,5 l + záloha",
-   "price": 15.9,
+   "price": 12.9,
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "confidence": 0.0,
@@ -21643,13 +21654,12 @@
    "store": "billa",
    "source": "billa-text",
    "title": "Gambrinus Patron 12 0,5 l, plech",
-   "price": 37.8,
+   "price": 18.9,
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
-   "pack": "1 kg",
    "url": "https://view.publitas.com/billa-cz/velky-letak-4-11-10-11-2026",
    "promo": true
   },
@@ -22020,7 +22030,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
    "promo": true
   },
   {
@@ -22408,7 +22418,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "126 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": false
   },
   {
@@ -23908,7 +23918,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "80 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=3&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=4&pageSize=100",
    "promo": true
   },
   {
@@ -24164,7 +24174,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "140 g",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=1&pageSize=100",
+   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=0&pageSize=100",
    "promo": true
   },
   {
@@ -25467,101 +25477,11 @@
   {
    "store": "globus",
    "source": "globus",
-   "title": "PLYŠOVÁ KRÁVA 50 CM",
-   "price": 469.9,
-   "originalPrice": 599.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "PLYŠOVÁ LABUŤ 64 CM",
-   "price": 469.9,
-   "originalPrice": 599.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "PLYŠOVÁ VYDRA S RYBOU 35 CM",
-   "price": 299.9,
-   "originalPrice": 399.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "PLYŠOVÝ LACHTAN 86 CM",
-   "price": 499.9,
-   "originalPrice": 699.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "PLYŠOVÝ VÁNOČNÍ HRNEK 15CM",
-   "price": 129.9,
-   "originalPrice": 199.9,
-   "validFrom": "2026-10-25",
-   "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=8&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
    "title": "PODNOS KULATÝ PERNÍKOVÁ VESNIČKA 26x2,5CM PLECH",
    "price": 39.9,
    "originalPrice": 49.9,
    "validFrom": "2026-10-26",
    "validTo": "2026-11-30",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 ks",
-   "url": "https://www.globus.cz/api/v1/gsoa/actionOffers/houses/4005/actionProductsCatalog?page=7&pageSize=100",
-   "promo": true
-  },
-  {
-   "store": "globus",
-   "source": "globus",
-   "title": "PREGO HOME DEKA 130X170CM PZ26",
-   "price": 499.9,
-   "originalPrice": 699.9,
-   "validFrom": "2026-10-26",
-   "validTo": "2026-11-23",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
@@ -27120,6 +27040,20 @@
    "promo": false
   },
   {
+   "store": "lidl",
+   "source": "lidl",
+   "title": "SEGAFREDO Intermezzo",
+   "price": 549.9,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-11",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 kg",
+   "url": "https://www.lidl.cz/q/api/category/h/kava-caj-a-kakao/h10071683?assortment=CZ&locale=cs_CZ&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "store": "globus",
    "source": "globus",
    "title": "STR8 WILD BEAT 2pack (DNS 85ml + SG 250ml)",
@@ -27554,13 +27488,12 @@
    "store": "billa",
    "source": "billa-text",
    "title": "Staropramen 10,",
-   "price": 31.8,
+   "price": 15.9,
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
-   "pack": "1 kg",
    "url": "https://view.publitas.com/billa-cz/velky-letak-4-11-10-11-2026",
    "promo": true
   },
@@ -28101,10 +28034,10 @@
   {
    "store": "lidl",
    "source": "lidl",
-   "title": "VELKOPOPOVICKÝ KOZEL 11",
-   "price": 99.9,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
+   "title": "VELKOPOPOVICKÝ KOZEL 10",
+   "price": 94.9,
+   "validFrom": "2026-11-13",
+   "validTo": "2026-11-15",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
@@ -29527,6 +29460,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 457,
- "unmatchedTotal": 912
+ "reviewTotal": 459,
+ "unmatchedTotal": 904
 }

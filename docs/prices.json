@@ -1,6 +1,6 @@
 {
  "v": 1,
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "czkPerKg": {
   "anglicka_slanina": {
    "albert": 232.7,
@@ -51,7 +51,7 @@
    "billa": 22.9,
    "globus": 39.9,
    "kaufland": 21.9,
-   "lidl": 29.9,
+   "lidl": 21.9,
    "penny": 22.9,
    "tesco": 26.9
   },
@@ -76,7 +76,6 @@
    "billa": 279.2,
    "globus": 319.2,
    "kaufland": 229.8,
-   "lidl": 319.2,
    "penny": 279.2
   },
   "bramborove_knedliky_hotove": {
@@ -186,7 +185,7 @@
    "billa": 39.8,
    "globus": 26.9,
    "kaufland": 29.9,
-   "lidl": 53.2,
+   "lidl": 69.8,
    "penny": 26.9,
    "tesco": 37.8
   },
@@ -373,7 +372,8 @@
   },
   "houskovy_knedlik": {
    "albert": 59.0,
-   "billa": 96.0
+   "billa": 96.0,
+   "lidl": 36.6
   },
   "hovezi_kliska": {
    "albert": 249.0,
@@ -395,8 +395,7 @@
    "albert": 299.0,
    "billa": 319.6,
    "globus": 279.0,
-   "kaufland": 289.9,
-   "lidl": 289.9
+   "kaufland": 289.9
   },
   "hovezi_zebra": {
    "globus": 199.0
@@ -419,7 +418,7 @@
    "albert": 124.8,
    "billa": 79.8,
    "globus": 162.2,
-   "lidl": 34.9
+   "lidl": 39.9
   },
   "hruska": {
    "albert": 118.0,
@@ -478,6 +477,7 @@
    "albert": 69.9,
    "billa": 79.9,
    "kaufland": 79.9,
+   "lidl": 79.9,
    "penny": 69.9
   },
   "kachni_stehna": {
@@ -501,7 +501,8 @@
    "penny": 219.0
   },
   "kapusta_ruzickova": {
-   "billa": 71.1
+   "billa": 71.1,
+   "lidl": 49.8
   },
   "kastany": {
    "billa": 353.3
@@ -524,7 +525,6 @@
    "billa": 114.1,
    "globus": 112.2,
    "kaufland": 76.7,
-   "lidl": 79.9,
    "penny": 69.9,
    "tesco": 97.7
   },
@@ -580,7 +580,6 @@
   },
   "kompot_ananasovy": {
    "billa": 39.9,
-   "lidl": 29.9,
    "penny": 29.9
   },
   "kompot_merunkovy": {
@@ -639,7 +638,7 @@
    "albert": 79.9,
    "billa": 159.0,
    "kaufland": 79.9,
-   "lidl": 216.3,
+   "lidl": 79.9,
    "penny": 79.9,
    "tesco": 79.9
   },
@@ -1477,7 +1476,7 @@
    "albert": 69.9,
    "billa": 69.9,
    "kaufland": 79.9,
-   "lidl": 94.9,
+   "lidl": 119.9,
    "penny": 79.9,
    "tesco": 69.9
   },
@@ -1560,6 +1559,7 @@
   "zeli_cervene": {
    "billa": 40.1,
    "globus": 64.0,
+   "lidl": 11.9,
    "penny": 11.9
   },
   "zeli_pekingske": {
@@ -1671,14 +1671,6 @@
    "czkPerKg": 24.9,
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
-   "title": "Batáty"
-  },
-  {
-   "ingredientId": "batat",
-   "store": "lidl",
-   "czkPerKg": 24.9,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
    "title": "Batáty"
   },
   {
@@ -1963,6 +1955,22 @@
   },
   {
    "ingredientId": "chleb",
+   "store": "lidl",
+   "czkPerKg": 49.0,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-08",
+   "title": "- Chléb s podmáslím"
+  },
+  {
+   "ingredientId": "chleb",
+   "store": "lidl",
+   "czkPerKg": 85.4,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-15",
+   "title": "Bramborový chléb s restovanou cibulí"
+  },
+  {
+   "ingredientId": "chleb",
    "store": "tesco",
    "czkPerKg": 50.9,
    "validFrom": "2026-11-04",
@@ -1976,6 +1984,14 @@
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "title": "Cibule žlutá"
+  },
+  {
+   "ingredientId": "cibule",
+   "store": "lidl",
+   "czkPerKg": 11.9,
+   "validFrom": "2026-11-13",
+   "validTo": "2026-11-15",
+   "title": "Cibule"
   },
   {
    "ingredientId": "cibule",
@@ -2171,14 +2187,6 @@
   },
   {
    "ingredientId": "eidam",
-   "store": "lidl",
-   "czkPerKg": 129.0,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "Pilos Eidam"
-  },
-  {
-   "ingredientId": "eidam",
    "store": "tesco",
    "czkPerKg": 169.0,
    "validFrom": "2026-11-04",
@@ -2192,6 +2200,14 @@
    "validFrom": "2026-11-04",
    "validTo": "2026-11-17",
    "title": "Sýr Eidam Jihočeský 30% Madeta"
+  },
+  {
+   "ingredientId": "emental",
+   "store": "lidl",
+   "czkPerKg": 179.3,
+   "validFrom": "2026-11-13",
+   "validTo": "2026-11-15",
+   "title": "Milbona Ementál 45%"
   },
   {
    "ingredientId": "fazole_bile_sterilovane",
@@ -2231,14 +2247,6 @@
    "czkPerKg": 75.6,
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
-   "title": "Granátové jablko"
-  },
-  {
-   "ingredientId": "granatove_jablko",
-   "store": "lidl",
-   "czkPerKg": 67.6,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
    "title": "Granátové jablko"
   },
   {
@@ -2392,14 +2400,6 @@
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "title": "Husa chlazená"
-  },
-  {
-   "ingredientId": "husa_cela",
-   "store": "lidl",
-   "czkPerKg": 179.9,
-   "validFrom": "2026-11-05",
-   "validTo": "2026-11-08",
-   "title": "Husa celá s droby"
   },
   {
    "ingredientId": "jablko",
@@ -2572,9 +2572,9 @@
   {
    "ingredientId": "kaki",
    "store": "lidl",
-   "czkPerKg": 75.9,
-   "validFrom": "2026-11-05",
-   "validTo": "2026-11-08",
+   "czkPerKg": 70.0,
+   "validFrom": "2026-11-13",
+   "validTo": "2026-11-15",
    "title": "Kaki"
   },
   {
@@ -2706,6 +2706,14 @@
    "title": "Emma Kešu v mléčné"
   },
   {
+   "ingredientId": "kiwi",
+   "store": "lidl",
+   "czkPerKg": 105.3,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-11",
+   "title": "Kiwi"
+  },
+  {
    "ingredientId": "klobasa",
    "store": "albert",
    "czkPerKg": 224.8,
@@ -2794,6 +2802,14 @@
    "title": "Kuřecí prsní řízky chlazené"
   },
   {
+   "ingredientId": "kureci_prsa",
+   "store": "lidl",
+   "czkPerKg": 99.9,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-11",
+   "title": "Kuřecí prsní řízky"
+  },
+  {
    "ingredientId": "kureci_stehna",
    "store": "albert",
    "czkPerKg": 89.9,
@@ -2824,6 +2840,14 @@
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "title": "Kuřecí stehna kořeněná"
+  },
+  {
+   "ingredientId": "kureci_stehna",
+   "store": "lidl",
+   "czkPerKg": 89.9,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-15",
+   "title": "- Kuřecí horní a spodní stehna"
   },
   {
    "ingredientId": "kureci_stehna",
@@ -2936,6 +2960,14 @@
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "title": "Giana Mandarinky ve vlastní šťávě"
+  },
+  {
+   "ingredientId": "mandarinka",
+   "store": "lidl",
+   "czkPerKg": 21.9,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-15",
+   "title": "Mandarinky"
   },
   {
    "ingredientId": "mandle",
@@ -3211,6 +3243,14 @@
   },
   {
    "ingredientId": "okurka_salatova",
+   "store": "lidl",
+   "czkPerKg": 49.7,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-11",
+   "title": "Okurka salátová"
+  },
+  {
+   "ingredientId": "okurka_salatova",
    "store": "penny",
    "czkPerKg": 49.7,
    "validFrom": "2026-11-04",
@@ -3304,14 +3344,6 @@
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "title": "Kotányi Paprika lahůdková mletá"
-  },
-  {
-   "ingredientId": "paprika_spicata",
-   "store": "lidl",
-   "czkPerKg": 159.8,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "Paprika červená špičatá"
   },
   {
    "ingredientId": "parky",
@@ -3434,14 +3466,6 @@
    "title": "Pizza těsto"
   },
   {
-   "ingredientId": "pomelo",
-   "store": "lidl",
-   "czkPerKg": 29.9,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "Pomelo"
-  },
-  {
    "ingredientId": "pomeranc",
    "store": "tesco",
    "czkPerKg": 24.9,
@@ -3520,14 +3544,6 @@
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "title": "Globus Selský rohlík 60 g"
-  },
-  {
-   "ingredientId": "rukola",
-   "store": "lidl",
-   "czkPerKg": 143.2,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "Rukola"
   },
   {
    "ingredientId": "ryze_dlouhozrnna",
@@ -3672,14 +3688,6 @@
    "validFrom": "2026-10-27",
    "validTo": "2026-11-10",
    "title": "Kunín Pařížská šlehačka 200 g"
-  },
-  {
-   "ingredientId": "smetana_33",
-   "store": "lidl",
-   "czkPerKg": 99.5,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "OLMA Smetana ke šlehání"
   },
   {
    "ingredientId": "smetana_33",
@@ -3938,6 +3946,14 @@
    "title": "Albert Vejce z podestýlky L"
   },
   {
+   "ingredientId": "vejce",
+   "store": "lidl",
+   "czkPerKg": 45.5,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-15",
+   "title": "Čerstvá vejce M"
+  },
+  {
    "ingredientId": "veprova_krkovice",
    "store": "tesco",
    "czkPerKg": 74.9,
@@ -3955,6 +3971,14 @@
   },
   {
    "ingredientId": "veprova_panenka",
+   "store": "lidl",
+   "czkPerKg": 149.9,
+   "validFrom": "2026-11-13",
+   "validTo": "2026-11-15",
+   "title": "Vepřová panenská svíčková"
+  },
+  {
+   "ingredientId": "veprova_panenka",
    "store": "tesco",
    "czkPerKg": 179.9,
    "validFrom": "2026-11-04",
@@ -3968,14 +3992,6 @@
    "validFrom": "2026-11-04",
    "validTo": "2026-11-10",
    "title": "Vepřová pečeně bez kosti – v celku"
-  },
-  {
-   "ingredientId": "veprova_pecene",
-   "store": "lidl",
-   "czkPerKg": 69.9,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "Vepřová pečeně bez kosti"
   },
   {
    "ingredientId": "veprova_pecene",

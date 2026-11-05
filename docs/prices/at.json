@@ -2,7 +2,7 @@
  "v": 2,
  "market": "at",
  "currency": "EUR",
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "perKg": {
   "arasidove_maslo": {
    "lidl": 5.2
@@ -34,6 +34,9 @@
   "feta": {
    "lidl": 10.4
   },
+  "granatove_jablko": {
+   "lidl": 3.0
+  },
   "hruska": {
    "lidl": 1.0
   },
@@ -49,9 +52,6 @@
   "kompot_ananasovy": {
    "lidl": 1.3
   },
-  "kureci_nugety": {
-   "lidl": 6.0
-  },
   "losos_uzeny": {
    "lidl": 15.9
   },
@@ -59,7 +59,7 @@
    "lidl": 5.7
   },
   "mineralka": {
-   "lidl": 0.2
+   "lidl": 0.3
   },
   "mrkev": {
    "lidl": 1.0
@@ -85,6 +85,12 @@
   "spenat_cerstvy": {
    "lidl": 3.6
   },
+  "syr_raclette": {
+   "lidl": 8.5
+  },
+  "teleci_jatra": {
+   "lidl": 17.5
+  },
   "veprova_panenka": {
    "lidl": 7.0
   },
@@ -94,20 +100,12 @@
  },
  "deals": [
   {
-   "ingredientId": "emental",
+   "ingredientId": "granatove_jablko",
    "store": "lidl",
-   "perKg": 7.0,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "Milbona Emmentaler Stück"
-  },
-  {
-   "ingredientId": "hruska",
-   "store": "lidl",
-   "perKg": 1.0,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "Birnen"
+   "perKg": 3.0,
+   "validFrom": "2026-11-05",
+   "validTo": "2026-11-07",
+   "title": "Granatapfel"
   },
   {
    "ingredientId": "kachni_prsa_uzena",
@@ -116,22 +114,6 @@
    "validFrom": "2026-12-10",
    "validTo": "2026-12-12",
    "title": "Deluxe Geräucherte Entenbrust"
-  },
-  {
-   "ingredientId": "kastany",
-   "store": "lidl",
-   "perKg": 5.5,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "Esskastanien"
-  },
-  {
-   "ingredientId": "lunchmeat",
-   "store": "lidl",
-   "perKg": 5.7,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "Dulano Frühstücksfleisch"
   },
   {
    "ingredientId": "margarin",
@@ -166,6 +148,14 @@
    "title": "DELUXE Avocadoöl"
   },
   {
+   "ingredientId": "syr_raclette",
+   "store": "lidl",
+   "perKg": 8.5,
+   "validFrom": "2026-11-05",
+   "validTo": "2026-11-07",
+   "title": "Alpengut Raclette Käse in Scheiben"
+  },
+  {
    "ingredientId": "teleci_jatra",
    "store": "lidl",
    "perKg": 17.5,
@@ -180,14 +170,6 @@
    "validFrom": "2026-11-12",
    "validTo": "2026-11-14",
    "title": "- Frisches Kalbskotelett"
-  },
-  {
-   "ingredientId": "zeli_pekingske",
-   "store": "lidl",
-   "perKg": 1.0,
-   "validFrom": "2026-11-02",
-   "validTo": "2026-11-04",
-   "title": "Chinakohl aus Österreich"
   }
  ],
  "categoryFallbackPerKg": {
