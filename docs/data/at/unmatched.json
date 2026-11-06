@@ -1,5 +1,5 @@
 {
- "date": "2026-11-05",
+ "date": "2026-11-06",
  "review": [
   {
    "ingredientId": "vejce",
@@ -532,6 +532,31 @@
    "promo": true
   },
   {
+   "ingredientId": "listove_teste",
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "CHEF SELECT 100 Mini Blätterteighäppchen",
+   "czkPerKg": 6.58,
+   "price": 5.99,
+   "validFrom": "2026-12-17",
+   "validTo": "2026-12-19",
+   "confidence": 0.8,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "listove_teste",
+     "score": 0.8,
+     "via": "Blätterteig",
+     "nameCs": "listové těsto",
+     "name": "Blätterteig"
+    }
+   ],
+   "pack": "910 g",
+   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost-gefrorene-lebensmittel/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "ancovicky",
    "store": "lidl",
    "source": "lidl_at",
@@ -692,48 +717,6 @@
    "promo": true
   },
   {
-   "ingredientId": "losos_konzerva",
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Geräucherter Lachs",
-   "czkPerKg": 39.9,
-   "price": 3.99,
-   "validFrom": "2026-12-03",
-   "validTo": "2026-12-05",
-   "confidence": 0.78,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "losos_konzerva",
-     "score": 0.78,
-     "via": "Lachs aus der Dose",
-     "nameCs": "losos v konzervě",
-     "name": "Lachs aus der Dose"
-    },
-    {
-     "ingredientId": "losos",
-     "score": 0.663,
-     "via": "Lachs",
-     "nameCs": "losos",
-     "name": "Lachs",
-     "reasons": [
-      "ambiguous:losos_konzerva"
-     ]
-    },
-    {
-     "ingredientId": "losos_jikry",
-     "score": 0.624,
-     "via": "Lachskaviar",
-     "nameCs": "lososové jikry",
-     "name": "Lachskaviar"
-    }
-   ],
-   "pack": "100 g",
-   "url": "https://www.lidl.at/q/api/category/h/fisch-meeresfruechte/h10071050?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
    "ingredientId": "med",
    "store": "lidl",
    "source": "lidl_at",
@@ -873,6 +856,48 @@
    ],
    "pack": "41 ml",
    "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "losos_konzerva",
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Geräucherter Lachs",
+   "czkPerKg": 39.9,
+   "price": 3.99,
+   "validFrom": "2026-12-03",
+   "validTo": "2026-12-05",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "losos_konzerva",
+     "score": 0.78,
+     "via": "Lachs aus der Dose",
+     "nameCs": "losos v konzervě",
+     "name": "Lachs aus der Dose"
+    },
+    {
+     "ingredientId": "losos",
+     "score": 0.663,
+     "via": "Lachs",
+     "nameCs": "losos",
+     "name": "Lachs",
+     "reasons": [
+      "ambiguous:losos_konzerva"
+     ]
+    },
+    {
+     "ingredientId": "losos_jikry",
+     "score": 0.624,
+     "via": "Lachskaviar",
+     "nameCs": "lososové jikry",
+     "name": "Lachskaviar"
+    }
+   ],
+   "pack": "100 g",
+   "url": "https://www.lidl.at/q/api/category/h/fisch-meeresfruechte/h10071050?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2455,30 +2480,6 @@
     }
    ],
    "pack": "320 g",
-   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost-gefrorene-lebensmittel/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "TOQUE DU CHEF 100 Mini Blätterteighäppchen",
-   "czkPerKg": 6.58,
-   "price": 5.99,
-   "validFrom": "2026-12-17",
-   "validTo": "2026-12-19",
-   "confidence": 0.539,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "listove_teste",
-     "score": 0.539,
-     "via": "Blätterteig",
-     "nameCs": "listové těsto",
-     "name": "Blätterteig"
-    }
-   ],
-   "pack": "910 g",
    "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost-gefrorene-lebensmittel/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -4472,8 +4473,8 @@
    "source": "lidl_at",
    "title": "Tortenecken oder Baumstämme",
    "price": 1.99,
-   "validFrom": "2026-11-05",
-   "validTo": "2026-11-07",
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
@@ -4501,8 +4502,8 @@
    "title": "WIESENTALER Hausgeselchtes oder Schwarzwälder",
    "price": 1.19,
    "originalPrice": 1.99,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
@@ -4584,6 +4585,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 70,
- "unmatchedTotal": 127
+ "reviewTotal": 71,
+ "unmatchedTotal": 126
 }
