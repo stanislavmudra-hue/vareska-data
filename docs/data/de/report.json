@@ -1,8 +1,8 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-11-07",
- "generatedAt": "2026-11-07T08:06:59Z",
+ "date": "2026-11-08",
+ "generatedAt": "2026-11-08T08:28:54Z",
  "startedAt": null,
  "durationSec": null,
  "status": "ok",
@@ -14,17 +14,17 @@
  },
  "offers": {
   "perSource": {
-   "lidl_de": 85
+   "lidl_de": 82
   },
-  "total": 85,
+  "total": 82,
   "path": "out/de/offers.json"
  },
  "matching": {
   "path": "out/de/matched.json",
-  "generated": "2026-11-07",
+  "generated": "2026-11-08",
   "matched": 1,
   "review": 45,
-  "unmatched": 39,
+  "unmatched": 36,
   "ignored": 0,
   "byStatus": {
    "matched": 1
@@ -47,7 +47,7 @@
   "mapperStats": {
    "matched": 1,
    "review": 45,
-   "unmatched": 39,
+   "unmatched": 36,
    "ignored": 0
   }
  },
@@ -58,8 +58,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-11-06",
-  "today": "2026-11-07",
+  "previousUpdated": "2026-11-07",
+  "today": "2026-11-08",
   "rows": 1,
   "rowsPerStore": {
    "lidl": 1
@@ -108,7 +108,7 @@
   "v": 2,
   "market": "de",
   "currency": "EUR",
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "ingredients": 1,
   "pairs": 1,
   "perStore": {
@@ -141,22 +141,22 @@
   "v": 1,
   "market": "de",
   "currency": "EUR",
-  "run": "2026-11-07T08:06:29+00:00",
-  "today": "2026-11-07",
+  "run": "2026-11-08T08:28:18+00:00",
+  "today": "2026-11-08",
   "sources": {
    "lidl_de": {
     "source": "lidl_de",
     "ok": true,
-    "count": 85,
+    "count": 82,
     "error": null,
     "stores": {
-     "lidl": 85
+     "lidl": 82
     },
-    "requests": 6,
-    "elapsed_s": 5.3,
+    "requests": 5,
+    "elapsed_s": 4.3,
     "notes": [
      "category API lists the online wine shop only; in-store groceries are not exposed",
-     "7 categories, 85 products"
+     "6 categories, 82 products"
     ],
     "tier": "primary",
     "market": "de"
@@ -164,9 +164,9 @@
   },
   "hosts": {
    "www.lidl.de": {
-    "requests": 6,
+    "requests": 5,
     "statuses": {
-     "200": 6
+     "200": 5
     },
     "server": "myracloud",
     "cf_mitigated": null
@@ -205,7 +205,7 @@
    "netto",
    "norma"
   ],
-  "requests_made": 6,
+  "requests_made": 5,
   "cache_hits": 0
  },
  "fetchPath": "out/de/health.json",
