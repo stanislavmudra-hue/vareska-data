@@ -1,15 +1,13 @@
 {
  "market": "at",
  "currency": "EUR",
- "date": "2026-11-08",
- "generatedAt": "2026-11-08T08:28:54Z",
+ "date": "2026-11-09",
+ "generatedAt": "2026-11-09T08:59:30Z",
  "startedAt": null,
  "durationSec": null,
- "status": "warning",
+ "status": "ok",
  "ok": true,
- "warnings": [
-  "4 stale price(s) dropped (> 21 days)"
- ],
+ "warnings": [],
  "validation": {
   "ok": true,
   "errors": []
@@ -23,10 +21,10 @@
  },
  "matching": {
   "path": "out/at/matched.json",
-  "generated": "2026-11-08",
+  "generated": "2026-11-09",
   "matched": 10,
-  "review": 68,
-  "unmatched": 126,
+  "review": 69,
+  "unmatched": 125,
   "ignored": 6,
   "byStatus": {
    "matched": 10
@@ -46,8 +44,8 @@
   "promoRows": 10,
   "mapperStats": {
    "matched": 10,
-   "review": 68,
-   "unmatched": 126,
+   "review": 69,
+   "unmatched": 125,
    "ignored": 6
   }
  },
@@ -58,8 +56,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-11-07",
-  "today": "2026-11-08",
+  "previousUpdated": "2026-11-08",
+  "today": "2026-11-09",
   "rows": 10,
   "rowsPerStore": {
    "lidl": 10
@@ -69,16 +67,16 @@
   },
   "promoRows": 10,
   "clubRows": 0,
-  "ingredientsPriced": 27,
-  "pairsPriced": 27,
-  "pairsFresh": 0,
-  "pairsFromPromoOnly": 0,
+  "ingredientsPriced": 29,
+  "pairsPriced": 29,
+  "pairsFresh": 2,
+  "pairsFromPromoOnly": 2,
   "storesPriced": {
    "billa": 0,
    "spar": 0,
    "interspar": 0,
    "hofer": 0,
-   "lidl": 27,
+   "lidl": 29,
    "penny": 0,
    "mpreis": 0
   },
@@ -90,7 +88,7 @@
     "store": "lidl",
     "czkPerKg": 4.5,
     "lastSeen": "2026-10-30",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
@@ -98,7 +96,7 @@
     "store": "lidl",
     "czkPerKg": 1.4,
     "lastSeen": "2026-10-28",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -106,7 +104,7 @@
     "store": "lidl",
     "czkPerKg": 2.8,
     "lastSeen": "2026-10-28",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -114,7 +112,7 @@
     "store": "lidl",
     "czkPerKg": 2.2,
     "lastSeen": "2026-10-30",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
@@ -122,7 +120,7 @@
     "store": "lidl",
     "czkPerKg": 7.0,
     "lastSeen": "2026-11-04",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -130,7 +128,7 @@
     "store": "lidl",
     "czkPerKg": 10.4,
     "lastSeen": "2026-10-30",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
@@ -138,7 +136,7 @@
     "store": "lidl",
     "czkPerKg": 3.0,
     "lastSeen": "2026-11-07",
-    "ageDays": 1,
+    "ageDays": 2,
     "reason": "not_matched_today"
    },
    {
@@ -146,7 +144,7 @@
     "store": "lidl",
     "czkPerKg": 1.0,
     "lastSeen": "2026-11-04",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -154,7 +152,7 @@
     "store": "lidl",
     "czkPerKg": 1.6,
     "lastSeen": "2026-10-24",
-    "ageDays": 15,
+    "ageDays": 16,
     "reason": "not_matched_today"
    },
    {
@@ -162,7 +160,7 @@
     "store": "lidl",
     "czkPerKg": 5.5,
     "lastSeen": "2026-11-04",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -170,7 +168,7 @@
     "store": "lidl",
     "czkPerKg": 11.4,
     "lastSeen": "2026-10-30",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
@@ -178,7 +176,7 @@
     "store": "lidl",
     "czkPerKg": 1.3,
     "lastSeen": "2026-10-24",
-    "ageDays": 15,
+    "ageDays": 16,
     "reason": "not_matched_today"
    },
    {
@@ -186,7 +184,7 @@
     "store": "lidl",
     "czkPerKg": 15.9,
     "lastSeen": "2026-10-30",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
@@ -194,7 +192,7 @@
     "store": "lidl",
     "czkPerKg": 5.7,
     "lastSeen": "2026-11-04",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    },
    {
@@ -202,7 +200,7 @@
     "store": "lidl",
     "czkPerKg": 0.3,
     "lastSeen": "2026-11-07",
-    "ageDays": 1,
+    "ageDays": 2,
     "reason": "not_matched_today"
    },
    {
@@ -210,7 +208,7 @@
     "store": "lidl",
     "czkPerKg": 1.0,
     "lastSeen": "2026-10-21",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -218,7 +216,7 @@
     "store": "lidl",
     "czkPerKg": 16.0,
     "lastSeen": "2026-10-30",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
@@ -226,7 +224,7 @@
     "store": "lidl",
     "czkPerKg": 13.0,
     "lastSeen": "2026-10-30",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
@@ -234,7 +232,7 @@
     "store": "lidl",
     "czkPerKg": 6.9,
     "lastSeen": "2026-10-24",
-    "ageDays": 15,
+    "ageDays": 16,
     "reason": "not_matched_today"
    },
    {
@@ -242,7 +240,7 @@
     "store": "lidl",
     "czkPerKg": 2.0,
     "lastSeen": "2026-10-28",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -250,7 +248,7 @@
     "store": "lidl",
     "czkPerKg": 25.5,
     "lastSeen": "2026-10-31",
-    "ageDays": 8,
+    "ageDays": 9,
     "reason": "not_matched_today"
    },
    {
@@ -258,7 +256,7 @@
     "store": "lidl",
     "czkPerKg": 9.7,
     "lastSeen": "2026-10-28",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "not_matched_today"
    },
    {
@@ -266,7 +264,7 @@
     "store": "lidl",
     "czkPerKg": 3.6,
     "lastSeen": "2026-10-21",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "not_matched_today"
    },
    {
@@ -274,7 +272,7 @@
     "store": "lidl",
     "czkPerKg": 8.5,
     "lastSeen": "2026-11-07",
-    "ageDays": 1,
+    "ageDays": 2,
     "reason": "not_matched_today"
    },
    {
@@ -282,7 +280,7 @@
     "store": "lidl",
     "czkPerKg": 17.5,
     "lastSeen": "2026-11-07",
-    "ageDays": 1,
+    "ageDays": 2,
     "reason": "not_matched_today"
    },
    {
@@ -290,7 +288,7 @@
     "store": "lidl",
     "czkPerKg": 7.0,
     "lastSeen": "2026-10-24",
-    "ageDays": 15,
+    "ageDays": 16,
     "reason": "not_matched_today"
    },
    {
@@ -298,42 +296,13 @@
     "store": "lidl",
     "czkPerKg": 1.0,
     "lastSeen": "2026-11-04",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "not_matched_today"
    }
   ],
   "staleCount": 27,
-  "dropped": [
-   {
-    "ingredientId": "arasidove_maslo",
-    "store": "lidl",
-    "czkPerKg": 5.2,
-    "lastSeen": "2026-10-17",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "bagel",
-    "store": "lidl",
-    "czkPerKg": 6.6,
-    "lastSeen": "2026-10-17",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "datle",
-    "store": "lidl",
-    "czkPerKg": 6.0,
-    "lastSeen": "2026-10-17",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "debrecinka",
-    "store": "lidl",
-    "czkPerKg": 7.0,
-    "lastSeen": "2026-10-17",
-    "ageDays": 22
-   }
-  ],
-  "droppedCount": 4,
+  "dropped": [],
+  "droppedCount": 0,
   "storesMissing": [
    "billa",
    "spar",
@@ -350,15 +319,15 @@
   "v": 2,
   "market": "at",
   "currency": "EUR",
-  "updated": "2026-11-08",
-  "ingredients": 27,
-  "pairs": 27,
+  "updated": "2026-11-09",
+  "ingredients": 29,
+  "pairs": 29,
   "perStore": {
    "billa": 0,
    "spar": 0,
    "interspar": 0,
    "hofer": 0,
-   "lidl": 27,
+   "lidl": 29,
    "penny": 0,
    "mpreis": 0
   },
@@ -372,15 +341,15 @@
    "penny": 0,
    "mpreis": 0
   },
-  "sizeBytes": 3302
+  "sizeBytes": 3376
  },
  "pricesV2Path": null,
  "fetch": {
   "v": 1,
   "market": "at",
   "currency": "EUR",
-  "run": "2026-11-08T08:28:23+00:00",
-  "today": "2026-11-08",
+  "run": "2026-11-09T08:58:54+00:00",
+  "today": "2026-11-09",
   "sources": {
    "lidl_at": {
     "source": "lidl_at",
@@ -391,7 +360,7 @@
      "lidl": 210
     },
     "requests": 22,
-    "elapsed_s": 21.5,
+    "elapsed_s": 22.5,
     "notes": [
      "23 categories, 210 products"
     ],

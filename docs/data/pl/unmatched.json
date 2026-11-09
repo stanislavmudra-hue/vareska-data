@@ -1,5 +1,5 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "review": [
   {
    "ingredientId": "pomeranc",
@@ -123,6 +123,32 @@
    "promo": true
   },
   {
+   "ingredientId": "rohlik",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "- Rogal świętomarciński",
+   "czkPerKg": 15.0,
+   "price": 2.99,
+   "originalPrice": 7.49,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-10",
+   "confidence": 0.671,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "rohlik",
+     "score": 0.671,
+     "via": "rogalik",
+     "nameCs": "rohlík",
+     "name": "rogalik"
+    }
+   ],
+   "pack": "200 g",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "lunchmeat",
    "store": "lidl",
    "source": "lidl_pl",
@@ -166,6 +192,7 @@
    "title": "Pepsi Zero, Mirinda lub 7UP",
    "czkPerKg": 2.71,
    "price": 12.98,
+   "validFrom": "2026-11-09",
    "confidence": 0.539,
    "status": "unmatched",
    "club": false,
@@ -187,6 +214,7 @@
    "source": "lidl_pl",
    "title": "Coca-Cola",
    "price": 15.98,
+   "validFrom": "2026-11-09",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
@@ -224,6 +252,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 5,
+ "reviewTotal": 6,
  "unmatchedTotal": 4
 }

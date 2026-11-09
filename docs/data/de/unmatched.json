@@ -1,5 +1,5 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "review": [
   {
    "ingredientId": "calvados",
@@ -310,6 +310,48 @@
    "pack": "200 g",
    "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": true
+  },
+  {
+   "ingredientId": "gin",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Hopfen Gin 42% Vol",
+   "czkPerKg": 22.78,
+   "price": 14.99,
+   "confidence": 0.714,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "gin",
+     "score": 0.714,
+     "via": "Gin",
+     "nameCs": "gin",
+     "name": "Gin"
+    },
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.285,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.285,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
   },
   {
    "ingredientId": "ouzo",
@@ -2299,8 +2341,8 @@
    "store": "lidl",
    "source": "lidl_de",
    "title": "FIREBALL Likör mit Zimt- und Whiskygeschmack 33% Vol",
-   "czkPerKg": 19.61,
-   "price": 12.9,
+   "czkPerKg": 21.27,
+   "price": 13.99,
    "confidence": 0.518,
    "status": "unmatched",
    "club": false,
@@ -2788,52 +2830,6 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "ZÜNFTLER 2 x 0,7-l-Flasche Spirituosenpaket Zünftler Alter Pflaumenbrand 1 Jahr 40% Vol",
-   "czkPerKg": 17.85,
-   "price": 24.99,
-   "originalPrice": 25.98,
-   "confidence": 0.245,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.245,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.245,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    },
-    {
-     "ingredientId": "mleko_35",
-     "score": 0.245,
-     "via": "Vollmilch",
-     "nameCs": "plnotučné mléko",
-     "name": "Vollmilch",
-     "reasons": [
-      "hint-category:dairy",
-      "sibling:chosen"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "COMTE DE BRISMAND Brut Reserve, Champagner",
    "price": 17.99,
    "confidence": 0.0,
@@ -2967,6 +2963,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 45,
- "unmatchedTotal": 36
+ "reviewTotal": 46,
+ "unmatchedTotal": 35
 }
