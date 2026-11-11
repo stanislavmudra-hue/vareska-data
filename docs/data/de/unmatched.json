@@ -1,5 +1,5 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-11",
  "review": [
   {
    "ingredientId": "calvados",
@@ -85,6 +85,30 @@
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "ingredientId": "parky",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "DULANO Delikatess Wiener Würstchen",
+   "czkPerKg": 6.49,
+   "price": 6.49,
+   "originalPrice": 6.79,
+   "confidence": 0.836,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "parky",
+     "score": 0.836,
+     "via": "Wiener Würstchen",
+     "nameCs": "párky",
+     "name": "Wiener Würstchen"
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "makadamove_orechy",
@@ -1513,8 +1537,9 @@
    "store": "lidl",
    "source": "lidl_de",
    "title": "Amarone della Valpolicella Classico DOCG trocken, Rotwein 2021",
-   "czkPerKg": 22.88,
-   "price": 16.99,
+   "czkPerKg": 20.19,
+   "price": 14.99,
+   "originalPrice": 16.99,
    "confidence": 0.612,
    "status": "review",
    "club": false,
@@ -1550,7 +1575,7 @@
     }
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
+   "promo": true
   },
   {
    "ingredientId": "vino_cervene",
@@ -1782,48 +1807,6 @@
      "name": "Vollmilchschokolade",
      "reasons": [
       "hint-category:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "ingredientId": "vino_ruzove",
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "Vino Rosado Tempranillo 3-l-Bag-in-Box trocken, Roséwein 2025",
-   "czkPerKg": 1.68,
-   "price": 4.99,
-   "confidence": 0.612,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "vino_ruzove",
-     "score": 0.612,
-     "via": "Roséwein",
-     "nameCs": "růžové víno",
-     "name": "Roséwein"
-    },
-    {
-     "ingredientId": "bagel",
-     "score": 0.245,
-     "via": "Bagel",
-     "nameCs": "bagel",
-     "name": "Bagel",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "bageta",
-     "score": 0.245,
-     "via": "Baguette",
-     "nameCs": "bageta",
-     "name": "Baguette",
-     "reasons": [
-      "hint-category:bakery"
      ]
     }
    ],
@@ -2214,47 +2197,6 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "XO Brandy de Jerez Solera Gran Reserva mit Geschenkbox 40% Vol",
-   "czkPerKg": 27.34,
-   "price": 17.99,
-   "confidence": 0.589,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "brandy",
-     "score": 0.589,
-     "via": "Brandy",
-     "nameCs": "brandy",
-     "name": "Brandy"
-    },
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.236,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.236,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "Château Lafite Rothschild Pauillac 1er Grand Cru Classé AOP trocken, Rotwein 2019",
    "czkPerKg": 1345.45,
    "price": 999.0,
@@ -2340,6 +2282,47 @@
   {
    "store": "lidl",
    "source": "lidl_de",
+   "title": "LICOR 43 Original Cuarenta y tres 31% Vol",
+   "czkPerKg": 24.3,
+   "price": 15.99,
+   "confidence": 0.539,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kirsch",
+     "score": 0.539,
+     "via": "třešňovice",
+     "nameCs": "třešňovice",
+     "name": "Kirschwasser"
+    },
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.27,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.27,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
    "title": "FIREBALL Likör mit Zimt- und Whiskygeschmack 33% Vol",
    "czkPerKg": 21.27,
    "price": 13.99,
@@ -2411,6 +2394,26 @@
     }
    ],
    "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "BEBECONFORT Baby-Pflegeset »Dog & Seagulls«, 5-teilig",
+   "price": 16.99,
+   "confidence": 0.502,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kukurice_baby",
+     "score": 0.502,
+     "via": "Babymais",
+     "nameCs": "baby kukuřice",
+     "name": "Babymais"
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/h/baby-kinder/h10096283?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
@@ -2749,33 +2752,42 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "ALLINI Secco Rosato Italiano Frizzante trocken, 0,2-l-Dose",
-   "czkPerKg": 3.95,
-   "price": 0.79,
-   "confidence": 0.259,
+   "title": "Ron Dominicano Viejo 38% Vol",
+   "czkPerKg": 21.41,
+   "price": 14.99,
+   "confidence": 0.27,
    "status": "unmatched",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "drozdi_cerstve",
-     "score": 0.259,
-     "via": "Trockenhefe",
-     "nameCs": "čerstvé droždí",
-     "name": "frische Hefe",
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.27,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
      "reasons": [
-      "hint-category:other",
-      "sibling:chosen"
+      "hint-category:bakery"
      ]
     },
     {
-     "ingredientId": "drozdi_susene",
-     "score": 0.155,
-     "via": "Trockenhefe",
-     "nameCs": "sušené droždí",
-     "name": "Trockenhefe",
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.27,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
      "reasons": [
-      "hint-category:other",
-      "sibling:other"
+      "hint-category:other"
+     ]
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.27,
+     "via": "Vollmilch",
+     "nameCs": "plnotučné mléko",
+     "name": "Vollmilch",
+     "reasons": [
+      "hint-category:dairy",
+      "sibling:chosen"
      ]
     }
    ],
@@ -2785,9 +2797,9 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "ANESSIA Griechische Spirituosen-Spezialität 40% Vol",
-   "czkPerKg": 10.41,
-   "price": 7.29,
+   "title": "HENNESSY Very Special Cognac 40% Vol",
+   "czkPerKg": 51.41,
+   "price": 35.99,
    "confidence": 0.259,
    "status": "unmatched",
    "club": false,
@@ -2878,19 +2890,6 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "DULANO Rohwurst",
-   "price": 1.59,
-   "originalPrice": 1.69,
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "200 g",
-   "url": "https://www.lidl.de/q/api/category/h/fleisch-gefluegel/h10095752?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "FREEWAY Erfrischungsgetränk",
    "price": 0.49,
    "originalPrice": 0.65,
@@ -2904,6 +2903,19 @@
   {
    "store": "lidl",
    "source": "lidl_de",
+   "title": "Gourmet Snacks",
+   "price": 2.29,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-29",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
    "title": "KROMBACHER 2 x 5-l-Bierfass Krombacher Pils mit Zapfhahn",
    "price": 26.99,
    "confidence": 0.0,
@@ -2911,6 +2923,178 @@
    "club": false,
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Katzensticks",
+   "price": 1.69,
+   "validFrom": "2027-01-08",
+   "validTo": "2027-01-10",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "MAX & MILA'S WORLD Häppchen in Sauce",
+   "price": 0.55,
+   "validFrom": "2027-01-08",
+   "validTo": "2027-01-10",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "MAX'S WORLD Dentalstöckchen",
+   "price": 2.29,
+   "validFrom": "2026-11-02",
+   "validTo": "2026-11-15",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "MAX'S WORLD Gourmet Festtagspastete",
+   "price": 0.55,
+   "validFrom": "2027-01-08",
+   "validTo": "2027-01-10",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "MAX'S WORLD Kauwürstchen",
+   "price": 1.79,
+   "validFrom": "2027-01-08",
+   "validTo": "2027-01-10",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "MILA'S WORLD Gourmet Festtagspastete",
+   "price": 1.49,
+   "validFrom": "2026-12-28",
+   "validTo": "2027-01-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "MILA'S WORLD Kroketten",
+   "price": 2.29,
+   "validFrom": "2026-11-16",
+   "validTo": "2026-11-22",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "MILA´S WORLD Herzhafte Häppchen",
+   "price": 0.99,
+   "validFrom": "2027-01-08",
+   "validTo": "2027-01-10",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Max's World Knusprige Kroketten",
+   "price": 3.75,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "3000 g",
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Mila's World Herzhafte Filets in Sauce",
+   "price": 3.65,
+   "validFrom": "2027-01-08",
+   "validTo": "2027-01-10",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1020 g",
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Mila's World Knabbersnacks",
+   "price": 0.95,
+   "validFrom": "2026-11-30",
+   "validTo": "2026-12-06",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "150 g",
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Mila's World MSC Häppchen in Sauce",
+   "price": 4.29,
+   "validFrom": "2027-01-08",
+   "validTo": "2027-01-10",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "2040 g",
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Mila's World Pastete",
+   "price": 2.39,
+   "validFrom": "2026-12-28",
+   "validTo": "2027-01-03",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1000 g",
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "store": "lidl",
@@ -2964,5 +3148,5 @@
   }
  ],
  "reviewTotal": 46,
- "unmatchedTotal": 35
+ "unmatchedTotal": 49
 }

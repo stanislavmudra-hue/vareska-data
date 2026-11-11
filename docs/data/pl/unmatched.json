@@ -1,26 +1,52 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-11",
  "review": [
   {
-   "ingredientId": "pomeranc",
+   "ingredientId": "avokado",
    "store": "lidl",
    "source": "lidl_pl",
-   "title": "Pomarańcze deserowe, luzem",
-   "czkPerKg": 6.99,
-   "price": 3.99,
-   "originalPrice": 6.99,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-10",
+   "title": "Awokado Hass",
+   "czkPerKg": 25.98,
+   "price": 7.99,
+   "originalPrice": 12.99,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
    "confidence": 0.839,
    "status": "review",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "pomeranc",
+     "ingredientId": "avokado",
      "score": 0.839,
-     "via": "pomarańcza",
-     "nameCs": "pomeranč",
-     "name": "pomarańcza"
+     "via": "awokado",
+     "nameCs": "avokádo",
+     "name": "awokado"
+    }
+   ],
+   "pack": "500 g",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "kapusta",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "Kapusta stożkowa, luzem",
+   "czkPerKg": 6.99,
+   "price": 4.89,
+   "originalPrice": 6.99,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kapusta",
+     "score": 0.839,
+     "via": "kapusta",
+     "nameCs": "kapusta",
+     "name": "kapusta włoska"
     }
    ],
    "pack": "1 kg",
@@ -28,25 +54,68 @@
    "promo": true
   },
   {
-   "ingredientId": "hrozny",
+   "ingredientId": "klobasa",
    "store": "lidl",
    "source": "lidl_pl",
-   "title": "Winogrona ciemne, luzem",
-   "czkPerKg": 9.99,
-   "price": 5.99,
-   "originalPrice": 9.99,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-10",
+   "title": "PIKOK Kiełbasa śląska, XXL",
+   "czkPerKg": 9.93,
+   "price": 14.9,
+   "originalPrice": 33.9,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
    "confidence": 0.839,
    "status": "review",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "hrozny",
+     "ingredientId": "klobasa",
      "score": 0.839,
-     "via": "winogrona",
-     "nameCs": "hroznové víno",
-     "name": "winogrona"
+     "via": "kiełbasa",
+     "nameCs": "klobása",
+     "name": "kiełbasa"
+    }
+   ],
+   "pack": "1.5 kg",
+   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "svestky",
+   "store": "lidl",
+   "source": "lidl_pl",
+   "title": "Śliwki okrągłe, luzem",
+   "czkPerKg": 12.99,
+   "price": 6.99,
+   "originalPrice": 12.99,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "svestky",
+     "score": 0.839,
+     "via": "śliwki",
+     "nameCs": "švestky",
+     "name": "śliwki"
+    },
+    {
+     "ingredientId": "okra",
+     "score": 0.624,
+     "via": "okra",
+     "nameCs": "okra",
+     "name": "okra"
+    },
+    {
+     "ingredientId": "slivovice",
+     "score": 0.336,
+     "via": "śliwowica",
+     "nameCs": "slivovice",
+     "name": "śliwowica",
+     "reasons": [
+      "hint-category:alcohol"
+     ]
     }
    ],
    "pack": "1 kg",
@@ -57,12 +126,12 @@
    "ingredientId": "gouda",
    "store": "lidl",
    "source": "lidl_pl",
-   "title": "Pilos Ser gouda w kawałku, XXL",
-   "czkPerKg": 14.98,
-   "price": 7.49,
-   "originalPrice": 14.99,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-10",
+   "title": "Mlekovita Ser gouda w plastrach, XXL",
+   "czkPerKg": 14.99,
+   "price": 14.99,
+   "originalPrice": 29.89,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
    "confidence": 0.714,
    "status": "review",
    "club": false,
@@ -82,104 +151,6 @@
      "name": "serwatka"
     }
    ],
-   "pack": "500 g",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "ingredientId": "rajcata",
-   "store": "lidl",
-   "source": "lidl_pl",
-   "title": "Ryneczek Lidla Pomidory truskawowe",
-   "czkPerKg": 23.98,
-   "price": 11.99,
-   "originalPrice": 16.99,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-10",
-   "confidence": 0.674,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "rajcata",
-     "score": 0.674,
-     "via": "pomidory",
-     "nameCs": "rajčata",
-     "name": "pomidory"
-    },
-    {
-     "ingredientId": "jahody",
-     "score": 0.573,
-     "via": "truskawki",
-     "nameCs": "jahody",
-     "name": "truskawki",
-     "reasons": [
-      "ambiguous:rajcata"
-     ]
-    }
-   ],
-   "pack": "500 g",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "ingredientId": "rohlik",
-   "store": "lidl",
-   "source": "lidl_pl",
-   "title": "- Rogal świętomarciński",
-   "czkPerKg": 15.0,
-   "price": 2.99,
-   "originalPrice": 7.49,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-10",
-   "confidence": 0.671,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "rohlik",
-     "score": 0.671,
-     "via": "rogalik",
-     "nameCs": "rohlík",
-     "name": "rogalik"
-    }
-   ],
-   "pack": "200 g",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "ingredientId": "lunchmeat",
-   "store": "lidl",
-   "source": "lidl_pl",
-   "title": "RZEŹNIK Mięso mielone z łopatki wieprzowej, XXL",
-   "czkPerKg": 10.99,
-   "price": 10.99,
-   "originalPrice": 21.98,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-10",
-   "confidence": 0.647,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "lunchmeat",
-     "score": 0.647,
-     "via": "mielonka",
-     "nameCs": "lunchmeat",
-     "name": "mielonka"
-    },
-    {
-     "ingredientId": "veprova_plec",
-     "score": 0.568,
-     "via": "łopatka wieprzowa",
-     "nameCs": "vepřová plec",
-     "name": "łopatka wieprzowa",
-     "reasons": [
-      "ambiguous:lunchmeat"
-     ]
-    }
-   ],
    "pack": "1 kg",
    "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": true
@@ -189,61 +160,48 @@
   {
    "store": "lidl",
    "source": "lidl_pl",
-   "title": "Pepsi Zero, Mirinda lub 7UP",
-   "czkPerKg": 2.71,
-   "price": 12.98,
-   "validFrom": "2026-11-09",
-   "confidence": 0.539,
+   "title": "Pepsi, Pepsi Zero, Mirinda lub 7UP",
+   "czkPerKg": 3.33,
+   "price": 7.98,
+   "confidence": 0.518,
    "status": "unmatched",
    "club": false,
    "suggestions": [
     {
      "ingredientId": "mirin",
-     "score": 0.539,
+     "score": 0.518,
      "via": "mirin",
      "nameCs": "mirin",
      "name": "mirin"
     }
    ],
-   "pack": "4 l",
+   "pack": "2 l",
    "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {
    "store": "lidl",
    "source": "lidl_pl",
-   "title": "Coca-Cola",
-   "price": 15.98,
-   "validFrom": "2026-11-09",
+   "title": "Ryneczek Lidla Nektarynki, luzem",
+   "price": 16.99,
+   "originalPrice": 24.99,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
-   "pack": "4 l",
-   "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_pl",
-   "title": "Merci",
-   "price": 23.99,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-10",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "250 g",
+   "pack": "1 kg",
    "url": "https://www.lidl.pl/q/api/category/c/zywnosc-i-napoje/s10068374?assortment=PL&locale=pl_PL&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
    "store": "lidl",
    "source": "lidl_pl",
-   "title": "Ryneczek Lidla Dynia piżmowa, luzem",
-   "price": 3.99,
-   "originalPrice": 6.99,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-10",
+   "title": "Rzeźnik Polski kurczak – ćwiartki, XXL",
+   "price": 4.99,
+   "originalPrice": 10.99,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
@@ -252,6 +210,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 6,
- "unmatchedTotal": 4
+ "reviewTotal": 5,
+ "unmatchedTotal": 3
 }

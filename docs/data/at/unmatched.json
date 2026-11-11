@@ -1,5 +1,5 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-11",
  "review": [
   {
    "ingredientId": "petrzel_nat",
@@ -119,41 +119,6 @@
    "promo": true
   },
   {
-   "ingredientId": "hermelin",
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Camembert Salami",
-   "czkPerKg": 19.96,
-   "price": 4.99,
-   "validFrom": "2026-12-03",
-   "validTo": "2026-12-05",
-   "confidence": 0.839,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "hermelin",
-     "score": 0.839,
-     "via": "Camembert",
-     "nameCs": "hermelín",
-     "name": "Camembert"
-    },
-    {
-     "ingredientId": "salam_trvanlivy",
-     "score": 0.312,
-     "via": "trvanlivý salám",
-     "nameCs": "trvanlivý salám",
-     "name": "Dauerwurst",
-     "reasons": [
-      "hint-category:meat"
-     ]
-    }
-   ],
-   "pack": "250 g",
-   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
    "ingredientId": "datle",
    "store": "lidl",
    "source": "lidl_at",
@@ -196,35 +161,38 @@
    "promo": true
   },
   {
-   "ingredientId": "olej_lanyzovy",
+   "ingredientId": "hermelin",
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Trüffelöl mit Trüffelstückchen",
-   "czkPerKg": 21.7,
+   "title": "Deluxe Camembert Salami",
+   "czkPerKg": 19.96,
    "price": 4.99,
-   "validFrom": "2026-11-12",
-   "validTo": "2026-11-14",
+   "validFrom": "2026-12-03",
+   "validTo": "2026-12-05",
    "confidence": 0.839,
    "status": "review",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "olej_lanyzovy",
+     "ingredientId": "hermelin",
      "score": 0.839,
-     "via": "Trüffelöl",
-     "nameCs": "lanýžový olej",
-     "name": "Trüffelöl"
+     "via": "Camembert",
+     "nameCs": "hermelín",
+     "name": "Camembert"
     },
     {
-     "ingredientId": "lanyz",
-     "score": 0.671,
-     "via": "Trüffel",
-     "nameCs": "lanýž",
-     "name": "Trüffel"
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.312,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám",
+     "name": "Dauerwurst",
+     "reasons": [
+      "hint-category:meat"
+     ]
     }
    ],
-   "pack": "250 ml",
-   "url": "https://www.lidl.at/q/api/category/h/oele-gewuerze-saucen/h10096110?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "pack": "250 g",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -346,6 +314,38 @@
    ],
    "pack": "100 g",
    "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "olej_lanyzovy",
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Trüffelöl mit Trüffelstückchen",
+   "czkPerKg": 21.7,
+   "price": 4.99,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "olej_lanyzovy",
+     "score": 0.839,
+     "via": "Trüffelöl",
+     "nameCs": "lanýžový olej",
+     "name": "Trüffelöl"
+    },
+    {
+     "ingredientId": "lanyz",
+     "score": 0.671,
+     "via": "Trüffel",
+     "nameCs": "lanýž",
+     "name": "Trüffel"
+    }
+   ],
+   "pack": "250 ml",
+   "url": "https://www.lidl.at/q/api/category/h/oele-gewuerze-saucen/h10096110?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -545,7 +545,7 @@
    "ingredientId": "listove_teste",
    "store": "lidl",
    "source": "lidl_at",
-   "title": "CHEF SELECT 100 Mini Blätterteighäppchen",
+   "title": "Chef Select 100 Mini Blätterteighäppchen",
    "czkPerKg": 6.58,
    "price": 5.99,
    "validFrom": "2026-12-17",
@@ -646,7 +646,7 @@
    "ingredientId": "veprovy_bucek",
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Duroc Schweinebauch",
+   "title": "Deluxe Duroc Schweinebauch",
    "czkPerKg": 19.9,
    "price": 1.99,
    "validFrom": "2026-12-10",
@@ -671,7 +671,7 @@
    "ingredientId": "jehneci_kyta",
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Frische Merino Lammkeule",
+   "title": "Deluxe Frische Merino Lammkeule",
    "czkPerKg": 10.79,
    "price": 14.99,
    "validFrom": "2026-11-26",
@@ -690,56 +690,6 @@
    ],
    "pack": "1 kg",
    "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "ingredientId": "med",
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Manuka-Honig",
-   "czkPerKg": 67.96,
-   "price": 16.99,
-   "validFrom": "2026-12-10",
-   "validTo": "2026-12-12",
-   "confidence": 0.78,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "med",
-     "score": 0.78,
-     "via": "Honig",
-     "nameCs": "med",
-     "name": "Honig"
-    }
-   ],
-   "pack": "250 g",
-   "url": "https://www.lidl.at/q/api/category/h/cerealien-aufstriche/h10096153?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "ingredientId": "losos_uzeny",
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Schottischer Räucherlachs",
-   "czkPerKg": 36.6,
-   "price": 5.49,
-   "validFrom": "2026-11-12",
-   "validTo": "2026-11-14",
-   "confidence": 0.78,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "losos_uzeny",
-     "score": 0.78,
-     "via": "Räucherlachs",
-     "nameCs": "uzený losos",
-     "name": "Räucherlachs"
-    }
-   ],
-   "pack": "150 g",
-   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -849,6 +799,56 @@
    ],
    "pack": "100 g",
    "url": "https://www.lidl.at/q/api/category/h/fisch-meeresfruechte/h10071050?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "med",
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Manuka-Honig",
+   "czkPerKg": 67.96,
+   "price": 16.99,
+   "validFrom": "2026-12-10",
+   "validTo": "2026-12-12",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "med",
+     "score": 0.78,
+     "via": "Honig",
+     "nameCs": "med",
+     "name": "Honig"
+    }
+   ],
+   "pack": "250 g",
+   "url": "https://www.lidl.at/q/api/category/h/cerealien-aufstriche/h10096153?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "losos_uzeny",
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Schottischer Räucherlachs",
+   "czkPerKg": 36.6,
+   "price": 5.49,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "losos_uzeny",
+     "score": 0.78,
+     "via": "Räucherlachs",
+     "nameCs": "uzený losos",
+     "name": "Räucherlachs"
+    }
+   ],
+   "pack": "150 g",
+   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1067,35 +1067,42 @@
    "promo": true
   },
   {
-   "ingredientId": "stracciatella_syr",
+   "ingredientId": "hovezi_kvetova_spicka",
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Stracciatella di Burrata",
-   "czkPerKg": 14.21,
-   "price": 1.99,
-   "validFrom": "2026-11-26",
-   "validTo": "2026-11-28",
+   "title": "- Tafelspitz vom Kalb",
+   "czkPerKg": 16.99,
+   "price": 16.99,
+   "validFrom": "2026-11-19",
+   "validTo": "2026-11-21",
    "confidence": 0.767,
    "status": "review",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "stracciatella_syr",
+     "ingredientId": "hovezi_kvetova_spicka",
      "score": 0.767,
-     "via": "stracciatella",
-     "nameCs": "stracciatella",
-     "name": "Stracciatella-Käse"
+     "via": "Tafelspitz",
+     "nameCs": "hovězí květová špička",
+     "name": "Tafelspitz"
     },
     {
-     "ingredientId": "burrata",
-     "score": 0.714,
-     "via": "Burrata",
-     "nameCs": "burrata",
-     "name": "Burrata"
+     "ingredientId": "mlete_teleci",
+     "score": 0.571,
+     "via": "Kalbshackfleisch",
+     "nameCs": "mleté telecí maso",
+     "name": "Kalbshackfleisch"
+    },
+    {
+     "ingredientId": "teleci_brzlik",
+     "score": 0.571,
+     "via": "Kalbsbries",
+     "nameCs": "telecí brzlík",
+     "name": "Kalbsbries"
     }
    ],
-   "pack": "140 g",
-   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "pack": "1 kg",
+   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1159,42 +1166,35 @@
    "promo": true
   },
   {
-   "ingredientId": "hovezi_kvetova_spicka",
+   "ingredientId": "stracciatella_syr",
    "store": "lidl",
    "source": "lidl_at",
-   "title": "METZGERFRISCH Tafelspitz vom Kalb",
-   "czkPerKg": 16.99,
-   "price": 16.99,
-   "validFrom": "2026-11-19",
-   "validTo": "2026-11-21",
+   "title": "Deluxe Stracciatella di Burrata",
+   "czkPerKg": 14.21,
+   "price": 1.99,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
    "confidence": 0.767,
    "status": "review",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "hovezi_kvetova_spicka",
+     "ingredientId": "stracciatella_syr",
      "score": 0.767,
-     "via": "Tafelspitz",
-     "nameCs": "hovězí květová špička",
-     "name": "Tafelspitz"
+     "via": "stracciatella",
+     "nameCs": "stracciatella",
+     "name": "Stracciatella-Käse"
     },
     {
-     "ingredientId": "mlete_teleci",
-     "score": 0.571,
-     "via": "Kalbshackfleisch",
-     "nameCs": "mleté telecí maso",
-     "name": "Kalbshackfleisch"
-    },
-    {
-     "ingredientId": "teleci_brzlik",
-     "score": 0.571,
-     "via": "Kalbsbries",
-     "nameCs": "telecí brzlík",
-     "name": "Kalbsbries"
+     "ingredientId": "burrata",
+     "score": 0.714,
+     "via": "Burrata",
+     "nameCs": "burrata",
+     "name": "Burrata"
     }
    ],
-   "pack": "1 kg",
-   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "pack": "140 g",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1632,7 +1632,7 @@
    "ingredientId": "salam_trvanlivy",
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Salami-Trio",
+   "title": "Deluxe Salami-Trio",
    "czkPerKg": 19.42,
    "price": 6.99,
    "validFrom": "2026-11-19",
@@ -1657,7 +1657,7 @@
    "ingredientId": "candat",
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Zanderfilet Portionen",
+   "title": "Deluxe Zanderfilet Portionen",
    "czkPerKg": 17.76,
    "price": 7.99,
    "validFrom": "2026-12-03",
@@ -1937,41 +1937,6 @@
    "promo": true
   },
   {
-   "ingredientId": "olej_lanyzovy",
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Büffelburrata mit Trüffel",
-   "czkPerKg": 19.92,
-   "price": 2.49,
-   "validFrom": "2026-11-12",
-   "validTo": "2026-11-14",
-   "confidence": 0.624,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "olej_lanyzovy",
-     "score": 0.624,
-     "via": "Trüffelöl",
-     "nameCs": "lanýžový olej",
-     "name": "Trüffelöl"
-    },
-    {
-     "ingredientId": "lanyz",
-     "score": 0.39,
-     "via": "Trüffel",
-     "nameCs": "lanýž",
-     "name": "Trüffel",
-     "reasons": [
-      "hint-category:vegetable"
-     ]
-    }
-   ],
-   "pack": "125 g",
-   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
    "ingredientId": "sirup_ryzovy",
    "store": "lidl",
    "source": "lidl_at",
@@ -2017,28 +1982,38 @@
    "promo": true
   },
   {
-   "ingredientId": "salam_trvanlivy",
+   "ingredientId": "olej_lanyzovy",
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Spezialitäen Salamiplatte",
-   "czkPerKg": 19.93,
-   "price": 2.99,
-   "validFrom": "2026-11-19",
-   "validTo": "2026-11-21",
+   "title": "Deluxe Büffelburrata mit Trüffel",
+   "czkPerKg": 19.92,
+   "price": 2.49,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
    "confidence": 0.624,
    "status": "review",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "salam_trvanlivy",
+     "ingredientId": "olej_lanyzovy",
      "score": 0.624,
-     "via": "trvanlivý salám",
-     "nameCs": "trvanlivý salám",
-     "name": "Dauerwurst"
+     "via": "Trüffelöl",
+     "nameCs": "lanýžový olej",
+     "name": "Trüffelöl"
+    },
+    {
+     "ingredientId": "lanyz",
+     "score": 0.39,
+     "via": "Trüffel",
+     "nameCs": "lanýž",
+     "name": "Trüffel",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
     }
    ],
-   "pack": "150 g",
-   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "pack": "125 g",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2063,6 +2038,31 @@
     }
    ],
    "pack": "300 g",
+   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_trvanlivy",
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Spezialitäen Salamiplatte",
+   "czkPerKg": 19.93,
+   "price": 2.99,
+   "validFrom": "2026-11-19",
+   "validTo": "2026-11-21",
+   "confidence": 0.624,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.624,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám",
+     "name": "Dauerwurst"
+    }
+   ],
+   "pack": "150 g",
    "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -2487,7 +2487,7 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Steinpilz Trüffelleberkäse",
+   "title": "Deluxe Steinpilz Trüffelleberkäse",
    "czkPerKg": 9.32,
    "price": 6.99,
    "validFrom": "2026-11-12",
@@ -2524,7 +2524,7 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Trüffel Geschenkbox",
+   "title": "Deluxe Trüffel Geschenkbox",
    "price": 12.99,
    "validFrom": "2026-11-12",
    "validTo": "2026-11-14",
@@ -2640,7 +2640,7 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "SNACK DAY Kartoffelchips Trüffel",
+   "title": "Snack Day Kartoffelchips Trüffel",
    "czkPerKg": 13.27,
    "price": 1.99,
    "validFrom": "2026-11-12",
@@ -2890,7 +2890,7 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Jamón Serrano Gran Reserva",
+   "title": "Deluxe Jamón Serrano Gran Reserva",
    "czkPerKg": 25.57,
    "price": 1.79,
    "validFrom": "2026-11-19",
@@ -3112,6 +3112,20 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "- Frische Schweinskoteletts",
+   "price": 5.99,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-11",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1 kg",
+   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "- Frisches Faschiertes",
    "price": 4.49,
    "validFrom": "2026-11-12",
@@ -3121,6 +3135,20 @@
    "club": false,
    "pack": "800 g",
    "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "- Krapfen mit Marillenfüllung 12er",
+   "price": 3.99,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-11",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "900 g",
+   "url": "https://www.lidl.at/q/api/category/h/backwaren/h10096086?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3270,20 +3298,6 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "COCA COLA Coca-Cola, Fanta oder Sprite",
-   "price": 1.29,
-   "validFrom": "2026-11-16",
-   "validTo": "2026-11-18",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1.5 l",
-   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
    "title": "Chef Select Knusperente",
    "price": 6.99,
    "validFrom": "2026-11-26",
@@ -3327,20 +3341,6 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Amorettini",
-   "price": 2.79,
-   "validFrom": "2026-12-03",
-   "validTo": "2026-12-05",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "150 g",
-   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
    "title": "DELUXE Bauchspeck gebraten",
    "price": 3.79,
    "validFrom": "2026-11-26",
@@ -3350,62 +3350,6 @@
    "club": false,
    "pack": "250 g",
    "url": "https://www.lidl.at/q/api/category/h/schweinefleisch/h10095755?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Carnaroli Risotto",
-   "price": 1.99,
-   "validFrom": "2026-11-12",
-   "validTo": "2026-11-14",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "210 g",
-   "url": "https://www.lidl.at/q/api/category/h/lebensmittelvorrat/h10096095?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Focaccia Farcita",
-   "price": 3.99,
-   "validFrom": "2026-11-26",
-   "validTo": "2026-11-28",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "330 g",
-   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Geschenkkorb",
-   "price": 24.99,
-   "validFrom": "2026-11-26",
-   "validTo": "2026-11-28",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "Je Set",
-   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Herzoginkartoffeln",
-   "price": 2.99,
-   "validFrom": "2026-11-12",
-   "validTo": "2026-11-14",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "600 g",
-   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost-gefrorene-lebensmittel/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3425,34 +3369,6 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Käsefondue mit Appenzeller",
-   "price": 5.49,
-   "validFrom": "2026-12-10",
-   "validTo": "2026-12-12",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "400 g",
-   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Käseplatte",
-   "price": 6.99,
-   "validFrom": "2026-12-10",
-   "validTo": "2026-12-12",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "300 g",
-   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
    "title": "DELUXE Motivbutter",
    "price": 2.99,
    "validFrom": "2026-12-10",
@@ -3467,34 +3383,6 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Octopus Carpaccio",
-   "price": 4.49,
-   "validFrom": "2026-11-26",
-   "validTo": "2026-11-28",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "150 g",
-   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Pandoro",
-   "price": 6.99,
-   "validFrom": "2026-11-26",
-   "validTo": "2026-11-28",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "800 g",
-   "url": "https://www.lidl.at/q/api/category/h/backwaren/h10096086?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
    "title": "DELUXE Pilzmischung",
    "price": 2.79,
    "validFrom": "2026-11-12",
@@ -3504,62 +3392,6 @@
    "club": false,
    "pack": "250 g",
    "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost-gefrorene-lebensmittel/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Raclettespeck",
-   "price": 3.49,
-   "validFrom": "2026-12-10",
-   "validTo": "2026-12-12",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "140 g",
-   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Schafskäsevariation",
-   "price": 7.99,
-   "validFrom": "2026-12-10",
-   "validTo": "2026-12-12",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "225 g",
-   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Schweizer Raclette Platte",
-   "price": 4.49,
-   "validFrom": "2026-12-17",
-   "validTo": "2026-12-19",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "300 g",
-   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost-gefrorene-lebensmittel/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "DELUXE Spanische Tapas",
-   "price": 8.99,
-   "validFrom": "2026-12-10",
-   "validTo": "2026-12-12",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "310 g",
-   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3593,6 +3425,20 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Deluxe Amorettini",
+   "price": 2.79,
+   "validFrom": "2026-12-03",
+   "validTo": "2026-12-05",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "150 g",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Deluxe Antipasto aus Wurstspezialitäten",
    "price": 3.49,
    "validFrom": "2026-11-26",
@@ -3616,6 +3462,20 @@
    "club": false,
    "pack": "300 g",
    "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Carnaroli Risotto",
+   "price": 1.99,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "210 g",
+   "url": "https://www.lidl.at/q/api/category/h/lebensmittelvorrat/h10096095?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3663,6 +3523,20 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Deluxe Focaccia Farcita",
+   "price": 3.99,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "330 g",
+   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Deluxe Frische Lammlachse mariniert",
    "price": 8.49,
    "validFrom": "2026-12-10",
@@ -3705,6 +3579,62 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Deluxe Geschenkkorb",
+   "price": 24.99,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "Je Set",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Herzoginkartoffeln",
+   "price": 2.99,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-14",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "600 g",
+   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost-gefrorene-lebensmittel/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Käsefondue mit Appenzeller",
+   "price": 5.49,
+   "validFrom": "2026-12-10",
+   "validTo": "2026-12-12",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "400 g",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Käseplatte",
+   "price": 6.99,
+   "validFrom": "2026-12-10",
+   "validTo": "2026-12-12",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "300 g",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Deluxe MSC Vitello Tonnato",
    "price": 4.49,
    "validFrom": "2026-12-17",
@@ -3714,6 +3644,20 @@
    "club": false,
    "pack": "110 g",
    "url": "https://www.lidl.at/q/api/category/h/fisch-meeresfruechte/h10071050?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Octopus Carpaccio",
+   "price": 4.49,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "150 g",
+   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3733,6 +3677,34 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Deluxe Pandoro",
+   "price": 6.99,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "800 g",
+   "url": "https://www.lidl.at/q/api/category/h/backwaren/h10096086?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Raclettespeck",
+   "price": 3.49,
+   "validFrom": "2026-12-10",
+   "validTo": "2026-12-12",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "140 g",
+   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Deluxe Roquefort AOP",
    "price": 2.79,
    "validFrom": "2026-12-17",
@@ -3742,6 +3714,48 @@
    "club": false,
    "pack": "100 g",
    "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Schafskäsevariation",
+   "price": 7.99,
+   "validFrom": "2026-12-10",
+   "validTo": "2026-12-12",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "225 g",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Schweizer Raclette Platte",
+   "price": 4.49,
+   "validFrom": "2026-12-17",
+   "validTo": "2026-12-19",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "300 g",
+   "url": "https://www.lidl.at/q/api/category/h/tiefkuehlkost-gefrorene-lebensmittel/h10071049?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Spanische Tapas",
+   "price": 8.99,
+   "validFrom": "2026-12-10",
+   "validTo": "2026-12-12",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "310 g",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3944,20 +3958,6 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "Frische Schweinskoteletts",
-   "price": 5.99,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "1 kg",
-   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
    "title": "Fruit Balls",
    "price": 1.79,
    "validFrom": "2026-11-09",
@@ -4031,20 +4031,6 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "Krapfen mit Marillenfüllung 12er",
-   "price": 3.99,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "900 g",
-   "url": "https://www.lidl.at/q/api/category/h/backwaren/h10096086?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
    "title": "Käsescheiben",
    "price": 1.69,
    "originalPrice": 2.79,
@@ -4104,21 +4090,6 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "MILBONA Käsestäbchen",
-   "price": 0.99,
-   "originalPrice": 1.29,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "80 g",
-   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
    "title": "Melanzani",
    "price": 0.64,
    "validFrom": "2026-11-09",
@@ -4128,6 +4099,21 @@
    "club": false,
    "pack": "1 ks",
    "url": "https://www.lidl.at/q/api/category/h/obst-gemuese/h10071012?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Milbona Käsestäbchen",
+   "price": 0.99,
+   "originalPrice": 1.29,
+   "validFrom": "2026-11-09",
+   "validTo": "2026-11-11",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "80 g",
+   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -4325,6 +4311,20 @@
    "status": "unmatched",
    "club": false,
    "pack": "750 g",
+   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "SPRITE Coca-Cola, Fanta oder Sprite",
+   "price": 1.29,
+   "validFrom": "2026-11-16",
+   "validTo": "2026-11-18",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "1.5 l",
    "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
