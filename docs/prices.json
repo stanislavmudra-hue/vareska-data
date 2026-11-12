@@ -1,6 +1,6 @@
 {
  "v": 1,
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "czkPerKg": {
   "anglicka_slanina": {
    "albert": 199.0,
@@ -97,7 +97,7 @@
    "albert": 99.8,
    "globus": 49.8,
    "kaufland": 55.8,
-   "lidl": 59.8,
+   "lidl": 39.8,
    "penny": 39.8,
    "tesco": 55.8
   },
@@ -139,7 +139,8 @@
   "cedar": {
    "albert": 387.8,
    "billa": 303.2,
-   "globus": 249.0
+   "globus": 249.0,
+   "lidl": 299.5
   },
   "celer_bulva": {
    "kaufland": 19.9,
@@ -159,7 +160,6 @@
   "cesnek": {
    "billa": 232.8,
    "globus": 139.6,
-   "lidl": 247.5,
    "penny": 272.5,
    "tesco": 109.0
   },
@@ -221,7 +221,6 @@
   "cokolada_horka": {
    "albert": 159.4,
    "billa": 99.6,
-   "lidl": 233.0,
    "penny": 254.4
   },
   "cokolada_mlecna": {
@@ -433,7 +432,7 @@
    "albert": 124.8,
    "billa": 79.8,
    "globus": 99.8,
-   "lidl": 39.9
+   "lidl": 49.9
   },
   "hruska": {
    "albert": 76.5,
@@ -783,7 +782,7 @@
   "mandarinka": {
    "albert": 23.8,
    "globus": 24.9,
-   "lidl": 24.9
+   "lidl": 21.9
   },
   "mandle": {
    "albert": 249.5,
@@ -962,7 +961,7 @@
    "billa": 56.3,
    "globus": 53.0,
    "kaufland": 66.3,
-   "lidl": 49.7,
+   "lidl": 59.9,
    "penny": 49.7,
    "tesco": 56.3
   },
@@ -1526,7 +1525,7 @@
    "billa": 174.8,
    "globus": 99.0,
    "kaufland": 71.9,
-   "lidl": 124.9,
+   "lidl": 99.9,
    "penny": 59.9,
    "tesco": 79.9
   },
@@ -1609,8 +1608,7 @@
    "tesco": 14.9
   },
   "zeli_pekingske": {
-   "kaufland": 24.9,
-   "lidl": 24.9
+   "kaufland": 24.9
   }
  },
  "deals": [
@@ -1769,10 +1767,18 @@
   {
    "ingredientId": "brambory",
    "store": "lidl",
-   "czkPerKg": 12.4,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
+   "czkPerKg": 10.0,
+   "validFrom": "2026-11-19",
+   "validTo": "2026-11-22",
    "title": "Brambory přílohové"
+  },
+  {
+   "ingredientId": "brokolice_mrazena",
+   "store": "lidl",
+   "czkPerKg": 39.8,
+   "validFrom": "2026-11-12",
+   "validTo": "2026-11-15",
+   "title": "Brokolice"
   },
   {
    "ingredientId": "bujon_kostka",
@@ -2039,6 +2045,14 @@
    "title": "Váš Výběr Gnocchi bramborové 500g"
   },
   {
+   "ingredientId": "gnocchi",
+   "store": "lidl",
+   "czkPerKg": 29.9,
+   "validFrom": "2026-11-16",
+   "validTo": "2026-11-18",
+   "title": "ITALIAMO Bramborové noky"
+  },
+  {
    "ingredientId": "gouda",
    "store": "globus",
    "czkPerKg": 149.0,
@@ -2077,14 +2091,6 @@
    "validFrom": "2026-11-10",
    "validTo": "2026-11-17",
    "title": "Váš Výběr Camembert 120g"
-  },
-  {
-   "ingredientId": "hermelin",
-   "store": "lidl",
-   "czkPerKg": 249.6,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "KRÁL SÝRŮ Hermelín Duopack"
   },
   {
    "ingredientId": "houskovy_knedlik",
@@ -2257,9 +2263,9 @@
   {
    "ingredientId": "kaki",
    "store": "lidl",
-   "czkPerKg": 70.0,
-   "validFrom": "2026-11-13",
-   "validTo": "2026-11-15",
+   "czkPerKg": 52.4,
+   "validFrom": "2026-11-19",
+   "validTo": "2026-11-22",
    "title": "Kaki"
   },
   {
@@ -2367,14 +2373,6 @@
    "title": "Albert Kešu natural"
   },
   {
-   "ingredientId": "kiwi",
-   "store": "lidl",
-   "czkPerKg": 105.3,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Kiwi"
-  },
-  {
    "ingredientId": "klicky_fazolove",
    "store": "albert",
    "czkPerKg": 191.6,
@@ -2405,14 +2403,6 @@
    "validFrom": "2026-11-11",
    "validTo": "2026-11-24",
    "title": "Royal Crown Cola Classic 1,33 l"
-  },
-  {
-   "ingredientId": "kompot_ananasovy",
-   "store": "lidl",
-   "czkPerKg": 29.9,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Ananas"
   },
   {
    "ingredientId": "kompot_broskvovy",
@@ -2479,14 +2469,6 @@
    "title": "Kuřecí prsní řízky"
   },
   {
-   "ingredientId": "kureci_prsa",
-   "store": "lidl",
-   "czkPerKg": 99.9,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Kuřecí prsní řízky XXL"
-  },
-  {
    "ingredientId": "kureci_stehenni_rizky",
    "store": "albert",
    "czkPerKg": 366.3,
@@ -2509,30 +2491,6 @@
    "validFrom": "2026-11-11",
    "validTo": "2026-11-17",
    "title": "Kypřicí prášek"
-  },
-  {
-   "ingredientId": "kysane_zeli",
-   "store": "kaufland",
-   "czkPerKg": 25.8,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Novobránické kysané zelí Zoši Agro"
-  },
-  {
-   "ingredientId": "kysane_zeli",
-   "store": "kaufland",
-   "czkPerKg": 29.8,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Zelí červené kysané Samir"
-  },
-  {
-   "ingredientId": "kysane_zeli",
-   "store": "kaufland",
-   "czkPerKg": 31.9,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Zelí bílé kysané K-Jarmark"
   },
   {
    "ingredientId": "kysane_zeli",
@@ -2620,6 +2578,14 @@
    "czkPerKg": 21.9,
    "validFrom": "2026-11-12",
    "validTo": "2026-11-15",
+   "title": "Mandarinky"
+  },
+  {
+   "ingredientId": "mandarinka",
+   "store": "lidl",
+   "czkPerKg": 24.9,
+   "validFrom": "2026-11-19",
+   "validTo": "2026-11-22",
    "title": "Mandarinky"
   },
   {
@@ -2889,14 +2855,6 @@
   {
    "ingredientId": "okurka_salatova",
    "store": "lidl",
-   "czkPerKg": 49.7,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Okurka salátová"
-  },
-  {
-   "ingredientId": "okurka_salatova",
-   "store": "lidl",
    "czkPerKg": 59.9,
    "validFrom": "2026-11-12",
    "validTo": "2026-11-15",
@@ -3069,14 +3027,6 @@
    "validFrom": "2026-11-11",
    "validTo": "2026-11-17",
    "title": "Pomeranč"
-  },
-  {
-   "ingredientId": "pomeranc",
-   "store": "lidl",
-   "czkPerKg": 39.9,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Pomeranče"
   },
   {
    "ingredientId": "porek",
@@ -3269,14 +3219,6 @@
    "validFrom": "2026-11-11",
    "validTo": "2026-11-17",
    "title": "Vysočina"
-  },
-  {
-   "ingredientId": "salat_ledovy",
-   "store": "lidl",
-   "czkPerKg": 49.8,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Ledový salát"
   },
   {
    "ingredientId": "sardinky_konzerva",
@@ -3697,26 +3639,10 @@
   {
    "ingredientId": "zeli_bile",
    "store": "tesco",
-   "czkPerKg": 9.9,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Zelí hlávkové bílé"
-  },
-  {
-   "ingredientId": "zeli_bile",
-   "store": "tesco",
    "czkPerKg": 78.2,
    "validFrom": "2026-11-09",
    "validTo": "2026-11-17",
    "title": "Zelí Znojmia"
-  },
-  {
-   "ingredientId": "zeli_cervene",
-   "store": "kaufland",
-   "czkPerKg": 29.8,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Zelí červené kysané Samir"
   },
   {
    "ingredientId": "zeli_cervene",
@@ -3725,14 +3651,6 @@
    "validFrom": "2026-11-11",
    "validTo": "2026-11-17",
    "title": "Červené zelí Machland"
-  },
-  {
-   "ingredientId": "zeli_cervene",
-   "store": "tesco",
-   "czkPerKg": 14.9,
-   "validFrom": "2026-11-09",
-   "validTo": "2026-11-11",
-   "title": "Zelí hlávkové červené"
   }
  ],
  "categoryFallbackCzkPerKg": {

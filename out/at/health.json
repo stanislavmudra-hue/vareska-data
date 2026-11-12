@@ -2,21 +2,21 @@
  "v": 1,
  "market": "at",
  "currency": "EUR",
- "run": "2026-11-11T08:43:03+00:00",
- "today": "2026-11-11",
+ "run": "2026-11-12T09:04:23+00:00",
+ "today": "2026-11-12",
  "sources": {
   "lidl_at": {
    "source": "lidl_at",
    "ok": true,
-   "count": 210,
+   "count": 167,
    "error": null,
    "stores": {
-    "lidl": 210
+    "lidl": 167
    },
-   "requests": 22,
-   "elapsed_s": 21.9,
+   "requests": 16,
+   "elapsed_s": 15.2,
    "notes": [
-    "23 categories, 210 products"
+    "17 categories, 167 products"
    ],
    "tier": "primary",
    "market": "at"
@@ -24,9 +24,9 @@
  },
  "hosts": {
   "www.lidl.at": {
-   "requests": 22,
+   "requests": 16,
    "statuses": {
-    "200": 22
+    "200": 16
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -63,6 +63,6 @@
   "penny",
   "mpreis"
  ],
- "requests_made": 22,
+ "requests_made": 16,
  "cache_hits": 0
 }

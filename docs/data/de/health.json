@@ -1,39 +1,39 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-11-11",
- "generatedAt": "2026-11-11T08:43:37Z",
+ "date": "2026-11-12",
+ "generatedAt": "2026-11-12T09:04:48Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "startedAt": null,
-  "finishedAt": "2026-11-11T08:43:37Z",
+  "finishedAt": "2026-11-12T09:04:48Z",
   "durationSec": null,
-  "offers": 96,
+  "offers": 97,
   "deals": 0,
   "priced": 1,
   "matched": 1,
-  "review": 46,
+  "review": 47,
   "unmatched": 49,
   "ok": true
  },
- "lastSuccessfulRun": "2026-11-11",
- "pricesUpdated": "2026-11-11",
+ "lastSuccessfulRun": "2026-11-12",
+ "pricesUpdated": "2026-11-12",
  "sources": {
   "lidl_de": {
    "label": "lidl_de",
    "ok": true,
    "skipped": false,
-   "items": 96,
+   "items": 97,
    "matched": 1,
    "requests": 7,
-   "durationSec": 7.6,
+   "durationSec": 6.5,
    "error": null,
    "robots": null,
    "notes": [
     "category API lists the online wine shop only; in-store groceries are not exposed",
-    "8 categories, 96 products"
+    "8 categories, 97 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -122,38 +122,6 @@
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-10-28",
-   "market": "de",
-   "generatedAt": "2026-10-28T07:51:47Z",
-   "durationSec": null,
-   "status": "ok",
-   "ok": true,
-   "offers": 86,
-   "perSource": {
-    "lidl_de": 86
-   },
-   "matched": 1,
-   "review": 44,
-   "unmatched": 41,
-   "deals": 0,
-   "priced": 1,
-   "pairsPriced": 1,
-   "perStore": {
-    "aldiNord": 0,
-    "aldiSued": 0,
-    "lidl": 1,
-    "kaufland": 0,
-    "edeka": 0,
-    "rewe": 0,
-    "penny": 0,
-    "netto": 0,
-    "norma": 0
-   },
-   "stale": 0,
-   "dropped": 0,
-   "warnings": 0
-  },
   {
    "date": "2026-10-29",
    "market": "de",
@@ -551,6 +519,38 @@
    },
    "matched": 1,
    "review": 46,
+   "unmatched": 49,
+   "deals": 0,
+   "priced": 1,
+   "pairsPriced": 1,
+   "perStore": {
+    "aldiNord": 0,
+    "aldiSued": 0,
+    "lidl": 1,
+    "kaufland": 0,
+    "edeka": 0,
+    "rewe": 0,
+    "penny": 0,
+    "netto": 0,
+    "norma": 0
+   },
+   "stale": 0,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-11-12",
+   "market": "de",
+   "generatedAt": "2026-11-12T09:04:48Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 97,
+   "perSource": {
+    "lidl_de": 97
+   },
+   "matched": 1,
+   "review": 47,
    "unmatched": 49,
    "deals": 0,
    "priced": 1,
