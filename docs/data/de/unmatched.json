@@ -1,14 +1,13 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-16",
  "review": [
   {
    "ingredientId": "calvados",
    "store": "lidl",
    "source": "lidl_de",
    "title": "Fine Calvados 40% Vol",
-   "czkPerKg": 18.22,
-   "price": 11.99,
-   "originalPrice": 14.99,
+   "czkPerKg": 22.78,
+   "price": 14.99,
    "confidence": 0.839,
    "status": "review",
    "club": false,
@@ -42,7 +41,7 @@
     }
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
+   "promo": false
   },
   {
    "ingredientId": "ouzo",
@@ -231,9 +230,8 @@
    "store": "lidl",
    "source": "lidl_de",
    "title": "Grappa Amarone Barrique 40% Vol",
-   "czkPerKg": 19.13,
-   "price": 8.99,
-   "originalPrice": 9.99,
+   "czkPerKg": 21.26,
+   "price": 9.99,
    "confidence": 0.725,
    "status": "review",
    "club": false,
@@ -267,7 +265,7 @@
     }
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
+   "promo": false
   },
   {
    "ingredientId": "kirsch",
@@ -872,8 +870,8 @@
    "store": "lidl",
    "source": "lidl_de",
    "title": "Premium Superb Vodka 5-fach destilliert 42% Vol",
-   "czkPerKg": 14.43,
-   "price": 9.49,
+   "czkPerKg": 13.66,
+   "price": 8.99,
    "confidence": 0.647,
    "status": "review",
    "club": false,
@@ -1492,50 +1490,6 @@
    "ingredientId": "vino_cervene",
    "store": "lidl",
    "source": "lidl_de",
-   "title": "ALMA MORA Select Reserve Malbec Argentinien trocken, Rotwein 2024",
-   "czkPerKg": 13.45,
-   "price": 9.99,
-   "confidence": 0.612,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "vino_cervene",
-     "score": 0.612,
-     "via": "Rotwein",
-     "nameCs": "červené víno",
-     "name": "Rotwein"
-    },
-    {
-     "ingredientId": "drozdi_cerstve",
-     "score": 0.245,
-     "via": "Trockenhefe",
-     "nameCs": "čerstvé droždí",
-     "name": "frische Hefe",
-     "reasons": [
-      "hint-category:other",
-      "sibling:chosen"
-     ]
-    },
-    {
-     "ingredientId": "drozdi_susene",
-     "score": 0.147,
-     "via": "Trockenhefe",
-     "nameCs": "sušené droždí",
-     "name": "Trockenhefe",
-     "reasons": [
-      "hint-category:other",
-      "sibling:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "ingredientId": "vino_cervene",
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "Amarone della Valpolicella Classico DOCG trocken, Rotwein 2021",
    "czkPerKg": 20.19,
    "price": 14.99,
@@ -1902,49 +1856,6 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "CORTE ALLE MURA Chianti Riserva DOCG trocken, Rotwein 2022",
-   "czkPerKg": 13.45,
-   "price": 9.99,
-   "confidence": 0.599,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "vino_cervene",
-     "score": 0.599,
-     "via": "Rotwein",
-     "nameCs": "červené víno",
-     "name": "Rotwein"
-    },
-    {
-     "ingredientId": "drozdi_cerstve",
-     "score": 0.24,
-     "via": "Trockenhefe",
-     "nameCs": "čerstvé droždí",
-     "name": "frische Hefe",
-     "reasons": [
-      "hint-category:other",
-      "sibling:chosen"
-     ]
-    },
-    {
-     "ingredientId": "drozdi_susene",
-     "score": 0.144,
-     "via": "Trockenhefe",
-     "nameCs": "sušené droždí",
-     "name": "Trockenhefe",
-     "reasons": [
-      "hint-category:other",
-      "sibling:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "Monalie Côtes de Provence rosé AOP trocken, Roséwein 2025",
    "czkPerKg": 10.76,
    "price": 7.99,
@@ -2239,6 +2150,47 @@
   {
    "store": "lidl",
    "source": "lidl_de",
+   "title": "DELUXE Williams Christ Birnenbrand 40% Vol",
+   "czkPerKg": 16.7,
+   "price": 10.99,
+   "confidence": 0.58,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "hruskovice",
+     "score": 0.58,
+     "via": "Williamsbrand",
+     "nameCs": "hruškovice",
+     "name": "Williamsbrand"
+    },
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.27,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.27,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
    "title": "Château Lafite Rothschild Pauillac 1er Grand Cru Classé AOP trocken, Rotwein 2019",
    "czkPerKg": 1345.45,
    "price": 999.0,
@@ -2284,9 +2236,8 @@
    "store": "lidl",
    "source": "lidl_de",
    "title": "THE BALVENIE Double Wood Single Malt Scotch Whisky 12 Jahre mit Geschenkbox 40% Vol",
-   "czkPerKg": 69.14,
-   "price": 45.49,
-   "originalPrice": 46.99,
+   "czkPerKg": 71.41,
+   "price": 46.99,
    "confidence": 0.573,
    "status": "unmatched",
    "club": false,
@@ -2320,14 +2271,15 @@
     }
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
+   "promo": false
   },
   {
    "store": "lidl",
    "source": "lidl_de",
    "title": "FIREBALL Likör mit Zimt- und Whiskygeschmack 33% Vol",
-   "czkPerKg": 21.27,
-   "price": 13.99,
+   "czkPerKg": 15.18,
+   "price": 9.99,
+   "originalPrice": 10.99,
    "confidence": 0.518,
    "status": "unmatched",
    "club": false,
@@ -2361,7 +2313,7 @@
     }
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
+   "promo": true
   },
   {
    "store": "lidl",
@@ -2573,6 +2525,51 @@
   {
    "store": "lidl",
    "source": "lidl_de",
+   "title": "DELUXE Alter Pflaumenbrand 40% Vol",
+   "czkPerKg": 15.7,
+   "price": 10.99,
+   "confidence": 0.285,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.285,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.285,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.285,
+     "via": "Vollmilch",
+     "nameCs": "plnotučné mléko",
+     "name": "Vollmilch",
+     "reasons": [
+      "hint-category:dairy",
+      "sibling:chosen"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
    "title": "KILLEPITSCH Kräuterlikör 42% Vol",
    "czkPerKg": 25.7,
    "price": 17.99,
@@ -2704,6 +2701,31 @@
     }
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "6 x 0,75-l-Flasche Weinpaket-Mix Master of Wine",
+   "czkPerKg": 8.89,
+   "price": 39.99,
+   "originalPrice": 47.74,
+   "confidence": 0.27,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mastika",
+     "score": 0.27,
+     "via": "Mastix",
+     "nameCs": "mastika",
+     "name": "Mastix",
+     "reasons": [
+      "hint-category:spice"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/h/suesswaren-snacks/h10096205?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2929,17 +2951,6 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "Katzensticks",
-   "price": 1.69,
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "MAX & MILA'S WORLD Häppchen in Sauce",
    "price": 0.55,
    "confidence": 0.0,
@@ -2997,6 +3008,17 @@
    "source": "lidl_de",
    "title": "MILA'S WORLD Gourmet Festtagspastete",
    "price": 1.49,
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "MILA'S WORLD Katzensticks",
+   "price": 1.69,
    "confidence": 0.0,
    "status": "unmatched",
    "club": false,
@@ -3136,6 +3158,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 47,
- "unmatchedTotal": 49
+ "reviewTotal": 46,
+ "unmatchedTotal": 51
 }

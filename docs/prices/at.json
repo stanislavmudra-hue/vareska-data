@@ -2,7 +2,7 @@
  "v": 2,
  "market": "at",
  "currency": "EUR",
- "updated": "2026-11-12",
+ "updated": "2026-11-16",
  "perKg": {
   "arasidy": {
    "lidl": 4.5
@@ -17,7 +17,7 @@
    "lidl": 2.2
   },
   "emental": {
-   "lidl": 7.0
+   "lidl": 9.7
   },
   "feta": {
    "lidl": 10.4
@@ -28,17 +28,14 @@
   "hruska": {
    "lidl": 1.0
   },
-  "jablko": {
-   "lidl": 1.6
-  },
   "kastany": {
    "lidl": 5.5
   },
   "kesu": {
    "lidl": 11.4
   },
-  "kompot_ananasovy": {
-   "lidl": 1.3
+  "kureci_nugety": {
+   "lidl": 6.0
   },
   "losos_uzeny": {
    "lidl": 15.9
@@ -58,14 +55,14 @@
   "olej_avokadovy": {
    "lidl": 21.7
   },
+  "paprika_cervena": {
+   "lidl": 1.6
+  },
   "para_orechy": {
    "lidl": 16.0
   },
   "pistacie": {
    "lidl": 13.0
-  },
-  "povidla": {
-   "lidl": 6.9
   },
   "salat_ledovy": {
    "lidl": 2.0
@@ -94,6 +91,22 @@
  },
  "deals": [
   {
+   "ingredientId": "banan",
+   "store": "lidl",
+   "perKg": 1.1,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-25",
+   "title": "Bananen"
+  },
+  {
+   "ingredientId": "dzus_pomerancovy",
+   "store": "lidl",
+   "perKg": 1.9,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-25",
+   "title": "Solevita Frischer Orangensaft"
+  },
+  {
    "ingredientId": "emental",
    "store": "lidl",
    "perKg": 9.7,
@@ -110,6 +123,14 @@
    "title": "Deluxe Geräucherte Entenbrust"
   },
   {
+   "ingredientId": "kokosove_mleko",
+   "store": "lidl",
+   "perKg": 5.5,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-25",
+   "title": "Kokosmilch"
+  },
+  {
    "ingredientId": "kureci_nugety",
    "store": "lidl",
    "perKg": 6.0,
@@ -118,12 +139,28 @@
    "title": "- Chicken Nuggets"
   },
   {
-   "ingredientId": "olej_avokadovy",
+   "ingredientId": "maslo",
    "store": "lidl",
-   "perKg": 21.7,
-   "validFrom": "2026-11-12",
-   "validTo": "2026-11-14",
-   "title": "Deluxe Avocadoöl"
+   "perKg": 4.8,
+   "validFrom": "2026-11-19",
+   "validTo": "2026-11-21",
+   "title": "Milbona Butter"
+  },
+  {
+   "ingredientId": "mineralka",
+   "store": "lidl",
+   "perKg": 0.4,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-25",
+   "title": "Mineralwasser"
+  },
+  {
+   "ingredientId": "mozzarella",
+   "store": "lidl",
+   "perKg": 9.9,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-25",
+   "title": "Mozzarella"
   },
   {
    "ingredientId": "paprika_cervena",
@@ -134,28 +171,20 @@
    "title": "Paprika rot"
   },
   {
-   "ingredientId": "salat_ledovy",
+   "ingredientId": "podmasli",
    "store": "lidl",
-   "perKg": 2.0,
-   "validFrom": "2026-11-12",
-   "validTo": "2026-11-14",
-   "title": "Eisbergsalat aus Österreich"
+   "perKg": 1.0,
+   "validFrom": "2026-11-23",
+   "validTo": "2026-11-25",
+   "title": "Alpengut Buttermilch"
   },
   {
-   "ingredientId": "teleci_kotlety",
+   "ingredientId": "syr_raclette",
    "store": "lidl",
-   "perKg": 24.0,
-   "validFrom": "2026-11-12",
-   "validTo": "2026-11-14",
-   "title": "- Frisches Kalbskotelett"
-  },
-  {
-   "ingredientId": "veprova_panenka",
-   "store": "lidl",
-   "perKg": 11.0,
-   "validFrom": "2026-11-12",
-   "validTo": "2026-11-14",
-   "title": "Chef Select Schweinefilet"
+   "perKg": 10.0,
+   "validFrom": "2026-11-19",
+   "validTo": "2026-11-21",
+   "title": "Alpengut Raclette Käse"
   }
  ],
  "categoryFallbackPerKg": {
