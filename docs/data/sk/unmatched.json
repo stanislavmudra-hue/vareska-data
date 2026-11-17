@@ -1,5 +1,5 @@
 {
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "review": [
   {
    "ingredientId": "kachni_prsa_uzena",
@@ -127,6 +127,78 @@
    "promo": true
   },
   {
+   "ingredientId": "bageta",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "- Francúzska bageta",
+   "czkPerKg": 2.0,
+   "price": 0.25,
+   "originalPrice": 0.35,
+   "validFrom": "2026-11-21",
+   "validTo": "2026-11-22",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "bageta",
+     "score": 0.78,
+     "via": "bageta",
+     "nameCs": "bageta",
+     "name": "bageta"
+    }
+   ],
+   "pack": "125 g",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "kureci_stehna",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Mäsiarova čerstvá porcia Kuracie stehná XXL",
+   "czkPerKg": 3.69,
+   "price": 3.69,
+   "originalPrice": 6.59,
+   "validFrom": "2026-11-21",
+   "validTo": "2026-11-22",
+   "confidence": 0.78,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "kureci_stehna",
+     "score": 0.78,
+     "via": "kuracie stehná",
+     "nameCs": "kuřecí stehna",
+     "name": "kuracie stehná"
+    },
+    {
+     "ingredientId": "porek",
+     "score": 0.27,
+     "via": "pór",
+     "nameCs": "pórek",
+     "name": "pór",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    },
+    {
+     "ingredientId": "susene_houby",
+     "score": 0.27,
+     "via": "porcini",
+     "nameCs": "sušené houby",
+     "name": "sušené huby",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    }
+   ],
+   "pack": "1 kg",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "mlete_maso_mix",
    "store": "lidl",
    "source": "lidl_sk",
@@ -230,6 +302,42 @@
     }
    ],
    "pack": "300 g",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "pistacie",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Happy Swing trubičky pistácia",
+   "czkPerKg": 5.9,
+   "price": 0.89,
+   "originalPrice": 1.19,
+   "validFrom": "2026-11-21",
+   "validTo": "2026-11-22",
+   "confidence": 0.674,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "pistacie",
+     "score": 0.674,
+     "via": "pistácie",
+     "nameCs": "pistácie",
+     "name": "pistácie"
+    },
+    {
+     "ingredientId": "penne",
+     "score": 0.337,
+     "via": "trubičky",
+     "nameCs": "penne",
+     "name": "penne",
+     "reasons": [
+      "hint-category:pasta"
+     ]
+    }
+   ],
+   "pack": "150 g",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
   }
@@ -454,8 +562,23 @@
    "pack": "1 kg",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Tatranská rolka",
+   "price": 3.19,
+   "originalPrice": 4.19,
+   "validFrom": "2026-11-21",
+   "validTo": "2026-11-22",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "400 g",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
   }
  ],
- "reviewTotal": 7,
- "unmatchedTotal": 12
+ "reviewTotal": 10,
+ "unmatchedTotal": 13
 }

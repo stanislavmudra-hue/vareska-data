@@ -1,15 +1,14 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-11-16",
- "generatedAt": "2026-11-16T08:55:50Z",
+ "date": "2026-11-17",
+ "generatedAt": "2026-11-17T10:02:01Z",
  "startedAt": null,
  "durationSec": null,
  "status": "warning",
  "ok": true,
  "warnings": [
-  "store 'lidl' had no matched rows today (carry-forward only)",
-  "4 stale price(s) dropped (> 21 days)"
+  "store 'lidl' had no matched rows today (carry-forward only)"
  ],
  "validation": {
   "ok": true,
@@ -24,7 +23,7 @@
  },
  "matching": {
   "path": "out/pl/matched.json",
-  "generated": "2026-11-16",
+  "generated": "2026-11-17",
   "matched": 0,
   "review": 4,
   "unmatched": 5,
@@ -57,8 +56,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-11-12",
-  "today": "2026-11-16",
+  "previousUpdated": "2026-11-16",
+  "today": "2026-11-17",
   "rows": 0,
   "rowsPerStore": {},
   "rowsPerSource": {},
@@ -87,7 +86,7 @@
     "store": "lidl",
     "czkPerKg": 8.0,
     "lastSeen": "2026-10-28",
-    "ageDays": 19,
+    "ageDays": 20,
     "reason": "store_missing"
    },
    {
@@ -95,7 +94,7 @@
     "store": "lidl",
     "czkPerKg": 7.0,
     "lastSeen": "2026-11-05",
-    "ageDays": 11,
+    "ageDays": 12,
     "reason": "store_missing"
    },
    {
@@ -103,7 +102,7 @@
     "store": "lidl",
     "czkPerKg": 12.0,
     "lastSeen": "2026-10-30",
-    "ageDays": 17,
+    "ageDays": 18,
     "reason": "store_missing"
    },
    {
@@ -111,7 +110,7 @@
     "store": "lidl",
     "czkPerKg": 7.0,
     "lastSeen": "2026-11-12",
-    "ageDays": 4,
+    "ageDays": 5,
     "reason": "store_missing"
    },
    {
@@ -119,7 +118,7 @@
     "store": "lidl",
     "czkPerKg": 4.0,
     "lastSeen": "2026-10-30",
-    "ageDays": 17,
+    "ageDays": 18,
     "reason": "store_missing"
    },
    {
@@ -127,7 +126,7 @@
     "store": "lidl",
     "czkPerKg": 50.0,
     "lastSeen": "2026-10-28",
-    "ageDays": 19,
+    "ageDays": 20,
     "reason": "store_missing"
    },
    {
@@ -135,7 +134,7 @@
     "store": "lidl",
     "czkPerKg": 18.0,
     "lastSeen": "2026-10-29",
-    "ageDays": 18,
+    "ageDays": 19,
     "reason": "store_missing"
    },
    {
@@ -143,42 +142,13 @@
     "store": "lidl",
     "czkPerKg": 10.0,
     "lastSeen": "2026-11-04",
-    "ageDays": 12,
+    "ageDays": 13,
     "reason": "store_missing"
    }
   ],
   "staleCount": 8,
-  "dropped": [
-   {
-    "ingredientId": "brokolice_mrazena",
-    "store": "lidl",
-    "czkPerKg": 7.8,
-    "lastSeen": "2026-10-24",
-    "ageDays": 23
-   },
-   {
-    "ingredientId": "rajcata_cherry",
-    "store": "lidl",
-    "czkPerKg": 60.0,
-    "lastSeen": "2026-10-24",
-    "ageDays": 23
-   },
-   {
-    "ingredientId": "veprova_zebra",
-    "store": "lidl",
-    "czkPerKg": 41.6,
-    "lastSeen": "2026-10-24",
-    "ageDays": 23
-   },
-   {
-    "ingredientId": "zazvor",
-    "store": "lidl",
-    "czkPerKg": 16.9,
-    "lastSeen": "2026-10-24",
-    "ageDays": 23
-   }
-  ],
-  "droppedCount": 4,
+  "dropped": [],
+  "droppedCount": 0,
   "storesMissing": [
    "biedronka",
    "lidl",
@@ -198,7 +168,7 @@
   "v": 2,
   "market": "pl",
   "currency": "PLN",
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "ingredients": 8,
   "pairs": 8,
   "perStore": {
@@ -231,8 +201,8 @@
   "v": 1,
   "market": "pl",
   "currency": "PLN",
-  "run": "2026-11-16T08:55:13+00:00",
-  "today": "2026-11-16",
+  "run": "2026-11-17T10:01:27+00:00",
+  "today": "2026-11-17",
   "sources": {
    "lidl_pl": {
     "source": "lidl_pl",
@@ -243,7 +213,7 @@
      "lidl": 39
     },
     "requests": 2,
-    "elapsed_s": 1.4,
+    "elapsed_s": 1.7,
     "notes": [
      "0 categories, 39 products"
     ],

@@ -1,14 +1,14 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-11-16",
- "generatedAt": "2026-11-16T08:55:50Z",
+ "date": "2026-11-17",
+ "generatedAt": "2026-11-17T10:02:01Z",
  "status": "warning",
  "ok": true,
  "run": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "startedAt": null,
-  "finishedAt": "2026-11-16T08:55:50Z",
+  "finishedAt": "2026-11-17T10:02:01Z",
   "durationSec": null,
   "offers": 39,
   "deals": 0,
@@ -18,8 +18,8 @@
   "unmatched": 5,
   "ok": true
  },
- "lastSuccessfulRun": "2026-11-16",
- "pricesUpdated": "2026-11-16",
+ "lastSuccessfulRun": "2026-11-17",
+ "pricesUpdated": "2026-11-17",
  "sources": {
   "lidl_pl": {
    "label": "lidl_pl",
@@ -28,7 +28,7 @@
    "items": 39,
    "matched": null,
    "requests": 2,
-   "durationSec": 1.4,
+   "durationSec": 1.7,
    "error": null,
    "robots": null,
    "notes": [
@@ -114,48 +114,15 @@
   "zabka"
  ],
  "stale": 8,
- "dropped": 4,
+ "dropped": 0,
  "warnings": [
-  "store 'lidl' had no matched rows today (carry-forward only)",
-  "4 stale price(s) dropped (> 21 days)"
+  "store 'lidl' had no matched rows today (carry-forward only)"
  ],
  "validation": {
   "ok": true,
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-10-30",
-   "market": "pl",
-   "generatedAt": "2026-10-30T08:00:26Z",
-   "durationSec": null,
-   "status": "ok",
-   "ok": true,
-   "offers": 40,
-   "perSource": {
-    "lidl_pl": 40
-   },
-   "matched": 2,
-   "review": 7,
-   "unmatched": 31,
-   "deals": 1,
-   "priced": 16,
-   "pairsPriced": 16,
-   "perStore": {
-    "biedronka": 0,
-    "lidl": 16,
-    "kaufland": 0,
-    "auchan": 0,
-    "carrefour": 0,
-    "netto": 0,
-    "dino": 0,
-    "aldi": 0,
-    "zabka": 0
-   },
-   "stale": 14,
-   "dropped": 0,
-   "warnings": 0
-  },
   {
    "date": "2026-10-31",
    "market": "pl",
@@ -569,6 +536,38 @@
    "stale": 8,
    "dropped": 4,
    "warnings": 2
+  },
+  {
+   "date": "2026-11-17",
+   "market": "pl",
+   "generatedAt": "2026-11-17T10:02:01Z",
+   "durationSec": null,
+   "status": "warning",
+   "ok": true,
+   "offers": 39,
+   "perSource": {
+    "lidl_pl": 39
+   },
+   "matched": 0,
+   "review": 4,
+   "unmatched": 5,
+   "deals": 0,
+   "priced": 8,
+   "pairsPriced": 8,
+   "perStore": {
+    "biedronka": 0,
+    "lidl": 8,
+    "kaufland": 0,
+    "auchan": 0,
+    "carrefour": 0,
+    "netto": 0,
+    "dino": 0,
+    "aldi": 0,
+    "zabka": 0
+   },
+   "stale": 8,
+   "dropped": 0,
+   "warnings": 1
   }
  ]
 }

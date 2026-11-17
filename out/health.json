@@ -2,8 +2,8 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-11-16T08:50:51+00:00",
- "today": "2026-11-16",
+ "run": "2026-11-17T09:57:24+00:00",
+ "today": "2026-11-17",
  "sources": {
   "globus": {
    "source": "globus",
@@ -14,7 +14,7 @@
     "globus": 1231
    },
    "requests": 13,
-   "elapsed_s": 58.3,
+   "elapsed_s": 28.3,
    "notes": [
     "house 4005: totalCount=1204, offers=1231"
    ],
@@ -24,15 +24,15 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 264,
+   "count": 266,
    "error": null,
    "stores": {
-    "lidl": 264
+    "lidl": 266
    },
    "requests": 15,
-   "elapsed_s": 14.8,
+   "elapsed_s": 14.4,
    "notes": [
-    "17 categories, 264 products"
+    "17 categories, 266 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -40,15 +40,15 @@
   "penny": {
    "source": "penny",
    "ok": true,
-   "count": 47,
+   "count": 98,
    "error": null,
    "stores": {
-    "penny": 47
+    "penny": 98
    },
    "requests": 2,
-   "elapsed_s": 1.3,
+   "elapsed_s": 1.5,
    "notes": [
-    "total=33, offers=47"
+    "total=67, offers=98"
    ],
    "tier": "primary",
    "market": "cz"
@@ -62,7 +62,7 @@
     "albert": 1788
    },
    "requests": 7,
-   "elapsed_s": 6.0,
+   "elapsed_s": 10.0,
    "notes": [
     "Albert - 46HM_akcni_letak (2026-11-11..2026-11-17): 31 spreads, 522 offers",
     "Albert - 46SM_akcni_letak (2026-11-11..2026-11-17): 23 spreads, 318 offers",
@@ -98,7 +98,7 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.7,
+   "elapsed_s": 1.6,
    "notes": [
     "11.11.2026 - 17.11.2026: 2026-11-11..2026-11-17",
     "18.11.2026 - 24.11.2026: 2026-11-18..2026-11-24",
@@ -179,21 +179,21 @@
   "kupi": {
    "source": "kupi",
    "ok": true,
-   "count": 982,
+   "count": 1176,
    "error": null,
    "stores": {
-    "albert": 368,
-    "tesco": 91,
-    "penny": 186,
-    "billa": 112,
-    "lidl": 54,
-    "globus": 84,
-    "kaufland": 87
+    "albert": 363,
+    "tesco": 147,
+    "penny": 179,
+    "billa": 108,
+    "lidl": 52,
+    "globus": 150,
+    "kaufland": 177
    },
    "requests": 171,
-   "elapsed_s": 171.3,
+   "elapsed_s": 179.6,
    "notes": [
-    "170 terms, 0 failed, 982 offers"
+    "170 terms, 0 failed, 1176 offers"
    ],
    "tier": "fallback",
    "market": "cz"
