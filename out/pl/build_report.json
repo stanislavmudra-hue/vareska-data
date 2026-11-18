@@ -5,12 +5,16 @@
  "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
- "previousUpdated": "2026-11-16",
- "today": "2026-11-17",
- "rows": 0,
- "rowsPerStore": {},
- "rowsPerSource": {},
- "promoRows": 0,
+ "previousUpdated": "2026-11-17",
+ "today": "2026-11-18",
+ "rows": 3,
+ "rowsPerStore": {
+  "lidl": 3
+ },
+ "rowsPerSource": {
+  "lidl_pl": 3
+ },
+ "promoRows": 3,
  "clubRows": 0,
  "ingredientsPriced": 8,
  "pairsPriced": 8,
@@ -27,7 +31,7 @@
   "aldi": 0,
   "zabka": 0
  },
- "deals": 0,
+ "deals": 3,
  "dealsCarried": 0,
  "stale": [
   {
@@ -35,64 +39,64 @@
    "store": "lidl",
    "czkPerKg": 8.0,
    "lastSeen": "2026-10-28",
-   "ageDays": 20,
-   "reason": "store_missing"
+   "ageDays": 21,
+   "reason": "not_matched_today"
   },
   {
    "ingredientId": "banan",
    "store": "lidl",
    "czkPerKg": 7.0,
    "lastSeen": "2026-11-05",
-   "ageDays": 12,
-   "reason": "store_missing"
+   "ageDays": 13,
+   "reason": "not_matched_today"
   },
   {
    "ingredientId": "citron",
    "store": "lidl",
    "czkPerKg": 12.0,
    "lastSeen": "2026-10-30",
-   "ageDays": 18,
-   "reason": "store_missing"
+   "ageDays": 19,
+   "reason": "not_matched_today"
   },
   {
    "ingredientId": "dyne_hokkaido",
    "store": "lidl",
    "czkPerKg": 7.0,
    "lastSeen": "2026-11-12",
-   "ageDays": 5,
-   "reason": "store_missing"
+   "ageDays": 6,
+   "reason": "not_matched_today"
   },
   {
    "ingredientId": "hruska",
    "store": "lidl",
    "czkPerKg": 4.0,
    "lastSeen": "2026-10-30",
-   "ageDays": 18,
-   "reason": "store_missing"
+   "ageDays": 19,
+   "reason": "not_matched_today"
   },
   {
    "ingredientId": "orechy_smes",
    "store": "lidl",
    "czkPerKg": 50.0,
    "lastSeen": "2026-10-28",
-   "ageDays": 20,
-   "reason": "store_missing"
+   "ageDays": 21,
+   "reason": "not_matched_today"
   },
   {
    "ingredientId": "paprika_cervena",
    "store": "lidl",
    "czkPerKg": 18.0,
    "lastSeen": "2026-10-29",
-   "ageDays": 19,
-   "reason": "store_missing"
+   "ageDays": 20,
+   "reason": "not_matched_today"
   },
   {
    "ingredientId": "zampiony",
    "store": "lidl",
    "czkPerKg": 10.0,
    "lastSeen": "2026-11-04",
-   "ageDays": 13,
-   "reason": "store_missing"
+   "ageDays": 14,
+   "reason": "not_matched_today"
   }
  ],
  "staleCount": 8,
@@ -100,7 +104,6 @@
  "droppedCount": 0,
  "storesMissing": [
   "biedronka",
-  "lidl",
   "kaufland",
   "auchan",
   "carrefour",

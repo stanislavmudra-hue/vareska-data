@@ -1,25 +1,25 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-11-17",
- "generatedAt": "2026-11-17T10:02:01Z",
+ "date": "2026-11-18",
+ "generatedAt": "2026-11-18T09:35:52Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "startedAt": null,
-  "finishedAt": "2026-11-17T10:02:01Z",
+  "finishedAt": "2026-11-18T09:35:52Z",
   "durationSec": null,
   "offers": 98,
   "deals": 0,
   "priced": 1,
   "matched": 1,
-  "review": 46,
-  "unmatched": 51,
+  "review": 45,
+  "unmatched": 52,
   "ok": true
  },
- "lastSuccessfulRun": "2026-11-17",
- "pricesUpdated": "2026-11-17",
+ "lastSuccessfulRun": "2026-11-18",
+ "pricesUpdated": "2026-11-18",
  "sources": {
   "lidl_de": {
    "label": "lidl_de",
@@ -122,38 +122,6 @@
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-10-31",
-   "market": "de",
-   "generatedAt": "2026-10-31T07:53:52Z",
-   "durationSec": null,
-   "status": "warning",
-   "ok": true,
-   "offers": 60,
-   "perSource": {
-    "lidl_de": 60
-   },
-   "matched": 0,
-   "review": 32,
-   "unmatched": 28,
-   "deals": 0,
-   "priced": 1,
-   "pairsPriced": 1,
-   "perStore": {
-    "aldiNord": 0,
-    "aldiSued": 0,
-    "lidl": 1,
-    "kaufland": 0,
-    "edeka": 0,
-    "rewe": 0,
-    "penny": 0,
-    "netto": 0,
-    "norma": 0
-   },
-   "stale": 1,
-   "dropped": 0,
-   "warnings": 1
-  },
   {
    "date": "2026-11-01",
    "market": "de",
@@ -552,6 +520,38 @@
    "matched": 1,
    "review": 46,
    "unmatched": 51,
+   "deals": 0,
+   "priced": 1,
+   "pairsPriced": 1,
+   "perStore": {
+    "aldiNord": 0,
+    "aldiSued": 0,
+    "lidl": 1,
+    "kaufland": 0,
+    "edeka": 0,
+    "rewe": 0,
+    "penny": 0,
+    "netto": 0,
+    "norma": 0
+   },
+   "stale": 0,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-11-18",
+   "market": "de",
+   "generatedAt": "2026-11-18T09:35:52Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 98,
+   "perSource": {
+    "lidl_de": 98
+   },
+   "matched": 1,
+   "review": 45,
+   "unmatched": 52,
    "deals": 0,
    "priced": 1,
    "pairsPriced": 1,

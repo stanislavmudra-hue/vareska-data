@@ -1,5 +1,5 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "review": [
   {
    "ingredientId": "calvados",
@@ -42,6 +42,49 @@
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "ingredientId": "ouzo",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Ouzo 12 38% Vol",
+   "czkPerKg": 16.53,
+   "price": 10.99,
+   "originalPrice": 11.99,
+   "confidence": 0.839,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "ouzo",
+     "score": 0.839,
+     "via": "Ouzo",
+     "nameCs": "ouzo",
+     "name": "Ouzo"
+    },
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.312,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.312,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "ingredientId": "parky",
@@ -1494,50 +1537,6 @@
    "ingredientId": "vino_cervene",
    "store": "lidl",
    "source": "lidl_de",
-   "title": "CEPA LEBREL Rioja Crianza DOCa trocken, Rotwein 2021",
-   "czkPerKg": 4.7,
-   "price": 3.49,
-   "confidence": 0.612,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "vino_cervene",
-     "score": 0.612,
-     "via": "Rotwein",
-     "nameCs": "červené víno",
-     "name": "Rotwein"
-    },
-    {
-     "ingredientId": "drozdi_cerstve",
-     "score": 0.245,
-     "via": "Trockenhefe",
-     "nameCs": "čerstvé droždí",
-     "name": "frische Hefe",
-     "reasons": [
-      "hint-category:other",
-      "sibling:chosen"
-     ]
-    },
-    {
-     "ingredientId": "drozdi_susene",
-     "score": 0.147,
-     "via": "Trockenhefe",
-     "nameCs": "sušené droždí",
-     "name": "Trockenhefe",
-     "reasons": [
-      "hint-category:other",
-      "sibling:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "ingredientId": "vino_cervene",
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "Edition Württemberg Schwarzriesling QbA lieblich, Literflasche, Rotwein 2024",
    "czkPerKg": 4.03,
    "price": 3.99,
@@ -1643,53 +1642,10 @@
    "promo": false
   },
   {
-   "ingredientId": "vino_cervene",
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "MONTE PLOGAR Gran Reserva Cariñena DO trocken, Rotwein 2020",
-   "czkPerKg": 3.35,
-   "price": 2.49,
-   "confidence": 0.612,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "vino_cervene",
-     "score": 0.612,
-     "via": "Rotwein",
-     "nameCs": "červené víno",
-     "name": "Rotwein"
-    },
-    {
-     "ingredientId": "drozdi_cerstve",
-     "score": 0.245,
-     "via": "Trockenhefe",
-     "nameCs": "čerstvé droždí",
-     "name": "frische Hefe",
-     "reasons": [
-      "hint-category:other",
-      "sibling:chosen"
-     ]
-    },
-    {
-     "ingredientId": "granatova_melasa",
-     "score": 0.245,
-     "via": "Granatapfelsirup",
-     "nameCs": "granátová melasa",
-     "name": "Granatapfelsirup",
-     "reasons": [
-      "hint-category:condiment"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
    "ingredientId": "whisky",
    "store": "lidl",
    "source": "lidl_de",
-   "title": "QUEEN MARGOT Blended Scotch Whisky 3 Jahre 40% Vol.",
+   "title": "QUEEN MARGOT Blended Scotch Whisky 3 Jahre 40% Vol",
    "czkPerKg": 12.14,
    "price": 7.99,
    "confidence": 0.612,
@@ -1849,6 +1805,49 @@
      "name": "Granatapfelsirup",
      "reasons": [
       "hint-category:condiment"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "CORTE ALLE MURA Chianti Riserva DOCG trocken, Rotwein 2022",
+   "czkPerKg": 13.45,
+   "price": 9.99,
+   "confidence": 0.599,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vino_cervene",
+     "score": 0.599,
+     "via": "Rotwein",
+     "nameCs": "červené víno",
+     "name": "Rotwein"
+    },
+    {
+     "ingredientId": "drozdi_cerstve",
+     "score": 0.24,
+     "via": "Trockenhefe",
+     "nameCs": "čerstvé droždí",
+     "name": "frische Hefe",
+     "reasons": [
+      "hint-category:other",
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "drozdi_susene",
+     "score": 0.144,
+     "via": "Trockenhefe",
+     "nameCs": "sušené droždí",
+     "name": "Trockenhefe",
+     "reasons": [
+      "hint-category:other",
+      "sibling:other"
      ]
     }
    ],
@@ -3163,6 +3162,6 @@
    "promo": true
   }
  ],
- "reviewTotal": 46,
- "unmatchedTotal": 51
+ "reviewTotal": 45,
+ "unmatchedTotal": 52
 }
