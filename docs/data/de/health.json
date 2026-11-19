@@ -1,14 +1,14 @@
 {
  "market": "de",
  "currency": "EUR",
- "date": "2026-11-18",
- "generatedAt": "2026-11-18T09:35:52Z",
+ "date": "2026-11-19",
+ "generatedAt": "2026-11-19T09:47:26Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "startedAt": null,
-  "finishedAt": "2026-11-18T09:35:52Z",
+  "finishedAt": "2026-11-19T09:47:26Z",
   "durationSec": null,
   "offers": 98,
   "deals": 0,
@@ -18,8 +18,8 @@
   "unmatched": 52,
   "ok": true
  },
- "lastSuccessfulRun": "2026-11-18",
- "pricesUpdated": "2026-11-18",
+ "lastSuccessfulRun": "2026-11-19",
+ "pricesUpdated": "2026-11-19",
  "sources": {
   "lidl_de": {
    "label": "lidl_de",
@@ -28,7 +28,7 @@
    "items": 98,
    "matched": 1,
    "requests": 7,
-   "durationSec": 6.3,
+   "durationSec": 7.1,
    "error": null,
    "robots": null,
    "notes": [
@@ -122,38 +122,6 @@
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-11-01",
-   "market": "de",
-   "generatedAt": "2026-11-01T08:33:52Z",
-   "durationSec": null,
-   "status": "warning",
-   "ok": true,
-   "offers": 60,
-   "perSource": {
-    "lidl_de": 60
-   },
-   "matched": 0,
-   "review": 33,
-   "unmatched": 27,
-   "deals": 0,
-   "priced": 1,
-   "pairsPriced": 1,
-   "perStore": {
-    "aldiNord": 0,
-    "aldiSued": 0,
-    "lidl": 1,
-    "kaufland": 0,
-    "edeka": 0,
-    "rewe": 0,
-    "penny": 0,
-    "netto": 0,
-    "norma": 0
-   },
-   "stale": 1,
-   "dropped": 0,
-   "warnings": 1
-  },
   {
    "date": "2026-11-02",
    "market": "de",
@@ -542,6 +510,38 @@
    "date": "2026-11-18",
    "market": "de",
    "generatedAt": "2026-11-18T09:35:52Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 98,
+   "perSource": {
+    "lidl_de": 98
+   },
+   "matched": 1,
+   "review": 45,
+   "unmatched": 52,
+   "deals": 0,
+   "priced": 1,
+   "pairsPriced": 1,
+   "perStore": {
+    "aldiNord": 0,
+    "aldiSued": 0,
+    "lidl": 1,
+    "kaufland": 0,
+    "edeka": 0,
+    "rewe": 0,
+    "penny": 0,
+    "netto": 0,
+    "norma": 0
+   },
+   "stale": 0,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-11-19",
+   "market": "de",
+   "generatedAt": "2026-11-19T09:47:26Z",
    "durationSec": null,
    "status": "ok",
    "ok": true,
