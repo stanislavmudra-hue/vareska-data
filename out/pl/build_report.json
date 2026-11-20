@@ -5,8 +5,8 @@
  "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
- "previousUpdated": "2026-11-18",
- "today": "2026-11-19",
+ "previousUpdated": "2026-11-19",
+ "today": "2026-11-20",
  "rows": 3,
  "rowsPerStore": {
   "lidl": 3
@@ -16,13 +16,13 @@
  },
  "promoRows": 3,
  "clubRows": 0,
- "ingredientsPriced": 7,
- "pairsPriced": 7,
+ "ingredientsPriced": 6,
+ "pairsPriced": 6,
  "pairsFresh": 3,
  "pairsFromPromoOnly": 3,
  "storesPriced": {
   "biedronka": 0,
-  "lidl": 7,
+  "lidl": 6,
   "kaufland": 0,
   "auchan": 0,
   "carrefour": 0,
@@ -39,7 +39,7 @@
    "store": "lidl",
    "czkPerKg": 7.0,
    "lastSeen": "2026-11-05",
-   "ageDays": 14,
+   "ageDays": 15,
    "reason": "not_matched_today"
   },
   {
@@ -47,14 +47,6 @@
    "store": "lidl",
    "czkPerKg": 4.0,
    "lastSeen": "2026-10-30",
-   "ageDays": 20,
-   "reason": "not_matched_today"
-  },
-  {
-   "ingredientId": "paprika_cervena",
-   "store": "lidl",
-   "czkPerKg": 18.0,
-   "lastSeen": "2026-10-29",
    "ageDays": 21,
    "reason": "not_matched_today"
   },
@@ -63,28 +55,21 @@
    "store": "lidl",
    "czkPerKg": 10.0,
    "lastSeen": "2026-11-04",
-   "ageDays": 15,
+   "ageDays": 16,
    "reason": "not_matched_today"
   }
  ],
- "staleCount": 4,
+ "staleCount": 3,
  "dropped": [
   {
-   "ingredientId": "ananas",
+   "ingredientId": "paprika_cervena",
    "store": "lidl",
-   "czkPerKg": 8.0,
-   "lastSeen": "2026-10-28",
-   "ageDays": 22
-  },
-  {
-   "ingredientId": "orechy_smes",
-   "store": "lidl",
-   "czkPerKg": 50.0,
-   "lastSeen": "2026-10-28",
+   "czkPerKg": 18.0,
+   "lastSeen": "2026-10-29",
    "ageDays": 22
   }
  ],
- "droppedCount": 2,
+ "droppedCount": 1,
  "storesMissing": [
   "biedronka",
   "kaufland",

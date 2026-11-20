@@ -2,8 +2,8 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-11-19T09:42:54+00:00",
- "today": "2026-11-19",
+ "run": "2026-11-20T09:29:52+00:00",
+ "today": "2026-11-20",
  "sources": {
   "globus": {
    "source": "globus",
@@ -14,7 +14,7 @@
     "globus": 1287
    },
    "requests": 14,
-   "elapsed_s": 35.1,
+   "elapsed_s": 48.8,
    "notes": [
     "house 4005: totalCount=1266, offers=1287"
    ],
@@ -24,15 +24,15 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 258,
+   "count": 272,
    "error": null,
    "stores": {
-    "lidl": 258
+    "lidl": 272
    },
-   "requests": 15,
-   "elapsed_s": 14.7,
+   "requests": 16,
+   "elapsed_s": 16.9,
    "notes": [
-    "17 categories, 258 products"
+    "18 categories, 272 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -46,7 +46,7 @@
     "penny": 51
    },
    "requests": 2,
-   "elapsed_s": 1.3,
+   "elapsed_s": 1.4,
    "notes": [
     "total=34, offers=51"
    ],
@@ -62,7 +62,7 @@
     "albert": 948
    },
    "requests": 5,
-   "elapsed_s": 3.8,
+   "elapsed_s": 3.9,
    "notes": [
     "Albert - 47HM_akcni_letak (2026-11-18..2026-11-24): 34 spreads, 529 offers",
     "Albert - 47SM_akcni_letak (2026-11-18..2026-11-24): 29 spreads, 419 offers"
@@ -79,7 +79,7 @@
     "billa": 371
    },
    "requests": 5,
-   "elapsed_s": 4.1,
+   "elapsed_s": 4.6,
    "notes": [
     "velky-letak-18-11-24-11-2026: 23 spreads, 311 offers",
     "maly-letak-18-11-24-11-2026: 6 spreads, 60 offers"
@@ -97,6 +97,7 @@
    "elapsed_s": 1.6,
    "notes": [
     "18.11.2026 - 24.11.2026: 2026-11-18..2026-11-24",
+    "23.11.2026 - 24.11.2026: 2026-11-23..2026-11-24",
     "18.11.2026 - 24.11.2026: 2026-11-18..2026-11-24",
     "04.11.2026 - 01.12.2026: 2026-11-04..2026-12-01",
     "metadata only - Kaufland prices come from the kupi provider"
@@ -110,6 +111,15 @@
      "published": "2026-11-15",
      "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a1c18e-7dcd-79bf-9bc2-fa8aacb80cf0/Kaufland-18-11-2026-24-11-2026-00.pdf",
      "subcategory": "KDZ"
+    },
+    {
+     "name": "Kaufland",
+     "title": "23.11.2026 - 24.11.2026",
+     "offer_from": "2026-11-23",
+     "offer_to": "2026-11-24",
+     "published": "2026-11-20",
+     "pdf": "https://assets.leaflets.schwarz/leaflets/pdfs/01a1cb6d-566e-7670-9fe9-113810ca279e/Kaufland-23-11-2026-24-11-2026-00.pdf",
+     "subcategory": "Leaflet1"
     },
     {
      "name": "Kaufland",
@@ -136,21 +146,21 @@
   "kupi": {
    "source": "kupi",
    "ok": true,
-   "count": 779,
+   "count": 777,
    "error": null,
    "stores": {
-    "billa": 159,
-    "penny": 114,
+    "billa": 161,
+    "penny": 115,
     "lidl": 30,
     "albert": 208,
     "tesco": 85,
-    "kaufland": 96,
-    "globus": 87
+    "globus": 87,
+    "kaufland": 91
    },
    "requests": 171,
-   "elapsed_s": 171.5,
+   "elapsed_s": 171.4,
    "notes": [
-    "170 terms, 0 failed, 779 offers"
+    "170 terms, 0 failed, 777 offers"
    ],
    "tier": "fallback",
    "market": "cz"
@@ -166,9 +176,9 @@
    "cf_mitigated": null
   },
   "www.lidl.cz": {
-   "requests": 15,
+   "requests": 16,
    "statuses": {
-    "200": 15
+    "200": 16
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -316,8 +326,26 @@
    "host": "www.albert.cz",
    "status": 200,
    "error": null,
-   "rules": 6,
+   "rules": 24,
    "disallow": [
+    "Disallow: /auth/",
+    "Disallow: */start-sso",
+    "Disallow: */init-sso",
+    "Disallow: */end-sso",
+    "Disallow: */sso-callback",
+    "Disallow: */reg/",
+    "Disallow: /mobile/",
+    "Disallow: */mobile/reg/",
+    "Disallow: */login",
+    "Disallow: */my-account",
+    "Disallow: */payment-method",
+    "Disallow: */timeslot",
+    "Disallow: */errorPage",
+    "Disallow: */checkout",
+    "Disallow: */cart$",
+    "Disallow: */cart/",
+    "Disallow: */cart?",
+    "Disallow: */forgot-password",
     "Disallow: /nase-prodejny?q=*",
     "Disallow: /en/"
    ],
@@ -406,6 +434,6 @@
   }
  ],
  "notFetched": [],
- "requests_made": 214,
+ "requests_made": 215,
  "cache_hits": 0
 }
