@@ -2,8 +2,8 @@
  "v": 1,
  "market": "cz",
  "currency": "CZK",
- "run": "2026-11-20T09:29:52+00:00",
- "today": "2026-11-20",
+ "run": "2026-11-21T09:00:46+00:00",
+ "today": "2026-11-21",
  "sources": {
   "globus": {
    "source": "globus",
@@ -14,7 +14,7 @@
     "globus": 1287
    },
    "requests": 14,
-   "elapsed_s": 48.8,
+   "elapsed_s": 35.1,
    "notes": [
     "house 4005: totalCount=1266, offers=1287"
    ],
@@ -24,15 +24,15 @@
   "lidl": {
    "source": "lidl",
    "ok": true,
-   "count": 272,
+   "count": 58,
    "error": null,
    "stores": {
-    "lidl": 272
+    "lidl": 58
    },
-   "requests": 16,
-   "elapsed_s": 16.9,
+   "requests": 2,
+   "elapsed_s": 2.3,
    "notes": [
-    "18 categories, 272 products"
+    "0 categories, 58 products"
    ],
    "tier": "primary",
    "market": "cz"
@@ -46,7 +46,7 @@
     "penny": 51
    },
    "requests": 2,
-   "elapsed_s": 1.4,
+   "elapsed_s": 1.3,
    "notes": [
     "total=34, offers=51"
    ],
@@ -62,7 +62,7 @@
     "albert": 948
    },
    "requests": 5,
-   "elapsed_s": 3.9,
+   "elapsed_s": 4.5,
    "notes": [
     "Albert - 47HM_akcni_letak (2026-11-18..2026-11-24): 34 spreads, 529 offers",
     "Albert - 47SM_akcni_letak (2026-11-18..2026-11-24): 29 spreads, 419 offers"
@@ -79,7 +79,7 @@
     "billa": 371
    },
    "requests": 5,
-   "elapsed_s": 4.6,
+   "elapsed_s": 3.9,
    "notes": [
     "velky-letak-18-11-24-11-2026: 23 spreads, 311 offers",
     "maly-letak-18-11-24-11-2026: 6 spreads, 60 offers"
@@ -94,7 +94,7 @@
    "error": null,
    "stores": {},
    "requests": 2,
-   "elapsed_s": 1.6,
+   "elapsed_s": 1.5,
    "notes": [
     "18.11.2026 - 24.11.2026: 2026-11-18..2026-11-24",
     "23.11.2026 - 24.11.2026: 2026-11-23..2026-11-24",
@@ -146,21 +146,21 @@
   "kupi": {
    "source": "kupi",
    "ok": true,
-   "count": 777,
+   "count": 830,
    "error": null,
    "stores": {
-    "billa": 161,
-    "penny": 115,
-    "lidl": 30,
-    "albert": 208,
-    "tesco": 85,
-    "globus": 87,
-    "kaufland": 91
+    "billa": 160,
+    "lidl": 91,
+    "albert": 207,
+    "tesco": 84,
+    "globus": 86,
+    "penny": 112,
+    "kaufland": 90
    },
    "requests": 171,
-   "elapsed_s": 171.4,
+   "elapsed_s": 170.7,
    "notes": [
-    "170 terms, 0 failed, 777 offers"
+    "170 terms, 0 failed, 830 offers"
    ],
    "tier": "fallback",
    "market": "cz"
@@ -176,9 +176,9 @@
    "cf_mitigated": null
   },
   "www.lidl.cz": {
-   "requests": 16,
+   "requests": 2,
    "statuses": {
-    "200": 16
+    "200": 2
    },
    "server": "myracloud",
    "cf_mitigated": null
@@ -434,6 +434,6 @@
   }
  ],
  "notFetched": [],
- "requests_made": 215,
+ "requests_made": 201,
  "cache_hits": 0
 }
