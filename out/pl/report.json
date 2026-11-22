@@ -1,42 +1,40 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-11-21",
- "generatedAt": "2026-11-21T09:05:00Z",
+ "date": "2026-11-22",
+ "generatedAt": "2026-11-22T09:15:06Z",
  "startedAt": null,
  "durationSec": null,
- "status": "warning",
+ "status": "ok",
  "ok": true,
- "warnings": [
-  "1 stale price(s) dropped (> 21 days)"
- ],
+ "warnings": [],
  "validation": {
   "ok": true,
   "errors": []
  },
  "offers": {
   "perSource": {
-   "lidl_pl": 44
+   "lidl_pl": 41
   },
-  "total": 44,
+  "total": 41,
   "path": "out/pl/offers.json"
  },
  "matching": {
   "path": "out/pl/matched.json",
-  "generated": "2026-11-21",
-  "matched": 3,
-  "review": 4,
-  "unmatched": 7,
-  "ignored": 30,
+  "generated": "2026-11-22",
+  "matched": 1,
+  "review": 7,
+  "unmatched": 2,
+  "ignored": 31,
   "byStatus": {
-   "matched": 3
+   "matched": 1
   },
   "matchedPerSource": {
-   "lidl_pl": 3
+   "lidl_pl": 1
   },
   "matchedPerStore": {
    "biedronka": 0,
-   "lidl": 3,
+   "lidl": 1,
    "kaufland": 0,
    "auchan": 0,
    "carrefour": 0,
@@ -45,12 +43,12 @@
    "aldi": 0,
    "zabka": 0
   },
-  "promoRows": 3,
+  "promoRows": 1,
   "mapperStats": {
-   "matched": 3,
-   "review": 4,
-   "unmatched": 7,
-   "ignored": 30
+   "matched": 1,
+   "review": 7,
+   "unmatched": 2,
+   "ignored": 31
   }
  },
  "build": {
@@ -60,21 +58,21 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-11-20",
-  "today": "2026-11-21",
-  "rows": 3,
+  "previousUpdated": "2026-11-21",
+  "today": "2026-11-22",
+  "rows": 1,
   "rowsPerStore": {
-   "lidl": 3
+   "lidl": 1
   },
   "rowsPerSource": {
-   "lidl_pl": 3
+   "lidl_pl": 1
   },
-  "promoRows": 3,
+  "promoRows": 1,
   "clubRows": 0,
   "ingredientsPriced": 5,
   "pairsPriced": 5,
-  "pairsFresh": 3,
-  "pairsFromPromoOnly": 3,
+  "pairsFresh": 0,
+  "pairsFromPromoOnly": 0,
   "storesPriced": {
    "biedronka": 0,
    "lidl": 5,
@@ -86,7 +84,7 @@
    "aldi": 0,
    "zabka": 0
   },
-  "deals": 3,
+  "deals": 1,
   "dealsCarried": 0,
   "stale": [
    {
@@ -94,7 +92,23 @@
     "store": "lidl",
     "czkPerKg": 7.0,
     "lastSeen": "2026-11-05",
-    "ageDays": 16,
+    "ageDays": 17,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "citron",
+    "store": "lidl",
+    "czkPerKg": 12.0,
+    "lastSeen": "2026-11-21",
+    "ageDays": 1,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "dyne_hokkaido",
+    "store": "lidl",
+    "czkPerKg": 7.0,
+    "lastSeen": "2026-11-21",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -102,21 +116,21 @@
     "store": "lidl",
     "czkPerKg": 10.0,
     "lastSeen": "2026-11-04",
-    "ageDays": 17,
+    "ageDays": 18,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "zazvor",
+    "store": "lidl",
+    "czkPerKg": 16.9,
+    "lastSeen": "2026-11-21",
+    "ageDays": 1,
     "reason": "not_matched_today"
    }
   ],
-  "staleCount": 2,
-  "dropped": [
-   {
-    "ingredientId": "hruska",
-    "store": "lidl",
-    "czkPerKg": 4.0,
-    "lastSeen": "2026-10-30",
-    "ageDays": 22
-   }
-  ],
-  "droppedCount": 1,
+  "staleCount": 5,
+  "dropped": [],
+  "droppedCount": 0,
   "storesMissing": [
    "biedronka",
    "kaufland",
@@ -135,7 +149,7 @@
   "v": 2,
   "market": "pl",
   "currency": "PLN",
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "ingredients": 5,
   "pairs": 5,
   "perStore": {
@@ -149,10 +163,10 @@
    "aldi": 0,
    "zabka": 0
   },
-  "deals": 3,
+  "deals": 1,
   "dealsPerStore": {
    "biedronka": 0,
-   "lidl": 3,
+   "lidl": 1,
    "kaufland": 0,
    "auchan": 0,
    "carrefour": 0,
@@ -161,28 +175,28 @@
    "aldi": 0,
    "zabka": 0
   },
-  "sizeBytes": 1186
+  "sizeBytes": 848
  },
  "pricesV2Path": null,
  "fetch": {
   "v": 1,
   "market": "pl",
   "currency": "PLN",
-  "run": "2026-11-21T09:04:28+00:00",
-  "today": "2026-11-21",
+  "run": "2026-11-22T09:14:04+00:00",
+  "today": "2026-11-22",
   "sources": {
    "lidl_pl": {
     "source": "lidl_pl",
     "ok": true,
-    "count": 44,
+    "count": 41,
     "error": null,
     "stores": {
-     "lidl": 44
+     "lidl": 41
     },
     "requests": 2,
-    "elapsed_s": 1.5,
+    "elapsed_s": 6.7,
     "notes": [
-     "0 categories, 44 products"
+     "0 categories, 41 products"
     ],
     "tier": "primary",
     "market": "pl"

@@ -5,21 +5,21 @@
  "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
- "previousUpdated": "2026-11-20",
- "today": "2026-11-21",
- "rows": 3,
+ "previousUpdated": "2026-11-21",
+ "today": "2026-11-22",
+ "rows": 1,
  "rowsPerStore": {
-  "lidl": 3
+  "lidl": 1
  },
  "rowsPerSource": {
-  "lidl_pl": 3
+  "lidl_pl": 1
  },
- "promoRows": 3,
+ "promoRows": 1,
  "clubRows": 0,
  "ingredientsPriced": 5,
  "pairsPriced": 5,
- "pairsFresh": 3,
- "pairsFromPromoOnly": 3,
+ "pairsFresh": 0,
+ "pairsFromPromoOnly": 0,
  "storesPriced": {
   "biedronka": 0,
   "lidl": 5,
@@ -31,7 +31,7 @@
   "aldi": 0,
   "zabka": 0
  },
- "deals": 3,
+ "deals": 1,
  "dealsCarried": 0,
  "stale": [
   {
@@ -39,7 +39,23 @@
    "store": "lidl",
    "czkPerKg": 7.0,
    "lastSeen": "2026-11-05",
-   "ageDays": 16,
+   "ageDays": 17,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "citron",
+   "store": "lidl",
+   "czkPerKg": 12.0,
+   "lastSeen": "2026-11-21",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "dyne_hokkaido",
+   "store": "lidl",
+   "czkPerKg": 7.0,
+   "lastSeen": "2026-11-21",
+   "ageDays": 1,
    "reason": "not_matched_today"
   },
   {
@@ -47,21 +63,21 @@
    "store": "lidl",
    "czkPerKg": 10.0,
    "lastSeen": "2026-11-04",
-   "ageDays": 17,
+   "ageDays": 18,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "zazvor",
+   "store": "lidl",
+   "czkPerKg": 16.9,
+   "lastSeen": "2026-11-21",
+   "ageDays": 1,
    "reason": "not_matched_today"
   }
  ],
- "staleCount": 2,
- "dropped": [
-  {
-   "ingredientId": "hruska",
-   "store": "lidl",
-   "czkPerKg": 4.0,
-   "lastSeen": "2026-10-30",
-   "ageDays": 22
-  }
- ],
- "droppedCount": 1,
+ "staleCount": 5,
+ "dropped": [],
+ "droppedCount": 0,
  "storesMissing": [
   "biedronka",
   "kaufland",

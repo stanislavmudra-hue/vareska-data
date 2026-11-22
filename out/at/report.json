@@ -1,14 +1,14 @@
 {
  "market": "at",
  "currency": "EUR",
- "date": "2026-11-21",
- "generatedAt": "2026-11-21T09:05:01Z",
+ "date": "2026-11-22",
+ "generatedAt": "2026-11-22T09:15:06Z",
  "startedAt": null,
  "durationSec": null,
  "status": "warning",
  "ok": true,
  "warnings": [
-  "7 stale price(s) dropped (> 21 days)"
+  "1 stale price(s) dropped (> 21 days)"
  ],
  "validation": {
   "ok": true,
@@ -16,39 +16,39 @@
  },
  "offers": {
   "perSource": {
-   "lidl_at": 186
+   "lidl_at": 144
   },
-  "total": 186,
+  "total": 144,
   "path": "out/at/offers.json"
  },
  "matching": {
   "path": "out/at/matched.json",
-  "generated": "2026-11-21",
-  "matched": 9,
-  "review": 61,
-  "unmatched": 113,
-  "ignored": 3,
+  "generated": "2026-11-22",
+  "matched": 7,
+  "review": 42,
+  "unmatched": 93,
+  "ignored": 2,
   "byStatus": {
-   "matched": 9
+   "matched": 7
   },
   "matchedPerSource": {
-   "lidl_at": 9
+   "lidl_at": 7
   },
   "matchedPerStore": {
    "billa": 0,
    "spar": 0,
    "interspar": 0,
    "hofer": 0,
-   "lidl": 9,
+   "lidl": 7,
    "penny": 0,
    "mpreis": 0
   },
-  "promoRows": 9,
+  "promoRows": 7,
   "mapperStats": {
-   "matched": 9,
-   "review": 61,
-   "unmatched": 113,
-   "ignored": 3
+   "matched": 7,
+   "review": 42,
+   "unmatched": 93,
+   "ignored": 2
   }
  },
  "build": {
@@ -58,31 +58,31 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-11-20",
-  "today": "2026-11-21",
-  "rows": 9,
+  "previousUpdated": "2026-11-21",
+  "today": "2026-11-22",
+  "rows": 7,
   "rowsPerStore": {
-   "lidl": 9
+   "lidl": 7
   },
   "rowsPerSource": {
-   "lidl_at": 9
+   "lidl_at": 7
   },
-  "promoRows": 9,
+  "promoRows": 7,
   "clubRows": 0,
-  "ingredientsPriced": 19,
-  "pairsPriced": 19,
-  "pairsFresh": 2,
-  "pairsFromPromoOnly": 2,
+  "ingredientsPriced": 18,
+  "pairsPriced": 18,
+  "pairsFresh": 0,
+  "pairsFromPromoOnly": 0,
   "storesPriced": {
    "billa": 0,
    "spar": 0,
    "interspar": 0,
    "hofer": 0,
-   "lidl": 19,
+   "lidl": 18,
    "penny": 0,
    "mpreis": 0
   },
-  "deals": 9,
+  "deals": 7,
   "dealsCarried": 0,
   "stale": [
    {
@@ -90,7 +90,7 @@
     "store": "lidl",
     "czkPerKg": 9.7,
     "lastSeen": "2026-11-18",
-    "ageDays": 3,
+    "ageDays": 4,
     "reason": "not_matched_today"
    },
    {
@@ -98,7 +98,7 @@
     "store": "lidl",
     "czkPerKg": 3.0,
     "lastSeen": "2026-11-07",
-    "ageDays": 14,
+    "ageDays": 15,
     "reason": "not_matched_today"
    },
    {
@@ -106,7 +106,7 @@
     "store": "lidl",
     "czkPerKg": 1.0,
     "lastSeen": "2026-11-04",
-    "ageDays": 17,
+    "ageDays": 18,
     "reason": "not_matched_today"
    },
    {
@@ -114,7 +114,7 @@
     "store": "lidl",
     "czkPerKg": 5.5,
     "lastSeen": "2026-11-04",
-    "ageDays": 17,
+    "ageDays": 18,
     "reason": "not_matched_today"
    },
    {
@@ -122,7 +122,7 @@
     "store": "lidl",
     "czkPerKg": 6.0,
     "lastSeen": "2026-11-18",
-    "ageDays": 3,
+    "ageDays": 4,
     "reason": "not_matched_today"
    },
    {
@@ -130,7 +130,7 @@
     "store": "lidl",
     "czkPerKg": 5.7,
     "lastSeen": "2026-11-04",
-    "ageDays": 17,
+    "ageDays": 18,
     "reason": "not_matched_today"
    },
    {
@@ -138,7 +138,15 @@
     "store": "lidl",
     "czkPerKg": 5.5,
     "lastSeen": "2026-11-11",
-    "ageDays": 10,
+    "ageDays": 11,
+    "reason": "not_matched_today"
+   },
+   {
+    "ingredientId": "maslo",
+    "store": "lidl",
+    "czkPerKg": 4.8,
+    "lastSeen": "2026-11-21",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -146,7 +154,7 @@
     "store": "lidl",
     "czkPerKg": 0.3,
     "lastSeen": "2026-11-07",
-    "ageDays": 14,
+    "ageDays": 15,
     "reason": "not_matched_today"
    },
    {
@@ -154,7 +162,7 @@
     "store": "lidl",
     "czkPerKg": 5.2,
     "lastSeen": "2026-11-11",
-    "ageDays": 10,
+    "ageDays": 11,
     "reason": "not_matched_today"
    },
    {
@@ -162,7 +170,7 @@
     "store": "lidl",
     "czkPerKg": 21.7,
     "lastSeen": "2026-11-12",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
@@ -170,7 +178,7 @@
     "store": "lidl",
     "czkPerKg": 1.6,
     "lastSeen": "2026-11-18",
-    "ageDays": 3,
+    "ageDays": 4,
     "reason": "not_matched_today"
    },
    {
@@ -178,15 +186,15 @@
     "store": "lidl",
     "czkPerKg": 2.0,
     "lastSeen": "2026-11-12",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
-    "ingredientId": "sardinky_konzerva",
+    "ingredientId": "syr_raclette",
     "store": "lidl",
-    "czkPerKg": 25.5,
-    "lastSeen": "2026-10-31",
-    "ageDays": 21,
+    "czkPerKg": 10.0,
+    "lastSeen": "2026-11-21",
+    "ageDays": 1,
     "reason": "not_matched_today"
    },
    {
@@ -194,7 +202,7 @@
     "store": "lidl",
     "czkPerKg": 17.5,
     "lastSeen": "2026-11-07",
-    "ageDays": 14,
+    "ageDays": 15,
     "reason": "not_matched_today"
    },
    {
@@ -202,7 +210,7 @@
     "store": "lidl",
     "czkPerKg": 24.0,
     "lastSeen": "2026-11-12",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
@@ -210,7 +218,7 @@
     "store": "lidl",
     "czkPerKg": 11.0,
     "lastSeen": "2026-11-12",
-    "ageDays": 9,
+    "ageDays": 10,
     "reason": "not_matched_today"
    },
    {
@@ -218,63 +226,21 @@
     "store": "lidl",
     "czkPerKg": 1.0,
     "lastSeen": "2026-11-04",
-    "ageDays": 17,
+    "ageDays": 18,
     "reason": "not_matched_today"
    }
   ],
-  "staleCount": 17,
+  "staleCount": 18,
   "dropped": [
    {
-    "ingredientId": "arasidy",
+    "ingredientId": "sardinky_konzerva",
     "store": "lidl",
-    "czkPerKg": 4.5,
-    "lastSeen": "2026-10-30",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "dzus_pomerancovy",
-    "store": "lidl",
-    "czkPerKg": 2.2,
-    "lastSeen": "2026-10-30",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "feta",
-    "store": "lidl",
-    "czkPerKg": 10.4,
-    "lastSeen": "2026-10-30",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "kesu",
-    "store": "lidl",
-    "czkPerKg": 11.4,
-    "lastSeen": "2026-10-30",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "losos_uzeny",
-    "store": "lidl",
-    "czkPerKg": 15.9,
-    "lastSeen": "2026-10-30",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "para_orechy",
-    "store": "lidl",
-    "czkPerKg": 16.0,
-    "lastSeen": "2026-10-30",
-    "ageDays": 22
-   },
-   {
-    "ingredientId": "pistacie",
-    "store": "lidl",
-    "czkPerKg": 13.0,
-    "lastSeen": "2026-10-30",
+    "czkPerKg": 25.5,
+    "lastSeen": "2026-10-31",
     "ageDays": 22
    }
   ],
-  "droppedCount": 7,
+  "droppedCount": 1,
   "storesMissing": [
    "billa",
    "spar",
@@ -291,50 +257,50 @@
   "v": 2,
   "market": "at",
   "currency": "EUR",
-  "updated": "2026-11-21",
-  "ingredients": 19,
-  "pairs": 19,
+  "updated": "2026-11-22",
+  "ingredients": 18,
+  "pairs": 18,
   "perStore": {
    "billa": 0,
    "spar": 0,
    "interspar": 0,
    "hofer": 0,
-   "lidl": 19,
+   "lidl": 18,
    "penny": 0,
    "mpreis": 0
   },
-  "deals": 9,
+  "deals": 7,
   "dealsPerStore": {
    "billa": 0,
    "spar": 0,
    "interspar": 0,
    "hofer": 0,
-   "lidl": 9,
+   "lidl": 7,
    "penny": 0,
    "mpreis": 0
   },
-  "sizeBytes": 2795
+  "sizeBytes": 2410
  },
  "pricesV2Path": null,
  "fetch": {
   "v": 1,
   "market": "at",
   "currency": "EUR",
-  "run": "2026-11-21T09:04:36+00:00",
-  "today": "2026-11-21",
+  "run": "2026-11-22T09:14:38+00:00",
+  "today": "2026-11-22",
   "sources": {
    "lidl_at": {
     "source": "lidl_at",
     "ok": true,
-    "count": 186,
+    "count": 144,
     "error": null,
     "stores": {
-     "lidl": 186
+     "lidl": 144
     },
     "requests": 16,
-    "elapsed_s": 15.2,
+    "elapsed_s": 19.3,
     "notes": [
-     "18 categories, 186 products"
+     "16 categories, 144 products"
     ],
     "tier": "primary",
     "market": "at"
