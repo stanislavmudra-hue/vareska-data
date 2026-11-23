@@ -5,39 +5,47 @@
  "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
- "previousUpdated": "2026-11-21",
- "today": "2026-11-22",
- "rows": 10,
+ "previousUpdated": "2026-11-22",
+ "today": "2026-11-23",
+ "rows": 6,
  "rowsPerStore": {
-  "lidl": 10
+  "lidl": 6
  },
  "rowsPerSource": {
-  "lidl_sk": 10
+  "lidl_sk": 6
  },
- "promoRows": 10,
+ "promoRows": 6,
  "clubRows": 0,
- "ingredientsPriced": 19,
- "pairsPriced": 19,
+ "ingredientsPriced": 20,
+ "pairsPriced": 20,
  "pairsFresh": 5,
  "pairsFromPromoOnly": 5,
  "storesPriced": {
   "tesco": 0,
-  "lidl": 19,
+  "lidl": 20,
   "kaufland": 0,
   "billa": 0,
   "coopJednota": 0,
   "terno": 0,
   "fresh": 0
  },
- "deals": 9,
+ "deals": 5,
  "dealsCarried": 0,
  "stale": [
+  {
+   "ingredientId": "avokado",
+   "store": "lidl",
+   "czkPerKg": 5.8,
+   "lastSeen": "2026-11-22",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
   {
    "ingredientId": "banan",
    "store": "lidl",
    "czkPerKg": 1.2,
    "lastSeen": "2026-11-12",
-   "ageDays": 10,
+   "ageDays": 11,
    "reason": "not_matched_today"
   },
   {
@@ -45,7 +53,7 @@
    "store": "lidl",
    "czkPerKg": 13.5,
    "lastSeen": "2026-11-12",
-   "ageDays": 10,
+   "ageDays": 11,
    "reason": "not_matched_today"
   },
   {
@@ -53,7 +61,7 @@
    "store": "lidl",
    "czkPerKg": 15.9,
    "lastSeen": "2026-11-12",
-   "ageDays": 10,
+   "ageDays": 11,
    "reason": "not_matched_today"
   },
   {
@@ -61,7 +69,7 @@
    "store": "lidl",
    "czkPerKg": 2.0,
    "lastSeen": "2026-11-08",
-   "ageDays": 14,
+   "ageDays": 15,
    "reason": "not_matched_today"
   },
   {
@@ -69,7 +77,31 @@
    "store": "lidl",
    "czkPerKg": 12.5,
    "lastSeen": "2026-11-08",
-   "ageDays": 14,
+   "ageDays": 15,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "croissant",
+   "store": "lidl",
+   "czkPerKg": 5.1,
+   "lastSeen": "2026-11-22",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "eidam",
+   "store": "lidl",
+   "czkPerKg": 5.9,
+   "lastSeen": "2026-11-22",
+   "ageDays": 1,
+   "reason": "not_matched_today"
+  },
+  {
+   "ingredientId": "kachna_cela",
+   "store": "lidl",
+   "czkPerKg": 3.0,
+   "lastSeen": "2026-11-22",
+   "ageDays": 1,
    "reason": "not_matched_today"
   },
   {
@@ -77,7 +109,7 @@
    "store": "lidl",
    "czkPerKg": 3.2,
    "lastSeen": "2026-11-08",
-   "ageDays": 14,
+   "ageDays": 15,
    "reason": "not_matched_today"
   },
   {
@@ -85,7 +117,7 @@
    "store": "lidl",
    "czkPerKg": 3.3,
    "lastSeen": "2026-11-02",
-   "ageDays": 20,
+   "ageDays": 21,
    "reason": "not_matched_today"
   },
   {
@@ -93,15 +125,7 @@
    "store": "lidl",
    "czkPerKg": 2.3,
    "lastSeen": "2026-11-12",
-   "ageDays": 10,
-   "reason": "not_matched_today"
-  },
-  {
-   "ingredientId": "rajcata_cherry",
-   "store": "lidl",
-   "czkPerKg": 7.6,
-   "lastSeen": "2026-11-08",
-   "ageDays": 14,
+   "ageDays": 11,
    "reason": "not_matched_today"
   },
   {
@@ -109,7 +133,7 @@
    "store": "lidl",
    "czkPerKg": 4.0,
    "lastSeen": "2026-11-12",
-   "ageDays": 10,
+   "ageDays": 11,
    "reason": "not_matched_today"
   },
   {
@@ -117,7 +141,7 @@
    "store": "lidl",
    "czkPerKg": 3.2,
    "lastSeen": "2026-11-08",
-   "ageDays": 14,
+   "ageDays": 15,
    "reason": "not_matched_today"
   },
   {
@@ -125,29 +149,21 @@
    "store": "lidl",
    "czkPerKg": 2.8,
    "lastSeen": "2026-11-12",
-   "ageDays": 10,
+   "ageDays": 11,
    "reason": "not_matched_today"
-  },
-  {
-   "ingredientId": "veprovy_bucek",
-   "store": "lidl",
-   "czkPerKg": 3.5,
-   "lastSeen": "2026-11-08",
-   "ageDays": 14,
-   "reason": "not_matched_today"
-  },
+  }
+ ],
+ "staleCount": 15,
+ "dropped": [
   {
    "ingredientId": "vodka",
    "store": "lidl",
    "czkPerKg": 10.6,
    "lastSeen": "2026-11-01",
-   "ageDays": 21,
-   "reason": "not_matched_today"
+   "ageDays": 22
   }
  ],
- "staleCount": 14,
- "dropped": [],
- "droppedCount": 0,
+ "droppedCount": 1,
  "storesMissing": [
   "tesco",
   "kaufland",

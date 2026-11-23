@@ -2,8 +2,14 @@
  "v": 2,
  "market": "at",
  "currency": "EUR",
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "perKg": {
+  "banan": {
+   "lidl": 1.1
+  },
+  "dzus_pomerancovy": {
+   "lidl": 1.9
+  },
   "emental": {
    "lidl": 9.7
   },
@@ -14,6 +20,9 @@
    "lidl": 1.0
   },
   "kastany": {
+   "lidl": 5.5
+  },
+  "kokosove_mleko": {
    "lidl": 5.5
   },
   "kureci_nugety": {
@@ -29,16 +38,19 @@
    "lidl": 4.8
   },
   "mineralka": {
-   "lidl": 0.3
+   "lidl": 0.4
   },
   "mozzarella": {
-   "lidl": 5.2
+   "lidl": 9.9
   },
   "olej_avokadovy": {
    "lidl": 21.7
   },
   "paprika_cervena": {
    "lidl": 1.6
+  },
+  "podmasli": {
+   "lidl": 1.0
   },
   "salat_ledovy": {
    "lidl": 2.0
@@ -61,6 +73,22 @@
  },
  "deals": [
   {
+   "ingredientId": "aperol",
+   "store": "lidl",
+   "perKg": 12.4,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "title": "Aperol"
+  },
+  {
+   "ingredientId": "arasidy",
+   "store": "lidl",
+   "perKg": 3.5,
+   "validFrom": "2026-11-30",
+   "validTo": "2026-12-02",
+   "title": "Alesto Erdnüsse in Schale"
+  },
+  {
    "ingredientId": "banan",
    "store": "lidl",
    "perKg": 1.1,
@@ -69,12 +97,36 @@
    "title": "Bananen"
   },
   {
+   "ingredientId": "campari",
+   "store": "lidl",
+   "perKg": 14.3,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "title": "Campari"
+  },
+  {
+   "ingredientId": "cuketa",
+   "store": "lidl",
+   "perKg": 1.4,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "title": "Zucchini"
+  },
+  {
    "ingredientId": "dzus_pomerancovy",
    "store": "lidl",
    "perKg": 1.9,
    "validFrom": "2026-11-23",
    "validTo": "2026-11-25",
    "title": "Solevita Frischer Orangensaft"
+  },
+  {
+   "ingredientId": "granatove_jablko",
+   "store": "lidl",
+   "perKg": 1.5,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "title": "Granatapfel"
   },
   {
    "ingredientId": "kachni_prsa_uzena",
@@ -109,12 +161,60 @@
    "title": "Mozzarella"
   },
   {
+   "ingredientId": "mrkev",
+   "store": "lidl",
+   "perKg": 0.8,
+   "validFrom": "2026-11-30",
+   "validTo": "2026-12-02",
+   "title": "Karotten aus Österreich"
+  },
+  {
+   "ingredientId": "olej_dynovy",
+   "store": "lidl",
+   "perKg": 26.1,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "title": "Kürbiskernöl"
+  },
+  {
+   "ingredientId": "pistacie",
+   "store": "lidl",
+   "perKg": 13.0,
+   "validFrom": "2026-11-30",
+   "validTo": "2026-12-02",
+   "title": "ALESTO Pistazien"
+  },
+  {
    "ingredientId": "podmasli",
    "store": "lidl",
    "perKg": 1.0,
    "validFrom": "2026-11-23",
    "validTo": "2026-11-25",
    "title": "Alpengut Buttermilch"
+  },
+  {
+   "ingredientId": "pomeranc",
+   "store": "lidl",
+   "perKg": 1.2,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "title": "Orangen"
+  },
+  {
+   "ingredientId": "spenat_cerstvy",
+   "store": "lidl",
+   "perKg": 2.8,
+   "validFrom": "2026-11-30",
+   "validTo": "2026-12-02",
+   "title": "Spinat"
+  },
+  {
+   "ingredientId": "zeli_pekingske",
+   "store": "lidl",
+   "perKg": 1.0,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "title": "Chinakohl aus Österreich"
   }
  ],
  "categoryFallbackPerKg": {
