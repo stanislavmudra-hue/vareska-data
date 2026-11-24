@@ -1,5 +1,5 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "review": [
   {
    "ingredientId": "mandarinka",
@@ -24,6 +24,49 @@
     }
    ],
    "pack": "1 kg",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "mlete_hovezi",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Mäsiarova čerstvá porcia Mleté hovädzie mäso",
+   "czkPerKg": 7.98,
+   "price": 3.99,
+   "originalPrice": 4.99,
+   "validFrom": "2026-11-28",
+   "validTo": "2026-11-29",
+   "confidence": 0.815,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "mlete_hovezi",
+     "score": 0.815,
+     "via": "mleté hovädzie mäso",
+     "nameCs": "mleté hovězí maso",
+     "name": "mleté hovädzie mäso"
+    },
+    {
+     "ingredientId": "mlete_maso_mix",
+     "score": 0.742,
+     "via": "mleté mäso mix",
+     "nameCs": "mleté maso mix",
+     "name": "mleté mäso mix"
+    },
+    {
+     "ingredientId": "bujon_kostka",
+     "score": 0.259,
+     "via": "masox",
+     "nameCs": "bujón v kostce",
+     "name": "bujón v kocke",
+     "reasons": [
+      "hint-category:condiment"
+     ]
+    }
+   ],
+   "pack": "500 g",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
   },
@@ -64,9 +107,92 @@
    "pack": "100 g",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
+  },
+  {
+   "ingredientId": "syridlo",
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Obaľovaný syr",
+   "czkPerKg": 6.5,
+   "price": 1.49,
+   "validFrom": "2026-11-28",
+   "validTo": "2026-11-29",
+   "confidence": 0.624,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "syridlo",
+     "score": 0.624,
+     "via": "syridlo",
+     "nameCs": "syřidlo",
+     "name": "syridlo"
+    },
+    {
+     "ingredientId": "eidam",
+     "score": 0.39,
+     "via": "sýr",
+     "nameCs": "eidam",
+     "name": "eidam",
+     "reasons": [
+      "hint-category:dairy"
+     ]
+    },
+    {
+     "ingredientId": "syrovatka",
+     "score": 0.312,
+     "via": "syrovátka",
+     "nameCs": "syrovátka",
+     "name": "srvátka",
+     "reasons": [
+      "hint-category:dairy"
+     ]
+    }
+   ],
+   "pack": "230 g",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
   }
  ],
  "unmatched": [
+  {
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "- Olivová tyčinka",
+   "czkPerKg": 6.9,
+   "price": 0.55,
+   "originalPrice": 0.69,
+   "validFrom": "2026-11-28",
+   "validTo": "2026-11-29",
+   "confidence": 0.419,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "olej_olivovy",
+     "score": 0.419,
+     "via": "olivový",
+     "nameCs": "olivový olej",
+     "name": "olivový olej",
+     "reasons": [
+      "hint-category:oil"
+     ]
+    },
+    {
+     "ingredientId": "olivy_cerne",
+     "score": 0.336,
+     "via": "olivy",
+     "nameCs": "černé olivy",
+     "name": "čierne olivy",
+     "reasons": [
+      "hint-category:vegetable"
+     ]
+    }
+   ],
+   "pack": "80 g",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
   {
    "store": "lidl",
    "source": "lidl_sk",
@@ -149,8 +275,23 @@
    "pack": "0.5 l",
    "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
    "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_sk",
+   "title": "Tatranská rolka plátky",
+   "price": 1.29,
+   "originalPrice": 1.69,
+   "validFrom": "2026-11-28",
+   "validTo": "2026-11-29",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "150 g",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
   }
  ],
- "reviewTotal": 2,
- "unmatchedTotal": 6
+ "reviewTotal": 4,
+ "unmatchedTotal": 8
 }
