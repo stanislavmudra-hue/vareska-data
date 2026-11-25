@@ -1,5 +1,5 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "review": [
   {
    "ingredientId": "calvados",
@@ -184,6 +184,48 @@
    "promo": true
   },
   {
+   "ingredientId": "ouzo",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Ouzo 12 Gold 36% Vol",
+   "czkPerKg": 18.03,
+   "price": 11.99,
+   "confidence": 0.767,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "ouzo",
+     "score": 0.767,
+     "via": "Ouzo",
+     "nameCs": "ouzo",
+     "name": "Ouzo"
+    },
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.285,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.285,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
    "ingredientId": "grappa",
    "store": "lidl",
    "source": "lidl_de",
@@ -334,27 +376,26 @@
    "promo": false
   },
   {
-   "ingredientId": "pisco",
+   "ingredientId": "brandy",
    "store": "lidl",
    "source": "lidl_de",
-   "title": "BARSOL Quebranta Pisco 41,3% Vol",
-   "czkPerKg": 28.4,
-   "price": 18.69,
-   "originalPrice": 21.99,
+   "title": "Brandy de Jerez Solera Reserva 36% Vol",
+   "czkPerKg": 22.78,
+   "price": 14.99,
    "confidence": 0.674,
    "status": "review",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "pisco",
+     "ingredientId": "brandy",
      "score": 0.674,
-     "via": "Pisco",
-     "nameCs": "pisco",
-     "name": "Pisco"
+     "via": "Brandy",
+     "nameCs": "brandy",
+     "name": "Brandy"
     },
     {
      "ingredientId": "chleb_celozrnny",
-     "score": 0.27,
+     "score": 0.251,
      "via": "Vollkornbrot",
      "nameCs": "celozrnný chléb",
      "name": "Vollkornbrot",
@@ -364,7 +405,7 @@
     },
     {
      "ingredientId": "cokolada_mlecna",
-     "score": 0.27,
+     "score": 0.251,
      "via": "Vollmilchschokolade",
      "nameCs": "mléčná čokoláda",
      "name": "Vollmilchschokolade",
@@ -374,7 +415,7 @@
     }
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
+   "promo": false
   },
   {
    "ingredientId": "kesu_maslo",
@@ -571,6 +612,51 @@
    "promo": true
   },
   {
+   "ingredientId": "vino_cervene",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Barolo Riserva DOCG trocken, Rotwein 2016",
+   "czkPerKg": 20.19,
+   "price": 14.99,
+   "originalPrice": 19.99,
+   "confidence": 0.647,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vino_cervene",
+     "score": 0.647,
+     "via": "Rotwein",
+     "nameCs": "červené víno",
+     "name": "Rotwein"
+    },
+    {
+     "ingredientId": "drozdi_cerstve",
+     "score": 0.259,
+     "via": "Trockenhefe",
+     "nameCs": "čerstvé droždí",
+     "name": "frische Hefe",
+     "reasons": [
+      "hint-category:other",
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "drozdi_susene",
+     "score": 0.155,
+     "via": "Trockenhefe",
+     "nameCs": "sušené droždí",
+     "name": "Trockenhefe",
+     "reasons": [
+      "hint-category:other",
+      "sibling:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
    "ingredientId": "gin",
    "store": "lidl",
    "source": "lidl_de",
@@ -656,22 +742,22 @@
    "promo": true
   },
   {
-   "ingredientId": "rum",
+   "ingredientId": "vodka",
    "store": "lidl",
    "source": "lidl_de",
-   "title": "DIPLOMÁTICO Reserva Exclusiva Rum 40% Vol",
-   "czkPerKg": 53.18,
-   "price": 34.99,
+   "title": "KOROL Premium Vodka 5-fach destilliert 40% Vol",
+   "czkPerKg": 13.81,
+   "price": 6.49,
    "confidence": 0.647,
    "status": "review",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "rum",
+     "ingredientId": "vodka",
      "score": 0.647,
-     "via": "Rum",
-     "nameCs": "rum",
-     "name": "Rum"
+     "via": "vodka",
+     "nameCs": "vodka",
+     "name": "Wodka"
     },
     {
      "ingredientId": "chleb_celozrnny",
@@ -714,48 +800,6 @@
      "via": "Gin",
      "nameCs": "gin",
      "name": "Gin"
-    },
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.259,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.259,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "ingredientId": "tequila",
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "PATRÓN Silver Tequila mit Geschenkbox 40% Vol",
-   "czkPerKg": 59.12,
-   "price": 38.9,
-   "confidence": 0.647,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "tequila",
-     "score": 0.647,
-     "via": "Tequila",
-     "nameCs": "tequila",
-     "name": "Tequila"
     },
     {
      "ingredientId": "chleb_celozrnny",
@@ -1018,6 +1062,28 @@
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": true
+  },
+  {
+   "ingredientId": "vino_cervene",
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "Breisgauer Spätburgunder QbA halbtrocken, Literflasche, Rotwein 2025",
+   "czkPerKg": 3.83,
+   "price": 3.79,
+   "confidence": 0.627,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vino_cervene",
+     "score": 0.627,
+     "via": "Rotwein",
+     "nameCs": "červené víno",
+     "name": "Rotwein"
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
   },
   {
    "ingredientId": "rum",
@@ -1388,90 +1454,6 @@
    "promo": false
   },
   {
-   "ingredientId": "vino_ruzove",
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "Méditerranée Rosé IGP 3-l-Bag-in-Box trocken, Roséwein 2025",
-   "czkPerKg": 4.04,
-   "price": 11.99,
-   "confidence": 0.612,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "vino_ruzove",
-     "score": 0.612,
-     "via": "Roséwein",
-     "nameCs": "růžové víno",
-     "name": "Roséwein"
-    },
-    {
-     "ingredientId": "med",
-     "score": 0.263,
-     "via": "med",
-     "nameCs": "med",
-     "name": "Honig",
-     "reasons": [
-      "hint-category:sweetener"
-     ]
-    },
-    {
-     "ingredientId": "bagel",
-     "score": 0.245,
-     "via": "Bagel",
-     "nameCs": "bagel",
-     "name": "Bagel",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "ingredientId": "whisky",
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "NIKKA Whisky from the Barrel mit Geschenkbox 51,4% Vol",
-   "czkPerKg": 82.77,
-   "price": 38.9,
-   "confidence": 0.612,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "whisky",
-     "score": 0.612,
-     "via": "Whisky",
-     "nameCs": "whisky",
-     "name": "Whisky"
-    },
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.245,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.245,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
    "ingredientId": "gin",
    "store": "lidl",
    "source": "lidl_de",
@@ -1603,6 +1585,50 @@
   {
    "store": "lidl",
    "source": "lidl_de",
+   "title": "CÀ DEI FRATI Rosa dei Frati trocken, Roséwein 2025",
+   "czkPerKg": 17.44,
+   "price": 12.95,
+   "originalPrice": 13.95,
+   "confidence": 0.599,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "vino_ruzove",
+     "score": 0.599,
+     "via": "Roséwein",
+     "nameCs": "růžové víno",
+     "name": "Roséwein"
+    },
+    {
+     "ingredientId": "drozdi_cerstve",
+     "score": 0.24,
+     "via": "Trockenhefe",
+     "nameCs": "čerstvé droždí",
+     "name": "frische Hefe",
+     "reasons": [
+      "hint-category:other",
+      "sibling:chosen"
+     ]
+    },
+    {
+     "ingredientId": "drozdi_susene",
+     "score": 0.144,
+     "via": "Trockenhefe",
+     "nameCs": "sušené droždí",
+     "name": "Trockenhefe",
+     "reasons": [
+      "hint-category:other",
+      "sibling:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
    "title": "Dieci.Nove.Dieci Montepulciano d´Abruzzo DOC trocken, Rotwein 2024",
    "czkPerKg": 6.72,
    "price": 4.99,
@@ -1646,49 +1672,8 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "AUCHENTOSHAN Three Wood Single Malt Scotch Whisky mit Geschenkbox 43% Vol",
-   "czkPerKg": 60.78,
-   "price": 39.99,
-   "confidence": 0.589,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "whisky",
-     "score": 0.589,
-     "via": "Whisky",
-     "nameCs": "whisky",
-     "name": "Whisky"
-    },
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.236,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.236,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "BEN BRACKEN Islay Single Malt Scotch Whisky 30 Jahre 43% Vol",
-   "czkPerKg": 168.8,
+   "czkPerKg": 180.85,
    "price": 119.0,
    "originalPrice": 169.0,
    "confidence": 0.589,
@@ -1771,6 +1756,89 @@
   {
    "store": "lidl",
    "source": "lidl_de",
+   "title": "BEN BRACKEN Speyside Single Malt Scotch Whisky 27 Jahre 40% Vol",
+   "czkPerKg": 106.37,
+   "price": 69.99,
+   "originalPrice": 99.99,
+   "confidence": 0.589,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "whisky",
+     "score": 0.589,
+     "via": "Whisky",
+     "nameCs": "whisky",
+     "name": "Whisky"
+    },
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.236,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.236,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "BEN BRACKEN Speyside Single Malt Scotch Whisky 29 Jahre 40% Vol",
+   "czkPerKg": 180.85,
+   "price": 119.0,
+   "confidence": 0.589,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "whisky",
+     "score": 0.589,
+     "via": "Whisky",
+     "nameCs": "whisky",
+     "name": "Whisky"
+    },
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.236,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.236,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
    "title": "GLENALBA Blended Scotch Whisky 32 Jahre Sherry Cask Finish 40% vol",
    "czkPerKg": 95.7,
    "price": 66.99,
@@ -1801,90 +1869,6 @@
      "name": "Vollkornbrot",
      "reasons": [
       "hint-category:bakery"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "THE TARGE Highland Single Grain Scotch Whisky 35 Jahre 46,2% Vol",
-   "czkPerKg": 211.24,
-   "price": 139.0,
-   "originalPrice": 199.0,
-   "confidence": 0.589,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "whisky",
-     "score": 0.589,
-     "via": "Whisky",
-     "nameCs": "whisky",
-     "name": "Whisky"
-    },
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.236,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.236,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "ABRACHAN Blended Malt Scotch Whisky Double Cask Matured 14 Jahre 45% Vol",
-   "czkPerKg": 44.97,
-   "price": 29.59,
-   "originalPrice": 36.99,
-   "confidence": 0.58,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "whisky",
-     "score": 0.58,
-     "via": "Whisky",
-     "nameCs": "whisky",
-     "name": "Whisky"
-    },
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.232,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.232,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
      ]
     }
    ],
@@ -2104,41 +2088,39 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "CÀ DEI FRATI 3 x 0,75-l-Flasche Cà dei Frati Pietro Dal Cero Amarone Della Valpolicella DOCG trocken, Rotwein 2018 - mit Holzkiste",
-   "czkPerKg": 62.4,
-   "price": 139.0,
-   "originalPrice": 164.99,
-   "confidence": 0.546,
+   "title": "ALPENSCHNAPS Alte Marille 41,8% Vol",
+   "czkPerKg": 27.64,
+   "price": 12.99,
+   "originalPrice": 14.99,
+   "confidence": 0.539,
    "status": "unmatched",
    "club": false,
    "suggestions": [
     {
-     "ingredientId": "vino_cervene",
-     "score": 0.546,
-     "via": "Rotwein",
-     "nameCs": "červené víno",
-     "name": "Rotwein"
+     "ingredientId": "merunkovice",
+     "score": 0.539,
+     "via": "Marillenbrand",
+     "nameCs": "meruňkovice",
+     "name": "Marillenbrand"
     },
     {
-     "ingredientId": "drozdi_cerstve",
-     "score": 0.219,
-     "via": "Trockenhefe",
-     "nameCs": "čerstvé droždí",
-     "name": "frische Hefe",
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.27,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
      "reasons": [
-      "hint-category:other",
-      "sibling:chosen"
+      "hint-category:bakery"
      ]
     },
     {
-     "ingredientId": "drozdi_susene",
-     "score": 0.131,
-     "via": "Trockenhefe",
-     "nameCs": "sušené droždí",
-     "name": "Trockenhefe",
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.27,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
      "reasons": [
-      "hint-category:other",
-      "sibling:other"
+      "hint-category:other"
      ]
     }
    ],
@@ -2166,6 +2148,48 @@
    "pack": "200 g",
    "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "FIREBALL Likör mit Zimt- und Whiskygeschmack 33% Vol",
+   "czkPerKg": 15.18,
+   "price": 9.99,
+   "originalPrice": 10.99,
+   "confidence": 0.518,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "whisky",
+     "score": 0.518,
+     "via": "Whisky",
+     "nameCs": "whisky",
+     "name": "Whisky"
+    },
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.259,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.259,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "store": "lidl",
@@ -2419,55 +2443,9 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "LILLET Blanc 17% Vol",
-   "czkPerKg": 18.65,
-   "price": 13.99,
-   "originalPrice": 14.99,
-   "confidence": 0.285,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.285,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.285,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    },
-    {
-     "ingredientId": "mleko_35",
-     "score": 0.285,
-     "via": "Vollmilch",
-     "nameCs": "plnotučné mléko",
-     "name": "Vollmilch",
-     "reasons": [
-      "hint-category:dairy",
-      "sibling:chosen"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "LINIE Aquavit 41,5% Vol",
-   "czkPerKg": 24.27,
-   "price": 16.99,
+   "title": "JAGDSTOLZ Kräuterlikör 35% Vol",
+   "czkPerKg": 8.56,
+   "price": 5.99,
    "confidence": 0.285,
    "status": "unmatched",
    "club": false,
@@ -2506,6 +2484,142 @@
    ],
    "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "L'ARRIVÉE Blanc 17% Vol",
+   "czkPerKg": 9.05,
+   "price": 6.79,
+   "confidence": 0.285,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.285,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.285,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.285,
+     "via": "Vollmilch",
+     "nameCs": "plnotučné mléko",
+     "name": "Vollmilch",
+     "reasons": [
+      "hint-category:dairy",
+      "sibling:chosen"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "LIDANIS Pastis 40% Vol",
+   "czkPerKg": 14.99,
+   "price": 14.99,
+   "confidence": 0.285,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.285,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.285,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.285,
+     "via": "Vollmilch",
+     "nameCs": "plnotučné mléko",
+     "name": "Vollmilch",
+     "reasons": [
+      "hint-category:dairy",
+      "sibling:chosen"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": false
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
+   "title": "MARTINI Bianco 14,5% Vol",
+   "czkPerKg": 13.32,
+   "price": 9.99,
+   "originalPrice": 10.99,
+   "confidence": 0.285,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.285,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.285,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.285,
+     "via": "Vollmilch",
+     "nameCs": "plnotučné mléko",
+     "name": "Vollmilch",
+     "reasons": [
+      "hint-category:dairy",
+      "sibling:chosen"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
   },
   {
    "store": "lidl",
@@ -2627,100 +2741,9 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "ALPENSCHNAPS Alte Williamsbirne 41,8% Vol",
-   "czkPerKg": 25.98,
-   "price": 12.99,
-   "originalPrice": 14.99,
-   "confidence": 0.27,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.27,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.27,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    },
-    {
-     "ingredientId": "mleko_35",
-     "score": 0.27,
-     "via": "Vollmilch",
-     "nameCs": "plnotučné mléko",
-     "name": "Vollmilch",
-     "reasons": [
-      "hint-category:dairy",
-      "sibling:chosen"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
    "title": "EFE Raki Gold 45% vol",
    "czkPerKg": 34.27,
    "price": 23.99,
-   "confidence": 0.27,
-   "status": "unmatched",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "chleb_celozrnny",
-     "score": 0.27,
-     "via": "Vollkornbrot",
-     "nameCs": "celozrnný chléb",
-     "name": "Vollkornbrot",
-     "reasons": [
-      "hint-category:bakery"
-     ]
-    },
-    {
-     "ingredientId": "cokolada_mlecna",
-     "score": 0.27,
-     "via": "Vollmilchschokolade",
-     "nameCs": "mléčná čokoláda",
-     "name": "Vollmilchschokolade",
-     "reasons": [
-      "hint-category:other"
-     ]
-    },
-    {
-     "ingredientId": "mleko_35",
-     "score": 0.27,
-     "via": "Vollmilch",
-     "nameCs": "plnotučné mléko",
-     "name": "Vollmilch",
-     "reasons": [
-      "hint-category:dairy",
-      "sibling:chosen"
-     ]
-    }
-   ],
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "Echter Nordhäuser Doppelkorn 38% Vol",
-   "czkPerKg": 11.41,
-   "price": 7.99,
    "confidence": 0.27,
    "status": "unmatched",
    "club": false,
@@ -2899,9 +2922,9 @@
   {
    "store": "lidl",
    "source": "lidl_de",
-   "title": "BAILEYS The Original Irish Cream 17% Vol",
-   "czkPerKg": 17.13,
-   "price": 11.99,
+   "title": "HENNESSY Very Special Cognac 40% Vol",
+   "czkPerKg": 51.41,
+   "price": 35.99,
    "confidence": 0.259,
    "status": "unmatched",
    "club": false,
@@ -2969,6 +2992,52 @@
   {
    "store": "lidl",
    "source": "lidl_de",
+   "title": "ANDALÖ Nordischer Aperitif Sanddornlikör mit Geschenkbox und Glas 15% Vol",
+   "czkPerKg": 14.27,
+   "price": 9.99,
+   "originalPrice": 11.99,
+   "confidence": 0.251,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "chleb_celozrnny",
+     "score": 0.251,
+     "via": "Vollkornbrot",
+     "nameCs": "celozrnný chléb",
+     "name": "Vollkornbrot",
+     "reasons": [
+      "hint-category:bakery"
+     ]
+    },
+    {
+     "ingredientId": "cokolada_mlecna",
+     "score": 0.251,
+     "via": "Vollmilchschokolade",
+     "nameCs": "mléčná čokoláda",
+     "name": "Vollmilchschokolade",
+     "reasons": [
+      "hint-category:other"
+     ]
+    },
+    {
+     "ingredientId": "mleko_35",
+     "score": 0.251,
+     "via": "Vollmilch",
+     "nameCs": "plnotučné mléko",
+     "name": "Vollmilch",
+     "reasons": [
+      "hint-category:dairy",
+      "sibling:chosen"
+     ]
+    }
+   ],
+   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_de",
    "title": "COMTE DE BRISMAND Brut Reserve, Champagner",
    "price": 17.99,
    "confidence": 0.0,
@@ -3028,17 +3097,6 @@
    "pack": "1.5 l",
    "url": "https://www.lidl.de/q/api/category/h/getraenke/h10071022?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "KROMBACHER 2 x 5-l-Bierfass Krombacher Pils mit Zapfhahn",
-   "price": 26.99,
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
   },
   {
    "store": "lidl",
@@ -3347,17 +3405,6 @@
    "status": "unmatched",
    "club": false,
    "url": "https://www.lidl.de/q/api/category/h/tiernahrung/h10071025?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
-   "promo": false
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_de",
-   "title": "MOËT & CHANDON Ice Impérial, Champagner",
-   "price": 49.9,
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "url": "https://www.lidl.de/q/api/category/c/essen-trinken/s10068374?assortment=DE&locale=de_DE&version=v2.0.0&fetchsize=200",
    "promo": false
   },
   {

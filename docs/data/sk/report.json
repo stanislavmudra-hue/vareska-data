@@ -1,15 +1,13 @@
 {
  "market": "sk",
  "currency": "EUR",
- "date": "2026-11-24",
- "generatedAt": "2026-11-24T11:57:41Z",
+ "date": "2026-11-25",
+ "generatedAt": "2026-11-25T10:46:53Z",
  "startedAt": null,
  "durationSec": null,
- "status": "warning",
+ "status": "ok",
  "ok": true,
- "warnings": [
-  "1 stale price(s) dropped (> 21 days)"
- ],
+ "warnings": [],
  "validation": {
   "ok": true,
   "errors": []
@@ -23,7 +21,7 @@
  },
  "matching": {
   "path": "out/sk/matched.json",
-  "generated": "2026-11-24",
+  "generated": "2026-11-25",
   "matched": 8,
   "review": 4,
   "unmatched": 8,
@@ -58,8 +56,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-11-23",
-  "today": "2026-11-24",
+  "previousUpdated": "2026-11-24",
+  "today": "2026-11-25",
   "rows": 8,
   "rowsPerStore": {
    "lidl": 8
@@ -90,7 +88,7 @@
     "store": "lidl",
     "czkPerKg": 5.8,
     "lastSeen": "2026-11-22",
-    "ageDays": 2,
+    "ageDays": 3,
     "reason": "not_matched_today"
    },
    {
@@ -98,7 +96,7 @@
     "store": "lidl",
     "czkPerKg": 1.2,
     "lastSeen": "2026-11-12",
-    "ageDays": 12,
+    "ageDays": 13,
     "reason": "not_matched_today"
    },
    {
@@ -106,7 +104,7 @@
     "store": "lidl",
     "czkPerKg": 13.5,
     "lastSeen": "2026-11-12",
-    "ageDays": 12,
+    "ageDays": 13,
     "reason": "not_matched_today"
    },
    {
@@ -114,7 +112,7 @@
     "store": "lidl",
     "czkPerKg": 15.9,
     "lastSeen": "2026-11-12",
-    "ageDays": 12,
+    "ageDays": 13,
     "reason": "not_matched_today"
    },
    {
@@ -122,7 +120,7 @@
     "store": "lidl",
     "czkPerKg": 2.0,
     "lastSeen": "2026-11-08",
-    "ageDays": 16,
+    "ageDays": 17,
     "reason": "not_matched_today"
    },
    {
@@ -130,7 +128,7 @@
     "store": "lidl",
     "czkPerKg": 12.5,
     "lastSeen": "2026-11-08",
-    "ageDays": 16,
+    "ageDays": 17,
     "reason": "not_matched_today"
    },
    {
@@ -138,7 +136,7 @@
     "store": "lidl",
     "czkPerKg": 5.1,
     "lastSeen": "2026-11-22",
-    "ageDays": 2,
+    "ageDays": 3,
     "reason": "not_matched_today"
    },
    {
@@ -146,7 +144,7 @@
     "store": "lidl",
     "czkPerKg": 5.9,
     "lastSeen": "2026-11-22",
-    "ageDays": 2,
+    "ageDays": 3,
     "reason": "not_matched_today"
    },
    {
@@ -154,7 +152,7 @@
     "store": "lidl",
     "czkPerKg": 3.0,
     "lastSeen": "2026-11-22",
-    "ageDays": 2,
+    "ageDays": 3,
     "reason": "not_matched_today"
    },
    {
@@ -162,7 +160,7 @@
     "store": "lidl",
     "czkPerKg": 3.2,
     "lastSeen": "2026-11-08",
-    "ageDays": 16,
+    "ageDays": 17,
     "reason": "not_matched_today"
    },
    {
@@ -170,7 +168,7 @@
     "store": "lidl",
     "czkPerKg": 2.3,
     "lastSeen": "2026-11-12",
-    "ageDays": 12,
+    "ageDays": 13,
     "reason": "not_matched_today"
    },
    {
@@ -178,7 +176,7 @@
     "store": "lidl",
     "czkPerKg": 4.0,
     "lastSeen": "2026-11-12",
-    "ageDays": 12,
+    "ageDays": 13,
     "reason": "not_matched_today"
    },
    {
@@ -186,7 +184,7 @@
     "store": "lidl",
     "czkPerKg": 3.2,
     "lastSeen": "2026-11-08",
-    "ageDays": 16,
+    "ageDays": 17,
     "reason": "not_matched_today"
    },
    {
@@ -194,21 +192,13 @@
     "store": "lidl",
     "czkPerKg": 2.8,
     "lastSeen": "2026-11-12",
-    "ageDays": 12,
+    "ageDays": 13,
     "reason": "not_matched_today"
    }
   ],
   "staleCount": 14,
-  "dropped": [
-   {
-    "ingredientId": "mlete_veprove",
-    "store": "lidl",
-    "czkPerKg": 3.3,
-    "lastSeen": "2026-11-02",
-    "ageDays": 22
-   }
-  ],
-  "droppedCount": 1,
+  "dropped": [],
+  "droppedCount": 0,
   "storesMissing": [
    "tesco",
    "kaufland",
@@ -225,7 +215,7 @@
   "v": 2,
   "market": "sk",
   "currency": "EUR",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "ingredients": 19,
   "pairs": 19,
   "perStore": {
@@ -254,8 +244,8 @@
   "v": 1,
   "market": "sk",
   "currency": "EUR",
-  "run": "2026-11-24T11:56:51+00:00",
-  "today": "2026-11-24",
+  "run": "2026-11-25T10:46:04+00:00",
+  "today": "2026-11-25",
   "sources": {
    "lidl_sk": {
     "source": "lidl_sk",
@@ -266,7 +256,7 @@
      "lidl": 23
     },
     "requests": 2,
-    "elapsed_s": 1.5,
+    "elapsed_s": 1.7,
     "notes": [
      "0 categories, 23 products"
     ],
