@@ -5,24 +5,24 @@
  "catalogPath": "catalog/ingredients.json",
  "catalogSize": 1191,
  "skipped": {},
- "previousUpdated": "2026-11-24",
- "today": "2026-11-25",
- "rows": 2,
+ "previousUpdated": "2026-11-25",
+ "today": "2026-11-26",
+ "rows": 4,
  "rowsPerStore": {
-  "lidl": 2
+  "lidl": 4
  },
  "rowsPerSource": {
-  "lidl_pl": 2
+  "lidl_pl": 4
  },
- "promoRows": 1,
+ "promoRows": 3,
  "clubRows": 0,
- "ingredientsPriced": 7,
- "pairsPriced": 7,
- "pairsFresh": 2,
- "pairsFromPromoOnly": 1,
+ "ingredientsPriced": 9,
+ "pairsPriced": 9,
+ "pairsFresh": 4,
+ "pairsFromPromoOnly": 3,
  "storesPriced": {
   "biedronka": 0,
-  "lidl": 7,
+  "lidl": 9,
   "kaufland": 0,
   "auchan": 0,
   "carrefour": 0,
@@ -31,7 +31,7 @@
   "aldi": 0,
   "zabka": 0
  },
- "deals": 1,
+ "deals": 3,
  "dealsCarried": 0,
  "stale": [
   {
@@ -39,7 +39,7 @@
    "store": "lidl",
    "czkPerKg": 7.0,
    "lastSeen": "2026-11-05",
-   "ageDays": 20,
+   "ageDays": 21,
    "reason": "not_matched_today"
   },
   {
@@ -47,7 +47,7 @@
    "store": "lidl",
    "czkPerKg": 12.0,
    "lastSeen": "2026-11-21",
-   "ageDays": 4,
+   "ageDays": 5,
    "reason": "not_matched_today"
   },
   {
@@ -55,15 +55,15 @@
    "store": "lidl",
    "czkPerKg": 7.0,
    "lastSeen": "2026-11-21",
-   "ageDays": 4,
+   "ageDays": 5,
    "reason": "not_matched_today"
   },
   {
-   "ingredientId": "zampiony",
+   "ingredientId": "mandarinka",
    "store": "lidl",
-   "czkPerKg": 10.0,
-   "lastSeen": "2026-11-04",
-   "ageDays": 21,
+   "czkPerKg": 7.0,
+   "lastSeen": "2026-11-25",
+   "ageDays": 1,
    "reason": "not_matched_today"
   },
   {
@@ -71,13 +71,21 @@
    "store": "lidl",
    "czkPerKg": 16.9,
    "lastSeen": "2026-11-21",
-   "ageDays": 4,
+   "ageDays": 5,
    "reason": "not_matched_today"
   }
  ],
  "staleCount": 5,
- "dropped": [],
- "droppedCount": 0,
+ "dropped": [
+  {
+   "ingredientId": "zampiony",
+   "store": "lidl",
+   "czkPerKg": 10.0,
+   "lastSeen": "2026-11-04",
+   "ageDays": 22
+  }
+ ],
+ "droppedCount": 1,
  "storesMissing": [
   "biedronka",
   "kaufland",

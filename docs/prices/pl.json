@@ -2,7 +2,7 @@
  "v": 2,
  "market": "pl",
  "currency": "PLN",
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "perKg": {
   "banan": {
    "lidl": 7.0
@@ -13,14 +13,20 @@
   "dyne_hokkaido": {
    "lidl": 7.0
   },
+  "kiwi": {
+   "lidl": 33.2
+  },
   "mandarinka": {
    "lidl": 7.0
+  },
+  "pomeranc": {
+   "lidl": 8.0
   },
   "salam_trvanlivy": {
    "lidl": 162.4
   },
-  "zampiony": {
-   "lidl": 10.0
+  "salat_ledovy": {
+   "lidl": 7.0
   },
   "zazvor": {
    "lidl": 16.9
@@ -28,12 +34,28 @@
  },
  "deals": [
   {
-   "ingredientId": "mandarinka",
+   "ingredientId": "kiwi",
+   "store": "lidl",
+   "perKg": 33.2,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "title": "Kiwi"
+  },
+  {
+   "ingredientId": "pomeranc",
+   "store": "lidl",
+   "perKg": 8.0,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "title": "Bio Organic Bio Pomarańcze"
+  },
+  {
+   "ingredientId": "salat_ledovy",
    "store": "lidl",
    "perKg": 7.0,
-   "validFrom": "2026-11-23",
-   "validTo": "2026-11-25",
-   "title": "Mandarynki"
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "title": "Sałata lodowa"
   }
  ],
  "categoryFallbackPerKg": {
