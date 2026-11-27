@@ -1,5 +1,5 @@
 {
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "review": [
   {
    "ingredientId": "vodka",
@@ -141,41 +141,6 @@
    ],
    "pack": "150 g",
    "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "ingredientId": "hermelin",
-   "store": "lidl",
-   "source": "lidl_at",
-   "title": "Deluxe Camembert Salami",
-   "czkPerKg": 19.96,
-   "price": 4.99,
-   "validFrom": "2026-12-03",
-   "validTo": "2026-12-05",
-   "confidence": 0.839,
-   "status": "review",
-   "club": false,
-   "suggestions": [
-    {
-     "ingredientId": "hermelin",
-     "score": 0.839,
-     "via": "Camembert",
-     "nameCs": "hermelín",
-     "name": "Camembert"
-    },
-    {
-     "ingredientId": "salam_trvanlivy",
-     "score": 0.312,
-     "via": "trvanlivý salám",
-     "nameCs": "trvanlivý salám",
-     "name": "Dauerwurst",
-     "reasons": [
-      "hint-category:meat"
-     ]
-    }
-   ],
-   "pack": "250 g",
-   "url": "https://www.lidl.at/q/api/category/h/kaese-milchprodukte-eier/h10095761?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1187,7 +1152,7 @@
     }
    ],
    "pack": "150 g",
-   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -1715,6 +1680,41 @@
    ],
    "pack": "350 g",
    "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "ingredientId": "salam_trvanlivy",
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Deluxe Camembert Salami",
+   "czkPerKg": 19.96,
+   "price": 4.99,
+   "validFrom": "2026-12-03",
+   "validTo": "2026-12-05",
+   "confidence": 0.624,
+   "status": "review",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "salam_trvanlivy",
+     "score": 0.624,
+     "via": "trvanlivý salám",
+     "nameCs": "trvanlivý salám",
+     "name": "Dauerwurst"
+    },
+    {
+     "ingredientId": "hermelin",
+     "score": 0.419,
+     "via": "Camembert",
+     "nameCs": "hermelín",
+     "name": "Camembert",
+     "reasons": [
+      "hint-category:dairy"
+     ]
+    }
+   ],
+   "pack": "250 g",
+   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -2781,6 +2781,20 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "- Käseteller",
+   "price": 9.99,
+   "validFrom": "2026-12-17",
+   "validTo": "2026-12-19",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "370 g",
+   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Aguinamar",
    "price": 4.49,
    "validFrom": "2026-12-10",
@@ -2875,6 +2889,20 @@
    "club": false,
    "pack": "0.7 l",
    "url": "https://www.lidl.at/q/api/category/h/wein-bier-spirituosen/h10096268?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Casa Mia Tasse Crudo Provola Milano",
+   "price": 7.99,
+   "validFrom": "2026-12-17",
+   "validTo": "2026-12-19",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "240 g",
+   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3302,6 +3330,20 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Deluxe Pastetenteller",
+   "price": 2.99,
+   "validFrom": "2026-12-17",
+   "validTo": "2026-12-19",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "200 g",
+   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Deluxe Raclettespeck",
    "price": 3.49,
    "validFrom": "2026-12-10",
@@ -3366,7 +3408,7 @@
    "status": "unmatched",
    "club": false,
    "pack": "310 g",
-   "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "url": "https://www.lidl.at/q/api/category/h/fleisch-gefluegel/h10095752?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3522,6 +3564,20 @@
    "club": false,
    "pack": "500 g",
    "url": "https://www.lidl.at/q/api/category/h/suessigkeiten-snacks/h10096205?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
+   "title": "Favorina Plüschfiguren",
+   "price": 14.99,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "82 g",
+   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
    "promo": true
   },
   {
@@ -3928,5 +3984,5 @@
   }
  ],
  "reviewTotal": 63,
- "unmatchedTotal": 111
+ "unmatchedTotal": 115
 }

@@ -1,5 +1,5 @@
 {
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "review": [
   {
    "ingredientId": "mandarinka",
@@ -158,6 +158,40 @@
   {
    "store": "lidl",
    "source": "lidl_sk",
+   "title": "Smakmak Parené buchty",
+   "czkPerKg": 4.59,
+   "price": 1.79,
+   "validFrom": "2026-11-28",
+   "validTo": "2026-11-29",
+   "confidence": 0.571,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "parenica",
+     "score": 0.571,
+     "via": "parenica",
+     "nameCs": "parenica",
+     "name": "parenica"
+    },
+    {
+     "ingredientId": "pazitka_cesnekova",
+     "score": 0.285,
+     "via": "buchu",
+     "nameCs": "česnekem pažitka",
+     "name": "cesnaková pažítka",
+     "reasons": [
+      "hint-category:herb"
+     ]
+    }
+   ],
+   "pack": "390 g",
+   "url": "https://www.lidl.sk/q/api/category/c/jedlo-a-napoje/s10068374?assortment=SK&locale=sk_SK&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_sk",
    "title": "- Olivová tyčinka",
    "czkPerKg": 6.9,
    "price": 0.55,
@@ -279,7 +313,7 @@
   {
    "store": "lidl",
    "source": "lidl_sk",
-   "title": "Tatranská rolka plátky",
+   "title": "Tatranská rolka",
    "price": 1.29,
    "originalPrice": 1.69,
    "validFrom": "2026-11-28",
@@ -293,5 +327,5 @@
   }
  ],
  "reviewTotal": 4,
- "unmatchedTotal": 8
+ "unmatchedTotal": 9
 }
