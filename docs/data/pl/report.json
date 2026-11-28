@@ -1,15 +1,13 @@
 {
  "market": "pl",
  "currency": "PLN",
- "date": "2026-11-27",
- "generatedAt": "2026-11-27T10:27:41Z",
+ "date": "2026-11-28",
+ "generatedAt": "2026-11-28T09:41:31Z",
  "startedAt": null,
  "durationSec": null,
- "status": "warning",
+ "status": "ok",
  "ok": true,
- "warnings": [
-  "1 stale price(s) dropped (> 21 days)"
- ],
+ "warnings": [],
  "validation": {
   "ok": true,
   "errors": []
@@ -23,7 +21,7 @@
  },
  "matching": {
   "path": "out/pl/matched.json",
-  "generated": "2026-11-27",
+  "generated": "2026-11-28",
   "matched": 4,
   "review": 10,
   "unmatched": 11,
@@ -60,8 +58,8 @@
   "catalogPath": "catalog/ingredients.json",
   "catalogSize": 1191,
   "skipped": {},
-  "previousUpdated": "2026-11-26",
-  "today": "2026-11-27",
+  "previousUpdated": "2026-11-27",
+  "today": "2026-11-28",
   "rows": 4,
   "rowsPerStore": {
    "lidl": 4
@@ -94,7 +92,7 @@
     "store": "lidl",
     "czkPerKg": 12.0,
     "lastSeen": "2026-11-21",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -102,7 +100,7 @@
     "store": "lidl",
     "czkPerKg": 7.0,
     "lastSeen": "2026-11-21",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    },
    {
@@ -110,7 +108,7 @@
     "store": "lidl",
     "czkPerKg": 7.0,
     "lastSeen": "2026-11-25",
-    "ageDays": 2,
+    "ageDays": 3,
     "reason": "not_matched_today"
    },
    {
@@ -118,21 +116,13 @@
     "store": "lidl",
     "czkPerKg": 16.9,
     "lastSeen": "2026-11-21",
-    "ageDays": 6,
+    "ageDays": 7,
     "reason": "not_matched_today"
    }
   ],
   "staleCount": 4,
-  "dropped": [
-   {
-    "ingredientId": "banan",
-    "store": "lidl",
-    "czkPerKg": 7.0,
-    "lastSeen": "2026-11-05",
-    "ageDays": 22
-   }
-  ],
-  "droppedCount": 1,
+  "dropped": [],
+  "droppedCount": 0,
   "storesMissing": [
    "biedronka",
    "kaufland",
@@ -151,7 +141,7 @@
   "v": 2,
   "market": "pl",
   "currency": "PLN",
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "ingredients": 8,
   "pairs": 8,
   "perStore": {
@@ -184,8 +174,8 @@
   "v": 1,
   "market": "pl",
   "currency": "PLN",
-  "run": "2026-11-27T10:26:55+00:00",
-  "today": "2026-11-27",
+  "run": "2026-11-28T09:40:42+00:00",
+  "today": "2026-11-28",
   "sources": {
    "lidl_pl": {
     "source": "lidl_pl",
@@ -196,7 +186,7 @@
      "lidl": 74
     },
     "requests": 14,
-    "elapsed_s": 13.5,
+    "elapsed_s": 15.6,
     "notes": [
      "12 categories, 74 products"
     ],

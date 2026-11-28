@@ -1,5 +1,5 @@
 {
- "date": "2026-11-27",
+ "date": "2026-11-28",
  "review": [
   {
    "ingredientId": "vodka",
@@ -2104,6 +2104,51 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "Trauben rot kernlos",
+   "czkPerKg": 3.58,
+   "price": 1.79,
+   "originalPrice": 2.49,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "confidence": 0.571,
+   "status": "unmatched",
+   "club": false,
+   "suggestions": [
+    {
+     "ingredientId": "zeli_cervene",
+     "score": 0.571,
+     "via": "Rotkohl",
+     "nameCs": "červené zelí",
+     "name": "Rotkohl"
+    },
+    {
+     "ingredientId": "hroznova_stava",
+     "score": 0.307,
+     "via": "Traubensaft",
+     "nameCs": "hroznová šťáva",
+     "name": "Traubensaft",
+     "reasons": [
+      "hint-category:beverage"
+     ]
+    },
+    {
+     "ingredientId": "olej_z_hroznovych_jader",
+     "score": 0.307,
+     "via": "Traubenkernöl",
+     "nameCs": "hroznový olej",
+     "name": "Traubenkernöl",
+     "reasons": [
+      "hint-category:oil"
+     ]
+    }
+   ],
+   "pack": "500 g",
+   "url": "https://www.lidl.at/q/api/category/h/obst-gemuese/h10071012?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Deluxe Frische Lammlachse vom Merino Lamm natur",
    "czkPerKg": 32.48,
    "price": 12.99,
@@ -3006,20 +3051,6 @@
   {
    "store": "lidl",
    "source": "lidl_at",
-   "title": "DELUXE Dessertspezialiäten",
-   "price": 3.29,
-   "validFrom": "2026-11-26",
-   "validTo": "2026-11-28",
-   "confidence": 0.0,
-   "status": "unmatched",
-   "club": false,
-   "pack": "450 g",
-   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
-   "promo": true
-  },
-  {
-   "store": "lidl",
-   "source": "lidl_at",
    "title": "DELUXE Gefüllte Premium Pasta",
    "price": 1.99,
    "originalPrice": 2.49,
@@ -3828,6 +3859,20 @@
   {
    "store": "lidl",
    "source": "lidl_at",
+   "title": "PILOS Dessertspezialiäten",
+   "price": 3.29,
+   "validFrom": "2026-11-26",
+   "validTo": "2026-11-28",
+   "confidence": 0.0,
+   "status": "unmatched",
+   "club": false,
+   "pack": "450 g",
+   "url": "https://www.lidl.at/q/api/category/c/essen-trinken/s10068374?assortment=AT&locale=de_AT&version=v2.0.0&fetchsize=200",
+   "promo": true
+  },
+  {
+   "store": "lidl",
+   "source": "lidl_at",
    "title": "Pasta",
    "price": 1.99,
    "validFrom": "2026-11-26",
@@ -3984,5 +4029,5 @@
   }
  ],
  "reviewTotal": 63,
- "unmatchedTotal": 115
+ "unmatchedTotal": 116
 }

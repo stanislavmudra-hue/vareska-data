@@ -1,38 +1,38 @@
 {
  "market": "at",
  "currency": "EUR",
- "date": "2026-11-27",
- "generatedAt": "2026-11-27T10:27:42Z",
+ "date": "2026-11-28",
+ "generatedAt": "2026-11-28T09:41:31Z",
  "status": "ok",
  "ok": true,
  "run": {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "startedAt": null,
-  "finishedAt": "2026-11-27T10:27:42Z",
+  "finishedAt": "2026-11-28T09:41:31Z",
   "durationSec": null,
-  "offers": 192,
+  "offers": 193,
   "deals": 12,
   "priced": 24,
   "matched": 12,
   "review": 63,
-  "unmatched": 115,
+  "unmatched": 116,
   "ok": true
  },
- "lastSuccessfulRun": "2026-11-27",
- "pricesUpdated": "2026-11-27",
+ "lastSuccessfulRun": "2026-11-28",
+ "pricesUpdated": "2026-11-28",
  "sources": {
   "lidl_at": {
    "label": "lidl_at",
    "ok": true,
    "skipped": false,
-   "items": 192,
+   "items": 193,
    "matched": 12,
    "requests": 16,
    "durationSec": 15.5,
    "error": null,
    "robots": null,
    "notes": [
-    "16 categories, 192 products"
+    "16 categories, 193 products"
    ],
    "tier": "primary",
    "fetchedAt": null
@@ -105,36 +105,6 @@
   "errors": []
  },
  "recentRuns": [
-  {
-   "date": "2026-11-11",
-   "market": "at",
-   "generatedAt": "2026-11-11T08:43:37Z",
-   "durationSec": null,
-   "status": "ok",
-   "ok": true,
-   "offers": 210,
-   "perSource": {
-    "lidl_at": 210
-   },
-   "matched": 10,
-   "review": 69,
-   "unmatched": 125,
-   "deals": 10,
-   "priced": 29,
-   "pairsPriced": 29,
-   "perStore": {
-    "billa": 0,
-    "spar": 0,
-    "interspar": 0,
-    "hofer": 0,
-    "lidl": 29,
-    "penny": 0,
-    "mpreis": 0
-   },
-   "stale": 27,
-   "dropped": 0,
-   "warnings": 0
-  },
   {
    "date": "2026-11-12",
    "market": "at",
@@ -509,6 +479,36 @@
    "matched": 12,
    "review": 63,
    "unmatched": 115,
+   "deals": 12,
+   "priced": 24,
+   "pairsPriced": 24,
+   "perStore": {
+    "billa": 0,
+    "spar": 0,
+    "interspar": 0,
+    "hofer": 0,
+    "lidl": 24,
+    "penny": 0,
+    "mpreis": 0
+   },
+   "stale": 17,
+   "dropped": 0,
+   "warnings": 0
+  },
+  {
+   "date": "2026-11-28",
+   "market": "at",
+   "generatedAt": "2026-11-28T09:41:31Z",
+   "durationSec": null,
+   "status": "ok",
+   "ok": true,
+   "offers": 193,
+   "perSource": {
+    "lidl_at": 193
+   },
+   "matched": 12,
+   "review": 63,
+   "unmatched": 116,
    "deals": 12,
    "priced": 24,
    "pairsPriced": 24,
